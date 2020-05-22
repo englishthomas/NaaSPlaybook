@@ -61,7 +61,7 @@
                                         </ul>
                                     <li><a href="#transportMenu2" data-toggle="collapse" aria-expanded="false">Transport</a></li>
                                         <ul class="panel-collapse collapse" id="transportMenu2">
-                                            <li><a href="tx_hld_module.html">  TX Backhaul HLD</a></li>
+                                            <li><a href="tx_hld_module.html">  Tx Network HLD</a></li>
                                         </ul>
                                     <li><a href="#">Core</a></li>
                                 </ul>
@@ -117,6 +117,9 @@
                                     <li><a href="ran_hld_widget_2.html">  RAN - Coverage-Based</a></li>
                                     <li><a href="tx_hld_widget_1.html"> Tx - Capacity Forecast</a></li>
                                     <li><a href="tx_hld_widget_2.html">  Tx - Availability FO</a></li>
+<li><a href="tx_hld_widget_3.html" style="margin-left:2em"> Tx - Availability MW</a></li>
+<li><a href="tx_hld_widget_4.html" style="margin-left:2em">  Tx – MW Analysis</a></li>
+<li><a href="core_hld_widget_1.html" style="margin-left:2em">  Core - Capacity Planning</a></li>
                                 </ul>
                             </li>
                         </ul>
@@ -212,7 +215,7 @@
                         </div>
                         <br>
                         <div class="row">
-                            <label  class="col-sm-5 parag-1">Total MW Link Availability (%)</label >
+                            <label  class="col-sm-5 parag-1">Total FO Link Availability (%)</label >
                                 <input id='value4' name="tx_lat" type = "text" class="col-sm-3  result-cell" readonly>
                         </div>
                         <div>
@@ -221,7 +224,7 @@
                         </div>
                         <div>
                             <label  class="col-sm-5"></label >
-                            <label  id="ley1" class="col-sm-6" style="text-align: left;">MTTR = 4 days for rural areas</label >
+                            <label  id="ley1" class="col-sm-6" style="text-align: left;">MTTR = 1 day for rural areas</label >
                         </div>
 
                     </form>
@@ -263,7 +266,7 @@
    
                 var value1_int = (1 - Math.pow( 1-(form1_1_var/(form1_1_var+(form1_2_var/8760))) ,form1_3_var)) * 100;
                 var value2_int = (1 - Math.pow( 1-(form2_1_var/(form2_1_var+(form2_2_var/8760))) ,form2_3_var)) * 100;
-                var value3_int = (1 -(1-((8/ Math.ceil(form3_1_var,0))/((8/Math.ceil(form3_1_var,0))+(96/8760))))) * 100;
+                var value3_int = (1 -(1-((8/ Math.ceil(form3_1_var,0))/((8/Math.ceil(form3_1_var,0))+(24/8760))))) * 100;
                 var value4_int = (100 - (100-value1_int) - (100-value3_int) - (100-value2_int));
 
                 document.getElementById("value1").value = value1_int.toFixed(5);
