@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+        <title>RunBook - Widget</title>
+
+         <!-- Bootstrap CSS CDN -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <!-- Our Custom CSS -->
+        <link rel="stylesheet" href="style2.css">
+        
+    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+	</head>
+		
+    <body onscroll="updateSection()">
+
+    <div class >
+        <ul class="barra_superior">
+            <li class="li_superior"><a class="active" href="Home.html">Home</a></li>
+            <li class="li_superior"><a href="comming_soon/comming-soon.html">About</a></li>
+        </ul>
+    </div>
+
+        <div class="wrapper-2">
+            <!-- Sidebar Holder -->
+            <nav id="sidebar">
+                <div class="sidebar-header">
+                    <h3>NaaS RunBook</h3>
+                    <!--strong>NaaS</strong-->
+                    <img src="smiley.png" alt="Go to W3Schools!" width="42" height="42" border="0">
+                </div>
+
+                <ul class="list-unstyled components">
+                    <li>
+                        <a href="#runbookSubmenu" data-toggle="collapse" aria-expanded="false">
+                            <i class="glyphicon glyphicon-option-horizontal"></i>
+                            RunBook Modules
+                        </a>
+                        <ul class="collapse list-unstyled" id="runbookSubmenu">
+                            <li>
+                                <a href="#">
+                                    Strategic Plan & Scope
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    High Level Network Architecture
+                                </a>
+                            </li>
+                            <li class="active">
+                                <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false">
+                                    Network Design
+                                </a>
+                                <ul class="collapse list-unstyled" id="homeSubmenu">
+                                    <li><a href="#transportMenu" data-toggle="collapse" aria-expanded="false">RAN</a></li>
+                                        <ul class="panel-collapse collapse" id="transportMenu">
+                                            <li><a href="ran_hld_module.html">  RAN HLD Module</a></li>
+                                        </ul>
+                                    <li><a href="#transportMenu2" data-toggle="collapse" aria-expanded="false">Transport</a></li>
+                                        <ul class="panel-collapse collapse" id="transportMenu2">
+                                            <li><a href="tx_hld_module.html">  TX Backhaul HLD</a></li>
+                                        </ul>
+                                    <li><a href="#">Core</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#Submenu" data-toggle="collapse" aria-expanded="false">
+                                    Deployment
+                                </a>
+                                <ul class="collapse list-unstyled" id="Submenu">
+                                    <li><a href="#">Construction</a></li>
+                                    <li><a href="#">I & C</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    O & M
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Field Maintenance
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Post-Launch Engineering
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Supply Chain Management
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#engagementSubmenu" data-toggle="collapse" aria-expanded="false">
+                            <i class="glyphicon glyphicon-option-horizontal"></i>
+                            Methods of Engagement
+                        </a>
+                        <ul class="collapse list-unstyled" id="engagementSubmenu">
+                            <li><a href="#">Primer</a></li>
+                            <li><a href="#">Process Definition</a></li>
+                            <li><a href="#">Templates</a></li>
+                            <!--li><a href="friss.html">Widgets</a></li-->
+                                             
+                            <li class="active">
+                                <a href="#homeSubmenu22" data-toggle="collapse" aria-expanded="false">
+                                    Widgets
+                                </a>
+                                <ul class="collapse list-unstyled" id="homeSubmenu22">
+                                    <li><a href="ran_hld_widget_1.html">RAN - Capacity-Based</a></li>
+                                    <li><a href="ran_hld_widget_2.html">  RAN - Coverage-Based</a></li>
+                                    <li><a href="tx_hld_widget_1.html"> Tx - Capacity Forecast</a></li>
+                                    <li><a href="tx_hld_widget_2.html">  Tx - Availability FO</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="comming_soon/comming-soon.html">
+                            <i class="glyphicon glyphicon-paperclip"></i>
+                            FAQ
+                        </a>
+                    </li>
+                    <li>
+                        <a href="comming_soon/comming-soon.html">
+                            <i class="glyphicon glyphicon-send"></i>
+                            Contact
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+            <!-- Page Content Holder -->
+            <div id="content">
+                <h2>RAN - Capacity-Based Site Count</h2>
+                <p class="normal-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                <br>
+                
+                <div class="caja_box">
+           
+                    <form class="form-horizontal-no-img" action="" name="forchi" id="formulario">
+
+                        <h4 class="title-results"><center>Maximum Allowed Path Loss</center></h4>
+                        <br>
+                        
+                        <div class="row">
+                            <label  class="col-sm-2"></label >
+                            <label  class="col-sm-6 parag-1">Population Target (NPop)</label >
+                            <input class="text-box" id="NPop" name="tx_lon"class="col-sm-2" required>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <label  class="col-sm-2"></label >
+                            <label  class="col-sm-6 parag-1">Service Penetration (%)</label >
+                            <input class="text-box" id="Ser_Pen" name="tx_lon"class="col-sm-2" required>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <label  class="col-sm-2"></label >
+                            <label  class="col-sm-6 parag-1">Downlink Bandwidth (DL_rat) [Mbits/s]</label >
+                            <input class="text-box" id="dl_BW" name="tx_lon"class="col-sm-2" required>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <label  class="col-sm-2"></label >
+                            <label  class="col-sm-6 parag-1">Uplink Bandwidth (UL_rat) [Mbits/s]</label >
+                            <input class="text-box" id="up_BW" name="tx_lon"class="col-sm-2" required>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <label  class="col-sm-2"></label >
+                            <label  class="col-sm-6 parag-1">Number of Sectors</label >
+                            <input class="text-box" id="no_Sectors" name="tx_lon"class="col-sm-2" required>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <label  class="col-sm-2"></label >
+                            <label  class="col-sm-6 parag-1 parag-1-bold">Advance Inputs</label >
+                        </div>
+                        
+                        <div class="row">
+                            <label  class="col-sm-2"></label >
+                            <label  class="col-sm-6 parag-1 parag-1-italic">%Active Users @ Busy Hour (BH_User%)</label >
+                            <input class="text-box" id="act_users" name="tx_lon"class="col-sm-2" required>
+                        </div>
+                        <div class="row">
+                            <label  class="col-sm-2"></label >
+                            <label  class="col-sm-6 parag-1 parag-1-italic">Average Busy Hour Downlink Throughput [Mbits/s]</label >
+                            <input class="text-box" id="avg_dl" name="tx_lon"class="col-sm-2" required>
+                        </div>
+                        <div class="row">
+                            <label  class="col-sm-2"></label >
+                            <label  class="col-sm-6 parag-1 parag-1-italic">Average Busy Hour Uplink Throughput [Mbits/s]</label >
+                            <input class="text-box" id="avg_ul" name="tx_lon"class="col-sm-2" required>
+                        </div>
+                        <div class="row">
+                            <label  class="col-sm-2"></label >
+                            <label  class="col-sm-6 parag-1 parag-1-italic">Peak to Average Throughput (PAR)</label >
+                            <input class="text-box" id="avg_peak" name="tx_lon"class="col-sm-2" required>
+                        </div>
+                        <div class="row">
+                            <label  class="col-sm-2"></label >
+                            <label  class="col-sm-6 parag-1 parag-1-italic">Overprovisioning Factor (u)</label >
+                            <input class="text-box" id="over_factor" name="tx_lon"class="col-sm-2" required>
+                        </div>
+                        <div class="row">
+                            <label  class="col-sm-2"></label >
+                            <label  class="col-sm-6 parag-1 parag-1-italic">Max. Concurrent Users per eNB (eNBmax_users)</label >
+                            <input class="text-box" id="concurrent_users" name="tx_lon"class="col-sm-2" required>
+                        </div>
+                        <div class="row">
+                            <label  class="col-sm-2"></label >
+                            <label  class="col-sm-6 parag-1 parag-1-italic">eNodeB Downlink Capacity (eNBmax_DL_rate) [Mbit/s]</label >
+                            <input class="text-box" id="dl_rate" name="tx_lon"class="col-sm-2" required>
+                        </div>
+                        <div class="row">
+                            <label  class="col-sm-2"></label >
+                            <label  class="col-sm-6 parag-1 parag-1-italic">eNodeB Uplink Capacity(eNBmax_UL_rate) [Mbit/s]</label >
+                            <input class="text-box" id="ul_rate" name="tx_lon"class="col-sm-2" required>
+                        </div>
+                        <div class="row">
+                            <label  class="col-sm-2"></label >
+                            <label  class="col-sm-6 parag-1 parag-1-italic">Number of years for the Capacity Forecast</label >
+                            <input class="text-box" id="cap_for_years" name="tx_lon"class="col-sm-2" required>
+                        </div>
+                        <div class="row">
+                            <label  class="col-sm-2"></label >
+                            <label  class="col-sm-6 parag-1 parag-1-italic">Capacity Growing factor</label >
+                            <input class="text-box" id="cap_factor_grow" name="tx_lon"class="col-sm-2" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <div class="col-sm-offset-6">
+                              <button type="submit" id='btn' class="btn btn-default" >Calculate</button>
+                            </div>
+                        </div>                     
+
+                        <div class="line"></div>
+                        
+
+                        <div class="widget4-sep">
+                            
+
+                            <h4 class="title-results"><center>Results based on number of user constraint</center></h4>
+                            <h5 class="title-results"><center>.</center></h5>
+                            
+                            <div class="row">
+                                <label  class="col-sm-4"></label >
+                                <input name="tx_lat" type = "text" value="Subscriber Forecast" class="col-sm-4 gree-box" style="text-align:center;" readonly>
+                            </div>                            
+                            <div class="row">
+                                <label  class="col-sm-4"></label >
+                                <input id="sub_forcast" name="tx_lat" type = "text" class="col-sm-4 result-cell" readonly></input>
+                            </div>
+
+                            <br>
+                            <div class="row">
+                                <label  class="col-sm-4"></label >
+                                <input name="tx_lat" type = "text" value="Active Users Forecast" class="col-sm-4 gree-box" style="text-align:center;" readonly>
+                            </div>
+                            <div class="row">
+                                <label  class="col-sm-4"></label >
+                                <input  id='actives_users' name="tx_lat" type = "text" class="col-sm-4 result-cell" readonly>
+                            </div>
+                            <br>
+
+                            <div class="row">
+                                <label  class="col-sm-4"></label >
+                                <input name="tx_lat" type = "text" value="Users Capacity Forecast" class="col-sm-4 gree-box"  style="text-align:center;" readonly>
+                            </div>
+                            <div class="row">
+                                <label  class="col-sm-4"></label >
+                                <input  id='user_cap_for' name="tx_lat" type = "text" class="col-sm-4 result-cell" readonly>
+                            </div>
+                            <br>
+
+                            <div class="row">
+                                <label  class="col-sm-3"></label >
+                                <input name="tx_lat" type = "text" value="User-Based Capacity Dimensioning" class="col-sm-6 gree-box gree-box-1" style="text-align:center;" readonly>
+                            </div>
+                            <div class="row">
+                                <label  class="col-sm-3"></label >
+                                <input id='user_base_dim' name="tx_lat" type = "text" class="col-sm-6 result-cell" readonly>
+                            </div>
+                            
+                            <br>
+                        </div>
+
+                        <div class="widget4-sep">
+                            <h4 class="title-results"><center>Results based on throughput</center></h4>
+                            <h5 class="title-results"><center>Throughput-based Number of eNodeBs</center></h5>
+                            
+                            <div class="row">
+                                <label  class="col-sm-6 parag-1"><center>Uplink Bandwidth (UL_rat) [Mbits/s]</center></label >
+                                
+                                <input id='downlink_tr' name="tx_lat" type = "text" class="col-sm-2 result-cell" readonly>
+                                <label  class="col-sm-1"></label >
+                                <input id='uplink_tr' name="tx_lat" type = "text" class="col-sm-2 result-cell" readonly>
+                            </div>
+                            <br>
+                            <div class="row">
+                                <label  class="col-sm-6 parag-1"><center>Throughtput Capacity Forecast</center></label >
+                                
+                                <input id='throughput_cap_dl_et' name="tx_lat" type = "text" class="col-sm-2 result-cell" readonly>
+                                <label  class="col-sm-1"></label >
+                                <input id='throughput_cap_ul_et' name="tx_lat" type = "text" class="col-sm-2 result-cell" readonly>
+                            </div>
+                            <br>
+                            <div class="row">
+                                <label  class="col-sm-2"></label >
+                                <label  class="col-sm-3 parag-1"># radio equipment</label >
+                                <label  class="col-sm-1"></label >
+                                <input id='enb_down_et' name="tx_lat" type = "text" class="col-sm-2 result-cell" readonly>
+                                <label  class="col-sm-1"></label >
+                                <input id='enb_uplink_et' name="tx_lat" type = "text" class="col-sm-2 result-cell" readonly>
+                            </div>
+                            <br><br><br>
+                            <div class="row">
+                                <label  class="col-sm-12"></label >
+                            </div>
+                            <br>
+                            <div class="row">
+                                <label  class="col-sm-3"></label >
+                                <input name="tx_lat" type = "text" value="Throughput-Based Dimensioning" class="col-sm-6 gree-box" style="text-align:center;" readonly>
+                            </div>
+                            <div class="row">
+                                <label  class="col-sm-3"></label >
+                                <input id='throughput_based_dim_et' name="tx_lat" type = "text" class="col-sm-6 result-cell" readonly>
+                            </div>
+                            <br><br>
+                        </div>
+
+
+                        
+
+                    </form>
+
+                    <div class="row">
+                        <label  class="col-sm-2"></label >
+                        <label  class="col-sm-2"></label >
+                        <label  class="col-sm-2" style="font-size: 40px;"><strong>&#129131;</strong></label >
+                        <label  class="col-sm-2"></label >
+                        <label  class="col-sm-2" style="font-size: 40px;"><strong>&#129131;</strong></label >
+                        <label  class="col-sm-2"></label >
+                    </div>
+                        <div class="row">
+                            <label  class="col-sm-3"></label >
+                            <input name="tx_lat" type = "text" value="Final Number of Radio Equipment" class="col-sm-6 gray-box" style="text-align:center;" readonly>
+                        </div>
+                        <div class="row">
+                            <label  class="col-sm-3"></label >
+                            <input id='final_no_radio_et' name="tx_lat" type = "text" class="col-sm-6 result-cell" style="text-align:center;" readonly>
+                        </div>
+
+                    <br>
+                    <hr>
+                    <div class="row">
+                        <label  class="col-sm-3"></label >
+                        <input name="tx_lat" type = "text" value="Number of Required Sites" class="col-sm-6 gray-box" style="text-align:center;" readonly>
+                        <label  class="col-sm-3"></label >
+                    </div>
+                    <div class="row">
+                        <label  class="col-sm-3"></label >
+                        <input id='num_req_sites_et' name="tx_lat" type = "text" class="col-sm-6 result-cell" readonly>
+                        <label  class="col-sm-3"></label >
+                    </div>
+                    <p><center>Number of Required Sites varies depending on the number of sectors</center></p>
+
+
+                    
+                </div>
+            </div>
+        </div>
+
+        <!-- jQuery CDN border-left: 2px solid gray;-->
+         <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+         <!-- Bootstrap Js CDN -->
+         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+         <script type="text/javascript">
+             /*$(document).ready(function () {
+                 $('#sidebarCollapse').on('click', function () {
+                     $('#sidebar').toggleClass('active');
+                 });
+             });*/
+             var formulario2 = document.getElementsByName('forchi')[0],
+                elementos = formulario2.elements,
+                boton = document.getElementById('btn');         
+            
+
+            formulario2.addEventListener('submit',function(evt){
+                evt.preventDefault();
+
+                var n_pop = formulario2.NPop.value;
+                var ser_pen = formulario2.Ser_Pen.value;
+                var dl_bw = formulario2.dl_BW.value;
+                var up_bw = formulario2.up_BW.value;
+                var no_sectors= formulario2.no_Sectors.value;
+                var active_users = formulario2.act_users.value;
+                var avg_downlink = formulario2.avg_dl.value;
+                var avg_uplink = formulario2.avg_ul.value;
+                var avg_peak_v = formulario2.avg_peak.value;
+                var over_factor_v = formulario2.over_factor.value;
+                var currt_usr = formulario2.concurrent_users.value;
+                var dl_rate_v = formulario2.dl_rate.value;
+                var ul_rate_v = formulario2.ul_rate.value;
+                var capacity_forcast_years = formulario2.cap_for_years.value;
+                var capacity_factor = formulario2.cap_factor_grow.value;
+
+                ser_pen = ser_pen / 100;
+                active_users = active_users / 100;
+                over_factor_v = over_factor_v / 100;
+                capacity_factor = capacity_factor / 100;
+
+
+                console.log(n_pop);
+                console.log(ser_pen);
+                console.log(dl_bw);
+                console.log(up_bw);
+                console.log(no_sectors);
+                console.log(active_users);
+                console.log(avg_downlink);
+                console.log(avg_uplink);
+                console.log(avg_peak_v);
+                console.log(over_factor_v);
+                console.log(currt_usr);
+                console.log(dl_rate_v);
+                console.log(ul_rate_v);
+                console.log("ul_rate_v");
+
+                var surcriber_forcast = Math.ceil(n_pop * ser_pen);
+                var active_user_forecast = Math.ceil(surcriber_forcast * active_users);
+                var user_based = Math.ceil(active_user_forecast/currt_usr);
+                var throughput_downlink = (avg_downlink * avg_peak_v * active_user_forecast) / over_factor_v;
+                var throughput_uplink = (avg_uplink * avg_peak_v * active_user_forecast) / over_factor_v;
+                var throughput_cap_dl = throughput_downlink*Math.pow((capacity_factor+1),capacity_forcast_years);
+                var throughput_cap_ul = throughput_uplink*Math.pow((capacity_factor+1),capacity_forcast_years);
+                var enb_down = Math.ceil(throughput_cap_dl/(dl_rate_v-dl_bw));
+                var enb_uplink = Math.ceil(throughput_cap_ul/(ul_rate_v-up_bw));
+                var throughput_based_dim = Math.max(enb_down,enb_uplink);
+                var final_no_radio = Math.max(user_based,throughput_based_dim) ;
+                var num_req_sites = Math.ceil(final_no_radio/no_sectors); 
+                var user_cap_for_b = Math.ceil(active_user_forecast*Math.pow((capacity_factor+1),capacity_forcast_years))
+
+
+                document.getElementById("sub_forcast").value = surcriber_forcast.toFixed(0);
+                document.getElementById("actives_users").value = active_user_forecast.toFixed(0);
+                document.getElementById("user_base_dim").value = user_based.toFixed(0);
+                document.getElementById("user_cap_for").value = user_cap_for_b.toFixed(0);
+                document.getElementById("downlink_tr").value = throughput_downlink.toFixed(2);
+                document.getElementById("uplink_tr").value = throughput_uplink.toFixed(2);
+                document.getElementById("enb_down_et").value = enb_down.toFixed(0);
+                document.getElementById("enb_uplink_et").value = enb_uplink.toFixed(0);
+                document.getElementById("throughput_based_dim_et").value = throughput_based_dim.toFixed(0);
+                document.getElementById("final_no_radio_et").value = final_no_radio.toFixed(0);
+                document.getElementById("num_req_sites_et").value = num_req_sites.toFixed(0);
+                document.getElementById("throughput_cap_dl_et").value = throughput_cap_dl.toFixed(2);
+                document.getElementById("throughput_cap_ul_et").value = throughput_cap_ul.toFixed(2);
+                
+               
+            });
+
+            function radianes(numero){
+                return (numero) * (Math.PI/180);
+            }
+
+             let tab;
+
+             function switchContent(selector){
+                $("#hld").hide();
+                $("#fm").hide();
+                $("#e2e").hide();
+                $(selector).show();
+                tab = selector;
+            }
+
+             const onClickActive = (event) => {
+                
+                 var anchor = event.target;
+								 clearActiveLinks();
+                 anchor.classList.add('link-active');
+             }
+
+             const clearActiveLinks = () =>{
+                const activeLink = document.getElementsByClassName('link-active')[0];
+								//console.log(activeLink);
+								if(activeLink){
+									activeLink.classList.remove('link-active');
+								}
+             }
+						//227, 1633, 5616
+                        
+                        console.log(tab);
+						 const updateSection = () =>{
+							const scrollTop = window.pageYOffset || (document.documentElement || document.body.parentNode || document.body).scrollTop;
+							//console.log(scrollTop);
+                            console.log(tab);
+							let link;
+
+							clearActiveLinks();
+
+                            if(tab == '#hld'){
+                                if(scrollTop >= 50 && scrollTop <= 1000){
+								document.getElementById("link-1").classList.add('link-active');
+                                }
+                                else if(scrollTop >= 1001 && scrollTop <= 1480){
+                                    document.getElementById("link-2").classList.add('link-active');
+
+                                }else if(scrollTop >= 1481 && scrollTop <= 3200){
+                                    document.getElementById("link-3").classList.add('link-active');
+                                    
+                                }else if(scrollTop >= 3201 && scrollTop <= 3400){
+                                    document.getElementById("link-4").classList.add('link-active');
+                                    
+                                }else if(scrollTop >= 3401 ){
+                                    document.getElementById("link-5").classList.add('link-active'); 
+                                }
+                            } else if(tab == '#fm'){
+                                if(scrollTop >= 50 && scrollTop <= 1100){
+								document.getElementById("fm_link-1").classList.add('link-active');
+                                }
+                                else if(scrollTop >= 1101 && scrollTop <= 3680){
+                                    document.getElementById("fm_link-2").classList.add('link-active');
+
+                                }else if(scrollTop >= 3681 && scrollTop <= 4380){
+                                    document.getElementById("fm_link-3").classList.add('link-active');
+                                    
+                                }else if(scrollTop >= 4381 ){
+                                    document.getElementById("fm_link-4").classList.add('link-active');
+                                    
+                                }
+
+                            } else if(tab == '#e2e'){
+                                if(scrollTop >= 50 && scrollTop <= 750){
+								    document.getElementById("e2e_link-1").classList.add('link-active');
+                                }
+                                else if(scrollTop >= 751 && scrollTop <= 9500){
+                                    document.getElementById("e2e_link-2").classList.add('link-active');
+
+                                }else if(scrollTop >= 9501 && scrollTop <= 9900){
+                                    document.getElementById("e2e_link-3").classList.add('link-active');
+                                    
+                                }else if(scrollTop >= 9901 ){
+                                    document.getElementById("e2e_link-4").classList.add('link-active');
+                                    
+                                }
+
+                            }
+
+						 }
+
+         </script>
+    </body>
+</html>

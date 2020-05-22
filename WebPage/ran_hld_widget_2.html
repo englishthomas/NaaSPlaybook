@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+        <title>RunBook - Widget</title>
+
+         <!-- Bootstrap CSS CDN -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <!-- Our Custom CSS -->
+        <link rel="stylesheet" href="style2.css">
+        
+    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+	</head>
+		
+    <body onscroll="updateSection()">
+
+    <div class >
+        <ul class="barra_superior">
+            <li class="li_superior"><a class="active" href="Home.html">Home</a></li>
+            <li class="li_superior"><a href="comming_soon/comming-soon.html">About</a></li>
+        </ul>
+    </div>
+
+        <div class="wrapper-2">
+            <!-- Sidebar Holder -->
+            <nav id="sidebar">
+                <div class="sidebar-header">
+                    <h3>NaaS RunBook</h3>
+                    <!--strong>NaaS</strong-->
+                    <img src="smiley.png" alt="Go to W3Schools!" width="42" height="42" border="0">
+                </div>
+
+                <ul class="list-unstyled components">
+                    <li>
+                        <a href="#runbookSubmenu" data-toggle="collapse" aria-expanded="false">
+                            <i class="glyphicon glyphicon-option-horizontal"></i>
+                            RunBook Modules
+                        </a>
+                        <ul class="collapse list-unstyled" id="runbookSubmenu">
+                            <li>
+                                <a href="#">
+                                    Strategic Plan & Scope
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    High Level Network Architecture
+                                </a>
+                            </li>
+                            <li class="active">
+                                <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false">
+                                    Network Design
+                                </a>
+                                <ul class="collapse list-unstyled" id="homeSubmenu">
+                                    <li><a href="#transportMenu" data-toggle="collapse" aria-expanded="false">RAN</a></li>
+                                        <ul class="panel-collapse collapse" id="transportMenu">
+                                            <li><a href="ran_hld_module.html">  RAN HLD Module</a></li>
+                                        </ul>
+                                    <li><a href="#transportMenu2" data-toggle="collapse" aria-expanded="false">Transport</a></li>
+                                        <ul class="panel-collapse collapse" id="transportMenu2">
+                                            <li><a href="tx_hld_module.html">  TX Backhaul HLD</a></li>
+                                        </ul>
+                                    <li><a href="#">Core</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#Submenu" data-toggle="collapse" aria-expanded="false">
+                                    Deployment
+                                </a>
+                                <ul class="collapse list-unstyled" id="Submenu">
+                                    <li><a href="#">Construction</a></li>
+                                    <li><a href="#">I & C</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    O & M
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Field Maintenance
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Post-Launch Engineering
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Supply Chain Management
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#engagementSubmenu" data-toggle="collapse" aria-expanded="false">
+                            <i class="glyphicon glyphicon-option-horizontal"></i>
+                            Methods of Engagement
+                        </a>
+                        <ul class="collapse list-unstyled" id="engagementSubmenu">
+                            <li><a href="#">Primer</a></li>
+                            <li><a href="#">Process Definition</a></li>
+                            <li><a href="#">Templates</a></li>
+                            <!--li><a href="friss.html">Widgets</a></li-->
+                                             
+                            <li class="active">
+                                <a href="#homeSubmenu22" data-toggle="collapse" aria-expanded="false">
+                                    Widgets
+                                </a>
+                                <ul class="collapse list-unstyled" id="homeSubmenu22">
+                                    <li><a href="ran_hld_widget_1.html">RAN - Capacity-Based</a></li>
+                                    <li><a href="ran_hld_widget_2.html">  RAN - Coverage-Based</a></li>
+                                    <li><a href="tx_hld_widget_1.html"> Tx - Capacity Forecast</a></li>
+                                    <li><a href="tx_hld_widget_2.html">  Tx - Availability FO</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="comming_soon/comming-soon.html">
+                            <i class="glyphicon glyphicon-paperclip"></i>
+                            FAQ
+                        </a>
+                    </li>
+                    <li>
+                        <a href="comming_soon/comming-soon.html">
+                            <i class="glyphicon glyphicon-send"></i>
+                            Contact
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+            <!-- Page Content Holder -->
+            <div id="content">
+                <h2>RAN - Coverage-Based Site Count</h2>
+                <p class="normal-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                <br>
+                
+                <div class="caja_box">
+           
+                    <form class="form-horizontal" action="" name="forchi" id="formulario">
+
+                        <h4 class="title-results"><center>Maximum Allowed Path Loss</center></h4>
+                        <br>
+                        
+                        <div class="row">
+                            <label  class="col-sm-6 parag-1">Transmitter Power [W]</label >
+                            <input id="tx_power_html" name="tx_lon"class="col-sm-2 text-box" required>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <label  class="col-sm-6 parag-1">Transmitter Power [dBm]</label >
+                            <input id='tx_power_dbm_et' name="tx_lat" type = "text" class="col-sm-2 result-cell" readonly>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <label  class="col-sm-6 parag-1">Cell Bandwidth [MHz]</label >
+                            <select id="cell_band_html" name="tx_lon" class="col-sm-2"> 
+                                    <option value="bw_1">1.4</option>
+                                    <option value="bw_2">3</option>
+                                    <option value="bw_3">5</option>
+                                    <option value="bw_4">10</option>
+                                    <option value="bw_5">15</option>
+                                    <option value="bw_6">20</option>
+                            </select>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <label  class="col-sm-6 parag-1">Number of Subcarriers</label >
+                            <input id='num_subcarriers_et' name="tx_lat" type = "text" class="col-sm-2 result-cell" readonly>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <label  class="col-sm-6 parag-1">Transmitter Power per Subcarrier [dBm]</label >
+                            <input id='tx_power_subcarrier_et' name="tx_lat" type = "text" class="col-sm-2 result-cell" readonly>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <label  class="col-sm-6 parag-1 parag-1-italic">Transmitter Feeder Loss [dB]</label >
+                            <input id="feeder_loss_html" name="tx_lon"class="col-sm-2 text-box" required>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <label  class="col-sm-6 parag-1">Transmitter Antenna Type</label >
+                            <select id="antenna_type_html" name="tx_lon" class="col-sm-2"> 
+                                <option value="sectorial">Sectorial</option>
+                                <option value="omni">Omni</option>
+                            </select>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <label  class="col-sm-6 parag-1">Gain of the Base Station Antenna [dB]</label >
+                            <input id='gain_bs_et' name="tx_lat" type = "text" class="col-sm-2 result-cell" readonly>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <label  class="col-sm-6 parag-1">EIRP per Subcarrier [dBm]</label >
+                            <input id='eipr_subcarrier_et' name="tx_lat" type = "text" class="col-sm-2 result-cell" readonly>
+                        </div>
+                        <br>
+                        
+                        <div class="row">
+                            <label  class="col-sm-6 parag-1 parag-1-italic">Shadow Fading Std. Dev. [dBm]</label >
+                            <input id="shadow_fading_html" name="tx_lon"class="col-sm-2 text-box" required>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <label  class="col-sm-6 parag-1" >Cell-edge coverage probability (%)</label >
+                            <input id="cell_edge_cov_html" name="tx_lon"class="col-sm-2 text-box" min="1" max="100"required>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <label  class="col-sm-6 parag-1">Shadow Margin [dB]</label >
+                            <input id='shadow_margin_et' name="tx_lat" type = "text" class="col-sm-2 result-cell" readonly>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <label  class="col-sm-6 parag-1 parag-1-italic">Interference Margin [dB]</label >
+                            <input id="int_margin_html" name="tx_lon"class="col-sm-2 text-box" required>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <label  class="col-sm-6 parag-1 parag-1-italic">Receiver Sensivity [dBm]</label >
+                            <input id="sensi_user_html" name="tx_lon"class="col-sm-2 text-box" required>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <label  class="col-sm-6 parag-1 parag-1-italic">Receiver Antenna Gain [dB]</label >
+                            <input id="usr_eqt_gain_html" name="tx_lon"class="col-sm-2 text-box" required>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <label  class="col-sm-6 parag-1 parag-1-italic">Receiver Body Loss [dB]</label >
+                            <input id="body_loss_html" name="tx_lon"class="col-sm-2 text-box" required>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <label  class="col-sm-6 parag-1">UE minimum required Power</label >
+                            <input id='ue_min_power_et' name="tx_lat" type = "text" class="col-sm-2 result-cell" readonly>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <label  class="col-sm-6 parag-1 parag-1-bold">Maximum Allowed Path Loss [dB]</label >
+                            <input id='maximum_allow_et' name="tx_lat" type = "text" class="col-sm-2 result-cell"  readonly>
+                        </div>
+                        <div class="line"></div>
+                        <h4 class="title-results"><center>Cell Radius Calculation</center></h4>
+                        <br>
+                        <div class="row">
+                            <label  class="col-sm-6 parag-1">Antenna Height [m]</label >
+                            <input id="antenna_height_html" name="tx_lon"class="col-sm-2 text-box" required>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <label  class="col-sm-6 parag-1">User Equipment Height [m]</label >
+                            <input id="user_equi_height_html" name="tx_lon"class="col-sm-2 text-box" required>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <label  class="col-sm-6 parag-1">Frequency [MHz]</label >
+                            <input id="freq_html" name="tx_lon"class="col-sm-2 text-box" required>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <label  class="col-sm-6 parag-1 parag-1-bold">Cell Radius [Km]</label >
+                            <input id='cell_radius_et' name="tx_lat" type = "text" class="col-sm-2 result-cell" readonly>
+                        </div>
+                        <div class="line"></div>
+                        <h4 class="title-results"><center>Coverage-Based Site Count</center></h4>
+                        <br>
+                        <div class="row">
+                            <label  class="col-sm-6 parag-1">Area to cover [Km2]</label >
+                            <input id="area_to_cover_html" name="tx_lon"class="col-sm-2 text-box" required>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <label  class="col-sm-6 parag-1">Cell Coverage Area [Km2]</label >
+                            <input id='cell_cov_area_et' name="tx_lat" type = "text" class="col-sm-2 result-cell" readonly>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <label  class="col-sm-6 parag-1 parag-1-bold">Minimum Number of Sites</label >
+                            <input id='min_no_sites_et' name="tx_lat" type = "text" class="col-sm-2 result-cell" readonly>
+                        </div>
+                        <br><br>
+                        <div class="form-group">
+                            <div class="col-sm-offset-8">
+                              <center><button type="submit" class="btn btn-default" >Calculate</button></center>
+                            </div>
+                        </div>
+
+                    </form>
+                    <div id="error"></div>
+
+                    <br><br><br><br><br><br><br><br><br><br><br>
+                    <img class="img-grande" src="images/widgets/widget5_1.png" alt="Smiley face" style="padding-top: 20px" height="200" width="5">
+                    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                    <img class="img-grande" src="images/widgets/widget5_2.png" alt="Smiley face" style="padding-top: 20px" height="200" width="5">
+                    <br><br><br><br><br>
+                    <img class="img-grande" src="images/widgets/widget5_3.png" alt="Smiley face" style="padding-top: 20px" height="200" width="5">
+
+                </div>
+            </div>
+        </div>
+
+        <!-- jQuery CDN border-left: 2px solid gray;-->
+         <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+         <!-- Bootstrap Js CDN -->
+         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+         <script type="text/javascript">
+             /*$(document).ready(function () {
+                 $('#sidebarCollapse').on('click', function () {
+                     $('#sidebar').toggleClass('active');
+                 });
+             });*/
+             var formulario2 = document.getElementsByName('forchi')[0],
+                elementos = formulario2.elements,
+                boton = document.getElementById('btn');         
+            
+
+            formulario2.addEventListener('submit',function(evt){
+                evt.preventDefault();
+                var tx_power_watt = formulario2.tx_power_html.value;
+                var tx_power_dbm = 10*Math.log10(tx_power_watt/Math.pow(10, -3));
+                var cell_band = formulario2.cell_band_html.value;
+                var feeder_loss = formulario2.feeder_loss_html.value;
+                var antenna_type = formulario2.antenna_type_html.value;
+                var int_margin = Number(formulario2.int_margin_html.value);
+                var shadow_fading = formulario2.shadow_fading_html.value;
+                var cell_edge_cov = formulario2.cell_edge_cov_html.value;
+                var antenna_height = formulario2.antenna_height_html.value;
+                var user_equi_height = formulario2.user_equi_height_html.value;
+                var freq = formulario2.freq_html.value;
+                var area_to_cover = formulario2.area_to_cover_html.value;
+
+                var sensi_user = Number(formulario2.sensi_user_html.value);
+                var usr_eqt_gain = formulario2.usr_eqt_gain_html.value;
+                var body_loss = formulario2.body_loss_html.value;
+
+                var num_subcarriers;
+                cell_edge_cov = cell_edge_cov/100;
+                console.log(cell_edge_cov);
+
+                if(antenna_type == 'sectorial'){
+                    var gain_bs = 12;
+                } else if(antenna_type == 'omni'){
+                    var gain_bs = 2;
+                }
+
+                if(cell_band == 'bw_1'){
+                    num_subcarriers = 72;
+                } else if(cell_band == 'bw_2'){
+                    num_subcarriers = 180;
+                } else if(cell_band == 'bw_3'){
+                    num_subcarriers = 300;
+                } else if(cell_band == 'bw_4'){
+                    num_subcarriers = 600;
+                } else if(cell_band == 'bw_5'){
+                    num_subcarriers = 900;
+                } else if(cell_band == 'bw_6'){
+                    num_subcarriers = 1200;
+                }
+                
+                var yourMath = normalinv(); 
+                var shadow_margin = yourMath(cell_edge_cov,0,shadow_fading);
+                //var max_path_loss = parseFloat(tx_power_dbm) + parseFloat(gain_bs) + parseFloat(usr_eqt_gain) - parseFloat(sensi_user) - parseFloat(feeder_loss) - parseFloat(body_loss) - parseFloat(int_margin) - parseFloat(shadow_fading) - parseFloat(shadow_margin);
+                var max_path_loss; 
+
+                /*max_path_loss=164.503;
+                freq=700;
+                antenna_height=30;
+                user_equi_height=1.5;*/
+                var tx_power_subcarrier = tx_power_dbm-10*Math.log10(num_subcarriers);
+                var eipr_subcarrier = tx_power_subcarrier - feeder_loss + gain_bs;
+                var ue_min_power = int_margin + sensi_user;
+                max_path_loss = eipr_subcarrier - shadow_margin - ue_min_power; 
+                
+                var arrow_1 = max_path_loss + 4.78 * Math.log10(Math.pow(freq, 2)) - (18.33 * Math.log10(freq)) + 40.94;
+                var arrow_2 = (1.1*Math.log10(freq)-0.7)*user_equi_height-(1.56*Math.log10(freq)-0.8)
+                var arrow_3 = (arrow_1 - 69.55 - 26.16 * Math.log10(freq) + 13.82 * Math.log10(antenna_height) + arrow_2) / (44.9-6.55 * Math.log10(antenna_height));
+                var arrow_4;
+                if(freq < 1500){
+                    arrow_4 = Math.pow(10, arrow_3);
+                }else{
+                    arrow_4 = 0;
+                }
+                var arrow_5 = (1.1*Math.log10(freq)-0.7)*user_equi_height-(1.56*Math.log10(freq)-0.8);
+                var arrow_6 = (max_path_loss-46.3-33.9*Math.log10(freq)+13.82*Math.log10(antenna_height)+arrow_5)/(44.9-6.55*Math.log10(antenna_height));
+        
+                var arro1_1 = 69.55 + 26.16 * Math.log10(freq) - 13.82 * Math.log10(antenna_height);
+                var arro1_2 = 46.3 + 33.9*Math.log10(freq) - 13.82 * Math.log10(antenna_height);
+                var arro2_1 = 44.9-6.55*Math.log10(antenna_height);
+                var arro2_2 = 44.9-6.55*Math.log10(antenna_height);
+                var arro3_1 = 15;
+                var arro3_2 = 0;
+                var arro4_1 = Math.pow(10, (max_path_loss - arro1_1 + arro3_1) / arro2_1);
+                var arro4_2 = Math.pow(10, (max_path_loss - arro1_2 + arro3_2) / arro2_2);
+
+                var cell_radius;
+                if(freq < 1500){
+                    cell_radius = arro4_1;
+                    //cell_radius = arrow_4;
+                } else{
+                    cell_radius = arro4_2;
+                    //cell_radius = 'N/A';
+                }
+        
+
+                var cell_cov_area = ((3*Math.sqrt(3))/2)*Math.pow(cell_radius, 2);
+                var min_no_sites = Math.ceil(area_to_cover/cell_cov_area);
+                console.log(area_to_cover/cell_cov_area)
+                console.log(area_to_cover/cell_cov_area)
+                console.log(Math.ceil(area_to_cover/cell_cov_area))
+
+                document.getElementById("gain_bs_et").value = gain_bs.toFixed(0);
+                document.getElementById("num_subcarriers_et").value = num_subcarriers.toFixed(0);
+                document.getElementById("tx_power_subcarrier_et").value = tx_power_subcarrier.toFixed(3);
+                document.getElementById("eipr_subcarrier_et").value = eipr_subcarrier.toFixed(3);
+                document.getElementById("shadow_margin_et").value = shadow_margin.toFixed(3);
+                document.getElementById("maximum_allow_et").value = max_path_loss.toFixed(3);
+                document.getElementById("ue_min_power_et").value = ue_min_power.toFixed(2);
+                document.getElementById("cell_radius_et").value = cell_radius.toFixed(3);
+                document.getElementById("cell_cov_area_et").value = cell_cov_area.toFixed(3);
+                document.getElementById("min_no_sites_et").value = min_no_sites;
+                document.getElementById("tx_power_dbm_et").value = tx_power_dbm.toFixed(3);
+                
+            });
+
+            function radianes(numero){
+                return (numero) * (Math.PI/180);
+            }
+
+            function normalinv() {
+  function erfcinv(p) {
+    var j = 0;
+    var x, err, t, pp;
+    if (p >= 2)
+      return -100;
+    if (p <= 0)
+      return 100;
+    pp = (p < 1) ? p : 2 - p;
+    t = Math.sqrt(-2 * Math.log(pp / 2));
+    x = -0.70711 * ((2.30753 + t * 0.27061) /
+      (1 + t * (0.99229 + t * 0.04481)) - t);
+    for (; j < 2; j++) {
+      err = erfc(x) - pp;
+      x += err / (1.12837916709551257 * Math.exp(-x * x) - x * err);
+    }
+    return (p < 1) ? x : -x;
+  }
+
+  function erfc(x) {
+    return 1 - erf(x);
+  }
+
+  function erf(x) {
+    var cof = [-1.3026537197817094, 6.4196979235649026e-1, 1.9476473204185836e-2,
+      -9.561514786808631e-3, -9.46595344482036e-4, 3.66839497852761e-4,
+      4.2523324806907e-5, -2.0278578112534e-5, -1.624290004647e-6,
+      1.303655835580e-6, 1.5626441722e-8, -8.5238095915e-8,
+      6.529054439e-9, 5.059343495e-9, -9.91364156e-10,
+      -2.27365122e-10, 9.6467911e-11, 2.394038e-12,
+      -6.886027e-12, 8.94487e-13, 3.13092e-13,
+      -1.12708e-13, 3.81e-16, 7.106e-15,
+      -1.523e-15, -9.4e-17, 1.21e-16,
+      -2.8e-17
+    ];
+    var j = cof.length - 1;
+    var isneg = false;
+    var d = 0;
+    var dd = 0;
+    var t, ty, tmp, res;
+
+    if (x < 0) {
+      x = -x;
+      isneg = true;
+    }
+
+    t = 2 / (2 + x);
+    ty = 4 * t - 2;
+
+    for (; j > 0; j--) {
+      tmp = d;
+      d = ty * d - dd + cof[j];
+      dd = tmp;
+    }
+
+    res = t * Math.exp(-x * x + 0.5 * (cof[0] + ty * d) - dd);
+    return isneg ? res - 1 : 1 - res;
+  }
+
+  return function inv(p, mean, std) {
+    return -1.41421356237309505 * std * erfcinv(2 * p) + mean;
+  }
+}
+
+
+             let tab;
+
+             function switchContent(selector){
+                $("#hld").hide();
+                $("#fm").hide();
+                $("#e2e").hide();
+                $(selector).show();
+                tab = selector;
+            }
+
+             const onClickActive = (event) => {
+                
+                 var anchor = event.target;
+								 clearActiveLinks();
+                 anchor.classList.add('link-active');
+             }
+
+             const clearActiveLinks = () =>{
+                const activeLink = document.getElementsByClassName('link-active')[0];
+								//console.log(activeLink);
+								if(activeLink){
+									activeLink.classList.remove('link-active');
+								}
+             }
+						//227, 1633, 5616
+                        
+                        console.log(tab);
+						 const updateSection = () =>{
+							const scrollTop = window.pageYOffset || (document.documentElement || document.body.parentNode || document.body).scrollTop;
+							//console.log(scrollTop);
+                            console.log(tab);
+							let link;
+
+							clearActiveLinks();
+
+                            if(tab == '#hld'){
+                                if(scrollTop >= 50 && scrollTop <= 1000){
+								document.getElementById("link-1").classList.add('link-active');
+                                }
+                                else if(scrollTop >= 1001 && scrollTop <= 1480){
+                                    document.getElementById("link-2").classList.add('link-active');
+
+                                }else if(scrollTop >= 1481 && scrollTop <= 3200){
+                                    document.getElementById("link-3").classList.add('link-active');
+                                    
+                                }else if(scrollTop >= 3201 && scrollTop <= 3400){
+                                    document.getElementById("link-4").classList.add('link-active');
+                                    
+                                }else if(scrollTop >= 3401 ){
+                                    document.getElementById("link-5").classList.add('link-active'); 
+                                }
+                            } else if(tab == '#fm'){
+                                if(scrollTop >= 50 && scrollTop <= 1100){
+								document.getElementById("fm_link-1").classList.add('link-active');
+                                }
+                                else if(scrollTop >= 1101 && scrollTop <= 3680){
+                                    document.getElementById("fm_link-2").classList.add('link-active');
+
+                                }else if(scrollTop >= 3681 && scrollTop <= 4380){
+                                    document.getElementById("fm_link-3").classList.add('link-active');
+                                    
+                                }else if(scrollTop >= 4381 ){
+                                    document.getElementById("fm_link-4").classList.add('link-active');
+                                    
+                                }
+
+                            } else if(tab == '#e2e'){
+                                if(scrollTop >= 50 && scrollTop <= 750){
+								    document.getElementById("e2e_link-1").classList.add('link-active');
+                                }
+                                else if(scrollTop >= 751 && scrollTop <= 9500){
+                                    document.getElementById("e2e_link-2").classList.add('link-active');
+
+                                }else if(scrollTop >= 9501 && scrollTop <= 9900){
+                                    document.getElementById("e2e_link-3").classList.add('link-active');
+                                    
+                                }else if(scrollTop >= 9901 ){
+                                    document.getElementById("e2e_link-4").classList.add('link-active');
+                                    
+                                }
+
+                            }
+
+						 }
+
+         </script>
+    </body>
+</html>

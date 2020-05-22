@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+        <title>RunBook - Widget</title>
+
+         <!-- Bootstrap CSS CDN -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <!-- Our Custom CSS -->
+        <link rel="stylesheet" href="style2.css">
+        
+    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+	</head>
+		
+    <body onscroll="updateSection()">
+
+    <div class >
+        <ul class="barra_superior">
+            <li class="li_superior"><a class="active" href="Home.html">Home</a></li>
+            <li class="li_superior"><a href="comming_soon/comming-soon.html">About</a></li>
+        </ul>
+    </div>
+
+        <div class="wrapper-2">
+            <!-- Sidebar Holder -->
+            <nav id="sidebar">
+                <div class="sidebar-header">
+                    <h3>NaaS RunBook</h3>
+                    <!--strong>NaaS</strong-->
+                    <img src="smiley.png" alt="Go to W3Schools!" width="42" height="42" border="0">
+                </div>
+
+                <ul class="list-unstyled components">
+                    <li>
+                        <a href="#runbookSubmenu" data-toggle="collapse" aria-expanded="false">
+                            <i class="glyphicon glyphicon-option-horizontal"></i>
+                            RunBook Modules
+                        </a>
+                        <ul class="collapse list-unstyled" id="runbookSubmenu">
+                            <li>
+                                <a href="#">
+                                    Strategic Plan & Scope
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    High Level Network Architecture
+                                </a>
+                            </li>
+                            <li class="active">
+                                <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false">
+                                    Network Design
+                                </a>
+                                <ul class="collapse list-unstyled" id="homeSubmenu">
+                                    <li><a href="#transportMenu" data-toggle="collapse" aria-expanded="false">RAN</a></li>
+                                        <ul class="panel-collapse collapse" id="transportMenu">
+                                            <li><a href="ran_hld_module.html">  RAN HLD Module</a></li>
+                                        </ul>
+                                    <li><a href="#transportMenu2" data-toggle="collapse" aria-expanded="false">Transport</a></li>
+                                        <ul class="panel-collapse collapse" id="transportMenu2">
+                                            <li><a href="tx_hld_module.html">  TX Backhaul HLD</a></li>
+                                        </ul>
+                                    <li><a href="#">Core</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#Submenu" data-toggle="collapse" aria-expanded="false">
+                                    Deployment
+                                </a>
+                                <ul class="collapse list-unstyled" id="Submenu">
+                                    <li><a href="#">Construction</a></li>
+                                    <li><a href="#">I & C</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    O & M
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Field Maintenance
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Post-Launch Engineering
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Supply Chain Management
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#engagementSubmenu" data-toggle="collapse" aria-expanded="false">
+                            <i class="glyphicon glyphicon-option-horizontal"></i>
+                            Methods of Engagement
+                        </a>
+                        <ul class="collapse list-unstyled" id="engagementSubmenu">
+                            <li><a href="#">Primer</a></li>
+                            <li><a href="#">Process Definition</a></li>
+                            <li><a href="#">Templates</a></li>
+                            <!--li><a href="friss.html">Widgets</a></li-->
+                                             
+                            <li class="active">
+                                <a href="#homeSubmenu22" data-toggle="collapse" aria-expanded="false">
+                                    Widgets
+                                </a>
+                                <ul class="collapse list-unstyled" id="homeSubmenu22">
+                                    <li><a href="ran_hld_widget_1.html">RAN - Capacity-Based</a></li>
+                                    <li><a href="ran_hld_widget_2.html">  RAN - Coverage-Based</a></li>
+                                    <li><a href="tx_hld_widget_1.html"> Tx - Capacity Forecast</a></li>
+                                    <li><a href="tx_hld_widget_2.html">  Tx - Availability FO</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="comming_soon/comming-soon.html">
+                            <i class="glyphicon glyphicon-paperclip"></i>
+                            FAQ
+                        </a>
+                    </li>
+                    <li>
+                        <a href="comming_soon/comming-soon.html">
+                            <i class="glyphicon glyphicon-send"></i>
+                            Contact
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+            <!-- Page Content Holder -->
+            <div id="content">
+                <h2>Tx - Capacity Forecast</h2>
+                <p class="normal-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                <br>
+                
+                <div class="caja_box">
+           
+                    <form class="form-horizontal" action="" name="forchi" id="formulario">
+
+                        
+                        <div class="row">
+                            <label  class="col-sm-3 parag-1">Bandwidth (MHz)</label >
+                                <select id="form1" name="tx_lon" class="col-sm-3 text-box"> 
+                                        <option value="bw_1">5</option>
+                                        <option value="bw_2">10</option>
+                                        <option value="bw_3">15</option>
+                                        <option value="bw_4">20</option>
+                                </select>
+                            <label  class="col-sm-3"></label >
+                            <label  class="col-sm-3"></label >
+                        </div>
+                        <br>
+                        <div class="row">
+                            <label  class="col-sm-3 parag-1">Number of sectors</label >
+                            <input id="form2" name="tx_power" class="col-sm-3 text-box" required>
+                            <label  class="col-sm-3"></label >
+                            <label  class="col-sm-3"></label >
+                        </div>
+                        <br>
+                        <div class="row">
+                            <label  class="col-sm-3 parag-1">IPSec Required</label >
+                                <select id="form3" name="tx_lon" class="col-sm-3 text-box"> 
+                                        <option value="yes">Yes</option>
+                                        <option value="no">No</option>
+                                </select>
+                            <label  class="col-sm-3"></label >
+                            <label  class="col-sm-3"></label >
+                        </div>
+                        <br>
+                        <div class="form-group">
+                            <div class="col-sm-offset-2">
+                              <center><button type="submit" class="btn btn-default" >Calculate</button></center>
+                            </div>
+                          </div>
+                        
+
+                        <div class="line"></div>
+
+                        <h4 class="title-results"><center>Last-mile Link Capacity Calculation</center></h4>
+                        
+                        <br>
+                        <div class="row"> 
+                            <label class="col-sm-5 parag-1"></label>
+                            <label class="col-sm-2 parag-1"><center>Downlink</center></label>
+                            <label class="col-sm-2 parag-1"><center>Uplink</center></label >
+                        </div>
+                        <div class="row">
+                            <label  class="col-sm-5 parag-1">Sector Average Throughput (Mbps)</label >
+                            <input id='value1_1' name="tx_lat" type = "text" class="col-sm-2 result-cell" readonly>
+                            <input id='value1_2' name="tx_lat" type = "text" class="col-sm-2 result-cell" readonly>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <label  class="col-sm-5 parag-1">Cell Aggregated Throughput (Mbps)</label >
+                            <input id='value2_1' name="tx_lat" type = "text" class="col-sm-2 result-cell" readonly>
+                            <input id='value2_2' name="tx_lat" type = "text" class="col-sm-2 result-cell" readonly>
+                        </div>
+                        
+                        <div>
+                            <label  id="ley2" class="col-sm-12">*Average to Peak Ratio = 4</label >
+                        </div>
+                        <br><br>
+                        <div class="row">
+                            <label  class="col-sm-5 parag-1">Last-mile Capacity (Mbps)</label >
+                            <input id='value3' name="tx_lat" type = "text" class="col-sm-2 result-cell" readonly>
+                        </div>
+                        <div class="line"></div>
+
+                        <h4 class="title-results"><center>Aggregation Link Capacity Calculation</center></h4>
+                        <br>
+                        <div class="row">
+                            <label  class="col-sm-5 parag-1">Number of Aggregated Cells</label >
+                            <input id="form4" name="tx_power" class="col-sm-2 in-box" required>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <label  class="col-sm-5 parag-1">Overbooking Factor in Aggregation</label >
+                            <input id="form5" name="tx_power" class="col-sm-2 in-box" required>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <label  class="col-sm-5 parag-1">Aggregation Capacity (Mbps)</label >
+                            <input id='value4' name="tx_lat" type = "text" class="col-sm-2  result-cell" readonly>
+                        </div>
+
+                        
+                    </form>
+                    <div id="error"></div>
+
+                    <img class="img-grande" src="images/widgets/widget4_1.png" alt="Smiley face" style="padding-top: 20px" height="200" width="5">
+                    <br><br><br>
+                    <img class="img-grande" src="images/widgets/widget4_2.png" alt="Smiley face" style="padding-top: 20px" height="200" width="5">
+                    <br>
+                    <br>
+                    <img class="img-grande" src="images/widgets/widget4_3.png" alt="Smiley face" style="padding-top: 20px" height="200" width="5">                    
+                    <img class="img-grande" src="images/widgets/widget4_4.png" alt="Smiley face" style="padding-top: 20px" height="200" width="5">
+
+                </div>
+            </div>
+        </div>
+
+        <!-- jQuery CDN border-left: 2px solid gray;-->
+         <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+         <!-- Bootstrap Js CDN -->
+         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+         <script type="text/javascript">
+             
+             var formulario2 = document.getElementsByName('forchi')[0],
+                elementos = formulario2.elements,
+                boton = document.getElementById('btn');         
+            
+
+            formulario2.addEventListener('submit',function(evt){
+                evt.preventDefault();
+
+                var form1_var = formulario2.form1.value;
+                var form2_var = Number(formulario2.form2.value);
+                var form3_var = formulario2.form3.value;
+                var form4_var = Number(formulario2.form4.value);
+                var form5_var = Number(formulario2.form5.value);
+               
+                var value1_1_int;
+                var value1_2_int;
+                if (form1_var == 'bw_1'){
+                    value1_1_int = 6;
+                    value1_2_int = 3;
+                } else if(form1_var == 'bw_2'){
+                    value1_1_int = 13;
+                    value1_2_int = 7;
+                } else if(form1_var == 'bw_3'){
+                    value1_1_int = 20;
+                    value1_2_int = 10;
+                } else if(form1_var == 'bw_4'){
+                    value1_1_int = 26;
+                    value1_2_int = 14;
+                }
+
+                var value2_1_int = Math.max(value1_1_int * form2_var, value1_1_int * 4);
+                var value2_2_int = Math.max(value1_2_int * form2_var, value1_2_int * 4);
+                var value3_int;
+
+                if(form3_var == 'yes'){
+                    value3_int = Math.max(value2_1_int,value2_2_int) * 1.28;
+                } else if(form3_var == 'no'){
+                    value3_int = Math.max(value2_1_int,value2_2_int) * 1.14;
+                }
+
+                var value4_int = value3_int*form4_var*(1/form5_var)
+
+                document.getElementById("value1_1").value = value1_1_int;
+                document.getElementById("value1_2").value = value1_2_int;
+                document.getElementById("value2_1").value = value2_1_int;
+                document.getElementById("value2_2").value = value2_2_int;
+                document.getElementById("value3").value = value3_int;
+                document.getElementById("value4").value = value4_int;
+                
+                
+            });
+
+         </script>
+    </body>
+</html>
