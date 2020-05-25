@@ -21,7 +21,7 @@
         <ul class="barra_superior">
             <li class="li_superior"><a class="active" href="Home.html">Home</a></li>
             <li class="li_superior"><a href="comming_soon/comming-soon.html">About</a></li>
-            <li class="topnav-right"><a href="comming_soon/comming-soon.html">Widgets</a></li>
+            
             <li class="topnav-right"><a href="#" onclick="switchContent('#e2e')">E2E Process Flow</a></li>
             <li class="topnav-right"><a href="#" onclick="switchContent('#fm')">Function & Methodologies</a></li>
             <li class="topnav-right"><a href="#" onclick="switchContent('#hld')" >HLD Fundamentals</a></li>
@@ -153,10 +153,17 @@
                                     &#187 Strategic Plan & Scope
                                 </a>
                             </li>
-                            <li>
-                                <a href="#">
+                            <li  class="active">
+                                <a href="#HLNA" data-toggle="collapse" aria-expanded="false">
                                     &#187 High Level Network Architecture
                                 </a>
+                                <ul class="list-unstyled collapse" id="HLNA">
+                                    <li><a href="ran_hld_architecture.html"style="margin-left:2em">&bull; RAN Architecture</a></li>
+                                    <li><a href="comming_soon/comming-soon.html" style="margin-left:2em">&bull; TX & IP Architecture</a></li>
+                                    <li><a href="comming_soon/comming-soon.html" style="margin-left:2em"> &bull; Core Architecture</a></li>
+                                    <li><a href="comming_soon/comming-soon.html" style="margin-left:2em"> &bull; Network Monitoring</a></li>
+                                    <li><a href="comming_soon/comming-soon.html" style="margin-left:2em"> &bull; Engineering Specifications</a></li>
+                                </ul>
                             </li>
                             <li class="active">
                                 <a href="#homeSubmenu"  class="panel-collapse" data-toggle="collapse">
@@ -601,7 +608,7 @@
                             with fiber-optic transport.</p>
                             
                             <p class="normal-text">The fundamental aspects of fiber
-                            optic technology design are discussed in the <a class="a_link" href="comming_soon/comming-soon.html" href="Primer_On_Fiber_Optic_Tech">Primer on Fiber Optic Technologies Principles</a> document.</p>
+                            optic technology design are discussed in the <a class="a_link" href="https://github.com/teleworxllc/NaaSRunBook/tree/gh-pages/Network%20Design/Primers/Fiber_Optic_Technologies_Principles.pdf">Primer on Fiber Optic Technologies Principles</a> document.</p>
                             
                             <h3><a>2.3.2
                             Microwave Technology</a></h3>
@@ -824,12 +831,6 @@
                             connectivity problems should be rare. In order to achieve this, a capacity
                             planning analysis must be performed to determine the traffic that the transport
                             network must support. </p>
-                            
-                            <p class="normal-text">The fundamental aspects of
-                            Capacity Planning are discussed in the <a class="a_link" href="comming_soon/comming-soon.html" href="">Primer
-                            on Capacity Planning Principles</a> document
-                            and further detail regarding the capacity forecast process is provided in
-                            Section 3.</p>
                             
                             <br><h2><a class="titulo-h2 anchor-bum" name="item-2-6">2.6
                             Transport Solution Definition</a></h2>
@@ -2140,7 +2141,7 @@
                             characteristics of the link. </p>
                             
                             <p class="normal-text">The availability
-                            calculations can be performed using the <a class="a_link" href="tx_hld_widget_2.html" >Tx
+                            calculations can be performed using the <a class="a_link" href="tx_hld_widget_3.html" >Tx
                             Network Availability Calculation Widget.</a></p>
                             
                             <p class="normal-text"></p>
