@@ -505,6 +505,25 @@ AGREGADO
     min-height: 100vh;
 }
 
+#box-1 {
+    display: block;
+    padding: 20px;
+}
+
+#box-2 {
+    display: block;
+    padding: 20px;
+}
+
+#box-3 {
+    display: block;
+    padding: 20px;
+}
+
+#box-4 {
+    display: block;
+    padding: 20px;
+}
 .caja_box {
     display: inline-block; 
     width: 100%;

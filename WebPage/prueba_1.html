@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+        <title>RunBook - Widget</title>
+
+         <!-- Bootstrap CSS CDN -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <!-- Our Custom CSS -->
+        <link rel="stylesheet" href="style2.css">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        
+    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+	</head>
+		
+    <body onscroll="updateSection()">
+
+    <div class >
+        <ul class="barra_superior">
+            <li class="li_superior"><a class="active" href="Home.html">Home</a></li>
+            <li class="li_superior"><a href="comming_soon/comming-soon.html">About</a></li>
+        </ul>
+    </div>
+
+        <div class="wrapper-2">
+            <!-- Sidebar Holder -->
+            <nav id="sidebar">
+                <div class="sidebar-header">
+                    <h3>NaaS RunBook</h3>
+                    <!--strong>NaaS</strong-->
+                    <img src="smiley.png" alt="Go to W3Schools!" width="42" height="42" border="0">
+                </div>
+
+                <ul class="list-unstyled components">
+                    <li>
+                        <a href="#runbookSubmenu" data-toggle="collapse" aria-expanded="false">
+                            <i class="glyphicon glyphicon-option-horizontal"></i>
+                            RunBook Modules
+                        </a>
+                        <ul class="collapse list-unstyled" id="runbookSubmenu">
+                            <li>
+                                <a href="#">
+                                    Strategic Plan & Scope
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    High Level Network Architecture
+                                </a>
+                            </li>
+                            <li class="active">
+                                <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false">
+                                    Network Design
+                                </a>
+                                <ul class="collapse list-unstyled" id="homeSubmenu">
+                                    <li><a href="#transportMenu" data-toggle="collapse" aria-expanded="false">RAN</a></li>
+                                        <ul class="panel-collapse collapse" id="transportMenu">
+                                            <li><a href="ran_hld_module.html">  RAN HLD Module</a></li>
+                                        </ul>
+                                    <li><a href="#transportMenu2" data-toggle="collapse" aria-expanded="false">Transport</a></li>
+                                        <ul class="panel-collapse collapse" id="transportMenu2">
+                                            <li><a href="tx_hld_module.html">  Tx Network HLD</a></li>
+                                        </ul>
+                                    <li><a href="#">Core</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#deployment_m" data-toggle="collapse" aria-expanded="false">
+                                    &#187 Deployment
+                                </a>
+                                <ul class="list-unstyled collapse" id="deployment_m">
+                                    <li><a href="deployment_mgmt.html"style="margin-left:2em">&bull; Deployment Mgmt</a></li>
+                                    <li><a href="#"style="margin-left:2em">&bull; Site Survey</a></li>
+                                    <li><a href="#"style="margin-left:2em">&bull; Construction</a></li>
+                                    <li><a href="#"style="margin-left:2em">&bull; I & C</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    O & M
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Field Maintenance
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Post-Launch Engineering
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Supply Chain Management
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#engagementSubmenu" data-toggle="collapse" aria-expanded="false">
+                            <i class="glyphicon glyphicon-option-horizontal"></i>
+                            Methods of Engagement
+                        </a>
+                        <ul class="collapse list-unstyled" id="engagementSubmenu">
+                            <li><a href="#">Primer</a></li>
+                            <li><a href="#">Process Definition</a></li>
+                            <li><a href="#">Templates</a></li>
+                            <!--li><a href="friss.html">Widgets</a></li-->
+                                             
+                            <li class="active">
+                                <a href="#homeSubmenu22" data-toggle="collapse" aria-expanded="false">
+                                    Widgets
+                                </a>
+                                <ul class="collapse list-unstyled" id="homeSubmenu22">
+                                    <li><a href="ran_hld_widget_1.html">RAN - Capacity-Based</a></li>
+                                    <li><a href="ran_hld_widget_2.html">  RAN - Coverage-Based</a></li>
+                                    <li><a href="tx_hld_widget_1.html"> Tx - Capacity Forecast</a></li>
+                                    <li><a href="tx_hld_widget_2.html">  Tx - Availability FO</a></li>
+<li><a href="tx_hld_widget_3.html" style="margin-left:2em"> Tx - Availability MW</a></li>
+<li><a href="tx_hld_widget_4.html" style="margin-left:2em">  Tx – MW Analysis</a></li>
+<li><a href="core_hld_widget_1.html" style="margin-left:2em">  Core - Capacity Planning</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="comming_soon/comming-soon.html">
+                            <i class="glyphicon glyphicon-paperclip"></i>
+                            FAQ
+                        </a>
+                    </li>
+                    <li>
+                        <a href="comming_soon/comming-soon.html">
+                            <i class="glyphicon glyphicon-send"></i>
+                            Contact
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+            <!-- Page Content Holder -->
+            <div id="content">
+                <h2>Tx & IP Architecture</h2>
+                <p class="normal-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                <br>
+                
+                <div class="caja_box">
+                    <center><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalQuickView">Input</button></center>
+                    <form class="form-horizontal" action="" name="forchi" id="formulario">
+
+                        
+                          <!-- Modal: modalQuickView -->
+                          <div class="modal fade" id="modalQuickView" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-lg" role="document">
+                              <div class="modal-content">
+                                <div class="modal-body">
+
+                                    <h4 class="title-results" style="border-style: solid;background-color:#005777;color:#fff"><center>1. Network Segments</center></h4>           
+                                    <div class="row">
+                                        <label class="col-sm-1"></label>
+                                        <p  class="col-sm-6">1.1. Aproximately number of base stations</p>
+                                        <label class="col-sm-2"></label>
+                                            <select id="form1" name="tx_lon" class="col-sm-2 text-box"> 
+                                                    <option value="slect_1">I don't know</option>
+                                                    <option value="slect_2">More than 50</option>
+                                                    <option value="slect_3">0 -50</option>
+                                            </select>
+                                        <label  class="col-sm-2"></label >
+                                    </div>
+                                    <div class="row">
+                                        <label class="col-sm-1"></label>
+                                        <p  class="col-sm-6">1.2. Is a  3rd party network will be used?</p>
+                                        <label class="col-sm-2"></label>
+                                            <select id="form2" name="tx_lon" class="col-sm-2 text-box"> 
+                                                    <option value="slect_1">Yes</option>
+                                                    <option value="slect_2">No</option>
+                                            </select>
+                                        <label  class="col-sm-2"></label >
+                                    </div>
+
+                                    <h4 class="title-results" style="border-style: solid;background-color:#005777;color:#fff"><center>2. IP Protocol Selection</center></h4>           
+                                    <div class="row">
+                                        <label class="col-sm-1"></label>
+                                        <p  class="col-sm-6">2.1 How many VLANs wll be used?</p>
+                                        <label class="col-sm-2"></label>
+                                            <select id="form3" name="tx_lon" class="col-sm-2 text-box"> 
+                                                    <option value="slect_1">4</option>
+                                                    <option value="slect_2">3</option>
+                                                    <option value="slect_3">2</option>
+                                                    <option value="slect_4">1</option>
+                                            </select>
+                                        <label  class="col-sm-2"></label >
+                                    </div>
+
+                                    <h4 class="title-results" style="border-style: solid;background-color:#005777;color:#fff"><center>3. Redundancy and Fault Detection Mechanisms</center></h4>           
+                                    <div class="row">
+                                        <label class="col-sm-1"></label>
+                                        <p  class="col-sm-6">3.1. What is the level of availability in the network</p>
+                                        <label class="col-sm-2"></label>
+                                            <select id="form4" name="tx_lon" class="col-sm-2 text-box"> 
+                                                    <option value="slect_1">Medium (At least 99.9% in each segment)</option>
+                                                    <option value="slect_2">High (At least 99.99% in each segment)</option>
+                                            </select>
+                                        <label  class="col-sm-2"></label >
+                                    </div>
+
+                                    <h4 class="title-results" style="border-style: solid;background-color:#005777;color:#fff"><center>4. Additional Architectural Design Considerations</center></h4>           
+                                    <div class="row">
+                                        <label class="col-sm-1"></label>
+                                        <p  class="col-sm-7">4.1 Is an untrusted network in the traffic path? (e.g. 3rd party network)</p>
+                                        <label class="col-sm-1"></label>
+                                            <select id="form5" name="tx_lon" class="col-sm-2 text-box"> 
+                                                    <option value="slect_1">Yes</option>
+                                                    <option value="slect_2">No</option>
+                                            </select>
+                                        <label  class="col-sm-2"></label >
+                                    </div>
+
+                                    <br>
+                                    <div class="form-group">
+                                        <center>
+                                            <button type="submit" class="btn btn-default" >Calculate</button>
+                                        </center>
+                                    </div>  
+
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                    </form>
+
+                    <div id="error"></div>
+                </div>
+
+            <section id="uno-A" hidden>
+                <div id="box-1"> 
+                    <h4 class="title-results" style="border-style: solid;background-color:#005777;color:#fff"><center>Network Segments Options</center></h4> 
+                    <img class="img-grande" src="images/widgets/wizard_IP/widget7_1_A.png" alt="Smiley face" style="padding-top: 20px" height="200" width="5">
+                </div>
+            </section>
+            <section id="uno-B" hidden>
+            <div id="box-1"> 
+                <h4 class="title-results" style="border-style: solid;background-color:#005777;color:#fff"><center>Network Segments Options</center></h4> 
+                <img class="img-grande" src="images/widgets/wizard_IP/widget7_1_B.png" alt="Smiley face" style="padding-top: 20px" height="200" width="5">
+            </div>
+            </section>
+            <section id="uno-C" hidden>
+                <div id="box-1"> 
+                    <h4 class="title-results" style="border-style: solid;background-color:#005777;color:#fff"><center>Network Segments Options</center></h4> 
+                    <img class="img-grande" src="images/widgets/wizard_IP/widget7_1_C.png" alt="Smiley face" style="padding-top: 20px" height="200" width="5">
+                </div>
+            </section>
+
+
+            <section id="dos-A" hidden>
+                <div id="box-1"> 
+                    <h4 class="title-results" style="border-style: solid;background-color:#005777;color:#fff"><center>Network Segments Options</center></h4> 
+                    <img class="img-grande" src="images/widgets/wizard_IP/widget7_2_A.png" alt="Smiley face" style="padding-top: 20px" height="200" width="5">
+                </div>
+            </section>
+            <section id="dos-B" hidden>
+            <div id="box-1"> 
+                <h4 class="title-results" style="border-style: solid;background-color:#005777;color:#fff"><center>Network Segments Options</center></h4> 
+                <img class="img-grande" src="images/widgets/wizard_IP/widget7_2_B.png" alt="Smiley face" style="padding-top: 20px" height="200" width="5">
+            </div>
+            </section>
+            <section id="dos-C" hidden>
+                <div id="box-1"> 
+                    <h4 class="title-results" style="border-style: solid;background-color:#005777;color:#fff"><center>Network Segments Options</center></h4> 
+                    <img class="img-grande" src="images/widgets/wizard_IP/widget7_2_C.png" alt="Smiley face" style="padding-top: 20px" height="200" width="5">
+                </div>
+            </section>
+
+
+            <section id="tres-A" hidden>
+                <div id="box-1"> 
+                    <h4 class="title-results" style="border-style: solid;background-color:#005777;color:#fff"><center>Network Segments Options</center></h4> 
+                    <img class="img-grande" src="images/widgets/wizard_IP/widget7_3_A.png" alt="Smiley face" style="padding-top: 20px" height="200" width="5">
+                </div>
+            </section>
+            <section id="tres-B" hidden>
+                <div id="box-1"> 
+                    <h4 class="title-results" style="border-style: solid;background-color:#005777;color:#fff"><center>Network Segments Options</center></h4> 
+                    <img class="img-grande" src="images/widgets/wizard_IP/widget7_3_B.png" alt="Smiley face" style="padding-top: 20px" height="200" width="5">
+                </div>
+            </section>
+            <section id="tres-C" hidden>
+                <div id="box-1"> 
+                    <h4 class="title-results" style="border-style: solid;background-color:#005777;color:#fff"><center>Network Segments Options</center></h4> 
+                    <img class="img-grande" src="images/widgets/wizard_IP/widget7_3_C.png" alt="Smiley face" style="padding-top: 20px" height="200" width="5">
+                </div>
+            </section>
+            <section id="tres-D" hidden>
+                <div id="box-1"> 
+                    <h4 class="title-results" style="border-style: solid;background-color:#005777;color:#fff"><center>Network Segments Options</center></h4> 
+                    <img class="img-grande" src="images/widgets/wizard_IP/widget7_3_D.png" alt="Smiley face" style="padding-top: 20px" height="200" width="5">
+                </div>
+            </section>
+
+
+            <section id="cuatro-A" hidden>
+                <div id="box-1"> 
+                    <h4 class="title-results" style="border-style: solid;background-color:#005777;color:#fff"><center>Network Segments Options</center></h4> 
+                    <img class="img-grande" src="images/widgets/wizard_IP/widget7_4_A.png" alt="Smiley face" style="padding-top: 20px" height="200" width="5">
+                </div>
+            </section>
+            <section id="cuatro-B" hidden>
+                <div id="box-1"> 
+                    <h4 class="title-results" style="border-style: solid;background-color:#005777;color:#fff"><center>Network Segments Options</center></h4> 
+                    <img class="img-grande" src="images/widgets/wizard_IP/widget7_4_B.png" alt="Smiley face" style="padding-top: 20px" height="200" width="5">
+                </div>
+            </section>
+            <section id="cuatro-C" hidden>
+                <div id="box-1"> 
+                    <h4 class="title-results" style="border-style: solid;background-color:#005777;color:#fff"><center>Network Segments Options</center></h4> 
+                    <img class="img-grande" src="images/widgets/wizard_IP/widget7_4_C.png" alt="Smiley face" style="padding-top: 20px" height="200" width="5">
+                </div>
+            </section>
+            <section id="cuatro-D" hidden>
+                <div id="box-1"> 
+                    <h4 class="title-results" style="border-style: solid;background-color:#005777;color:#fff"><center>Network Segments Options</center></h4> 
+                    <img class="img-grande" src="images/widgets/wizard_IP/widget7_4_D.png" alt="Smiley face" style="padding-top: 20px" height="200" width="5">
+                </div>
+            </section>
+
+
+
+            <section id="cinco-A" hidden>
+                <div id="box-1"> 
+                    <h4 class="title-results" style="border-style: solid;background-color:#005777;color:#fff"><center>Network Segments Options</center></h4> 
+                    <img class="img-grande" src="images/widgets/wizard_IP/widget7_5_A.png" alt="Smiley face" style="padding-top: 20px" height="200" width="5">
+                </div>
+            </section>
+            <section id="cinco-B" hidden>
+                <div id="box-1"> 
+                    <h4 class="title-results" style="border-style: solid;background-color:#005777;color:#fff"><center>Network Segments Options</center></h4> 
+                    <img class="img-grande" src="images/widgets/wizard_IP/widget7_5_B.png" alt="Smiley face" style="padding-top: 20px" height="200" width="5">
+                </div>
+            </section>
+            <section id="cinco-C" hidden>
+                <div id="box-1"> 
+                    <h4 class="title-results" style="border-style: solid;background-color:#005777;color:#fff"><center>Network Segments Options</center></h4> 
+                    <img class="img-grande" src="images/widgets/wizard_IP/widget7_5_C.png" alt="Smiley face" style="padding-top: 20px" height="200" width="5">
+                </div>
+            </section>
+
+            </div>
+        </div>
+
+        <!-- jQuery CDN border-left: 2px solid gray;-->
+         <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+         <!-- Bootstrap Js CDN -->
+         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+         <script type="text/javascript">
+
+            $(document).ready(function() {
+            $('.mdb-select').materialSelect();
+            });
+             
+            
+            function switchContent(selector){
+                $("#uno-A").hide();
+                $("#uno-B").hide();
+                $("#uno-C").hide();
+                $(selector).show();
+                tab = selector;
+            }
+
+            function switchContent2(selector){
+                $("#dos-A").hide();
+                $("#dos-B").hide();
+                $("#dos-C").hide();
+                $(selector).show();
+                tab = selector;
+            }
+
+            function switchContent3(selector){
+                $("#tres-A").hide();
+                $("#tres-B").hide();
+                $("#tres-C").hide();
+                $("#tres-D").hide();
+                $(selector).show();
+                tab = selector;
+            }
+
+            function switchContent4(selector){
+                $("#cuatro-A").hide();
+                $("#cuatro-B").hide();
+                $("#cuatro-C").hide();
+                $("#cuatro-D").hide();
+                $(selector).show();
+                tab = selector;
+            }
+
+            function switchContent5(selector){
+                $("#cinco-A").hide();
+                $("#cinco-B").hide();
+                $("#cinco-C").hide();
+                $(selector).show();
+                tab = selector;
+            }
+
+            var formulario2 = document.getElementsByName('forchi')[0],
+               elementos = formulario2.elements,
+               boton = document.getElementById('btn');         
+           
+
+           formulario2.addEventListener('submit',function(evt){
+               evt.preventDefault();
+
+               var form1_var = formulario2.form1.value;
+               var form2_var = formulario2.form2.value;
+               var form3_var = formulario2.form3.value;
+               var form4_var = formulario2.form4.value;
+               var form5_var = formulario2.form5.value;
+
+
+               if (form1_var == 'slect_1'){
+                    switchContent('#uno-A');
+                    switchContent2('#dos-A');
+               } else if(form1_var == 'slect_2' && form2_var == 'slect_1'){
+                    switchContent('#uno-A');
+                    switchContent2('#dos-A');
+               } else if(form1_var == 'slect_2' && form2_var == 'slect_2'){
+                    switchContent('#uno-C');
+                    switchContent2('#dos-C');
+               } else if(form1_var == 'slect_3'){
+                    switchContent('#uno-B');
+                    switchContent2('#dos-B');
+               } 
+
+
+               if (form3_var == 'slect_1'){
+                    switchContent3('#tres-A');
+               } else if(form3_var == 'slect_2'){
+                    switchContent3('#tres-B');
+               } else if(form3_var == 'slect_3'){
+                    switchContent3('#tres-C');
+               } else if(form3_var == 'slect_4'){
+                    switchContent3('#tres-D');
+               } 
+
+
+
+               if (form1_var == 'slect_1' && form4_var == 'slect_1'){
+                    switchContent4('#cuatro-A');
+               } else if(form1_var == 'slect_2' && form4_var == 'slect_1'){
+                    switchContent4('#cuatro-A');
+               } else if(form1_var == 'slect_1' && form4_var == 'slect_2'){
+                    switchContent4('#cuatro-B');
+               } else if(form1_var == 'slect_2' && form4_var == 'slect_2'){
+                    switchContent4('#cuatro-B');
+               } else if(form1_var == 'slect_3' && form4_var == 'slect_1'){
+                    switchContent4('#cuatro-C');
+               } else if(form1_var == 'slect_3' && form4_var == 'slect_2'){
+                    switchContent4('#cuatro-D');
+               } 
+
+               if (form2_var == 'slect_1' && form5_var == 'slect_1'){
+                    switchContent5('#cinco-B');
+               } else if(form2_var == 'slect_1' && form5_var == 'slect_2'){
+                    switchContent5('#cinco-A');
+               } else if(form2_var == 'slect_2'){
+                    switchContent5('#cinco-C');
+               }
+
+               /*document.getElementById("value1_1").value = value1_1_int;
+               document.getElementById("value1_2").value = value1_2_int;
+               document.getElementById("value2_1").value = value2_1_int;
+               document.getElementById("value2_2").value = value2_2_int;
+               document.getElementById("value3").value = value3_int;
+               document.getElementById("value4").value = value4_int;*/
+               
+               
+           });
+
+        </script>
+    </body>
+</html>
