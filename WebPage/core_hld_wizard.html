@@ -1,0 +1,1519 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+        <title>RunBook - Widget</title>
+
+         <!-- Bootstrap CSS CDN -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <!-- Our Custom CSS -->
+        <link rel="stylesheet" href="style2.css">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        
+    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+	</head>
+		
+    <body onscroll="updateSection()">
+
+    <div class >
+        <ul class="barra_superior">
+            <li class="li_superior"><a class="active" href="Home.html">Home</a></li>
+            <li class="li_superior"><a href="comming_soon/comming-soon.html">About</a></li>
+        </ul>
+    </div>
+
+        <div class="wrapper-2">
+            <!-- Sidebar Holder -->
+            <nav id="sidebar">
+                <div class="sidebar-header">
+                    <h3>NaaS RunBook</h3>
+                    <!--strong>NaaS</strong-->
+                    <img src="smiley.png" alt="Go to W3Schools!" width="42" height="42" border="0">
+                </div>
+
+                <ul class="list-unstyled components">
+                    <li>
+                        <a href="#runbookSubmenu" data-toggle="collapse" aria-expanded="false">
+                            <i class="glyphicon glyphicon-option-horizontal"></i>
+                            RunBook Modules
+                        </a>
+                        <ul class="collapse list-unstyled" id="runbookSubmenu">
+                            <li>
+                                <a href="#">
+                                    Strategic Plan & Scope
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    High Level Network Architecture
+                                </a>
+                            </li>
+                            <li class="active">
+                                <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false">
+                                    Network Design
+                                </a>
+                                <ul class="collapse list-unstyled" id="homeSubmenu">
+                                    <li><a href="#transportMenu" data-toggle="collapse" aria-expanded="false">RAN</a></li>
+                                        <ul class="panel-collapse collapse" id="transportMenu">
+                                            <li><a href="ran_hld_module.html">  RAN HLD Module</a></li>
+                                        </ul>
+                                    <li><a href="#transportMenu2" data-toggle="collapse" aria-expanded="false">Transport</a></li>
+                                        <ul class="panel-collapse collapse" id="transportMenu2">
+                                            <li><a href="tx_hld_module.html">  Tx Network HLD</a></li>
+                                        </ul>
+                                    <li><a href="#">Core</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#deployment_m" data-toggle="collapse" aria-expanded="false">
+                                    &#187 Deployment
+                                </a>
+                                <ul class="list-unstyled collapse" id="deployment_m">
+                                    <li><a href="deployment_mgmt.html"style="margin-left:2em">&bull; Deployment Mgmt</a></li>
+                                    <li><a href="#"style="margin-left:2em">&bull; Site Survey</a></li>
+                                    <li><a href="#"style="margin-left:2em">&bull; Construction</a></li>
+                                    <li><a href="#"style="margin-left:2em">&bull; I & C</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    O & M
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Field Maintenance
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Post-Launch Engineering
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Supply Chain Management
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#engagementSubmenu" data-toggle="collapse" aria-expanded="false">
+                            <i class="glyphicon glyphicon-option-horizontal"></i>
+                            Methods of Engagement
+                        </a>
+                        <ul class="collapse list-unstyled" id="engagementSubmenu">
+                            <li><a href="#">Primer</a></li>
+                            <li><a href="#">Process Definition</a></li>
+                            <li><a href="#">Templates</a></li>
+                            <!--li><a href="friss.html">Widgets</a></li-->
+                                             
+                            <li class="active">
+                                <a href="#homeSubmenu22" data-toggle="collapse" aria-expanded="false">
+                                    Widgets
+                                </a>
+                                <ul class="collapse list-unstyled" id="homeSubmenu22">
+                                    <li><a href="ran_hld_widget_1.html">RAN - Capacity-Based</a></li>
+                                    <li><a href="ran_hld_widget_2.html">  RAN - Coverage-Based</a></li>
+                                    <li><a href="tx_hld_widget_1.html"> Tx - Capacity Forecast</a></li>
+                                    <li><a href="tx_hld_widget_2.html">  Tx - Availability FO</a></li>
+                                    <li><a href="tx_hld_widget_3.html" style="margin-left:2em"> Tx - Availability MW</a></li>
+                                    <li><a href="tx_hld_widget_4.html" style="margin-left:2em">  Tx – MW Analysis</a></li>
+                                    <li><a href="core_hld_widget_1.html" style="margin-left:2em">  Core - Capacity Planning</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="comming_soon/comming-soon.html">
+                            <i class="glyphicon glyphicon-paperclip"></i>
+                            FAQ
+                        </a>
+                    </li>
+                    <li>
+                        <a href="comming_soon/comming-soon.html">
+                            <i class="glyphicon glyphicon-send"></i>
+                            Contact
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+            <!-- Page Content Holder -->
+            <div id="content">
+                <h2>Tx & IP Architecture</h2>
+                <p class="normal-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                <br>
+                
+                <div class="caja_box">
+                    <center><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalQuickView">Launch</button></center>
+                    <center><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalQuickView_2">Launch</button></center>
+                    
+                    <form class="form-horizontal" action="" name="forchi" id="formulario">      
+                          <!-- Modal: modalQuickView -->
+                          <div class="modal fade" id="modalQuickView" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-lg" role="document">
+                              <div class="modal-content">
+                                <div class="modal-body">
+
+                                    <h4 class="title-results" style="border-style: solid;background-color:#005777;color:#fff"><center>NaaS Customers</center></h4>           
+                                    <div class="row">
+                                        <label class="col-sm-1"></label>
+                                        <p  class="col-sm-6">MNO</p>
+                                        <label class="col-sm-2"></label>
+                                            <select id="form1" name="tx_lon" class="col-sm-2 text-box"> 
+                                                    <option value="slect_1">Yes</option>
+                                                    <option value="slect_2">No</option>
+                                            </select>
+                                        <label  class="col-sm-2"></label >
+                                    </div>
+                                    <div class="row">
+                                        <label class="col-sm-1"></label>
+                                        <p  class="col-sm-6">Full MVNO</p>
+                                        <label class="col-sm-2"></label>
+                                            <select id="form2" name="tx_lon" class="col-sm-2 text-box"> 
+                                                    <option value="slect_1">Yes</option>
+                                                    <option value="slect_2">No</option>
+                                            </select>
+                                        <label  class="col-sm-2"></label >
+                                    </div>
+
+                                    <div class="row">
+                                        <label class="col-sm-1"></label>
+                                        <p  class="col-sm-6">Light MVNO</p>
+                                        <label class="col-sm-2"></label>
+                                            <select id="form3" name="tx_lon" class="col-sm-2 text-box"> 
+                                                <option value="slect_1">Yes</option>
+                                                <option value="slect_2">No</option>
+                                            </select>
+                                        <label  class="col-sm-2"></label >
+                                    </div>
+
+                                    <div class="row">
+                                        <label class="col-sm-1"></label>
+                                        <p  class="col-sm-6">Brand Sellers</p>
+                                        <label class="col-sm-2"></label>
+                                            <select id="form4" name="tx_lon" class="col-sm-2 text-box"> 
+                                                <option value="slect_1">Yes</option>
+                                                <option value="slect_2">No</option>
+                                            </select>
+                                        <label  class="col-sm-2"></label >
+                                    </div>
+
+                                    <h4 class="title-results" style="border-style: solid;background-color:#005777;color:#fff"><center>Service to Offer</center></h4>           
+                                    <div class="row">
+                                        <label class="col-sm-1"></label>
+                                        <p  class="col-sm-6">Data</p>
+                                        <label class="col-sm-2"></label>
+                                            <select id="form5" name="tx_lon" class="col-sm-2 text-box"> 
+                                                <option value="slect_1">Yes</option>
+                                                <option value="slect_2">No</option>
+                                            </select>
+                                        <label  class="col-sm-2"></label >
+                                    </div>
+                                    <div class="row">
+                                        <label class="col-sm-1"></label>
+                                        <p  class="col-sm-6">Voice</p>
+                                        <label class="col-sm-2"></label>
+                                            <select id="form6" name="tx_lon" class="col-sm-2 text-box"> 
+                                                <option value="slect_1">Yes</option>
+                                                <option value="slect_2">No</option>
+                                            </select>
+                                        <label  class="col-sm-2"></label >
+                                    </div>
+                                    <div class="row">
+                                        <label class="col-sm-1"></label>
+                                        <p  class="col-sm-6">Roaming</p>
+                                        <label class="col-sm-2"></label>
+                                            <select id="form7" name="tx_lon" class="col-sm-2 text-box"> 
+                                                <option value="slect_1">Yes</option>
+                                                <option value="slect_2">No</option>
+                                            </select>
+                                        <label  class="col-sm-2"></label >
+                                    </div>
+
+
+                                    <h4 class="title-results" style="border-style: solid;background-color:#005777;color:#fff"><center>Interconnection Details</center></h4>           
+                                    <div class="row">
+                                        <label class="col-sm-1"></label>
+                                        <p  class="col-sm-6">Network Size</p>
+                                        <label class="col-sm-2"></label>
+                                            <select id="form8" name="tx_lon" class="col-sm-2 text-box"> 
+                                                <option value="slect_1">Small</option>
+                                                <option value="slect_2">Large</option>
+                                            </select>
+                                        <label  class="col-sm-2"></label >
+                                    </div>
+                                    <div class="row">
+                                        <label class="col-sm-1"></label>
+                                        <p  class="col-sm-6">Number of external connections</p>
+                                        <label class="col-sm-2"></label>
+                                            <select id="form9" name="tx_lon" class="col-sm-2 text-box"> 
+                                                <option value="slect_1">1 or 2</option>
+                                                <option value="slect_2">More than 2</option>
+                                            </select>
+                                        <label  class="col-sm-2"></label >
+                                    </div>
+                                    <div class="row">
+                                        <label class="col-sm-1"></label>
+                                        <p  class="col-sm-6">Is the connection MPLS-based?</p>
+                                        <label class="col-sm-2"></label>
+                                            <select id="form10" name="tx_lon" class="col-sm-2 text-box"> 
+                                                <option value="slect_1">Yes</option>
+                                                <option value="slect_2">No</option>
+                                            </select>
+                                        <label  class="col-sm-2"></label >
+                                    </div>
+
+
+                                    <br>
+                                    <div class="form-group">
+                                        <center>
+                                            <button type="submit" class="btn btn-default" >Calculate</button>
+                                        </center>
+                                    </div>  
+
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                    </form>
+
+
+                    <form class="form-horizontal" action="" name="forchi_2" id="formulario_2">      
+                        <!-- Modal: modalQuickView -->
+                        <div class="modal fade" id="modalQuickView_2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                          <div class="modal-dialog modal-lg" role="document">
+                            <div class="modal-content">
+                              <div class="modal-body">
+
+                                    <h1 class="title-h1"><center>Full EPC-PCC deployment</center></h1>
+                                    <div class="row">
+                                        <label class="col-sm-1"></label>
+                                        <p  class="col-sm-6">Does the NaaS operator own a 3G core?</p>
+                                        <label class="col-sm-2"></label>
+                                            <select id="form1_1" name="tx_lon" class="col-sm-2 text-box"> 
+                                                <option value="slect_1">Yes</option>
+                                                <option value="slect_2">No</option>
+                                            </select>
+                                        <label  class="col-sm-2"></label >
+                                    </div>
+                                    <div class="row">
+                                        <label class="col-sm-1"></label>
+                                        <p  class="col-sm-6">Is the NaaS operator looking for a unified 3G/LTE core?</p>
+                                        <label class="col-sm-2"></label>
+                                            <select id="form1_2" name="tx_lon" class="col-sm-2 text-box"> 
+                                                <option value="slect_1">Yes</option>
+                                                <option value="slect_2">No</option>
+                                            </select>
+                                        <label  class="col-sm-2"></label >
+                                    </div>
+                                    <div class="row">
+                                        <label class="col-sm-1"></label>
+                                        <p  class="col-sm-6">What are the SGSN and GGSN capabilities?</p>
+                                        <label class="col-sm-2"></label>
+                                            <select id="form1_3" name="tx_lon" class="col-sm-2 text-box"> 
+                                                <option value="slect_1">No</option>
+                                                <option value="slect_2">S4-SGSN_SAE-GW</option>
+                                                <option value="slect_3">SGSN/MME_SAE-GW</option>
+                                            </select>
+                                        <label  class="col-sm-2"></label >
+                                    </div>
+                                    <div class="row">
+                                        <label class="col-sm-1"></label>
+                                        <p  class="col-sm-6">Does the NaaS operator own a 3G access network?</p>
+                                        <label class="col-sm-2"></label>
+                                            <select id="form1_4" name="tx_lon" class="col-sm-2 text-box" disabled> 
+                                                <option value="slect_1">Yes</option>
+                                                <option value="slect_2">No</option>
+                                            </select>
+                                        <label  class="col-sm-2"></label >
+                                    </div>
+                                    <div class="row">
+                                        <label class="col-sm-1"></label>
+                                        <p  class="col-sm-6">SGSN EPC-enabled capabilities?</p>
+                                        <label class="col-sm-2"></label>
+                                            <select id="form1_5" name="tx_lon" class="col-sm-2 text-box" disabled> 
+                                                <!--option value="">N/A</option-->
+                                                <option value="slect_1">Yes</option>
+                                                <option value="slect_2">No</option>
+                                            </select>
+                                        <label  class="col-sm-2"></label >
+                                    </div>
+
+                                  <h4 class="title-results" style="border-style: solid;background-color:#005777;color:#fff"><center>Billing Schema</center></h4>           
+                                  <div class="row">
+                                      <label class="col-sm-1"></label>
+                                      <p  class="col-sm-6">Pre-paid or credit based</p>
+                                      <label class="col-sm-2"></label>
+                                          <select id="form1_6" name="tx_lon" class="col-sm-2 text-box"> 
+                                                  <option value="slect_1">Yes</option>
+                                                  <option value="slect_2">No</option>
+                                          </select>
+                                      <label  class="col-sm-2"></label >
+                                  </div>
+                                  <div class="row">
+                                    <label class="col-sm-1"></label>
+                                    <p  class="col-sm-6">Charging data records based</p>
+                                    <label class="col-sm-2"></label>
+                                        <select id="form1_7" name="tx_lon" class="col-sm-2 text-box"> 
+                                                <option value="slect_1">Yes</option>
+                                                <option value="slect_2">No</option>
+                                        </select>
+                                    <label  class="col-sm-2"></label >
+                                </div>
+
+                                <h4 class="title-results" style="border-style: solid;background-color:#005777;color:#fff"><center>Deployment Schema</center></h4>           
+                                  <div class="row">
+                                      <label class="col-sm-1"></label>
+                                      <p  class="col-sm-6">Is the NaaS operator expecting to support Rich Communication Services (RCS)?</p>
+                                      <label class="col-sm-2"></label>
+                                          <select id="form1_8" name="tx_lon" class="col-sm-2 text-box"> 
+                                                  <option value="slect_1">Yes</option>
+                                                  <option value="slect_2">No</option>
+                                          </select>
+                                      <label  class="col-sm-2"></label >
+                                  </div>
+                                  <div class="row">
+                                    <label class="col-sm-1"></label>
+                                    <p  class="col-sm-6">Is the NaaS operator expecting to have several access networks spread out through different and distant geograhical locations?</p>
+                                    <label class="col-sm-2"></label>
+                                        <select id="form1_9" name="tx_lon" class="col-sm-2 text-box"> 
+                                                <option value="slect_1">Yes</option>
+                                                <option value="slect_2">No</option>
+                                        </select>
+                                    <label  class="col-sm-2"></label >
+                                </div>
+                                <div class="row">
+                                    <label class="col-sm-1"></label>
+                                    <p  class="col-sm-6">For Voice services, does NaaS operator have an agreement with an IMS provider?</p>
+                                    <label class="col-sm-2"></label>
+                                        <select id="form1_10" name="tx_lon" class="col-sm-2 text-box"> 
+                                                <option value="slect_1">Yes</option>
+                                                <option value="slect_2">No</option>
+                                        </select>
+                                    <label  class="col-sm-2"></label >
+                                </div>
+
+                                  <br>
+                                  <div class="form-group">
+                                      <center>
+                                          <button type="submit" id="btn_1" class="btn btn-default" >Calculate</button>
+                                      </center>
+                                  </div>  
+
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                    </form>
+
+                    <div id="error"></div>
+                </div>
+
+            <section id="uno-A" hidden>
+                <div id="box-1"> 
+                    <h4 class="title-results" style="border-style: solid;background-color:#005777;color:#fff;font-size: 30px;padding:0in 3.5pt 5pt 3.5pt"><center>EPC minimum deployment</center></h4> 
+                    <img class="img-grande" src="images/widgets/wizard_core/wizard_1_A.png" alt="Smiley face" style="padding-top: 20px" height="200" width="5">
+                </div>
+            </section>
+            <section id="uno-B" hidden>
+                <div id="box-1"> 
+                    <h4 class="title-results" style="border-style: solid;background-color:#005777;color:#fff;font-size: 30px;padding:0in 3.5pt 5pt 3.5pt"><center>Introducing new EPC nodes and interworking with legacy PS by Gn/Gp Interfaces</center></h4> 
+                    <img class="img-grande" src="images/widgets/wizard_core/wizard_1_B.png" alt="Smiley face" style="padding-top: 20px" height="200" width="5">
+                </div>
+            </section>
+            <section id="uno-C" hidden>
+                <div id="box-1"> 
+                    <h4 class="title-results" style="border-style: solid;background-color:#005777;color:#fff;font-size: 30px;padding:0in 3.5pt 5pt 3.5pt"><center>Introducing new EPC nodes and interworking with legacy PS by S3/S4 interfaces</center></h4> 
+                    <img class="img-grande" src="images/widgets/wizard_core/wizard_1_C.png" alt="Smiley face" style="padding-top: 20px" height="200" width="5">
+                </div>
+            </section>
+            <section id="uno-D" hidden>
+                <div id="box-1"> 
+                    <h4 class="title-results" style="border-style: solid;background-color:#005777;color:#fff;font-size: 30px;padding:0in 3.5pt 5pt 3.5pt"><center>Upgrading the existing PS core to support 2G/3G/LTE</center></h4> 
+                    <img class="img-grande" src="images/widgets/wizard_core/wizard_1_D.png" alt="Smiley face" style="padding-top: 20px" height="200" width="5">
+                </div>
+            </section>
+            <section id="uno-E" hidden>
+                <div id="box-1"> 
+                    <h4 class="title-results" style="border-style: solid;background-color:#005777;color:#fff;font-size: 30px;padding:0in 3.5pt 5pt 3.5pt"><center>New EPC deployment independent of the current  3G core</center></h4> 
+                    <img class="img-grande" src="images/widgets/wizard_core/wizard_1_E.png" alt="Smiley face" style="padding-top: 20px" height="200" width="5">
+                </div>
+            </section>
+            <section id="uno-F" hidden>
+                <div id="box-1"> 
+                    <h4 class="title-results" style="border-style: solid;background-color:#005777;color:#fff;font-size: 30px;padding:0in 3.5pt 5pt 3.5pt"><center>New EPC deployment</center></h4> 
+                    <img class="img-grande" src="images/widgets/wizard_core/wizard_1_F.png" alt="Smiley face" style="padding-top: 20px" height="200" width="5">
+                </div>
+            </section>
+            <section id="uno-G" hidden>
+                <div id="box-1"> 
+                    <h4 class="title-results" style="border-style: solid;background-color:#005777;color:#fff;font-size: 30px;padding:0in 3.5pt 5pt 3.5pt"><center>3G Access via Gn/Gp interfaces</center></h4> 
+                    <img class="img-grande" src="images/widgets/wizard_core/wizard_1_F.png" alt="Smiley face" style="padding-top: 20px" height="200" width="5">
+                </div>
+            </section>
+            <section id="uno-H" hidden>
+                <div id="box-1"> 
+                    <h4 class="title-results" style="border-style: solid;background-color:#005777;color:#fff;font-size: 30px;padding:0in 3.5pt 5pt 3.5pt"><center>3G Access via SGSN EPC-enabled</center></h4> 
+                    <img class="img-grande" src="images/widgets/wizard_core/wizard_1_F.png" alt="Smiley face" style="padding-top: 20px" height="200" width="5">
+                </div>
+            </section>
+
+
+            <section id="dos-A" hidden>
+                <div id="box-1"> 
+                    <h4 class="title-results" style="border-style: solid;background-color:#005777;color:#fff"><center>Architecture Description</center></h4> 
+                    <ul class="normal-text ul-iconos" style='margin-top:0in' start=1 type=1>
+                        <li>EPC elements to be deployed:</li>
+                        <ul style='margin-top:0in' type=circle>
+                            <li class="normal-text">MME</li>
+                            <li class="normal-text">SGW</li>
+                        </ul>
+                        <li>This architecture will enable the NaaS operator to control the mobility and sessions within the E-UTRAN.</li>
+                        <li>Minimize inversion but get full control of the RAN to serve MNOs and the full-MVNO market</li>
+                        <li>Using a home-routed roaming strategy, NaaS operator can rent its access network to those customers who want to expand its geographical coverage.</li>
+                        <li id="dos_li_1"></li>
+                        <li id="dos_li_2"></li>
+                        <li id="dos_li_3"></li>
+                    </ul>
+                </div>
+            </section>
+            <section id="dos-B" hidden>
+                <div id="box-1"> 
+                    <h4 class="title-results" style="border-style: solid;background-color:#005777;color:#fff"><center>Architecture Description</center></h4> 
+                    <ul class="normal-text ul-iconos" style='margin-top:0in' start=1 type=1>
+                        <li>EPC elements to be deployed:</li>
+                        <ul style='margin-top:0in' type=circle>
+                            <li class="normal-text">MME</li>
+                            <li class="normal-text">SGW</li>
+                            <li class="normal-text">PGW</li>
+                            <li class="normal-text">HSS</li>
+                        </ul>
+                        <li>PCC elements to be deployed:</li>
+                        <ul style='margin-top:0in' type=circle>
+                            <li class="normal-text">PCRF</li>
+                            <li class="normal-text">PCEF</li>
+                            <li class="normal-text">SPR</li>
+                            <li id="dos_b_li_1" class="normal-text"></li>
+                        </ul>
+                        <li>This deployment will enable the NaaS operator to support provisioning, monitoring, control and charging of IP data services.</li>
+                        <li>Provide services to MNOs and all the types of MVNOs.</li>
+                        <li>In this solution there is no impact on legacy or roaming networks, since no additional changes are needed on the network elements.</li>
+                        <li>NaaS operator can use a home-routed  or local-breakout roaming strategy as it best suits its customers, in order to rent its access network to those customers that want to expand its geographical coverage.</li>
+                        <li id="dos_b_li_2"></li>
+                        <li id="dos_b_li_3"></li>
+                        <li id="dos_b_li_4"></li>
+                        <li id="dos_b_li_5"></li>
+                        <li id="dos_b_li_6"></li>
+
+                    </ul>
+                </div>
+            </section>
+            <section id="dos-C" hidden>
+                <div id="box-1"> 
+                    <h4 class="title-results" style="border-style: solid;background-color:#005777;color:#fff"><center>Architecture Description</center></h4> 
+                    <ul class="normal-text ul-iconos" style='margin-top:0in' start=1 type=1>
+                        <li>EPC elements to be deployed:</li>
+                        <ul style='margin-top:0in' type=circle>
+                            <li class="normal-text">MME</li>
+                            <li class="normal-text">SGW</li>
+                            <li class="normal-text">PGW</li>
+                            <li class="normal-text">HSS</li>
+                        </ul>
+                        <li>PCC elements to be deployed:</li>
+                        <ul style='margin-top:0in' type=circle>
+                            <li class="normal-text">PCRF</li>
+                            <li class="normal-text">PCEF</li>
+                            <li class="normal-text">SPR</li>
+                            <li id="tres_c_li_1" class="normal-text"></li>
+                        </ul>
+                        <li>This deployment will enable the NaaS operator to support provisioning, monitoring, control and charging of IP data services.</li>
+                        <li>Provide services to MNOs and all the types of MVNOs.</li>
+                        <li>When deploying this architecture the NaaS operator will get all the benefits of the S3/S4 LTE-enhanced interfaces by the use of GTPv2 protocol, which among its optimization for LTE it includes reduction of excessive signaling (idle mode signaling reduction) or dual stack bearer support. However, this will be reflected in a bigger inversion.</li>
+                        <li>NaaS operator can use a home-routed  or local-breakout roaming strategy as it best suits its customers, in order to rent its access network to those customers that want to expand its geographical coverage.</li>
+                        <li id="tres_c_li_2"></li>
+                        <li id="tres_c_li_3"></li>
+                        <li id="tres_c_li_4"></li>
+                        <li id="tres_c_li_5"></li>
+                        <li id="tres_c_li_6"></li>
+    
+                    </ul>
+                </div>
+            </section>
+            <section id="dos-D" hidden>
+                <div id="box-1"> 
+                    <h4 class="title-results" style="border-style: solid;background-color:#005777;color:#fff"><center>Architecture Description</center></h4> 
+                    <ul class="normal-text ul-iconos" style='margin-top:0in' start=1 type=1>
+                        <li>EPC elements to be deployed:</li>
+                        <ul style='margin-top:0in' type=circle>
+                            <li class="normal-text">MME</li>
+                            <li class="normal-text">SGW</li>
+                            <li class="normal-text">PGW</li>
+                            <li class="normal-text">HSS</li>
+                        </ul>
+                        <li>PCC elements to be deployed:</li>
+                        <ul style='margin-top:0in' type=circle>
+                            <li class="normal-text">PCRF</li>
+                            <li class="normal-text">PCEF</li>
+                            <li class="normal-text">SPR</li>
+                            <li id="cuatro_d_li_1" class="normal-text"></li>
+                        </ul>
+                        <li>This deployment will enable the NaaS operator to support provisioning, monitoring, control and charging of IP data services.</li>
+                        <li>Provide services to MNOs and all the types of MVNOs.</li>
+                        <li>The SGSN will be upgraded to support the functionality of the SGSN and MME and the GGSN will be upgraded to support the functionality of the GGSN/SGW/PGW . This is a major HW/SW upgrade and may lead to serious impact on existing customers and will lead to full outage to the PS network.</li>
+                        <li>NaaS operator can use a home-routed  or local-breakout roaming strategy as it best suits its customers, in order to rent its access network to those customers that want to expand its geographical coverage.</li>
+                        <li id="cuatro_d_li_2"></li>
+                        <li id="cuatro_d_li_3"></li>
+                        <li id="cuatro_d_li_4"></li>
+                        <li id="cuatro_d_li_5"></li>
+                        <li id="cuatro_d_li_6"></li>
+    
+                    </ul>
+                </div>
+            </section>
+            <section id="dos-E" hidden>
+                <div id="box-1"> 
+                    <h4 class="title-results" style="border-style: solid;background-color:#005777;color:#fff"><center>Architecture Description</center></h4> 
+                    <ul class="normal-text ul-iconos" style='margin-top:0in' start=1 type=1>
+                        <li>EPC elements to be deployed:</li>
+                        <ul style='margin-top:0in' type=circle>
+                            <li class="normal-text">MME</li>
+                            <li class="normal-text">SGW</li>
+                            <li class="normal-text">PGW</li>
+                            <li class="normal-text">HSS</li>
+                        </ul>
+                        <li>PCC elements to be deployed:</li>
+                        <ul style='margin-top:0in' type=circle>
+                            <li class="normal-text">PCRF</li>
+                            <li class="normal-text">PCEF</li>
+                            <li class="normal-text">SPR</li>
+                            <li id="cinco_e_li_1" class="normal-text"></li>
+                        </ul>
+                        <li>This deployment will enable the NaaS operator to support provisioning, monitoring, control and charging of IP data services. <a style="color: red;">It is not recommended to deploy independent LTE and 3G cores, it will complicate operations, and results in a bigger inversion compared to an unified LTE-3G core.</a></li>
+                        <li>Provide services to MNOs and all the types of MVNOs.</li>
+                        <li>NaaS operator can use a home-routed  or local-breakout roaming strategy as it best suits its customers, in order to rent its access network to those customers that want to expand its geographical coverage.</li>
+                        <li id="cinco_e_li_2"></li>
+                        <li id="cinco_e_li_3"></li>
+                        <li id="cinco_e_li_4"></li>
+                        <li id="cinco_e_li_5"></li>
+                        <li id="cinco_e_li_6"></li>
+    
+                    </ul>
+                </div>
+            </section>
+            <section id="dos-F" hidden>
+                <div id="box-1"> 
+                    <h4 class="title-results" style="border-style: solid;background-color:#005777;color:#fff"><center>Architecture Description</center></h4> 
+                    <ul class="normal-text ul-iconos" style='margin-top:0in' start=1 type=1>
+                        <li>EPC elements to be deployed:</li>
+                        <ul style='margin-top:0in' type=circle>
+                            <li class="normal-text">MME</li>
+                            <li class="normal-text">SGW</li>
+                            <li class="normal-text">PGW</li>
+                            <li class="normal-text">HSS</li>
+                        </ul>
+                        <li>PCC elements to be deployed:</li>
+                        <ul style='margin-top:0in' type=circle>
+                            <li class="normal-text">PCRF</li>
+                            <li class="normal-text">PCEF</li>
+                            <li class="normal-text">SPR</li>
+                            <li id="seis_f_li_1" class="normal-text"></li>
+                        </ul>
+                        <li>This deployment will enable the NaaS operator to support provisioning, monitoring, control and charging of IP data services.</li>
+                        <li>Provide services to MNOs and all the types of MVNOs.</li>
+                        <li>NaaS operator can use a home-routed  or local-breakout roaming strategy as it best suits its customers, in order to rent its access network to those customers that want to expand its geographical coverage.</li>
+                        <li id="seis_f_li_2"></li>
+                        <li id="seis_f_li_3"></li>
+                        <li id="seis_f_li_4"></li>
+                        <li id="seis_f_li_5"></li>
+                        <li id="seis_f_li_6"></li>
+    
+                    </ul>
+                </div>
+            </section>
+            <section id="dos-G" hidden>
+                <div id="box-1"> 
+                    <h4 class="title-results" style="border-style: solid;background-color:#005777;color:#fff"><center>Architecture Description</center></h4> 
+                    <ul class="normal-text ul-iconos" style='margin-top:0in' start=1 type=1>
+                        <li>EPC elements to be deployed:</li>
+                        <ul style='margin-top:0in' type=circle>
+                            <li class="normal-text">MME</li>
+                            <li class="normal-text">SGW</li>
+                            <li class="normal-text">PGW</li>
+                            <li class="normal-text">HSS</li>
+                        </ul>
+                        <li>PCC elements to be deployed:</li>
+                        <ul style='margin-top:0in' type=circle>
+                            <li class="normal-text">PCRF</li>
+                            <li class="normal-text">PCEF</li>
+                            <li class="normal-text">SPR</li>
+                            <li id="siete_g_li_1" class="normal-text"></li>
+                        </ul>
+                        <li>This deployment will enable the NaaS operator to support provisioning, monitoring, control and charging of IP data services.</li>
+                        <li>Provide services to MNOs and all the types of MVNOs.</li>
+                        <li>In this solution there is no impact on legacy or roaming networks, since no additional changes are needed on the network elements.</li>
+                        <li>NaaS operator can use a home-routed  or local-breakout roaming strategy as it best suits its customers, in order to rent its access network to those customers that want to expand its geographical coverage.</li>
+                        <li id="siete_g_li_2"></li>
+                        <li id="siete_g_li_3"></li>
+                        <li id="siete_g_li_4"></li>
+                        <li id="siete_g_li_5"></li>
+                        <li id="siete_g_li_6"></li>
+    
+                    </ul>
+                </div>
+            </section>
+            <section id="dos-H" hidden>
+                <div id="box-1"> 
+                    <h4 class="title-results" style="border-style: solid;background-color:#005777;color:#fff"><center>Architecture Description</center></h4> 
+                    <ul class="normal-text ul-iconos" style='margin-top:0in' start=1 type=1>
+                        <li>EPC elements to be deployed:</li>
+                        <ul style='margin-top:0in' type=circle>
+                            <li class="normal-text">MME</li>
+                            <li class="normal-text">SGW</li>
+                            <li class="normal-text">PGW</li>
+                            <li class="normal-text">HSS</li>
+                        </ul>
+                        <li>PCC elements to be deployed:</li>
+                        <ul style='margin-top:0in' type=circle>
+                            <li class="normal-text">PCRF</li>
+                            <li class="normal-text">PCEF</li>
+                            <li class="normal-text">SPR</li>
+                            <li id="ocho_h_li_1" class="normal-text"></li>
+                        </ul>
+                        <li>This deployment will enable the NaaS operator to support provisioning, monitoring, control and charging of IP data services.</li>
+                        <li>Provide services to MNOs and all the types of MVNOs.</li>
+                        <li>When deploying this architecture the NaaS operator will get all the benefits of the S3/S4 LTE-enhanced interfaces by the use of GTPv2 protocol, which among its optimization for LTE it includes reduction of excessive signaling (idle mode signaling reduction) or dual stack bearer support. However, this will be reflected in a bigger inversion.</li>
+                        <li>NaaS operator can use a home-routed  or local-breakout roaming strategy as it best suits its customers, in order to rent its access network to those customers that want to expand its geographical coverage.</li>
+                        <li id="ocho_h_li_2"></li>
+                        <li id="ocho_h_li_3"></li>
+                        <li id="ocho_h_li_4"></li>
+                        <li id="ocho_h_li_5"></li>
+                        <li id="ocho_h_li_6"></li>
+    
+                    </ul>
+                </div>
+            </section>
+
+
+            <section id="tres-A" hidden>
+                <div id="box-1"> 
+                    <h4 class="title-results" style="border-style: solid;background-color:#005777;color:#fff"><center>High Availability Recommendation</center></h4> 
+                    <ul class="normal-text ul-iconos" style='margin-top:0in' start=1 type=1>
+                        <li>Hardware:</li>
+                        <ul style='margin-top:0in' type=circle>
+                            <li class="normal-text">Server: Hot swap devices, hot plug PCIe and NEBS certification</li>
+                            <li class="normal-text">Storage:  Hot swap devices, RAID or replication mechanisms and NEBS certification</li>
+                            <li class="normal-text">Netwoking: Bonding and redundant NICs</li>
+                        </ul>
+                        <li>Application:</li>
+                        <ul style='margin-top:0in' type=circle>
+                            <li class="normal-text">N+1 Redundancy, Active/Active schema</li>
+                        </ul>
+                    </ul>
+                </div>
+            </section>
+            <section id="tres-B" hidden>
+                <div id="box-1"> 
+                    <h4 class="title-results" style="border-style: solid;background-color:#005777;color:#fff"><center>High Availability Recommendation</center></h4> 
+                    <ul class="normal-text ul-iconos" style='margin-top:0in' start=1 type=1>
+                        <li>Hardware:</li>
+                        <ul style='margin-top:0in' type=circle>
+                            <li class="normal-text">Server: Hot swap devices, hot plug PCIe and NEBS certification</li>
+                            <li class="normal-text">Storage:  Hot swap devices, RAID or replication mechanisms and NEBS certification</li>
+                            <li class="normal-text">Netwoking: Bonding and redundant NICs</li>
+                        </ul>
+                        <li>Application:</li>
+                        <ul style='margin-top:0in' type=circle>
+                            <li class="normal-text">N+1 Redundancy, Active/Active schema</li>
+                        </ul>
+                    </ul>
+                </div>
+            </section>
+            <section id="tres-C" hidden>
+                <div id="box-1"> 
+                    <h4 class="title-results" style="border-style: solid;background-color:#005777;color:#fff"><center>High Availability Recommendation</center></h4> 
+                   
+                </div>
+            </section>
+            <section id="tres-D" hidden>
+                <div id="box-1"> 
+                    <h4 class="title-results" style="border-style: solid;background-color:#005777;color:#fff"><center>Network Segments Options</center></h4> 
+                    <img class="img-grande" src="images/widgets/wizard_IP/widget7_3_D.png" alt="Smiley face" style="padding-top: 20px" height="200" width="5">
+                </div>
+            </section>
+
+
+            <section id="cuatro-A" hidden>
+                <div id="box-1"> 
+                    <h4 class="title-results" style="border-style: solid;background-color:#005777;color:#fff"><center>NFV architecture</center></h4> 
+                    <ul class="normal-text ul-iconos" style='margin-top:0in' start=1 type=1>
+                        <li>Elements to be deployed:</li>
+                        <ul style='margin-top:0in' type=circle>
+                            <li class="normal-text">NFVI</li>
+                            <li class="normal-text">VIM</li>
+                            <li class="normal-text">VNFM</li>
+                        </ul>
+                    </ul>
+                </div>
+            </section>
+            <section id="cuatro-B" hidden>
+                <div id="box-1"> 
+                    <h4 class="title-results" style="border-style: solid;background-color:#005777;color:#fff"><center>NFV architecture</center></h4> 
+                    <ul class="normal-text ul-iconos" style='margin-top:0in' start=1 type=1>
+                        <li>Elements to be deployed:</li>
+                        <ul style='margin-top:0in' type=circle>
+                            <li class="normal-text">NFVI</li>
+                            <li class="normal-text">VIM</li>
+                            <li class="normal-text">VNFM</li>
+                        </ul>
+                    </ul>
+                </div>
+            </section>
+            <section id="cuatro-C" hidden>
+                <div id="box-1"> 
+                    <h4 class="title-results" style="border-style: solid;background-color:#005777;color:#fff"><center>NFV architecture</center></h4> 
+                    
+                </div>
+            </section>
+            <section id="cuatro-D" hidden>
+                <div id="box-1"> 
+                    <h4 class="title-results" style="border-style: solid;background-color:#005777;color:#fff"><center>Network Segments Options</center></h4> 
+                    <img class="img-grande" src="images/widgets/wizard_IP/widget7_4_D.png" alt="Smiley face" style="padding-top: 20px" height="200" width="5">
+                </div>
+            </section>
+
+
+
+            <section id="cinco-A" hidden>
+                <div id="box-1"> 
+                    <h4 class="title-results" style="border-style: solid;background-color:#005777;color:#fff"><center>Virtualization Technology: Hypervisor-based</center></h4> 
+                    <ul class="normal-text ul-iconos" style='margin-top:0in' start=1 type=1>
+                        <li>VNFs types to be deployed:</li>
+                        <ul style='margin-top:0in' type=circle>
+                            <li class="normal-text">Control plane VNF: MME, SGW-C</li>
+                            <li class="normal-text">Data plane VNF: SGW-U</li>
+                        </ul>
+                    </ul>
+                </div>
+            </section>
+            <section id="cinco-B" hidden>
+                <div id="box-1"> 
+                    <h4 class="title-results" style="border-style: solid;background-color:#005777;color:#fff"><center>Virtualization Technology: Hypervisor-based</center></h4> 
+                    <ul class="normal-text ul-iconos" style='margin-top:0in' start=1 type=1>
+                        <li>VNFs types to be deployed:</li>
+                        <ul style='margin-top:0in' type=circle>
+                            <li class="normal-text">Control plane VNF: MME, SGW-C, PGW-C, PCRF, PCEF</li>
+                            <li class="normal-text">Data plane VNF: SGW-U, PGW-S</li>
+                            <li class="normal-text">Data base VNF: HSS, Billing Node</li>
+                        </ul>
+                    </ul>
+                </div>
+            </section>
+            </div>
+        </div>
+
+        <!-- jQuery CDN border-left: 2px solid gray;-->
+         <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+         <!-- Bootstrap Js CDN -->
+         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+         <script type="text/javascript">
+
+            $(document).ready(function() {
+            $('.mdb-select').materialSelect();
+            });
+             
+            
+            function switchContent(selector){
+                $("#uno-A").hide();
+                $("#uno-B").hide();
+                $("#uno-C").hide();
+                $("#uno-D").hide();
+                $("#uno-E").hide();
+                $("#uno-F").hide();
+                $("#uno-G").hide();
+                $("#uno-H").hide();
+                $(selector).show();
+                tab = selector;
+            }
+
+            function switchContent2(selector){
+                $("#dos-A").hide();
+                $("#dos-B").hide();
+                $("#dos-C").hide();
+                $("#dos-D").hide();
+                $("#dos-E").hide();
+                $("#dos-F").hide();
+                $("#dos-G").hide();
+                $("#dos-H").hide();
+                $(selector).show();
+                tab = selector;
+            }
+
+            function switchContent3(selector){
+                $("#tres-A").hide();
+                $("#tres-B").hide();
+                $("#tres-C").hide();
+                $("#tres-D").hide();
+                $(selector).show();
+                tab = selector;
+            }
+
+            function switchContent4(selector){
+                $("#cuatro-A").hide();
+                $("#cuatro-B").hide();
+                $("#cuatro-C").hide();
+                $("#cuatro-D").hide();
+                $(selector).show();
+                tab = selector;
+            }
+
+            function switchContent5(selector){
+                $("#cinco-A").hide();
+                $("#cinco-B").hide();
+                $(selector).show();
+                tab = selector;
+            }
+
+            var formulario2 = document.getElementsByName('forchi')[0],
+               elementos = formulario2.elements,
+               boton = document.getElementById('btn');   
+
+           var form8_global;
+           var form9_global;
+           var form10_global;
+
+           formulario2.addEventListener('submit',function(evt){
+               evt.preventDefault();
+
+               var form1_var = formulario2.form1.value;
+               var form2_var = formulario2.form2.value;
+               var form3_var = formulario2.form3.value;
+               var form4_var = formulario2.form4.value;
+               var form5_var = formulario2.form5.value;
+               var form6_var = formulario2.form6.value;
+               var form7_var = formulario2.form7.value;
+               var form8_var = formulario2.form8.value;
+               var form9_var = formulario2.form9.value;
+               var form10_var = formulario2.form10.value;
+
+               form8_global = form8_var;
+               form9_global = form9_var;
+               form10_global = form10_var;
+
+            //A
+               if ((form3_var == 'slect_2') && (form4_var == 'slect_2') && (form5_var == 'slect_2') && (form6_var == 'slect_2')){
+                    switchContent('#uno-A');
+                    switchContent2('#dos-A');
+                    switchContent3('#tres-A');
+                    switchContent4('#cuatro-A');
+                    switchContent5('#cinco-A');
+
+                    if(form8_var == 'slect_1'){
+                        document.getElementById("dos_li_1").innerHTML = "IGP recommended protocol: Distance vector protocol.";
+                    }else{
+                        document.getElementById("dos_li_1").innerHTML = "IGP recommended protocol: DLink State protocol.";
+                    }
+
+                    if(form9_var == 'slect_1'){
+                        document.getElementById("dos_li_2").innerHTML = "Recommended routing between autonomous systems: Static Routes.";
+                    }else{
+                        document.getElementById("dos_li_2").innerHTML = "Recommended routing protocol between autonomous systems: BGP.";
+                    }
+
+                    if(form10_var == 'slect_1'){
+                        document.getElementById("dos_li_3").innerHTML = "MPLS support recommended.";
+                    }else{
+                        document.getElementById("dos_li_3").innerHTML = ".";
+                    }
+
+                    $('#modalQuickView').modal('hide');
+               } else{
+                    $('#modalQuickView').modal('hide');
+                    $('#modalQuickView_2').modal('show');
+               }
+    /*        //B  
+               if(form1_var == "slect_2"){
+                    switchContent('#uno-B');
+                    switchContent2('#dos-B');
+                    switchContent3('#tres-B');
+                    switchContent4('#cuatro-B');
+                    switchContent5('#cinco-B');
+                    //dos_b_li_1
+                    //dos_b_li_2
+                    //dos_b_li_3
+
+                    if(form13_var == 'slect_1'){
+                        document.getElementById("dos_b_li_4").innerHTML = "IGP recommended protocol: Distance vector protocol.";
+                    }else{
+                        document.getElementById("dos_b_li_4").innerHTML = "IGP recommended protocol: DLink State protocol.";
+                    }
+
+                    if(form14_var == 'slect_1'){
+                        document.getElementById("dos_b_li_5").innerHTML = "Recommended routing between autonomous systems: Static Routes.";
+                    }else{
+                        document.getElementById("dos_b_li_5").innerHTML = "Recommended routing protocol between autonomous systems: BGP.";
+                    }
+               }
+            //C
+               if(form2_var == "slect_2"){
+                    switchContent('#uno-C');
+                    switchContent2('#dos-C');
+                    switchContent3('#tres-B');
+                    switchContent4('#cuatro-B');
+                    switchContent5('#cinco-B');
+                    //dos_b_li_1
+                    //dos_b_li_2
+                    //dos_b_li_3
+
+                    if(form13_var == 'slect_1'){
+                        document.getElementById("tres_c_li_4").innerHTML = "IGP recommended protocol: Distance vector protocol.";
+                    }else{
+                        document.getElementById("tres_c_li_4").innerHTML = "IGP recommended protocol: DLink State protocol.";
+                    }
+
+                    if(form14_var == 'slect_1'){
+                        document.getElementById("tres_c_li_5").innerHTML = "Recommended routing between autonomous systems: Static Routes.";
+                    }else{
+                        document.getElementById("tres_c_li_5").innerHTML = "Recommended routing protocol between autonomous systems: BGP.";
+                    }
+               }
+            //D
+               if(form7_var == "slect_2"){
+                    switchContent('#uno-D');
+                    switchContent2('#dos-D');
+                    switchContent3('#tres-B');
+                    switchContent4('#cuatro-B');
+                    switchContent5('#cinco-B');
+                    //dos_b_li_1
+                    //dos_b_li_2
+                    //dos_b_li_3
+
+                    if(form13_var == 'slect_1'){
+                        document.getElementById("tres_c_li_4").innerHTML = "IGP recommended protocol: Distance vector protocol.";
+                    }else{
+                        document.getElementById("tres_c_li_4").innerHTML = "IGP recommended protocol: DLink State protocol.";
+                    }
+
+                    if(form14_var == 'slect_1'){
+                        document.getElementById("tres_c_li_5").innerHTML = "Recommended routing between autonomous systems: Static Routes.";
+                    }else{
+                        document.getElementById("tres_c_li_5").innerHTML = "Recommended routing protocol between autonomous systems: BGP.";
+                    }
+               }
+            //E
+               if(form8_var == "slect_2"){
+                    switchContent('#uno-E');
+                    switchContent2('#dos-E');
+                    switchContent3('#tres-B');
+                    switchContent4('#cuatro-B');
+                    switchContent5('#cinco-B');
+                    //dos_b_li_1
+                    //dos_b_li_2
+                    //dos_b_li_3
+
+                    if(form13_var == 'slect_1'){
+                        document.getElementById("tres_c_li_4").innerHTML = "IGP recommended protocol: Distance vector protocol.";
+                    }else{
+                        document.getElementById("tres_c_li_4").innerHTML = "IGP recommended protocol: DLink State protocol.";
+                    }
+
+                    if(form14_var == 'slect_1'){
+                        document.getElementById("tres_c_li_5").innerHTML = "Recommended routing between autonomous systems: Static Routes.";
+                    }else{
+                        document.getElementById("tres_c_li_5").innerHTML = "Recommended routing protocol between autonomous systems: BGP.";
+                    }
+               }
+            //F
+               if(form9_var == "slect_2"){
+                    switchContent('#uno-F');
+                    switchContent2('#dos-F');
+                    switchContent3('#tres-B');
+                    switchContent4('#cuatro-B');
+                    switchContent5('#cinco-B');
+                    //dos_b_li_1
+                    //dos_b_li_2
+                    //dos_b_li_3
+
+                    if(form13_var == 'slect_1'){
+                        document.getElementById("tres_c_li_4").innerHTML = "IGP recommended protocol: Distance vector protocol.";
+                    }else{
+                        document.getElementById("tres_c_li_4").innerHTML = "IGP recommended protocol: DLink State protocol.";
+                    }
+
+                    if(form14_var == 'slect_1'){
+                        document.getElementById("tres_c_li_5").innerHTML = "Recommended routing between autonomous systems: Static Routes.";
+                    }else{
+                        document.getElementById("tres_c_li_5").innerHTML = "Recommended routing protocol between autonomous systems: BGP.";
+                    }
+            }
+            //G
+               if(form10_var == "slect_2"){
+                    switchContent('#uno-G');
+                    switchContent2('#dos-G');
+                    switchContent3('#tres-B');
+                    switchContent4('#cuatro-B');
+                    switchContent5('#cinco-B');
+                    //dos_b_li_1
+                    //dos_b_li_2
+                    //dos_b_li_3
+
+                    if(form13_var == 'slect_1'){
+                        document.getElementById("tres_c_li_4").innerHTML = "IGP recommended protocol: Distance vector protocol.";
+                    }else{
+                        document.getElementById("tres_c_li_4").innerHTML = "IGP recommended protocol: DLink State protocol.";
+                    }
+
+                    if(form14_var == 'slect_1'){
+                        document.getElementById("tres_c_li_5").innerHTML = "Recommended routing between autonomous systems: Static Routes.";
+                    }else{
+                        document.getElementById("tres_c_li_5").innerHTML = "Recommended routing protocol between autonomous systems: BGP.";
+                    }
+               }
+           */ //H
+/*               if(form10_var == "slect_2"){
+                    switchContent('#uno-H');
+                    switchContent2('#dos-H');
+                    switchContent3('#tres-B');
+                    switchContent4('#cuatro-B');
+                    switchContent5('#cinco-B');
+                    //dos_b_li_1
+                    //dos_b_li_2
+                    //dos_b_li_3
+
+                    if(form13_var == 'slect_1'){
+                        document.getElementById("tres_c_li_4").innerHTML = "IGP recommended protocol: Distance vector protocol.";
+                    }else{
+                        document.getElementById("tres_c_li_4").innerHTML = "IGP recommended protocol: DLink State protocol.";
+                    }
+
+                    if(form14_var == 'slect_1'){
+                        document.getElementById("tres_c_li_5").innerHTML = "Recommended routing between autonomous systems: Static Routes.";
+                    }else{
+                        document.getElementById("tres_c_li_5").innerHTML = "Recommended routing protocol between autonomous systems: BGP.";
+                    }
+            }
+*/
+              /*document.getElementById("value1_1").value = value1_1_int;
+               document.getElementById("value1_2").value = value1_2_int;
+               document.getElementById("value2_1").value = value2_1_int;
+               document.getElementById("value2_2").value = value2_2_int;
+               document.getElementById("value3").value = value3_int;
+               document.getElementById("value4").value = value4_int;*/
+               
+               
+           });
+
+
+           var formulario2_2 = document.getElementsByName('forchi_2')[0],
+               elementos = formulario2_2.elements,
+               boton = document.getElementById('btn_1'); 
+            
+        
+            
+            formulario2_2.addEventListener('submit',function(evt){
+            evt.preventDefault();
+
+               var form1_var = formulario2_2.form1_1.value;
+               var form2_var = formulario2_2.form1_2.value;
+               var form3_var = formulario2_2.form1_3.value;
+               var form4_var = formulario2_2.form1_4.value;
+               var form5_var = formulario2_2.form1_5.value;
+               var form6_var = formulario2_2.form1_6.value;
+               var form7_var = formulario2_2.form1_7.value;
+               var form8_var = formulario2_2.form1_8.value;
+               var form9_var = formulario2_2.form1_9.value;
+               var form10_var = formulario2_2.form1_10.value;
+
+
+                /*if(form10_var == "slect_2"){
+                    alert('hi');
+                    //$("#modalQuickView").hide();
+                    //$("#modalQuickView_2").show();
+                    $('#modalQuickView_2').modal('hide');
+                }*/
+
+                if(form1_var == 'slect_1' && form2_var == 'slect_1' && form3_var == 'slect_1'){
+                    //Introducing new EPC nodes and interworking with legacy PS by Gn/Gp Interfaces
+                    switchContent('#uno-B');
+                    switchContent2('#dos-B');
+                    switchContent3('#tres-B');
+                    switchContent4('#cuatro-B');
+                    switchContent5('#cinco-B');
+                    //dos_b_li_1
+                    //dos_b_li_2
+                    //dos_b_li_3
+
+                    if(form8_global == 'slect_1'){
+                        document.getElementById("dos_b_li_4").innerHTML = "IGP recommended protocol: Distance vector protocol.";
+                    }else{
+                        document.getElementById("dos_b_li_4").innerHTML = "IGP recommended protocol: DLink State protocol.";
+                    }
+
+                    if(form9_global == 'slect_1'){
+                        document.getElementById("dos_b_li_5").innerHTML = "Recommended routing between autonomous systems: Static Routes.";
+                    }else{
+                        document.getElementById("dos_b_li_5").innerHTML = "Recommended routing protocol between autonomous systems: BGP.";
+                    }
+
+                    if(form10_global == 'slect_1'){
+                        document.getElementById("dos_b_li_6").innerHTML = "MPLS support recommended.";
+                    }else{
+                        document.getElementById("dos_b_li_6").innerHTML = ".";
+                    }
+
+                    if(form6_var == 'slect_1' && form7_var == 'slect_1'){
+                        document.getElementById("dos_b_li_1").innerHTML = "OFCS & OCS";
+                    }else if(form6_var == 'slect_1' && form7_var == 'slect_2'){
+                        document.getElementById("dos_b_li_1").innerHTML = "OCS";
+                    }else if(form6_var == 'slect_2' && form7_var == 'slect_1'){
+                        document.getElementById("dos_b_li_1").innerHTML = "OFCS";
+                    }else if(form6_var == 'slect_2' && form7_var == 'slect_2'){
+                        document.getElementById("dos_b_li_1").innerHTML = ".";
+                    }
+                    
+                    $('#modalQuickView_2').modal('hide');
+
+                } else if(form1_var == 'slect_1' && form2_var == 'slect_1' && form3_var == 'slect_2'){
+                    //Introducing new EPC nodes and interworking with legacy PS by S3/S4 interfaces
+                    switchContent('#uno-C');
+                    switchContent2('#dos-C');
+                    switchContent3('#tres-B');
+                    switchContent4('#cuatro-B');
+                    switchContent5('#cinco-B');
+                    //dos_b_li_1
+                    //dos_b_li_2
+                    //dos_b_li_3
+
+                    if(form8_global == 'slect_1'){
+                        document.getElementById("tres_c_li_4").innerHTML = "IGP recommended protocol: Distance vector protocol.";
+                    }else{
+                        document.getElementById("tres_c_li_4").innerHTML = "IGP recommended protocol: DLink State protocol.";
+                    }
+
+                    if(form9_global == 'slect_1'){
+                        document.getElementById("tres_c_li_5").innerHTML = "Recommended routing between autonomous systems: Static Routes.";
+                    }else{
+                        document.getElementById("tres_c_li_5").innerHTML = "Recommended routing protocol between autonomous systems: BGP.";
+                    }
+
+                    if(form10_global == 'slect_1'){
+                        document.getElementById("tres_c_li_6").innerHTML = "MPLS support recommended.";
+                    }else{
+                        document.getElementById("tres_c_li_6").innerHTML = ".";
+                    }
+
+                    if(form6_var == 'slect_1' && form7_var == 'slect_1'){
+                        document.getElementById("tres_c_li_1").innerHTML = "OFCS & OCS";
+                    }else if(form6_var == 'slect_1' && form7_var == 'slect_2'){
+                        document.getElementById("tres_c_li_1").innerHTML = "OCS";
+                    }else if(form6_var == 'slect_2' && form7_var == 'slect_1'){
+                        document.getElementById("tres_c_li_1").innerHTML = "OFCS";
+                    }else if(form6_var == 'slect_2' && form7_var == 'slect_2'){
+                        document.getElementById("tres_c_li_1").innerHTML = ".";
+                    }
+                    $('#modalQuickView_2').modal('hide');
+
+                } else if(form1_var == 'slect_1' && form2_var == 'slect_1' && form3_var == 'slect_3'){
+                    //Upgrading the existing PS core to support 2G/3G/LTE
+                    switchContent('#uno-D');
+                    switchContent2('#dos-D');
+                    switchContent3('#tres-B');
+                    switchContent4('#cuatro-B');
+                    switchContent5('#cinco-B');
+                    //dos_b_li_1
+                    //dos_b_li_2
+                    //dos_b_li_3
+
+                    if(form8_global == 'slect_1'){
+                        document.getElementById("cuatro_d_li_4").innerHTML = "IGP recommended protocol: Distance vector protocol.";
+                    }else{
+                        document.getElementById("cuatro_d_li_4").innerHTML = "IGP recommended protocol: DLink State protocol.";
+                    }
+
+                    if(form9_global == 'slect_1'){
+                        document.getElementById("cuatro_d_li_5").innerHTML = "Recommended routing between autonomous systems: Static Routes.";
+                    }else{
+                        document.getElementById("cuatro_d_li_5").innerHTML = "Recommended routing protocol between autonomous systems: BGP.";
+                    }
+
+                    if(form10_global == 'slect_1'){
+                        document.getElementById("cuatro_d_li_6").innerHTML = "MPLS support recommended.";
+                    }else{
+                        document.getElementById("cuatro_d_li_6").innerHTML = ".";
+                    }
+
+                    if(form6_var == 'slect_1' && form7_var == 'slect_1'){
+                        document.getElementById("cuatro_d_li_1").innerHTML = "OFCS & OCS";
+                    }else if(form6_var == 'slect_1' && form7_var == 'slect_2'){
+                        document.getElementById("cuatro_d_li_1").innerHTML = "OCS";
+                    }else if(form6_var == 'slect_2' && form7_var == 'slect_1'){
+                        document.getElementById("cuatro_d_li_1").innerHTML = "OFCS";
+                    }else if(form6_var == 'slect_2' && form7_var == 'slect_2'){
+                        document.getElementById("cuatro_d_li_1").innerHTML = ".";
+                    }
+                    $('#modalQuickView_2').modal('hide');
+
+                } else if(form1_var == 'slect_1' && form2_var == 'slect_2'){
+                    //New EPC deployment independent of the current  3G core
+                    alert('New EPC deployment independent of the current  3G core');
+                    switchContent('#uno-E');
+                    switchContent2('#dos-E');
+                    switchContent3('#tres-B');
+                    switchContent4('#cuatro-B');
+                    switchContent5('#cinco-B');
+                    //dos_b_li_1
+                    //dos_b_li_2
+                    //dos_b_li_3
+
+                    if(form8_global == 'slect_1'){
+                        document.getElementById("cinco_e_li_4").innerHTML = "IGP recommended protocol: Distance vector protocol.";
+                    }else{
+                        document.getElementById("cinco_e_li_4").innerHTML = "IGP recommended protocol: DLink State protocol.";
+                    }
+
+                    if(form9_global == 'slect_1'){
+                        document.getElementById("cinco_e_li_5").innerHTML = "Recommended routing between autonomous systems: Static Routes.";
+                    }else{
+                        document.getElementById("cinco_e_li_5").innerHTML = "Recommended routing protocol between autonomous systems: BGP.";
+                    }
+
+                    if(form10_global == 'slect_1'){
+                        document.getElementById("cinco_e_li_6").innerHTML = "MPLS support recommended.";
+                    }else{
+                        document.getElementById("cinco_e_li_6").innerHTML = ".";
+                    }
+                    if(form6_var == 'slect_1' && form7_var == 'slect_1'){
+                        document.getElementById("cinco_e_li_1").innerHTML = "OFCS & OCS";
+                    }else if(form6_var == 'slect_1' && form7_var == 'slect_2'){
+                        document.getElementById("cinco_e_li_1").innerHTML = "OCS";
+                    }else if(form6_var == 'slect_2' && form7_var == 'slect_1'){
+                        document.getElementById("cinco_e_li_1").innerHTML = "OFCS";
+                    }else if(form6_var == 'slect_2' && form7_var == 'slect_2'){
+                        document.getElementById("cinco_e_li_1").innerHTML = ".";
+                    }
+                    $('#modalQuickView_2').modal('hide');
+
+                } else if(form1_var == 'slect_2' && form4_var == 'slect_1' && form5_var == 'slect_1'){
+                    //3G Access via SGSN EPC-enabled
+                    alert('3G Access via SGSN EPC-enabled');
+
+                    switchContent('#uno-H');
+                    switchContent2('#dos-H');
+                    switchContent3('#tres-B');
+                    switchContent4('#cuatro-B');
+                    switchContent5('#cinco-B');
+                    //dos_b_li_1
+                    //dos_b_li_2
+                    //dos_b_li_3
+
+                    if(form8_global == 'slect_1'){
+                        document.getElementById("ocho_h_li_4").innerHTML = "IGP recommended protocol: Distance vector protocol.";
+                    }else{
+                        document.getElementById("ocho_h_li_4").innerHTML = "IGP recommended protocol: DLink State protocol.";
+                    }
+
+                    if(form9_global == 'slect_1'){
+                        document.getElementById("ocho_h_li_5").innerHTML = "Recommended routing between autonomous systems: Static Routes.";
+                    }else{
+                        document.getElementById("ocho_h_li_5").innerHTML = "Recommended routing protocol between autonomous systems: BGP.";
+                    }
+
+                    if(form10_global == 'slect_1'){
+                        document.getElementById("ocho_h_li_6").innerHTML = "MPLS support recommended.";
+                    }else{
+                        document.getElementById("ocho_h_li_6").innerHTML = ".";
+                    }
+                    if(form6_var == 'slect_1' && form7_var == 'slect_1'){
+                        document.getElementById("ocho_h_li_1").innerHTML = "OFCS & OCS";
+                    }else if(form6_var == 'slect_1' && form7_var == 'slect_2'){
+                        document.getElementById("ocho_h_li_1").innerHTML = "OCS";
+                    }else if(form6_var == 'slect_2' && form7_var == 'slect_1'){
+                        document.getElementById("ocho_h_li_1").innerHTML = "OFCS";
+                    }else if(form6_var == 'slect_2' && form7_var == 'slect_2'){
+                        document.getElementById("ocho_h_li_1").innerHTML = ".";
+                    }
+                    $('#modalQuickView_2').modal('hide');
+
+                    
+
+                } else if(form1_var == 'slect_2' && form4_var == 'slect_1' && form5_var == 'slect_2'){
+                    //3G Access via Gn/Gp interfaces
+                    alert('3G Access via Gn/Gp interfaces');
+                    switchContent('#uno-G');
+                    switchContent2('#dos-G');
+                    switchContent3('#tres-B');
+                    switchContent4('#cuatro-B');
+                    switchContent5('#cinco-B');
+                    //dos_b_li_1
+                    //dos_b_li_2
+                    //dos_b_li_3
+
+                    if(form8_global == 'slect_1'){
+                        document.getElementById("siete_g_li_4").innerHTML = "IGP recommended protocol: Distance vector protocol.";
+                    }else{
+                        document.getElementById("siete_g_li_4").innerHTML = "IGP recommended protocol: DLink State protocol.";
+                    }
+
+                    if(form9_global == 'slect_1'){
+                        document.getElementById("siete_g_li_5").innerHTML = "Recommended routing between autonomous systems: Static Routes.";
+                    }else{
+                        document.getElementById("siete_g_li_5").innerHTML = "Recommended routing protocol between autonomous systems: BGP.";
+                    }
+
+                    if(form10_global == 'slect_1'){
+                        document.getElementById("siete_g_li_6").innerHTML = "MPLS support recommended.";
+                    }else{
+                        document.getElementById("siete_g_li_6").innerHTML = ".";
+                    }
+                    if(form6_var == 'slect_1' && form7_var == 'slect_1'){
+                        document.getElementById("siete_g_li_1").innerHTML = "OFCS & OCS";
+                    }else if(form6_var == 'slect_1' && form7_var == 'slect_2'){
+                        document.getElementById("siete_g_li_1").innerHTML = "OCS";
+                    }else if(form6_var == 'slect_2' && form7_var == 'slect_1'){
+                        document.getElementById("siete_g_li_1").innerHTML = "OFCS";
+                    }else if(form6_var == 'slect_2' && form7_var == 'slect_2'){
+                        document.getElementById("siete_g_li_1").innerHTML = ".";
+                    }
+                    $('#modalQuickView_2').modal('hide');
+
+                } else if(form1_var == 'slect_2' && form4_var == 'slect_2'){
+                    switchContent('#uno-F');
+                    switchContent2('#dos-F');
+                    switchContent3('#tres-B');
+                    switchContent4('#cuatro-B');
+                    switchContent5('#cinco-B');
+                    //dos_b_li_1
+                    //dos_b_li_2
+                    //dos_b_li_3
+
+                    if(form8_global == 'slect_1'){
+                        document.getElementById("seis_f_li_4").innerHTML = "IGP recommended protocol: Distance vector protocol.";
+                    }else{
+                        document.getElementById("seis_f_li_4").innerHTML = "IGP recommended protocol: DLink State protocol.";
+                    }
+
+                    if(form9_global == 'slect_1'){
+                        document.getElementById("seis_f_li_5").innerHTML = "Recommended routing between autonomous systems: Static Routes.";
+                    }else{
+                        document.getElementById("seis_f_li_5").innerHTML = "Recommended routing protocol between autonomous systems: BGP.";
+                    }
+
+                    if(form10_global == 'slect_1'){
+                        document.getElementById("seis_f_li_6").innerHTML = "MPLS support recommended.";
+                    }else{
+                        document.getElementById("seis_f_li_6").innerHTML = ".";
+                    }
+                    if(form6_var == 'slect_1' && form7_var == 'slect_1'){
+                        document.getElementById("seis_f_li_1").innerHTML = "OFCS & OCS";
+                    }else if(form6_var == 'slect_1' && form7_var == 'slect_2'){
+                        document.getElementById("seis_f_li_1").innerHTML = "OCS";
+                    }else if(form6_var == 'slect_2' && form7_var == 'slect_1'){
+                        document.getElementById("seis_f_li_1").innerHTML = "OFCS";
+                    }else if(form6_var == 'slect_2' && form7_var == 'slect_2'){
+                        document.getElementById("seis_f_li_1").innerHTML = ".";
+                    }
+                    $('#modalQuickView_2').modal('hide');
+
+                }
+               /*document.getElementById("value1_1").value = value1_1_int;
+               document.getElementById("value1_2").value = value1_2_int;
+               document.getElementById("value2_1").value = value2_1_int;
+               document.getElementById("value2_2").value = value2_2_int;
+               document.getElementById("value3").value = value3_int;
+               document.getElementById("value4").value = value4_int;*/
+               
+               
+           });
+
+
+
+
+            //Si Form1_1 Es Yes --> Desabilita Form1_4
+            $('#form1_1').change(function(e){
+            if($(this).val() == "slect_1"){
+                $("#form1_4").prop('disabled',true);
+                $("#form1_5").prop('disabled',true);
+                document.getElementById('form1_4').options[0].selected = 'selected';
+                document.getElementById('form1_5').options[1].selected = 'selected';
+            }
+            else {$("#form1_4").prop('disabled',false);$("#form1_5").prop('disabled',false);}
+            });
+
+            //Desabilita VOICE
+            $('#form6').change(function(e){
+            if($(this).val() == "slect_2"){
+                //alert('hi');
+                $("#form1_10").prop('disabled',true);
+                document.getElementById('form1_10').options[1].selected = 'selected';
+                //document.getElementById('form1_4').value = 'Yes';
+            }
+            else $("#form1_10").prop('disabled',false);
+            });
+
+            //Habilita form1_2,form1_3 Basado en form1_1
+            $('#form1_1').change(function(e){
+            if($(this).val() == "slect_2"){
+                $("#form1_2").prop('disabled',true);
+                $("#form1_3").prop('disabled',true);
+                document.getElementById('form1_2').options[1].selected = 'selected';
+                document.getElementById('form1_3').options[0].selected = 'selected';
+            }
+            else {$("#form1_2").prop('disabled',false);}
+            });
+
+            //Habilita form1_3 Basado en form1_2
+            $('#form1_2').change(function(e){
+            if($(this).val() == "slect_2"){
+                //alert('hi');
+                $("#form1_3").prop('disabled',true);
+                document.getElementById('form1_3').options[0].selected = 'selected';
+                //document.getElementById('form1_4').value = 'Yes';
+            }
+            else {$("#form1_3").prop('disabled',false);}
+            });
+
+
+
+            
+
+
+            //http://jsfiddle.net/YPsqQ/
+            /*$("#form1_3").change(function () {
+                var val = $(this).val();
+                if (val == "slect_1") {
+                    $("#form1_5").html("<option value='slect_1'>Yes</option><option value='slect_2'>No</option>");
+                } else if (val == "slect_2") {
+                    $("#form1_5").html("<option value='slect_1'>Yes</option><option value='slect_2'>No</option>");
+                } else if (val == "slect_3") {
+                    $("#form1_5").html("<option value='slect_1'>Yes</option><option value='slect_2'>No</option>");
+                }
+            });*/
+
+
+            var opt_1;
+            var opt_2;
+            $('#form1_1').change(function(e){
+            if($(this).val() == "slect_1"){
+                opt_1 = true;
+            }});
+
+            $('#form1_2').change(function(e){
+            if($(this).val() == "slect_1"){
+                opt_2 = true;
+            }});
+
+            if(opt_1 == true && opt_2 == true){
+                $("#form1_10").prop('disabled',true);
+                document.getElementById('form1_10').options[1].selected = 'selected';
+            }
+
+        </script>
+    </body>
+</html>
