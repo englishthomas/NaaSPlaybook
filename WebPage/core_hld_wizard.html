@@ -146,14 +146,13 @@
 
             <!-- Page Content Holder -->
             <div id="content">
-                <h2>Tx & IP Architecture</h2>
+                <h2>Core HLD Wizard</h2>
                 <p class="normal-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
                 <br>
                 
                 <div class="caja_box">
                     <center><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalQuickView">Launch</button></center>
-                    <center><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalQuickView_2">Launch</button></center>
-                    
+                   
                     <form class="form-horizontal" action="" name="forchi" id="formulario">      
                           <!-- Modal: modalQuickView -->
                           <div class="modal fade" id="modalQuickView" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -1177,6 +1176,22 @@
                     }else if(form6_var == 'slect_2' && form7_var == 'slect_2'){
                         document.getElementById("dos_b_li_1").innerHTML = ".";
                     }
+
+                    if(form8_var == 'slect_1' && form9_var == 'slect_1'){
+                        document.getElementById("dos_b_li_2").innerHTML = "Deployment strategy:<br>CUPS EPC: Achieves enhanced performance for content-rich multi-media services, flexible deployment of separated user and data plane functions, geographical extension optimization.";
+                    }
+
+                    if((form8_var == 'slect_1' && form9_var == 'slect_2') || (form8_var == 'slect_2')){
+                        document.getElementById("dos_b_li_2").innerHTML = "Deployment strategy:<br>Centralized EPC: Minimizes resources, facilities, networking between control and user nodes, and as a result CAPEX and OPEX.";
+                    }
+
+                    if(form10_var == 'slect_1'){
+                        document.getElementById("dos_b_li_3").innerHTML = "Voice Strategy:<br>- VoLTE + CSFB: VoLTE is the Industry-recognized solution for providing a packet voice service, over IP via LTE access technology. However, as the NaaS operator coverage area is not entirely 4G but a combination of 2G/3G and 4G coverage it needs to deploy CSFB as well.";
+                    }
+
+                    if(form10_var == 'slect_2'){
+                        document.getElementById("dos_b_li_3").innerHTML = "Voice Strategy:<br>- VoIP on LTE + CSFB: Transmission of voice and multimedia content over Internet Protocol (IP) networks. The LTE handset falls back to 3G or 2G to establish a traditional circuit switching connection.";
+                    }
                     
                     $('#modalQuickView_2').modal('hide');
 
@@ -1218,6 +1233,22 @@
                     }else if(form6_var == 'slect_2' && form7_var == 'slect_2'){
                         document.getElementById("tres_c_li_1").innerHTML = ".";
                     }
+
+                    if(form8_var == 'slect_1' && form9_var == 'slect_1'){
+                        document.getElementById("tres_c_li_2").innerHTML = "Deployment strategy:<br>CUPS EPC: Achieves enhanced performance for content-rich multi-media services, flexible deployment of separated user and data plane functions, geographical extension optimization.";
+                    }
+
+                    if((form8_var == 'slect_1' && form9_var == 'slect_2') || (form8_var == 'slect_2')){
+                        document.getElementById("tres_c_li_2").innerHTML = "Deployment strategy:<br>Centralized EPC: Minimizes resources, facilities, networking between control and user nodes, and as a result CAPEX and OPEX.";
+                    }
+
+                    if(form10_var == 'slect_1'){
+                        document.getElementById("tres_c_li_3").innerHTML = "Voice Strategy:<br>- VoLTE + CSFB: VoLTE is the Industry-recognized solution for providing a packet voice service, over IP via LTE access technology. However, as the NaaS operator coverage area is not entirely 4G but a combination of 2G/3G and 4G coverage it needs to deploy CSFB as well.";
+                    }
+
+                    if(form10_var == 'slect_2'){
+                        document.getElementById("tres_c_li_3").innerHTML = "Voice Strategy:<br>- VoIP on LTE + CSFB: Transmission of voice and multimedia content over Internet Protocol (IP) networks. The LTE handset falls back to 3G or 2G to establish a traditional circuit switching connection.";
+                    }
                     $('#modalQuickView_2').modal('hide');
 
                 } else if(form1_var == 'slect_1' && form2_var == 'slect_1' && form3_var == 'slect_3'){
@@ -1258,20 +1289,32 @@
                     }else if(form6_var == 'slect_2' && form7_var == 'slect_2'){
                         document.getElementById("cuatro_d_li_1").innerHTML = ".";
                     }
+
+                    if(form8_var == 'slect_1' && form9_var == 'slect_1'){
+                        document.getElementById("cuatro_d_li_2").innerHTML = "Deployment strategy:<br>CUPS EPC: Achieves enhanced performance for content-rich multi-media services, flexible deployment of separated user and data plane functions, geographical extension optimization.";
+                    }
+
+                    if((form8_var == 'slect_1' && form9_var == 'slect_2') || (form8_var == 'slect_2')){
+                        document.getElementById("cuatro_d_li_2").innerHTML = "Deployment strategy:<br>Centralized EPC: Minimizes resources, facilities, networking between control and user nodes, and as a result CAPEX and OPEX.";
+                    }
+
+                    if(form10_var == 'slect_1'){
+                        document.getElementById("cuatro_d_li_3").innerHTML = "Voice Strategy:<br>- VoLTE + CSFB: VoLTE is the Industry-recognized solution for providing a packet voice service, over IP via LTE access technology. However, as the NaaS operator coverage area is not entirely 4G but a combination of 2G/3G and 4G coverage it needs to deploy CSFB as well.";
+                    }
+
+                    if(form10_var == 'slect_2'){
+                        document.getElementById("cuatro_d_li_3").innerHTML = "Voice Strategy:<br>- VoIP on LTE + CSFB: Transmission of voice and multimedia content over Internet Protocol (IP) networks. The LTE handset falls back to 3G or 2G to establish a traditional circuit switching connection.";
+                    }
                     $('#modalQuickView_2').modal('hide');
 
                 } else if(form1_var == 'slect_1' && form2_var == 'slect_2'){
                     //New EPC deployment independent of the current  3G core
-                    alert('New EPC deployment independent of the current  3G core');
+                    //alert('New EPC deployment independent of the current  3G core');
                     switchContent('#uno-E');
                     switchContent2('#dos-E');
                     switchContent3('#tres-B');
                     switchContent4('#cuatro-B');
                     switchContent5('#cinco-B');
-                    //dos_b_li_1
-                    //dos_b_li_2
-                    //dos_b_li_3
-
                     if(form8_global == 'slect_1'){
                         document.getElementById("cinco_e_li_4").innerHTML = "IGP recommended protocol: Distance vector protocol.";
                     }else{
@@ -1298,11 +1341,27 @@
                     }else if(form6_var == 'slect_2' && form7_var == 'slect_2'){
                         document.getElementById("cinco_e_li_1").innerHTML = ".";
                     }
+
+                    if(form8_var == 'slect_1' && form9_var == 'slect_1'){
+                        document.getElementById("cinco_e_li_2").innerHTML = "Deployment strategy:<br>CUPS EPC: Achieves enhanced performance for content-rich multi-media services, flexible deployment of separated user and data plane functions, geographical extension optimization.";
+                    }
+
+                    if((form8_var == 'slect_1' && form9_var == 'slect_2') || (form8_var == 'slect_2')){
+                        document.getElementById("cinco_e_li_2").innerHTML = "Deployment strategy:<br>Centralized EPC: Minimizes resources, facilities, networking between control and user nodes, and as a result CAPEX and OPEX.";
+                    }
+
+                    if(form10_var == 'slect_1'){
+                        document.getElementById("cinco_e_li_3").innerHTML = "Voice Strategy:<br>- VoLTE + CSFB: VoLTE is the Industry-recognized solution for providing a packet voice service, over IP via LTE access technology. However, as the NaaS operator coverage area is not entirely 4G but a combination of 2G/3G and 4G coverage it needs to deploy CSFB as well.";
+                    }
+
+                    if(form10_var == 'slect_2'){
+                        document.getElementById("cinco_e_li_3").innerHTML = "Voice Strategy:<br>- VoIP on LTE + CSFB: Transmission of voice and multimedia content over Internet Protocol (IP) networks. The LTE handset falls back to 3G or 2G to establish a traditional circuit switching connection.";
+                    }
                     $('#modalQuickView_2').modal('hide');
 
                 } else if(form1_var == 'slect_2' && form4_var == 'slect_1' && form5_var == 'slect_1'){
                     //3G Access via SGSN EPC-enabled
-                    alert('3G Access via SGSN EPC-enabled');
+                    //alert('3G Access via SGSN EPC-enabled');
 
                     switchContent('#uno-H');
                     switchContent2('#dos-H');
@@ -1339,21 +1398,34 @@
                     }else if(form6_var == 'slect_2' && form7_var == 'slect_2'){
                         document.getElementById("ocho_h_li_1").innerHTML = ".";
                     }
+                    
+                    if(form8_var == 'slect_1' && form9_var == 'slect_1'){
+                        document.getElementById("ocho_h_li_2").innerHTML = "Deployment strategy:<br>CUPS EPC: Achieves enhanced performance for content-rich multi-media services, flexible deployment of separated user and data plane functions, geographical extension optimization.";
+                    }
+
+                    if((form8_var == 'slect_1' && form9_var == 'slect_2') || (form8_var == 'slect_2')){
+                        document.getElementById("ocho_h_li_2").innerHTML = "Deployment strategy:<br>Centralized EPC: Minimizes resources, facilities, networking between control and user nodes, and as a result CAPEX and OPEX.";
+                    }
+
+                    if(form10_var == 'slect_1'){
+                        document.getElementById("ocho_h_li_3").innerHTML = "Voice Strategy:<br>- VoLTE + CSFB: VoLTE is the Industry-recognized solution for providing a packet voice service, over IP via LTE access technology. However, as the NaaS operator coverage area is not entirely 4G but a combination of 2G/3G and 4G coverage it needs to deploy CSFB as well.";
+                    }
+
+                    if(form10_var == 'slect_2'){
+                        document.getElementById("ocho_h_li_3").innerHTML = "Voice Strategy:<br>- VoIP on LTE + CSFB: Transmission of voice and multimedia content over Internet Protocol (IP) networks. The LTE handset falls back to 3G or 2G to establish a traditional circuit switching connection.";
+                    }
                     $('#modalQuickView_2').modal('hide');
 
                     
 
                 } else if(form1_var == 'slect_2' && form4_var == 'slect_1' && form5_var == 'slect_2'){
                     //3G Access via Gn/Gp interfaces
-                    alert('3G Access via Gn/Gp interfaces');
+                    //alert('3G Access via Gn/Gp interfaces');
                     switchContent('#uno-G');
                     switchContent2('#dos-G');
                     switchContent3('#tres-B');
                     switchContent4('#cuatro-B');
                     switchContent5('#cinco-B');
-                    //dos_b_li_1
-                    //dos_b_li_2
-                    //dos_b_li_3
 
                     if(form8_global == 'slect_1'){
                         document.getElementById("siete_g_li_4").innerHTML = "IGP recommended protocol: Distance vector protocol.";
@@ -1381,6 +1453,21 @@
                     }else if(form6_var == 'slect_2' && form7_var == 'slect_2'){
                         document.getElementById("siete_g_li_1").innerHTML = ".";
                     }
+                    if(form8_var == 'slect_1' && form9_var == 'slect_1'){
+                        document.getElementById("siete_g_li_2").innerHTML = "Deployment strategy:<br>CUPS EPC: Achieves enhanced performance for content-rich multi-media services, flexible deployment of separated user and data plane functions, geographical extension optimization.";
+                    }
+
+                    if((form8_var == 'slect_1' && form9_var == 'slect_2') || (form8_var == 'slect_2')){
+                        document.getElementById("siete_g_li_2").innerHTML = "Deployment strategy:<br>Centralized EPC: Minimizes resources, facilities, networking between control and user nodes, and as a result CAPEX and OPEX.";
+                    }
+
+                    if(form10_var == 'slect_1'){
+                        document.getElementById("siete_g_li_3").innerHTML = "Voice Strategy:<br>- VoLTE + CSFB: VoLTE is the Industry-recognized solution for providing a packet voice service, over IP via LTE access technology. However, as the NaaS operator coverage area is not entirely 4G but a combination of 2G/3G and 4G coverage it needs to deploy CSFB as well.";
+                    }
+
+                    if(form10_var == 'slect_2'){
+                        document.getElementById("siete_g_li_3").innerHTML = "Voice Strategy:<br>- VoIP on LTE + CSFB: Transmission of voice and multimedia content over Internet Protocol (IP) networks. The LTE handset falls back to 3G or 2G to establish a traditional circuit switching connection.";
+                    }
                     $('#modalQuickView_2').modal('hide');
 
                 } else if(form1_var == 'slect_2' && form4_var == 'slect_2'){
@@ -1389,10 +1476,6 @@
                     switchContent3('#tres-B');
                     switchContent4('#cuatro-B');
                     switchContent5('#cinco-B');
-                    //dos_b_li_1
-                    //dos_b_li_2
-                    //dos_b_li_3
-
                     if(form8_global == 'slect_1'){
                         document.getElementById("seis_f_li_4").innerHTML = "IGP recommended protocol: Distance vector protocol.";
                     }else{
@@ -1418,6 +1501,21 @@
                         document.getElementById("seis_f_li_1").innerHTML = "OFCS";
                     }else if(form6_var == 'slect_2' && form7_var == 'slect_2'){
                         document.getElementById("seis_f_li_1").innerHTML = ".";
+                    }
+                    if(form8_var == 'slect_1' && form9_var == 'slect_1'){
+                        document.getElementById("seis_f_li_2").innerHTML = "Deployment strategy:<br>CUPS EPC: Achieves enhanced performance for content-rich multi-media services, flexible deployment of separated user and data plane functions, geographical extension optimization.";
+                    }
+
+                    if((form8_var == 'slect_1' && form9_var == 'slect_2') || (form8_var == 'slect_2')){
+                        document.getElementById("seis_f_li_2").innerHTML = "Deployment strategy:<br>Centralized EPC: Minimizes resources, facilities, networking between control and user nodes, and as a result CAPEX and OPEX.";
+                    }
+
+                    if(form10_var == 'slect_1'){
+                        document.getElementById("seis_f_li_3").innerHTML = "Voice Strategy:<br>-VoLTE: VoLTE is the Industry-recognized solution for providing a packet voice service, over IP via LTE access technology.";
+                    }
+
+                    if(form10_var == 'slect_2'){
+                        document.getElementById("seis_f_li_3").innerHTML = "Voice Strategy:<br>-VoIP on LTE: Transmission of voice and multimedia content over Internet Protocol (IP) networks.";
                     }
                     $('#modalQuickView_2').modal('hide');
 
