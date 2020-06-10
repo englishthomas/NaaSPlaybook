@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+        <title>RunBook - Widget</title>
+
+         <!-- Bootstrap CSS CDN -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <!-- Our Custom CSS -->
+        <link rel="stylesheet" href="style2.css">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        
+    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+	</head>
+		
+    <body onscroll="updateSection()">
+
+    <div class >
+        <ul class="barra_superior">
+            <li class="li_superior"><a class="active" href="Home.html">Home</a></li>
+            <li class="li_superior"><a href="comming_soon/comming-soon.html">About</a></li>
+        </ul>
+    </div>
+
+        <div class="wrapper-2">
+            <!-- Sidebar Holder -->
+            <nav id="sidebar">
+                <div class="sidebar-header">
+                    <h3>NaaS RunBook</h3>
+                    <!--strong>NaaS</strong-->
+                    <img src="smiley.png" alt="Go to W3Schools!" width="42" height="42" border="0">
+                </div>
+
+                <ul class="list-unstyled components">
+                    <li>
+                        <a href="#runbookSubmenu" data-toggle="collapse" aria-expanded="false">
+                            <i class="glyphicon glyphicon-option-horizontal"></i>
+                            RunBook Modules
+                        </a>
+                        <ul class="collapse list-unstyled" id="runbookSubmenu">
+                            <li>
+                                <a href="#">
+                                    Strategic Plan & Scope
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    High Level Network Architecture
+                                </a>
+                            </li>
+                            <li class="active">
+                                <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false">
+                                    Network Design
+                                </a>
+                                <ul class="collapse list-unstyled" id="homeSubmenu">
+                                    <li><a href="#transportMenu" data-toggle="collapse" aria-expanded="false">RAN</a></li>
+                                        <ul class="panel-collapse collapse" id="transportMenu">
+                                            <li><a href="ran_hld_module.html">  RAN HLD Module</a></li>
+                                        </ul>
+                                    <li><a href="#transportMenu2" data-toggle="collapse" aria-expanded="false">Transport</a></li>
+                                        <ul class="panel-collapse collapse" id="transportMenu2">
+                                            <li><a href="tx_hld_module.html">  Tx Network HLD</a></li>
+                                        </ul>
+                                    <li><a href="#">Core</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#deployment_m" data-toggle="collapse" aria-expanded="false">
+                                    &#187 Deployment
+                                </a>
+                                <ul class="list-unstyled collapse" id="deployment_m">
+                                    <li><a href="deployment_mgmt.html"style="margin-left:2em">&bull; Deployment Mgmt</a></li>
+                                    <li><a href="#"style="margin-left:2em">&bull; Site Survey</a></li>
+                                    <li><a href="#"style="margin-left:2em">&bull; Construction</a></li>
+                                    <li><a href="#"style="margin-left:2em">&bull; I & C</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    O & M
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Field Maintenance
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Post-Launch Engineering
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Supply Chain Management
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#engagementSubmenu" data-toggle="collapse" aria-expanded="false">
+                            <i class="glyphicon glyphicon-option-horizontal"></i>
+                            Methods of Engagement
+                        </a>
+                        <ul class="collapse list-unstyled" id="engagementSubmenu">
+                            <li><a href="#">Primer</a></li>
+                            <li><a href="#">Process Definition</a></li>
+                            <li><a href="#">Templates</a></li>
+                            <!--li><a href="friss.html">Widgets</a></li-->
+                                             
+                            <li class="active">
+                                <a href="#homeSubmenu22" data-toggle="collapse" aria-expanded="false">
+                                    Widgets
+                                </a>
+                                <ul class="collapse list-unstyled" id="homeSubmenu22">
+                                    <li><a href="ran_hld_widget_1.html">RAN - Capacity-Based</a></li>
+                                    <li><a href="ran_hld_widget_2.html">  RAN - Coverage-Based</a></li>
+                                    <li><a href="tx_hld_widget_1.html"> Tx - Capacity Forecast</a></li>
+                                    <li><a href="tx_hld_widget_2.html">  Tx - Availability FO</a></li>
+<li><a href="tx_hld_widget_3.html" style="margin-left:2em"> Tx - Availability MW</a></li>
+<li><a href="tx_hld_widget_4.html" style="margin-left:2em">  Tx – MW Analysis</a></li>
+<li><a href="core_hld_widget_1.html" style="margin-left:2em">  Core - Capacity Planning</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="comming_soon/comming-soon.html">
+                            <i class="glyphicon glyphicon-paperclip"></i>
+                            FAQ
+                        </a>
+                    </li>
+                    <li>
+                        <a href="comming_soon/comming-soon.html">
+                            <i class="glyphicon glyphicon-send"></i>
+                            Contact
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+            <!-- Page Content Holder -->
+            <div id="content">
+                <h2>Network Data Sources Technology & Protocol Selection Wizard</h2>
+                <p class="normal-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                <br>
+                
+                <div class="caja_box">
+                    <center><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalQuickView">Launch</button></center>
+                    <form class="form-horizontal" action="" name="forchi" id="formulario">
+
+                        
+                          <!-- Modal: modalQuickView -->
+                          <div class="modal fade" id="modalQuickView" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-lg" role="document">
+                              <div class="modal-content">
+                                <div class="modal-body">
+
+                                    <h4 class="title-results" style="border-style: solid;background-color:#005777;color:#fff"><center>1. Traffic Statistics, Analytics & Update Frequency</center></h4>           
+                                    <div class="row">
+                                        <label class="col-sm-1"></label>
+                                        <p  class="col-sm-6">1.1. Are detailed traffic statistics per user/service required?</p>
+                                        <label class="col-sm-2"></label>
+                                            <select id="form1" name="tx_lon" class="col-sm-2 text-box"> 
+                                                    <option value="slect_1">Yes</option>
+                                                    <option value="slect_2">No</option>
+                                            </select>
+                                        <label  class="col-sm-2"></label >
+                                    </div>
+                                    <div class="row">
+                                        <label class="col-sm-1"></label>
+                                        <p  class="col-sm-6">1.2. Is there a requirement for advanced analytics and/or high frequency update of performance parameters?</p>
+                                        <label class="col-sm-2"></label>
+                                            <select id="form2" name="tx_lon" class="col-sm-2 text-box"> 
+                                                    <option value="slect_1">Yes</option>
+                                                    <option value="slect_2">No</option>
+                                            </select>
+                                        <label  class="col-sm-2"></label >
+                                    </div>
+
+                                    <h4 class="title-results" style="border-style: solid;background-color:#005777;color:#fff"><center>2. Call Flow Monitoring</center></h4>           
+                                    <div class="row">
+                                        <label class="col-sm-1"></label>
+                                        <p  class="col-sm-6">2.1 Is Call Flow Monitoring required?</p>
+                                        <label class="col-sm-2"></label>
+                                            <select id="form3" name="tx_lon" class="col-sm-2 text-box"> 
+                                                    <option value="slect_1">Yes</option>
+                                                    <option value="slect_2">No</option>
+                                            </select>
+                                        <label  class="col-sm-2"></label >
+                                    </div>
+
+                                    <h4 class="title-results" style="border-style: solid;background-color:#005777;color:#fff"><center>3. Packet Monitoring</center></h4>           
+                                    <div class="row">
+                                        <label class="col-sm-1"></label>
+                                        <p  class="col-sm-6">3.1. Is there a requirement to perform continuous packet monitoring?</p>
+                                        <label class="col-sm-2"></label>
+                                            <select id="form4" name="tx_lon" class="col-sm-2 text-box"> 
+                                                    <option value="slect_1">Yes</option>
+                                                    <option value="slect_2">No</option>
+                                            </select>
+                                        <label  class="col-sm-2"></label >
+                                    </div>
+
+                                    <h4 class="title-results" style="border-style: solid;background-color:#005777;color:#fff"><center>4. QoS Testing Requirements</center></h4>           
+                                    <div class="row">
+                                        <label class="col-sm-1"></label>
+                                        <p  class="col-sm-7">4.1 Is Active QoS Testing required?</p>
+                                        <label class="col-sm-1"></label>
+                                            <select id="form5" name="tx_lon" class="col-sm-2 text-box"> 
+                                                    <option value="slect_1">Yes</option>
+                                                    <option value="slect_2">No</option>
+                                            </select>
+                                        <label  class="col-sm-2"></label >
+                                    </div>
+
+                                    <h4 class="title-results" style="border-style: solid;background-color:#005777;color:#fff"><center>5. Cloud Services and Virtual NEs</center></h4>           
+                                    <div class="row">
+                                        <label class="col-sm-1"></label>
+                                        <p  class="col-sm-7">5.1. Is it required to monitor cloud services and/or virtual Network Elements?</p>
+                                        <label class="col-sm-1"></label>
+                                            <select id="form6" name="tx_lon" class="col-sm-2 text-box"> 
+                                                    <option value="slect_1">Yes</option>
+                                                    <option value="slect_2">No</option>
+                                            </select>
+                                        <label  class="col-sm-2"></label >
+                                    </div>
+
+                                    <br>
+                                    <div class="form-group">
+                                        <center>
+                                            <button type="submit" class="btn btn-default" >Calculate</button>
+                                        </center>
+                                    </div>  
+
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                    </form>
+
+                    <div id="error"></div>
+                </div>
+
+            <section id="uno-A" hidden>
+                <div id="box-1"> 
+                    <img src="images/widgets/wizard_network_mon/option_1_yes.png" alt="Smiley face" style="padding-top: 20px" height="230" width="1000">
+                </div>
+            </section>
+            <section id="uno-B" hidden>
+                <div id="box-1"> 
+                    <img src="images/widgets/wizard_network_mon/option_1_no.png" alt="Smiley face" style="padding-top: 20px" height="230" width="1000">
+                </div>
+            </section>
+            <section id="dos-A" hidden>
+                <div id="box-1"> 
+                    <img src="images/widgets/wizard_network_mon/option_2_yes.png" alt="Smiley face" style="padding-top: 20px" height="190" width="1000">
+                </div>
+            </section>
+            <section id="dos-B" hidden>
+                <div id="box-1"> 
+                    <img src="images/widgets/wizard_network_mon/option_2_no.png" alt="Smiley face" style="padding-top: 20px" height="190" width="1000">
+                </div>
+            </section>
+            <section id="tres-A" hidden>
+                <div id="box-1"> 
+                    <img src="images/widgets/wizard_network_mon/option_3_yes.png" alt="Smiley face" style="padding-top: 20px" height="170" width="1000">
+                </div>
+            </section>
+            <section id="tres-B" hidden>
+                <div id="box-1"> 
+                    <img src="images/widgets/wizard_network_mon/option_3_no.png" alt="Smiley face" style="padding-top: 20px" height="170" width="1000">
+                </div>
+            </section>
+            <section id="cuatro-A" hidden>
+                <div id="box-1"> 
+                    <img src="images/widgets/wizard_network_mon/option_4_yes.png" alt="Smiley face" style="padding-top: 20px" height="140" width="1000">
+                </div>
+            </section>
+            <section id="cuatro-B" hidden>
+                <div id="box-1"> 
+                    <img src="images/widgets/wizard_network_mon/option_4_no.png" alt="Smiley face" style="padding-top: 20px" height="140" width="1000">
+                </div>
+            </section>
+            <section id="cinco-A" hidden>
+                <div id="box-1"> 
+                    <img src="images/widgets/wizard_network_mon/option_5_yes.png" alt="Smiley face" style="padding-top: 20px" height="230" width="1000">
+                </div>
+            </section>
+            <section id="cinco-B" hidden>
+                <div id="box-1"> 
+                    <img src="images/widgets/wizard_network_mon/option_5_no.png" alt="Smiley face" style="padding-top: 20px" height="230" width="1000">
+                </div>
+            </section>
+            <section id="seis-A" hidden>
+                <div id="box-1"> 
+                    <img src="images/widgets/wizard_network_mon/option_6_yes.png" alt="Smiley face" style="padding-top: 20px" height="210" width="1000">
+                </div>
+            </section>
+            <section id="seis-B" hidden>
+                <div id="box-1"> 
+                    <img src="images/widgets/wizard_network_mon/option_6_no.png" alt="Smiley face" style="padding-top: 20px" height="210" width="1000">
+                </div>
+            </section>
+            <section id="siete-A" hidden>
+                <div id="box-1"> 
+                    <img src="images/widgets/wizard_network_mon/option_7_yes.png" alt="Smiley face" style="padding-top: 20px" height="200" width="1000">
+                </div>
+            </section>
+            <section id="siete-B" hidden>
+                <div id="box-1"> 
+                    <img src="images/widgets/wizard_network_mon/option_7_no.png" alt="Smiley face" style="padding-top: 20px" height="200" width="1000">
+                </div>
+            </section>
+            <section id="ocho-A" hidden>
+                <div id="box-1"> 
+                    <img src="images/widgets/wizard_network_mon/option_8_yes.png" alt="Smiley face" style="padding-top: 20px" height="150" width="1000">
+                </div>
+            </section>
+            <section id="ocho-B" hidden>
+                <div id="box-1"> 
+                    <img src="images/widgets/wizard_network_mon/option_8_no.png" alt="Smiley face" style="padding-top: 20px" height="150" width="1000">
+                </div>
+            </section>
+            <section id="nueve-A" hidden>
+                <div id="box-1"> 
+                    <img src="images/widgets/wizard_network_mon/option_9_yes.png" alt="Smiley face" style="padding-top: 20px" height="250" width="1000">
+                </div>
+            </section>
+            <section id="nueve-B" hidden>
+                <div id="box-1"> 
+                    <img src="images/widgets/wizard_network_mon/option_9_no.png" alt="Smiley face" style="padding-top: 20px" height="250" width="1000">
+                </div>
+            </section>
+            <section id="diez-A" hidden>
+                <div id="box-1"> 
+                    <img src="images/widgets/wizard_network_mon/option_10_yes.png" alt="Smiley face" style="padding-top: 20px" height="210" width="1000">
+                </div>
+            </section>
+            <section id="diez-B" hidden>
+                <div id="box-1"> 
+                    <img src="images/widgets/wizard_network_mon/option_10_no.png" alt="Smiley face" style="padding-top: 20px" height="210" width="1000">
+                </div>
+            </section>
+            <section id="once-A" hidden>
+                <div id="box-1"> 
+                    <img src="images/widgets/wizard_network_mon/option_11_yes.png" alt="Smiley face" style="padding-top: 20px" height="210" width="1000">
+                </div>
+            </section>
+            <section id="once-B" hidden>
+                <div id="box-1"> 
+                    <img src="images/widgets/wizard_network_mon/option_11_no.png" alt="Smiley face" style="padding-top: 20px" height="190" width="1000">
+                </div>
+            </section>
+            <section id="doce-A" hidden>
+                <div id="box-1"> 
+                    <img src="images/widgets/wizard_network_mon/option_12_yes.png" alt="Smiley face" style="padding-top: 20px" height="150" width="1000">
+                </div>
+            </section>
+            <section id="doce-B" hidden>
+                <div id="box-1"> 
+                    <img src="images/widgets/wizard_network_mon/option_12_no.png" alt="Smiley face" style="padding-top: 20px" height="150" width="1000">
+                </div>
+            </section>
+            <section id="trece-A" hidden>
+                <div id="box-1"> 
+                    <img src="images/widgets/wizard_network_mon/option_13_yes.png" alt="Smiley face" style="padding-top: 20px" height="210" width="1000">
+                </div>
+            </section>
+            <section id="trece-B" hidden>
+                <div id="box-1"> 
+                    <img src="images/widgets/wizard_network_mon/option_13_no.png" alt="Smiley face" style="padding-top: 20px" height="210" width="1000">
+                </div>
+            </section>
+            <section id="catorce-A" hidden>
+                <div id="box-1"> 
+                    <img src="images/widgets/wizard_network_mon/option_14_yes.png" alt="Smiley face" style="padding-top: 20px" height="130" width="1000">
+                </div>
+            </section>
+            <section id="catorce-B" hidden>
+                <div id="box-1"> 
+                    <img src="images/widgets/wizard_network_mon/option_14_no.png" alt="Smiley face" style="padding-top: 20px" height="140" width="1000">
+                </div>
+            </section>
+            <section id="quince-A" hidden>
+                <div id="box-1"> 
+                    <img src="images/widgets/wizard_network_mon/option_15_yes.png" alt="Smiley face" style="padding-top: 20px" height="160" width="1000">
+                </div>
+            </section>
+            <section id="quince-B" hidden>
+                <div id="box-1"> 
+                    <img src="images/widgets/wizard_network_mon/option_15_no.png" alt="Smiley face" style="padding-top: 20px" height="160" width="1000">
+                </div>
+            </section>
+            <section id="dieciseis-A" hidden>
+                <div id="box-1"> 
+                    <img src="images/widgets/wizard_network_mon/option_16_yes.png" alt="Smiley face" style="padding-top: 20px" height="100" width="1000">
+                </div>
+            </section>
+            <section id="dieciseis-B" hidden>
+                <div id="box-1"> 
+                    <img src="images/widgets/wizard_network_mon/option_16_no.png" alt="Smiley face" style="padding-top: 20px" height="100" width="1000">
+                </div>
+            </section>
+            </div>
+        </div>
+
+        <!-- jQuery CDN border-left: 2px solid gray;-->
+         <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+         <!-- Bootstrap Js CDN -->
+         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+         <script type="text/javascript">
+
+            $(document).ready(function() {
+            $('.mdb-select').materialSelect();
+            });
+             
+            
+            function switchContent(selector){
+                $("#uno-A").hide();
+                $("#uno-B").hide();
+                $("#dos-A").hide();
+                $("#dos-B").hide();
+                $("#tres-A").hide();
+                $("#tres-B").hide();
+                $("#cuatro-A").hide();
+                $("#cuatro-B").hide();
+                $("#cinco-A").hide();
+                $("#cinco-B").hide();
+                $("#seis-A").hide();
+                $("#seis-B").hide();
+                $("#siete-A").hide();
+                $("#siete-B").hide();
+                $("#ocho-A").hide();
+                $("#ocho-B").hide();
+                $("#nueve-A").hide();
+                $("#nueve-B").hide();
+                $("#diez-A").hide();
+                $("#diez-B").hide();
+                $("#once-A").hide();
+                $("#once-B").hide();
+                $("#doce-A").hide();
+                $("#doce-B").hide();
+                $("#trece-A").hide();
+                $("#trece-B").hide();
+                $("#catorce-A").hide();
+                $("#catorce-B").hide();
+                $("#quince-A").hide();
+                $("#quince-B").hide();
+                $("#dieciseis-A").hide();
+                $("#dieciseis-B").hide();
+                $(selector).show();
+                tab = selector;
+            }
+
+    
+
+
+            var formulario2 = document.getElementsByName('forchi')[0],
+               elementos = formulario2.elements,
+               boton = document.getElementById('btn');         
+           
+
+           formulario2.addEventListener('submit',function(evt){
+               evt.preventDefault();
+
+               var form1_var = formulario2.form1.value;
+               var form2_var = formulario2.form2.value;
+               var form3_var = formulario2.form3.value;
+               var form4_var = formulario2.form4.value;
+               var form5_var = formulario2.form5.value;
+               var form6_var = formulario2.form6.value;
+
+
+               if ((form1_var == 'slect_1') && (form3_var == 'slect_1') && (form4_var == 'slect_1') && (form5_var == 'slect_1') && (form6_var == 'slect_1') ){
+                    (form2_var == 'slect_1') ? switchContent('#uno-A') : switchContent('#uno-B');
+                    $('#modalQuickView').modal('hide');
+               } else if ((form1_var == 'slect_1') && (form3_var == 'slect_1') && (form4_var == 'slect_1') && (form5_var == 'slect_1') && (form6_var == 'slect_2') ){
+                    (form2_var == 'slect_1') ? switchContent('#dos-A') : switchContent('#dos-B');
+                    $('#modalQuickView').modal('hide');
+               } else if ((form1_var == 'slect_1') && (form3_var == 'slect_1') && (form4_var == 'slect_1') && (form5_var == 'slect_2') && (form6_var == 'slect_1') ){
+                    (form2_var == 'slect_1') ? switchContent('#tres-A') : switchContent('#tres-B');
+                    $('#modalQuickView').modal('hide');
+               } else if ((form1_var == 'slect_1') && (form3_var == 'slect_1') && (form4_var == 'slect_1') && (form5_var == 'slect_2') && (form6_var == 'slect_2') ){
+                    (form2_var == 'slect_1') ? switchContent('#cuatro-A') : switchContent('#cuatro-B');
+                    $('#modalQuickView').modal('hide');
+               } else if ((form1_var == 'slect_1') && (form3_var == 'slect_1') && (form4_var == 'slect_2') && (form5_var == 'slect_1') && (form6_var == 'slect_1') ){
+                    (form2_var == 'slect_1') ? switchContent('#cinco-A') : switchContent('#cinco-B');
+                    $('#modalQuickView').modal('hide');
+               } else if ((form1_var == 'slect_1') && (form3_var == 'slect_1') && (form4_var == 'slect_2') && (form5_var == 'slect_1') && (form6_var == 'slect_2') ){
+                    (form2_var == 'slect_1') ? switchContent('#seis-A') : switchContent('#seis-B');
+                    $('#modalQuickView').modal('hide');
+               } else if ((form1_var == 'slect_1') && (form3_var == 'slect_1') && (form4_var == 'slect_2') && (form5_var == 'slect_2') && (form6_var == 'slect_1') ){
+                    (form2_var == 'slect_1') ? switchContent('#siete-A') : switchContent('#siete-B');
+                    $('#modalQuickView').modal('hide');
+               } else if ((form1_var == 'slect_1') && (form3_var == 'slect_1') && (form4_var == 'slect_2') && (form5_var == 'slect_2') && (form6_var == 'slect_2') ){
+                    (form2_var == 'slect_1') ? switchContent('#ocho-A') : switchContent('#ocho-B');
+                    $('#modalQuickView').modal('hide');
+               } else if ((form1_var == 'slect_1') && (form3_var == 'slect_2') && (form4_var == 'N/A') && (form5_var == 'slect_1') && (form6_var == 'slect_1') ){
+                    (form2_var == 'slect_1') ? switchContent('#nueve-A') : switchContent('#nueve-B');
+                    $('#modalQuickView').modal('hide');
+               } else if ((form1_var == 'slect_1') && (form3_var == 'slect_2') && (form4_var == 'N/A') && (form5_var == 'slect_1') && (form6_var == 'slect_2') ){
+                    (form2_var == 'slect_1') ? switchContent('#diez-A') : switchContent('#diez-B');
+                    $('#modalQuickView').modal('hide');
+               } else if ((form1_var == 'slect_1') && (form3_var == 'slect_2') && (form4_var == 'N/A') && (form5_var == 'slect_2') && (form6_var == 'slect_1') ){
+                    (form2_var == 'slect_1') ? switchContent('#once-A') : switchContent('#once-B');
+                    $('#modalQuickView').modal('hide');
+               } else if ((form1_var == 'slect_1') && (form3_var == 'slect_2') && (form4_var == 'N/A') && (form5_var == 'slect_2') && (form6_var == 'slect_2') ){
+                    (form2_var == 'slect_1') ? switchContent('#doce-A') : switchContent('#doce-B');
+                    $('#modalQuickView').modal('hide');
+               } else if ((form1_var == 'slect_2') && (form3_var == 'N/A') && (form4_var == 'N/A') && (form5_var == 'slect_1') && (form6_var == 'slect_1') ){
+                    (form2_var == 'slect_1') ? switchContent('#trece-A') : switchContent('#trece-B');
+                    $('#modalQuickView').modal('hide');
+               } else if ((form1_var == 'slect_2') && (form3_var == 'N/A') && (form4_var == 'N/A') && (form5_var == 'slect_1') && (form6_var == 'slect_2') ){
+                    (form2_var == 'slect_1') ? switchContent('#catorce-A') : switchContent('#catorce-B');
+                    $('#modalQuickView').modal('hide');
+               } else if ((form1_var == 'slect_2') && (form3_var == 'N/A') && (form4_var == 'N/A') && (form5_var == 'slect_2') && (form6_var == 'slect_1') ){
+                    (form2_var == 'slect_1') ? switchContent('#quince-A') : switchContent('#quince-B');
+                    $('#modalQuickView').modal('hide');
+               } else if ((form1_var == 'slect_2') && (form3_var == 'N/A') && (form4_var == 'N/A') && (form5_var == 'slect_2') && (form6_var == 'slect_2') ){
+                    (form2_var == 'slect_1') ? switchContent('#dieciseis-A') : switchContent('#dieciseis-B');
+                    $('#modalQuickView').modal('hide');
+               } 
+
+
+               /*document.getElementById("value1_1").value = value1_1_int;
+               document.getElementById("value1_2").value = value1_2_int;
+               document.getElementById("value2_1").value = value2_1_int;
+               document.getElementById("value2_2").value = value2_2_int;
+               document.getElementById("value3").value = value3_int;
+               document.getElementById("value4").value = value4_int;*/
+           });
+
+           $('#form3').change(function(e){
+                if($(this).val() == "slect_2"){
+                    //alert('hi');
+                    $("#form4").prop('disabled',true);
+                    //document.getElementById('form4').options[1].selected = 'selected';
+                    //document.getElementById('form1_4').value = 'Yes';
+                    var x = document.getElementById("form4");
+                    var option = document.createElement("option");
+                    option.text = "N/A";
+                    x.add(option);
+                    document.getElementById('form4').options[2].selected = 'selected';
+                }
+                else {
+                    $("#form4").prop('disabled',false);
+                    document.getElementById("form4").options[2].remove();
+                }
+            });
+
+
+            $('#form1').change(function(e){
+                if($(this).val() == "slect_2"){
+                    $("#form3").prop('disabled',true);
+                    var x = document.getElementById("form3");
+                    var option = document.createElement("option");
+                    option.text = "N/A";
+                    x.add(option);
+                    document.getElementById('form3').options[2].selected = 'selected';
+
+                    $("#form4").prop('disabled',true);
+                    var x = document.getElementById("form4");
+                    var option = document.createElement("option");
+                    option.text = "N/A";
+                    x.add(option);
+                    document.getElementById('form4').options[2].selected = 'selected';
+                }
+                else {
+                    $("#form3").prop('disabled',false);
+                    document.getElementById("form3").options[2].remove();
+                    $("#form4").prop('disabled',false);
+                    document.getElementById("form4").options[2].remove();
+                }
+            });
+
+        </script>
+    </body>
+</html>
