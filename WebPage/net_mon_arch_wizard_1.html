@@ -149,8 +149,9 @@
 
             <!-- Page Content Holder -->
             <div id="content">
-                <h2>Network Data Sources Technology & Protocol Selection Wizard</h2>
-                <p class="normal-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                <h2>Network Monitoring Data Sources, Technology & Protocols Wizard</h2>
+                <p class="normal-text">The following Wizard is provided to support NaaS Operators in the selection of Network Monitoring Data Sources, Technology and Protocols.</p>
+                <p class="normal-text">Please click on the "Launch" botton to start.</p>
                 <br>
                 
                 <div class="caja_box">
@@ -1035,7 +1036,7 @@
 
                 if ((form1_global == 'slect_1') && (form3_global == 'slect_1') && (form4_global == 'slect_1') && (form5_global == 'slect_1') && (form6_global == 'slect_1') ){
                     //option 1
-                    if(form2_global == 'slect_1'){
+                    if(form2_global == 'slect_2'){
                         tblBody.appendChild(addRow("NE - MIB/ Data Model","Availability Status & Performance Counters","SNMP"));
                         tblBody.appendChild(addRow("TAP","Packet","Packet collection (various protocols)"));
                         tblBody.appendChild(addRow("Probe & Synthetic Test","Performance Measurements","ICMP, TWAMP, RFC2544, Y.1564"));
@@ -1048,7 +1049,7 @@
                     }
                } else if ((form1_global == 'slect_1') && (form3_global == 'slect_1') && (form4_global == 'slect_1') && (form5_global == 'slect_1') && (form6_global == 'slect_2') ){
                     //option 2
-                    if(form2_global == 'slect_1'){
+                    if(form2_global == 'slect_2'){
                         tblBody.appendChild(addRow("NE - MIB/ Data Model","Availability Status & Performance Counters","SNMP"));
                         tblBody.appendChild(addRow("TAP","Packet","Packet collection (various protocols)"));
                         tblBody.appendChild(addRow("Probe & Synthetic Test","Performance Measurements","ICMP, TWAMP, RFC2544, Y.1564"));
@@ -1060,7 +1061,7 @@
                     
                } else if ((form1_global == 'slect_1') && (form3_global == 'slect_1') && (form4_global == 'slect_1') && (form5_global == 'slect_2') && (form6_global == 'slect_1') ){
                      //option 3
-                    if(form2_global == 'slect_1'){
+                    if(form2_global == 'slect_2'){
                         tblBody.appendChild(addRow("NE - MIB/ Data Model","Availability Status & Performance Counters","SNMP"));
                         tblBody.appendChild(addRow("TAP","Packet","Packet collection (various protocols)"));
                         tblBody.appendChild(addRow("API","Availability, Performance & Status","REST APIs or Streaming Telemetry (gRPC, TCP, UDP)"));
@@ -1072,7 +1073,7 @@
                     
                } else if ((form1_global == 'slect_1') && (form3_global == 'slect_1') && (form4_global == 'slect_1') && (form5_global == 'slect_2') && (form6_global == 'slect_2') ){
                     //option 4
-                    if(form2_global == 'slect_1'){
+                    if(form2_global == 'slect_2'){
                         tblBody.appendChild(addRow("NE - MIB/ Data Model","Availability Status & Performance Counters","SNMP"));
                         tblBody.appendChild(addRow("TAP","Packet","Packet collection (various protocols)"));
                     }else{
@@ -1082,7 +1083,7 @@
                     
                } else if ((form1_global == 'slect_1') && (form3_global == 'slect_1') && (form4_global == 'slect_2') && (form5_global == 'slect_1') && (form6_global == 'slect_1') ){
                     //option 5
-                    if(form2_global == 'slect_1'){
+                    if(form2_global == 'slect_2'){
                         tblBody.appendChild(addRow("NE - MIB/ Data Model","Availability Status & Performance Counters","SNMP"));
                         tblBody.appendChild(addRow("NE - Mirror Port","Packet","Packet capture (Wireshark)"));
                         tblBody.appendChild(addRow("Probe & Synthetic Test","Performance Measurements","ICMP, TWAMP, RFC2544, Y.1564"));
@@ -1096,7 +1097,7 @@
                     
                } else if ((form1_global == 'slect_1') && (form3_global == 'slect_1') && (form4_global == 'slect_2') && (form5_global == 'slect_1') && (form6_global == 'slect_2') ){
                     //option 6
-                    if(form2_global == 'slect_1'){
+                    if(form2_global == 'slect_2'){
                         tblBody.appendChild(addRow("NE - MIB/ Data Model","Availability Status & Performance Counters","SNMP"));
                         tblBody.appendChild(addRow("NE - Mirror Port","Packet","Packet capture (Wireshark)"));
                         tblBody.appendChild(addRow("Probe & Synthetic Test","Performance Measurements","ICMP, TWAMP, RFC2544, Y.1564"));
@@ -1108,7 +1109,7 @@
                     
                } else if ((form1_global == 'slect_1') && (form3_global == 'slect_1') && (form4_global == 'slect_2') && (form5_global == 'slect_2') && (form6_global == 'slect_1') ){
                      //option 7
-                     if(form2_global == 'slect_1'){
+                     if(form2_global == 'slect_2'){
                         tblBody.appendChild(addRow("NE - MIB/ Data Model","Availability Status & Performance Counters","SNMP"));
                         tblBody.appendChild(addRow("NE - Mirror Port","Packet","Packet capture (Wireshark)"));
                         tblBody.appendChild(addRow("API","Availability, Performance & Status","REST APIs or Streaming Telemetry (gRPC, TCP, UDP)"));
@@ -1120,7 +1121,7 @@
                     
                } else if ((form1_global == 'slect_1') && (form3_global == 'slect_1') && (form4_global == 'slect_2') && (form5_global == 'slect_2') && (form6_global == 'slect_2') ){
                      //option 8
-                     if(form2_global == 'slect_1'){
+                     if(form2_global == 'slect_2'){
                         tblBody.appendChild(addRow("NE - MIB/ Data Model","Availability Status & Performance Counters","SNMP"));
                         tblBody.appendChild(addRow("NE - Mirror Port","Packet","Packet capture (Wireshark)"));
                     }else{
@@ -1130,7 +1131,7 @@
                     
                } else if ((form1_global == 'slect_1') && (form3_global == 'slect_2') && (form4_global == 'N/A') && (form5_global == 'slect_1') && (form6_global == 'slect_1') ){
                     //option 9
-                    if(form2_global == 'slect_1'){
+                    if(form2_global == 'slect_2'){
                         tblBody.appendChild(addRow("NE - MIB/ Data Model","Availability Status & Performance Counters","SNMP"));
                         tblBody.appendChild(addRow("NE - Flow Data","IP Flow Statistics","Netflow / Jflow / Netstream / sFlow / IPFIX"));
                         tblBody.appendChild(addRow("Probe & Synthetic Test","Performance Measurements","ICMP, TWAMP, RFC2544, Y.1564"));
@@ -1144,7 +1145,7 @@
                     
                } else if ((form1_global == 'slect_1') && (form3_global == 'slect_2') && (form4_global == 'N/A') && (form5_global == 'slect_1') && (form6_global == 'slect_2') ){
                     //option 10
-                    if(form2_global == 'slect_1'){
+                    if(form2_global == 'slect_2'){
                         tblBody.appendChild(addRow("NE - MIB/ Data Model","Availability Status & Performance Counters","SNMP"));
                         tblBody.appendChild(addRow("NE - Flow Data","IP Flow Statistics","Netflow / Jflow / Netstream / sFlow / IPFIX"));
                         tblBody.appendChild(addRow("Probe & Synthetic Test","Performance Measurements","ICMP, TWAMP, RFC2544, Y.1564"));
@@ -1156,7 +1157,7 @@
                     
                } else if ((form1_global == 'slect_1') && (form3_global == 'slect_2') && (form4_global == 'N/A') && (form5_global == 'slect_2') && (form6_global == 'slect_1') ){
                     //option 11
-                    if(form2_global == 'slect_1'){
+                    if(form2_global == 'slect_2'){
                         tblBody.appendChild(addRow("NE - MIB/ Data Model","Availability Status & Performance Counters","SNMP"));
                         tblBody.appendChild(addRow("NE - Flow Data","IP Flow Statistics","Netflow / Jflow / Netstream / sFlow / IPFIX"));
                         tblBody.appendChild(addRow("API","Availability, Performance & Status","REST APIs or Streaming Telemetry (gRPC, TCP, UDP)"));
@@ -1168,7 +1169,7 @@
                     
                } else if ((form1_global == 'slect_1') && (form3_global == 'slect_2') && (form4_global == 'N/A') && (form5_global == 'slect_2') && (form6_global == 'slect_2') ){
                     //option 12
-                    if(form2_global == 'slect_1'){
+                    if(form2_global == 'slect_2'){
                         tblBody.appendChild(addRow("NE - MIB/ Data Model","Availability Status & Performance Counters","SNMP"));
                         tblBody.appendChild(addRow("NE - Flow Data","IP Flow Statistics","Netflow / Jflow / Netstream / sFlow / IPFIX"));
                     }else{
@@ -1178,7 +1179,7 @@
                     
                } else if ((form1_global == 'slect_2') && (form3_global == 'N/A') && (form4_global == 'N/A') && (form5_global == 'slect_1') && (form6_global == 'slect_1') ){
                     //option 13
-                    if(form2_global == 'slect_1'){
+                    if(form2_global == 'slect_2'){
                         tblBody.appendChild(addRow("NE - MIB/ Data Model","Availability Status & Performance Counters","SNMP"));
                         tblBody.appendChild(addRow("Probe & Synthetic Test","Performance Measurements","ICMP, TWAMP, RFC2544, Y.1564"));
                         tblBody.appendChild(addRow("API","Availability, Performance & Status","REST APIs or Streaming Telemetry (gRPC, TCP, UDP)"));
@@ -1190,7 +1191,7 @@
                     
                } else if ((form1_global == 'slect_2') && (form3_global == 'N/A') && (form4_global == 'N/A') && (form5_global == 'slect_1') && (form6_global == 'slect_2') ){
                     //option 14
-                    if(form2_global == 'slect_1'){
+                    if(form2_global == 'slect_2'){
                         tblBody.appendChild(addRow("NE - MIB/ Data Model","Availability Status & Performance Counters","SNMP"));
                         tblBody.appendChild(addRow("Probe & Synthetic Test","Performance Measurements","ICMP, TWAMP, RFC2544, Y.1564"));
                     }else{
@@ -1200,7 +1201,7 @@
                     
                } else if ((form1_global == 'slect_2') && (form3_global == 'N/A') && (form4_global == 'N/A') && (form5_global == 'slect_2') && (form6_global == 'slect_1') ){
                     //option 15
-                     if(form2_global == 'slect_1'){
+                     if(form2_global == 'slect_2'){
                         tblBody.appendChild(addRow("NE - MIB/ Data Model","Availability Status & Performance Counters","SNMP"));
                         tblBody.appendChild(addRow("API","Availability, Performance & Status","REST APIs or Streaming Telemetry (gRPC, TCP, UDP)"));
                     }else{
@@ -1209,7 +1210,7 @@
                     }
                     
                } else if ((form1_global == 'slect_2') && (form3_global == 'N/A') && (form4_global == 'N/A') && (form5_global == 'slect_2') && (form6_global == 'slect_2') ){
-                    (form2_global == 'slect_1') ? tblBody.appendChild(addRow("NE - MIB/ Data Model","Availability Status & Performance Counters","SNMP")) : tblBody.appendChild(addRow("NE - MIB/ Data Model","Availability Status & Performance Counters","SNMP + Streaming Telemetry (gRPC, TCP, UDP)"));       
+                    (form2_global == 'slect_2') ? tblBody.appendChild(addRow("NE - MIB/ Data Model","Availability Status & Performance Counters","SNMP")) : tblBody.appendChild(addRow("NE - MIB/ Data Model","Availability Status & Performance Counters","SNMP + Streaming Telemetry (gRPC, TCP, UDP)"));       
                }   
 
                //$('#tablaa-1').show();
