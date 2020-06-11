@@ -2883,7 +2883,7 @@
              <a id="e2e_link-2" class="nav-link bullet-2-link" onclick="onClickActive(event)" href="#item4-1"><em>4.1 Topology & Infrastructure</em></a>
              <a id="e2e_link-3" class="nav-link bullet-2-link" onclick="onClickActive(event)" href="#item4-2"><em>4.2 Scalability</em></a>
              <a id="e2e_link-4"class="nav-link bullet-2-link" onclick="onClickActive(event)" href="#item4-3"><em>4.3 Procurement Strategy</em></a>
-             <a id="e2e_link-8" class="nav-link bullet-2-link" onclick="onClickActive(event)" href="#item5"><strong>5. Network Monitoring: Reference Architecture & Requirements Specification</strong></a>
+             <a id="e2e_link-5" class="nav-link bullet-2-link" onclick="onClickActive(event)" href="#item5"><strong>5. Network Monitoring: Reference Architecture & Requirements Specification</strong></a>
              </nav>
          </nav>
             </section>
@@ -2941,12 +2941,29 @@
 
                             if(tab == '#hld'){
                                 if(scrollTop >= 0 && scrollTop <= 300){
-								document.getElementById("link-1").classList.add('link-active');
+								    document.getElementById("link-1").classList.add('link-active');
                                 }
                                 else if(scrollTop >= 301 && scrollTop <= 650){
                                     document.getElementById("link-2").classList.add('link-active');
-                                }else if(scrollTop >= 651 ){
+                                }else if(scrollTop >= 651 && scrollTop <= 2000){
                                     document.getElementById("link-3").classList.add('link-active'); 
+                                }else if(scrollTop >= 2001 && scrollTop <= 2100){
+                                    document.getElementById("link-4").classList.add('link-active');
+                                    
+                                }else if(scrollTop >= 2101 && scrollTop <= 3000){
+                                    document.getElementById("link-5").classList.add('link-active');
+
+                                }else if(scrollTop >= 3001 && scrollTop <= 8400){
+                                    document.getElementById("link-6").classList.add('link-active');
+                                    
+                                }else if(scrollTop >= 8401 && scrollTop <= 9300){
+                                    document.getElementById("link-7").classList.add('link-active');
+                                }else if(scrollTop >= 9301 && scrollTop <= 12200){
+                                    document.getElementById("link-8").classList.add('link-active');
+                                    
+                                }else if(scrollTop >= 12201 ){
+                                    document.getElementById("link-9").classList.add('link-active');
+                                    
                                 }
                             } else if(tab == '#fm'){
                                 if(scrollTop >= 0 && scrollTop <= 50){
@@ -2960,29 +2977,11 @@
                                 }else if(scrollTop >= 4001 && scrollTop <= 4800){
                                     document.getElementById("fm_link-4").classList.add('link-active');
                                     
-                                }else if(scrollTop >= 4801 && scrollTop <= 7600){
+                                }else if(scrollTop >= 4801 && scrollTop <= 5800){
                                     document.getElementById("fm_link-5").classList.add('link-active');
 
-                                }else if(scrollTop >= 7601 && scrollTop <= 8250){
+                                }else if(scrollTop >= 5801 ){
                                     document.getElementById("fm_link-6").classList.add('link-active');
-                                    
-                                }else if(scrollTop >= 8251 && scrollTop <= 10000){
-                                    document.getElementById("fm_link-7").classList.add('link-active');
-
-                                }else if(scrollTop >= 10001 && scrollTop <= 12700){
-                                    document.getElementById("fm_link-8").classList.add('link-active');
-                                    
-                                }else if(scrollTop >= 12701 && scrollTop <= 13550){
-                                    document.getElementById("fm_link-9").classList.add('link-active');
-                                    
-                                }else if(scrollTop >= 13551 && scrollTop <= 15450){
-                                    document.getElementById("fm_link-10").classList.add('link-active');
-
-                                }else if(scrollTop >= 15451 && scrollTop <= 15500){
-                                    document.getElementById("fm_link-11").classList.add('link-active');
-                                    
-                                }else if(scrollTop >= 15501 ){
-                                    document.getElementById("fm_link-12").classList.add('link-active');
                                     
                                 }
 
@@ -2993,13 +2992,13 @@
                                 else if(scrollTop >= 151 && scrollTop <= 1500){
                                     document.getElementById("e2e_link-2").classList.add('link-active');
 
-                                }else if(scrollTop >= 1301 && scrollTop <= 15000){
+                                }else if(scrollTop >= 1301 && scrollTop <= 2100){
                                     document.getElementById("e2e_link-3").classList.add('link-active');
                                     
-                                }else if(scrollTop >= 15101 && scrollTop <= 15200 ){
+                                }else if(scrollTop >= 2101 && scrollTop <= 3300 ){
                                     document.getElementById("e2e_link-4").classList.add('link-active');
                                     
-                                }else if(scrollTop >= 15201 ){
+                                }else if(scrollTop >= 3301 ){
                                     document.getElementById("e2e_link-5").classList.add('link-active');
                                     
                                 }
