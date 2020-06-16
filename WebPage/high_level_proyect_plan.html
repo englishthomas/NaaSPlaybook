@@ -2042,9 +2042,9 @@
                         calculated and the type and amount of resources that must be acquired registered.</p>
                         
                         <p class="normal-text">To support
-                        NaaS Operators throughout Resource identification and assessment, a <a class="a_link" href="https://github.com/teleworxllc/NaaSRunBook/tree/gh-pages/Strategic%20Plan%20%26%20Scope/Templates/Resource_Checklist_Template.xlsx">Resource Checklist
-                        Template</a> and a <a class="a_link" href="https://github.com/teleworxllc/NaaSRunBook/tree/gh-pages/Strategic%20Plan%20%26%20Scope/Templates/Staffing_Plan_Template.xlsx">Staffing
-                        Plan Template</a> are provided for customization and fill-out by the NaaS
+                        NaaS Operators throughout Resource identification and assessment, a 
+                        <a class="a_link" href="https://github.com/teleworxllc/NaaSRunBook/tree/gh-pages/Strategic%20Plan%20%26%20Scope/Templates/Resource_Checklist_Template.xlsx">Resource Checklist Template</a> 
+                        and a <a class="a_link" href="https://github.com/teleworxllc/NaaSRunBook/tree/gh-pages/Strategic%20Plan%20%26%20Scope/Templates/Staffing_Plan_Template.xlsx">Staffing Plan Template</a> are provided for customization and fill-out by the NaaS
                         Operator.</p>
                         
                         <br><h2><a class="titulo-h2 anchor-bum" name="item3-2">3.2
@@ -2303,10 +2303,10 @@
 
                 <nav id="navbar-example3" class="navbar navbar-light bg-light position-fixed">
                     <nav class="nav nav-pills flex-column">
-                        <a id="e2e_link-1" class="nav-link bullet-2-link" onclick="onClickActive(event)" href="#item3"><strong>3. RESOURCE PLAN</strong></a>
-                        <a id="e2e_link-2" class="nav-link bullet-2-link" onclick="onClickActive(event)" href="#item3-1"><em>3.1 Resource Identification & Assessment</em></a>
-                        <a id="e2e_link-3" class="nav-link bullet-2-link" onclick="onClickActive(event)" href="#item3-2"><em>3.2 Resource Acquisition Plan</em></a>
-                        <a id="e2e_link-4" class="nav-link bullet-2-link" onclick="onClickActive(event)" href="#item3-3"><em>3.3 Resource Utilization Plan</em></a>
+                        <a id="fm_link-1" class="nav-link bullet-2-link" onclick="onClickActive(event)" href="#item3"><strong>3. RESOURCE PLAN</strong></a>
+                        <a id="fm_link-2" class="nav-link bullet-2-link" onclick="onClickActive(event)" href="#item3-1"><em>3.1 Resource Identification & Assessment</em></a>
+                        <a id="fm_link-3" class="nav-link bullet-2-link" onclick="onClickActive(event)" href="#item3-2"><em>3.2 Resource Acquisition Plan</em></a>
+                        <a id="fm_link-4" class="nav-link bullet-2-link" onclick="onClickActive(event)" href="#item3-3"><em>3.3 Resource Utilization Plan</em></a>
                     </nav>
                 </nav>
            </section>
@@ -4043,10 +4043,10 @@
                 <a id="e2e_link-1" class="nav-link bullet-2-link" onclick="onClickActive(event)" href="#item4"><strong>4. HIGH-LEVEL SCHEDULE</strong></a>
                 <a id="e2e_link-2" class="nav-link bullet-2-link" onclick="onClickActive(event)" href="#item4-1"><em>4.1 Milestone Definition & Task Identification</em></a>
                 <a id="e2e_link-3" class="nav-link bullet-2-link" onclick="onClickActive(event)" href="#item4-2"><em>4.2 Schedule Generation</em></a>
-                <a id="e2e_link-6" class="nav-link bullet-2-link" onclick="onClickActive(event)" href="#item5"><strong>5. COMMUNICATIONS PLAN</strong></a>
-                <a id="e2e_link-7" class="nav-link bullet-2-link" onclick="onClickActive(event)" href="#item5-1"><em>5.1 Meetings & Reporting Mechanisms</em></a>
-                <a id="e2e_link-8" class="nav-link bullet-2-link" onclick="onClickActive(event)" href="#item5-2"><em>5.2 Communication Channels</em></a>
-                <a id="e2e_link-9"class="nav-link bullet-2-link" onclick="onClickActive(event)" href="#item5-3"><em>5.3 Document Management</em></a>
+                <a id="e2e_link-4" class="nav-link bullet-2-link" onclick="onClickActive(event)" href="#item5"><strong>5. COMMUNICATIONS PLAN</strong></a>
+                <a id="e2e_link-5" class="nav-link bullet-2-link" onclick="onClickActive(event)" href="#item5-1"><em>5.1 Meetings & Reporting Mechanisms</em></a>
+                <a id="e2e_link-6" class="nav-link bullet-2-link" onclick="onClickActive(event)" href="#item5-2"><em>5.2 Communication Channels</em></a>
+                <a id="e2e_link-7"class="nav-link bullet-2-link" onclick="onClickActive(event)" href="#item5-3"><em>5.3 Document Management</em></a>
              </nav>
          </nav>
         </section>  
@@ -4107,44 +4107,26 @@
                                 }
                                 else if(scrollTop >= 301 && scrollTop <= 650){
                                     document.getElementById("link-2").classList.add('link-active');
-                                }else if(scrollTop >= 651 ){
+                                }else if(scrollTop >= 651 && scrollTop <= 1950){
                                     document.getElementById("link-3").classList.add('link-active'); 
+                                }else if(scrollTop >= 1951 && scrollTop <= 2100){
+                                    document.getElementById("link-4").classList.add('link-active'); 
+                                }else if(scrollTop >= 2101 && scrollTop <= 2700){
+                                    document.getElementById("link-5").classList.add('link-active'); 
+                                }else if(scrollTop >= 2701){
+                                    document.getElementById("link-6").classList.add('link-active'); 
                                 }
                             } else if(tab == '#fm'){
                                 if(scrollTop >= 0 && scrollTop <= 50){
 								    document.getElementById("fm_link-1").classList.add('link-active');
-                                }else if(scrollTop >= 51 && scrollTop <= 3500){
+                                }else if(scrollTop >= 51 && scrollTop <= 7300){
                                     document.getElementById("fm_link-2").classList.add('link-active');
 
-                                }else if(scrollTop >= 3501 && scrollTop <= 4000){
+                                }else if(scrollTop >= 7301 && scrollTop <= 9000){
                                     document.getElementById("fm_link-3").classList.add('link-active');
 
-                                }else if(scrollTop >= 4001 && scrollTop <= 4800){
+                                }else if(scrollTop >= 9001 ){
                                     document.getElementById("fm_link-4").classList.add('link-active');
-                                    
-                                }else if(scrollTop >= 4801 && scrollTop <= 7600){
-                                    document.getElementById("fm_link-5").classList.add('link-active');
-
-                                }else if(scrollTop >= 7601 && scrollTop <= 8250){
-                                    document.getElementById("fm_link-6").classList.add('link-active');
-                                    
-                                }else if(scrollTop >= 8251 && scrollTop <= 10000){
-                                    document.getElementById("fm_link-7").classList.add('link-active');
-
-                                }else if(scrollTop >= 10001 && scrollTop <= 12700){
-                                    document.getElementById("fm_link-8").classList.add('link-active');
-                                    
-                                }else if(scrollTop >= 12701 && scrollTop <= 13550){
-                                    document.getElementById("fm_link-9").classList.add('link-active');
-                                    
-                                }else if(scrollTop >= 13551 && scrollTop <= 15450){
-                                    document.getElementById("fm_link-10").classList.add('link-active');
-
-                                }else if(scrollTop >= 15451 && scrollTop <= 15500){
-                                    document.getElementById("fm_link-11").classList.add('link-active');
-                                    
-                                }else if(scrollTop >= 15501 ){
-                                    document.getElementById("fm_link-12").classList.add('link-active');
                                     
                                 }
 
@@ -4152,17 +4134,23 @@
                                 if(scrollTop >= 0 && scrollTop <= 150){
 								    document.getElementById("e2e_link-1").classList.add('link-active');
                                 }
-                                else if(scrollTop >= 151 && scrollTop <= 1500){
+                                else if(scrollTop >= 151 && scrollTop <= 2500){
                                     document.getElementById("e2e_link-2").classList.add('link-active');
 
-                                }else if(scrollTop >= 1301 && scrollTop <= 15000){
+                                }else if(scrollTop >= 2501 && scrollTop <= 6600){
                                     document.getElementById("e2e_link-3").classList.add('link-active');
                                     
-                                }else if(scrollTop >= 15101 && scrollTop <= 15200 ){
+                                }else if(scrollTop >= 6601 && scrollTop <= 6900 ){
                                     document.getElementById("e2e_link-4").classList.add('link-active');
                                     
-                                }else if(scrollTop >= 15201 ){
+                                }else if(scrollTop >= 6901 && scrollTop <= 8300 ){
                                     document.getElementById("e2e_link-5").classList.add('link-active');
+                                    
+                                }else if(scrollTop >= 8301 && scrollTop <= 9300 ){
+                                    document.getElementById("e2e_link-6").classList.add('link-active');
+                                    
+                                }else if(scrollTop >= 9301 ){
+                                    document.getElementById("e2e_link-7").classList.add('link-active');
                                     
                                 }
 
