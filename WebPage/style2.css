@@ -633,13 +633,16 @@ img {
 }
 
 
+/****
+Btuton!!!
+****/
 
-button {
-    /*position: relative;*/
+/*button {
+    position: relative;
     outline: none;
     text-decoration: none;
     border-radius: 10px;
-    /*display: flex;*/
+    display: flex;
     justify-content: center;
     align-items: center;
     cursor: pointer;
@@ -647,6 +650,7 @@ button {
     opacity: 1;
     border: 1px solid #005777;
   }
+*/
 
   .main-button{
     background-color: #005777;
@@ -659,16 +663,17 @@ button {
     background-color: #E0E0E0;
     color: #000;
     height: 60px;
-    width: 150px; 
+    width: 160px; 
   }
 
   .red-button{
     background-color: #870f42;
     color: #fff;
     height: 60px;
-    width: 150px; 
+    width: 160px; 
   }
 
+  /*
   button span {
     font-size: 13px;
     font-weight: 500;
@@ -680,7 +685,7 @@ button {
   button:hover span {
     animation: storm 0.7s ease-in-out both;
     animation-delay: 0.06s;
-  }
+  }*/
   
   @keyframes rotate {
     0% {
@@ -716,4 +721,24 @@ button {
       transform: translate3d(0, 0, 0) translateZ(0);
     }
   }
+
+
+  .container{
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #005777;
+
+  }
+  .btn {
+    border: 1px solid #005777;
+    font-size: 13px;
+    letter-spacing: 0.4px;
+    overflow: hidden;
+    white-space: initial;
+  text-overflow: ellipsis;
+  }
   
+  .btn:hover {
+    box-shadow: 1px 1px 25px 10px rgba(255, 255, 0, 0.4);
+  }
