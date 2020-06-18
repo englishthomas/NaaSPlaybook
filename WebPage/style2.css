@@ -723,13 +723,6 @@ Btuton!!!
   }
 
 
-  .container{
-    border-radius: 10px;
-    justify-content: center;
-    align-items: center;
-    border: 1px solid #005777;
-
-  }
   .btn {
     border: 1px solid #005777;
     font-size: 13px;
@@ -742,3 +735,18 @@ Btuton!!!
   .btn:hover {
     box-shadow: 1px 1px 25px 10px rgba(255, 255, 0, 0.4);
   }
+
+
+#container {
+    text-align: justify;
+    -ms-text-justify: distribute-all-lines;
+    text-justify: distribute-all-lines;
+    
+}
+#container>div {
+   
+    vertical-align: top;
+    display: inline-block;
+    *display: inline;
+    
+}
