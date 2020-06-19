@@ -181,13 +181,13 @@
 
                 
 
-               <div style="display:inline;margin-left: 5%;">
-                    <button class="btn main-button"> <span><strong>Strategic Plan & Scope</strong></span> </button>
+               <div style="display:inline;">
+                    <button class="btn main-button" onclick="location.href='strategy_scope.html'" type="button"> <span><strong>Strategic Plan & Scope</strong></span> </button>
                     <button class="btn gray-button"> <span><strong>Strategy & Scope</strong></span> </button>
                     <button class="btn gray-button"> <span><strong>High Level Project Plan</strong></span> </button>
                 </div>
                 <br><br style="margin: 100px 0;"> 
-                <div style="display:inline;margin-left: 5%;">
+                <div style="display:inline;">
                     <button class="btn main-button"> <span><strong>High Level Network Architecture</strong></span> </button>
                     <button class="btn gray-button"> <span><strong>RAN Architecture</span> </strong></button>
                     <button class="btn gray-button"> <span><strong>TX & IP Architecture</span> </strong></button>
@@ -195,15 +195,69 @@
                     <button class="btn gray-button"> <span><strong>Network Monitoring</span> </strong></button>
                 </div>
                 <br><br>
-                <div style="display:inline;margin-left: 5%;">
+                <div style="display:inline;">
                     <button class="btn main-button"> <span><strong>Runbook Assessment, Adoption & Implementation</strong></span> </button>
                     <button class="btn gray-button"> <span><strong>Strategic Use of the Runbook</strong></span> </button>
                     <button class="btn gray-button"> <span><strong>Runbook Mgmt. & Implementation</strong></span> </button>
                 </div>
                 <br><br>
+                <div id="container">
+                    <div>
+                        <button class="btn main-button" style="height: 220px;"> <span><strong>Network Architecture</strong></span> </button>
+                    </div>
+                    <div>
+                        <div style="display: inline-block; margin-left: 0.5%;">
+                            <button class="btn red-button"> <span><strong>RAN</strong></span> </button>
+                        </div>
+                        <br><br>
+                        <div style="display: inline-block; margin-left: 0.5%;">
+                            <button class="btn red-button"> <span><strong>Transport</strong></span> </button>
+                        </div>
+                        <br><br>
+                        <div style="display: inline-block; margin-left: 0.5%;">
+                            <button class="btn red-button"> <span><strong>Core</strong></span> </button>
+                        </div>
+                    </div>
+                    <div>
+                        <div style="display: inline-block; margin-left: 0.5%;">
+                            <button class="btn gray-button"> <span><strong>RAN HLD</strong></span> </button>
+                        </div>
+                        <br><br>
+                        <div style="display: inline-block; margin-left: 0.5%;">
+                            <button class="btn gray-button"> <span><strong>TX HLD</strong></span> </button>
+                        </div>
+                        <br><br>
+                        <div style="display: inline-block; margin-left: 0.5%;">
+                            <button class="btn gray-button"> <span><strong>Mobile Core HLD</strong></span> </button>
+                        </div>
+                    </div>
+                    <div>
+                        <div style="display: inline-block; margin-left: 0.5%;">
+                            <button class="btn gray-button"> <span><strong>RAN LLD</strong></span> </button>
+                        </div>
+                        <br><br>
+                        <div style="display: inline-block; margin-left: 0.5%;">
+                            <button class="btn gray-button"> <span><strong>TX LLD</strong></span> </button>
+                        </div>
+                        <br><br>
+                        <div style="display: inline-block; margin-left: 0.5%;">
+                            <button class="btn gray-button"> <span><strong>Mobile Core HLD</strong></span> </button>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <div style="display: inline-block; margin-left: 0.5%;" >
+                            <button class="btn gray-button" style="height: 140px;"> <span><strong>Tower / Site Construction</strong></span> </button>
+                        </div>
+                        <br><br>
+                        <div style="display: inline-block; margin-left: 0.5%;">
+                            <button class="btn gray-button"> <span><strong>I&C</strong></span> </button>
+                        </div>
+                    </div>
+                </div>
 
-                <div style="display:inline;">
-                    <div style="float:left;margin-left: 5%;">
+                <!--div style="display:inline;">
+                    <div style="float:left;">
                         <button class="btn main-button" style="height: 220px;"> <span><strong>Network Design</strong></span> </button>
                     </div>
                     <div style="float:right;">
@@ -227,84 +281,16 @@
                         <button class="btn gray-button"> <span><strong>Mobile Core LLD</strong></span> </button>
                         <button class="btn gray-button"> <span><strong>Civil & Power Design</strong></span> </button>
                     </div>
-                </div>
-                <br><br>
-                <div style="display:inline;margin-left: 5%;">
+                </div-->
+                <br>
+                <div style="display:inline;">
                     <button class="btn main-button"> <span><strong>Supply Chain Management</strong></span> </button>
                     <button class="btn gray-button"> <span><strong>RFx Process</strong></span> </button>
                     <button class="btn gray-button"> <span><strong>Procurement Process & Vendor Mgmt.</strong></span> </button>
                     <button class="btn gray-button"> <span><strong>Logistics & Warehousing</strong></span> </button>
                 </div>
                 <br><br>
-                <div style="display:inline;">
-                    <div style="float:left;margin-left: 5%;">
-                        <button class="btn main-button" style="height: 140px;"> <span><strong>Deployment</strong></span> </button>
-                    </div>
-                    <div style="float:right;">
-                        <button class="btn gray-button" style="height: 140px;position: relative;right: 82%;"> <span><strong>Deployment Management</strong></span> </button>
-                        <button class="btn gray-button" style="height: 140px;position: relative;right: 82%;"> <span><strong>Site Survey</strong></span> </button>
-                    
-                    </div>
-                    <div style="display: inline-block; margin-left: 0.5%;">
-                        <button class="btn red-button"> <span><strong>Construction</strong></span> </button>
-                        <button class="btn gray-button" style="position: relative;left: 101%;"> <span><strong>Tower / Site Construction</strong></span> </button>
-                    </div>
-                    <br><br>
-                    <div style="display: inline-block; margin-left: 0.5%;">
-                        <button class="btn red-button"> <span><strong>I&C</strong></span> </button>
-                        <button class="btn gray-button" style="position: relative;left: 101%;"> <span><strong>I&C</strong></span> </button>
-                    </div>
-                </div>
-                <br><br>
-                <div style="display:inline;margin-left: 5%;">
-                    <button class="btn main-button"> <span><strong>Operations & Maintenance</strong></span> </button>
-                    <button class="btn gray-button"> <span><strong>NOC</strong></span> </button>
-                    <button class="btn gray-button"> <span><strong>SOC</strong></span> </button>
-                    <button class="btn gray-button"> <span><strong>Field Maintenance Mgmt.</strong></span> </button>
-                </div>
-                <br><br>
-                <div style="display:inline;">
-                    <div style="float:left;margin-left: 5%;">
-                        <button class="btn main-button" style="height: 140px;"> <span><strong>Field Maintenance</strong></span> </button>
-                    </div>
-                    <div style="display: inline-block; margin-left: 0.5%;">
-                        <button class="btn red-button"> <span><strong>Inside Plant</strong></span> </button>
-                        <button class="btn gray-button"> <span><strong>Network Element Maintenance</strong></span> </button>
-                        <button class="btn gray-button"> <span><strong>Network Infra Maintenance</strong></span> </button>
-                    </div>
-                    <br><br>
-                    <div style="display: inline-block; margin-left: 0.5%;">
-                        <button class="btn red-button"> <span><strong>Outside Plant</strong></span> </button>
-                        <button class="btn gray-button"> <span><strong>Network Element Maintenance</strong></span> </button>
-                        <button class="btn gray-button"> <span><strong>Network Infra Maintenance</strong></span> </button>
-                    </div>
-                </div>
-                <br><br>
-                <div style="display:inline;">
-                    <div style="float:left;margin-left: 5%;">
-                        <button class="btn main-button" style="height: 220px;"> <span><strong>Post-Launch Engineering</strong></span> </button>
-                    </div>
-                    <div style="display: inline-block; margin-left: 0.5%;">
-                        <button class="btn red-button"> <span><strong>RAN</strong></span> </button>
-                        <button class="btn gray-button"> <span><strong>Capacity Planning</strong></span> </button>
-                        <button class="btn gray-button"> <span><strong>Performance Management</strong></span> </button>
-                        <button class="btn gray-button"> <span><strong>RF Optimization</strong></span> </button>
-                    </div>
-                    <br><br>
-                    <div style="display: inline-block; margin-left: 0.5%;">
-                        <button class="btn red-button"> <span><strong>Transport</strong></span> </button>
-                        <button class="btn gray-button"> <span><strong>Capacity Planning</strong></span> </button>
-                        <button class="btn gray-button"> <span><strong>Performance Management</strong></span> </button>
-                    </div>
-                    <br><br>
-                    <div style="display: inline-block; margin-left: 0.5%;">
-                        <button class="btn red-button"> <span><strong>Core</strong></span> </button>
-                        <button class="btn gray-button"> <span><strong>Capacity Planning</strong></span> </button>
-                        <button class="btn gray-button"> <span><strong>Performance Management</strong></span> </button>
-                    </div>
-                </div>
-                <br><br>
-                <div id="container" style="margin-left: 5%;">
+                <div id="container">
                     <div>
                         <button class="btn main-button" style="height: 140px;"> <span><strong>Deployment</strong></span> </button>
                     </div>
@@ -332,10 +318,114 @@
                             <button class="btn gray-button"> <span><strong>I&C</strong></span> </button>
                         </div>
                     </div>
-                    <!--div>
+                    <div>
                         <button class="btn gray-button"> <span><strong>I&C</strong></span> </button>
-                    </div-->
+                    </div>
                 </div>
+                <br>
+                <div style="display:inline;">
+                    <button class="btn main-button"> <span><strong>Operations & Maintenance</strong></span> </button>
+                    <button class="btn gray-button"> <span><strong>NOC</strong></span> </button>
+                    <button class="btn gray-button"> <span><strong>SOC</strong></span> </button>
+                    <button class="btn gray-button"> <span><strong>Field Maintenance Mgmt.</strong></span> </button>
+                </div>
+                <br><br>
+                <div style="display:inline;">
+                    <div style="float:left;">
+                        <button class="btn main-button" style="height: 140px;"> <span><strong>Field Maintenance</strong></span> </button>
+                    </div>
+                    <div style="display: inline-block; margin-left: 0.5%;">
+                        <button class="btn red-button"> <span><strong>Inside Plant</strong></span> </button>
+                        <button class="btn gray-button"> <span><strong>Network Element Maintenance</strong></span> </button>
+                        <button class="btn gray-button"> <span><strong>Network Infra Maintenance</strong></span> </button>
+                    </div>
+                    <br><br>
+                    <div style="display: inline-block; margin-left: 0.5%;">
+                        <button class="btn red-button"> <span><strong>Outside Plant</strong></span> </button>
+                        <button class="btn gray-button"> <span><strong>Network Element Maintenance</strong></span> </button>
+                        <button class="btn gray-button"> <span><strong>Network Infra Maintenance</strong></span> </button>
+                    </div>
+                </div>
+                <br><br>
+                <div style="display:inline;">
+                    <div style="float:left;">
+                        <button class="btn main-button" style="height: 220px;"> <span><strong>Post-Launch Engineering</strong></span> </button>
+                    </div>
+                    <div style="display: inline-block; margin-left: 0.5%;">
+                        <button class="btn red-button"> <span><strong>RAN</strong></span> </button>
+                        <button class="btn gray-button"> <span><strong>Capacity Planning</strong></span> </button>
+                        <button class="btn gray-button"> <span><strong>Performance Management</strong></span> </button>
+                        <button class="btn gray-button"> <span><strong>RF Optimization</strong></span> </button>
+                    </div>
+                    <br><br>
+                    <div style="display: inline-block; margin-left: 0.5%;">
+                        <button class="btn red-button"> <span><strong>Transport</strong></span> </button>
+                        <button class="btn gray-button"> <span><strong>Capacity Planning</strong></span> </button>
+                        <button class="btn gray-button"> <span><strong>Performance Management</strong></span> </button>
+                    </div>
+                    <br><br>
+                    <div style="display: inline-block; margin-left: 0.5%;">
+                        <button class="btn red-button"> <span><strong>Core</strong></span> </button>
+                        <button class="btn gray-button"> <span><strong>Capacity Planning</strong></span> </button>
+                        <button class="btn gray-button"> <span><strong>Performance Management</strong></span> </button>
+                    </div>
+                </div>
+                <br><br>
+                <!--div id="container">
+                    <div>
+                        <button class="btn main-button" style="height: 220px;"> <span><strong>Network Architecture</strong></span> </button>
+                    </div>
+                    <div>
+                        <div style="display: inline-block; margin-left: 0.5%;">
+                            <button class="btn red-button"> <span><strong>RAN</strong></span> </button>
+                        </div>
+                        <br><br>
+                        <div style="display: inline-block; margin-left: 0.5%;">
+                            <button class="btn red-button"> <span><strong>Transport</strong></span> </button>
+                        </div>
+                        <br><br>
+                        <div style="display: inline-block; margin-left: 0.5%;">
+                            <button class="btn red-button"> <span><strong>Core</strong></span> </button>
+                        </div>
+                    </div>
+                    <div>
+                        <div style="display: inline-block; margin-left: 0.5%;">
+                            <button class="btn gray-button"> <span><strong>RAN HLD</strong></span> </button>
+                        </div>
+                        <br><br>
+                        <div style="display: inline-block; margin-left: 0.5%;">
+                            <button class="btn gray-button"> <span><strong>TX HLD</strong></span> </button>
+                        </div>
+                        <br><br>
+                        <div style="display: inline-block; margin-left: 0.5%;">
+                            <button class="btn gray-button"> <span><strong>Mobile Core HLD</strong></span> </button>
+                        </div>
+                    </div>
+                    <div>
+                        <div style="display: inline-block; margin-left: 0.5%;">
+                            <button class="btn gray-button"> <span><strong>RAN LLD</strong></span> </button>
+                        </div>
+                        <br><br>
+                        <div style="display: inline-block; margin-left: 0.5%;">
+                            <button class="btn gray-button"> <span><strong>TX LLD</strong></span> </button>
+                        </div>
+                        <br><br>
+                        <div style="display: inline-block; margin-left: 0.5%;">
+                            <button class="btn gray-button"> <span><strong>Mobile Core HLD</strong></span> </button>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <div style="display: inline-block; margin-left: 0.5%;" >
+                            <button class="btn gray-button" style="height: 140px;"> <span><strong>Tower / Site Construction</strong></span> </button>
+                        </div>
+                        <br><br>
+                        <div style="display: inline-block; margin-left: 0.5%;">
+                            <button class="btn gray-button"> <span><strong>I&C</strong></span> </button>
+                        </div>
+                    </div>
+                </div-->
+                
                 <br><br>
                 
                 <!--div class="container">
