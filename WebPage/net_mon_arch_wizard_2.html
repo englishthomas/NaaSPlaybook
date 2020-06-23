@@ -150,8 +150,7 @@
             <!-- Page Content Holder -->
             <div id="content">
                 <h2>Network Monitoring Parameters Definition Wizard</h2>
-                <p class="normal-text">The aim of this High-Level IP Distribution Plan Widget is to support NaaS Operators in the generation of the General IP Distribution Plan. </p>
-                <p>Please select the privat segment to be set. Then select the elements that required addressing and the number of geographic zones.</p>
+                <p class="normal-text">The aim of this High-Level////. </p>
                 <br>
                 
                 <div class="caja_box">
@@ -399,7 +398,7 @@
                     </form>
 
                     
-                    <h4 class="title-results"><center>Subnetting</center></h4>
+                    <h4 class="title-results"><center>Network Monitoring Parameters Table</center></h4>
 
                     <br>
                     <div id="tablita" align="center" name="tabla">
@@ -571,7 +570,7 @@
                     (kpi_8_var == true || kpi_9_var == true) ? contador_ran=contador_ran+2 : contador_ran=contador_ran;
                     (kpi_12_var == true || kpi_14_var == true) ? contador_ran=contador_ran+2 : contador_ran=contador_ran;
                     (kpi_15_var == true || kpi_14_var == true) ? contador_ran=contador_ran+2 : contador_ran=contador_ran;
-                    (kpi_16_var == true || kpi_17_var == true) ? contador_ran=contador_ran+2 : contador_ran=contador_ran;
+                    (kpi_16_var == true || kpi_17_var == true) ? contador_ran++ : contador_ran=contador_ran;
                     (kpi_4_var == true) ? contador_ran++ : contador_ran=contador_ran;
 
                     tblBody.appendChild(addRow(contador_ran,true,"RAN Equipment","","","",""));
@@ -613,42 +612,78 @@
                 tblBody.appendChild(addRow(contador_tx,false,"Transport Equipment","Routing Table","On demand","N/A","Information of IP routes. Other information regarding the L3 protocols might be collected, such as route changes, bgp neighbors, bgp peers, etc."));         
 
                 if(kpi_1_var == true){
-                    tblBody.appendChild(addRow(contador_tx,false,"RAN Equipment","L2/L3 Protocol Status","Alarm only","Whenever state changes","Status of the different protocols (STP, LAG, OSPF, ISIS, BGP)"));
-                    tblBody.appendChild(addRow(contador_tx,false,"RAN Equipment","IP interface status","Alarm only","Whenever state changes","Status of the configured IP interfaces"));
+                    tblBody.appendChild(addRow(contador_tx,false,"Transport Equipment","L2/L3 Protocol Status","Alarm only","Whenever state changes","Status of the different protocols (STP, LAG, OSPF, ISIS, BGP)"));
+                    tblBody.appendChild(addRow(contador_tx,false,"Transport Equipment","IP interface status","Alarm only","Whenever state changes","Status of the configured IP interfaces"));
                 }
                 if(kpi_7_var == true){
-                    tblBody.appendChild(addRow(contador_tx,false,"RAN Equipment","ICMP Transmitted Packets Counter","60 min","KPI target - 10%","Number of ping or ICMP messages transmitted"));
-                    tblBody.appendChild(addRow(contador_tx,false,"RAN Equipment","ICMP Packet Loss Counter","60 min","KPI target - 10%","Number of ping or ICMP messages without response"));
+                    tblBody.appendChild(addRow(contador_tx,false,"Transport Equipment","ICMP Transmitted Packets Counter","60 min","KPI target - 10%","Number of ping or ICMP messages transmitted"));
+                    tblBody.appendChild(addRow(contador_tx,false,"Transport Equipment","ICMP Packet Loss Counter","60 min","KPI target - 10%","Number of ping or ICMP messages without response"));
                 }
                 if(kpi_4_var == true){
-                    tblBody.appendChild(addRow(contador_tx,false,"RAN Equipment","ICMP Average RTT","KPI target - 10%","KPI target - 10%","Average round trip time for ICMP packets. Should be averaged over the report interval"));
-                    tblBody.appendChild(addRow(contador_tx,false,"RAN Equipment","ICMP Max RTT","60 min","KPI target","Max round trip time for ICMP packets. Should be averaged over the report interval"));
+                    tblBody.appendChild(addRow(contador_tx,false,"Transport Equipment","ICMP Average RTT","KPI target - 10%","KPI target - 10%","Average round trip time for ICMP packets. Should be averaged over the report interval"));
+                    tblBody.appendChild(addRow(contador_tx,false,"Transport Equipment","ICMP Max RTT","60 min","KPI target","Max round trip time for ICMP packets. Should be averaged over the report interval"));
                 }
 
 
-                //TX EQUIPMENT++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-                var contador_core = 0;
+                //CORE++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+                if(kpi_13_var == true || kpi_15_var == true || kpi_17_var == true || form3_var == "slect1"){
+                
+                    var contador_core = 1;
 
-                (kpi_15_var == true && form3_var == "slect1") ? contador_core++ : contador_core=contador_core;
+                    (kpi_15_var == true && form3_var == "slect1") ? contador_core=contador_core+2 : contador_core=contador_core;
+                    (kpi_13_var == true && form3_var == "slect1") ? contador_core=contador_core+2 : contador_core=contador_core;
+                    (kpi_17_var == true && form3_var == "slect1") ? contador_core=contador_core+2 : contador_core=contador_core;
+                    (form3_var == "slect1") ? contador_core=contador_core+5 : contador_core=contador_core;
+                    console.log(contador_core);
+                    console.log("contador_core");
 
-                tblBody.appendChild(addRow(contador_core,true,"RAN Equipment","","","",""));
+                    tblBody.appendChild(addRow(contador_core,true,"Core","","","",""));
 
-                if(kpi_15_var == true && form3_var == "slect1"){
-                    tblBody.appendChild(addRow(contador_core,false,"RAN Equipment","MME E-RAB Abnormal Release Counter","15 min","KPI target","Number of Abnormal E-RAB release events as registered by the MME"));
-                    tblBody.appendChild(addRow(contador_core,false,"RAN Equipment","MME E-RAB Normal Release Counter","15 min","KPI target","Number of normal E-RAB release events as registered by the MME"));
+                    if(kpi_15_var == true && form3_var == "slect1"){
+                        tblBody.appendChild(addRow(contador_core,false,"Core","MME E-RAB Abnormal Release Counter","15 min","KPI target","Number of Abnormal E-RAB release events as registered by the MME"));
+                        tblBody.appendChild(addRow(contador_core,false,"Core","MME E-RAB Normal Release Counter","15 min","KPI target","Number of normal E-RAB release events as registered by the MME"));
+                    }
+                    if(kpi_13_var == true && form3_var == "slect1"){
+                        tblBody.appendChild(addRow(contador_core,false,"Core","EPS Attach Success Rate Counter","15 min","KPI target","Number of successful EPS Attach attempts"));
+                        tblBody.appendChild(addRow(contador_core,false,"Core","EPS Attach Attempt Counter","15 min","KPI target","Total number of EPS Attach attempts"));
+                    }
+                    if(kpi_17_var == true && form3_var == "slect1"){
+                        tblBody.appendChild(addRow(contador_core,false,"Core","EPS Service Request Success Counter","15 min","KPI target","Number of successful EPS Service Requests"));
+                        tblBody.appendChild(addRow(contador_core,false,"Core","EPS Service Request Attempt Counter","15 min","KPI target","Total number of EPS Service Requests"));
+                    }
+                    if(form3_var == "slect1"){
+                        tblBody.appendChild(addRow(contador_core,false,"Core","xDRs","On-demand","N/A","Call and Data session detail records"));
+                        tblBody.appendChild(addRow(contador_core,false,"Core","Uplink Traffic per port/application protocol","5 min","N/A","Taken from PGW. Reported data can contain various time intervals"));
+                        tblBody.appendChild(addRow(contador_core,false,"Core","Downlink Traffic per port/application protocol","5 min","N/A","Taken from PGW. Reported data can contain various time intervals"));
+                        tblBody.appendChild(addRow(contador_core,false,"Core","Uplink Traffic per IMSI","5 min","N/A","Taken from PGW. Reported data can contain various time intervals"));
+                        tblBody.appendChild(addRow(contador_core,false,"Core","Downlink Traffic per IMSI","5 min","N/A","Taken from PGW. Reported data can contain various time intervals"));
+                    }
+                    
                 }
-                if(kpi_15_var == true && form3_var == "slect1"){
-                    tblBody.appendChild(addRow(contador_core,false,"RAN Equipment","EPS Attach Success Rate Counter","15 min","KPI target","Number of Abnormal E-RAB release events as registered by the MME"));
-                    tblBody.appendChild(addRow(contador_core,false,"RAN Equipment","MME E-RAB Normal Release Counter","15 min","KPI target","Number of normal E-RAB release events as registered by the MME"));
-                }
 
+                
+                //Power++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+                if(form4_var == "slect1" || form4_var == "slect3" || form5_var == "slect1"){
+                    var contador_power = 3;
+                    (form4_var == "slect1" || form4_var == "slect3") ? contador_power++ : contador_power=contador_power;
+                    (form5_var == "slect1") ? contador_power++ : contador_power=contador_power;
+
+                    tblBody.appendChild(addRow(contador_power,true,"Power","Input Voltage","60 min","Nominal Voltage +/- 10%","For all network elements. Reported data can contain various time intervals."));
+                    tblBody.appendChild(addRow(contador_power,false,"Power","Output DC Voltage","60 min","Nominal Voltage +/- 10%","For all network elements. Reported data can contain various time intervals."));         
+                    tblBody.appendChild(addRow(contador_power,false,"Power","DC Load Current","60 min","Nominal Voltage +/- 10%","For all network elements. Reported data can contain various time intervals."));    
+
+                    if(form4_var == "slect1" || form4_var == "slect3"){
+                        tblBody.appendChild(addRow(contador_power,false,"Power","AC Power Status","Alarm only","Whenever state changes","AC Power received from the power company."));
+                    }   
+                    if(form5_var == "slect1"){
+                        tblBody.appendChild(addRow(contador_power,false,"Power","Battery Status","When charged or charging: 60 min When discharging: 5 min","See Comment","Alarm threshold should be adjusted at an adequate level to apply a corrective action. This will change based on battery capacity and cell load."));
+                    }  
+                }  
 
                //$('#tablaa-1').show();
                //$('#tablaa-2').show();
                //$('#tablaa-3').show();
                //$('#tablaa-4').show();
-
-
 
                 // put the <tbody> in the <table>
                 tbl.appendChild(tblBody);
