@@ -483,6 +483,11 @@ AGREGADO
     width: 500px;
 } 
 
+.img-grande-be{
+    height: auto; 
+    width: 700px;
+} 
+
 
 .gree-box{
     background-color: #006700;
@@ -687,6 +692,13 @@ Btuton!!!
     color: #fff;
     height: 60px;
     width: 250px;
+  }
+
+  .main-button-moe{
+    background-color: #005777;
+    color: #fff;
+    height: 40px;
+    width: 200px;
   }
 
   .gray-button{

@@ -159,8 +159,15 @@
 
             <!-- Page Content Holder -->
             <div id="content">
-                <h2>Core HLD Wizard</h2>
-                <p class="normal-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                <h2>Mobile Core Architecture Wizard</h2>
+                <p class="normal-text">The Mobile Core Architecture Wizard's objective is to ease the NaaS Operators the first draft of the overall architecture as well as the most important services and strategies.</p>
+                <p>It contains:</p>
+                <ul class="normal-text ul-iconos" style='margin-top:0in' start=1 type=1>
+                    <li>Architecture Description: Summary of the EPC elements and type of deployment according to existing infrastructure.</li>
+                    <li>High Availability Recommendation: Recommended redundancy mechanisms for hardware and software</li>
+                    <li>NFV Description: NFV Components, Virtualization Technology and main VNFs to be deployed.</li>
+                </ul>
+                <p>To start click on  "Launch" button.</p>
                 <br>
                 
                 <div class="caja_box">
@@ -251,7 +258,7 @@
 
 
                                     <h4 class="title-results" style="border-style: solid;background-color:#005777;color:#fff"><center>Interconnection Details</center></h4>           
-                                    <div class="row">
+                                    <!--div class="row">
                                         <label class="col-sm-1"></label>
                                         <p  class="col-sm-6">Network Size</p>
                                         <label class="col-sm-2"></label>
@@ -260,8 +267,8 @@
                                                 <option value="slect_2">Large</option>
                                             </select>
                                         <label  class="col-sm-2"></label >
-                                    </div>
-                                    <div class="row">
+                                    </div-->
+                                    <!--div class="row">
                                         <label class="col-sm-1"></label>
                                         <p  class="col-sm-6">Number of external connections</p>
                                         <label class="col-sm-2"></label>
@@ -270,7 +277,7 @@
                                                 <option value="slect_2">More than 2</option>
                                             </select>
                                         <label  class="col-sm-2"></label >
-                                    </div>
+                                    </div-->
                                     <div class="row">
                                         <label class="col-sm-1"></label>
                                         <p  class="col-sm-6">Is the connection MPLS-based?</p>
@@ -304,7 +311,7 @@
                             <div class="modal-content">
                               <div class="modal-body">
 
-                                    <h1 class="title-h1"><center>Full EPC-PCC deployment</center></h1>
+                                    <h1 class="title-h1"><center>Additional Parameters</center></h1>
                                     <div class="row">
                                         <label class="col-sm-1"></label>
                                         <p  class="col-sm-6">Does the NaaS operator own a 3G core?</p>
@@ -330,9 +337,9 @@
                                         <p  class="col-sm-6">What are the SGSN and GGSN capabilities?</p>
                                         <label class="col-sm-2"></label>
                                             <select id="form1_3" name="tx_lon" class="col-sm-2 text-box"> 
-                                                <option value="slect_1">No</option>
-                                                <option value="slect_2">S4-SGSN_SAE-GW</option>
-                                                <option value="slect_3">SGSN/MME_SAE-GW</option>
+                                                <option value="slect_1">Gn/Gp Capabilities</option>
+                                                <option value="slect_2">S4 Capabilities</option>
+                                                <option value="slect_3">EPC Upgradable</option>
                                             </select>
                                         <label  class="col-sm-2"></label >
                                     </div>
@@ -346,17 +353,17 @@
                                             </select>
                                         <label  class="col-sm-2"></label >
                                     </div>
-                                    <div class="row">
+                                    <!--div class="row">
                                         <label class="col-sm-1"></label>
                                         <p  class="col-sm-6">SGSN EPC-enabled capabilities?</p>
                                         <label class="col-sm-2"></label>
                                             <select id="form1_5" name="tx_lon" class="col-sm-2 text-box" disabled> 
-                                                <!--option value="">N/A</option-->
+                                                
                                                 <option value="slect_1">Yes</option>
                                                 <option value="slect_2">No</option>
                                             </select>
                                         <label  class="col-sm-2"></label >
-                                    </div>
+                                    </div-->
 
                                   <h4 class="title-results" style="border-style: solid;background-color:#005777;color:#fff"><center>Billing Schema</center></h4>           
                                   <div class="row">
@@ -393,7 +400,7 @@
                                   </div>
                                   <div class="row">
                                     <label class="col-sm-1"></label>
-                                    <p  class="col-sm-6">Is the NaaS operator expecting to have several access networks spread out through different and distant geograhical locations?</p>
+                                    <p  class="col-sm-6">Is the NaaS operator expecting to have several access networks SPR (contained on HSS)ead out through different and distant geograhical locations?</p>
                                     <label class="col-sm-2"></label>
                                         <select id="form1_9" name="tx_lon" class="col-sm-2 text-box"> 
                                                 <option value="slect_1">Yes</option>
@@ -431,49 +438,49 @@
             <section id="uno-A" hidden>
                 <div id="box-1"> 
                     <h4 class="title-results" style="border-style: solid;background-color:#005777;color:#fff;font-size: 30px;padding:0in 3.5pt 5pt 3.5pt"><center>EPC minimum deployment</center></h4> 
-                    <img class="img-grande" src="images/widgets/wizard_core/wizard_1_A.png" alt="Smiley face" style="padding-top: 20px" height="200" width="5">
+                    <img class="img-grande" src="images/widgets/wizard_core/wizard_A.png" alt="Smiley face" style="padding-top: 20px" height="200" width="5">
                 </div>
             </section>
             <section id="uno-B" hidden>
                 <div id="box-1"> 
                     <h4 class="title-results" style="border-style: solid;background-color:#005777;color:#fff;font-size: 30px;padding:0in 3.5pt 5pt 3.5pt"><center>Introducing new EPC nodes and interworking with legacy PS by Gn/Gp Interfaces</center></h4> 
-                    <img class="img-grande" src="images/widgets/wizard_core/wizard_1_B.png" alt="Smiley face" style="padding-top: 20px" height="200" width="5">
+                    <img class="img-grande-be" src="images/widgets/wizard_core/Wizard_C.png" alt="Smiley face" style="padding-top: 20px" height="200" width="5">
                 </div>
             </section>
             <section id="uno-C" hidden>
                 <div id="box-1"> 
                     <h4 class="title-results" style="border-style: solid;background-color:#005777;color:#fff;font-size: 30px;padding:0in 3.5pt 5pt 3.5pt"><center>Introducing new EPC nodes and interworking with legacy PS by S3/S4 interfaces</center></h4> 
-                    <img class="img-grande" src="images/widgets/wizard_core/wizard_1_C.png" alt="Smiley face" style="padding-top: 20px" height="200" width="5">
+                    <img class="img-grande-be" src="images/widgets/wizard_core/Wizard_D.png" alt="Smiley face" style="padding-top: 20px" height="200" width="5">
                 </div>
             </section>
             <section id="uno-D" hidden>
                 <div id="box-1"> 
                     <h4 class="title-results" style="border-style: solid;background-color:#005777;color:#fff;font-size: 30px;padding:0in 3.5pt 5pt 3.5pt"><center>Upgrading the existing PS core to support 2G/3G/LTE</center></h4> 
-                    <img class="img-grande" src="images/widgets/wizard_core/wizard_1_D.png" alt="Smiley face" style="padding-top: 20px" height="200" width="5">
+                    <img class="img-grande-be" src="images/widgets/wizard_core/Wizard_E.png" alt="Smiley face" style="padding-top: 20px" height="200" width="5">
                 </div>
             </section>
             <section id="uno-E" hidden>
                 <div id="box-1"> 
-                    <h4 class="title-results" style="border-style: solid;background-color:#005777;color:#fff;font-size: 30px;padding:0in 3.5pt 5pt 3.5pt"><center>New EPC deployment independent of the current  3G core</center></h4> 
-                    <img class="img-grande" src="images/widgets/wizard_core/wizard_1_E.png" alt="Smiley face" style="padding-top: 20px" height="200" width="5">
+                    <h4 class="title-results" style="border-style: solid;background-color:#005777;color:#fff;font-size: 30px;padding:0in 3.5pt 5pt 3.5pt"><center>New EPC deployment independent of the current 3G core</center></h4> 
+                    <img class="img-grande-be" src="images/widgets/wizard_core/Wizard_B.png" alt="Smiley face" style="padding-top: 20px" height="200" width="5">
                 </div>
             </section>
             <section id="uno-F" hidden>
                 <div id="box-1"> 
                     <h4 class="title-results" style="border-style: solid;background-color:#005777;color:#fff;font-size: 30px;padding:0in 3.5pt 5pt 3.5pt"><center>New EPC deployment</center></h4> 
-                    <img class="img-grande" src="images/widgets/wizard_core/wizard_1_F.png" alt="Smiley face" style="padding-top: 20px" height="200" width="5">
+                    <img class="img-grande-be" src="images/widgets/wizard_core/Wizard_B.png" alt="Smiley face" style="padding-top: 20px" height="200" width="5">
                 </div>
             </section>
             <section id="uno-G" hidden>
                 <div id="box-1"> 
                     <h4 class="title-results" style="border-style: solid;background-color:#005777;color:#fff;font-size: 30px;padding:0in 3.5pt 5pt 3.5pt"><center>3G Access via Gn/Gp interfaces</center></h4> 
-                    <img class="img-grande" src="images/widgets/wizard_core/wizard_1_F.png" alt="Smiley face" style="padding-top: 20px" height="200" width="5">
+                    <img class="img-grande-be" src="images/widgets/wizard_core/Wizard_C.png" alt="Smiley face" style="padding-top: 20px" height="200" width="5">
                 </div>
             </section>
             <section id="uno-H" hidden>
                 <div id="box-1"> 
                     <h4 class="title-results" style="border-style: solid;background-color:#005777;color:#fff;font-size: 30px;padding:0in 3.5pt 5pt 3.5pt"><center>3G Access via SGSN EPC-enabled</center></h4> 
-                    <img class="img-grande" src="images/widgets/wizard_core/wizard_1_F.png" alt="Smiley face" style="padding-top: 20px" height="200" width="5">
+                    <img class="img-grande-be" src="images/widgets/wizard_core/Wizard_D.png" alt="Smiley face" style="padding-top: 20px" height="200" width="5">
                 </div>
             </section>
 
@@ -493,6 +500,7 @@
                         <li id="dos_li_1"></li>
                         <li id="dos_li_2"></li>
                         <li id="dos_li_3"></li>
+                        
                     </ul>
                 </div>
             </section>
@@ -510,8 +518,8 @@
                         <li>PCC elements to be deployed:</li>
                         <ul style='margin-top:0in' type=circle>
                             <li class="normal-text">PCRF</li>
-                            <li class="normal-text">PCEF</li>
-                            <li class="normal-text">SPR</li>
+                            <li class="normal-text">PCEF (contained on PGW)</li>
+                            <li class="normal-text">SPR (contained on HSS)</li>
                             <li id="dos_b_li_1" class="normal-text"></li>
                         </ul>
                         <li>This deployment will enable the NaaS operator to support provisioning, monitoring, control and charging of IP data services.</li>
@@ -522,7 +530,10 @@
                         <li id="dos_b_li_3"></li>
                         <li id="dos_b_li_4"></li>
                         <li id="dos_b_li_5"></li>
+                        <li id="dos_b_li_7"></li>
                         <li id="dos_b_li_6"></li>
+                        
+                        
 
                     </ul>
                 </div>
@@ -541,8 +552,8 @@
                         <li>PCC elements to be deployed:</li>
                         <ul style='margin-top:0in' type=circle>
                             <li class="normal-text">PCRF</li>
-                            <li class="normal-text">PCEF</li>
-                            <li class="normal-text">SPR</li>
+                            <li class="normal-text">PCEF (contained on PGW)</li>
+                            <li class="normal-text">SPR (contained on HSS)</li>
                             <li id="tres_c_li_1" class="normal-text"></li>
                         </ul>
                         <li>This deployment will enable the NaaS operator to support provisioning, monitoring, control and charging of IP data services.</li>
@@ -553,7 +564,9 @@
                         <li id="tres_c_li_3"></li>
                         <li id="tres_c_li_4"></li>
                         <li id="tres_c_li_5"></li>
+                        <li id="tres_c_li_7"></li>
                         <li id="tres_c_li_6"></li>
+                        
     
                     </ul>
                 </div>
@@ -572,8 +585,8 @@
                         <li>PCC elements to be deployed:</li>
                         <ul style='margin-top:0in' type=circle>
                             <li class="normal-text">PCRF</li>
-                            <li class="normal-text">PCEF</li>
-                            <li class="normal-text">SPR</li>
+                            <li class="normal-text">PCEF (contained on PGW)</li>
+                            <li class="normal-text">SPR (contained on HSS)</li>
                             <li id="cuatro_d_li_1" class="normal-text"></li>
                         </ul>
                         <li>This deployment will enable the NaaS operator to support provisioning, monitoring, control and charging of IP data services.</li>
@@ -584,7 +597,9 @@
                         <li id="cuatro_d_li_3"></li>
                         <li id="cuatro_d_li_4"></li>
                         <li id="cuatro_d_li_5"></li>
+                        <li id="cuatro_d_li_7"></li>
                         <li id="cuatro_d_li_6"></li>
+                        
     
                     </ul>
                 </div>
@@ -603,8 +618,8 @@
                         <li>PCC elements to be deployed:</li>
                         <ul style='margin-top:0in' type=circle>
                             <li class="normal-text">PCRF</li>
-                            <li class="normal-text">PCEF</li>
-                            <li class="normal-text">SPR</li>
+                            <li class="normal-text">PCEF (contained on PGW)</li>
+                            <li class="normal-text">SPR (contained on HSS)</li>
                             <li id="cinco_e_li_1" class="normal-text"></li>
                         </ul>
                         <li>This deployment will enable the NaaS operator to support provisioning, monitoring, control and charging of IP data services. <a style="color: red;">It is not recommended to deploy independent LTE and 3G cores, it will complicate operations, and results in a bigger inversion compared to an unified LTE-3G core.</a></li>
@@ -614,7 +629,9 @@
                         <li id="cinco_e_li_3"></li>
                         <li id="cinco_e_li_4"></li>
                         <li id="cinco_e_li_5"></li>
+                        <li id="cinco_e_li_7"></li>
                         <li id="cinco_e_li_6"></li>
+                        
     
                     </ul>
                 </div>
@@ -633,8 +650,8 @@
                         <li>PCC elements to be deployed:</li>
                         <ul style='margin-top:0in' type=circle>
                             <li class="normal-text">PCRF</li>
-                            <li class="normal-text">PCEF</li>
-                            <li class="normal-text">SPR</li>
+                            <li class="normal-text">PCEF (contained on PGW)</li>
+                            <li class="normal-text">SPR (contained on HSS)</li>
                             <li id="seis_f_li_1" class="normal-text"></li>
                         </ul>
                         <li>This deployment will enable the NaaS operator to support provisioning, monitoring, control and charging of IP data services.</li>
@@ -644,7 +661,9 @@
                         <li id="seis_f_li_3"></li>
                         <li id="seis_f_li_4"></li>
                         <li id="seis_f_li_5"></li>
+                        <li id="seis_f_li_7"></li>
                         <li id="seis_f_li_6"></li>
+                        
     
                     </ul>
                 </div>
@@ -663,8 +682,8 @@
                         <li>PCC elements to be deployed:</li>
                         <ul style='margin-top:0in' type=circle>
                             <li class="normal-text">PCRF</li>
-                            <li class="normal-text">PCEF</li>
-                            <li class="normal-text">SPR</li>
+                            <li class="normal-text">PCEF (contained on PGW)</li>
+                            <li class="normal-text">SPR (contained on HSS)</li>
                             <li id="siete_g_li_1" class="normal-text"></li>
                         </ul>
                         <li>This deployment will enable the NaaS operator to support provisioning, monitoring, control and charging of IP data services.</li>
@@ -675,7 +694,9 @@
                         <li id="siete_g_li_3"></li>
                         <li id="siete_g_li_4"></li>
                         <li id="siete_g_li_5"></li>
+                        <li id="siete_g_li_7"></li>
                         <li id="siete_g_li_6"></li>
+                        
     
                     </ul>
                 </div>
@@ -694,8 +715,8 @@
                         <li>PCC elements to be deployed:</li>
                         <ul style='margin-top:0in' type=circle>
                             <li class="normal-text">PCRF</li>
-                            <li class="normal-text">PCEF</li>
-                            <li class="normal-text">SPR</li>
+                            <li class="normal-text">PCEF (contained on PGW)</li>
+                            <li class="normal-text">SPR (contained on HSS)</li>
                             <li id="ocho_h_li_1" class="normal-text"></li>
                         </ul>
                         <li>This deployment will enable the NaaS operator to support provisioning, monitoring, control and charging of IP data services.</li>
@@ -706,7 +727,9 @@
                         <li id="ocho_h_li_3"></li>
                         <li id="ocho_h_li_4"></li>
                         <li id="ocho_h_li_5"></li>
+                        <li id="ocho_h_li_7"></li>
                         <li id="ocho_h_li_6"></li>
+                        
     
                     </ul>
                 </div>
@@ -719,9 +742,22 @@
                     <ul class="normal-text ul-iconos" style='margin-top:0in' start=1 type=1>
                         <li>Hardware:</li>
                         <ul style='margin-top:0in' type=circle>
-                            <li class="normal-text">Server: Hot swap devices, hot plug PCIe and NEBS certification</li>
+                            <li class="normal-text">Server:</li>
+                                <ul class="normal-text ul-iconos" style='margin-top:0in' start=1 type=1>
+                                    <li style="font-size: 16px;">Hot swap devices</li>
+                                    <li style="font-size: 16px;">Hot plug PCIe</li>
+                                    <li style="font-size: 16px;">N+1 Redundancy Mechanism under active/standby mode (Minimum)</li>
+                                </ul>
                             <li class="normal-text">Storage:  Hot swap devices, RAID or replication mechanisms and NEBS certification</li>
+                                <ul class="normal-text ul-iconos" style='margin-top:0in' start=1 type=1>
+                                    <li style="font-size: 16px;">Hot swap devices</li>
+                                    <li style="font-size: 16px;">RAID or replication mechanisms</li>
+                                </ul>
                             <li class="normal-text">Netwoking: Bonding and redundant NICs</li>
+                                <ul class="normal-text ul-iconos" style='margin-top:0in' start=1 type=1>
+                                    <li style="font-size: 16px;">Bonding</li>
+                                    <li style="font-size: 16px;">N+1 Redundancy Mechanism under active/standby mode (Minimum)</li>
+                                </ul>
                         </ul>
                         <li>Application:</li>
                         <ul style='margin-top:0in' type=circle>
@@ -736,9 +772,22 @@
                     <ul class="normal-text ul-iconos" style='margin-top:0in' start=1 type=1>
                         <li>Hardware:</li>
                         <ul style='margin-top:0in' type=circle>
-                            <li class="normal-text">Server: Hot swap devices, hot plug PCIe and NEBS certification</li>
+                            <li class="normal-text">Server:</li>
+                                <ul class="normal-text ul-iconos" style='margin-top:0in' start=1 type=1>
+                                    <li style="font-size: 16px;">Hot swap devices</li>
+                                    <li style="font-size: 16px;">Hot plug PCIe</li>
+                                    <li style="font-size: 16px;">N+1 Redundancy Mechanism under active/standby mode (Minimum)</li>
+                                </ul>
                             <li class="normal-text">Storage:  Hot swap devices, RAID or replication mechanisms and NEBS certification</li>
+                                <ul class="normal-text ul-iconos" style='margin-top:0in' start=1 type=1>
+                                    <li style="font-size: 16px;">Hot swap devices</li>
+                                    <li style="font-size: 16px;">RAID or replication mechanisms</li>
+                                </ul>
                             <li class="normal-text">Netwoking: Bonding and redundant NICs</li>
+                                <ul class="normal-text ul-iconos" style='margin-top:0in' start=1 type=1>
+                                    <li style="font-size: 16px;">Bonding</li>
+                                    <li style="font-size: 16px;">N+1 Redundancy Mechanism under active/standby mode (Minimum)</li>
+                                </ul>
                         </ul>
                         <li>Application:</li>
                         <ul style='margin-top:0in' type=circle>
@@ -767,9 +816,9 @@
                     <ul class="normal-text ul-iconos" style='margin-top:0in' start=1 type=1>
                         <li>Elements to be deployed:</li>
                         <ul style='margin-top:0in' type=circle>
-                            <li class="normal-text">NFVI</li>
-                            <li class="normal-text">VIM</li>
-                            <li class="normal-text">VNFM</li>
+                            <li class="normal-text">NFVI (Hardware + Virtualization Layer)</li>
+                            <li class="normal-text">MANO (VIM, VNFM & NFVO)</li>
+                            <li class="normal-text">VNFs</li>
                         </ul>
                     </ul>
                 </div>
@@ -780,9 +829,9 @@
                     <ul class="normal-text ul-iconos" style='margin-top:0in' start=1 type=1>
                         <li>Elements to be deployed:</li>
                         <ul style='margin-top:0in' type=circle>
-                            <li class="normal-text">NFVI</li>
-                            <li class="normal-text">VIM</li>
-                            <li class="normal-text">VNFM</li>
+                            <li class="normal-text">NFVI (Hardware + Virtualization Layer)</li>
+                            <li class="normal-text">MANO (VIM, VNFM & NFVO)</li>
+                            <li class="normal-text">VNFs</li>
                         </ul>
                     </ul>
                 </div>
@@ -820,8 +869,8 @@
                     <ul class="normal-text ul-iconos" style='margin-top:0in' start=1 type=1>
                         <li>VNFs types to be deployed:</li>
                         <ul style='margin-top:0in' type=circle>
-                            <li class="normal-text">Control plane VNF: MME, SGW-C, PGW-C, PCRF, PCEF</li>
-                            <li class="normal-text">Data plane VNF: SGW-U, PGW-S</li>
+                            <li class="normal-text">Control plane VNF: MME, SGW-C, PGW-C, PCRF, PCEF (contained on PGW)</li>
+                            <li class="normal-text">Data plane VNF: SGW-U, PGW-U</li>
                             <li class="normal-text">Data base VNF: HSS, Billing Node</li>
                         </ul>
                     </ul>
@@ -911,9 +960,12 @@
                var form5_var = formulario2.form5.value;
                var form6_var = formulario2.form6.value;
                var form7_var = formulario2.form7.value;
-               var form8_var = formulario2.form8.value;
-               var form9_var = formulario2.form9.value;
+               //var form8_var = formulario2.form8.value;
+               //var form9_var = formulario2.form9.value;
                var form10_var = formulario2.form10.value;
+               
+               form8_var = 'slect_2';
+               form9_var = 'slect_2';
 
                form8_global = form8_var;
                form9_global = form9_var;
@@ -930,7 +982,7 @@
                     if(form8_var == 'slect_1'){
                         document.getElementById("dos_li_1").innerHTML = "IGP recommended protocol: Distance vector protocol.";
                     }else{
-                        document.getElementById("dos_li_1").innerHTML = "IGP recommended protocol: DLink State protocol.";
+                        document.getElementById("dos_li_1").innerHTML = "IGP recommended protocol: OSPF or IS-IS";
                     }
 
                     if(form9_var == 'slect_1'){
@@ -964,7 +1016,7 @@
                     if(form13_var == 'slect_1'){
                         document.getElementById("dos_b_li_4").innerHTML = "IGP recommended protocol: Distance vector protocol.";
                     }else{
-                        document.getElementById("dos_b_li_4").innerHTML = "IGP recommended protocol: DLink State protocol.";
+                        document.getElementById("dos_b_li_4").innerHTML = "IGP recommended protocol: OSPF or IS-IS";
                     }
 
                     if(form14_var == 'slect_1'){
@@ -987,7 +1039,7 @@
                     if(form13_var == 'slect_1'){
                         document.getElementById("tres_c_li_4").innerHTML = "IGP recommended protocol: Distance vector protocol.";
                     }else{
-                        document.getElementById("tres_c_li_4").innerHTML = "IGP recommended protocol: DLink State protocol.";
+                        document.getElementById("tres_c_li_4").innerHTML = "IGP recommended protocol: OSPF or IS-IS";
                     }
 
                     if(form14_var == 'slect_1'){
@@ -1010,7 +1062,7 @@
                     if(form13_var == 'slect_1'){
                         document.getElementById("tres_c_li_4").innerHTML = "IGP recommended protocol: Distance vector protocol.";
                     }else{
-                        document.getElementById("tres_c_li_4").innerHTML = "IGP recommended protocol: DLink State protocol.";
+                        document.getElementById("tres_c_li_4").innerHTML = "IGP recommended protocol: OSPF or IS-IS";
                     }
 
                     if(form14_var == 'slect_1'){
@@ -1033,7 +1085,7 @@
                     if(form13_var == 'slect_1'){
                         document.getElementById("tres_c_li_4").innerHTML = "IGP recommended protocol: Distance vector protocol.";
                     }else{
-                        document.getElementById("tres_c_li_4").innerHTML = "IGP recommended protocol: DLink State protocol.";
+                        document.getElementById("tres_c_li_4").innerHTML = "IGP recommended protocol: OSPF or IS-IS";
                     }
 
                     if(form14_var == 'slect_1'){
@@ -1056,7 +1108,7 @@
                     if(form13_var == 'slect_1'){
                         document.getElementById("tres_c_li_4").innerHTML = "IGP recommended protocol: Distance vector protocol.";
                     }else{
-                        document.getElementById("tres_c_li_4").innerHTML = "IGP recommended protocol: DLink State protocol.";
+                        document.getElementById("tres_c_li_4").innerHTML = "IGP recommended protocol: OSPF or IS-IS";
                     }
 
                     if(form14_var == 'slect_1'){
@@ -1079,7 +1131,7 @@
                     if(form13_var == 'slect_1'){
                         document.getElementById("tres_c_li_4").innerHTML = "IGP recommended protocol: Distance vector protocol.";
                     }else{
-                        document.getElementById("tres_c_li_4").innerHTML = "IGP recommended protocol: DLink State protocol.";
+                        document.getElementById("tres_c_li_4").innerHTML = "IGP recommended protocol: OSPF or IS-IS";
                     }
 
                     if(form14_var == 'slect_1'){
@@ -1102,7 +1154,7 @@
                     if(form13_var == 'slect_1'){
                         document.getElementById("tres_c_li_4").innerHTML = "IGP recommended protocol: Distance vector protocol.";
                     }else{
-                        document.getElementById("tres_c_li_4").innerHTML = "IGP recommended protocol: DLink State protocol.";
+                        document.getElementById("tres_c_li_4").innerHTML = "IGP recommended protocol: OSPF or IS-IS";
                     }
 
                     if(form14_var == 'slect_1'){
@@ -1136,12 +1188,13 @@
                var form2_var = formulario2_2.form1_2.value;
                var form3_var = formulario2_2.form1_3.value;
                var form4_var = formulario2_2.form1_4.value;
-               var form5_var = formulario2_2.form1_5.value;
+               //var form5_var = formulario2_2.form1_5.value;
                var form6_var = formulario2_2.form1_6.value;
                var form7_var = formulario2_2.form1_7.value;
                var form8_var = formulario2_2.form1_8.value;
                var form9_var = formulario2_2.form1_9.value;
                var form10_var = formulario2_2.form1_10.value;
+               var form5_var = 'slect_2'
 
 
                 /*if(form10_var == "slect_2"){
@@ -1165,7 +1218,7 @@
                     if(form8_global == 'slect_1'){
                         document.getElementById("dos_b_li_4").innerHTML = "IGP recommended protocol: Distance vector protocol.";
                     }else{
-                        document.getElementById("dos_b_li_4").innerHTML = "IGP recommended protocol: DLink State protocol.";
+                        document.getElementById("dos_b_li_4").innerHTML = "IGP recommended protocol: OSPF or IS-IS";
                     }
 
                     if(form9_global == 'slect_1'){
@@ -1175,9 +1228,11 @@
                     }
 
                     if(form10_global == 'slect_1'){
+                        document.getElementById("dos_b_li_7").innerHTML = "OSS/BSS Integration";
                         document.getElementById("dos_b_li_6").innerHTML = "MPLS support recommended.";
                     }else{
                         document.getElementById("dos_b_li_6").innerHTML = ".";
+                        document.getElementById("dos_b_li_7").innerHTML = "OSS/BSS Integration";
                     }
 
                     if(form6_var == 'slect_1' && form7_var == 'slect_1'){
@@ -1201,9 +1256,9 @@
                     if(form10_var == 'slect_1'){
                         document.getElementById("dos_b_li_3").innerHTML = "Voice Strategy:<br>- VoLTE + CSFB: VoLTE is the Industry-recognized solution for providing a packet voice service, over IP via LTE access technology. However, as the NaaS operator coverage area is not entirely 4G but a combination of 2G/3G and 4G coverage it needs to deploy CSFB as well.";
                     }
-
+                    
                     if(form10_var == 'slect_2'){
-                        document.getElementById("dos_b_li_3").innerHTML = "Voice Strategy:<br>- VoIP on LTE + CSFB: Transmission of voice and multimedia content over Internet Protocol (IP) networks. The LTE handset falls back to 3G or 2G to establish a traditional circuit switching connection.";
+                        document.getElementById("dos_b_li_3").innerHTML = "Voice Strategy: VoIP over LTE + CSFB<br>Transmission of voice and multimedia content over Internet Protocol (IP) networks.<br>VoIP:<br>&nbsp;&nbsp;&nbsp;&nbsp;Develop own app for voice services (further details on Mobile Core Architecture Module)<br>&nbsp;&nbsp;&nbsp;&nbsp;Integrate PCRF Policies for VoIP over own voice app.<br>&nbsp;&nbsp;&nbsp;&nbsp;Integrate voice app traffic detection at PGW.<br>CSFB:<br>&nbsp;&nbsp;&nbsp;&nbsp;The LTE handset falls back to 3G or 2G to establish a traditional circuit switching connection.<br>VoLTE (Optional):<br>&nbsp;&nbsp;&nbsp;&nbsp;Deploy full IMS Core by NaaS Operator.<br>&nbsp;&nbsp;&nbsp;&nbsp;Integrate PCRF Policies for VoLTE.";
                     }
                     
                     $('#modalQuickView_2').modal('hide');
@@ -1222,7 +1277,7 @@
                     if(form8_global == 'slect_1'){
                         document.getElementById("tres_c_li_4").innerHTML = "IGP recommended protocol: Distance vector protocol.";
                     }else{
-                        document.getElementById("tres_c_li_4").innerHTML = "IGP recommended protocol: DLink State protocol.";
+                        document.getElementById("tres_c_li_4").innerHTML = "IGP recommended protocol: OSPF or IS-IS";
                     }
 
                     if(form9_global == 'slect_1'){
@@ -1232,10 +1287,13 @@
                     }
 
                     if(form10_global == 'slect_1'){
+                        document.getElementById("tres_c_li_7").innerHTML = "OSS/BSS Integration";
                         document.getElementById("tres_c_li_6").innerHTML = "MPLS support recommended.";
                     }else{
+                        document.getElementById("tres_c_li_7").innerHTML = "OSS/BSS Integration";
                         document.getElementById("tres_c_li_6").innerHTML = ".";
                     }
+                    
 
                     if(form6_var == 'slect_1' && form7_var == 'slect_1'){
                         document.getElementById("tres_c_li_1").innerHTML = "OFCS & OCS";
@@ -1260,7 +1318,7 @@
                     }
 
                     if(form10_var == 'slect_2'){
-                        document.getElementById("tres_c_li_3").innerHTML = "Voice Strategy:<br>- VoIP on LTE + CSFB: Transmission of voice and multimedia content over Internet Protocol (IP) networks. The LTE handset falls back to 3G or 2G to establish a traditional circuit switching connection.";
+                        document.getElementById("tres_c_li_3").innerHTML = "Voice Strategy: VoIP over LTE + CSFB<br>Transmission of voice and multimedia content over Internet Protocol (IP) networks.<br>VoIP:<br>&nbsp;&nbsp;&nbsp;&nbsp;Develop own app for voice services (further details on Mobile Core Architecture Module)<br>&nbsp;&nbsp;&nbsp;&nbsp;Integrate PCRF Policies for VoIP over own voice app.<br>&nbsp;&nbsp;&nbsp;&nbsp;Integrate voice app traffic detection at PGW.<br>CSFB:<br>&nbsp;&nbsp;&nbsp;&nbsp;The LTE handset falls back to 3G or 2G to establish a traditional circuit switching connection.<br>VoLTE (Optional):<br>&nbsp;&nbsp;&nbsp;&nbsp;Deploy full IMS Core by NaaS Operator.<br>&nbsp;&nbsp;&nbsp;&nbsp;Integrate PCRF Policies for VoLTE.";
                     }
                     $('#modalQuickView_2').modal('hide');
 
@@ -1278,7 +1336,7 @@
                     if(form8_global == 'slect_1'){
                         document.getElementById("cuatro_d_li_4").innerHTML = "IGP recommended protocol: Distance vector protocol.";
                     }else{
-                        document.getElementById("cuatro_d_li_4").innerHTML = "IGP recommended protocol: DLink State protocol.";
+                        document.getElementById("cuatro_d_li_4").innerHTML = "IGP recommended protocol: OSPF or IS-IS";
                     }
 
                     if(form9_global == 'slect_1'){
@@ -1288,9 +1346,11 @@
                     }
 
                     if(form10_global == 'slect_1'){
+                        document.getElementById("cuatro_d_li_7").innerHTML = "OSS/BSS Integration";
                         document.getElementById("cuatro_d_li_6").innerHTML = "MPLS support recommended.";
                     }else{
                         document.getElementById("cuatro_d_li_6").innerHTML = ".";
+                        document.getElementById("cuatro_d_li_7").innerHTML = "OSS/BSS Integration";
                     }
 
                     if(form6_var == 'slect_1' && form7_var == 'slect_1'){
@@ -1316,7 +1376,7 @@
                     }
 
                     if(form10_var == 'slect_2'){
-                        document.getElementById("cuatro_d_li_3").innerHTML = "Voice Strategy:<br>- VoIP on LTE + CSFB: Transmission of voice and multimedia content over Internet Protocol (IP) networks. The LTE handset falls back to 3G or 2G to establish a traditional circuit switching connection.";
+                        document.getElementById("cuatro_d_li_3").innerHTML = "Voice Strategy: VoIP over LTE + CSFB<br>Transmission of voice and multimedia content over Internet Protocol (IP) networks.<br>VoIP:<br>&nbsp;&nbsp;&nbsp;&nbsp;Develop own app for voice services (further details on Mobile Core Architecture Module)<br>&nbsp;&nbsp;&nbsp;&nbsp;Integrate PCRF Policies for VoIP over own voice app.<br>&nbsp;&nbsp;&nbsp;&nbsp;Integrate voice app traffic detection at PGW.<br>CSFB:<br>&nbsp;&nbsp;&nbsp;&nbsp;The LTE handset falls back to 3G or 2G to establish a traditional circuit switching connection.<br>VoLTE (Optional):<br>&nbsp;&nbsp;&nbsp;&nbsp;Deploy full IMS Core by NaaS Operator.<br>&nbsp;&nbsp;&nbsp;&nbsp;Integrate PCRF Policies for VoLTE.";
                     }
                     $('#modalQuickView_2').modal('hide');
 
@@ -1331,7 +1391,7 @@
                     if(form8_global == 'slect_1'){
                         document.getElementById("cinco_e_li_4").innerHTML = "IGP recommended protocol: Distance vector protocol.";
                     }else{
-                        document.getElementById("cinco_e_li_4").innerHTML = "IGP recommended protocol: DLink State protocol.";
+                        document.getElementById("cinco_e_li_4").innerHTML = "IGP recommended protocol: OSPF or IS-IS";
                     }
 
                     if(form9_global == 'slect_1'){
@@ -1341,8 +1401,10 @@
                     }
 
                     if(form10_global == 'slect_1'){
+                        document.getElementById("cinco_e_li_7").innerHTML = "OSS/BSS Integration";
                         document.getElementById("cinco_e_li_6").innerHTML = "MPLS support recommended.";
                     }else{
+                        document.getElementById("cinco_e_li_7").innerHTML = "OSS/BSS Integration";
                         document.getElementById("cinco_e_li_6").innerHTML = ".";
                     }
                     if(form6_var == 'slect_1' && form7_var == 'slect_1'){
@@ -1368,7 +1430,7 @@
                     }
 
                     if(form10_var == 'slect_2'){
-                        document.getElementById("cinco_e_li_3").innerHTML = "Voice Strategy:<br>- VoIP on LTE + CSFB: Transmission of voice and multimedia content over Internet Protocol (IP) networks. The LTE handset falls back to 3G or 2G to establish a traditional circuit switching connection.";
+                        document.getElementById("cinco_e_li_3").innerHTML = "Voice Strategy: VoIP over LTE + CSFB<br>Transmission of voice and multimedia content over Internet Protocol (IP) networks.<br>VoIP:<br>&nbsp;&nbsp;&nbsp;&nbsp;Develop own app for voice services (further details on Mobile Core Architecture Module)<br>&nbsp;&nbsp;&nbsp;&nbsp;Integrate PCRF Policies for VoIP over own voice app.<br>&nbsp;&nbsp;&nbsp;&nbsp;Integrate voice app traffic detection at PGW.<br>CSFB:<br>&nbsp;&nbsp;&nbsp;&nbsp;The LTE handset falls back to 3G or 2G to establish a traditional circuit switching connection.<br>VoLTE (Optional):<br>&nbsp;&nbsp;&nbsp;&nbsp;Deploy full IMS Core by NaaS Operator.<br>&nbsp;&nbsp;&nbsp;&nbsp;Integrate PCRF Policies for VoLTE.";
                     }
                     $('#modalQuickView_2').modal('hide');
 
@@ -1388,7 +1450,7 @@
                     if(form8_global == 'slect_1'){
                         document.getElementById("ocho_h_li_4").innerHTML = "IGP recommended protocol: Distance vector protocol.";
                     }else{
-                        document.getElementById("ocho_h_li_4").innerHTML = "IGP recommended protocol: DLink State protocol.";
+                        document.getElementById("ocho_h_li_4").innerHTML = "IGP recommended protocol: OSPF or IS-IS";
                     }
 
                     if(form9_global == 'slect_1'){
@@ -1398,8 +1460,10 @@
                     }
 
                     if(form10_global == 'slect_1'){
+                        document.getElementById("ocho_h_li_7").innerHTML = "OSS/BSS Integration";
                         document.getElementById("ocho_h_li_6").innerHTML = "MPLS support recommended.";
                     }else{
+                        document.getElementById("ocho_h_li_7").innerHTML = "OSS/BSS Integration";
                         document.getElementById("ocho_h_li_6").innerHTML = ".";
                     }
                     if(form6_var == 'slect_1' && form7_var == 'slect_1'){
@@ -1425,7 +1489,7 @@
                     }
 
                     if(form10_var == 'slect_2'){
-                        document.getElementById("ocho_h_li_3").innerHTML = "Voice Strategy:<br>- VoIP on LTE + CSFB: Transmission of voice and multimedia content over Internet Protocol (IP) networks. The LTE handset falls back to 3G or 2G to establish a traditional circuit switching connection.";
+                        document.getElementById("ocho_h_li_3").innerHTML = "Voice Strategy: VoIP over LTE + CSFB<br>Transmission of voice and multimedia content over Internet Protocol (IP) networks.<br>VoIP:<br>&nbsp;&nbsp;&nbsp;&nbsp;Develop own app for voice services (further details on Mobile Core Architecture Module)<br>&nbsp;&nbsp;&nbsp;&nbsp;Integrate PCRF Policies for VoIP over own voice app.<br>&nbsp;&nbsp;&nbsp;&nbsp;Integrate voice app traffic detection at PGW.<br>CSFB:<br>&nbsp;&nbsp;&nbsp;&nbsp;The LTE handset falls back to 3G or 2G to establish a traditional circuit switching connection.<br>VoLTE (Optional):<br>&nbsp;&nbsp;&nbsp;&nbsp;Deploy full IMS Core by NaaS Operator.<br>&nbsp;&nbsp;&nbsp;&nbsp;Integrate PCRF Policies for VoLTE.";
                     }
                     $('#modalQuickView_2').modal('hide');
 
@@ -1443,7 +1507,7 @@
                     if(form8_global == 'slect_1'){
                         document.getElementById("siete_g_li_4").innerHTML = "IGP recommended protocol: Distance vector protocol.";
                     }else{
-                        document.getElementById("siete_g_li_4").innerHTML = "IGP recommended protocol: DLink State protocol.";
+                        document.getElementById("siete_g_li_4").innerHTML = "IGP recommended protocol: OSPF or IS-IS";
                     }
 
                     if(form9_global == 'slect_1'){
@@ -1453,9 +1517,11 @@
                     }
 
                     if(form10_global == 'slect_1'){
-                        document.getElementById("siete_g_li_6").innerHTML = "MPLS support recommended.";
+                        document.getElementById("ocho_h_li_7").innerHTML = "OSS/BSS Integration";
+                        document.getElementById("ocho_h_li_6").innerHTML = "MPLS support recommended.";
                     }else{
-                        document.getElementById("siete_g_li_6").innerHTML = ".";
+                        document.getElementById("ocho_h_li_7").innerHTML = "OSS/BSS Integration";
+                        document.getElementById("ocho_h_li_6").innerHTML = ".";
                     }
                     if(form6_var == 'slect_1' && form7_var == 'slect_1'){
                         document.getElementById("siete_g_li_1").innerHTML = "OFCS & OCS";
@@ -1479,7 +1545,7 @@
                     }
 
                     if(form10_var == 'slect_2'){
-                        document.getElementById("siete_g_li_3").innerHTML = "Voice Strategy:<br>- VoIP on LTE + CSFB: Transmission of voice and multimedia content over Internet Protocol (IP) networks. The LTE handset falls back to 3G or 2G to establish a traditional circuit switching connection.";
+                        document.getElementById("siete_g_li_3").innerHTML = "Voice Strategy: VoIP over LTE + CSFB<br>Transmission of voice and multimedia content over Internet Protocol (IP) networks.<br>VoIP:<br>&nbsp;&nbsp;&nbsp;&nbsp;Develop own app for voice services (further details on Mobile Core Architecture Module)<br>&nbsp;&nbsp;&nbsp;&nbsp;Integrate PCRF Policies for VoIP over own voice app.<br>&nbsp;&nbsp;&nbsp;&nbsp;Integrate voice app traffic detection at PGW.<br>CSFB:<br>&nbsp;&nbsp;&nbsp;&nbsp;The LTE handset falls back to 3G or 2G to establish a traditional circuit switching connection.<br>VoLTE (Optional):<br>&nbsp;&nbsp;&nbsp;&nbsp;Deploy full IMS Core by NaaS Operator.<br>&nbsp;&nbsp;&nbsp;&nbsp;Integrate PCRF Policies for VoLTE.";
                     }
                     $('#modalQuickView_2').modal('hide');
 
@@ -1492,7 +1558,7 @@
                     if(form8_global == 'slect_1'){
                         document.getElementById("seis_f_li_4").innerHTML = "IGP recommended protocol: Distance vector protocol.";
                     }else{
-                        document.getElementById("seis_f_li_4").innerHTML = "IGP recommended protocol: DLink State protocol.";
+                        document.getElementById("seis_f_li_4").innerHTML = "IGP recommended protocol: OSPF or IS-IS";
                     }
 
                     if(form9_global == 'slect_1'){
@@ -1502,9 +1568,11 @@
                     }
 
                     if(form10_global == 'slect_1'){
+                        document.getElementById("seis_f_li_7").innerHTML = "OSS/BSS Integration";
                         document.getElementById("seis_f_li_6").innerHTML = "MPLS support recommended.";
                     }else{
                         document.getElementById("seis_f_li_6").innerHTML = ".";
+                        document.getElementById("seis_f_li_7").innerHTML = "OSS/BSS Integration";
                     }
                     if(form6_var == 'slect_1' && form7_var == 'slect_1'){
                         document.getElementById("seis_f_li_1").innerHTML = "OFCS & OCS";
@@ -1550,11 +1618,14 @@
             $('#form1_1').change(function(e){
             if($(this).val() == "slect_1"){
                 $("#form1_4").prop('disabled',true);
-                $("#form1_5").prop('disabled',true);
+                //$("#form1_5").prop('disabled',true);
                 document.getElementById('form1_4').options[0].selected = 'selected';
-                document.getElementById('form1_5').options[1].selected = 'selected';
+                //document.getElementById('form1_5').options[1].selected = 'selected';
             }
-            else {$("#form1_4").prop('disabled',false);$("#form1_5").prop('disabled',false);}
+            else {
+                $("#form1_4").prop('disabled',false);
+                //$("#form1_5").prop('disabled',false);
+            }
             });
 
             //Desabilita VOICE
