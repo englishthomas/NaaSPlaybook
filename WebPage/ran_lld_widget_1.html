@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+        <title>RunBook - Widget</title>
+
+         <!-- Bootstrap CSS CDN -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <!-- Our Custom CSS -->
+        <link rel="stylesheet" href="style2.css">
+        
+    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+	</head>
+		
+    <body onscroll="updateSection()">
+
+    <div class >
+        <ul class="barra_superior">
+            <li class="li_superior"><a class="active" href="Home.html">Home</a></li>
+            <li class="li_superior"><a href="comming_soon/comming-soon.html">About</a></li>
+        </ul>
+    </div>
+
+        <div class="wrapper-2">
+            <!-- Sidebar Holder -->
+            <nav id="sidebar">
+                <div class="sidebar-header">
+                    <h3>NaaS RunBook</h3>
+                    <!--strong>NaaS</strong-->
+                    <img src="smiley.png" alt="Go to W3Schools!" width="42" height="42" border="0">
+                </div>
+
+                <ul class="list-unstyled components">
+                    <li>
+                        <a href="#runbookSubmenu" data-toggle="collapse" aria-expanded="false">
+                            <i class="glyphicon glyphicon-option-horizontal"></i>
+                            RunBook Modules
+                        </a>
+                        <ul class="collapse list-unstyled" id="runbookSubmenu">
+                            <li>
+
+                                    <a href="#stract" data-toggle="collapse" aria-expanded="false">
+                                        &#187 Strategic Plan & Scope
+                                    </a>
+                                    <ul class="list-unstyled collapse" id="stract">
+                                        <li><a href="strategy_scope.html"style="margin-left:2em;">&bull; Strategy & Scope</a></li>
+                                        <li><a href="high_level_proyect_plan.html" style="margin-left:2em">&bull; HL Project Plan</a></li>
+                                    </ul>
+                       
+                            </li>
+                            <li>
+                                <a href="#">
+                                    High Level Network Architecture
+                                </a>
+                            </li>
+                            <li class="active">
+                                <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false">
+                                    Network Design
+                                </a>
+                                <ul class="collapse list-unstyled" id="homeSubmenu">
+                                    <li><a href="#transportMenu" data-toggle="collapse" aria-expanded="false">RAN</a></li>
+                                        <ul class="panel-collapse collapse" id="transportMenu">
+                                            <li><a href="ran_hld_module.html">  RAN HLD Module</a></li>
+                                        </ul>
+                                    <li><a href="#transportMenu2" data-toggle="collapse" aria-expanded="false">Transport</a></li>
+                                        <ul class="panel-collapse collapse" id="transportMenu2">
+                                            <li><a href="tx_hld_module.html">  Tx Network HLD</a></li>
+                                        </ul>
+                                    <li><a href="#">Core</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#deployment_m" data-toggle="collapse" aria-expanded="false">
+                                    &#187 Deployment
+                                </a>
+                                <ul class="list-unstyled collapse" id="deployment_m">
+                                    <li><a href="deployment_mgmt.html"style="margin-left:2em">&bull; Deployment Mgmt</a></li>
+                                    <li><a href="#"style="margin-left:2em">&bull; Site Survey</a></li>
+                                    <li><a href="#"style="margin-left:2em">&bull; Construction</a></li>
+                                    <li><a href="#"style="margin-left:2em">&bull; I & C</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    O & M
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Field Maintenance
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Post-Launch Engineering
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Supply Chain Management
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#engagementSubmenu" data-toggle="collapse" aria-expanded="false">
+                            <i class="glyphicon glyphicon-option-horizontal"></i>
+                            Methods of Engagement
+                        </a>
+                        <ul class="collapse list-unstyled" id="engagementSubmenu">
+                            <li><a href="#">Primer</a></li>
+                            <li class="active">
+                                    <a href="#widgets" data-toggle="collapse" aria-expanded="false">
+                                        &#187 Wizards
+                                    </a>
+                                    <ul class="collapse list-unstyled" id="widgets">
+                                        <li><a href="core_hld_wizard.html" style="margin-left:2em">&bull; Core HLD - Wizard</a></li>
+                                        <li><a href="net_mon_arch_wizard_1.html" style="margin-left:2em">&bull; Net Mon Arch - Wizard 1</a></li>
+                                        <li><a href="net_mon_arch_wizard_2.html" style="margin-left:2em">&bull; Net Mon Arch - Wizard 2</a></li>
+                                        <li><a href="tx_ip_arch_wizard_1.html" style="margin-left:2em">&bull; Tx & IP Archi Wizard</a></li>
+                                    </ul>
+                                </li>
+                            <li><a href="#">Templates</a></li>
+                            <!--li><a href="friss.html">Widgets</a></li-->
+                                             
+                            <li class="active">
+                                <a href="#homeSubmenu22" data-toggle="collapse" aria-expanded="false">
+                                    Widgets
+                                </a>
+                                <ul class="collapse list-unstyled" id="homeSubmenu22">
+                                    <li><a href="ran_hld_widget_1.html">RAN - Capacity-Based</a></li>
+                                    <li><a href="ran_hld_widget_2.html">  RAN - Coverage-Based</a></li>
+                                    <li><a href="tx_hld_widget_1.html"> Tx - Capacity Forecast</a></li>
+                                    <li><a href="tx_hld_widget_2.html">  Tx - Availability FO</a></li>
+<li><a href="tx_hld_widget_3.html" style="margin-left:2em"> Tx - Availability MW</a></li>
+<li><a href="tx_hld_widget_4.html" style="margin-left:2em">  Tx – MW Analysis</a></li>
+<li><a href="core_hld_widget_1.html" style="margin-left:2em">  Core - Capacity Planning</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="comming_soon/comming-soon.html">
+                            <i class="glyphicon glyphicon-paperclip"></i>
+                            FAQ
+                        </a>
+                    </li>
+                    <li>
+                        <a href="comming_soon/comming-soon.html">
+                            <i class="glyphicon glyphicon-send"></i>
+                            Contact
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+            <!-- Page Content Holder -->
+            <div id="content">
+                <h2>Core - Capacity Planning</h2>
+                <p class="normal-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                <br>
+                
+                <div class="caja_box">
+           
+                    <form class="form-horizontal-no-img" action="" name="forchi" id="formulario">
+                        
+                        <div class="row">
+                            <label  class="col-sm-2"></label >
+                            <label  class="col-sm-3 parag-1 parag-1-bold" style="font-size: 16px;"><center>Parameter</center></label>
+                            <label  class="col-sm-2 parag-1 parag-1-bold" style="font-size: 16px;"><center>Unit</center></label>
+                            <label  class="col-sm-2 parag-1 parag-1-bold" style="font-size: 16px;"><center>Value</center></label>
+                            <label  class="col-sm-1 parag-1 parag-1-bold" style="font-size: 16px;"><center>In Map</center></label>
+                        </div>
+                        
+                        <br>
+                        <div class="row">
+                            <label  class="col-sm-2"></label >
+                            <label  class="col-sm-3 parag-1">Site Elevation</label >
+                            <label  class="col-sm-2 parag-1">m</label >
+                            <input  id='value4_1' name="tx_lat" type = "text" class="col-sm-2 result-cell" readonly>
+                            <label  class="col-sm-1 parag-1"><center>H</center></label >
+                        </div>
+                        <br>
+                        <div class="row">
+                            <label  class="col-sm-2"></label >
+                            <label  class="col-sm-3 parag-1">Antenna Height from Ground</label >
+                            <label  class="col-sm-2 parag-1">m</label >
+                            <input  id='value4_2' name="tx_lat" type = "text" class="col-sm-2 result-cell" readonly>
+                            <label  class="col-sm-1 parag-1"><center>h</center></label >
+                        </div>
+                        <br>
+                        <div class="row">
+                            <label  class="col-sm-2"></label >
+                            <label  class="col-sm-3 parag-1">Area Elevation</label >
+                            <label  class="col-sm-2 parag-1">m</label >
+                            <input  id='value4_3' name="tx_lat" type = "text" class="col-sm-2 result-cell" readonly>
+                            <label  class="col-sm-1 parag-1"><center>ha</center></label >
+                        </div>
+                        <br>
+                        <div class="row">
+                            <label  class="col-sm-2"></label >
+                            <label  class="col-sm-3 parag-1">Cell Raduis</label >
+                            <label  class="col-sm-2 parag-1">m</label >
+                            <input  id='value4_4' name="tx_lat" type = "text" class="col-sm-2 result-cell" readonly>
+                            <label  class="col-sm-1 parag-1"><center>C</center></label >
+                        </div>
+                        <br>
+                        <div class="row">
+                            <label  class="col-sm-2"></label >
+                            <label  class="col-sm-3 parag-1">Antenna Vertical Beamwidth</label >
+                            <label  class="col-sm-2 parag-1">Degree</label >
+                            <input  id='value4_5' name="tx_lat" type = "text" class="col-sm-2 result-cell" readonly>
+                            <label  class="col-sm-1 parag-1"><center>aBW</center></label >
+                        </div>
+                        <br>
+                        <div class="row">
+                            <label  class="col-sm-2"></label >
+                            <label  class="col-sm-3 parag-1">Antenna Electrical Downtilt</label >
+                            <label  class="col-sm-2 parag-1">Degree</label >
+                            <input  id='value4_6' name="tx_lat" type = "text" class="col-sm-2 result-cell" readonly>
+                            <label  class="col-sm-1 parag-1"><center></center></label >
+                        </div>
+                        <br>
+                        <div class="row">
+                            <label  class="col-sm-2"></label >
+                            <label  class="col-sm-3 parag-1">Total Antenna Height</label >
+                            <label  class="col-sm-2 parag-1">m</label >
+                            <input  id='value4_7' name="tx_lat" type = "text" class="col-sm-2 result-cell" readonly>
+                            <label  class="col-sm-1 parag-1"><center></center></label >
+                        </div>
+                        <br>
+                        <div class="row">
+                            <label  class="col-sm-2"></label >
+                            <label  class="col-sm-3 parag-1">Difference in Elevation</label >
+                            <label  class="col-sm-2 parag-1">m</label >
+                            <input  id='value4_8' name="tx_lat" type = "text" class="col-sm-2 result-cell" readonly>
+                            <label  class="col-sm-1 parag-1"><center></center></label >
+                        </div>
+                        <br>
+                        <div class="row">
+                            <label  class="col-sm-2"></label >
+                            <label  class="col-sm-3 parag-1">Angle of Incidence</label >
+                            <label  class="col-sm-2 parag-1">Radian</label >
+                            <input  id='value4_9_1' name="tx_lat" type = "text" class="col-sm-2 result-cell" readonly>
+                            <label  class="col-sm-1 parag-1"><center>A</center></label >
+                        </div>
+                        <br>
+                        <div class="row">
+                            <label  class="col-sm-2"></label >
+                            <label  class="col-sm-3 parag-1">Angle of Incidence</label >
+                            <label  class="col-sm-2 parag-1">Degree</label >
+                            <input  id='value4_10_1' name="tx_lat" type = "text" class="col-sm-2 result-cell" readonly>
+                            <label  class="col-sm-1 parag-1"><center>A</center></label >
+                        </div>
+                        <br>
+                        <div class="row">
+                            <label  class="col-sm-2"></label >
+                            <label  class="col-sm-3 parag-1">Angle of 3dB Coverage</label >
+                            <label  class="col-sm-2 parag-1">Degree</label >
+                            <input  id='value4_10_1' name="tx_lat" type = "text" class="col-sm-2 result-cell" readonly>
+                            <label  class="col-sm-1 parag-1"><center></center></label >
+                        </div>
+                        
+                        
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        
+
+                        <div class="form-group">
+                            <div class="col-sm-offset-6">
+                              <button type="submit" id='btn' class="btn btn-default" >Calculate</button>
+                            </div>
+                        </div>                                              
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!-- jQuery CDN border-left: 2px solid gray;-->
+         <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+         <!-- Bootstrap Js CDN -->
+         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+         <script type="text/javascript">
+             /*$(document).ready(function () {
+                 $('#sidebarCollapse').on('click', function () {
+                     $('#sidebar').toggleClass('active');
+                 });
+             });*/
+             var formulario2 = document.getElementsByName('forchi')[0],
+                elementos = formulario2.elements,
+                boton = document.getElementById('btn');         
+            
+
+            formulario2.addEventListener('submit',function(evt){
+                evt.preventDefault();
+
+                //Primer Formulario ************************************************
+                var form1_1_var = Number(formulario2.form1_1.value);
+                var form1_2_var = Number(formulario2.form1_2.value);
+                var form1_3_var = Number(formulario2.form1_3.value);
+                var form1_4_var = Number(formulario2.form1_4.value);
+                var form1_5_var = Number(formulario2.form1_5.value);
+                var form1_6_var = Number(formulario2.form1_6.value);
+                var form1_7_var = Number(formulario2.form1_7.value);
+                var form1_8_var = Number(formulario2.form1_8.value);
+                var form1_9_var = Number(formulario2.form1_9.value);
+                var form1_10_var = Number(formulario2.form1_10.value);
+                var form1_11_var = Number(formulario2.form1_11.value);               
+               
+                var value1_1_int = form1_1_var * form1_2_var / 100 + form1_3_var;
+                var value1_2_int = value1_1_int * form1_4_var / 100;
+                var value1_3_int = value1_1_int * form1_5_var / 100;
+                var value1_4_int = form1_6_var * form1_8_var;
+                var value1_5_int = form1_7_var * form1_9_var;
+                var value1_6_int = value1_4_int * 8 / 3600 * 1000;
+                var value1_7_int = value1_5_int * 8 / 3600 * 1000;
+                var value1_8_int = ((value1_2_int*form1_10_var / 100*value1_6_int) / 1000 + (value1_3_int*form1_11_var/100*value1_7_int)/1000)*1
+                
+                document.getElementById("value1_1").value = value1_1_int.toFixed(0);
+                document.getElementById("value1_2").value = value1_2_int.toFixed(0);
+                document.getElementById("value1_3").value = value1_3_int.toFixed(0);
+                document.getElementById("value1_4").value = value1_4_int.toFixed(1);
+                document.getElementById("value1_5").value = value1_5_int.toFixed(0);
+                document.getElementById("value1_6").value = value1_6_int.toFixed(2);
+                document.getElementById("value1_7").value = value1_7_int.toFixed(2);
+                document.getElementById("value1_8").value = value1_8_int.toFixed(0);
+            }
+
+         </script>
+    </body>
+</html>

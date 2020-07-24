@@ -544,7 +544,7 @@
                 document.getElementById("value1_2").value = value1_2_int.toFixed(0);
                 document.getElementById("value1_3").value = value1_3_int.toFixed(0);
                 document.getElementById("value1_4").value = value1_4_int.toFixed(1);
-                document.getElementById("value1_5").value = value1_5_int.toFixed(0);
+                document.getElementById("value1_5").value = value1_5_int.toFixed(1);
                 document.getElementById("value1_6").value = value1_6_int.toFixed(2);
                 document.getElementById("value1_7").value = value1_7_int.toFixed(2);
                 document.getElementById("value1_8").value = value1_8_int.toFixed(0);
@@ -691,11 +691,11 @@
                 var array4 = [1,1,0,0,1,1];
                 var array5 = [1,0,0,1,0,0];
 
-                var value3_1_int = equation3(form3_1_1_var,form3_1_2_var,form3_1_3_var,form3_1_4_var,form3_1_5_var,form3_1_2_var,array,array2,value1_2_int,form1_10_var,value1_3_int,form1_11_var,value1_1_int,value1_8_int);
-                var value3_2_int = equation4(form3_2_1_var,form3_2_2_var,form3_2_3_var,form3_2_4_var,form3_2_5_var,form3_1_2_var,array,array3,value1_2_int,form1_10_var,value1_3_int,form1_11_var,value1_1_int,value1_8_int);
-                var value3_3_int = equation4(form3_3_1_var,form3_3_2_var,form3_3_3_var,form3_3_4_var,form3_3_5_var,form3_1_2_var,array,array3,value1_2_int,form1_10_var,value1_3_int,form1_11_var,value1_1_int,value1_8_int);
-                var value3_4_int = equation4(form3_4_1_var,form3_4_2_var,form3_4_3_var,form3_4_4_var,form3_4_5_var,form3_1_2_var,array,array4,value1_2_int,form1_10_var,value1_3_int,form1_11_var,value1_1_int,value1_8_int);
-                var value3_5_int = equation4(form3_5_1_var,form3_5_2_var,form3_5_3_var,form3_5_4_var,form3_5_5_var,form3_1_2_var,array,array5,value1_2_int,form1_10_var,value1_3_int,form1_11_var,value1_1_int,value1_8_int);
+                var value3_1_int = equation3(form3_1_1_var,form3_1_2_var,form3_1_3_var,form3_1_4_var,form3_1_5_var,form3_1_2_var,array,array2,value1_2_int,form1_10_var,value1_3_int,form1_11_var,value1_1_int,value1_8_int,form2_1_1_var);
+                var value3_2_int = equation4(form3_2_1_var,form3_2_2_var,form3_2_3_var,form3_2_4_var,form3_2_5_var,form3_1_2_var,array,array3,value1_2_int,form1_10_var,value1_3_int,form1_11_var,value1_1_int,value1_8_int,form2_1_1_var);
+                var value3_3_int = equation4(form3_3_1_var,form3_3_2_var,form3_3_3_var,form3_3_4_var,form3_3_5_var,form3_1_2_var,array,array3,value1_2_int,form1_10_var,value1_3_int,form1_11_var,value1_1_int,value1_8_int,form2_1_1_var);
+                var value3_4_int = equation4(form3_4_1_var,form3_4_2_var,form3_4_3_var,form3_4_4_var,form3_4_5_var,form3_1_2_var,array,array4,value1_2_int,form1_10_var,value1_3_int,form1_11_var,value1_1_int,value1_8_int,form2_1_1_var);
+                var value3_5_int = equation4(form3_5_1_var,form3_5_2_var,form3_5_3_var,form3_5_4_var,form3_5_5_var,form3_1_2_var,array,array5,value1_2_int,form1_10_var,value1_3_int,form1_11_var,value1_1_int,value1_8_int,form2_1_1_var);
 
                 document.getElementById("value3_1").value = value3_1_int.toFixed(0);
                 document.getElementById("value3_2").value = value3_2_int.toFixed(0);
@@ -847,8 +847,8 @@
 
             });
 
-            function equation3(campo1,campo2,campo3,campo4,campo5,fijo,array,array2,value1_2_int,form1_10_var,value1_3_int,form1_11_var,value1_1_int,value1_8_int){
-                var AA = (campo1 != 0) ? (value1_2_int/(campo1*0.8)) : 0;
+            function equation3(campo1,campo2,campo3,campo4,campo5,fijo,array,array2,value1_2_int,form1_10_var,value1_3_int,form1_11_var,value1_1_int,value1_8_int,form2_1_1_var){
+                var AA = (campo1 != 0) ? ((value1_1_int*form2_1_1_var)/(campo1*0.8)) : 0;
                 var BB = (campo2 != 0) ? (sumProduct(array,array2)/(fijo*0.8)) : 0;
                 var CC = (campo3 != 0) ? ((value1_8_int*0.1)/(campo3*800)) : 0;
                 var DD = (campo4 != 0) ? ((value1_2_int*form1_10_var/100+value1_3_int*form1_11_var/100)/(campo4*0.8)) : 0;
@@ -863,8 +863,8 @@
                 return Math.ceil(Math.max(AA,BB,CC,DD,EE));
             }
 
-            function equation4(campo1,campo2,campo3,campo4,campo5,fijo,array,array2,value1_2_int,form1_10_var,value1_3_int,form1_11_var,value1_1_int,value1_8_int){
-                var AA = (campo1 != 0) ? (value1_2_int/(campo1*0.8)) : 0;
+            function equation4(campo1,campo2,campo3,campo4,campo5,fijo,array,array2,value1_2_int,form1_10_var,value1_3_int,form1_11_var,value1_1_int,value1_8_int,form2_1_1_var){
+                var AA = (campo1 != 0) ? ((value1_1_int*form2_1_1_var)/(campo1*0.8)) : 0;
                 var BB = (campo2 != 0) ? (sumProduct(array,array2)/(fijo*0.8)) : 0;
                 var CC = (campo3 != 0) ? ((value1_8_int)/(campo3*800)) : 0;
                 var DD = (campo4 != 0) ? ((value1_2_int*form1_10_var/100+value1_3_int*form1_11_var/100)/(campo4*0.8)) : 0;
@@ -889,93 +889,8 @@
 
             function radianes(numero){
                 return (numero) * (Math.PI/180);
-            }
-
-             let tab;
-
-             function switchContent(selector){
-                $("#hld").hide();
-                $("#fm").hide();
-                $("#e2e").hide();
-                $(selector).show();
-                tab = selector;
-            }
-
-             const onClickActive = (event) => {
-                
-                 var anchor = event.target;
-								 clearActiveLinks();
-                 anchor.classList.add('link-active');
-             }
-
-             const clearActiveLinks = () =>{
-                const activeLink = document.getElementsByClassName('link-active')[0];
-								//console.log(activeLink);
-								if(activeLink){
-									activeLink.classList.remove('link-active');
-								}
-             }
-						//227, 1633, 5616
-                        
-                        console.log(tab);
-						 const updateSection = () =>{
-							const scrollTop = window.pageYOffset || (document.documentElement || document.body.parentNode || document.body).scrollTop;
-							//console.log(scrollTop);
-                            console.log(tab);
-							let link;
-
-							clearActiveLinks();
-
-                            if(tab == '#hld'){
-                                if(scrollTop >= 50 && scrollTop <= 1000){
-								document.getElementById("link-1").classList.add('link-active');
-                                }
-                                else if(scrollTop >= 1001 && scrollTop <= 1480){
-                                    document.getElementById("link-2").classList.add('link-active');
-
-                                }else if(scrollTop >= 1481 && scrollTop <= 3200){
-                                    document.getElementById("link-3").classList.add('link-active');
-                                    
-                                }else if(scrollTop >= 3201 && scrollTop <= 3400){
-                                    document.getElementById("link-4").classList.add('link-active');
-                                    
-                                }else if(scrollTop >= 3401 ){
-                                    document.getElementById("link-5").classList.add('link-active'); 
-                                }
-                            } else if(tab == '#fm'){
-                                if(scrollTop >= 50 && scrollTop <= 1100){
-								document.getElementById("fm_link-1").classList.add('link-active');
-                                }
-                                else if(scrollTop >= 1101 && scrollTop <= 3680){
-                                    document.getElementById("fm_link-2").classList.add('link-active');
-
-                                }else if(scrollTop >= 3681 && scrollTop <= 4380){
-                                    document.getElementById("fm_link-3").classList.add('link-active');
-                                    
-                                }else if(scrollTop >= 4381 ){
-                                    document.getElementById("fm_link-4").classList.add('link-active');
-                                    
-                                }
-
-                            } else if(tab == '#e2e'){
-                                if(scrollTop >= 50 && scrollTop <= 750){
-								    document.getElementById("e2e_link-1").classList.add('link-active');
-                                }
-                                else if(scrollTop >= 751 && scrollTop <= 9500){
-                                    document.getElementById("e2e_link-2").classList.add('link-active');
-
-                                }else if(scrollTop >= 9501 && scrollTop <= 9900){
-                                    document.getElementById("e2e_link-3").classList.add('link-active');
-                                    
-                                }else if(scrollTop >= 9901 ){
-                                    document.getElementById("e2e_link-4").classList.add('link-active');
-                                    
-                                }
-
-                            }
-
-						 }
-
+            }         
+          
          </script>
     </body>
 </html>
