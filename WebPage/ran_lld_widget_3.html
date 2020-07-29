@@ -135,9 +135,9 @@
                                     <li><a href="ran_hld_widget_2.html">  RAN - Coverage-Based</a></li>
                                     <li><a href="tx_hld_widget_1.html"> Tx - Capacity Forecast</a></li>
                                     <li><a href="tx_hld_widget_2.html">  Tx - Availability FO</a></li>
-<li><a href="tx_hld_widget_3.html" style="margin-left:2em"> Tx - Availability MW</a></li>
-<li><a href="tx_hld_widget_4.html" style="margin-left:2em">  Tx – MW Analysis</a></li>
-<li><a href="core_hld_widget_1.html" style="margin-left:2em">  Core - Capacity Planning</a></li>
+                                    <li><a href="tx_hld_widget_3.html" style="margin-left:2em"> Tx - Availability MW</a></li>
+                                    <li><a href="tx_hld_widget_4.html" style="margin-left:2em">  Tx – MW Analysis</a></li>
+                                    <li><a href="core_hld_widget_1.html" style="margin-left:2em">  Core - Capacity Planning</a></li>
                                 </ul>
                             </li>
                         </ul>
@@ -159,124 +159,67 @@
 
             <!-- Page Content Holder -->
             <div id="content">
-                <h2>Tilt Calculator Widget</h2>
+                <h2>EARFCN Calculator</h2>
                 <p class="normal-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
                 <br>
+               
+                <ol style='margin-top:0in' class="normal-text" start=1 type=1>
+                    <li>ENTER UPLINK AND DOWNLINK FREQs AT POINTS A AND B (IN MHz)</li>
+                    <li>IF FREQS LIE WITHIN MULTIPLE BANDS (INDICATED AT C), ENTER BAND NO AT D</li>
+                    <li>READ UPLINK AND DOWNLINK EARFCNs AT POINTS E AND F RESPECTIVELY</li>
+                </ol>
+
                 
                 <div class="caja_box">
            
                     <form class="form-horizontal-no-img" action="" name="forchi" id="formulario">
                         
-                        <div class="row">
-                            <label  class="col-sm-2"></label >
-                            <label  class="col-sm-3 parag-1 parag-1-bold" style="font-size: 16px;"><center>Parameter</center></label>
-                            <label  class="col-sm-2 parag-1 parag-1-bold" style="font-size: 16px;"><center>Unit</center></label>
-                            <label  class="col-sm-2 parag-1 parag-1-bold" style="font-size: 16px;"><center>Value</center></label>
-                            <label  class="col-sm-1 parag-1 parag-1-bold" style="font-size: 16px;"><center>In Map</center></label>
-                        </div>
-                        
+                        <br>
                         <br>
                         <div class="row">
-                            <label  class="col-sm-2"></label >
-                            <label  class="col-sm-3 parag-1">Site Elevation</label >
-                            <label  class="col-sm-2 parag-1">m</label >
+                            <label  class="col-sm-3"></label >
+                            <label  class="col-sm-2 parag-1"><b>Uplink Freq [MHz]:</b></label >
+                            <label  class="col-sm-1 parag-1"></label >
                             <input  id='form_1' name="tx_lon" class="col-sm-2 text-box" required>
-                            <label  class="col-sm-1 parag-1"><center>H</center></label >
                         </div>
                         <br>
                         <div class="row">
-                            <label  class="col-sm-2"></label >
-                            <label  class="col-sm-3 parag-1">Antenna Height from Ground</label >
-                            <label  class="col-sm-2 parag-1">m</label >
-                            <input  id='form_2' name="tx_lat" type = "text" class="col-sm-2 text-box" required>
-                            <label  class="col-sm-1 parag-1"><center>h</center></label >
+                            <label  class="col-sm-3"></label >
+                            <label  class="col-sm-2 parag-1"><b>Downlink Freq [MHz]:</b></label >
+                            <label  class="col-sm-1 parag-1"></label >
+                            <input  id='form_2' name="tx_lon" class="col-sm-2 text-box" required>
+                        </div>
+                        <br>
+                        <br>
+                        <div class="row">
+                            <label  class="col-sm-3"></label >
+                            <label  class="col-sm-2 parag-1"><b>EARFCN (UL)</b></label >
+                            <label  class="col-sm-1 parag-1"></label >
+                            <input  id='value_1' name="tx_lon" class="col-sm-2 result-cell" readonly>
                         </div>
                         <br>
                         <div class="row">
-                            <label  class="col-sm-2"></label >
-                            <label  class="col-sm-3 parag-1">Area Elevation</label >
-                            <label  class="col-sm-2 parag-1">m</label >
-                            <input  id='form_3' name="tx_lat" type = "text" class="col-sm-2 text-box" required>
-                            <label  class="col-sm-1 parag-1"><center>ha</center></label >
-                        </div>
-                        <br>
-                        <div class="row">
-                            <label  class="col-sm-2"></label >
-                            <label  class="col-sm-3 parag-1">Cell Raduis</label >
-                            <label  class="col-sm-2 parag-1">m</label >
-                            <input  id='form_4' name="tx_lat" type = "text" class="col-sm-2 text-box" required>
-                            <label  class="col-sm-1 parag-1"><center>C</center></label >
-                        </div>
-                        <br>
-                        <div class="row">
-                            <label  class="col-sm-2"></label >
-                            <label  class="col-sm-3 parag-1">Antenna Vertical Beamwidth</label >
-                            <label  class="col-sm-2 parag-1">Degree</label >
-                            <input  id='form_5' name="tx_lat" type = "text" class="col-sm-2 text-box" required>
-                            <label  class="col-sm-1 parag-1"><center>aBW</center></label >
-                        </div>
-                        <br>
-                        <div class="row">
-                            <label  class="col-sm-2"></label >
-                            <label  class="col-sm-3 parag-1">Antenna Electrical Downtilt</label >
-                            <label  class="col-sm-2 parag-1">Degree</label >
-                            <input  id='form_6' name="tx_lat" type = "text" class="col-sm-2 text-box" required>
-                            <label  class="col-sm-1 parag-1"><center></center></label >
-                        </div>
-                        <br>
-                        <div class="row">
-                            <label  class="col-sm-2"></label >
-                            <label  class="col-sm-3 parag-1">Total Antenna Height</label >
-                            <label  class="col-sm-2 parag-1">m</label >
-                            <input  id='value_1' name="tx_lat" type = "text" class="col-sm-2 result-cell" readonly>
-                            <label  class="col-sm-1 parag-1"><center></center></label >
-                        </div>
-                        <br>
-                        <div class="row">
-                            <label  class="col-sm-2"></label >
-                            <label  class="col-sm-3 parag-1">Difference in Elevation</label >
-                            <label  class="col-sm-2 parag-1">m</label >
-                            <input  id='value_2' name="tx_lat" type = "text" class="col-sm-2 result-cell" readonly>
-                            <label  class="col-sm-1 parag-1"><center></center></label >
-                        </div>
-                        <br>
-                        <div class="row">
-                            <label  class="col-sm-2"></label >
-                            <label  class="col-sm-3 parag-1">Angle of Incidence</label >
-                            <label  class="col-sm-2 parag-1">Radian</label >
-                            <input  id='value_3' name="tx_lat" type = "text" class="col-sm-2 result-cell" readonly>
-                            <label  class="col-sm-1 parag-1"><center>A</center></label >
-                        </div>
-                        <br>
-                        <div class="row">
-                            <label  class="col-sm-2"></label >
-                            <label  class="col-sm-3 parag-1">Angle of Incidence</label >
-                            <label  class="col-sm-2 parag-1">Degree</label >
-                            <input  id='value_4' name="tx_lat" type = "text" class="col-sm-2 result-cell" readonly>
-                            <label  class="col-sm-1 parag-1"><center>A</center></label >
-                        </div>
-                        <br>
-                        <div class="row">
-                            <label  class="col-sm-2"></label >
-                            <label  class="col-sm-3 parag-1">Angle of 3dB Coverage</label >
-                            <label  class="col-sm-2 parag-1">Degree</label >
-                            <input  id='value_5' name="tx_lat" type = "text" class="col-sm-2 result-cell" readonly>
-                            <label  class="col-sm-1 parag-1"><center></center></label >
+                            <label  class="col-sm-3"></label >
+                            <label  class="col-sm-2 parag-1"><b>EARFCN (DL)</b></label >
+                            <label  class="col-sm-1 parag-1"></label >
+                            <input  id='value_2' name="tx_lon" class="col-sm-2 result-cell" readonly>
                         </div>
                         <br>
                         <br>
-                        <img
-                            border=0 width=600 height=400 id=image25.png
-                            src="images/widgets/widget_ran/tilt.png">
                         <br>
-                        <br>
-                        
 
                         <div class="form-group">
-                            <div class="col-sm-offset-6">
+                            <div class="col-sm-offset-5">
                               <button type="submit" id='btn' class="btn btn-default" >Calculate</button>
                             </div>
-                        </div>                                              
+                        </div>  
+
+                        <ul style='margin-top:0in' class="normal-text" start=1 type=1>
+                            <li>ENTER UPLINK AND DOWNLINK FREQs AT POINTS A AND B (IN MHz)</li>
+                            <li><b>Uplink</b> Nu = 10 * (FUL - FUL_low) + Noffs-UL, where FUL_low ≤ FUL ≤ FUL_high</li>
+                            <li><b>Downlink</b> Nd = 10 * (FDL - FDL_low) + Noffs-UL, where FDL_low ≤ FDL ≤ FDL_high</li>
+                        </ul>
+                                            
                     </form>
                 </div>
             </div>
@@ -301,25 +244,12 @@
             formulario.addEventListener('submit',function(evt){
                 evt.preventDefault();
 
-                //Primer Formulario ************************************************
                 var form_1_var = Number(formulario.form_1.value);
-                var form_2_var = Number(formulario.form_2.value);
-                var form_3_var = Number(formulario.form_3.value);
-                var form_4_var = Number(formulario.form_4.value);
-                var form_5_var = Number(formulario.form_5.value);
-                var form_6_var = Number(formulario.form_6.value);             
-               
-                var value_1_int = form_1_var + form_2_var;
-                var value_2_int = value_1_int - form_3_var;
-                var value_3_int = Math.atan(value_2_int / form_4_var);
-                var value_4_int = (value_3_int * 180) / Math.PI;
-                var value_5_int = value_4_int - form_6_var + (form_5_var/2);
-
+                var form_2_var = Number(formulario.form_2.value);  
+                var value_1_int; 
+                
                 document.getElementById("value_1").value = value_1_int.toFixed(2);
                 document.getElementById("value_2").value = value_2_int.toFixed(2);
-                document.getElementById("value_3").value = value_3_int.toFixed(3);
-                document.getElementById("value_4").value = value_4_int.toFixed(3);
-                document.getElementById("value_5").value = value_5_int.toFixed(3);
             });
          </script>
     </body>

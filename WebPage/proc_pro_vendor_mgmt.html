@@ -1,0 +1,2307 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+        <title>RunBook</title>
+
+         <!-- Bootstrap CSS CDN -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <!-- Our Custom CSS -->
+        <link rel="stylesheet" href="style2.css">
+  
+        <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+	</head>
+		
+    <body onscroll="updateSection()">
+
+    <div class >
+        <ul class="barra_superior">
+            <li class="li_superior"><a class="active" href="Home.html">Home</a></li>
+            <li class="li_superior"><a href="comming_soon/comming-soon.html">About</a></li>
+            
+            <li class="topnav-right"><a href="#" onclick="switchContent('#e2e')">E2E Process Flow</a></li>
+            <li class="topnav-right"><a href="#" onclick="switchContent('#fm')">Function & Methodologies</a></li>
+            <li class="topnav-right"><a href="#" onclick="switchContent('#hld')" >HLD Fundamentals</a></li>
+        </ul>
+    </div>
+
+    <div class="wrapper">
+        <!-- Sidebar Holder -->
+        <nav id="sidebar">
+            <div class="sidebar-header">
+                <h3>NaaS RunBook</h3>
+                <!--strong>NaaS</strong-->
+                <img src="smiley.png" alt="Go to W3Schools!" width="42" height="42" border="0">
+            </div>
+
+            <ul class="list-unstyled components">
+                <li>
+                    <a href="#runbookSubmenu" data-toggle="collapse" aria-expanded="false">
+                        <i class="glyphicon glyphicon-option-horizontal"></i>
+                        RunBook Modules
+                    </a>
+                    <ul class="list-unstyled" id="runbookSubmenu">
+                            <li>
+                                <a href="#">
+                                    &#187 Strategic Plan & Scope
+                                </a>
+                            </li>
+                            <li  class="active">
+                                <a href="#HLNA" data-toggle="collapse" aria-expanded="false">
+                                    &#187 High Level Network Architecture
+                                </a>
+                                <ul class="list-unstyled collapse" id="HLNA">
+                                    <li><a href="ran_hld_architecture.html"style="margin-left:2em">&bull; RAN Architecture</a></li>
+                                    <li><a href="tx_ip_architecture.html" style="margin-left:2em">&bull; TX & IP Architecture</a></li>
+                                    <li><a href="mobile_core_archi.html" style="margin-left:2em"> &bull; Core Architecture</a></li>
+                                    <li><a href="network_monitoring_architecture.html" style="margin-left:2em"> &bull; Network Monitoring</a></li>
+                                    <li><a href="comming_soon/comming-soon.html" style="margin-left:2em"> &bull; Engineering Specifications</a></li>
+                                </ul>
+                            </li>
+                            <li class="active">
+                                <a href="#homeSubmenu"  data-toggle="collapse" aria-expanded="false">
+                                    &#187 Network Design
+                                </a>
+                                <ul class="list-unstyled collapse" id="homeSubmenu">
+                                    <li><a href="#transportMenu" data-toggle="collapse" style="margin-left:2em">&bull; Transport</a></li>
+                                        <ul class="list-unstyled collapse" id="transportMenu">
+                                            <li><a href="tx_hld_module.html" style="margin-left:4em;">&#9657; Tx Network HLD</a></li>
+<li><a href="tx_lld_module.html" style="margin-left:4em;">&#9657; Tx Network LLD</a></li>
+                                        </ul>
+            
+                                    <li><a href="#transportMenu2" data-toggle="collapse" style="margin-left:2em">&bull; RAN</a></li>
+                                        <ul class="list-unstyled collapse" id="transportMenu2">
+                                            <li><a href="ran_hld_module.html" style="margin-left:4em">&#9657; RAN Network HLD</a></li>
+                                        </ul>
+                                    <li><a href="#transportMenu3" data-toggle="collapse" style="margin-left:2em">&bull; Core</a></li>
+                                        <ul class="list-unstyled collapse" id="transportMenu3">
+                                            <li><a href="mobile_core_hld.html" style="margin-left:4em;">&#9657; Mobile Core HLD</a></li>
+											<li><a href="mobile_core_lld.html" style="margin-left:4em;">&#9657; Mobile Core LLD</a></li>
+                                        </ul>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#deployment_m" data-toggle="collapse" aria-expanded="false">
+                                    &#187 Deployment
+                                </a>
+                                <ul class="list-unstyled collapse" id="deployment_m">
+                                    <li><a href="deployment_mgmt.html"style="margin-left:2em">&bull; Deployment Mgmt</a></li>
+                                    <li><a href="#"style="margin-left:2em">&bull; Site Survey</a></li>
+                                    <li><a href="#"style="margin-left:2em">&bull; Construction</a></li>
+                                    <li><a href="#"style="margin-left:2em">&bull; I & C</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    &#187 O & M
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    &#187 Field Maintenance
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    &#187 Post-Launch Engineering
+                                </a>
+                            </li>
+    
+                            <li  class="active">
+                                <a href="#supply" data-toggle="collapse" aria-expanded="false">
+                                    &#187 Supply Chain Management
+                                </a>
+                                <ul class="list-unstyled " id="supply">
+                                    <li><a href=""style="margin-left:2em">&bull; RFx Process</a></li>
+                                    <li><a href="proc_pro_vendor_mgmt.html" style="margin-left:2em;color: black;"><strong>&bull; Procurement Proc. & Vendor Mgmt.</strong></a></li>
+                                    <li><a href="" style="margin-left:2em"> &bull; Logistic & Warehousing</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#engagementSubmenu" data-toggle="collapse" aria-expanded="false">
+                            <i class="glyphicon glyphicon-option-horizontal"></i>
+                            Methods of Engagement
+                        </a>
+                        <ul class="collapse list-unstyled" id="engagementSubmenu">
+                            <li><a href="#">&#187 Primer</a></li>
+                            <li class="active">
+                                <a href="#widgets" data-toggle="collapse" aria-expanded="false">
+                                    &#187 Wizards
+                                </a>
+                                <ul class="collapse list-unstyled" id="widgets">
+                                    <li><a href="core_hld_wizard.html" style="margin-left:2em">&bull; Core HLD - Wizard</a></li>
+                                    <li><a href="net_mon_arch_wizard_1.html" style="margin-left:2em">&bull; Net Mon Arch - Wizard 1</a></li>
+                                    <li><a href="net_mon_arch_wizard_2.html" style="margin-left:2em">&bull; Net Mon Arch - Wizard 2</a></li>
+                                    <li><a href="tx_ip_arch_wizard_1.html" style="margin-left:2em">&bull; Tx & IP Archi Wizard</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">&#187 Templates</a></li>
+                            <!--li><a href="friss.html">Widgets</a></li-->
+                                            
+                            <li class="active">
+                                <a href="#homeSubmenu22" data-toggle="collapse" aria-expanded="false">
+                                    &#187 Widgets
+                                </a>
+                                <ul class="collapse list-unstyled" id="homeSubmenu22">
+                                    <li><a href="ran_hld_widget_1.html" style="margin-left:2em">&bull; RAN - Capacity-Based</a></li>
+                                    <li><a href="ran_hld_widget_2.html" style="margin-left:2em">&bull; RAN - Coverage-Based</a></li>
+                                    <li><a href="tx_hld_widget_1.html" style="margin-left:2em">&bull; Tx - Capacity Forecast</a></li>
+                                    <li><a href="tx_hld_widget_2.html" style="margin-left:2em">&bull; Tx - Availability FO</a></li>
+                                    <li><a href="tx_hld_widget_3.html" style="margin-left:2em">&bull; Tx - Availability MW</a></li>
+                                    <li><a href="tx_hld_widget_4.html" style="margin-left:2em">&bull; Tx – MW Analysis</a></li>
+                                    <li><a href="core_hld_widget_1.html" style="margin-left:2em">&bull; Core - Capacity Planning</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="comming_soon/comming-soon.html">
+                            <i class="glyphicon glyphicon-paperclip"></i>
+                            FAQ 
+                        </a>
+                    </li>
+                    <li>
+                        <a href="comming_soon/comming-soon.html">
+                            <i class="glyphicon glyphicon-send"></i>
+                            Contact
+                        </a>
+                    </li>
+            </ul>
+        </nav>
+        <!-- Page Content Holder -->
+       <section id="hld" hidden>
+            <div id="content"> 
+
+                <div div data-spy="scroll" data-target="#navbar-example3" data-offset="0">
+                    <h1><a class="titulo-h1 anchor-bum" name="item1">1
+                        Introduction</a></h1>
+                        
+                        <p class="normal-text">Procurement plays an important role within a NaaS operator
+                        organization since external spend (CapEx and OpEx) constitutes a major
+                        component of the cost basis for NaaS Operators. For this reason, strengthening
+                        procurement capabilities is necessary to support rapid and cost-effective
+                        network deployment. Procurement management ensures that the NaaS Operator
+                        effectively identifies, sources and manages vendors for the business to reach
+                        its strategic goals and objectives. </p>
+                        
+                        <p class="normal-text">The Procurement and Vendor Management Module provides the
+                        NaaS Operator with background information and methodologies to support the
+                        procurement and purchasing activities to acquire products and services from
+                        selected vendors. Development and maintenance of relationships with on-boarded
+                        vendors is essential to maximize the value received from them. Vendor
+                        management process helps to achieve these goals by evaluating vendors
+                        capabilities, managing contracts, assessing risks and evaluating their
+                        performance.</p>
+                        
+                        <br><h2><a class="titulo-h2 anchor-bum" name="item1-1">1.1
+                        Module Objectives</a></h2>
+                        
+                        <p class="normal-text">Procurement and Vendor Management module will support NaaS
+                        Operators to manage the procurement and vendors activity associated with the
+                        network deployment. The module has the following specific objectives: </p>
+                        
+                        <ol class="normal-text ul-iconos" style='margin-top:0in' start=1 type=1>
+                            <li class="normal-text">Provide a general overview of the Procurement
+                            process to ensure sufficient information and guidelines for the NaaS Operator
+                            to manage the procurement of products and services.</li>
+                            
+                            <li class="normal-text">Examination of the purchasing subprocess and provide NaaS operators with methodologies and tools to execute purchasing
+                            transactional activities.</li>
+                            
+                            <li class="normal-text">
+                            Provide the NaaS Operator with a systematic
+                            approach for Vendor governance, including management of vendors contracts,
+                            invoices, performance and risks.</li>
+                            
+                            <li class="normal-text">Enable NaaS Operators to evaluate the use of procurement
+                            management software platforms, to improve the performance and productivity of
+                            the procurement process.</li>
+                        </ol>
+                        
+                        <br><h2><a class="titulo-h2 anchor-bum" name="item1-2">1.2
+                        Module Framework</a></h2>
+                        
+                        <p class="normal-text"><a></a>NaaS Runbooks Framework shown in
+                        Figure 1 displays the Runbook modules and their relationship to the Procurement
+                        and Vendor management module.</p>
+                        
+                        <p class="normal-text">Procurement and Vendor Management module is part of the
+                        Supply Chain Management area. The module interacts with other modules in the
+                        area, namely RFx Process module and Logistics &amp; Warehousing module.
+                        Procurement process will make use of the RFx module when there is a need to
+                        request information, proposals or quotations from vendors. Relationship between
+                        procurement teams and logistics &amp; warehousing teams is necessary when
+                        purchasing products that require to be maintained in NaaS Operators warehouses.</p>
+                        
+                        <p class="normal-text"></p>
+                        
+                        <p class="normal-text"><img width=626
+                        height=273 id=image11.png
+                        src="images/pro_vendor_mngt/image001.png"></p>
+                        
+                        <p align=center><i>Figure 1.
+                        Supply Chain Management Framework</i></p><br>
+                        
+                        <p class="normal-text"><a></a>Figure 2 presents the Procurement and
+                        Vendor Management Module functional view where the main functional components
+                        are exhibited.</p>
+                        
+                        <p class="normal-text"><img width=499
+                        height=351 id=image5.png
+                        src="images/pro_vendor_mngt/image002.png"></p>
+                        
+                        <p align=center><i>Figure 2.
+                        Procurement and Vendor Management Module Functional view</i></p><br>
+                        
+                        <p class="normal-text">Sourcing is a strategic process that needs to be performed
+                        by the NaaS Operator to identify market vendors for the required product or
+                        service. The process includes selecting and negotiating with vendors, building
+                        relationships with them, and evaluating cost savings opportunities.</p>
+                        
+                        <p class="normal-text">Purchasing is a sub-process of procurement that is more
+                        related to transactional activities such as requests for buying products and
+                        services, purchase orders, invoicing, shipping notifications, products or
+                        services reception and payment to vendors.</p>
+                        
+                        <p class="normal-text">Vendor management includes all the activities required for
+                        vendor governance, including the management of contracts, invoices,
+                        performance, relationships and risks.</p>
+                        
+                        <p class="normal-text">The rest of the module is structured as follows:</p>
+                        
+                        <p class="normal-text">Section 2 is an introductory section to highlight the
+                        strategic relevance of procurement activities for the NaaS organization.
+                        Section 3 describes the Sourcing activities, which include vendor
+                        identification, vendor onboarding and contractual agreements, as well as spend
+                        analysis to identify cost-savings opportunities. Section 4 focuses on
+                        describing the purchase transactional activities, presenting the different
+                        types of purchasing forms. Section 5 describes the activities for Vendor
+                        management, focusing on the governance methods to manage contracts and
+                        invoices, measure risks as well as managing the performance of vendors
+                        delivering products or services to the NaaS Operator. Finally, Section 6
+                        focuses on providing the NaaS Operator with a review of activities that can be
+                        automated by using Procurement Management Software.</p>
+                        
+                        <h1><a class="titulo-h1 anchor-bum" name="item2">2
+                        Procurement in NaaS Operators</a></h1>
+                        
+                        <p class="normal-text">Supply Chain activities play a key role in NaaS Operators,
+                        where Capital (CapEx) and Operational (OpEx) expenditures represent a
+                        significant percentage of total revenues. CapEx and OpEx paid to external
+                        providers and vendors can comprise up to <a href="https://www.oliverwyman.com/our-expertise/insights/2015/mar/the-procurement-value-in-telecom.html" class="a_link">40%
+                        of total revenues</a> for telecommunication operators.</p>
+                        
+                        <p class="normal-text">The three <a href="https://www.gsma.com/mobilefordevelopment/wp-content/uploads/2019/07/GSMA-How-Innovation-Can-Drive-Rural-Connectivity-Report-2019.pdf" class="a_link">key
+                        infrastructure components</a> that represent a financial challenge for the
+                        development of mobile networks in rural areas are the following (a more detailed
+                        view of capital and operational costs is available in section 2.1):</p>
+                        
+                        <ul class="normal-text ul-iconos" style='margin-top:0in' start=1 type=1>
+                            <li>Building cell sites, including base
+                            stations, towers and transportation of civil works materials and equipment.</li>
+                        
+                            <li>Backhaul links to connect radio sites
+                            with the core of the mobile network.</li>
+                        
+                            <li>
+                            Energy to power the site equipment.</li>
+                        </ul>
+                        
+                        <p class="normal-text">In an economic environment where global mobile revenue
+                        remains stable (revenue will rise steadily at around <a href="https://www.gsma.com/mobileeconomy/wp-content/uploads/2020/03/GSMA_MobileEconomy2020_Global.pdf" class="a_link">1%
+                        per year</a>) and characterized by a much lower ARPU in rural settings than in
+                        urban environments, NaaS operators require a continuous search for
+                        opportunities to reduce costs. Technology innovations to improve the financials
+                        of the main cost components listed above are being considered for rural
+                        deployment, including simplified and lower cost cell towers, low cost base
+                        stations, unlicensed microwave, and the use of renewable energy (mainly solar
+                        power).</p>
+                        
+                        <p class="normal-text">The activities of the NaaS Operators procurement teams are
+                        key to support the assessment and introduction of these technology innovations,
+                        reduce the Total Cost of Ownership (TCO) and achieve the NaaS Operators
+                        financial objectives.</p>
+                        
+                        <p class="normal-text">The following sections provide the NaaS Operator with high-level
+                        insights for the CapEx and OpEx major contributor areas.</p>
+                        
+                        <br><h2><a class="titulo-h2 anchor-bum" name="item2-1">2.1
+                        CapEx and OpEx breakdown</a></h2>
+                        
+                        <p class="normal-text">Periods with strong CapEx intensity for Telecom Operators,
+                        in general, are usually associated with new network deployments and with the
+                        introduction of new technologies in the network. CapEx breakdown and timing of
+                        new deployments can be very much dependent on the specific region and/or
+                        specific country.</p>
+                        
+                        <p class="normal-text">Nowadays, CapEx efforts in developed countries are mostly
+                        focused on finalizing network deployments for FTTx (Fiber to the Node, Fiber to
+                        the Tower, etc.) and initializing 5G deployments. This situation is different
+                        in emerging markets and areas where there is still a significant percentage of
+                        unconnected population, where CapEx is mostly focused on the rollout of new mobile
+                        network infrastructure, upgrading networks to 4G technology and investing in
+                        backbone networks. </p>
+                        
+                        <p class="normal-text">The graph in Figure 3 shows the CapEx breakdown for an
+                        initial mobile rollout investment. During this period, the major CapEx spending
+                        components are the Civil Engineering (16%), the site facilities (tower, shelter
+                        and power) and the RAN equipment (24% and 35% respectively).</p>
+                        
+                        <p class="normal-text"></p>
+                        
+                        <p class="normal-text"><img
+                        border=0 width=472 height=305 id=image9.png
+                        src="images/pro_vendor_mngt/image003.png"></p>
+                        
+                        <p align=center><i>Figure 3. CapEx breakdown
+                        (source: </i><a href="https://www.slideshare.net/Netmanias/201109c-ran-innovative-solution-for-green-radio-access-networks" class="a_link">China Mobile</a><i>) </i></p><br>
+                        
+                        <p class="normal-text">For network OpEx, as shown in Figure 4, power, equipment maintenance
+                        as well as Site rental and backhaul capacity costs are the most significant
+                        items for Operational expenditures.</p>
+                        
+                        <p class="normal-text"><img border=0
+                        width=471 height=304 id=image1.png
+                        src="images/pro_vendor_mngt/image004.png"></p>
+                        
+                        <p align=center><i>Figure 4.
+                        OpEx breakdown (source: China Mobile)</i></p><br>
+                        
+                        <p class="normal-text">It is important to highlight for NaaS Operators the extra
+                        cost of deploying networks in rural and remote locations when compared to
+                        network deployment in urban areas. According to data from <a href="https://www.gsma.com/mobilefordevelopment/resources/closing-the-coverage-gap-how-innovation-can-drive-rural-connectivity/" class="a_link">GSM
+                        Association (GSMA)</a>, deployments in rural and in remote locations have an
+                        18% and 35% cost premium respectively, compared to urban deployment (Figure 5)
+                        :</p>
+                        
+                        <p class="normal-text"><img border=0
+                        width=568 height=360 id=image13.png
+                        src="images/pro_vendor_mngt/image005.png"></p>
+                        
+                        <p align=center><i>Figure 5.
+                        Cost of Mobile Sites per environment (urban, rural, remote) (source: GSM
+                        Association (GSMA))</i></p><br>
+                        
+                        <p class="normal-text">Therefore, a successful approach to Procurement and Vendor
+                        management activities is vital for the NaaS Operator to ensure profitability.
+                        This will require the NaaS Operator to work on optimized procurement processes
+                        to ensure a competitive, sustainable, and diverse supply chain environment with
+                        proper diversification strategies. These processes need to consider proper
+                        analytics allowing to make smarter decisions about network deployment costs.</p>
+                         
+                       
+                </div>
+
+                <div class="right">
+                    <a class='link-next' href="#" onclick="switchContent('#fm')">Next &#8658;</a>
+                </div>
+                <br>
+            </div>
+
+            <nav id="navbar-example3" class="navbar navbar-light bg-light position-fixed">
+                <nav class="nav nav-pills flex-column">
+                
+                <a id="link-1" class="nav-link bullet-2-link" onclick="onClickActive(event)" href="#item1"><strong>1. INTRODUCTION</strong></a>
+                <a id="link-2" class="nav-link bullet-2-link" onclick="onClickActive(event)" href="#item1-1"><em>1.1 Module Objectives</em></a>
+                <a id="link-3" class="nav-link bullet-2-link" onclick="onClickActive(event)" href="#item1-2"><em>1.2 Module Framework</em></a>
+                <a id="link-4" class="nav-link bullet-2-link" onclick="onClickActive(event)" href="#item2"><strong>2. Procurement in NaaS Operators</strong></a>
+                <a id="link-5" class="nav-link bullet-2-link" onclick="onClickActive(event)" href="#item2-1"><em>2.1 CapEx and OpEx breakdown</em></a>
+                </nav>
+            </nav>
+       </section>
+
+       <section id="fm" hidden>
+        <div id="content"> 
+
+            <div data-spy="scroll" data-target="#navbar-example3" data-offset="0">
+                <h1><a class="titulo-h1 anchor-bum" name="item3">3
+                    Sourcing</a></h1>
+                    
+                    <p class="normal-text"><a></a>Sourcing for NaaS Operators needs to
+                    be considered as a strategic, continuous, and well-planned procedure that adds
+                    value to the organization and actively supports in achieving the business
+                    objectives. An active management of the procurement and sourcing processes
+                    requires teaming up with vendors and internal stakeholders, critically
+                    reviewing company spend and managing vendor risks.</p>
+                    
+                    <p class="normal-text">Instead of a reactive approach, where procurement has
+                    traditionally been responding to requisitions and business needs as they arise,
+                    a more proactive management of the procurement activities includes creating a
+                    strategy to anticipate requirements and plan accordingly as those requirements
+                    come up. Main benefits of the strategic proactive sourcing approach include:</p>
+                    
+                    <ul class="normal-text ul-iconos" style='margin-top:0in' start=1 type=1>
+                        <li>Increased profit since the main
+                        objective of the sourcing team will be to gain savings on the whole supply
+                        chain activities.</li>
+                        
+                        <li>
+                        Managed supply risks, by assessing
+                        existing supplier risks (quality risk, availability risk, financial risk), and
+                        creating action plans to avoid or mitigate these risks.</li>
+                        
+                        <li>
+                        Analysis of each sourcing action to
+                        execute those which provide more value at the same cost, decrease operational
+                        expenditures or increase the speed of operations.</li>
+                    </ul>
+                    
+                    <p class="normal-text">For all the benefits listed above, NaaS Operators sourcing
+                    teams need to consider the application of a strategic proactive sourcing
+                    approach to all the steps in the procurement cycle. </p>
+                    
+                    <p class="normal-text">The steps in the Sourcing cycle are represented in the
+                    following figure and described in this section:</p><br>
+                    
+                    <p class="normal-text"><img border=0
+                    width=504 height=118 id=image10.png
+                    src="images/pro_vendor_mngt/image006.png"></p>
+                    
+                    <p align=center><i>Figure 6. Sourcing process
+                    activities</i></p><br>
+                    
+                    <br><h2><a class="titulo-h2 anchor-bum" name="item3-1">3.1
+                    Identification of products and services needs</a></h2>
+                    
+                    <p class="normal-text">The sourcing cycle starts with the NaaS Operator identifying
+                    a need for a product or service. Depending on the type of need, different
+                    departments in the NaaS Operator organization will be involved. It will be
+                    necessary to gather information from all the involved stakeholders and assess
+                    the business necessity and business case for the specific product or service.</p>
+                    
+                    <br><h2><a class="titulo-h2 anchor-bum" name="item3-2">3.2
+                    Selection of Vendors</a></h2>
+                    
+                    <p class="normal-text">Within the procurement strategy, the NaaS Operator will
+                    consider the type of vendor that will be used to fulfill the delivery of the
+                    required product or service. This can include exploring both local vendors as
+                    well as larger international vendors. The objective is to select the vendors
+                    that can provide the most cost-effective and efficient service.</p>
+                    
+                    <p class="normal-text">Once the type of vendor that is more suitable for the
+                    specific initiative has been decided, the sourcing team will initiate the
+                    tendering process. The tendering process will allow the NaaS Operator to obtain
+                    and evaluate proposals submitted from invited companies in response to the
+                    requirements provided by the NaaS Operator.</p>
+                    
+                    <p class="normal-text">At this point, it will be necessary to create the relevant
+                    documentation that will be sent for tender. The documentation will include
+                    product or service requirements, terms and conditions, purchase volumes and
+                    service level agreements. This documentation will be used during the RFx
+                    Process as it allows vendors to quote accordingly to fulfill these
+                    requirements.</p>
+                    
+                    <p class="normal-text">RFx processes will provide the NaaS Operator with the
+                    opportunity to gain relevant information from vendors, including size,
+                    financials and availability of qualified resources. Including a Request for
+                    Information (RFI) or a Vendor qualification process within the procurement
+                    procedure will help the NaaS Operator to determine whether a vendor meets the
+                    criteria to be included in the tender process.</p>
+                    
+                    <p class="normal-text">After initial qualification has been performed, Request for
+                    Proposals (RFP) or Request for Quotation (RFQ) will be sent out to the
+                    preferred vendors. These tender processes will include details on the product
+                    or service required, product quantities and timelines.</p>
+                    
+                    <p class="normal-text">After vendors have submitted their responses, the NaaS
+                    Operator will evaluate these responses to assess the vendors quality of
+                    products / service, fulfillment capabilities, timelines and financial details.</p>
+                    
+                    <p class="normal-text">The tender evaluation and subsequent vendor selection will
+                    consider:</p>
+                    
+                    <ul class="normal-text ul-iconos" style='margin-top:0in' start=1 type=1>
+                        <li>Price comparison</li>
+                        <li>Fulfillment capabilities</li>
+                        <li>Quality of product / service</li>
+                        <li>Reference checking</li>
+                        <li>Credit and financial checks</li>
+                        <li>Vendor audit</li>
+                        <li>Product / service sample or trial</li>
+                        <li>Cost evaluation</li>
+                    </ul>
+                    
+                    
+                    
+                    <p class="normal-text">Once vendors have been selected, the next step in the
+                    sourcing process consists of defining the type of commercial relationship or contract
+                    and the associated terms and conditions.</p>
+                    
+                    <br><h2><a class="titulo-h2 anchor-bum" name="item3-3">3.3
+                    Negotiate contracts and terms</a></h2>
+                    
+                    <p class="normal-text"><a></a>Different forms of procurement should
+                    be considered by the NaaS Operator, depending on the nature of the required
+                    products or services. Forms of procurement will include:</p>
+                    
+                    <ul class="normal-text ul-iconos" style='margin-top:0in' start=1 type=1>
+                        <li>One-time procurement.<br>This type will be used for products or services which will
+                        be ordered just one-time or on an irregular basis.</li>
+
+                        <li>Long-term contracts with periodical issue of release order.<br>
+                        In this form of engagement, products or services will be ordered
+                        regularly during a valid contract period. The NaaS Operator will negotiate
+                        longer-term pricing and conditions with the vendor and record them in the
+                        contract.<br>
+                        Individual release orders will be submitted afterward,
+                        specifying the order quantity and the delivery date.</li>
+                    
+                        <li>
+                        Long-term scheduling agreements.<br>
+                        If the product or service is ordered on a regular basis and
+                        is delivered according to a time schedule specified with the vendor in a
+                        project plan. The products or services to be delivered are specified in the
+                        scheduling agreement. <br>
+                        Under this type of agreement, the NaaS Operator will create
+                        a delivery schedule plan with individual scheduled deliverables specifying
+                        exact quantities, delivery dates, and times extending over a certain period
+                        into the future. </li>
+                    </ul>
+                    
+                    <p class="normal-text">Besides the form of agreement, the NaaS Operator will also
+                    consider different alternatives for the type of contracts to formalize such
+                    agreements. The following list is meant to provide guidelines to the NaaS
+                    Operator about the usual type of contracts:</p>
+                    
+                    <ul class="normal-text ul-iconos" style='margin-top:0in' start=1 type=1>
+                        <li>Fixed Price Contracts: </li>
+                        <br>Fixed Price contracts will be used by the NaaS
+                        Operator when the scope is perfectly defined. In this case, both the NaaS
+                        Operator and the vendor understand how much time and resources are needed to
+                        complete the project.<br><br>
+                        Some variations exist for the Fixed Price
+                        Contracts:</br>
+                    
+                        <ul class="normal-text ul-iconos" style='margin-top:0in' start=1 type=1>
+                            <li style="font-size: 16px;">Firm Fixed Price contract (FFP).<br>
+                            In this case, the NaaS Operator will pay the price
+                            specified in the contract, regardless of the cost incurred by the vendor.</li>
+                    
+                            <li style="font-size: 16px;">Fixed Price with Economic Price Adjustment contract (FP-EPA).<br>
+                            In this case, the vendor is allowed to adjust the price of
+                            the contract based on economic factors outside the control of the NaaS Operator
+                            and the vendor.<br><br>
+                            These factors will, of course, be predefined and agreed
+                            between both parties before the contract is signed. An example of this type of
+                            factor can be the currency or interest rate of the country.<br><br>
+                            This type of contract is typically used for fixed price
+                            contracts that span through multiple years.</li>
+                    
+                            <li style="font-size: 16px;">Fixed Price Incentive Fee contract (FPIF). <br>
+                            In this case, the NaaS Operator and the vendor will agree
+                            on performance incentives during negotiations, and if the vendor is able to
+                            meet the required performance objectives, they will be paid a bonus. On the
+                            other side, the FPIF can also include a negative incentive if the vendor is
+                            unable to meet the performance standards. In an FPIF contract, the final price
+                            is calculated after all the work has been completed.</li>
+                        </ul>
+                        <br>
+                    
+                    <li>Cost reimbursable contracts<br>
+                    In cost reimbursable
+                    contracts, the NaaS Operator will reimburse the vendor for all eligible costs
+                    plus a fee, which represents the vendors profits. Cost reimbursable contracts
+                    are used when the scope is not fully defined at the start of the project. If
+                    there is an unanticipated cost overrun, the NaaS Operator is responsible for
+                    covering that cost. The risks in cost reimbursable contracts are on the buyer
+                    side.<br><br>
+                    Some variations include the following:<br>
+                    
+                        <ul class="normal-text ul-iconos" style='margin-top:0in' start=1 type=1>
+                            <li style="font-size: 16px;">Cost plus fixed fee contract (CPFF): It is the most
+                            straightforward. The NaaS Operator will reimburse the vendor for all allowable
+                            costs plus a predetermined fee, which represents the vendors profits.</li>
+                        
+                            <li style="font-size: 16px;">
+                            Cost plus award fee contract (CPAF): In
+                            this case, the NaaS Operator reimburses the vendor for all allowable costs and
+                            additional award based on a set of subjective factors.</li>
+                            
+                            <li style="font-size: 16px;">
+                            Cost plus incentive fee contract
+                            (CPIF): In CPIF, the NaaS Operator will reimburse the vendor for all allowable
+                            costs plus an incentive fee determined based on some predefined performance
+                            criteria (usually cost-related).</li>
+                        </ul>
+                    </li><br>
+                    
+                    <li>
+                    Time and Material Contracts (T&amp;M)<br>
+                    In a T&amp;M contract, the unit cost of labor
+                    or material is fixed, but the number of units is flexible. For example, the
+                    contract will set a consultants rate to be $100/hour, but the number of hours
+                    the consultant works on the project may vary.<br>
+                    A T&amp;M contract is a hybrid between a fixed
+                    price contract and a cost reimbursable contract. This type of contract is used
+                    when the scope is not precisely defined, and there is a high probability of
+                    changes to the scope.
+                    <br>In a T&amp;M contract, the NaaS Operator and
+                    the vendor share the risk of the contract. The NaaS operator knows the
+                    predetermined rates of the resources, and the vendor can claim extra units
+                    delivered if the scope increases.</li>
+                    </ul>
+                    
+                    <br><h2><a class="titulo-h2 anchor-bum" name="item3-4">3.4
+                    Spend Analysis and Identification of Cost Reduction opportunities</a></h2>
+                    
+                    <p class="normal-text">Sourcing team responsibilities also include the strategic
+                    analysis of the NaaS Operators external spend, the management of purchase
+                    costs, the definition of controls around spending and the implementation of
+                    mechanisms to track compliance with these controls. One of the top priorities
+                    of the NaaS Operator procurement team and CFO will consist in reducing costs.</p>
+                    
+                    <p class="normal-text">To identify cost reduction opportunities, the first step
+                    consists of implementing the procedures to execute Spend analysis. By means of
+                    the Spend analysis process, spend data from all purchasing sources and systems
+                    is collected, cleansed, categorized and afterwards analyzed for the purpose of
+                    understanding spending trends and identifying saving opportunities.</p>
+                    
+                    <p class="normal-text">Spend information is useful for NaaS Operator sourcing
+                    departments as well as for management and budget owners. </p>
+                    
+                    <p class="normal-text">Main benefits of Spend Analysis include:</p>
+                    
+                    <ul class="normal-text ul-iconos" style='margin-top:0in' start=1 type=1>
+                        <li>Spend Visibility<br>
+                        The analysis will need to be granular enough to
+                        achieve the objective of making informed decisions. The goal is to understand
+                        how much and where the NaaS Operator is spending the capital.</li><br>
+                    
+                        <li>
+                        Identification of Savings Opportunities<br>
+                        Spend Analysis will facilitate identifying
+                        opportunities for savings/cost reduction. Spend Data is necessary for sourcing
+                        teams to better understand the spend at a detailed level and then propose
+                        savings opportunities. Savings opportunities can be possible in different
+                        categories such as Vendor consolidation, standardizing contracts across
+                        locations, payment terms review, etc.<br><br>
+                        Saving opportunities will need to be
+                        prioritized by an evaluation of the estimated savings assigned to each
+                        opportunity and the effort required to execute the opportunity. Assessing the
+                        savings potential can be performed by the NaaS Operators internal industry
+                        experience, by accessing available industry benchmarks or by engaging with
+                        industry experts. Required effort will depend on the complexity of the sourcing
+                        events that are required (quick quotations versus long RFP processes).<br>
+                        Once the potential of the opportunities has
+                        been assessed, it will be possible to prioritize them and start negotiations
+                        with new vendors or renegotiate existing contracts with current vendors.</li><br>
+                    
+                        <li>Spend Forecasting<br>
+                        Being able to forecast spend is a major benefit
+                        of spend analysis activity. Different groups in the NaaS organization can use
+                        the spend data to forecast future spending. Finance and Planning can use spend
+                        data to analyze recurring vendor spend as well as to forecast expenditure
+                        budgets in next years for long-term contracts. Sourcing teams can work with
+                        NaaS Operator departments to forecast upcoming spend for their main vendors.<br><br>
+                        Spend analysis requires accessing all systems
+                        inside the NaaS Operators organization where the source spend data resides.
+                        This may include multiple accounting and ERP (Enterprise Resource Planning)
+                        systems. As it will be reviewed in section 6, a powerful purchasing software
+                        will allow not only the automation of the purchasing process, but also to
+                        facilitate cost control and granular visibility into the spend.</li>
+                    </ul>
+                    
+                    <p class="normal-text">For Spend data analysis, there are Business Intelligence and
+                    reporting tools that allow to load the data and identify trends based on the
+                    specific objectives of the analysis.</p>
+                    
+                    <h1><a class="titulo-h1 anchor-bum" name="item4">4
+                    Purchasing</a></h1>
+                    
+                    <p class="normal-text">Purchasing is a sub-process of procurement that is related
+                    to the transactional phase of the procurement process activities. These
+                    transactional activities between the NaaS Operator and the vendors are
+                    necessary to procure the products and services itemized in the contracts with
+                    the vendors. </p>
+                    
+                    <p class="normal-text">The activities in the purchasing process include:</p>
+                    
+                    <ul class="normal-text ul-iconos" style='margin-top:0in' start=1 type=1>
+                        <li>Reception of Purchase Requests</li>
+                        <li>Raise Purchase Orders</li>
+                        <li>Receive Products and Services. </li>
+                        <li>Invoice verification</li>
+                    </ul>
+                    
+                    <p class="normal-text"><img border=0
+                    width=515 height=122 id=image8.png
+                    src="images/pro_vendor_mngt/image007.png"></p>
+                    
+                    <p align=center><i>Figure 7. Purchase activities</i></p>
+                    
+                    <p class="normal-text">As described in the following sections, it is critical that
+                    throughout the process the NaaS Operator applies a 2-way or 3-way matching of
+                    Purchase Orders with the vendor invoices. This means that the quantity billed
+                    must be less than or equal to the quantity ordered (1<sup>st</sup> way); the
+                    invoice price must be less than or equal to the purchase order price (2<sup>nd</sup>
+                    way); and the quantity billed must be less than or equal to the quantity
+                    received (3<sup>rd</sup> way). Performing this verification is important to
+                    reduce errors and keep both the NaaS Operator and vendor accountable.</p>
+                    
+                    <br><h2><a class="titulo-h2 anchor-bum" name="item4-1">4.1
+                    Purchase Requests</a></h2>
+                    
+                    <p class="normal-text">Purchasing process starts with a purchase requisition or
+                    purchase request form (PRF). PRF is a document that is created by the
+                    person/department requesting the products or services and is usually submitted
+                    to the department that controls finances. </p>
+                    
+                    <p class="normal-text">A purchase requisition is the formal request for permission
+                    to purchase the product or services that the internal NaaS department requires.
+                    Obtaining the approval is the first step of the process and will allow later
+                    efficient audits of the purchasing activities. </p>
+                    
+                    <p class="normal-text">In the case of tender processes conducted throughout an RFx
+                    (RFP/RFQ) process, the need for the products and/or services will be supported
+                    by a business case and the approval process will require an in-depth review
+                    involving multi-department management or even C-level management.</p>
+                    
+                    <p class="normal-text">Purchase requests will usually include the following
+                    information: identification of the requesting department, quantity and
+                    description of products or services requested, the identification of the
+                    vendor, the price and the corresponding delivery times for the products and/or
+                    services.</p>
+                    
+                    <p class="normal-text">For this objective, the NaaS Operator can adapt and use the provided
+                    <a href="https://github.com/teleworxllc/NaaSRunBook/tree/gh-pages/Supply%20Chain%20Management/Templates/Purchase%Request%Form%Template.xlsx" class="a_link">Purchase Request
+                    Form Template</a> provided with this documentation.</p>
+                    
+                    <br><h2><a class="titulo-h2 anchor-bum" name="item4-2">4.2
+                    Purchase Orders</a></h2>
+                    
+                    <p class="normal-text">Once the NaaS procurement or purchasing group gets the
+                    approval for the purchase requisition, it will create and issue a Purchase
+                    Order to the vendor. Purchase Orders generally include the name of the NaaS
+                    Operator (i.e. company purchasing the products or services), the description
+                    and quantity of the requested products and/or services, price, payment information
+                    and terms, invoice address and a Purchase Order number.</p>
+                    
+                    <p class="normal-text">The Purchase Orders are also an important document for the
+                    vendors, which will use them for invoicing purposes. Once the delivery of the
+                    requested products and/or services is completed, the vendor will send an
+                    invoice associated to the PO to be paid by the purchaser.</p>
+                    
+                    <p class="normal-text">There are many possible ways to handle the creation and
+                    monitoring of purchase requisitions and purchase orders. As it will be
+                    discussed in more detail in section 6 (Procurement Management Software), the
+                    most efficient way can consist of specific procurement software that is
+                    integrated with other financial systems. Using procurement management software
+                    platforms instead of Excel templates and email communication to create, share,
+                    and track purchasing documents can generate important reduction in costs and
+                    allow a much tighter<a>control over NaaS Operator spend</a>.</p>
+                    
+                    <p class="normal-text">Purchase requests and purchase orders are the main documents
+                    that facilitate the management of costs and inventory. These documents support
+                    the NaaS organization to clarify important transactional details, stay
+                    protected against financial audits, and protect both purchasers and vendors.</p>
+                    
+                    <p class="normal-text">To this extent, the NaaS Operator can consider the
+                    adaptation and utilization of the provided <a href="https://github.com/teleworxllc/NaaSRunBook/tree/gh-pages/Supply%20Chain%20Management/Templates/Purchase%Order%Template.xlsx" class="a_link">Purchase
+                    Order Template</a> provided with this document.</p>
+                    
+                    <br><h2><a class="titulo-h2 anchor-bum" name="item4-3">4.3
+                    Receive Products / Services</a></h2>
+                    
+                    <p class="normal-text">Quality inspection is important to assure the quality of
+                    received products and services. Quality inspection will consist of checking,
+                    measuring, or testing of one or more product or service characteristics to
+                    confirm compliance to requirements.</p>
+                    
+                    <p class="normal-text">For material products included in the transaction with the
+                    Vendor, it is recommended that received products are inspected for completeness
+                    and integrity, to allow the NaaS Operator to detect any deficiencies or
+                    differences with the requested products indicated in the Purchase Order.</p>
+                    
+                    <p class="normal-text">Quality inspection also applies in the case of received
+                    services and therefore highlights the importance of a clear definition of the deliverables
+                    expected as a result of the execution of the services. Thus, acceptance
+                    protocols and tests need to be established during the selection of vendors and
+                    negotiation to have a common framework and understanding of the expected
+                    results.</p>
+                    
+                    <p class="normal-text">In many occasions, the NaaS Operator will have a relation
+                    with the Vendor that has been achieved after a tender process using a RFx
+                    procedure. In these cases, the contract that is signed with the vendor is
+                    managed by the NaaS Operators procurement, financial and legal staff (contract
+                    management). Review, Approval, and Payment all rely on complete, accurate, and
+                    on-time fulfillment of the contract. Once the contract terms are confirmed,
+                    including acceptance of deliverables, payment to the vendor will be made.</p>
+                    
+                    <br><h2><a class="titulo-h2 anchor-bum" name="item4-4">4.4
+                    Invoice Verification</a></h2>
+                    
+                    <p class="normal-text">The Invoice Verification activity completes the
+                    transactional procurement process and includes checking the accuracy of
+                    received invoices with respect to the price stipulated in the Purchase Order.</p>
+                    
+                    <p class="normal-text">There are different types of Invoice Verification:</p>
+                    
+                    <ul class="normal-text ul-iconos" style='margin-top:0in' start=1 type=1>
+                        <li>Invoices based on Purchase Orders: With
+                        <a>purchase-order</a>-based Invoice Verification, all of the items of a purchase
+                        order can be settled together, regardless of whether or not an item has been
+                        received in several partial deliveries. All the deliveries are totaled and
+                        posted as one item.</li>
+                        
+                        <li>
+                        Invoices based on Goods Receipt: With
+                        goods receipt-based Invoice Verification, each individual goods receipt is
+                        invoiced separately.</li>
+                        
+                        <li>
+                        Invoices without an order reference:
+                        Most purchasing automation solutions will
+                        allow the verification of an invoice when there is no reference to a PO, by
+                        posting the transaction directly to a Material Account, a General Ledger (G/L)
+                        Account, or an Asset Account.</li>
+                    </ul>
+                    
+                    <p class="normal-text">As described in this document, purchasing transactional
+                    activities will usually be performed through a Procurement management software
+                    system, which will allow for an increase in productivity. Nevertheless, based
+                    on the cost of this software and the amount of transactions per period that the
+                    NaaS Operator needs to perform, they may decide not to use the software. To
+                    address this case, a <a href="https://github.com/teleworxllc/NaaSRunBook/tree/gh-pages/Supply%20Chain%20Management/Templates/Purchase%Request%Form%Template.xlsx" class="a_link">Purchase
+                    Request Form Template</a> and a <a href="https://github.com/teleworxllc/NaaSRunBook/tree/gh-pages/Supply%20Chain%20Management/Templates/Purchase%Order%Template.xlsx" class="a_link">Purchase
+                    Order Template</a> are provided as part of this module to be adapted and used
+                    by the NaaS Operator.</p>
+
+            </div>
+
+            <a class='link-next' href="#" onclick="switchContent('#hld')"> &#8656; Previous</a>
+                <a href="url" align="center"></a>
+                <div class="right">
+                    <a ></a>
+                    <a class="link-next" href="#" onclick="switchContent('#e2e')">Next &#8658;</a>
+                </div>
+                <br>
+            </div>
+
+            <nav id="navbar-example3" class="navbar navbar-light bg-light position-fixed">
+                <nav class="nav nav-pills flex-column">
+                <a id="fm_link-1" class="nav-link bullet-2-link" onclick="onClickActive(event)" href="#item3"><strong>3. Sourcing</strong></a>
+                <a id="fm_link-2" class="nav-link bullet-2-link" onclick="onClickActive(event)" href="#item3-1"><em>3.1	Interconnection Requirements Definition</em></a>
+                <a id="fm_link-3" class="nav-link bullet-2-link" onclick="onClickActive(event)" href="#item3-2"><em>3.2 Selection of Vendors</em></a>
+                <a id="fm_link-4" class="nav-link bullet-2-link" onclick="onClickActive(event)" href="#item3-3"><em>3.3	Negotiate contracts and terms</em></a>
+                <a id="fm_link-5" class="nav-link bullet-2-link" onclick="onClickActive(event)" href="#item3-4"><em>3.4	Spend Analysis and Identification of Cost Reduction opportunities</em></a>
+                <a id="fm_link-6" class="nav-link bullet-2-link" onclick="onClickActive(event)" href="#item4"><strong>4. Purchasing</strong></a>
+                <a id="fm_link-7" class="nav-link bullet-2-link" onclick="onClickActive(event)" href="#item4-1"><em>4.1	Purchase Requests</em></a>
+                <a id="fm_link-8" class="nav-link bullet-2-link" onclick="onClickActive(event)" href="#item4-2"><em>4.2	Purchase Orders</em></a>
+                <a id="fm_link-9" class="nav-link bullet-2-link" onclick="onClickActive(event)" href="#item4-3"><em>4.3	Receive Products / Services</em></a>
+                <a id="fm_link-10" class="nav-link bullet-2-link" onclick="onClickActive(event)" href="#item4-4"><em>4.4	Invoice Verification</em></a>
+
+                </nav>
+            </nav>
+       </section>
+
+       <section id="e2e" hidden>
+        <div id="content">
+
+            <div data-spy="scroll" data-target="#navbar-example3" data-offset="0">
+                <h1><a class="titulo-h1 anchor-bum" name="item5">5
+                    Vendor Management</a></h1>
+                    
+                    <p class="normal-text">NaaS operators engage with external vendors for the
+                    provision of products and services to improve and maximize business
+                    performance. Vendors form an indispensable and critical part of the NaaS
+                    Operator business, and therefore, managing them properly is of crucial
+                    importance for the organization.</p>
+                    
+                    <p class="normal-text">Vendor Management refers to all the business processes and
+                    activities that deal with the entire lifecycle of a vendor for the NaaS
+                    operator organization. The most important Vendor Management disciplines are
+                    depicted in Figure 8 and described in this section:</p>
+                    
+                    <p class="normal-text"><img border=0
+                    width=580 height=133 id=image7.png
+                    src="images/pro_vendor_mngt/image008.png"></p>
+                    
+                    <p align=center><i>Figure 8.
+                    Vendor Management main disciplines</i></p>
+                    
+                    <p class="normal-text"></p>
+                    
+                    <br><h2><a class="titulo-h2 anchor-bum" name="item5-1">5.1
+                    Contract Management</a></h2>
+                    
+                    <p class="normal-text">The success of the NaaS Operator business is founded on
+                    fulfilling the value of the commitments that are captured in the contacts with
+                    the vendors. For this reason, it is important to dimension the resources and
+                    efforts for a proper contract management.</p>
+                    
+                    <p class="normal-text">As highlighted in Figure 9 and described in this section, a
+                    contract typically passes through several stages during its lifetime: from
+                    initiation and negotiation to execution and start-up, through the operational
+                    period, and then to renewal or close-out.</p>
+                    
+                    <p class="normal-text"><img border=0
+                    width=604 height=85 id=image6.png
+                    src="images/pro_vendor_mngt/image009.png"></p><br>
+                    
+                    <p align=center><i>Figure 9.
+                    Contract lifecycle stages</i></p>
+                    
+                    <p class="normal-text">The following are lists of key activities that are the
+                    responsibility of the NaaS Operator procurement team during the different
+                    contract stages:</p>
+                    
+                    <h3><a></a>5.1.1
+                    Initiation</h3>
+                    
+                    <ul class="normal-text ul-iconos" style='margin-top:0in' start=1 type=1>
+                        <li>Prepare procurement specifications
+                        based on the identified need and develop the sourcing
+                        strategy.</li>
+                    
+                        <li>Conduct RFx processes.</li>
+                        
+                        <li>Identify shortlisted vendors, advise
+                        them of any final bid concerns and request best and final offers (BAFO).</li>
+                        
+                        <li>Evaluate / Negotiate BAFOs.</li>
+                    </ul>
+                    
+                    <h3><a></a>5.1.2
+                    Negotiation</h3>
+                    
+                    <ul class="normal-text ul-iconos" style='margin-top:0in' start=1 type=1>
+                        <li>Review vendors concerns with the
+                        provided contract and prepare responses for their consideration. </li>
+                        
+                        <li>
+                        Initial text can also be provided by
+                        the vendor. In this case, the NaaS Operator will work on identifying issues and
+                        specify alternative text for those contract issues.</li>
+                        
+                        <li>
+                        Prepare negotiation strategy including
+                        optimum, acceptable, fall-back and walk-away positions.</li>
+                        
+                        <li>
+                        Conduct face-to-face negotiations with
+                        the vendor and obtain internal approval for proposed concessions.</li>
+                        
+                        <li>
+                        Check that the final contract is
+                        consistent with the agreed BAFO and meets all manageability requirements.
+                        Prepare a summary of each side's rights and obligations and obtain the vendor's
+                        sign-off on the summary.</li>
+                        
+                        <li>
+                        Formally notify of award contract to
+                        selected vendor and notify resolution to other shortlisted vendors.</li>
+                    </ul>
+                        
+                    <h3><a></a>5.1.3
+                    Execution</h3>
+                    
+                    <ul class="normal-text ul-iconos" style='margin-top:0in' start=1 type=1>
+                        <li>Update the business case document with
+                        any changes resulting from contract negotiations.</li>
+                    
+                        <li>
+                        Document any outstanding matters,
+                        changes to standard contract and lessons learned from initiation to execution
+                        phases.</li>
+                        
+                        <li>
+                        Decide people to sign the contract in
+                        both parties, depending on the value of the contract.</li>
+                        
+                        <li>
+                        Prepare, send and sign contract
+                        documents physically or electronically.</li>
+                    </ul>
+                    
+                    <h3><a></a>5.1.4
+                    Start-up</h3>
+                    
+                    <ul class="normal-text ul-iconos" style='margin-top:0in' start=1 type=1>
+                        <li>Document the key features of the contract.</li>
+                    
+                        <li>
+                        Promote awareness and facilitate
+                        understanding of the contract with key stakeholders.</li>
+                        
+                        <li>
+                        Obtain commitment to the roles and
+                        responsibilities involved in ongoing management of the contract.</li>
+                        
+                        <li>
+                        Prepare a contract risk register identifying
+                        moderate to highly probable risks and mitigation strategies.</li>
+                        
+                        <li>
+                        Prepare a specification stating how and
+                        when to check compliance with each contractual obligation.</li>
+                    </ul>
+                    
+                    <h3><a></a>5.1.5
+                    Operation</h3>
+                    
+                    <p class="normal-text">Unlike the other stages in a contract's lifecycle, the
+                    Operation stage lasts for most of the contract term and potentially involves a
+                    greater number of activities, grouped in the following areas:</p>
+                    
+                    <ul class="normal-text ul-iconos" style='margin-top:0in' start=1 type=1>
+                        <li>Control Contract Changes</li>
+                    
+                        <ul class="normal-text ul-iconos" style='margin-top:0in' start=1 type=1>
+                            <li style="font-size: 16px;">Discuss with the requester the reasons
+                            for a change, its timing and likely consequences.</li>
+                    
+                            <li style="font-size: 16px;">
+                            Prepare a contract change request and submit
+                            to appropriate internal and external approvers.</li>
+                            
+                            <li style="font-size: 16px;">
+                            Update all applicable contract
+                            documents and the contract change register on change approval.</li>
+                            
+                            <li style="font-size: 16px;">
+                            Ensure that the agreed change is
+                            correctly implemented in practice where applicable.</li>
+                        </ul>
+                    
+                        <li>Track Obligations Compliance</li>
+                    
+                        <ul class="normal-text ul-iconos" style='margin-top:0in' start=1 type=1>
+                            <li style="font-size: 16px;">Ensuring contract obligations and
+                            commitments are met.</li>
+                    
+                            <li style="font-size: 16px;">
+                            Track these obligations in a formal way
+                            to make sure they are recorded and allocated correctly. This will also cover
+                            deadlines and, therefore, whether obligations are being met on time or are overdue.</li>
+                            
+                            <li style="font-size: 16px;">
+                            Track who specifically is responsible
+                            for ensuring the obligations are met.</li>
+                        </ul>
+                    
+                        <li>Check Vendor Performance</li>
+                    
+                        <ul class="normal-text ul-iconos" style='margin-top:0in' start=1 type=1>
+                            <li style="font-size: 16px;">Regular monitoring of vendor
+                            performance is recommended to ensure that what has been agreed gets delivered.</li>
+                            
+                            <li style="font-size: 16px;">More detailed review of the Vendors
+                            Performance Management tasks can be obtained in section 5.2.</li>
+                        </ul>
+                    
+                        <li>Perform Periodic Reviews</li>
+                    
+                        <ul class="normal-text ul-iconos" style='margin-top:0in' start=1 type=1>
+                            <li style="font-size: 16px;">For any long-term contract, it is worth
+                            periodically checking for any circumstantial changes that could affect the
+                            contracts ability to deliver the expected benefits.</li>
+                            
+                            <li style="font-size: 16px;">
+                            These changes may require updates to
+                            the contract, or to the expectations, processes or behavior of the vendor or
+                            the NaaS operator.
+                            <br>Some key areas for the reviews include the following:</li>
+                    
+                            <li style="font-size: 16px;">
+                            Review User Satisfaction with Vendor</p>
+                    
+                            <ul class="normal-text ul-iconos" style='margin-top:0in' start=1 type=1>
+                                <li style="font-size: 16px;">Any areas of dissatisfaction, and the
+                                consequent opportunities for improvement, are typically discovered by a survey
+                                of some key direct and indirect users of the vendor products or services.</li>
+                    
+                                <li style="font-size: 16px;">The survey should be conducted as often
+                                as necessary to ensure that low satisfaction is detected and effectively
+                                addressed before irreparable relationship or business damage is caused.</li>
+                            </ul><br>
+                    
+                            <li style="font-size: 16px;">Review Contract Relevance</li>
+                    
+                            <ul class="normal-text ul-iconos" style='margin-top:0in' start=1 type=1>
+                                <li style="font-size: 16px;">Business needs identified in contract
+                                initiation can change over time due to different factors such as the state of
+                                the market, the size of the business and others.</li>
+                                
+                                <li style="font-size: 16px;">As a result, changes to the contract
+                                and its associated documentation and management processes may be necessary to
+                                establish relevance for current conditions.</li>
+                                
+                                <li style="font-size: 16px;">A review should be conducted either on
+                                a regular basis as specified in the contract management plan or when indicated
+                                by monitoring systems.</li>
+                            </ul><br>
+                    
+                            <li style="font-size: 16px;">Review Regulatory Environment Changes</li>
+                    
+                            <ul class="normal-text ul-iconos" style='margin-top:0in' start=1 type=1>
+                                <li style="font-size: 16px;">At any time, changes to a countrys
+                                regulatory environment may affect the NaaS Operator operations.</li>
+                    
+                                <li style="font-size: 16px;">
+                                Such changes may need to be reflected
+                                in contractual terms for certain products or services within prescribed time
+                                frames.</li>
+                                
+                                <li style="font-size: 16px;">
+                                In exceptional cases, either the NaaS
+                                Operator or the vendor may decide that it makes better business sense to
+                                terminate an affected contract than try to achieve compliance with the new
+                                regulatory environment.</li>
+                            </ul><br>
+
+                            <li style="font-size: 16px;">Review Contract Benefits realization and Value for Money<br>
+                                Common reasons for a contract not delivering the benefits expected include:</li>
+                    
+                            <ul class="normal-text ul-iconos" style='margin-top:0in' start=1 type=1>
+                                <li style="font-size: 16px;">Unrealistic expectations / targets.</li>
+                
+                                <li style="font-size: 16px;">
+                                Changes to business needs and / or the
+                                business / regulatory environments.</li>
+                                
+                                <li style="font-size: 16px;">
+                                Unsatisfactory relationship with the
+                                vendor: underperformance, unresolved issues or disputes.</li>
+                                
+                                <li style="font-size: 16px;">
+                                Ineffective / non-existent contract
+                                governance or contract management practices.</li>
+                                
+                                <li style="font-size: 16px;">
+                                Lower usage of vendors services than planned
+                                or paid for.</li>
+                            </ul><br>
+                    
+                            <li style="font-size: 16px;">
+                            Review continuous improvement and
+                            innovation</li>
+                            <ul class="normal-text ul-iconos" style='margin-top:0in' start=1 type=1>
+                                <li style="font-size: 16px;">A contract with a multi-year term
+                                should ideally bind the vendor to undertake continuous improvement/innovation
+                                measures for the benefit for both the NaaS Operator and the vendor as well.
+                                </li>
+                                <li style="font-size: 16px;">
+                                No business or service offering should
+                                remain fixed over a long period, particularly with the current technological
+                                change pace.</li>
+                                
+                                <li style="font-size: 16px;">
+                                Actions should include the
+                                identification of new ideas for improvements or innovation with stakeholders,
+                                users and vendors.</li>
+                            </ul><br>
+
+                            <li style="font-size: 16px;">
+                                Review Vendor Benchmark</li>
+                            <ul class="normal-text ul-iconos" style='margin-top:0in' start=1 type=1>
+                                <li style="font-size: 16px;">
+                                The review should check if vendor
+                                pricing is market-competitive, aligned with evolving market conditions and if
+                                its customer-facing business processes are consistent across the market.</li>
+                                
+                                <li style="font-size: 16px;">
+                                If the vendor offering is not
+                                competitive, the NaaS Operator will begin discussions with them for remedial
+                                action or explore other options in the market.</li>
+                                
+                                <li style="font-size: 16px;">
+                                If an existing vendor is providing an
+                                excellent service at a competitive price, it will give the NaaS Operator the
+                                confidence to renew or extend the existing contract.</li>
+                            </li>
+                            </ul>
+                        </ul>
+
+                        <li>Address Issues</li>
+                        <ul class="normal-text ul-iconos" style='margin-top:0in' start=1 type=1>
+                            <li style="font-size: 16px;">
+                            There are many potential causes of
+                            misunderstanding between the NaaS Operator and vendors over the course of a
+                            contract, particularly if it is a long-term one.</li>
+                            
+                            <li style="font-size: 16px;">
+                            High-level activities for addressing
+                            these issues include:</li>
+                            
+                            <li style="font-size: 16px;">
+                            Log the details of each potential or
+                            actual issue as soon as it is recognized.</li>
+                            
+                            <li style="font-size: 16px;">
+                            Formulate and agree on a resolution
+                            approach and any costs required.</li>
+                            
+                            <li style="font-size: 16px;">
+                            Agree on any required remediation plan
+                            with the vendor and implement it by using a contract change request.</li>
+                            
+                            <li style="font-size: 16px;">
+                            Escalate any issues taking longer than
+                            expected to resolve or where reported resolution fails.</li>
+                            
+                            <li style="font-size: 16px;">
+                            Review the issues log and resolution
+                            progress regularly and highlight any trends for attention.</li>
+                        </ul><br>
+
+                        <li>Resolve Disputes</li>
+                        <ul class="normal-text ul-iconos" style='margin-top:0in' start=1 type=1>
+                            <li style="font-size: 16px;">
+                            A dispute is a significant difference
+                            of opinion or position between the buyer and the vendor and presents greater
+                            potential risk than a simple issue.<br>High-level
+                            activities involved in resolving disputes include:</li>
+                            <li style="font-size: 16px;">
+                            Obtain a clear understanding of the
+                            nature of the dispute, its causes, and possible consequences.</li>
+                            
+                            <li style="font-size: 16px;">
+                            Attempt to resolve the dispute
+                            informally by negotiation before any escalation.</li>
+                            
+                            <li style="font-size: 16px;">
+                            Activate any agreed dispute resolution
+                            process if negotiations fail to resolve the dispute and agree on an approach
+                            for implementing the outcome of the dispute resolution process.</li>
+                            
+                            <li style="font-size: 16px;">
+                            Update contract documents as necessary
+                            by using a change request and record the dispute resolution outcomes in the
+                            disputes register.</li>
+                        </ul>
+                    </ul>
+                    
+                    <h3><a></a>5.1.6
+                    Renewal</h3>
+                    
+                    <p class="normal-text">Contract
+                    renewals are a massive opportunity to improve the terms of a contract and gain
+                    better value from vendor relationships.</p>
+                    
+                    <p class="normal-text">It
+                    is important to record when renewal dates are and set reminders to properly get
+                    prepared.</p>
+                    
+                    <p class="normal-text">Alternatively,
+                    contracts may be set to auto-renew or auto-cancel, leaving the NaaS Operator
+                    with potentially an unwanted cost or an unexpected gap in the vendors list.</p>
+                    
+                    <p class="normal-text">Contracts
+                    will be considered for renewal if:</p>
+                    
+                    <ul class="normal-text ul-iconos" style='margin-top:0in' start=1 type=1>
+                        <li>There is an on-going requirement for
+                        the products or services.</li>
+                    
+                        <li>
+                        The performance of the vendor is
+                        evaluated as satisfactory.</li>
+                        
+                        <li>
+                        There have not been relevant
+                        difficulties in achieving high levels of compliance with all obligations in the
+                        contract.</li>
+                    </ul>
+                    
+                    <h3><a></a>5.1.7
+                    Close-out</h3>
+                    
+                    <p class="normal-text">When
+                    a decision has been made to not renew a contract approaching its expiration
+                    date or to actively terminate a contract for any cause, a range of activities
+                    is required to properly plan and ensure a smooth transition-out from the
+                    contract.</p>
+                    
+                    <p class="normal-text">It
+                    is possible that a contract will simply be replaced by another similar one with
+                    the same vendor.</p>
+                    
+                    <ul class="normal-text ul-iconos" style='margin-top:0in' start=1 type=1>
+                        <li>Issue a termination notice before the
+                        specified termination date.</li>
+                        
+                        <li>
+                        Finalize any walkout planning, with the
+                        involvement of any replacement vendor as needed.</li>
+                        
+                        <li>
+                        Take care of any confidential
+                        information, any assets or intellectual property rights and any loaned items as
+                        required.</li>
+                        
+                        <li>
+                        Prepare and sign-off any contract
+                        finalization paperwork and finalize any payments to be made to or by the vendor.</li>
+                        
+                        <li>
+                        Update the lessons learned and register
+                        for the benefit of all future contracts.</li>
+                    </ul>
+                    
+                    <p class="normal-text">This module includes a <a href="https://github.com/teleworxllc/NaaSRunBook/tree/gh-pages/Supply%20Chain%20Management/Templates/Contract%Management%Template.xlsx" class="a_link">Contract
+                    Management Template</a> that will allow the NaaS Operator to inventory the contracts
+                    with vendors and manage contract activities, including contract changes, log
+                    disputes, issues, events, and lessons learned.</p>
+                    
+                    <br><h2><a class="titulo-h2 anchor-bum" name="item5-2">5.2
+                    Performance Management</a></h2>
+                    
+                    <p class="normal-text">Monitoring the Vendor performance over time against contract
+                    requirements becomes an essential activity. Reviews should be performed
+                    according to the vendor's type of service and the impact of the service if the
+                    KPI's or SLA's are not met (quarterly, semi-annually, or annually depending on
+                    the vendor's services and their risk level).</p>
+                    
+                    <p class="normal-text">It is necessary to monitor and measure vendor performance
+                    against the parameters agreed in the contract and the supporting service level
+                    descriptions. Monitoring the vendor performance is a key aspect of Vendor
+                    Management that cannot be under-estimated.</p>
+                    
+                    <p class="normal-text">The activities included in Vendor Performance Management
+                    include:</p>
+                    
+                    <ul class="normal-text ul-iconos" style='margin-top:0in' start=1 type=1>
+                        <li>Review vendors recent operational
+                        performance against any agreed service levels.</li>
+                        
+                        <li>
+                        Obtain key stakeholder input on the
+                        quality of the recent relationship with the vendor.</li>
+                        
+                        <li>
+                        Derive an overall view of vendor
+                        performance from all the information collected.</li>
+                        
+                        <li>
+                        Determine how vendors latest
+                        performance check compares to earlier assessments.</li>
+                        
+                        <li>
+                        Discuss the causes of any current
+                        underperformance and undesirable trends over time with the vendor.</li>
+                        
+                        <li>
+                        Advise the contract owner of contractual
+                        rights regarding significant vendor underperformance.</li>
+                        
+                        <li>
+                        Issue any required notice to the vendor
+                        in response to a poor performance assessment.</li>
+                        
+                        <li>
+                        Agree on any required remediation plan with
+                        the vendor and implement the plan under change
+                        control.</li>
+                        
+                        <li>
+                        Update the contract documents as
+                        necessary to minimize the recurrence of such underperformance.</li>
+                    </ul>
+                    
+                    <p class="normal-text">Monitoring Vendor Performance can effectively be done by
+                    using Key Performance Indicators (KPIs). Quality KPIs should have the following
+                    characteristics:</p>
+                    
+                    <ul class="normal-text ul-iconos" style='margin-top:0in' start=1 type=1>
+                        <li>Be discrete.</li>
+                        <li>
+                        Be easy to understand.</li>
+                        <li>
+                        Be measurable.</li>
+                        <li>Provide sufficient data to facilitate
+                        analysis of the current situation.</li>
+                    </ul>
+                        
+                    <p class="normal-text">Different types of KPIs are used for post-contract vendor
+                    performance monitoring:</p>
+                    
+                    <ul class="normal-text ul-iconos" style='margin-top:0in' start=1 type=1>
+                        <li>Objective or Factual KPIs</li>
+
+                        <ul class="normal-text ul-iconos" style='margin-top:0in' start=1 type=1>
+                            <li style="font-size: 16px;">Can usually be obtained from users and systems
+                                within the organization.</li>
+                            <li style="font-size: 16px;">
+                            Examples: Lead-time from order, Mean
+                            Time Between Failure, Pricing compliance, On-time delivery performance against
+                            agreed delivery lead times.</li>
+                        </ul>
+
+                        <li>Subjective or Experience KPIs: </li>
+                            
+                        <ul class="normal-text ul-iconos" style='margin-top:0in' start=1 type=1>
+                            <li style="font-size: 16px;">Measure the experiences of the NaaS
+                            Operator while dealing with the vendor.</li>
+                            
+                            <li style="font-size: 16px;">
+                            Although they can capture subjective data,
+                            they must also be as objective as possible.</li>
+                            
+                            <li style="font-size: 16px;">
+                            Examples: Customer Service response
+                            time, accessibility and responsiveness of account management.</li>
+                        </ul>
+                    </ul>
+                    
+                    
+                    
+                    <p class="normal-text">The NaaS Operator can adapt and use the provided <a href="https://github.com/teleworxllc/NaaSRunBook/tree/gh-pages/Supply%20Chain%20Management/Templates/Vendor%Performance%Evaluation%Template.xlsx" class="a_link">Vendor
+                    Performance Evaluation Template</a> to measure and evaluate the Performance of
+                    his Vendors.</p>
+                    
+                    <p class="normal-text">The template is structured in the following main areas:</p>
+                    
+                    <ul class="normal-text ul-iconos" style='margin-top:0in' start=1 type=1>
+                        <li>Basic KPIs:</li>
+                    
+                        <ul class="normal-text ul-iconos" style='margin-top:0in' start=1 type=1>
+                            <li style="font-size: 16px;">On-Time Delivery (OTD): Rate of finished product and deliveries received in time.</li>
+                            
+                            <li style="font-size: 16px;">First Pass Yield or Quality (FPY): FPY
+                            is calculated by dividing the number of accepted deliverables by the number of
+                            total received deliveries.</li>
+                    
+                            <li style="font-size: 16px;">
+                            Cost. Cost KPI is composed of the
+                            following sub-KPIs:</li>
+
+                        `   <ul class="normal-text ul-iconos" style='margin-top:0in' start=1 type=1>
+                                <li style="font-size: 16px;">Competitiveness of price to other
+                                suppliers</li>
+                                
+                                <li style="font-size: 16px;">
+                                Level of customer resources and
+                                involvement used to support the supplier</li>
+                                
+                                <li style="font-size: 16px;">
+                                Cost of unplanned trips for customer resources</li>
+                                
+                                <li style="font-size: 16px;">
+                                Supplier Creativity - Supplier
+                                consistently initiates projects to reduce Total Cost of Ownership (TCO)</li>
+                            </ul>     
+
+                            <li style="font-size: 16px;">
+                            Responsiveness. Responsiveness KPI is
+                            composed of the following sub-KPIs:</li>
+                    
+                            <ul class="normal-text ul-iconos" style='margin-top:0in' start=1 type=1>
+                                <li style="font-size: 16px;">Responsiveness of Design/technical
+                                resources</li>
+                    
+                                <li style="font-size: 16px;">
+                                Local Business Manager/Delivery Manager
+                                facilitates closure of issues, follow-up of action plans, monthly reviews</li>
+                    
+                                <li style="font-size: 16px;">
+                                Account Manager responsiveness to
+                                provide SOW, follow-up on financial aspects, answer requests /PO related
+                                questions, ownership of plan</li>
+                            </ul>
+                    
+                            <li style="font-size: 16px;">
+                            Assurance of Supply. Assurance of
+                            Supply KPI is composed of the following sub-KPIs:</li>
+                    
+                            <ul class="normal-text ul-iconos" style='margin-top:0in' start=1 type=1>
+                                <li style="font-size: 16px;">On time delivery/execution for project
+                                milestones (order fulfillment rate)</li>
+                                
+                                <li style="font-size: 16px;">
+                                Ramp Staffing to meet requirement for
+                                new and/or existing projects</li>
+                            </ul>
+                    
+                            <li style="font-size: 16px;">
+                            Quality. Quality KPI is composed of the
+                            following sub-KPIs:</li>
+                    
+                            <ul class="normal-text ul-iconos" style='margin-top:0in' start=1 type=1>
+                                <li style="font-size: 16px;">Quality of the work/deliverables</li>
+                                <li style="font-size: 16px;">Supplier's internal quality processes
+                                and relevant Certifications</li>
+                            </ul> 
+                        </ul>
+
+                        <li>Scorecards (based in the previous
+                                KPIs):</li>  
+                    
+                                <ul class="normal-text ul-iconos" style='margin-top:0in' start=1 type=1>
+                                    <li style="font-size: 16px;">OTD (On-Time Delivery), FPY (First Pass
+                                    Yield) &amp; SER (Supplier Evaluation Risk)</li>
+                    
+                                    <li style="font-size: 16px;">
+                                    Risk Scorecard</li>
+                                    
+                                    <li style="font-size: 16px;">
+                                    Service Compliance</li>
+                                    
+                                    <li style="font-size: 16px;">
+                                    Ethics and Principle Compliance</li>
+                                    
+                                    <li style="font-size: 16px;">
+                                    Innovation and Cost Reduction</li>
+                                    
+                                    <li style="font-size: 16px;">
+                                    Vendor Assessment Scorecard</li>
+                                </ul>
+                        </ul>
+                    
+                    <br><h2><a class="titulo-h2 anchor-bum" name="item5-3">5.3
+                    Invoice Management</a></h2>
+                    
+                    <p class="normal-text">This section focuses specifically on the management of Vendor
+                    invoices and other payment requests.</p>
+                    
+                    <p class="normal-text">To manage Vendor Invoices, the NaaS Operator needs to
+                    develop a company Document Policy establishing the mechanisms to manage, store
+                    and retain all the documentation associated with the Accounts Payable
+                    Management. This policy or methodology will allow the NaaS Operator to be more
+                    efficient in managing the amount of time related to the tasks of approving and
+                    processing vendor invoices, addressing exceptions, or storing, retaining and
+                    retrieving documents for research, audit or litigation.</p>
+                    
+                    <p class="normal-text">Adhering to this policy will help reduce risks of late
+                    financial reporting and payment, and of not being able to find documents that
+                    may need to be pulled for research, audit or litigation purposes. </p>
+                    
+                    <p class="normal-text">A Vendor Invoice and Payment Request Document Management
+                    Policy will cover the following categories:</p>
+                    
+                    <ul class="normal-text ul-iconos" style='margin-top:0in' start=1 type=1>
+                        <li>Statement of Purpose of the document policy:</li>
+                    
+                        <ul class="normal-text ul-iconos" style='margin-top:0in' start=1 type=1>
+                            <li style="font-size: 16px;">Reduce the occurrences and risks
+                            associated with delivering documents to the wrong destination person or groups.
+                            </li>
+                    
+                            <li style="font-size: 16px;">
+                            Reduction of lost or misplaced
+                            documents, facilitating a prompt and accurate posting of invoices, timely
+                            financial reporting and payments to vendors. </li>
+                            
+                            <li style="font-size: 16px;">
+                            Minimize frustration when looking for
+                            records for research, audit or litigation requests. </li>
+                            
+                            <li style="font-size: 16px;">
+                            Include the owners of the Policy: any
+                            employees of the NaaS Operator whose responsibilities include processing, coding,
+                            reviewing, approving or accessing to any vendor invoices or other payment
+                            request documents once delivered to the company.</li>
+                        </ul>
+                    
+                        <li>NaaS Operator Expectations and Policy Compliance:</li>
+                    
+                        <ul class="normal-text ul-iconos" style='margin-top:0in' start=1 type=1>
+                            <li style="font-size: 16px;">Expectations of the NaaS Operator for
+                            managing the receipt and storage of all Accounts Payable related documents:
+                            vendor invoices, other payment requests and related notes and backup. </li>
+                            
+                            <li style="font-size: 16px;">
+                            Duties of each employee responsible for
+                            being related to vendor invoices for any reason. </li>
+                            
+                            <li style="font-size: 16px;">
+                            Document the actions taken if a person
+                            does not comply with the policy.</li>
+                        </ul>
+                    
+                    <li>Handle Ambiguity Areas, including:</li>
+                    
+                    <ul class="normal-text ul-iconos" style='margin-top:0in' start=1 type=1>
+                        <li style="font-size: 16px;">Who has the Delegation of Authority?
+                        (Job title)</li>
+                    
+                        <ul class="normal-text ul-iconos" style='margin-top:0in' start=1 type=1>
+                            <li style="font-size: 16px;">Clear declaration of responsibilities
+                            for invoices approval </li>
+                        </ul>
+
+                        <li style="font-size: 16px;">
+                        What are the rules for Purchase Price
+                        variances? </li>
+                            
+                        <li style="font-size: 16px;">
+                        Determine who has the authority to approve
+                        an exception in case the policy is being challenged.</li>
+                    </ul>
+                    
+                    
+                    
+                    <li>
+                    The following are other subject areas
+                    that the NaaS Operator may consider to be addressed by the Payment Management
+                    Policy:</li>
+                    
+                    <ul class="normal-text ul-iconos" style='margin-top:0in' start=1 type=1>
+                        <li style="font-size: 16px;">Include the correct bill-to mailing
+                        address and/or email addresses in the policy.</li>
+                        
+                        <li style="font-size: 16px;">
+                        Recording Receipt of Invoices by
+                        Accounts Payable.</li>
+                        
+                        <li style="font-size: 16px;">
+                        Sending Invoices from Accounts Payable
+                        to Appropriate Party for Action (account coding, approval or exception
+                        handling).</li>
+                        
+                        <li style="font-size: 16px;">
+                        Returning Invoices to Accounts Payable
+                        once action has been taken.</li>
+                        
+                        <li style="font-size: 16px;">
+                        Coding of Invoices.</li>
+                        
+                        <li style="font-size: 16px;">
+                        Approving an Invoice: details if
+                        Invoicing Approval procedure. </li>
+                        <ul class="normal-text ul-iconos" style='margin-top:0in' start=1 type=1>
+                            <li style="font-size: 16px;">Consider situations including: Invoice
+                                needs to be approved by a 3<sup>rd</sup> person, invoice approval by email.</li>
+                        </ul>
+
+                        <li style="font-size: 16px;">Recording results of Invoice Exception Handling: </li>
+
+                        <ul class="normal-text ul-iconos" style='margin-top:0in' start=1 type=1>
+                            <li style="font-size: 16px;">Exceptions can include: the vendor is
+                            not set up in the ERP, the referenced Purchase Order number is invalid, the
+                            bill amount does not match the Purchase Order, etc.</li>
+                            
+                            <li style="font-size: 16px;">
+                            The policy will provide instructions on
+                            how to proceed if these exceptions occur.</li>
+                        </ul>
+
+                        <li style="font-size: 16px;">
+                        Filing of Documents: proper guidelines
+                        for file documentation facilitating a quick retrieval.</li>
+                        
+                        <li style="font-size: 16px;">
+                        Invoice Retention Period and Policy: In
+                        general, most businesses retain Accounts Payable related documents for up to 7
+                        years.</li>
+                        
+                        <li style="font-size: 16px;">
+                        Storage of Documents: Typically,
+                        documents for the current fiscal year plus the previous 2 years should be held
+                        on site. Prior years records can be sent to an offsite storage facility with
+                        proper security and damage prevention measures.</li>
+                        
+                        <li style="font-size: 16px;">
+                        Access to Filed Documents: List
+                        employees or teams that need access to the records besides Accounts Payable
+                        team (consider a document request process to obtain access).</li>
+                        
+                        <li style="font-size: 16px;">
+                        Document procedures for destruction of
+                        documents at End of Retention Period.</li>
+                    </ul>
+                </ul>
+                    
+                    
+                    
+                    
+                    <p class="normal-text">Besides a Document Policy to
+                    manage all Accounts Payable documentation, the NaaS Operator requires a system
+                    to track all the purchasing documents. If the number of Purchase Orders is
+                    large, a software or database solution should be considered (please refer to
+                    section 6 for further details).</p>
+                    
+                    <p class="normal-text">If the number of Purchase Orders to manage is low or
+                    moderate, the NaaS Operator may handle it with a <a href="https://github.com/teleworxllc/NaaSRunBook/tree/gh-pages/Supply%20Chain%20Management/Templates/Purchase%Order%Tracking%Template.xlsx" class="a_link">Purchase Order
+                    Tracking Template</a> as the one provided with this module.</p>
+                    
+                    <p class="normal-text">The provided template will allow listing all the purchase
+                    orders that the NaaS Operator may create, track their progress (draft, paid,
+                    complete, etc.), and create simple summary reports of payment status of
+                    individual vendors.</p>
+                    
+                    <br><h2><a class="titulo-h2 anchor-bum" name="item5-4">5.4
+                    Risk Management</a></h2>
+                    
+                    <p class="normal-text">The NaaS Operator needs to
+                    identify all vendor-related risks at every step of the vendor management
+                    process, assess its impact based on their tolerance to risk and plan mitigation
+                    measures.</p>
+                    
+                    <p class="normal-text">The following areas need to
+                    be considered by the NaaS Operator when assessing the risks associated with a
+                    vendor engagement:</p>
+                    
+                    <ul class="normal-text ul-iconos" style='margin-top:0in' start=1 type=1>
+                        <li>ack of alternative vendors.</li>
+                    
+                        <li>
+                        Inability to influence vendors.</li>
+                        
+                        <li>
+                        Financial instability of a vendor.</li>
+                        
+                        <li>
+                        Ineffective management on the vendor
+                        side.</li>
+                        
+                        <li>
+                        Incorrectly interpretation of
+                        requirements by the vendor.</li>
+                        
+                        <li>
+                        Inability of vendors to meet increases in required volumes.</li>
+                        
+                        <li>
+                        Unproven technology for products or
+                        services being used by the vendor.</li>
+                        
+                        <li>
+                        Transportation issues with supply
+                        channels generating variability in transportation times.</li>
+                        
+                        <li>
+                        Currency rate fluctuations.</li>
+                        
+                        <li>
+                        Material price fluctuations.</li>
+                    </ul>
+                    
+                    <p class="normal-text"></p>
+                    
+                    <p class="normal-text">It is necessary for the NaaS
+                    Operator to have a detailed approach to evaluate risks and also maintain risk
+                    registers identifying baseline risks and their corresponding impact. </p>
+                    
+                    <p class="normal-text">Some Risk Minimization
+                    Strategies to be considered by the NaaS Operator include the following:</p>
+                    
+                    <ul class="normal-text ul-iconos" style='margin-top:0in' start=1 type=1>
+                        <li>Risk Assessment, including a detailed approach to evaluate the maximum number of
+                        risks that can potentially occur over a period.<br>
+                        The risk
+                        register should be comprehensive enough to capture potential threats that may
+                        affect the NaaS organization. For all identified risks, it will be convenient
+                        to create worst-case scenarios and a business-impact analysis. Risk probability
+                        scores and risk impact scores will help raise the red-flags followed by
+                        corrective and timely executive actions.</li>
+                    
+                        <li>Risk Transfer: This
+                        option can become key in those cases where a vendor failure can lead to
+                        significant business impact. Risk transfer involves the use of insurance that
+                        partially transfers the responsibility of the risk back to the vendor.
+                        Transferring risk increases pressure on the vendor to maintain the quality of
+                        products and services delivered.</li>
+                    
+                        <li>
+                        Use of Automated solutions for
+                        assessing and mitigating risks. These automated solutions facilitate the
+                        identification of partners, processes, and practices that are risky and help
+                        ensure that the Naas Operator is as immune as possible to any unwanted vendor-related
+                        issues. <br>
+                        Automation can help identify the most vulnerable vendors
+                        through ongoing reviews, audits, and performance analysis. As described in
+                        section 6, one of the main use cases of Procurement Management Software is to
+                        perform Vendor Management. These solutions contain functionalities to record financial
+                        health status for each vendor. </li>
+                    
+                        <li>Vendor Performance Management<br>
+                        The NaaS Operator should conduct regular quality checks and
+                        continuously monitor and manage vendor associated risks.<br>
+                        This can be achieved by means of a vendor selection process
+                        that includes a strict selection criterion and considers backup vendors.
+                        Maintaining an extensive database of vendors, regularly updated and qualified,
+                        including a comprehensive detailed analysis of active vendors can help to
+                        identify vendors prone to higher risk and classify them based on the extent of
+                        the threat they represent.</li>
+                    </ul>
+                    
+                    <p class="normal-text">NaaS Operators can adapt and use the provided <a href="https://github.com/teleworxllc/NaaSRunBook/tree/gh-pages/Supply%20Chain%20Management/Templates/Vendor%Performance%Evaluation%Template.xlsx" class="a_link">Vendor
+                    Performance Evaluation Template</a> to Identify and rank every potential risk
+                    for their Vendors, as well as to register the associated mitigation strategies.</p>
+                    
+                    <h1><a class="titulo-h1 anchor-bum" name="item6">6
+                    Procurement Management Software</a></h1>
+                    
+                    <p class="normal-text">Procurement Management softwarewill allow the NaaS
+                    Operator to manage their procurement and vendor management activities. This
+                    type of software will facilitate the NaaS Operator to automate functions
+                    including the generation and execution of purchase orders (POs), match invoices
+                    to products or services received, and make payments to vendors. It allows the
+                    connection and the management of all the interactions between the stakeholders
+                    involved in the purchasing process including buyers, vendors, approvers, and
+                    receivers.</p>
+                    
+                    <br><h2><a class="titulo-h2 anchor-bum" name="item6-1">6.1
+                    Benefits of Procurement Software</a></h2>
+                    
+                    <p class="normal-text">Procurement software allows improving the productivity of
+                    the supply chain operations. Main benefits include the following:</p>
+                    
+                    <ul class="normal-text ul-iconos" style='margin-top:0in' start=1 type=1>
+                        <li><b>Reduced business cycle and cost:</b>Automation and digitalization of purchasing
+                        documentation management reduces the overall procurement time and speeds up the
+                        supply chain process. Electronic transactions also reduce the cost associated
+                        with paper-based workflows. Digital copies of POs are more secure than physical
+                        papers that can be easily forged, stolen, or lost, leading to a dispute between
+                        supply chain partners.</li>
+                        
+                        <li>
+                        <b>Transparent Spending:</b> Procurement software keeps detailed records of every spend
+                        made by the NaaS Operator, bringing transparency for accounting and supporting
+                        businesses. Having detailed records of purchases made in the previous cycle
+                        enables the NaaS Operator to analyze and identify their critical needs and
+                        procurement targets for the next cycle.</li>
+                        
+                        <li>
+                        <b>Inventory control:</b> Procurement software allows to monitor the in-house stock
+                        level of all items and can even set threshold limits to automate the reordering
+                        of items. This always ensures sufficient stock quantity, leading to an
+                        uninterrupted supply chain process.</li>
+                    </ul>
+                    
+                    <br><h2><a class="titulo-h2 anchor-bum" name="item6-2">6.2
+                    Common Use Cases for Procurement tools</a></h2>
+                    
+                    <p class="normal-text">Different Use Cases for Procurement Software include the
+                    following:</p>
+                    
+                    <ul class="normal-text ul-iconos" style='margin-top:0in' start=1 type=1>
+                        <li><b>Spend Analysis</b><br>
+                        Spend
+                        analysis is the process of gathering data from multiple spend systems (for
+                        example, multiple ERP systems), categorizing it into a common classification
+                        schema and identifying spend patterns.<br>
+                        The end-users are usually
+                        the sourcing teams who use this data to identify saving opportunities, but this
+                        granular visibility also helps executive management to get a granular view into
+                        the spend.</li>
+                    
+                        <li><b>Purchase Order management</b><br>
+                        Manage
+                        the entire PO lifecycle, from creating and issuing the POs to procuring
+                        products/services and making payments. These tools allow for the following
+                        tasks:</li>
+                    
+                        <ul class="normal-text ul-iconos" style='margin-top:0in' start=1 type=1>
+                            <li style="font-size: 16px;">The ability for end-users to generate
+                            purchase requests to order products or services through a self-service model. </li>
+                            
+                            <li style="font-size: 16px;">
+                            Pre-authorization of spend by sending
+                            orders for approval based on a pre-defined approval hierarchy. </li>
+                            
+                            <li style="font-size: 16px;">
+                            Overall order management and transmission
+                            to vendors.</li>
+                            
+                            <li style="font-size: 16px;">
+                            Reporting of spend through the
+                            purchasing system.</li>
+                        </ul>
+                    
+                    <li>
+                    <b>Invoice Management</b><br>
+                    Manage
+                    vendor invoices, match invoices with the products/services received, and make
+                    payments accordingly.</li>
+                    
+                    <ul class="normal-text ul-iconos" style='margin-top:0in' start=1 type=1>
+                        <li style="font-size: 16px;">Reconciling the invoices with purchase
+                        orders and receipts.</li>
+                    
+                        <li style="font-size: 16px;">Reduce manual intervention required to
+                        reconcile the invoices.</li>
+                    </ul>
+                    
+                    <li>
+                    <b>Contract Management</b></li>
+                    
+                    <ul class="normal-text ul-iconos" style='margin-top:0in' start=1 type=1>
+                        <li style="font-size: 16px;">Contract repository: Functionality to
+                        store all your contracts in digital format in one single place.<br>
+                        Tools
+                        like Dropbox allow to store the contracts at a single place, but the added
+                        benefit is that it allows users to store metadata about the contracts, making
+                        the contracts easy to find.</li>
+                    
+                        <li style="font-size: 16px;">
+                        Contract customization: this
+                        functionality allows you to author new contracts which include managing contract
+                        templates, approvals for different changes to contract template, side by side
+                        review of changes, e-signatures etc. </li>
+                    </ul>
+                    
+                    <li><b>Vendor Management</b></li>
+                    
+                    <ul class="normal-text ul-iconos" style='margin-top:0in' start=1 type=1>
+                        <li style="font-size: 16px;">Vendor onboarding: this use case is
+                        focused on onboarding new vendors and getting the required approvals before the
+                        vendor can be created in the system.</li>
+                        
+                        <li style="font-size: 16px;">
+                        Vendor document management: Having a
+                        centralized repository for all vendor documents. Some examples include
+                        diversity certificates, insurance certificates, quality documentation like ISO
+                        certificates.</li>
+                    
+                        <li style="font-size: 16px;">
+                        Vendor Performance Management: Use case
+                        focused on tracking vendor performance over a period of time.</li>
+                        
+                        <li style="font-size: 16px;">
+                        Vendor Risk Management: Track vendor
+                        risk like financial risk, reputation risk, etc.</li>
+                    </ul>
+                    
+                    <li><b>E-sourcing</b><br>
+                    E-sourcing
+                    technology is normally used for automating the RFx process, which includes
+                    RFIs, RFPs and auctions.<br>
+                    The
+                    benefits of these toolsets are that they help you automate the whole RFx
+                    process and gather responses from different vendors. <br>
+                    Different
+                    e-sourcing tools will have different levels of sophistication, but generally, they
+                    have the following capabilities:</li>
+                    
+                    <ul class="normal-text ul-iconos" style='margin-top:0in' start=1 type=1>
+                        <li style="font-size: 16px;">Side by side comparison of vendor responses. </li>
+                    
+                        <li style="font-size: 16px;">
+                        The ability for stakeholders to review
+                        and rate different vendor responses.</li>
+                        
+                        <li style="font-size: 16px;">
+                        Automatically create different awarding
+                        scenarios.</li>
+                    </ul>
+                </ul>
+                    
+                    <br><h2><a class="titulo-h2 anchor-bum" name="item6-3">6.3
+                    Considerations when selecting procurement software</a></h2>
+                    
+                    <p class="normal-text">The following guidelines need to be considering by the NaaS
+                    Operator in the process of selecting a procurement software platform for the
+                    organization:</p>
+                    
+                    <ul class="normal-text ul-iconos" style='margin-top:0in' start=1 type=1>
+                        <li><b>Integration with existing systems: </b>NaaS Operator will check the compatibility of the selected
+                        software platform with the existing IT infrastructure and will analyze
+                        requirements of any additional installations or upgrades for the new software
+                        to be operational. The selected software will be easy to integrate with existing
+                        applications, such as enterprise resource planning (ERP) or supply chain
+                        management (SCM) software. Smooth integration with these existing systems will
+                        allow the incorporation of business structures and data already in place, such
+                        as workflows, vendor details and catalog information.</li>
+                    
+                        <li>
+                        <b>Mobile capabilities: </b>Solutions that offer mobile accessibility, either via
+                        native mobile apps or through a mobile web browser.</li>
+                        
+                        <li>
+                        <b>Cloud-based:</b> benefits associated with cloud-based architecture,
+                        including scalability, reduced IT maintenance costs and security.</li>
+                        
+                        <li>
+                        <b>Analytics capabilities:</b> Built-in analytics features can help the Nass Operator to
+                        pull and analyze past procurement data including procured items, volumes,
+                        spend, vendor performance, etc. This will help businesses to obtain meaningful
+                        insights from current procurement data and make fact-based procurement
+                        decisions.</li>
+                        
+                        <li>
+                        <b>Support:</b> complete clarity on the level of support offered within
+                        the software platform, as well as costs for any additional ad hoc support.
+                        Important also to check if the vendor provides any training manuals or
+                        instruction videos to train the NaaS Operator on usage of the software.</li>
+                        
+                        <li>
+                        <b>Cost:</b> Most products in the market are priced on a per user, per
+                        month basis.</li>
+                    </ul>
+                    
+                    <br><h2><a class="titulo-h2 anchor-bum" name="item6-4">6.4
+                    Procurement Management Software Examples</a></h2>
+                    
+                    <p class="normal-text">This section introduces two examples of open source
+                    procurement software platforms which can be used by the NaaS Operator for
+                    reference purposes. Other options are available in the market with possible
+                    differences in the development of features for the Common Use Cases described
+                    in section 6.2 (i.e Spend Analysis, Purchase Order Management, Invoice
+                    Management, Contract Management, Vendor Management, e-sourcing). The NaaS
+                    operator may evaluate other options depending on the requirements for specific
+                    use cases.</p>
+                    
+                    <ul class="normal-text ul-iconos" style='margin-top:0in' start=1 type=1>
+                        <li><b>Procuman</b> (<a href="http://www.procuman.com/" class="a_link">http://procuman.com/</a>)
+                        Open source procurement software with a fully-customizable interface.<br>
+                        Main
+                        Features:</li>
+                        
+                        <ul class="normal-text ul-iconos" style='margin-top:0in' start=1 type=1>
+                            <li>Vendors can submit Product Catalogs,
+                            Prequalification, and Questionnaires</li>
+                            
+                            <li style="font-size:16px">
+                            List all open e-tenders and allows
+                            online quote submissions</li>
+                            
+                            <li style="font-size:16px">
+                            Vendor and Contract Management</li>
+                            
+                            <li style="font-size:16px">
+                            Email requests to selected vendors</li>
+                            
+                            <li style="font-size:16px">
+                            Comparison and analysis of bids to
+                            select the winner</li>
+                            
+                            <li style="font-size:16px">
+                            Purchase Requisitions </li>
+                            
+                            <li style="font-size:16px">
+                            Purchase Orders </li>
+                            
+                            <li style="font-size:16px">
+                            Automatically create purchase orders
+                            from Purchase Requisitions</li>
+                            
+                            <li style="font-size:16px">
+                            Email orders to the vendors directly </li>
+                            
+                            <li style="font-size:16px">
+                            Record Vendor invoices in Received
+                            Invoices-module invoices</li>
+                            
+                            <li style="font-size:16px">
+                            Spend management with cost center
+                            budgeting </li>
+                            
+                            <li style="font-size:16px">
+                            Ready set of reports with reports module</li>
+                            
+                            <li style="font-size:16px">
+                            Manage inventory in different
+                            warehouses and locations.</li>
+                            
+                            <li style="font-size:16px">
+                            Enterprise-class Document Management</li>
+                            
+                            <li style="font-size:16px">
+                            Define access rights for user groups
+                            and roles</li>
+                        </ul>
+                    
+                    <li>
+                    <b>Bupros</b> (<a href="http://www.bupros.com/" class="a_link">http://www.bupros.com/</a>)<br>
+                    Main
+                    Features:</li>
+                    
+                    <ul class="normal-text ul-iconos" style='margin-top:0in' start=1 type=1>
+                        <li style="font-size:16px">
+                    Vendors can submit Product Catalogs,
+                    Prequalification, and Questionnaires etc.</li>
+                    
+                    <li style="font-size:16px">
+                    List all open e-tenders and allows
+                    online quote submissions</li>
+                    
+                    <li style="font-size:16px">
+                    Purchase requisitions for stocks</li>
+                    
+                    <li style="font-size:16px">
+                    Goods receipt confirmations</li>
+                    
+                    <li style="font-size:16px">
+                    Invoice Control</li>
+                    
+                    <li style="font-size:16px">
+                    Vendor management</li>
+                    
+                    <li style="font-size:16px">
+                    Spend Analysis</li>
+                    
+                    <li style="font-size:16px">
+                    Order with limits and budget authorizations</li>
+                    
+                    <li style="font-size:16px">
+                    Contract management</li>
+                    
+                    <li style="font-size:16px">
+                    Automatic sending of Purchase orders
+                    when stocks reach Reorder Levels</li>
+                    
+                    <li style="font-size:16px">
+                    Automatic cost charging to cost centers
+                    based on stock issuing</li>
+                    
+                    <li style="font-size:16px">
+                    Powerful catalog search capability</li>
+                    
+                    <li style="font-size:16px">
+                    Multi-Vendor orders based on one
+                    requisition</li>
+                    
+                    <li style="font-size:16px">
+                    Interface with existing ERP system</li>
+                    
+                    <li style="font-size:16px">
+                    Online vendor catalogs available</li>
+                    </ul>
+                    </ul>
+
+            </div>
+
+            <a href="#" class="link-next" onclick="switchContent('#fm')"> &#8656; Previous</a>
+            <br>
+            <a href="url" align="center"></a>
+            <div class="right">
+                <a ></a>
+                <a href="#">.</a>
+            </div>
+
+        </div>
+          
+        <nav id="navbar-example3" class="navbar navbar-light bg-light position-fixed">
+         <nav class="nav nav-pills flex-column">
+         <a id="e2e_link-1" class="nav-link bullet-2-link" onclick="onClickActive(event)" href="#item5"><strong>5. Vendor Management</strong></a>
+         <a id="e2e_link-2" class="nav-link bullet-2-link" onclick="onClickActive(event)" href="#item5-1"><em>5.1 Contract Management</em></a>
+         <a id="e2e_link-3" class="nav-link bullet-2-link" onclick="onClickActive(event)" href="#item5-2"><em>5.2 Performance Management</em></a>
+         <a id="e2e_link-4"class="nav-link bullet-2-link" onclick="onClickActive(event)" href="#item5-3"><em>5.3 Invoice Management</em></a>
+         <a id="e2e_link-5"class="nav-link bullet-2-link" onclick="onClickActive(event)" href="#item5-4"><em>5.4 Risk Managementn</em></a>
+         <a id="e2e_link-6" class="nav-link bullet-2-link" onclick="onClickActive(event)" href="#item6"><strong>6. Procurement Management Software</strong></a>
+         <a id="e2e_link-7" class="nav-link bullet-2-link" onclick="onClickActive(event)" href="#item6-1"><em>6.1 Benefits of Procurement Software</em></a>
+         <a id="e2e_link-8" class="nav-link bullet-2-link" onclick="onClickActive(event)" href="#item6-2"><em>6.2 Common Use Cases for Procurement tools</em></a>
+         <a id="e2e_link-9" class="nav-link bullet-2-link" onclick="onClickActive(event)" href="#item6-3"><em>6.3 Considerations when selecting procurement software</em></a>
+         <a id="e2e_link-10" class="nav-link bullet-2-link" onclick="onClickActive(event)" href="#item6-4"><em>6.4 Procurement Management Software Examples</em></a>
+         </nav>
+     </nav>
+        </section>
+    
+    </div>
+
+        <!-- jQuery CDN border-left: 2px solid gray;-->
+         <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+         <!-- Bootstrap Js CDN -->
+         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+         <script type="text/javascript">
+             /*$(document).ready(function () {
+                 $('#sidebarCollapse').on('click', function () {
+                     $('#sidebar').toggleClass('active');
+                 });
+             });*/
+
+             let tab;
+             //$("#hld").show();
+             switchContent('#hld')
+
+             function switchContent(selector){
+                $("#hld").hide();
+                $("#fm").hide();
+                $("#e2e").hide();
+                $(selector).show();
+                tab = selector;
+            }
+
+             const onClickActive = (event) => {
+                
+                 var anchor = event.target;
+								 clearActiveLinks();
+                 anchor.classList.add('link-active');
+             }
+
+             const clearActiveLinks = () =>{
+                const activeLink = document.getElementsByClassName('link-active')[0];
+								//console.log(activeLink);
+								if(activeLink){
+									activeLink.classList.remove('link-active');
+								}
+             }
+						//227, 1633, 5616
+                        
+                        console.log(tab);
+						 const updateSection = () =>{
+							const scrollTop = window.pageYOffset || (document.documentElement || document.body.parentNode || document.body).scrollTop;
+							//console.log(scrollTop);
+                            console.log(tab);
+							let link;
+
+							clearActiveLinks();
+
+                            if(tab == '#hld'){
+                                if(scrollTop >= 0 && scrollTop <= 300){
+								    document.getElementById("link-1").classList.add('link-active');
+                                }
+                                else if(scrollTop >= 301 && scrollTop <= 650){
+                                    document.getElementById("link-2").classList.add('link-active');
+                                }else if(scrollTop >= 651 && scrollTop <= 2000){
+                                    document.getElementById("link-3").classList.add('link-active'); 
+                                }else if(scrollTop >= 2001 && scrollTop <= 2100){
+                                    document.getElementById("link-4").classList.add('link-active');
+                                    
+                                }else if(scrollTop >= 2101 && scrollTop <= 3000){
+                                    document.getElementById("link-5").classList.add('link-active');
+
+                                }else if(scrollTop >= 3001 && scrollTop <= 8400){
+                                    document.getElementById("link-6").classList.add('link-active');
+                                    
+                                }else if(scrollTop >= 8401 && scrollTop <= 9300){
+                                    document.getElementById("link-7").classList.add('link-active');
+                                }else if(scrollTop >= 9301 && scrollTop <= 12200){
+                                    document.getElementById("link-8").classList.add('link-active');
+                                    
+                                }else if(scrollTop >= 12201 ){
+                                    document.getElementById("link-9").classList.add('link-active');
+                                    
+                                }
+                            } else if(tab == '#fm'){
+                                if(scrollTop >= 0 && scrollTop <= 50){
+								    document.getElementById("fm_link-1").classList.add('link-active');
+                                }else if(scrollTop >= 51 && scrollTop <= 3500){
+                                    document.getElementById("fm_link-2").classList.add('link-active');
+
+                                }else if(scrollTop >= 3501 && scrollTop <= 4000){
+                                    document.getElementById("fm_link-3").classList.add('link-active');
+
+                                }else if(scrollTop >= 4001 && scrollTop <= 4800){
+                                    document.getElementById("fm_link-4").classList.add('link-active');
+                                    
+                                }else if(scrollTop >= 4801 && scrollTop <= 5800){
+                                    document.getElementById("fm_link-5").classList.add('link-active');
+
+                                }else if(scrollTop >= 5801 ){
+                                    document.getElementById("fm_link-6").classList.add('link-active');
+                                    
+                                }
+
+                            } else if(tab == '#e2e'){
+                                if(scrollTop >= 0 && scrollTop <= 150){
+								    document.getElementById("e2e_link-1").classList.add('link-active');
+                                }
+                                else if(scrollTop >= 151 && scrollTop <= 1500){
+                                    document.getElementById("e2e_link-2").classList.add('link-active');
+
+                                }else if(scrollTop >= 1301 && scrollTop <= 2100){
+                                    document.getElementById("e2e_link-3").classList.add('link-active');
+                                    
+                                }else if(scrollTop >= 2101 && scrollTop <= 3300 ){
+                                    document.getElementById("e2e_link-4").classList.add('link-active');
+                                    
+                                }else if(scrollTop >= 3301 ){
+                                    document.getElementById("e2e_link-5").classList.add('link-active');
+                                    
+                                }
+
+                            }
+
+						 }
+
+         </script>
+    </body>
+</html>
