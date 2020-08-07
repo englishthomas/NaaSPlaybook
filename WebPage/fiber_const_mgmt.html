@@ -1,0 +1,2811 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+        <title>RunBook</title>
+
+         <!-- Bootstrap CSS CDN -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <!-- Our Custom CSS -->
+        <link rel="stylesheet" href="style2.css">
+  
+        <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+	</head>
+		
+    <body onscroll="updateSection()">
+
+    <div class >
+        <ul class="barra_superior">
+            <li class="li_superior"><a class="active" href="Home.html">Home</a></li>
+            <li class="li_superior"><a href="comming_soon/comming-soon.html">About</a></li>
+            
+            <li class="topnav-right"><a href="#" onclick="switchContent('#e2e')">Management</a></li>
+            <li class="topnav-right"><a href="#" onclick="switchContent('#fm')">Sourcing</a></li>
+            <li class="topnav-right"><a href="#" onclick="switchContent('#hld')" >Introduction</a></li>
+        </ul>
+    </div>
+
+    <div class="wrapper">
+        <!-- Sidebar Holder -->
+        <nav id="sidebar">
+            <div class="sidebar-header">
+                <h3>NaaS RunBook</h3>
+                <!--strong>NaaS</strong-->
+                <img src="smiley.png" alt="Go to W3Schools!" width="42" height="42" border="0">
+            </div>
+
+            <ul class="list-unstyled components">
+                <li>
+                    <a href="#runbookSubmenu" data-toggle="collapse" aria-expanded="false">
+                        <i class="glyphicon glyphicon-option-horizontal"></i>
+                        RunBook Modules
+                    </a>
+                    <ul class="list-unstyled" id="runbookSubmenu">
+                            <li>
+                                <a href="#">
+                                    &#187 Strategic Plan & Scope
+                                </a>
+                            </li>
+                            <li  class="active">
+                                <a href="#HLNA" data-toggle="collapse" aria-expanded="false">
+                                    &#187 High Level Network Architecture
+                                </a>
+                                <ul class="list-unstyled collapse" id="HLNA">
+                                    <li><a href="ran_hld_architecture.html"style="margin-left:2em">&bull; RAN Architecture</a></li>
+                                    <li><a href="tx_ip_architecture.html" style="margin-left:2em">&bull; TX & IP Architecture</a></li>
+                                    <li><a href="mobile_core_archi.html" style="margin-left:2em"> &bull; Core Architecture</a></li>
+                                    <li><a href="network_monitoring_architecture.html" style="margin-left:2em"> &bull; Network Monitoring</a></li>
+                                    <li><a href="comming_soon/comming-soon.html" style="margin-left:2em"> &bull; Engineering Specifications</a></li>
+                                </ul>
+                            </li>
+                            <li class="active">
+                                <a href="#homeSubmenu"  data-toggle="collapse" aria-expanded="false">
+                                    &#187 Network Design
+                                </a>
+                                <ul class="list-unstyled collapse" id="homeSubmenu">
+                                    <li><a href="#transportMenu" data-toggle="collapse" style="margin-left:2em">&bull; Transport</a></li>
+                                        <ul class="list-unstyled collapse" id="transportMenu">
+                                            <li><a href="tx_hld_module.html" style="margin-left:4em;">&#9657; Tx Network HLD</a></li>
+<li><a href="tx_lld_module.html" style="margin-left:4em;">&#9657; Tx Network LLD</a></li>
+                                        </ul>
+            
+                                    <li><a href="#transportMenu2" data-toggle="collapse" style="margin-left:2em">&bull; RAN</a></li>
+                                        <ul class="list-unstyled collapse" id="transportMenu2">
+                                            <li><a href="ran_hld_module.html" style="margin-left:4em">&#9657; RAN Network HLD</a></li>
+                                        </ul>
+                                    <li><a href="#transportMenu3" data-toggle="collapse" style="margin-left:2em">&bull; Core</a></li>
+                                        <ul class="list-unstyled collapse" id="transportMenu3">
+                                            <li><a href="mobile_core_hld.html" style="margin-left:4em;">&#9657; Mobile Core HLD</a></li>
+											<li><a href="mobile_core_lld.html" style="margin-left:4em;">&#9657; Mobile Core LLD</a></li>
+                                        </ul>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#deployment_m" data-toggle="collapse" aria-expanded="false">
+                                    &#187 Deployment
+                                </a>
+                                <ul class="list-unstyled collapse" id="deployment_m">
+                                    <li><a href="deployment_mgmt.html"style="margin-left:2em">&bull; Deployment Mgmt</a></li>
+                                    <li><a href="#"style="margin-left:2em">&bull; Site Survey</a></li>
+                                    <li><a href="#"style="margin-left:2em">&bull; Construction</a></li>
+                                    <li><a href="#"style="margin-left:2em">&bull; I & C</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    &#187 O & M
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    &#187 Field Maintenance
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    &#187 Post-Launch Engineering
+                                </a>
+                            </li>
+    
+                            <li  class="active">
+                                <a href="#supply" data-toggle="collapse" aria-expanded="false">
+                                    &#187 Supply Chain Management
+                                </a>
+                                <ul class="list-unstyled " id="supply">
+                                    <li><a href=""style="margin-left:2em">&bull; RFx Process</a></li>
+                                    <li><a href="proc_pro_vendor_mgmt.html" style="margin-left:2em;color: black;"><strong>&bull; Procurement Proc. & Vendor Mgmt.</strong></a></li>
+                                    <li><a href="" style="margin-left:2em"> &bull; Logistic & Warehousing</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#engagementSubmenu" data-toggle="collapse" aria-expanded="false">
+                            <i class="glyphicon glyphicon-option-horizontal"></i>
+                            Methods of Engagement
+                        </a>
+                        <ul class="collapse list-unstyled" id="engagementSubmenu">
+                            <li><a href="#">&#187 Primer</a></li>
+                            <li class="active">
+                                <a href="#widgets" data-toggle="collapse" aria-expanded="false">
+                                    &#187 Wizards
+                                </a>
+                                <ul class="collapse list-unstyled" id="widgets">
+                                    <li><a href="core_hld_wizard.html" style="margin-left:2em">&bull; Core HLD - Wizard</a></li>
+                                    <li><a href="net_mon_arch_wizard_1.html" style="margin-left:2em">&bull; Net Mon Arch - Wizard 1</a></li>
+                                    <li><a href="net_mon_arch_wizard_2.html" style="margin-left:2em">&bull; Net Mon Arch - Wizard 2</a></li>
+                                    <li><a href="tx_ip_arch_wizard_1.html" style="margin-left:2em">&bull; Tx & IP Archi Wizard</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">&#187 Templates</a></li>
+                            <!--li><a href="friss.html">Widgets</a></li-->
+                                            
+                            <li class="active">
+                                <a href="#homeSubmenu22" data-toggle="collapse" aria-expanded="false">
+                                    &#187 Widgets
+                                </a>
+                                <ul class="collapse list-unstyled" id="homeSubmenu22">
+                                    <li><a href="ran_hld_widget_1.html" style="margin-left:2em">&bull; RAN - Capacity-Based</a></li>
+                                    <li><a href="ran_hld_widget_2.html" style="margin-left:2em">&bull; RAN - Coverage-Based</a></li>
+                                    <li><a href="tx_hld_widget_1.html" style="margin-left:2em">&bull; Tx - Capacity Forecast</a></li>
+                                    <li><a href="tx_hld_widget_2.html" style="margin-left:2em">&bull; Tx - Availability FO</a></li>
+                                    <li><a href="tx_hld_widget_3.html" style="margin-left:2em">&bull; Tx - Availability MW</a></li>
+                                    <li><a href="tx_hld_widget_4.html" style="margin-left:2em">&bull; Tx – MW Analysis</a></li>
+                                    <li><a href="core_hld_widget_1.html" style="margin-left:2em">&bull; Core - Capacity Planning</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="comming_soon/comming-soon.html">
+                            <i class="glyphicon glyphicon-paperclip"></i>
+                            FAQ 
+                        </a>
+                    </li>
+                    <li>
+                        <a href="comming_soon/comming-soon.html">
+                            <i class="glyphicon glyphicon-send"></i>
+                            Contact
+                        </a>
+                    </li>
+            </ul>
+        </nav>
+        <!-- Page Content Holder -->
+       <section id="hld" hidden>
+            <div id="content"> 
+
+                <div div data-spy="scroll" data-target="#navbar-example3" data-offset="0">
+                    
+                    <h1><a class="titulo-h1 anchor-bum" name="item1">1
+                        Introduction</a></h1>
+                        
+                        <p class="normal-text">The
+                        Fiber Construction Management Module provides the NaaS Operator with background
+                        information and methodologies to manage the Construction of fiber networks. It
+                        presents an overview of the Planning and Construction process, including the
+                        specifications of different implementation alternatives which may include the
+                        reuse of existing infrastructures from utility services. The module describes
+                        the process from the initial design to the handover to operations, presents
+                        different construction approaches, discusses the suitability of each of them as
+                        a function of the deployment scenario and provides guidance on the management
+                        of a fiber construction project.</p>
+                        
+                        <p class="normal-text">The
+                        Fiber Construction Module creates awareness of the required Fiber Construction
+                        services and capabilities to obtain from third parties and provides the NaaS
+                        operator with documentation templates and guidelines to request, evaluate and
+                        select an adequate partner to execute these services. Finally, the module
+                        addresses the management of the construction partners and establishes
+                        methodologies to track and control fiber construction projects.</p>
+                        
+                        <br><h2><a class="titulo-h2 anchor-bum" name="item1-1">1.1 Module
+                        Objectives</a></h2>
+                        
+                        <p class="normal-text">The Fiber Construction Management module will support the NaaS
+                        Operator to manage the construction deployment of fiber routes. The module addresses
+                        the following specific objectives:</p>
+                        
+                        <ol class="normal-text ul-iconos" style='margin-top:0in' start=1 type=1>
+                            <li>Obtain understanding of the network architecture and construction options
+                            available for fiber optics network infrastructures.</li>
+                        <li>Allow the NaaS Operator to detect opportunities
+                            to share or reuse existing infrastructures from utilities or
+                            transportation networks by the execution of rights of way.</li>
+                        <li>Prepare the NaaS Operator to perform effective
+                            on-the-field surveys of fiber routes, identifying applicable techniques
+                            and construction guidelines.</li>
+                        <li>Provide technical requirements, tools, and
+                            templates for NaaS Operator to select and onboard construction vendors
+                            through an RFx process.</li>
+                        <li>Provide the NaaS Operator with documentation,
+                            methodologies, and tools to manage the Fiber Construction process though
+                            the acceptance of the fiber infrastructure.</li>
+                        </ol>
+                        
+                        <br><h2><a class="titulo-h2 anchor-bum" name="item1-2">1.2 Module
+                        Framework</a></h2>
+                        
+                        <p class="normal-text">The
+                        Module Framework in Figure 1 describes the structure, interactions and
+                        dependencies among different NaaS operator areas. For convenience and
+                        applicability to the Fiber Construction Module, only the areas of Network Design,
+                        Supply Chain Management and Deployment are included in the figure.</p>
+                        
+                        <p class="normal-text">The
+                        Fiber Construction Module is within the Deployment Stream. It has a direct
+                        relation with the Network Design stream as TX Backhaul and TX Backbone HLD
+                        constitute the main inputs to determine the scope of the construction solution.</p>
+                        
+                        <p class="normal-text">As
+                        with other modules, Fiber Construction is supported by Supply Chain Management.
+                        The Fiber Construction Module, informed by the RFx Process Module in the Supply
+                        Chain Management Area, will provide a specific Fiber Construction RFI/RFP
+                        template.</p>
+                        
+                        <p class="normal-text"><img width=589
+                        height=262 id=image3.png
+                        src="images/fiber_const/image001.png"></p>
+                        
+                        <p align=center><i>Figure
+                        1. Module Framework</i></p><br>
+                        
+                        <p class="normal-text">Figure 2
+                        below shows the Fiber Construction Management Process which is further explored
+                        using templates and guidelines for project management and tracking through this
+                        module.</p>
+                        
+                        <p class="normal-text"><img width=555 height=260 id=image6.png
+                        src="images/fiber_const/image002.png"
+                        alt="A screenshot of a cell phone&#10;&#10;Description automatically generated"></p>
+                        
+                        <p align=center><i>Figure
+                        2. Site Construction Module Framework</i></p><br>
+                        
+                        <h1><a class="titulo-h1 anchor-bum" name="item2">2
+                        Overview of Fiber Construction Management Process Flow</a></h1>
+                        
+                        <p class="normal-text">The
+                        fiber construction project commences with a <b>Fiber Optic Path Design</b>, as
+                        defined in the <b>TX Network HLD Module</b>, where a number of alternatives are
+                        evaluated for feasibility. During this initial assessment, synergies with
+                        existing infrastructures must be identified and the possibility of exploiting
+                        rights of way (ROW) must be analyzed.</p>
+                        
+                        <p class="normal-text">Afterwards,
+                        a survey process confirms the optimal construction technique for each network
+                        span. Initial evaluation of terrain, infrastructure and crossings are
+                        documented during this phase, leading to a detailed implementation design and
+                        the specification of technical requirements, which triggers the construction
+                        plan.</p>
+                        
+                        <p class="normal-text">Vendor
+                        selection and onboarding is the next step once the detailed plan is in place
+                        and the NaaS Operator has settled the criteria for vendor selection.</p>
+                        
+                        <p class="normal-text">During
+                        the construction process, standard project management techniques shall be
+                        tailored to the specifics of this kind of project, setting intermediate
+                        milestones and phasing the implementation and delivery of each section of the
+                        network infrastructure.</p>
+                        
+                        <p class="normal-text">Finally,
+                        a testing and acceptance process will ensure an adequate handover to operations
+                        and the commercial activation of the network.</p>
+                        
+                        <br><h2><a class="titulo-h2 anchor-bum" name="item2-1">2.1 Design
+                        and Requirements</a></h2>
+                        
+                        <p class="normal-text">The <b>Fiber
+                        Optic Path Design</b> has a significant impact on the development of the
+                        construction effort; a careful design, where potential issues and possible
+                        synergies are identified at an early stage will reduce the need for rework
+                        during the detailed design phase, prior to construction commencement. Details
+                        on this design process are provided in the <b>TX Network HLD Module</b> and the
+                        <b>TX Network LLD Module</b>.</p>
+                        
+                        <p class="normal-text">The
+                        other relevant input to the construction project is the <b>Technical
+                        Specifications</b>, which describe the techniques that can be used to build the
+                        optical network infrastructure under different scenarios. These specifications
+                        are provided in the <a href="fiber_constr_tech_templ" class="a_link">Fiber
+                        Construction Technical Specifications Template</a>. A discussion on the selection
+                        of the construction technique is provided in section 3.2.1.</p>
+                        
+                        <br><h2><a class="titulo-h2 anchor-bum" name="item2-2">2.2
+                        RFx  Vendor Selection</a></h2>
+                        
+                        <p class="normal-text">The
+                        NaaS Operator will use the <b>Fiber Optic Path Design</b> and the <b>Technical
+                        Specifications</b> to set forth the requirements to select a construction
+                        partner. </p>
+                        
+                        <p class="normal-text">An
+                        (optional) <b>RFI (Request for Information)</b> process may request the market
+                        for information on the construction options to complete the fiber
+                        infrastructure, while an <b>RFP (Request for Proposals)</b> process will
+                        request the invited construction partners for technical and commercial
+                        proposals which will be evaluated to select a construction vendor. </p>
+                        
+                        <br><h2><a class="titulo-h2 anchor-bum" name="item2-3">2.3
+                        Project Management</a></h2>
+                        
+                        <p class="normal-text">Across
+                        all the project phases, but especially during the construction part, different
+                        project management techniques must be developed to establish the project scope,
+                        tracking methodology, responsibilities and delivery times for interim
+                        milestones and the complete construction work. Section 5 in this module
+                        provides references to the management tasks specific to a <b>Fiber Construction</b>
+                        project.</p>
+                        
+                        <br><h2><a class="titulo-h2 anchor-bum" name="item2-4">2.4
+                        Test and Acceptance</a></h2>
+                        
+                        <p class="normal-text">As
+                        the final step on the construction management process, the testing and
+                        acceptance phase will ensure that the infrastructure has been delivered
+                        according to the specification and is ready for handover to operations for the
+                        subsequent commercial activation of the network. These tests will ensure
+                        alignment between the <b>Construction Plan</b> and the <b>As-Built</b>
+                        infrastructure through the review of documentation, drawings and in-the-field
+                        inspections. </p>
+                        
+                        <p class="normal-text">Section
+                        6 provides examples of the <b>Test and Acceptance</b> procedures applicable to
+                        a <b>Fiber Construction</b> project.</p>
+
+                </div>
+
+
+                <div class="right">
+                    <a class='link-next' href="#" onclick="switchContent('#fm')">Next &#8658;</a>
+                </div>
+                <br>
+            </div>
+
+            <nav id="navbar-example3" class="navbar navbar-light bg-light position-fixed">
+                <nav class="nav nav-pills flex-column">
+                
+                <a id="link-1" class="nav-link bullet-2-link" onclick="onClickActive(event)" href="#item1"><strong>1. INTRODUCTION</strong></a>
+                <a id="link-2" class="nav-link bullet-2-link" onclick="onClickActive(event)" href="#item1-1"><em>1.1 Module Objectives</em></a>
+                <a id="link-3" class="nav-link bullet-2-link" onclick="onClickActive(event)" href="#item1-2"><em>1.2 Module Framework</em></a>
+                <a id="link-4" class="nav-link bullet-2-link" onclick="onClickActive(event)" href="#item2"><strong>2. OVERVIEW OF FIBER CONSTRUCTION MANAGEMENT PROCESS FLOW</strong></a>
+                <a id="link-5" class="nav-link bullet-2-link" onclick="onClickActive(event)" href="#item2-1"><em>2.1 Design and Requirements</em></a>
+                <a id="link-6" class="nav-link bullet-2-link" onclick="onClickActive(event)" href="#item2-2"><em>2.2 RFx Vendor Selection</em></a>
+                <a id="link-7" class="nav-link bullet-2-link" onclick="onClickActive(event)" href="#item2-3"><em>2.3 Project Management</em></a>
+                <a id="link-8" class="nav-link bullet-2-link" onclick="onClickActive(event)" href="#item2-4"><em>2.4 Test and Acceptance</em></a>
+                </nav>
+            </nav>
+       </section>
+
+       <section id="fm" hidden>
+        <div id="content"> 
+
+            <div div data-spy="scroll" data-target="#navbar-example3" data-offset="0">
+                <h1><a class="titulo-h1 anchor-bum" name="item3">3
+                    Design and Requirements</a></h1>
+                    
+                    <p class="normal-text">The <b>Fiber
+                    Optic Path Design</b> discussed in the <b>TX Network HLD Module</b> process
+                    intends to resolve a connectivity need, where the terrain and environmental
+                    conditions may impose limitations and constraints to the feasibility of the
+                    design. </p>
+                    
+                    <p class="normal-text">Several
+                    design considerations will have a direct impact to the construction process,
+                    such as the <b>Network Domain, </b>the<b> Deployment Scenario</b> (greenfield
+                    or brownfield), and the <b>Optical Services</b> intended for the network.</p>
+                    
+                    <p class="normal-text">The
+                    resulting design is completed with the <b>Technical Specifications</b> to
+                    produce a <b>Construction Plan</b>, which is the document that describes the
+                    construction activities, their dependences and the implementation requirements.
+                    The <b>Construction Plan</b> is the technical input to the vendor selection
+                    process.</p>
+                    
+                    <br><h2><a class="titulo-h2 anchor-bum" name="item3-1">3.1 Deployment
+                    Scenarios</a></h2>
+                    
+                    <p class="normal-text">It is
+                    known that the hierarchical organization of the physical infrastructure
+                    deployed by utilities (e.g. water, power, gas) is very similar to the fiber
+                    network architecture. Similarly, the paths followed by roads and railways
+                    connect the localities where network locations are placed. Therefore, the <b>Fiber
+                    Optic Path Design</b> must seriously consider the reuse of existing
+                    infrastructures to minimize the cost of fiber network deployment. This is
+                    defined in this document as a <b>Brownfield Scenario</b> for construction. On
+                    the other hand, if no utilities or infrastructure are available along the
+                    designed fiber route, a <b>Greenfield Scenario</b> for construction is
+                    considered, meaning that all construction needs to be performed from scratch,
+                    with no reuse of existing facilities.</p>
+                    
+                    <p class="normal-text">In
+                    both cases, <b>Rights of Way</b> (ROW) are required; in a <b>Brownfield
+                    Scenario</b> agreement must be established with the owner of the infrastructure
+                    to set the terms and conditions of the shared use. In the <b>Greenfield
+                    Scenario</b>, permissions to cross different properties or to deploy fiber
+                    along roads will be required before construction commences. In case the
+                    required permissions cannot be acquired, the optical route must go through a
+                    re-design process.</p>
+                    
+                    <h3 style='margin-left:36.0pt;text-indent:-36.0pt'><a></a>3.1.1 Network
+                    Domains: Long-haul and Local Access</h3>
+                    
+                    <p class="normal-text">In
+                    the <b>Local Access</b>, enterprise or residential customers are typically
+                    connected using a hub-and-spoke or tree topology to an aggregation location.
+                    Point-to-point or PON (Passive Optical Network) technologies are increasingly
+                    the technology of choice on such topologies. These scenarios are prone to
+                    suffer more incidences; thus, the design aims to simplify the maintenance and
+                    facilitate a faster roll-out in case of fiber cuts or other issues. Figure 3 below
+                    depicts the typical domains (Local Access, Backhaul and Backbone) from a
+                    telecom network. The construction management of <b>Local Access</b> networks is
+                    <u>out of the scope of this document</u>.</p>
+                    
+                    <p class="normal-text"><img
+                    border=0 width=448 height=314 id=image8.png
+                    src="images/fiber_const/image003.png"></p>
+                    
+                    <p align=center><i>Figure
+                    3. Network Domains</i></p><br>
+                    
+                    <p class="normal-text">Under
+                    the <b>Long-haul</b> denomination, a distinction is made between <b>Backhaul</b>
+                    and <b>Backbone</b>. <b>Backhaul</b> links connect base stations to the
+                    aggregation points, typically established over relatively short spans
+                    (&lt;10km), with a low number of fibers per connection, typically between 4 and
+                    8. </p>
+                    
+                    <p class="normal-text">The <b>Backbone</b>
+                    connects multiple aggregation points between each other and to the Core sites,
+                    oftentimes located at different localities. As such, it runs over longer
+                    distances and with higher capacity requirements than backhaul. <b>Backbone</b>
+                    cables are equipped with a larger number of fibers and may implement route
+                    protection, deployed in twin cables on independent infrastructures running in
+                    parallel; the use of such protection techniques would be specified during the <b>Fiber
+                    Optic Path Design</b> phase described in the <b>TX Network HLD</b> module.
+                    Cables with 12 to 32 fibers are typical in the backbone because the incremental
+                    cost of adding additional fibers during the construction process is minimal,
+                    while it provides increased resiliency in the case of a fiber failure and also
+                    enable the NaaS Operator to lease or rent spare fibers to other customers,
+                    monetizing the infrastructure investment.</p>
+                    
+                    <p class="normal-text">Table
+                    1 below compares the key attributes of the backhaul and backbone scenarios and
+                    can be taken by the NaaS Operator to identify their applicable scenario.</p><br>
+                    
+                    
+                    
+                    <div align=center>
+                    
+                    <table class=a border=1 cellspacing=0 cellpadding=0 width="100%"
+                     style='width:100.0%;border-collapse:collapse;border:none'>
+                     <tr style='height:14.9pt'>
+                      <td width="19%" style='width:19.58%;border:solid black 1.0pt;background:#1F3864;
+                      padding:0cm 5.4pt 0cm 5.4pt;height:14.9pt'>
+                      <p align=center style="color:#FFF">Domain</p>
+                      </td>
+                      <td width="27%" style='width:27.7%;border:solid black 1.0pt;border-left:none;
+                      background:#1F3864;padding:0cm 5.4pt 0cm 5.4pt;height:14.9pt'>
+                      <p align=center style="color:#FFF">Endpoints</p>
+                      </td>
+                      <td width="15%" style='width:15.72%;border:solid black 1.0pt;border-left:
+                      none;background:#1F3864;padding:0cm 5.4pt 0cm 5.4pt;height:14.9pt'>
+                      <p align=center style="color:#FFF">Distance</p>
+                      </td>
+                      <td width="18%" style='width:18.54%;border:solid black 1.0pt;border-left:
+                      none;background:#1F3864;padding:0cm 5.4pt 0cm 5.4pt;height:14.9pt'>
+                      <p align=center style="color:#FFF">Topology</p>
+                      </td>
+                      <td width="18%" style='width:18.46%;border:solid black 1.0pt;border-left:
+                      none;background:#1F3864;padding:0cm 5.4pt 0cm 5.4pt;height:14.9pt'>
+                      <p align=center style="color:#FFF">Fibers / Cable</p>
+                      </td>
+                     </tr>
+                     <tr style='height:15.3pt'>
+                      <td width="19%" style='width:19.58%;border:solid black 1.0pt;border-top:none;
+                      padding:0cm 5.4pt 0cm 5.4pt;height:15.3pt'>
+                      <p class="normal-text">Backhaul</p>
+                      </td>
+                      <td width="27%" style='width:27.7%;border-top:none;border-left:none;
+                      border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;
+                      height:15.3pt'>
+                      <p class="normal-text">Base Stations to aggregation
+                      points</p>
+                      </td>
+                      <td width="15%" style='width:15.72%;border-top:none;border-left:none;
+                      border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;
+                      height:15.3pt'>
+                      <p class="normal-text">1-10 km</p>
+                      </td>
+                      <td width="18%" style='width:18.54%;border-top:none;border-left:none;
+                      border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;
+                      height:15.3pt'>
+                      <p class="normal-text">P2P</p>
+                      </td>
+                      <td width="18%" style='width:18.46%;border-top:none;border-left:none;
+                      border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;
+                      height:15.3pt'>
+                      <p class="normal-text">4-8</p>
+                      </td>
+                     </tr>
+                     <tr style='height:14.9pt'>
+                      <td width="19%" style='width:19.58%;border:solid black 1.0pt;border-top:none;
+                      padding:0cm 5.4pt 0cm 5.4pt;height:14.9pt'>
+                      <p class="normal-text">Backbone</p>
+                      </td>
+                      <td width="27%" style='width:27.7%;border-top:none;border-left:none;
+                      border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;
+                      height:14.9pt'>
+                      <p class="normal-text">Aggregation points to each
+                      other</p>
+                      </td>
+                      <td width="15%" style='width:15.72%;border-top:none;border-left:none;
+                      border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;
+                      height:14.9pt'>
+                      <p class="normal-text">10 -100 Km</p>
+                      </td>
+                      <td width="18%" style='width:18.54%;border-top:none;border-left:none;
+                      border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;
+                      height:14.9pt'>
+                      <p class="normal-text">P2P</p>
+                      </td>
+                      <td width="18%" style='width:18.46%;border-top:none;border-left:none;
+                      border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;
+                      height:14.9pt'>
+                      <p class="normal-text">12-32</p>
+                      </td>
+                     </tr>
+                    </table>
+                    <p align=center><i>Table
+                        1. Long-haul Domains</i></p><br>
+                    
+                    </div>
+                    
+                    <p class="normal-text">The
+                    network domain being served by the optical infrastructure is therefore an
+                    important input to the construction process, as it imposes specific
+                    requirements and restrictions on the cabling, its supporting infrastructure,
+                    the protection mechanisms, and the fiber path.</p>
+                    
+                    <h3 style='margin-left:36.0pt;text-indent:-36.0pt'><a></a>3.1.2 Greenfield
+                    vs Brownfield</h3>
+                    
+                    <p class="normal-text">Civil
+                    works form nearly 60% of the total cost of fiber construction projects. Up to 
+                    <a href="https://www.adlittle.com/sites/default/files/viewpoints/adl_utilities_contribution_to_fiber_deployment.pdf" class="a_link">80-90%
+                    savings</a> on these civil works can be obtained from reusing infrastructures
+                    from utilities, a very significatively impact on the total required investment.
+                    The NaaS Operator can materialize those savings in different ways, for both <b>Greenfield</b>
+                    (where utilities have not established their networks yet) and <b>Brownfield</b>
+                    (where there are operating utilities) areas.</p>
+                    
+                    <p class="normal-text">In a <b>Greenfield</b>
+                    area, the NaaS Operator must approach the utilities and explore the possibility
+                    for a <b>coordinated deployment</b>. Utilities deploying their networks will
+                    dig trenches and lay pipes and ducts to provide their services. The same
+                    infrastructure can be used for simultaneously deploying a fiber network,
+                    resulting in very significant savings on the civil costs, when compared to a
+                    new, independent telecom deployments.</p>
+                    
+                    <p class="normal-text">In a <b>Brownfield</b>
+                    area, an existing infrastructure can be reused to install fiber and therefore
+                    reduce the construction costs and the project duration. Sharing agreements in
+                    the form of elaborated <b>Rights of Way</b> must clearly establish
+                    responsibility demarcation in terms of ownership, access to the infrastructure
+                    and technical support. The owner of the property or the infrastructure may
+                    impose limitations to the access, or the activities being performed during
+                    installation and operation, and request compensation for the use of the
+                    property. A careful negotiation of rights of way will save the NaaS Operator
+                    from unexpected problems in the future. A template for the Right of Way
+                    agreement is provided in <a href="easement_right_way_template" class="a_link">Easement
+                    and Right of Way Template</a>.</p>
+                    
+                    <p class="normal-text">Table
+                    2 compares the two utility-sharing scenarios as a deployment opportunity
+                    together with the cost and time advantages they may provide to the construction
+                    effort.</p><br>
+                    
+                   
+                    
+                    <table class=a0 border=1 cellspacing=0 cellpadding=0 width="100%"
+                     style='width:100.0%;border-collapse:collapse;border:none'>
+                     <tr style='height:26.45pt'>
+                      <td width="20%" style='width:20.26%;border:solid black 1.0pt;background:#1F3864;
+                      padding:0cm 5.4pt 0cm 5.4pt;height:26.45pt'>
+                      <p align=center style="color:#FFF">Utility Sharing
+                      Scenario</p>
+                      </td>
+                      <td width="20%" style='width:20.32%;border:solid black 1.0pt;border-left:
+                      none;background:#1F3864;padding:0cm 5.4pt 0cm 5.4pt;height:26.45pt'>
+                      <p align=center style="color:#FFF">Opportunity</p>
+                      </td>
+                      <td width="32%" style='width:32.82%;border:solid black 1.0pt;border-left:
+                      none;background:#1F3864;padding:0cm 5.4pt 0cm 5.4pt;height:26.45pt'>
+                      <p align=center style="color:#FFF">Cost Advantage</p>
+                      </td>
+                      <td width="26%" style='width:26.6%;border:solid black 1.0pt;border-left:none;
+                      background:#1F3864;padding:0cm 5.4pt 0cm 5.4pt;height:26.45pt'>
+                      <p align=center style="color:#FFF">Time Advantage</p>
+                      </td>
+                     </tr>
+                     <tr style='height:34.75pt'>
+                      <td width="20%" style='width:20.26%;border:solid black 1.0pt;border-top:none;
+                      padding:0cm 5.4pt 0cm 5.4pt;height:34.75pt'>
+                      <p class="normal-text">Greenfield</p>
+                      </td>
+                      <td width="20%" style='width:20.32%;border-top:none;border-left:none;
+                      border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;
+                      height:34.75pt'>
+                      <p class="normal-text">Coordinated Deployment</p>
+                      </td>
+                      <td width="32%" style='width:32.82%;border-top:none;border-left:none;
+                      border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;
+                      height:34.75pt'>
+                      <p class="normal-text">80% reduction on civil works</p>
+                      </td>
+                      <td width="26%" style='width:26.6%;border-top:none;border-left:none;
+                      border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;
+                      height:34.75pt'>
+                      <p class="normal-text">None. Limited by utility
+                      construction</p>
+                      </td>
+                     </tr>
+                     <tr style='height:26.45pt'>
+                      <td width="20%" style='width:20.26%;border:solid black 1.0pt;border-top:none;
+                      padding:0cm 5.4pt 0cm 5.4pt;height:26.45pt'>
+                      <p class="normal-text">Brownfield</p>
+                      </td>
+                      <td width="20%" style='width:20.32%;border-top:none;border-left:none;
+                      border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;
+                      height:26.45pt'>
+                      <p class="normal-text">Reuse existing infrastructure</p>
+                      </td>
+                      <td width="32%" style='width:32.82%;border-top:none;border-left:none;
+                      border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;
+                      height:26.45pt'>
+                      <p class="normal-text">No or little civil works.
+                      Infrastructure adaptation only</p>
+                      </td>
+                      <td width="26%" style='width:26.6%;border-top:none;border-left:none;
+                      border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;
+                      height:26.45pt'>
+                      <p class="normal-text">Significant. Infrastructure
+                      already available</p>
+                      </td>
+                     </tr>
+                    </table>
+                    <p align=center><i>Table 2. Greenfield and Brownfield Utility Sharing Scenarios</i></p><br>
+                    
+                    <h3 style='margin-left:36.0pt;text-indent:-36.0pt'><a></a>3.1.3 Optical
+                    Services: Carrier Ethernet Services &amp; Passive WDM</h3>
+                    
+                    <p class="normal-text">The
+                    fundamental aspects of fiber optic technology design are discussed in the Primer on Fiber Optic Technologies Principles document.
+                    The reader should refer to such document for additional information.</p>
+                    
+                    <p class="normal-text">The
+                    intended use of the network capacity determines whether the optical services
+                    will be transported over a single optical carrier or using multiple carriers
+                    (also known as lambdas which correspond to different optical frequencies) each
+                    of them modulated by a different signal. The use of multiple lambdas increases
+                    the effective capacity of the fiber optics connection, at the expense of requiring
+                    more complex equipment and optical fibers with specific characteristics. The
+                    use of multiple optical lambdas may also impose limitations on the maximum
+                    length of the optical route. </p>
+                    
+                    <p class="normal-text">On
+                    routes longer than 80  100 km, aggregation sites should be inserted to avoid
+                    the need for optical line amplifiers (OLA) or regenerators while providing an
+                    additional access point to the optical infrastructure. This module assumes that
+                    no OLA nor regenerators are required in any optical route. The selection of the
+                    fiber type for the planned optical service is an input to the construction
+                    process as it defined the requirements to the cables that would need to be
+                    installed.</p>
+                    
+                    <p class="normal-text">The <b>G.652</b>
+                    fiber (and its evolution version G.657) is a low-cost fiber, standard and
+                    qualified for services that don't require speed higher than 10Gbps with
+                    short-haul distances.</p>
+                    
+                    <p class="normal-text">If
+                    the required bandwidth is higher than 10Gbps or there is a need to support
+                    longer distances with higher performance, <b>G.655</b> provides a better
+                    solution. Cost can be 2x higher, but the savings on equipment to compensate
+                    dispersion effects in this usage environment pay for the investment.</p>
+                    
+                    <p class="normal-text">For
+                    even higher bandwidths and longer spans <b>G.654.E</b> provides very good
+                    results. Fibers are again more expensive, but the additional expenditure gets
+                    compensated by the avoidance of OLAs or regenerators. </p>
+                    
+                    <p class="normal-text">Table
+                    3 shows the Optical services and applicability for each type of fiber and can
+                    be used by the NaaS Operator to define the fiber type for each span to be
+                    deployed. The use of G.655 is recommended considering that it is expected that demand
+                    will increase through the time in service of the fiber (~20 years). The incremental
+                    cost compared to G.652 is marginal considering that the alternative is to
+                    redeploy new fiber or install additional and expensive electronics to allocate
+                    more capacity on G.652; however, if only P2P Ethernet services are foreseen and
+                    the NaaS Operator has tight budget constraints, G.652 can be selected. The use
+                    of G.654 should be limited to very high capacity or very long span scenarios.</p>
+                    
+                
+                    
+                    <div align=center>
+                    
+                    <table class=a1 border=1 cellspacing=0 cellpadding=0 width="100%"
+                     style='width:100.0%;border-collapse:collapse;border:none'>
+                     <tr style='height:3.15pt'>
+                      <td width="35%" style='width:35.92%;border:solid black 1.0pt;background:#1F3864;
+                      padding:0cm 5.4pt 0cm 5.4pt;height:3.15pt'>
+                      <p align=center style="color:#FFF">Optical Service</p>
+                      </td>
+                      <td width="10%" style='width:10.94%;border:solid black 1.0pt;border-left:
+                      none;background:#1F3864;padding:0cm 5.4pt 0cm 5.4pt;height:3.15pt'>
+                      <p align=center style="color:#FFF">Fiber Type</p>
+                      </td>
+                      <td width="29%" style='width:29.7%;border:solid black 1.0pt;border-left:none;
+                      background:#1F3864;padding:0cm 5.4pt 0cm 5.4pt;height:3.15pt'>
+                      <p align=center style="color:#FFF">Transmission
+                      Window</p>
+                      </td>
+                      <td width="23%" style='width:23.44%;border:solid black 1.0pt;border-left:
+                      none;background:#1F3864;padding:0cm 5.4pt 0cm 5.4pt;height:3.15pt'>
+                      <p align=center style="color:#FFF">Applicability</p>
+                      </td>
+                     </tr>
+                     <tr style='height:5.85pt'>
+                      <td width="35%" style='width:35.92%;border:solid black 1.0pt;border-top:none;
+                      padding:0cm 5.4pt 0cm 5.4pt;height:5.85pt'>
+                      <p class="normal-text">&lt; 10Gbps, CWDM (Note 1),
+                      P2P Ethernet</p>
+                      <p class="normal-text">Short-haul (&lt;100km)</p>
+                      </td>
+                      <td width="10%" style='width:10.94%;border-top:none;border-left:none;
+                      border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;
+                      height:5.85pt'>
+                      <p class="normal-text">G.652.D</p>
+                      </td>
+                      <td width="29%" style='width:29.7%;border-top:none;border-left:none;
+                      border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;
+                      height:5.85pt'>
+                      <p class="normal-text">1310 nm (zero dispersion)</p>
+                      <p class="normal-text">1550 nm, 1625 nm</p>
+                      </td>
+                      <td width="23%" style='width:23.44%;border-top:none;border-left:none;
+                      border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;
+                      height:5.85pt'>
+                      <p class="normal-text">Routes below 200km and low
+                      bit rates</p>
+                      </td>
+                     </tr>
+                     <tr style='height:5.85pt'>
+                      <td width="35%" style='width:35.92%;border:solid black 1.0pt;border-top:none;
+                      padding:0cm 5.4pt 0cm 5.4pt;height:5.85pt'>
+                      <p class="normal-text">Up to 100Gbps, DWDM (Note
+                      2)</p>
+                      <p class="normal-text">Long-haul (&lt;200km)</p>
+                      </td>
+                      <td width="10%" style='width:10.94%;border-top:none;border-left:none;
+                      border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;
+                      height:5.85pt'>
+                      <p class="normal-text">G.655</p>
+                      </td>
+                      <td width="29%" style='width:29.7%;border-top:none;border-left:none;
+                      border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;
+                      height:5.85pt'>
+                      <p class="normal-text">1550 nm (zero dispersion)</p>
+                      <p class="normal-text">1625 nm</p>
+                      </td>
+                      <td width="23%" style='width:23.44%;border-top:none;border-left:none;
+                      border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;
+                      height:5.85pt'>
+                      <p class="normal-text">Routes below 200km and high
+                      bit rates</p>
+                      </td>
+                     </tr>
+                     <tr style='height:5.85pt'>
+                      <td width="35%" style='width:35.92%;border:solid black 1.0pt;border-top:none;
+                      padding:0cm 5.4pt 0cm 5.4pt;height:5.85pt'>
+                      <p class="normal-text">Up to 400G DWDM</p>
+                      <p class="normal-text">Long-haul (&gt;200km)
+                      without OLA</p>
+                      </td>
+                      <td width="10%" style='width:10.94%;border-top:none;border-left:none;
+                      border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;
+                      height:5.85pt'>
+                      <p class="normal-text">G.654.E</p>
+                      </td>
+                      <td width="29%" style='width:29.7%;border-top:none;border-left:none;
+                      border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;
+                      height:5.85pt'>
+                      <p class="normal-text">1550 nm (zero dispersion)</p>
+                      </td>
+                      <td width="23%" style='width:23.44%;border-top:none;border-left:none;
+                      border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;
+                      height:5.85pt'>
+                      <p class="normal-text">Long routes and high bit
+                      rates</p>
+                      </td>
+                     </tr>
+                     <tr style='height:5.85pt'>
+                      <td width="100%" colspan=4 valign=top style='width:100.0%;border:solid black 1.0pt;
+                      border-top:none;padding:0cm 5.4pt 0cm 5.4pt;height:5.85pt'>
+                      <p class="normal-text"><i>Note 1: CWDM: Coarse
+                      Wavelength Division Multiplexing. A wavelength multiplexing technique able to
+                      transmit up to 18 lambdas with a 20nm channel spacing.</i></p>
+                      <p class="normal-text"><i>Note 2: DWDM: Dense Wavelength Division Multiplexing. A
+                      wavelength multiplexing technique significantly denser than C-WDM, carrying
+                      up to 160 lambdas with as little as 0,4 nm of channel spacing.</i></p>
+                      </td>
+                     </tr>
+                    </table>
+                    <p align=center><i>Table
+                        3. Fiber selection per Optical Service.</i></p>
+                    
+                    </div>
+                    
+                    <br><h2><a class="titulo-h2 anchor-bum" name="item3-2">3.2 Construction
+                    Planning Process</a></h2>
+                    
+                    <p class="normal-text">The <b>Fiber
+                    Optic Path Design</b> already described in the <b>TX Network HLD</b> module
+                    provides the input to the initial plan of the route through a <b>Desktop Design</b>,
+                    which consists on the analysis of the fiber optic path though topographic and
+                    land use maps, satellite images and any other indirect methods that do not
+                    imply visiting the path. This Desktop Design anticipates potential issues
+                    during construction and identifies the Rights of Way (ROW) which would have to
+                    be obtained. </p>
+                    
+                    <p class="normal-text">The
+                    initial plan is then validated through on-the-field <b>Surveys</b>, which
+                    confirm feasibility of the planned route and the construction techniques which
+                    could be applicable. The <b>Survey</b> will also discover infrastructures not
+                    recorded in the Geospatial Database which could still be exploited during the
+                    construction process. The <b>Survey Reports</b> obtained from the field visits
+                    complement the <b>Fiber Optic Path Design</b> to produce a <b>Construction Plan</b>.
+                    A description of the components of the Survey Reports are provided in section 3.2.2.</p>
+                    
+                    <p class="normal-text">The <b>Construction
+                    Planning</b> phase specifies the details of the physical infrastructure which
+                    will support the optical cables and host fiber access points where required for
+                    maintenance or interconnection, according to path design. The <b>Construction
+                    Plan</b> includes details not only on the civil works, but also on the cable
+                    installation technique and the interconnection to the route endpoints. </p>
+                    
+                    <p class="normal-text">Figure
+                    4 shows the activities within the Construction Planning Process, which are
+                    further developed in the following sections.</p>
+                    
+                    <p class="normal-text"><img border=0 width=589 height=258 id=image7.png
+                    src="images/fiber_const/image004.png"
+                    alt="A screenshot of a cell phone&#10;&#10;Description automatically generated"></p>
+                    
+                    <p align=center><i>Figure
+                    4. Construction Planning Process</i></p>
+                    
+                    <h3 style='margin-left:36.0pt;text-indent:-36.0pt'><a></a>3.2.1 Desktop
+                    Planning</h3>
+                    
+                    <p class="normal-text">The <b>Fiber
+                    Optic Path Design</b> received from the <b>TX Network HLD</b> module must be
+                    refined in preparation for the on-the-field <b>Surveys.</b> As part of the
+                    desktop planning, the first step is to calculate the <b>Optical Link Budget</b>
+                    for the complete path. The planned <b>Optical Services</b> will determine the
+                    fiber characteristics required for the link budget calculation. A detailed
+                    description of the Fiber Optic Link Design is provided in the <b>TX Network LLD</b>
+                    module.</p>
+                    
+                    <h4 style='margin-left:43.2pt;text-indent:-43.2pt'><a></a>3.2.1.1 Optical Link Budget
+                    Calculation</h4>
+                    
+                    <p class="normal-text">Optical
+                    loss budget analysis is the verification of a fiber optics operating
+                    characteristics. This encompasses items such as routing, circuit length, fiber
+                    type, number of connectors and splices and wavelengths of operation. The
+                    calculation is performed as described in the <b>TX Network LLD</b> module. In
+                    absence of fiber-specific values, the use of conservative defaults is
+                    advisable, as noted in Table 4:</p>
+                    
+                    
+                    
+                    <div align=center>
+                    
+                    <table class=a2 border=1 cellspacing=0 cellpadding=0 width=427
+                     style='border-collapse:collapse;border:none'>
+                     <tr style='height:5.65pt'>
+                      <td width=111 valign=top style='width:83.3pt;border:solid black 1.0pt;
+                      background:#1F3864;padding:0cm 5.4pt 0cm 5.4pt;height:5.65pt'>
+                      <p align=center style="color:#FFF">Wavelength</p>
+                      </td>
+                      <td width=125 valign=top style='width:93.85pt;border:solid black 1.0pt;
+                      border-left:none;background:#1F3864;padding:0cm 5.4pt 0cm 5.4pt;height:5.65pt'>
+                      <p align=center style="color:#FFF">Attenuation /
+                      km</p>
+                      </td>
+                      <td width=108 valign=top style='width:80.95pt;border:solid black 1.0pt;
+                      border-left:none;background:#1F3864;padding:0cm 5.4pt 0cm 5.4pt;height:5.65pt'>
+                      <p align=center style="color:#FFF">Connector Loss</p>
+                      </td>
+                      <td width=83 valign=top style='width:62.1pt;border:solid black 1.0pt;
+                      border-left:none;background:#1F3864;padding:0cm 5.4pt 0cm 5.4pt;height:5.65pt'>
+                      <p align=center style="color:#FFF">Splice Loss</p>
+                      </td>
+                     </tr>
+                     <tr style='height:9.7pt'>
+                      <td width=111 style='width:83.3pt;border:solid black 1.0pt;border-top:none;
+                      padding:0cm 5.4pt 0cm 5.4pt;height:9.7pt'>
+                      <p class="normal-text">1310 nm</p>
+                      </td>
+                      <td width=125 style='width:93.85pt;border-top:none;border-left:none;
+                      border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;
+                      height:9.7pt'>
+                      <p class="normal-text">0.35 dB</p>
+                      </td>
+                      <td width=108 style='width:80.95pt;border-top:none;border-left:none;
+                      border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;
+                      height:9.7pt'>
+                      <p class="normal-text">0.75 dB</p>
+                      </td>
+                      <td width=83 style='width:62.1pt;border-top:none;border-left:none;border-bottom:
+                      solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;
+                      height:9.7pt'>
+                      <p class="normal-text">0.3 dB</p>
+                      </td>
+                     </tr>
+                     <tr style='height:4.9pt'>
+                      <td width=111 style='width:83.3pt;border:solid black 1.0pt;border-top:none;
+                      padding:0cm 5.4pt 0cm 5.4pt;height:4.9pt'>
+                      <p class="normal-text">1550 nm</p>
+                      </td>
+                      <td width=125 style='width:93.85pt;border-top:none;border-left:none;
+                      border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;
+                      height:4.9pt'>
+                      <p class="normal-text">0.22 dB</p>
+                      </td>
+                      <td width=108 style='width:80.95pt;border-top:none;border-left:none;
+                      border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;
+                      height:4.9pt'>
+                      <p class="normal-text">0.75 dB</p>
+                      </td>
+                      <td width=83 style='width:62.1pt;border-top:none;border-left:none;border-bottom:
+                      solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;
+                      height:4.9pt'>
+                      <p class="normal-text">0.3 dB</p>
+                      </td>
+                     </tr>
+                    </table>
+                    <p align=center><i>Table
+                        4. Default values for Link Budget Calculations</i></p>
+                    
+                    </div><br>
+                    
+                    <h4 style='margin-left:43.2pt;text-indent:-43.2pt'><a></a>3.2.1.2 Network Span
+                    Identification</h4>
+                    
+                    <p class="normal-text">After
+                    link budget calculation, the design path is then divided in <b>Network Spans</b>,
+                    defined as portions of the optic path with similar construction characteristics.
+                    The terrain condition, the type of rights of way and the preferred construction
+                    technique establish the main attributes of the span. </p>
+                    
+                    <p class="normal-text">The
+                    spans shall be limited to a maximum length that permits a full survey within a
+                    working day. Spans may be shorter if there are river or lake crossings, or if
+                    the construction technique varies because of the terrain or other access or
+                    legal restrictions. The use of other utilities along the path must also be
+                    considered when defining the span length. The recommended procedure for Fiber
+                    Optic Span Segmentation is described through the following steps:</p>
+                    
+                    <ol class="normal-text ul-iconos" style='margin-top:0in' start=1 type=1>
+                        <li class="normal-text">Start from the complete
+                        Fiber Optic Path Design. Divide in segments which can be surveyed in one
+                        working day.</li>
+                    
+                        <ul class="normal-text ul-iconos" style='margin-top:0in' start=1 type=1>
+                            <li style="font-size: 16px;">Consider a two-way Survey, including the return trip</li>
+                        </ul>
+                    
+                        <li class="normal-text">For each of the segments:</li>
+                    
+                        <ul class="normal-text ul-iconos" style='margin-top:0in' start=1 type=1>
+                            <li style="font-size: 16px;">If the segment crosses a significant landmark (e.g. river, lake, edge of cliff,
+                            main roads) which would limit construction, divide the segment at the landmark
+                            location.</li>
+                    
+                            <li style="font-size: 16px;">If the segment crosses properties with difficult or limited access rights of way,
+                            divide the segment at that location.</li>
+                    
+                            <li style="font-size: 16px;">If the terrain characteristic significantly changes, divide the segment at that
+                            location.</li>
+                        </ul>
+                    
+                        <li class="normal-text">Assign an identifier to
+                        each resulting segment. Also identify the span begin and end in relation to a
+                        landmark, address or any other relevant location which facilitates
+                        identification.</li>
+                    
+                        <li class="normal-text">Note the location of the
+                        span start and end. Obtain directions to the span location.</li>
+                    
+                        <li class="normal-text">Obtain details on
+                        applicable rights of way to each network span. Include in the span survey documentation.</li>
+                    </ol>
+                    
+                    <p class="normal-text">Network
+                    spans are the construction unit for project management and infrastructure
+                    acceptance. They are defined to have homogeneous construction conditions across
+                    their length, so that progress can be easily monitored within each span and
+                    deviations from the planned construction progress rates can be easily detected.
+                    </p>
+                    
+                    <p class="normal-text">Figure
+                    5 represents a fiber optic path design segmentation in three spans; in the first
+                    span, the route runs along an area with low hills, finalized on a bridge
+                    crossing a river. The second span departs from the bridge and goes uphill
+                    through a high slope area, where several turns are required to reach the top of
+                    the hills. Span three is defined by a clear change in the terrain conditions,
+                    entering a flat area where the infrastructure can be more easily deployed.</p><br>
+                    
+                    <p class="normal-text"><img border=0 width=589 height=430 id=image9.png
+                    src="images/fiber_const/image005.png"
+                    alt="A picture containing young, man, sitting, board&#10;&#10;Description automatically generated"></p>
+                    
+                    <p align=center><i>Figure
+                    5. Network Span segmentation</i></p><br>
+                    
+                    <p class="normal-text">Next,
+                    the construction technique for each span must be confirmed. Aerial cables are
+                    one of the most preferred and cost-effective solutions, because existing pole
+                    infrastructure can be easily reused without additional civil works.
+                    Additionally, aerial cable construction can be easily modified to add
+                    additional capacity.</p>
+                    
+                    <p class="normal-text">However,
+                    aerial deployments are more susceptible to damage. The falling of tree
+                    branches, high winds or ice storms, vehicle accidents or the activity of
+                    animals can make the aerial cable strain or break.</p>
+                    
+                    <p class="normal-text">Unlike
+                    the aerial deployment, buried fiber deployments are less susceptible to weather
+                    damage (mostly wind and ice, but also direct sunlight and dryness), which makes
+                    it often at least 10x more reliable than aerial routes, especially where severe
+                    weather conditions.</p>
+                    
+                    <p class="normal-text">Table
+                    5 provides a summarized comparison between the Aerial and Underground
+                    construction techniques. The NaaS operator must select one or the other
+                    depending on the specifics of the project. As a general rule, aerial deployment
+                    should be the selection of choice. Underground installations should be limited
+                    to areas where regulations or the security of the installation requires so, and
+                    always after a careful evaluation of the required budget. Details regarding
+                    construction techniques can be found in the <a href="fiber_constr_tech_templ" class="a_link" >Fiber
+                    Construction Technical Specifications Template</a>.</p><br>
+                    
+                    
+                    
+                    <div align=center>
+                    
+                    <table class=a3 border=1 cellspacing=0 cellpadding=0 width="100%"
+                     style='width:100.0%;border-collapse:collapse;border:none'>
+                     <tr style='height:23.25pt'>
+                      <td width="16%" style='width:16.96%;border:solid black 1.0pt;background:#1F3864;
+                      padding:0cm 5.4pt 0cm 5.4pt;height:23.25pt'>
+                      <p align=center style="color:#FFF">Construction
+                      Type</p>
+                      </td>
+                      <td width="15%" style='width:15.76%;border:solid black 1.0pt;border-left:
+                      none;background:#1F3864;padding:0cm 5.4pt 0cm 5.4pt;height:23.25pt'>
+                      <p align=center style="color:#FFF">Relative Cost</p>
+                      </td>
+                      <td width="23%" style='width:23.08%;border:solid black 1.0pt;border-left:
+                      none;background:#1F3864;padding:0cm 5.4pt 0cm 5.4pt;height:23.25pt'>
+                      <p align=center style="color:#FFF">Reuse of
+                      existing infrastructure</p>
+                      </td>
+                      <td width="30%" style='width:30.64%;border:solid black 1.0pt;border-left:
+                      none;background:#1F3864;padding:0cm 5.4pt 0cm 5.4pt;height:23.25pt'>
+                      <p align=center style="color:#FFF">Ease to upgrade
+                      / modify</p>
+                      </td>
+                      <td width="13%" style='width:13.56%;border:solid black 1.0pt;border-left:
+                      none;background:#1F3864;padding:0cm 5.4pt 0cm 5.4pt;height:23.25pt'>
+                      <p align=center style="color:#FFF">Resiliency</p>
+                      </td>
+                     </tr>
+                     <tr style='height:30.55pt'>
+                      <td width="16%" style='width:16.96%;border:solid black 1.0pt;border-top:none;
+                      padding:0cm 5.4pt 0cm 5.4pt;height:30.55pt'>
+                      <p class="normal-text">Aerial</p>
+                      </td>
+                      <td width="15%" style='width:15.76%;border-top:none;border-left:none;
+                      border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;
+                      height:30.55pt'>
+                      <p class="normal-text">Low</p>
+                      </td>
+                      <td width="23%" style='width:23.08%;border-top:none;border-left:none;
+                      border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;
+                      height:30.55pt'>
+                      <p class="normal-text">Simple</p>
+                      </td>
+                      <td width="30%" style='width:30.64%;border-top:none;border-left:none;
+                      border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;
+                      height:30.55pt'>
+                      <p class="normal-text">High</p>
+                      </td>
+                      <td width="13%" style='width:13.56%;border-top:none;border-left:none;
+                      border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;
+                      height:30.55pt'>
+                      <p class="normal-text">Low</p>
+                      </td>
+                     </tr>
+                     <tr style='height:23.25pt'>
+                      <td width="16%" style='width:16.96%;border:solid black 1.0pt;border-top:none;
+                      padding:0cm 5.4pt 0cm 5.4pt;height:23.25pt'>
+                      <p class="normal-text">Underground</p>
+                      </td>
+                      <td width="15%" style='width:15.76%;border-top:none;border-left:none;
+                      border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;
+                      height:23.25pt'>
+                      <p class="normal-text">Medium to High</p>
+                      </td>
+                      <td width="23%" style='width:23.08%;border-top:none;border-left:none;
+                      border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;
+                      height:23.25pt'>
+                      <p class="normal-text">Only possible with ducts</p>
+                      </td>
+                      <td width="30%" style='width:30.64%;border-top:none;border-left:none;
+                      border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;
+                      height:23.25pt'>
+                      <p class="normal-text">None</p>
+                      <p class="normal-text">Requires additional
+                      digging.</p>
+                      </td>
+                      <td width="13%" style='width:13.56%;border-top:none;border-left:none;
+                      border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;
+                      height:23.25pt'>
+                      <p class="normal-text">High</p>
+                      </td>
+                     </tr>
+                    </table>
+                    <p align=center><i>Table
+                        5. Comparison of Construction Techniques</i></p>
+                    </div><br>
+                    
+                    <p class="normal-text">As an
+                    outcome of the desktop design phase, the NaaS operator shall obtain a
+                    preliminary design for the optical network, the supporting infrastructure, and
+                    a survey plan.</p>
+                    
+                    <h3 style='margin-left:36.0pt;text-indent:-36.0pt'><a></a>3.2.2 Survey</h3>
+                    
+                    <p class="normal-text">The
+                    span <b>Survey</b> consists of on-site verification of the planned design to
+                    detect potential problem areas and improvement opportunities before the
+                    construction work commences. The scope of the survey must be adapted to the
+                    planned type of installation, aerial or underground. </p>
+                    
+                    <p class="normal-text"><a></a>The execution of the Survey may be the scope of work
+                    of an independent RFx process, prior to the Construction RFP. In such case, the
+                    results of the survey would be inputs to the Construction RFP, providing
+                    additional scope insight to the construction vendors. As an alternative, the
+                    NaaS Operator may include the Survey into a turnkey project which includes the
+                    path analysis within the Construction RFP scope.</p>
+                    
+                    <p class="normal-text">The general
+                    steps to complete the span <b>Survey</b> are the following:</p>
+                    
+                    <ol class="normal-text ul-iconos" style='margin-top:0in' start=1 type=1>
+                        <li class="normal-text">Proceed to the span start
+                        point. Note date and time. Annotate starting point as origin of all measured
+                        distances.</li>
+                    
+                        <li class="normal-text">Walk the path of the
+                        network span providing a description of the topography along the route (sloping,
+                        edge of cliff, adjacent to lake, forest surroundings, rivers, swampy areas,
+                        etc.). Record distances and GPS coordinates.</li>
+                    
+                        <li class="normal-text">Take photos of all
+                        obstacles on the route (existing services, bridge crossings, rocky areas,
+                        buildings, built-up areas, paved/tarred areas, wetlands, overhead obstacles,
+                        etc.). </li>
+                    
+                        <li class="normal-text">Describe the ground
+                        condition along the route (rocky, sandy, grassy, clay, etc.). Record distances
+                        and GPS coordinates. </li>
+                        
+                        <li class="normal-text">Verify the soil
+                        classification by digging a pilot hole every 1km (hard, intermediate, soft) via
+                        DCP (Dynamic Cone Penetration) testing.</li>
+                        
+                        <li class="normal-text">Identify all landmarks
+                        where the route changes direction or gradient. Annotate turning radius and
+                        slope change. Take photos.</li>
+                        
+                        <li class="normal-text">Record crossings with
+                        roads, rails, and other services. Check and verify above and below ground
+                        utility locations. </li>
+                        
+                        <li class="normal-text">Record the presence of
+                        structures from utilities or any other constructions near the route. </li>
+                        
+                        <li class="normal-text">Record the presence of
+                        telecommunication networks from other service providers near the route.</li>
+                        
+                        <li class="normal-text">Indicate the distance to
+                        the nearest town, where the civil works material (sand, cement, stone, water,
+                        tools, etc.) can be sourced from. </li>
+                        
+                        <li class="normal-text">Locate possible
+                        warehouse/campsites where material can be safely stored. </li>
+                        
+                        <li class="normal-text">Indicate the availability
+                        of hospitals / clinics / police stations along the route - in case required
+                        during operational activities.</li>
+                        
+                        <li class="normal-text">Double-check recorded
+                        details on the return journey.</li>
+                    </ol>
+                    
+                    <p class="normal-text">After
+                    each survey, a Survey Form shall be delivered to the project manager. A <a class="a_link" link="path_survey_report">Path Survey Report
+                    Template</a> is provided to support this task. Instructions to use this form
+                    are provided below:</p>
+                    
+                    <ul class="normal-text ul-iconos" style='margin-top:0in' start=1 type=1>
+                        <li>Attendance:</li>
+                    
+                        <ul class="normal-text ul-iconos" style='margin-top:0in' start=1 type=1>
+                            <li style="font-size: 16px;">List any personnel
+                            joining the survey, including property, security and technicians.</li>
+                        </ul>
+                        
+                        <li>General Information.</li>
+                    
+                        <ul class="normal-text ul-iconos" style='margin-top:0in' start=1 type=1>
+                            <li style="font-size: 16px;">Provide Location of the
+                            Span start. Include directions, contact person (if required), GPS coordinates
+                            and any other information relevant to locate the starting position.</li>
+                            
+                            <li style="font-size: 16px;">Provide indications on
+                            the path conditions: presence of other utilities or infrastructures in the
+                            area. Condition of such infrastructures.</li>
+                            
+                            <li style="font-size: 16px;">Provide details on the
+                            procedure to access the path location for survey: need to request permit or
+                            keys, existing rights of way or not, etc.</li>
+                            
+                            <li style="font-size: 16px;">Draw an initial sketch of
+                            the path. Can be taken from the initial route design.</li>
+                        </ul>
+                    
+                        <li>Power Supply.</li>
+                    
+                        <ul class="normal-text ul-iconos" style='margin-top:0in' start=1 type=1>
+                            <li style="font-size: 16px;">Provide
+                            description of nearby power supply points which may be used during the
+                            construction works (e.g. to recharge batteries of electronic equipment,
+                            communication devices such as mobile phones or walkie-talkies, tools for pole
+                            install, etc).</li>
+                        </ul>
+                    
+                        <li>Plant Drawing</li>
+                        
+                        <ul class="normal-text ul-iconos" style='margin-top:0in' start=1 type=1>
+                            <li style="font-size: 16px;">Provide a detailed drawing of the surveyed path. Include specific details, location and
+                            distance to start for every relevant landmark.</li>
+                        </ul>
+                    
+                        <li>Photo Report</li>
+                    
+                        <ul class="normal-text ul-iconos" style='margin-top:0in' start=1 type=1>
+                            <li style="font-size: 16px;">Include
+                            digital photos of the path: landmarks, surrounding area, nearby
+                            infrastructures, etc. </li>
+                        </ul>
+                    </ul><br>
+                    
+                    <h3 style='margin-left:36.0pt;text-indent:-36.0pt'><a></a>3.2.3 Construction
+                    Planning</h3>
+                    
+                    <p class="normal-text">The <b>Construction
+                    Plan</b> takes the initial <b>Fiber Optic Path Design</b> and the results of
+                    the span <b>Surveys</b> as inputs to produce detailed specifications and
+                    instructions for the execution of civil works on each network span. </p>
+                    
+                    <p class="normal-text">On
+                    the <b>Construction Plan</b>, the NaaS Operator establishes the nominal
+                    conditions to the construction works, which will be implemented by the
+                    construction vendor. The steps to define the <b>Construction Plan</b> are
+                    summarized below:</p>
+                    
+                    <ol class="normal-text ul-iconos" style='margin-top:0in' start=1 type=1>
+                        <li class="normal-text">From the Fiber Optic Path
+                        design, produce drawings for each individual network span.</li>
+                        
+                        <li class="normal-text">When a deviation from the
+                        initial design is required after the span survey, notify the Optical Designer
+                        for recalculation of the optical attributes.</li>
+                        
+                        <li class="normal-text">For each network span,
+                        describe the type of infrastructure: Aerial, underground, facility reuse.</li>
+                        
+                        <li class="normal-text">Establish the length of
+                        the required infrastructure. This is required to determine costs. Use the
+                        Geospatial resources to obtain precise estimates.</li>
+                        
+                        <li class="normal-text">Annotate the span
+                        drawings with all relevant landmarks, obstacles or nearby infrastructures
+                        identified during the survey.</li>
+                        
+                        <li class="normal-text">Define an initial, high
+                        level count of infrastructure elements: number of poles, length of excavation.
+                        Refer to the <a href='fiber_constr_tech_templ' class="a_link">Fiber
+                        Construction Technical Specifications Template</a> for
+                        dimensioning estimates per infrastructure type. </li>
+                        
+                        <li class="normal-text">Establish an initial Work
+                        Breakdown Structure (<b>WBS</b>) for the <b>Construction Plan</b> in the form
+                        of a Gantt diagram The <a href='fiber_const_gannt_diagram' class="a_link">Fiber
+                        Construction Gantt Diagram Template</a> is provided to support this task.</li>
+                    </ol>
+                    
+                    <p class="normal-text">The
+                    technical requirements are provided as part of the Runbook, in the <a href='fiber_constr_tech_templ' class="a_link">Fiber
+                    Construction Technical Specifications Template</a>. The <b>Construction Plan</b>,
+                    including such specifications, is used as the technical input to the <b>Vendor
+                    Evaluation</b> process.</p>
+                    
+                    <p class="normal-text">The <b>Construction
+                    Plan</b> must be completed before the actual construction commences. This plan
+                    validates the timelines, establishes task dependencies and defines the supply
+                    chain that the vendor must establish for a smooth execution of the construction
+                    works. Fiber construction projects, especially when deploying long distances of
+                    fiber, are complex and require a high level of coordination within the
+                    construction team.</p>
+                    
+                    <p class="normal-text">The
+                    development of the Construction Plan may be the scope of work of an independent
+                    RFx process, prior to the Construction RFP. In such case, the Construction Plan
+                    would be the primary input to the Construction RFP, providing additional scope
+                    insight to the construction vendors. As an alternative, the NaaS Operator may
+                    include the Construction Plan into a turnkey project which includes this step
+                    within the Construction RFP scope.</p>
+                    
+                    <p class="normal-text">To
+                    deal with the project complexity in a systematic way, the <a href='fiber_const_gannt_diagram' class="a_link">Fiber
+                    Construction Gantt Diagram Template</a> is provided which consists of an
+                    enumeration of the activities and dependencies involved in a fiber construction
+                    project. The systematization of the construction plan facilitates an early
+                    detection of deviations and permits comparison between the performance of the
+                    construction teams working on different routes.</p>
+                    
+                    <p class="normal-text">The
+                    template consists of two sheets with different task breakdown for aerial and
+                    underground construction plans. The template user must set the start date of the
+                    first activity and the baseline duration of each task. All other dates shall
+                    automatically populate. The template assumes sequential completion of tasks,
+                    with no lag times or parallel activities. The user should modify these
+                    assumptions based on the specifics of each project. A template should be
+                    defined for each span, as the construction velocity may differ from span to
+                    span due to the construction and access specifics of each of them. </p>
+                    
+                    <h1><a class="titulo-h1 anchor-bum" name="item4">4
+                    Vendor Evaluation and Selection</a></h1>
+                    
+                    <p class="normal-text">This
+                    section offers the NaaS operator a methodology and approach to select Vendors
+                    to provide Fiber Construction solutions and construction services.</p>
+                    
+                    <p class="normal-text">The
+                    selection of the appropriate Vendors for Fiber construction projects requires
+                    conducting a RFI/RFP (request for information and proposal) process which
+                    analyzes the contractor ability to fulfill the end-to-end tasks and also
+                    obtains pricing information to fulfill the required Construction Solutions and
+                    Services.</p>
+                    
+                    <p class="normal-text">Please
+                    note that the Fiber Construction RFI/RFP process benefits from the framework
+                    setup established in the generic RFx Process Module. It is recommended to go
+                    through the RFx process module if further details are required regarding the
+                    process. The RFx Process Module provides a general overview of the end-to-end
+                    RFx process including the description of the activities which take place for
+                    RFx development:</p><br>
+                    
+                    <p class="normal-text"><img border=0 width=584 height=176 id=image10.png
+                    src="images/fiber_const/image006.png"></p>
+                    
+                    <p align=center><i>Figure 6. RFx Process</i></p><br>
+                    
+                    <p class="normal-text">RFx
+                    are issued to obtain Information, Proposals or Quotes from the market. In order
+                    to obtain truly valuable and effective information from these processes, the
+                    documents generated during the RFx development must include all the relevant
+                    information that vendors will require to provide accurate responses to the NaaS
+                    Operator request, avoid misunderstandings and prevent implementation issues.</p>
+                    
+                    <p class="normal-text">Before
+                    starting the RFI/RFP process, it is necessary to select the companies which
+                    will be receiving the documentation. The following sections provide instruction
+                    to select, invite and prequalify potential Bidders for the process.</p>
+                    
+                    <br><h2><a class="titulo-h2 anchor-bum" name="item4-1">4.1 Vendor
+                    Pre-qualification</a></h2>
+                    
+                    <p class="normal-text">The
+                    first step is to identify potential contractors to which the Fiber Construction
+                    RFx should be addressed, with an eventual invitation to bid. The <b>Construction
+                    Management</b> team must lead this process, with the technical assistance from
+                    the <b>TX Design</b> group on construction issues which could affect the
+                    optical transmission (e.g. bend radius, span length, fiber cable protection,
+                    etc).</p>
+                    
+                    <p class="normal-text">The
+                    NaaS should invite vendors with previous and successful experience with the
+                    company and their competitors. In absence of previous references, options may
+                    include web research as well as requesting a list of Fiber Construction vendors
+                    to local partners and authorities, local Chambers of Commerce and professional
+                    associations. </p>
+                    
+                    <p class="normal-text">The
+                    potential Respondents shall be sent an invitation letter, an abstract of the
+                    project scope and relevant RFx dates, and a set of questions to fill the
+                    prequalification form. This form provides key questions which the NaaS Operator
+                    will use to determine the suitability of the potential Respondent to address
+                    the project scope. This qualification form includes technical, commercial and
+                    legal questions with the objective to short-list the proper set of companies
+                    invited to the RFI/RFP process.</p>
+                    
+                    <h3 style='margin-left:36.0pt;text-indent:-36.0pt'><a></a>4.1.1 Invitation
+                    to Tender</h3>
+                    
+                    <p class="normal-text">The
+                    NaaS Operator shall submit an invitation to tender to the identified companies
+                    to inform about:</p>
+                    
+                    <ul class="normal-text ul-iconos" style='margin-top:0in' start=1 type=1>
+                        <li>The Name of the RFx Process</li>
+                        <li>An abstract on the Scope of Work</li>
+                        <li>The RFx process relevant dates</li>
+                        <li>A request for an acknowledgment and intention to respond</li>
+                    </ul>
+                    
+                    <p class="normal-text">The
+                    objective of the formal invitation is to inform vendors of commencement of the
+                    RFx process.</p>
+                    
+                    <h3 style='margin-left:36.0pt;text-indent:-36.0pt'><a></a>4.1.2 Pre-qualification
+                    form</h3>
+                    
+                    <p class="normal-text">Potential
+                    Respondents shall receive, together with their invitation to bid, a
+                    prequalification form </p>
+                    
+                    <p class="normal-text">The
+                    prequalification form responses shall be evaluated for pre-qualification
+                    according to the provided <a href="fiber_const_pre_templ" class="a_link">Fiber
+                    Construction Pre-qualification Template</a>. This document identifies the main
+                    capabilities of the vendors, and discards those without the technical or
+                    financial capabilities to fulfill the project requirements.</p>
+                    
+                    <p class="normal-text">The
+                    template consists of a number of questions about the vendor capabilities on
+                    different areas, such as Finance, Quality Management, CSR&amp;EHS (Corporate
+                    Social Responsibility &amp; Environment, Health and Safety) and OSP (Outside
+                    Plant) implementation experience. The questions come with predefined responses,
+                    typically compliant or non-compliant. The NaaS Operator will respond to the
+                    questions by selecting the option that better applies to the vendor under
+                    evaluation. The template will assign points based on those responses and will
+                    provide an overall score that can be used to rank the candidate vendors.</p>
+                    
+                    <p class="normal-text">The
+                    prequalification form delivered to potential respondents should follow the  <a href="fiber_const_pre_templ" class="a_link">Fiber
+                    Construction Pre-qualification Template</a>, where the scoring calculations and
+                    notes shall be removed. </p>
+                    
+                    <br><h2><a class="titulo-h2 anchor-bum" name="item4-2">4.2 RFx
+                    Document</a></h2>
+                    
+                    <p class="normal-text">Having
+                    selected the candidate vendors through the pre-qualification process, the
+                    vendors shall enter an RFx process which is described in detail in the<b> RFx Process</b>
+                    module. </p>
+                    
+                    <p class="normal-text">The
+                    RFx document identifies the RFx objective (obtain information, proposal and/or
+                    quotes), the scope of the technical project, the instructions to respond and
+                    applicable terms and conditions.</p>
+                    
+                    <p class="normal-text">The <a href="rfi_rfp_template" class="a_link">
+                    Fiber Construction RFI/RFP Template</a> provided as part
+                    of the Runbook covers the areas in the RFx structure described above. This
+                    document must be adapted by the NaaS Operator to
+                    the fiber construction specifics of the project.</p>
+                    
+                    <br><h2><a class="titulo-h2 anchor-bum" name="item4-3">4.3 RFx
+                    Evaluation Process</a></h2>
+                    
+                    <p class="normal-text">The <a href="rfi_rfp_template" class="a_link">Fiber
+                    Construction RFI_RFP Template</a> provides additional information on the inputs
+                    required to perform a response evaluation. Further details and general
+                    procedures on evaluation criteria are included in the <b>RFx Management</b>
+                    Module.</p>
+                    
+                    <p class="normal-text">The
+                    evaluation process must be based on fair competition, with mandatory and
+                    optional requirements being clearly identified and properly notified to the
+                    bidders. The scoring model must be closed before the commencement of the
+                    analysis and, if by any reason it must be modified during the RFQ process,
+                    bidders must be notified and given the opportunity to amend their proposals.</p>
+                    
+                    <p class="normal-text">The evaluation
+                    process as well is further developed in the <b>RFx Process</b> module and is
+                    considered out of the scope of this document. </p>
+
+            </div>
+
+            <a class='link-next' href="#" onclick="switchContent('#hld')"> &#8656; Previous</a>
+                <a href="url" align="center"></a>
+                <div class="right">
+                    <a ></a>
+                    <a class="link-next" href="#" onclick="switchContent('#e2e')">Next &#8658;</a>
+                </div>
+                <br>
+            </div>
+
+            <nav id="navbar-example3" class="navbar navbar-light bg-light position-fixed">
+                <nav class="nav nav-pills flex-column">
+                <a id="fm_link-1" class="nav-link bullet-2-link" onclick="onClickActive(event)" href="#item3"><strong>3. DESIGN AND REQUIREMENTS</strong></a>
+                <a id="fm_link-2" class="nav-link bullet-2-link" onclick="onClickActive(event)" href="#item3-1"><em>3.1 Deployment Scenarios</em></a>
+                <a id="fm_link-3" class="nav-link bullet-2-link" onclick="onClickActive(event)" href="#item3-2"><em>3.2 Construction Planning Process</em></a>
+                <a id="fm_link-6" class="nav-link bullet-2-link" onclick="onClickActive(event)" href="#item4"><strong>4. VENDOR EVALUATION AND SELECTION</strong></a>
+                <a id="fm_link-7" class="nav-link bullet-2-link" onclick="onClickActive(event)" href="#item4-1"><em>4.1	Vendor Pre-qualification</em></a>
+                <a id="fm_link-8" class="nav-link bullet-2-link" onclick="onClickActive(event)" href="#item4-2"><em>4.2	RFx Document</em></a>
+                <a id="fm_link-9" class="nav-link bullet-2-link" onclick="onClickActive(event)" href="#item4-3"><em>4.3	RFx Evaluation Process</em></a>
+
+                </nav>
+            </nav>
+       </section>
+
+       <section id="e2e" hidden>
+        <div id="content">
+
+            <div div data-spy="scroll" data-target="#navbar-example3" data-offset="0">
+                <h1><a class="titulo-h1 anchor-bum" name="item5">5
+                    Project Management</a></h1>
+                    
+                    <p class="normal-text">The
+                    design and delivery of the layers which comprise the network (civil
+                    infrastructure, cabling, optical connectivity and telecom services) is affected
+                    by bottom-up dependencies between these layers; cables cannot be deployed
+                    before the infrastructure is in place, and connectivity and services cannot be
+                    established until the fiber paths are established. This inter-dependency implies
+                    the need for a well-established set of processes which ensure the on-time
+                    availability of the pre-requisites for each layer. A Project Management
+                    organization must be defined for coordination and tracking of the multiple
+                    efforts which would converge on the delivery of the functional network at the
+                    end of the project.</p>
+                    
+                    <p class="normal-text">As a
+                    result of the Planning process, a Project Plan shall be generated by the
+                    Contractor and agreed with the NaaS Operator. The <b>Deployment Management
+                    Module</b> provides guidance on establishing the general rules for project
+                    management on deployment projects. This section reviews specifics aspects applicable
+                    to <b>Fiber Construction</b> projects. </p>
+                    
+                    <br><h2><a class="titulo-h2 anchor-bum" name="item5-1">5.1 Vendor
+                    Management</a></h2>
+                    
+                    <p class="normal-text">Once
+                    the Fiber Construction vendor has been selected and the contract has been
+                    awarded and signed, the NaaS Operator will initiate a project and vendor
+                    management process through the execution of the construction works. </p>
+                    
+                    <h3 style='margin-left:36.0pt;text-indent:-36.0pt'><a></a>5.1.1 Vendor
+                    Onboarding</h3>
+                    
+                    <p class="normal-text">The
+                    construction project commences with vendor onboarding through a kick-off
+                    meeting. In this meeting, the NaaS Operator will explain in detail the project
+                    scope to the vendor representatives in charge of the construction process.</p>
+                    
+                    <p class="normal-text">The <b>Vendor
+                    Onboarding</b> meeting agenda must cover all relevant aspects of the
+                    construction works, and serve to surface any pending clarification, doubt or
+                    concern from either the NaaS operator or the construction vendor in what refers
+                    to the construction work. Other subjects referring to non-technical issues
+                    (e.g. contractual terms, payment, insurances, etc) should be clarified in a separate
+                    meeting with the commercial and legal team. </p>
+                    
+                    <p class="normal-text">A
+                    sample agenda for the kick-off meeting is provided below:</p>
+                    
+                    <ol class="normal-text ul-iconos" style='margin-top:0in' start=1 type=1>
+                        <li class="normal-text">Describe the organization
+                        for Fiber Construction Management, introducing the points of contact to manage
+                        the relationship between the NaaS Operator and the construction vendor.</li>
+                        
+                        <li class="normal-text">Explain the Project Plan,
+                        including the number and locations of network spans for each fiber path. </li>
+                        
+                        <li class="normal-text">Review the Scope of Work
+                        which has been agreed with the Site Construction Vendors through the RFI/RFP
+                        process and finally expressed in the agreed contract, including:</li>
+                    
+                        <ol class="normal-text ul-iconos" style='margin-top:0in' start=3 type=1>
+                            <li class="nostyle">3.1. Scope of construction
+                            techniques: discussion on spans for aerial, underground or duct installations,
+                            as applicable.</li>
+                    
+                            <li class="nostyle">3.2. Scope of construction
+                            services provided by the vendor:</li>
+                
+                            <ol class="normal-text ul-iconos" style='margin-top:0in' start=3 type=1>
+                                <li class="nostyle">3.2.1. Construction Project Management</li>
+                        
+                                <li class="nostyle">3.2.2. Surveys and related
+                                reports and associated documents</li>
+                                
+                                <li class="nostyle">3.2.3. Detailed construction
+                                planning and related documents</li>
+                                
+                                <li class="nostyle">3.2.4. Spans for greenfield
+                                construction</li>
+                                
+                                <li class="nostyle">3.2.5. Spans for brownfield
+                                construction</li>
+                                
+                                <li class="nostyle">3.2.6. Management of rights of
+                                way</li>
+                                
+                                <li class="nostyle">3.2.7. Construction acceptance</li>
+                            </ol>
+                        </ol>
+                    
+                        <li class="normal-text">Describe the Project Tracking
+                        Process and Methodology: Explain how reporting is going to be performed, the
+                        type, content, and periodicity of the reporting.</li>
+                        
+                        <li class="normal-text">Documentation: Explain
+                        details about required documentation under the responsibility of the
+                        construction vendor (Survey Report, detailed construction plan, As-Built
+                        drawings and documents) and the method to share this documentation.</li>
+                    </ol>
+                    
+                    <h3 style='margin-left:36.0pt;text-indent:-36.0pt'><a></a>5.1.2 Project
+                    Planning</h3>
+                    
+                    <p class="normal-text">The
+                    Project Planning activity consists of developing the project management plan
+                    and all relevant project documents to establish the project scope of work
+                    necessary to achieve the project objectives. Project planning integrates all
+                    aspects necessary to execute the work required throughout the project
+                    lifecycle, including scope, time, costs, communication, quality, risk, and
+                    procurement. </p>
+                    
+                    <p class="normal-text">The
+                    vendor shall develop a detailed description of the construction project by
+                    defining, for each network span and for the construction project as a whole, a
+                    Work Breakdown Structure (WBS) which subdivides the project deliverables and
+                    project work into smaller and more manageable components. Typically, these
+                    subdivides shall align with each network span or, when such spans are complex,
+                    the subdivide could be assigned to the use of different construction techniques
+                    or the consumption of certain rights of way or permits. In any case, the level
+                    of detail shall be agreed between the NaaS operator and the vendor, as it will
+                    establish the baseline for reporting and project tracking. </p>
+                    
+                    <p class="normal-text">Within
+                    this WBS, all required activities shall be defined and sequenced based on
+                    expected dependencies. The vendor shall include estimates for the provisioning
+                    of any resources or materials required for the timely completion of each
+                    activity.</p>
+                    
+                    <p class="normal-text">The <a href='fiber_const_gannt_diagram' class='a_link'>Fiber
+                    Construction Gantt Diagram Template</a> provides a sample Gantt diagram with an
+                    enumeration of the activities and dependencies involved in a fiber construction
+                    project that can be used as the starting point for a detailed WBS description.</p>
+                    
+                    <h3 style='margin-left:36.0pt;text-indent:-36.0pt'><a></a>5.1.3 Project
+                    Execution </h3>
+                    
+                    <p class="normal-text">The
+                    main task of the NaaS operator during project execution is to track, review,
+                    and regulate the progress to meet the objectives defined in the project
+                    management plan. </p>
+                    
+                    <p class="normal-text">The <a href='fiber_project_tracking' class='a_link'>Fiber
+                    Construction Project Tracking Template</a> provides a template for project
+                    execution tracking, which should be updated by the <b>Project Management</b>
+                    Organization to enable precise control on the project execution activities.</p>
+                    
+                    <p class="normal-text">The
+                    template includes several sheets where activity duration and milestones are set
+                    to establish the baseline and the actual values added to obtain a view of
+                    compliance with the project schedule. This template may be used for both
+                    individual spans and the aggregated fiber optic path, to track individual and
+                    overall progress.</p>
+                    
+                    <p class="normal-text">Instructions
+                    on the usage of the template are provided below:</p>
+                    
+                    <p class="normal-text"><u>Instructions</u><br>This tab provides
+                    instructions on the usage of the template and the interpretation of the
+                    tracking milestones included in the template</p>
+                    
+                    <p class="normal-text"><u>Milestones</u><br>On this tab, the template
+                    provides the expected duration estimate between relevant milestones.</p>
+                    
+                    <p class="normal-text"><u>Fiber Tracking</u><br>On this tab, the template
+                    automatically populates baseline dates for each row (modeling a network span
+                    each) and provides space for the user to annotate the actual dates for each milestone.</p>
+                    
+                    <p class="normal-text"><u>Summary Tracking</u><br>This tab is used to
+                    compute the calculation that
+                    measures the discrepancy between the baseline and actual
+                    dates for each span. The user does not need to enter any data here.</p>
+                    
+                    <p class="normal-text"><u>Tracking Graphs</u><br>This tab graphically
+                    summarized the project progress, and the aggregated alignment with the project
+                    baseline.</p>
+                    
+                    <p class="normal-text">Project
+                    execution reports will be oriented to control the current status of the
+                    infrastructure construction against the Baseline Timeline, defined in the
+                    Project Plan. Reporting will allow identifying and understanding deviations,
+                    informing on accomplishment of construction milestones and identification of
+                    risks potentially impacting the Project timeline.</p>
+                    
+                    <p class="normal-text">To
+                    enable adequate control of the project, the NaaS Operator will define a project
+                    tracking methodology for vendor Management. Table 6 provides tools to assist in
+                    the process of controlling the project execution by the construction vendor.</p>
+                    <br>
+                    
+                    
+                    <table class=a4 border=1 cellspacing=0 cellpadding=0 width="100%"
+                     style='width:100.0%;border-collapse:collapse;border:none'>
+                     <tr style='height:12.85pt'>
+                      <td width="17%" style='width:17.42%;border:solid black 1.0pt;background:#1F3864;
+                      padding:0cm 5.4pt 0cm 5.4pt;height:12.85pt'>
+                      <p align=center style='color:#fff;'>Item</p>
+                      </td>
+                      <td width="82%" style='width:82.58%;border:solid black 1.0pt;border-left:
+                      none;background:#1F3864;padding:0cm 5.4pt 0cm 5.4pt;height:12.85pt'>
+                      <p align=center style='color:#fff;'>Description</p>
+                      </td>
+                     </tr>
+                     <tr style='height:89.4pt'>
+                      <td width="17%" style='width:17.42%;border:solid black 1.0pt;border-top:none;
+                      padding:0cm 5.4pt 0cm 5.4pt;height:89.4pt'>
+                      <p class="normal-text">Project Tracking File</p>
+                      </td>
+                      <td width="82%" style='width:82.58%;border-top:none;border-left:none;
+                      border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;
+                      height:89.4pt'>
+                      <p class="normal-text">The
+                      Project Tracking File is a master Excel file containing the timing details
+                      required to develop tracking reports. This file includes main milestones and
+                      the comparison between planned and actual dates for each milestone.</p>
+                      <p class="normal-text">This
+                      Project Tracking Excel File could be replaced by a Project Management
+                      software solution which could be enhanced with an Inventory Solution.</p>
+                      <p class="normal-text">The <a href="fiber_project_tracking" class="a_link">Fiber
+                      Construction Project Tracking Template</a> is provided to support control and
+                      status reporting of the Project..</p>
+                      </td>
+                     </tr>
+                     <tr style='height:38.6pt'>
+                      <td width="17%" style='width:17.42%;border:solid black 1.0pt;border-top:none;
+                      padding:0cm 5.4pt 0cm 5.4pt;height:38.6pt'>
+                      <p class="normal-text">Monthly Reports</p>
+                      </td>
+                      <td width="82%" style='width:82.58%;border-top:none;border-left:none;
+                      border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;
+                      height:38.6pt'>
+                      <p class="normal-text">Excel
+                      and PowerPoint files providing a summarized view of the information from the
+                      Project Tracking File must be generated for review by the NaaS Operator.</p>
+                      </td>
+                     </tr>
+                     <tr style='height:37.9pt'>
+                      <td width="17%" style='width:17.42%;border:solid black 1.0pt;border-top:none;
+                      padding:0cm 5.4pt 0cm 5.4pt;height:37.9pt'>
+                      <p class="normal-text">Weekly or Daily Report</p>
+                      </td>
+                      <td width="82%" style='width:82.58%;border-top:none;border-left:none;
+                      border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;
+                      height:37.9pt'>
+                      <p class="normal-text">A
+                      frequent comparison between Baseline and actual dates enables early detection
+                      of deviations from the baseline and the implementation of corrective actions,
+                      as well as the impact of the overall project completion.</p>
+                      </td>
+                     </tr>
+                    </table>
+                    <p align=center><i>Table 6. Tracking Aids</i></p><br>
+                    
+                    <p class="normal-text">The Project Tracking File includes several milestones which identify the main construction events in the
+                    infrastructure building project. A brief description of each milestone is
+                    provided in the Instructions tab in the <a href="fiber_project_tracking" class="a_link">Fiber
+                    Construction Project Tracking Template</a>. Table 7 below provides a more detailed
+                    definition of each milestone for the users reference:</p>
+                    
+                   
+                    
+                    <table class=a5 border=1 cellspacing=0 cellpadding=0 width="100%"
+                     style='width:100.0%;border-collapse:collapse;border:none'>
+                     <tr>
+                      <td width="22%" style='width:22.48%;border:solid black 1.0pt;background:#1F3864;
+                      padding:0cm 5.4pt 0cm 5.4pt'>
+                      <p align=center style='color:#fff;'>Milestone</p>
+                      </td>
+                      <td width="77%" style='width:77.52%;border:solid black 1.0pt;border-left:
+                      none;background:#1F3864;padding:0cm 5.4pt 0cm 5.4pt'>
+                      <p align=center style='color:#fff;'>Description</p>
+                      </td>
+                     </tr>
+                     <tr>
+                      <td width="22%" style='width:22.48%;border:solid black 1.0pt;border-top:none;
+                      padding:0cm 5.4pt 0cm 5.4pt'>
+                      <p class="normal-text">Technical Path Survey Ready</p>
+                      </td>
+                      <td width="77%" style='width:77.52%;border-top:none;border-left:none;
+                      border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 5.4pt 0cm 5.4pt'>
+                      <p class="normal-text">After the Technical Site Survey has been completed,
+                      the construction vendor is responsible to deliver the Technical Path Survey
+                      Report, which serves as main input to the detail planning of the fiber span
+                      design.</p>
+                      </td>
+                     </tr>
+                     <tr>
+                      <td width="22%" style='width:22.48%;border:solid black 1.0pt;border-top:none;
+                      padding:0cm 5.4pt 0cm 5.4pt'>
+                      <p class="normal-text">Path Engineering Document Ready</p>
+                      </td>
+                      <td width="77%" style='width:77.52%;border-top:none;border-left:none;
+                      border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 5.4pt 0cm 5.4pt'>
+                      <p class="normal-text">Generation of construction engineering document,
+                      describing technical solution and implementation plan</p>
+                      </td>
+                     </tr>
+                     <tr>
+                      <td width="22%" style='width:22.48%;border:solid black 1.0pt;border-top:none;
+                      padding:0cm 5.4pt 0cm 5.4pt'>
+                      <p class="normal-text">Path Construction Work Order Ready</p>
+                      </td>
+                      <td width="77%" style='width:77.52%;border-top:none;border-left:none;
+                      border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 5.4pt 0cm 5.4pt'>
+                      <p class="normal-text">Fiber Construction Order is released by NaaS
+                      Operators to authorize the commencement of construction works.</p>
+                      <p class="normal-text">Approval of engineering plan and GO confirmation
+                      received (materials available, construction ready to commence)</p>
+                      </td>
+                     </tr>
+                     <tr>
+                      <td width="22%" style='width:22.48%;border:solid black 1.0pt;border-top:none;
+                      padding:0cm 5.4pt 0cm 5.4pt'>
+                      <p class="normal-text">Civil Works completed</p>
+                      </td>
+                      <td width="77%" style='width:77.52%;border-top:none;border-left:none;
+                      border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 5.4pt 0cm 5.4pt'>
+                      <p class="normal-text">This Milestone will indicate the finalization of
+                      Construction Works (pole planting, underground burial, trenching). The
+                      physical infrastructure is ready for the installation of mechanical elements
+                      to support optical cables.</p>
+                      </td>
+                     </tr>
+                     <tr>
+                      <td width="22%" style='width:22.48%;border:solid black 1.0pt;border-top:none;
+                      padding:0cm 5.4pt 0cm 5.4pt'>
+                      <p class="normal-text">Mechanical Works Completed</p>
+                      </td>
+                      <td width="77%" style='width:77.52%;border-top:none;border-left:none;
+                      border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 5.4pt 0cm 5.4pt'>
+                      <p class="normal-text">Additional mechanical works (installation of pole
+                      stays and supports, laying of ducts, trench compaction and backfilling) is
+                      completed. The infrastructure is ready to receive the optical cables.</p>
+                      </td>
+                     </tr>
+                     <tr>
+                      <td width="22%" style='width:22.48%;border:solid black 1.0pt;border-top:none;
+                      padding:0cm 5.4pt 0cm 5.4pt'>
+                      <p class="normal-text">Cabling Works Completed</p>
+                      </td>
+                      <td width="77%" style='width:77.52%;border-top:none;border-left:none;
+                      border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 5.4pt 0cm 5.4pt'>
+                      <p class="normal-text">The installation of cables (via messenger wires,
+                      ADSS [All Dielectric Self Supporting Cable] aerial cables, blowing into
+                      ducts, etc) and cable tensioning is completed. The installation is ready for
+                      self-inspection.</p>
+                      </td>
+                     </tr>
+                     <tr>
+                      <td width="22%" style='width:22.48%;border:solid black 1.0pt;border-top:none;
+                      padding:0cm 5.4pt 0cm 5.4pt'>
+                      <p class="normal-text">Path Construction Acceptance</p>
+                      </td>
+                      <td width="77%" style='width:77.52%;border-top:none;border-left:none;
+                      border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 5.4pt 0cm 5.4pt'>
+                      <p class="normal-text">Infrastructure has passed self-acceptance by the vendor.
+                      The acceptance process follows the testing guidelines in section 6, which
+                      includes the use of specialized equipment such as an optical time domain
+                      reflectometer (OTDR).</p>
+                      <p class="normal-text">The NaaS Operator has been notified and has executed
+                      Civil Engineering Acceptance and issued a Path Construction Acceptance if any
+                      item needs to be repaired.</p>
+                      <p class="normal-text">The NaaS Operator verifies the fiber infrastructure
+                      against a construction checklist. The <a href="fiber_acceptance_check" class="a_link">Fiber
+                      Construction Acceptance Checklist Template</a> provides a template for such
+                      acceptance form. This template is extracted from the construction technical
+                      specifications, since they are the requirements for the construction works.</p>
+                      <p class="normal-text">By review of the checklist items, the NaaS Operator
+                      provides a punchlist with the construction items that need amendment before
+                      issuing the final acceptance.</p>
+                      </td>
+                     </tr>
+                     <tr>
+                      <td width="22%" style='width:22.48%;border:solid black 1.0pt;border-top:none;
+                      padding:0cm 5.4pt 0cm 5.4pt'>
+                      <p class="normal-text">Ready for Operation </p>
+                      </td>
+                      <td width="77%" style='width:77.52%;border-top:none;border-left:none;
+                      border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 5.4pt 0cm 5.4pt'>
+                      <p class="normal-text">Optical fiber post-install
+                      testing has passed self-acceptance.</p>
+                      <p class="normal-text">Vendor has fixed all the
+                      items in the Punchlist.</p>
+                      <p class="normal-text">The NaaS Operator has been
+                      notified and final acceptance has been scheduled.</p>
+                      </td>
+                     </tr>
+                     <tr>
+                      <td width="22%" style='width:22.48%;border:solid black 1.0pt;border-top:none;
+                      padding:0cm 5.4pt 0cm 5.4pt'>
+                      <p class="normal-text">Path in Operation</p>
+                      </td>
+                      <td width="77%" style='width:77.52%;border-top:none;border-left:none;
+                      border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 5.4pt 0cm 5.4pt'>
+                      <p class="normal-text">All fiber fusions confirmed. Cable is connecting
+                      network endpoints, and ready for commercial operation.</p>
+                      <p class="normal-text">The NaaS Operator has accepted the fiber
+                      infrastructure.</p>
+                      </td>
+                     </tr>
+                    </table>
+                    <p align=center><i>Table 7. Fiber Construction Milestones</i></p>
+                    
+                    <h3 style='margin-left:36.0pt;text-indent:-36.0pt'><a></a>5.1.4 Project
+                    Closing</h3>
+                    
+                    <p class="normal-text">The
+                    Project Closing phase consists of executing the processes necessary to finalize
+                    all activities and formally complete the construction project and associated
+                    contractual obligations. These processes are summarized in the procedure below:</p>
+                    
+                    <ol class="normal-text ul-iconos" style='margin-top:0in' start=1 type=1>
+                        <li class="normal-text">Update and complete <b>documentation</b></li>
+                        <ul class="normal-text ul-iconos" style='margin-top:0in' start=1 type=1>
+                            <li style="font-size: 16px;">The vendor completes all project documentation before requesting preliminary acceptance. </li>
+                        </ul>
+                    
+                        <li class="normal-text">Obtain <b>Construction Acceptance</b> by the NaaS operator</li>
+                        <ul class="normal-text ul-iconos" style='margin-top:0in' start=1 type=1>
+                            <li style="font-size: 16px;">Upon delivery of the
+                            project documentation, including evidence of self-acceptance procedures being
+                            carried out by the vendor, the NaaS Operator will declare the project ready
+                            for acceptance, meaning it can be transferred to the final acceptance phase. </li>
+                    
+                            <li style="font-size: 16px;">
+                            Declaring the project
+                            ready for acceptance does not imply that it
+                            has been fully accepted; instead, it indicates that
+                            the post-install review can commence, which may lead to full or partial
+                            acceptance, or the rejection of a part or the complete infrastructure. See
+                            section 6 for details on testing and acceptance procedures.</li>
+                        </ul>
+                    
+                        <li class="normal-text">Conduct <b>Post-Project Review</b></li>
+                    
+                        <ul class="normal-text ul-iconos" style='margin-top:0in' start=1 type=1>
+                            <li style="font-size: 16px;">After completion of
+                            the project execution, the vendor and the NaaS operator shall discuss and
+                            document lessons learned during the construction works, which will be added to
+                            the project documentation and included in the planning analysis for future
+                            projects of similar type. </li>
+                        </ul>
+                    
+                        <li class="normal-text">Archive all relevant <b>Project Documents</b></li>
+                    
+                        <ul class="normal-text ul-iconos" style='margin-top:0in' start=1 type=1>
+                            <li style="font-size: 16px;"> All project information must remain stored for future reference at the NaaS information repository. </li>
+                        </ul>
+                    </ol>
+                    
+                    <br><h2><a class="titulo-h2 anchor-bum" name="item5-2">5.2 Quality
+                    Assurance</a></h2>
+                    
+                    <p class="normal-text">The
+                    construction vendor must establish quality management procedures in conjunction
+                    with the NaaS Operator to ensure that installation, equipment, material and
+                    workmanship conform to the standards required in the contract documents. The
+                    construction vendor must submit a <b>Quality Assurance Plan</b> as part of the
+                    construction project plan for review and approval by the NaaS Operator before
+                    the commencement of the agreement.</p>
+                    
+                    <p class="normal-text">The
+                    text below summarized the minimal content of the <b>Quality Assurance Plan</b>
+                    request to the construction vendor. The goal of this document is to obtain
+                    confirmation from the vendor, via experience and certifications, that the
+                    construction works can be executed in alignment with industry standards and
+                    applicable regulations. </p>
+                    
+                    <p class="normal-text">Below,
+                    generic Quality Assurance requirements that Constructions vendors must comply
+                    with are listed:</p>
+                    
+                    <ol class="normal-text ul-iconos" style='margin-top:0in' start=1 type=1>
+                        <li class="normal-text">The vendor must provide
+                        evidence on previous experience of a minimum of five (5) years in similar
+                        activities, including mentions to projects and customers who could be requested
+                        for references. </li>
+                        
+                        <li class="normal-text">The vendor technicians
+                        shall be fully trained and qualified in the installation and testing of the
+                        optical infrastructure. Evidence that the vendor is qualified to build and
+                        install the required fiber infrastructure shall be included in the project
+                        documentation.</li>
+                        
+                        <li class="normal-text">The vendor must have a
+                        safety plan and the technicians must hold safety certifications on all
+                        activities which involve a risk to their health and safety.</li>
+                        
+                        <li class="normal-text">The vendor shall accept
+                        complete responsibility for installation, certification, and initial support of
+                        the supplied optical equipment. The vendor must show proof to have the
+                        certifying manufacturers support on all these elements.</li>
+                        
+                        <li class="normal-text">The vendor shall be
+                        knowledgeable in local, regional, and national codes and regulations. All work
+                        shall comply with the latest revision of codes or regulations. When conflict exists
+                        between local or national codes or regulations, the most stringent codes or
+                        regulations shall apply.</li>
+                        
+                        <li class="normal-text">The vendor may provide
+                        proof of registration/certification or a narrative on the levels of
+                        registration/certification of their installers within the bid documents. The
+                        vendor shall provide proof of registration/certification for the final list of
+                        installers prior to the start of work.</li>
+                        
+                        <li class="normal-text">The vendor shall provide
+                        evidence of adherence to NECA 301-2016 on their fiber testing procedures.</li>
+                        
+                        <li class="normal-text">The vendor shall adhere
+                        to TIA 606 standard for the documentation and labeling of all network elements.</li>
+                    </ol>
+                    
+                    <h1><a class="titulo-h1 anchor-bum" name="item6">6
+                    Test and Acceptance</a></h1>
+                    
+                    <p class="normal-text">This
+                    section provides a high-level description of the <b>Acceptance Process</b> to
+                    be applied for the deployment of the fiber network. The main objective of the
+                    Acceptance Process is to provide a framework to be followed for the formal
+                    acceptance of the network elements. </p>
+                    
+                    <br><h2><a class="titulo-h2 anchor-bum" name="item6-1">6.1 General
+                    Acceptance Process </a></h2>
+                    
+                    <p class="normal-text">Practical
+                    fiber optics testing implies testing each cable for continuity before
+                    installation, to ensure there has been no damage to the cable during shipment
+                    and testing each segment as it is terminated. Finally, the entire cable run is
+                    tested for end-to-end loss. </p>
+                    
+                    <p class="normal-text">All
+                    testing activities fall under the responsibility of the construction vendor.
+                    The NaaS operator shall review the test results and may request specific testing
+                    on any network span to confirm the measurements taken by the vendor, as part of
+                    the final acceptance process. The <a class="a_link" href="fiber_acceptance_check">Fiber
+                    Construction Acceptance Checklist Template</a> for information on the
+                    acceptance process checklist. The contents of this checklist are described
+                    below:</p>
+                    
+                    <ul class="normal-text ul-iconos" style='margin-top:0in' start=1 type=1>
+                        <li>General Information</li>
+                    
+                        <ul class="normal-text ul-iconos" style='margin-top:0in' start=1 type=1>
+                            <li>Provide general information about the path
+                            under test, including location, access details, permissions, etc. </li>
+                        </ul>
+                    
+                        <li>Acceptance Checklist</li>
+                    
+                        <ul class="normal-text ul-iconos" style='margin-top:0in' start=1 type=1>
+                            <li style="font-size: 16px;">This tab lists the elements of the
+                            infrastructure which must be individually tested. The passing criteria is
+                            established by comparing the implementation to the technical specifications such
+                            as those specified in the <a href="fiber_constr_tech_templ" style="background-color: #FFF;color: #005777;"><i><b>Fiber
+                            Construction Technical Specifications Template</b></i></a>.</li>
+                    
+                            <li style="font-size: 16px;">Additional considerations agreed with the
+                            construction vendor during the RFQ and construction planning must be accounted for during acceptance.</li>
+                            
+                            <li style="font-size: 16px;">The acceptance checklist includes pre- and
+                            post-installation checks. For the pre-installation tests, the vendor must show
+                            evidence of such having already been performed. The NaaS Operator may optionally
+                            witness post-install tests. </li>
+                        </ul>
+                    </ul>
+                    
+                    <br><h2><a class="titulo-h2 anchor-bum" name="item6-2">6.2 Pre-Installation
+                    Tests</a></h2>
+                    
+                    <p class="normal-text">Construction
+                    vendors need to comply with industry standards in pre-testing the fiber prior
+                    to installation to ensure that the losses due to laying/blowing the fiber are
+                    within accepted tolerances. In particular:</p>
+                    
+                    <ul class="normal-text ul-iconos" style='margin-top:0in' start=1 type=1>
+                        <li>Fiber
+                        integrity via visual inspection</li>
+                        
+                        <li>Fiber Characterization to confirm compliance with specifications</li>
+                    </ul>
+                    
+                    <p class="normal-text">Fiber
+                    characterization can be defined as the field measurement and recording of fiber
+                    span parameters that affect signal transmission over all or selected operating
+                    wavelengths. </p>
+                    
+                    <p class="normal-text">Even
+                    though the characterization parameters are available from fiber cable
+                    specification sheets, during transport and after cable installation they can
+                    change significantly. Besides, cable spans can be made up of numerous (and potentially
+                    different) concatenated fiber types which makes it difficult to calculate the
+                    total span parameter from individual cable section specifications.</p>
+                    
+                    <p class="normal-text">Table
+                    8 helps in determining which key parameters need to be considered when
+                    deploying various transmission systems. Some of these parameters, such as Fiber
+                    Loss, Chromatic Dispersion (CD), Polarization Mode Dispersion (PMD) and Return
+                    Loss (RTL) can be measured on a single-ended configuration, without the need to
+                    inject traffic into the fiber with a receiver at the other side. Single-ended
+                    measurements are considered mandatory.</p>
+                    
+                    <p class="normal-text">Dual-ended
+                    measurements, such as Optical Signal to Noise Ratio (OSNR) and Bit Error Rate
+                    (BER) are regarded as optional and can be deferred until the fiber is put in
+                    service.</p><br>
+                    
+                    
+                    
+                    <div align=center>
+                    
+                    <table class=a6 border=1 cellspacing=0 cellpadding=0 width="100%"
+                     style='width:100.0%;border-collapse:collapse;border:none'>
+                     <tr style='height:4.05pt'>
+                      <td width="25%" style='width:25.76%;border:solid black 1.0pt;background:#1F3864;
+                      padding:0cm 5.4pt 0cm 5.4pt;height:4.05pt'>
+                      <p align=center style="color:#FFF">TX System</p>
+                      </td>
+                      <td width="9%" style='width:9.1%;border:solid black 1.0pt;border-left:none;
+                      background:#1F3864;padding:0cm 5.4pt 0cm 5.4pt;height:4.05pt'>
+                      <p align=center style="color:#FFF">Loss</p>
+                      </td>
+                      <td width="11%" style='width:11.68%;border:solid black 1.0pt;border-left:
+                      none;background:#1F3864;padding:0cm 5.4pt 0cm 5.4pt;height:4.05pt'>
+                      <p align=center style="color:#FFF">CD</p>
+                      </td>
+                      <td width="13%" style='width:13.36%;border:solid black 1.0pt;border-left:
+                      none;background:#1F3864;padding:0cm 5.4pt 0cm 5.4pt;height:4.05pt'>
+                      <p align=center style="color:#FFF">PMD</p>
+                      </td>
+                      <td width="13%" style='width:13.76%;border:solid black 1.0pt;border-left:
+                      none;background:#1F3864;padding:0cm 5.4pt 0cm 5.4pt;height:4.05pt'>
+                      <p align=center style="color:#FFF">RTL</p>
+                      </td>
+                      <td width="13%" style='width:13.18%;border:solid black 1.0pt;border-left:
+                      none;background:#1F3864;padding:0cm 5.4pt 0cm 5.4pt;height:4.05pt'>
+                      <p align=center style="color:#FFF">OSNR</p>
+                      <p align=center style="color:#FFF">(optional)</p>
+                      </td>
+                      <td width="13%" style='width:13.16%;border:solid black 1.0pt;border-left:
+                      none;background:#1F3864;padding:0cm 5.4pt 0cm 5.4pt;height:4.05pt'>
+                      <p align=center style="color:#FFF">BER</p>
+                      <p align=center style="color:#FFF">(optional)</p>
+                      </td>
+                     </tr>
+                     <tr style='height:6.85pt'>
+                      <td width="25%" style='width:25.76%;border:solid black 1.0pt;border-top:none;
+                      padding:0cm 5.4pt 0cm 5.4pt;height:6.85pt'>
+                      <p class="normal-text">&lt; 1Gbps</p>
+                      </td>
+                      <td width="9%" style='width:9.1%;border-top:none;border-left:none;border-bottom:
+                      solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;
+                      height:6.85pt'>
+                      <p class="normal-text">x</p>
+                      </td>
+                      <td width="11%" style='width:11.68%;border-top:none;border-left:none;
+                      border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;
+                      height:6.85pt'>
+                      <p class="normal-text">-</p>
+                      </td>
+                      <td width="13%" style='width:13.36%;border-top:none;border-left:none;
+                      border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;
+                      height:6.85pt'>
+                      <p class="normal-text">-</p>
+                      </td>
+                      <td width="13%" style='width:13.76%;border-top:none;border-left:none;
+                      border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;
+                      height:6.85pt'>
+                      <p class="normal-text">laser</p>
+                      </td>
+                      <td width="13%" style='width:13.18%;border-top:none;border-left:none;
+                      border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;
+                      height:6.85pt'>
+                      <p class="normal-text">-</p>
+                      </td>
+                      <td width="13%" style='width:13.16%;border-top:none;border-left:none;
+                      border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;
+                      height:6.85pt'>
+                      <p class="normal-text">x</p>
+                      </td>
+                     </tr>
+                     <tr style='height:3.55pt'>
+                      <td width="25%" style='width:25.76%;border:solid black 1.0pt;border-top:none;
+                      padding:0cm 5.4pt 0cm 5.4pt;height:3.55pt'>
+                      <p class="normal-text">1  5 Gbps</p>
+                      </td>
+                      <td width="9%" style='width:9.1%;border-top:none;border-left:none;border-bottom:
+                      solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;
+                      height:3.55pt'>
+                      <p class="normal-text">x</p>
+                      </td>
+                      <td width="11%" style='width:11.68%;border-top:none;border-left:none;
+                      border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;
+                      height:3.55pt'>
+                      <p class="normal-text">-</p>
+                      </td>
+                      <td width="13%" style='width:13.36%;border-top:none;border-left:none;
+                      border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;
+                      height:3.55pt'>
+                      <p class="normal-text">-</p>
+                      </td>
+                      <td width="13%" style='width:13.76%;border-top:none;border-left:none;
+                      border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;
+                      height:3.55pt'>
+                      <p class="normal-text">x</p>
+                      </td>
+                      <td width="13%" style='width:13.18%;border-top:none;border-left:none;
+                      border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;
+                      height:3.55pt'>
+                      <p class="normal-text">-</p>
+                      </td>
+                      <td width="13%" style='width:13.16%;border-top:none;border-left:none;
+                      border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;
+                      height:3.55pt'>
+                      <p class="normal-text">x</p>
+                      </td>
+                     </tr>
+                     <tr style='height:3.55pt'>
+                      <td width="25%" style='width:25.76%;border:solid black 1.0pt;border-top:none;
+                      padding:0cm 5.4pt 0cm 5.4pt;height:3.55pt'>
+                      <p class="normal-text">&gt; 10Gbps</p>
+                      </td>
+                      <td width="9%" style='width:9.1%;border-top:none;border-left:none;border-bottom:
+                      solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;
+                      height:3.55pt'>
+                      <p class="normal-text">x</p>
+                      </td>
+                      <td width="11%" style='width:11.68%;border-top:none;border-left:none;
+                      border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;
+                      height:3.55pt'>
+                      <p class="normal-text">x</p>
+                      </td>
+                      <td width="13%" style='width:13.36%;border-top:none;border-left:none;
+                      border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;
+                      height:3.55pt'>
+                      <p class="normal-text">x</p>
+                      </td>
+                      <td width="13%" style='width:13.76%;border-top:none;border-left:none;
+                      border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;
+                      height:3.55pt'>
+                      <p class="normal-text">x</p>
+                      </td>
+                      <td width="13%" style='width:13.18%;border-top:none;border-left:none;
+                      border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;
+                      height:3.55pt'>
+                      <p class="normal-text">-</p>
+                      </td>
+                      <td width="13%" style='width:13.16%;border-top:none;border-left:none;
+                      border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;
+                      height:3.55pt'>
+                      <p class="normal-text">x</p>
+                      </td>
+                     </tr>
+                     <tr style='height:3.55pt'>
+                      <td width="25%" style='width:25.76%;border:solid black 1.0pt;border-top:none;
+                      padding:0cm 5.4pt 0cm 5.4pt;height:3.55pt'>
+                      <p class="normal-text">WDM Passive</p>
+                      </td>
+                      <td width="9%" style='width:9.1%;border-top:none;border-left:none;border-bottom:
+                      solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;
+                      height:3.55pt'>
+                      <p class="normal-text">x</p>
+                      </td>
+                      <td width="11%" style='width:11.68%;border-top:none;border-left:none;
+                      border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;
+                      height:3.55pt'>
+                      <p class="normal-text">&gt; 10G</p>
+                      </td>
+                      <td width="13%" style='width:13.36%;border-top:none;border-left:none;
+                      border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;
+                      height:3.55pt'>
+                      <p class="normal-text">&gt; 10G</p>
+                      </td>
+                      <td width="13%" style='width:13.76%;border-top:none;border-left:none;
+                      border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;
+                      height:3.55pt'>
+                      <p class="normal-text">x</p>
+                      </td>
+                      <td width="13%" style='width:13.18%;border-top:none;border-left:none;
+                      border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;
+                      height:3.55pt'>
+                      <p class="normal-text">-</p>
+                      </td>
+                      <td width="13%" style='width:13.16%;border-top:none;border-left:none;
+                      border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;
+                      height:3.55pt'>
+                      <p class="normal-text">x</p>
+                      </td>
+                     </tr>
+                     <tr style='height:3.55pt'>
+                      <td width="25%" style='width:25.76%;border:solid black 1.0pt;border-top:none;
+                      padding:0cm 5.4pt 0cm 5.4pt;height:3.55pt'>
+                      <p class="normal-text">Overall Span Quality</p>
+                      </td>
+                      <td width="9%" style='width:9.1%;border-top:none;border-left:none;border-bottom:
+                      solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;
+                      height:3.55pt'>
+                      <p class="normal-text">x</p>
+                      </td>
+                      <td width="11%" style='width:11.68%;border-top:none;border-left:none;
+                      border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;
+                      height:3.55pt'>
+                      <p class="normal-text">x</p>
+                      </td>
+                      <td width="13%" style='width:13.36%;border-top:none;border-left:none;
+                      border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;
+                      height:3.55pt'>
+                      <p class="normal-text">x</p>
+                      </td>
+                      <td width="13%" style='width:13.76%;border-top:none;border-left:none;
+                      border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;
+                      height:3.55pt'>
+                      <p class="normal-text">x</p>
+                      </td>
+                      <td width="13%" style='width:13.18%;border-top:none;border-left:none;
+                      border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;
+                      height:3.55pt'>
+                      <p class="normal-text">x</p>
+                      </td>
+                      <td width="13%" style='width:13.16%;border-top:none;border-left:none;
+                      border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;
+                      height:3.55pt'>
+                      <p class="normal-text">x</p>
+                      </td>
+                     </tr>
+                    </table>
+                    
+                    <p align=center><i>Table
+                        8. Recommended parameters for Fiber Characterization</i></p>
+                    </div><br>
+                    
+                    <p class="normal-text">Fiber characterization is
+                    performed before and after new fiber cable link construction following the
+                    process and considerations described below:</p>
+                    
+                    <ul class="normal-text ul-iconos" style='margin-top:0in' start=1 type=1>
+                        <li>Testing
+                    is done per standard test procedure TIA OFSTP-7 for single mode fiber. </li>
+                    
+                        <ul class="normal-text ul-iconos" style='margin-top:0in' start=1 type=1>
+                            <li style="font-size: 16px;">Testing is usually done
+                            at 1300 nm, but 1550 or 1625 nm is sometimes required also, especially for long
+                            system runs and WDM systems. </li>
+                    
+                            <li style="font-size: 16px;">The 1550 nm testing will
+                            show that the cable can support wavelength division multiplexing (WDM) at 1300
+                            and 1550 nm for future service expansion. </li>
+                    
+                            <li style="font-size: 16px;">Additionally, 1550 and
+                            1625 nm testing can show micro-bending losses introduced during installation
+                            that will not be obvious at 1300 nm, since the fibers are much more sensitive
+                            to bending losses at the longer wavelengths.</li>
+                        </ul>
+                    </ul>
+                
+                    <br><h2><a class="titulo-h2 anchor-bum" name="item6-3">6.3 Post-Installation
+                    Tests</a></h2>
+                    
+                    <p class="normal-text">The
+                    construction vendor must verify each fiber span after install, and the complete
+                    end to end installation when finalized. For each infrastructure span, the
+                    General Acceptance Process will consider the following components:</p>
+                    
+                    <ol class="normal-text ul-iconos" style='margin-top:0in' start=1 type=1>
+                        <li class="normal-text">Define Inspect team</li>
+                    
+                        <li class="normal-text">Verification of design
+                        compliance with the technical specifications described on this document and
+                        adherence to applicable national and international standards.</li>
+                        
+                        <li class="normal-text">On-site verification of
+                        infrastructure, hardware and connectivity according to the technical
+                        specifications.</li>
+                        
+                        <li class="normal-text">Review expected link budget
+                        on cable plant, transmission window, transmitter and receiver characteristics.
+                        If cable plant end to end loss exceeds total allowable loss, the best solution
+                        is to retest each span separately, checking suspect cables each way, since the
+                        most likely problem is a single bad connector or splice. </li>
+                    
+                        <ul class="normal-text ul-iconos" style='margin-top:0in' start=1 type=1>
+                            <li style="font-size: 16px;">If the cable plant is
+                            long enough, an Optical Time Domain Reflectometer (OTDR) may be used to find
+                            the problem. This tool uses optical pulses and the echoes they generate in the
+                            fiber to analyze the physical integrity of the fiber cable.</li>
+                            
+                            <li style="font-size: 16px;">Bad connectors must then
+                            be repolished or replaced to get the loss within acceptable ranges.</li>
+                        </ul>
+                    
+                        <li class="normal-text">Set up and test
+                        communications system. Reference to NECA 301-2016 for fiber testing procedures.
+                        The on-the-field measurable, single-ended fiber span parameters are:</li>
+                    
+                        <ul class="normal-text ul-iconos" style='margin-top:0in' start=1 type=1>
+                            <li style="font-size: 16px;">Span loss (includes
+                            connector loss, splice loss, other span losses),</li>
+                        
+                            <li style="font-size: 16px;">Chromatic dispersion (CD)</li>
+                            
+                            <li style="font-size: 16px;">Polarization mode
+                            dispersion (PMD)</li>
+                            
+                            <li style="font-size: 16px;">Return loss (RTL).</li>
+                            
+                            <li style="font-size: 16px;">Other measurements
+                            requiring optical equipment at both ends of the fiber link, such as optical
+                            signal to noise ratio (OSNR) and bit error rate (BER) will be considered
+                            optional measurements and not required for the acceptance of the
+                            infrastructure. </li>
+                        </ul>
+                    
+                        <li class="normal-text">Update and complete
+                        documentation </li>
+                        
+                        <li class="normal-text">Update and complete
+                        restoration plan. Apply fixes as required (e.g. replace connectors, rebuild
+                        splices).</li>
+                        
+                        <li class="normal-text">Store restoration plan,
+                        documentation, components, etc.</li>
+                    </ol>
+                    
+                    <p class="normal-text">The
+                    Naas Operator must establish a self-acceptance regime with the construction
+                    vendor. Under this model, the construction vendor will perform the testing for
+                    each span and present the results to the NaaS Operator. The contractor will
+                    provide an acceptance plan timeline before and after the acceptance events,
+                    which will include specific reports for elements which have failed tests and
+                    the corrective actions mandated to amend the detected defects. A representative
+                    from the NaaS Operator may be present during testing, but this won't be
+                    mandatory. </p>
+                    
+                    <p class="normal-text">The
+                    construction vendor must provide all equipment, technicians, supplies and any
+                    other items required for conducting the acceptance tests. The contractor is
+                    also responsible to guarantee that the required scenario for the acceptance
+                    tests is available and operative.</p>
+                    
+                    <br><h2><a class="titulo-h2 anchor-bum" name="item6-4">6.4 Definition
+                    of acceptance requirements</a></h2>
+                    
+                    <p class="normal-text">This
+                    section describes the testing procedures that shall be carried out by the
+                    construction vendor prior to the NaaS Operator accepting the infrastructure. As
+                    stated above, the <b>Construction Acceptance</b> process is based on the self-acceptance
+                    of the infrastructure components by the construction vendor before presenting
+                    to the NaaS operator for final acceptance. The procedures described below will
+                    be discussed and agreed with the construction vendor, so that acceptance test
+                    protocols are developed and applied each time a network section is completed.</p>
+                    
+                    <ol class="normal-text ul-iconos" style='margin-top:0in' start=1 type=1>
+                        <li class="normal-text">For each network element within the scope of the
+                         project, the contractor will provide a detailed acceptance test protocol
+                         (ATP) according to the <a href='fiber_acceptance_check' class="a_link">Fiber
+                         Construction Acceptance Checklist Template</a>. The vendor may suggest
+                         their own, improved version of the ATP to the NaaS Operator for approval.</li>
+                
+                         <li class="normal-text">Both the installation
+                        details and its component description must be included in the acceptance
+                        documentation as part of the Bill of Materials (BOM). The minimal information
+                        required for acceptance will include, but will not be limited to, the following
+                        items:</li> 
+                    
+                    
+                        <ul class="normal-text ul-iconos" style='margin-top:0in' start=1 type=1>
+                            <li style="font-size: 16px;">Network Element ID.</li>
+                        
+                            <li style="font-size: 16px;">
+                            Location data: situation maps, coordinates, access details, property information</li>
+                            
+                            <li style="font-size: 16px;">
+                            Installation drawings, including floor and elevation plans when applicable.</li>
+                            
+                            <li style="font-size: 16px;">
+                            Digital photos of the installation.</li>
+                            
+                            <li style="font-size: 16px;">
+                            Network element labeling information. </li>
+                        </ul>
+                    </ol>
+                    
+                    <br><h2><a class="titulo-h2 anchor-bum" name="item6-5">6.5 Documentation
+                    and Inventory</a></h2>
+                    
+                    <p class="normal-text">The
+                    Project documentation, including the as-built drawings, element specifications,
+                    and acceptance test protocols (ATP) shall be stored in a cloud repository,
+                    according to a folder structure which facilitates document classification and
+                    query. The use of commercial or opensource Document Management System or
+                    Enterprise Content Management (e.g. Google Drive, Microsoft OneDrive, and
+                    Alfresco ECM) is highly recommended, as standalone or in coordination with a
+                    GIS inventory.</p>
+                    
+                    <p class="normal-text">The
+                    information made available for storage and inventory shall be according to the
+                    following considerations:</p>
+                    
+                    <ul class="normal-text ul-iconos" style='margin-top:0in' start=1 type=1>
+                        <li>The
+                        contractor is responsible for providing all required documentation needed
+                        during the acceptance process of each network component.</li>
+                    
+                        <li>All network related documentation shall accomplish with the TIA 606 standard.</li>
+                    
+                        <li>All
+                        network elements shall be labeled in the field and in the as-built drawings and
+                        diagrams.</li>
+                        
+                        <li>
+                        All
+                        documentation will be made available to the NaaS Operator document repository
+                        and GIS system.</li>
+                        
+                        <li>
+                        The
+                        project documentation shall include, as a minimum:</li>
+                    
+                        <ul class="normal-text ul-iconos" style='margin-top:0in' start=1 type=1>
+                            <li style="font-size: 16px;">As-built drawings</li>
+                            <li style="font-size: 16px;">Infrastructure specifications</li>
+                            <li style="font-size: 16px;">Testing results</li>
+                        </ul>
+                    </ul>
+                    
+                    <br><h2><a class="titulo-h2 anchor-bum" name="item6-6">6.6 Network
+                    Infrastructure Operation and Maintenance Documentation </a></h2>
+                    
+                    <p class="normal-text">Once
+                    the infrastructure is completely accepted and the documentation delivered to
+                    the NaaS Operator, the Network Infrastructure Operation and Maintenance
+                    Guidelines must be established for commercial operation.</p>
+                    
+                    <p class="normal-text">The
+                    Operations and Maintenance documentation must include, at least, the following
+                    items: </p>
+                    
+                    <ol class="normal-text ul-iconos" style='margin-top:0in' start=1 type=1>
+                        <li class="normal-text">Measurements results,
+                        established as reference for future tests</li>
+                        
+                        <li class="normal-text">Fiber cable and duct
+                        records </li>
+                        
+                        <li class="normal-text">Marking of key
+                        infrastructure items </li>
+                        
+                        <li class="normal-text">Complete documentation </li>
+                        
+                        <li class="normal-text">Identification of key
+                        infrastructure elements subject to maintenance operations </li>
+                        
+                        <li class="normal-text">Minor maintenance list </li>
+                        
+                        <li class="normal-text">Plan for catastrophic
+                        network failure from external factors (accidental digging of cable and duct) </li>
+                        
+                        <li class="normal-text">Spare infrastructure
+                        items to be kept on hand in case of above cables and ducting </li>
+                        
+                        <li class="normal-text">Location and availability
+                        of network records for above </li>
+                        
+                        <ol class="normal-text ul-iconos" style='margin-top:0in' start=3 type=1>
+                            <li class="nostyle">9.1.
+                        Provision
+                        of maintenance agreement</li>
+                        </ol>
+                    </ol>
+
+            </div>
+
+            <a href="#" class="link-next" onclick="switchContent('#fm')"> &#8656; Previous</a>
+            <br>
+            <a href="url" align="center"></a>
+            <div class="right">
+                <a ></a>
+                <a href="#">.</a>
+            </div>
+
+        </div>
+          
+        <nav id="navbar-example3" class="navbar navbar-light bg-light position-fixed">
+         <nav class="nav nav-pills flex-column">
+         <a id="e2e_link-1" class="nav-link bullet-2-link" onclick="onClickActive(event)" href="#item5"><strong>5. Vendor Management</strong></a>
+         <a id="e2e_link-2" class="nav-link bullet-2-link" onclick="onClickActive(event)" href="#item5-1"><em>5.1 Contract Management</em></a>
+         <a id="e2e_link-3" class="nav-link bullet-2-link" onclick="onClickActive(event)" href="#item5-2"><em>5.2 Performance Management</em></a>
+         <a id="e2e_link-4"class="nav-link bullet-2-link" onclick="onClickActive(event)" href="#item5-3"><em>5.3 Invoice Management</em></a>
+         <a id="e2e_link-5"class="nav-link bullet-2-link" onclick="onClickActive(event)" href="#item5-4"><em>5.4 Risk Managementn</em></a>
+         <a id="e2e_link-6" class="nav-link bullet-2-link" onclick="onClickActive(event)" href="#item6"><strong>6. Procurement Management Software</strong></a>
+         <a id="e2e_link-7" class="nav-link bullet-2-link" onclick="onClickActive(event)" href="#item6-1"><em>6.1 Benefits of Procurement Software</em></a>
+         <a id="e2e_link-8" class="nav-link bullet-2-link" onclick="onClickActive(event)" href="#item6-2"><em>6.2 Common Use Cases for Procurement tools</em></a>
+         <a id="e2e_link-9" class="nav-link bullet-2-link" onclick="onClickActive(event)" href="#item6-3"><em>6.3 Considerations when selecting procurement software</em></a>
+         <a id="e2e_link-10" class="nav-link bullet-2-link" onclick="onClickActive(event)" href="#item6-4"><em>6.4 Procurement Management Software Examples</em></a>
+         </nav>
+     </nav>
+        </section>
+    
+    </div>
+
+        <!-- jQuery CDN border-left: 2px solid gray;-->
+         <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+         <!-- Bootstrap Js CDN -->
+         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+         <script type="text/javascript">
+             /*$(document).ready(function () {
+                 $('#sidebarCollapse').on('click', function () {
+                     $('#sidebar').toggleClass('active');
+                 });
+             });*/
+
+             let tab;
+             //$("#hld").show();
+             switchContent('#hld')
+
+             function switchContent(selector){
+                $("#hld").hide();
+                $("#fm").hide();
+                $("#e2e").hide();
+                $(selector).show();
+                tab = selector;
+            }
+
+             const onClickActive = (event) => {
+                
+                 var anchor = event.target;
+								 clearActiveLinks();
+                 anchor.classList.add('link-active');
+             }
+
+             const clearActiveLinks = () =>{
+                const activeLink = document.getElementsByClassName('link-active')[0];
+								//console.log(activeLink);
+								if(activeLink){
+									activeLink.classList.remove('link-active');
+								}
+             }
+						//227, 1633, 5616
+                        
+                        console.log(tab);
+						 const updateSection = () =>{
+							const scrollTop = window.pageYOffset || (document.documentElement || document.body.parentNode || document.body).scrollTop;
+							//console.log(scrollTop);
+                            console.log(tab);
+							let link;
+
+							clearActiveLinks();
+
+                            if(tab == '#hld'){
+                                if(scrollTop >= 0 && scrollTop <= 300){
+								    document.getElementById("link-1").classList.add('link-active');
+                                }
+                                else if(scrollTop >= 301 && scrollTop <= 650){
+                                    document.getElementById("link-2").classList.add('link-active');
+                                }else if(scrollTop >= 651 && scrollTop <= 2250){
+                                    document.getElementById("link-3").classList.add('link-active'); 
+                                }else if(scrollTop >= 2251 && scrollTop <= 2800){
+                                    document.getElementById("link-4").classList.add('link-active');
+                                    
+                                }else if(scrollTop >= 2801 ){
+                                    document.getElementById("link-5").classList.add('link-active');
+                                    
+                                }
+                            } else if(tab == '#fm'){
+                                if(scrollTop >= 0 && scrollTop <= 750){
+								    document.getElementById("fm_link-1").classList.add('link-active');
+                                }else if(scrollTop >= 751 && scrollTop <= 1000){
+                                    document.getElementById("fm_link-2").classList.add('link-active');
+
+                                }else if(scrollTop >= 1001 && scrollTop <= 1950){
+                                    document.getElementById("fm_link-3").classList.add('link-active');
+
+                                }else if(scrollTop >= 1951 && scrollTop <= 3900){
+                                    document.getElementById("fm_link-4").classList.add('link-active');
+                                    
+                                }else if(scrollTop >= 3901 && scrollTop <= 5200){
+                                    document.getElementById("fm_link-5").classList.add('link-active');
+
+                                }else if(scrollTop >= 5201 && scrollTop <= 5850){
+                                    document.getElementById("fm_link-6").classList.add('link-active');
+
+                                }else if(scrollTop >= 5851 && scrollTop <= 6350){
+                                    document.getElementById("fm_link-7").classList.add('link-active');
+
+                                }else if(scrollTop >= 6351 && scrollTop <= 6950){
+                                    document.getElementById("fm_link-8").classList.add('link-active');
+
+                                }else if(scrollTop >= 6951 && scrollTop <= 7100){
+                                    document.getElementById("fm_link-9").classList.add('link-active');
+
+                                }else if(scrollTop >= 7101 ){
+                                    document.getElementById("fm_link-10").classList.add('link-active');
+                                    
+                                }
+
+                            } else if(tab == '#e2e'){
+                                if(scrollTop >= 0 && scrollTop <= 450){
+								    document.getElementById("e2e_link-1").classList.add('link-active');
+                                }
+                                else if(scrollTop >= 451 && scrollTop <= 2400){
+                                    document.getElementById("e2e_link-2").classList.add('link-active');
+
+                                }else if(scrollTop >= 2401 && scrollTop <= 3500){
+                                    document.getElementById("e2e_link-3").classList.add('link-active');
+                                    
+                                }else if(scrollTop >= 3501 && scrollTop <= 4500 ){
+                                    document.getElementById("e2e_link-4").classList.add('link-active');
+                                    
+                                }if(scrollTop >= 4501 && scrollTop <= 5500){
+								    document.getElementById("e2e_link-5").classList.add('link-active');
+                                }
+                                else if(scrollTop >= 5501 && scrollTop <= 5700){
+                                    document.getElementById("e2e_link-6").classList.add('link-active');
+
+                                }else if(scrollTop >= 5701 && scrollTop <= 6100){
+                                    document.getElementById("e2e_link-7").classList.add('link-active');
+                                    
+                                }else if(scrollTop >= 6101 && scrollTop <= 6500 ){
+                                    document.getElementById("e2e_link-8").classList.add('link-active');
+                                    
+                                }else if(scrollTop >= 6501 && scrollTop <= 7000 ){
+                                    document.getElementById("e2e_link-9").classList.add('link-active');
+                                    
+                                }else if(scrollTop >= 7001 ){
+                                    document.getElementById("e2e_link-10").classList.add('link-active');
+                                    
+                                }
+
+                            }
+
+						 }
+
+         </script>
+    </body>
+</html>
