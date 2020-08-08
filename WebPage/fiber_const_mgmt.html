@@ -22,8 +22,8 @@
             <li class="li_superior"><a class="active" href="Home.html">Home</a></li>
             <li class="li_superior"><a href="comming_soon/comming-soon.html">About</a></li>
             
-            <li class="topnav-right"><a href="#" onclick="switchContent('#e2e')">Management</a></li>
-            <li class="topnav-right"><a href="#" onclick="switchContent('#fm')">Sourcing</a></li>
+            <li class="topnav-right"><a href="#" onclick="switchContent('#e2e')">Project Mmgmt</a></li>
+            <li class="topnav-right"><a href="#" onclick="switchContent('#fm')">Design & Requirements</a></li>
             <li class="topnav-right"><a href="#" onclick="switchContent('#hld')" >Introduction</a></li>
         </ul>
     </div>
@@ -69,7 +69,7 @@
                                     <li><a href="#transportMenu" data-toggle="collapse" style="margin-left:2em">&bull; Transport</a></li>
                                         <ul class="list-unstyled collapse" id="transportMenu">
                                             <li><a href="tx_hld_module.html" style="margin-left:4em;">&#9657; Tx Network HLD</a></li>
-<li><a href="tx_lld_module.html" style="margin-left:4em;">&#9657; Tx Network LLD</a></li>
+                                            <li><a href="tx_lld_module.html" style="margin-left:4em;">&#9657; Tx Network LLD</a></li>
                                         </ul>
             
                                     <li><a href="#transportMenu2" data-toggle="collapse" style="margin-left:2em">&bull; RAN</a></li>
@@ -87,11 +87,12 @@
                                 <a href="#deployment_m" data-toggle="collapse" aria-expanded="false">
                                     &#187 Deployment
                                 </a>
-                                <ul class="list-unstyled collapse" id="deployment_m">
+                                <ul class="list-unstyled" id="deployment_m">
                                     <li><a href="deployment_mgmt.html"style="margin-left:2em">&bull; Deployment Mgmt</a></li>
                                     <li><a href="#"style="margin-left:2em">&bull; Site Survey</a></li>
                                     <li><a href="#"style="margin-left:2em">&bull; Construction</a></li>
                                     <li><a href="#"style="margin-left:2em">&bull; I & C</a></li>
+                                    <li><a href="fiber_const_mgmt.html"style="margin-left:2em;color: black;"><strong>&bull; Fiber Construction</strong></a></li>
                                 </ul>
                             </li>
                             <li>
@@ -114,9 +115,9 @@
                                 <a href="#supply" data-toggle="collapse" aria-expanded="false">
                                     &#187 Supply Chain Management
                                 </a>
-                                <ul class="list-unstyled " id="supply">
+                                <ul class="list-unstyled collapse" id="supply">
                                     <li><a href=""style="margin-left:2em">&bull; RFx Process</a></li>
-                                    <li><a href="proc_pro_vendor_mgmt.html" style="margin-left:2em;color: black;"><strong>&bull; Procurement Proc. & Vendor Mgmt.</strong></a></li>
+                                    <li><a href="proc_pro_vendor_mgmt.html" style="margin-left:2em;">&bull; Procurement Proc. & Vendor Mgmt.</a></li>
                                     <li><a href="" style="margin-left:2em"> &bull; Logistic & Warehousing</a></li>
                                 </ul>
                             </li>
@@ -1561,10 +1562,10 @@
                 <a id="fm_link-1" class="nav-link bullet-2-link" onclick="onClickActive(event)" href="#item3"><strong>3. DESIGN AND REQUIREMENTS</strong></a>
                 <a id="fm_link-2" class="nav-link bullet-2-link" onclick="onClickActive(event)" href="#item3-1"><em>3.1 Deployment Scenarios</em></a>
                 <a id="fm_link-3" class="nav-link bullet-2-link" onclick="onClickActive(event)" href="#item3-2"><em>3.2 Construction Planning Process</em></a>
-                <a id="fm_link-6" class="nav-link bullet-2-link" onclick="onClickActive(event)" href="#item4"><strong>4. VENDOR EVALUATION AND SELECTION</strong></a>
-                <a id="fm_link-7" class="nav-link bullet-2-link" onclick="onClickActive(event)" href="#item4-1"><em>4.1	Vendor Pre-qualification</em></a>
-                <a id="fm_link-8" class="nav-link bullet-2-link" onclick="onClickActive(event)" href="#item4-2"><em>4.2	RFx Document</em></a>
-                <a id="fm_link-9" class="nav-link bullet-2-link" onclick="onClickActive(event)" href="#item4-3"><em>4.3	RFx Evaluation Process</em></a>
+                <a id="fm_link-4" class="nav-link bullet-2-link" onclick="onClickActive(event)" href="#item4"><strong>4. VENDOR EVALUATION AND SELECTION</strong></a>
+                <a id="fm_link-5" class="nav-link bullet-2-link" onclick="onClickActive(event)" href="#item4-1"><em>4.1	Vendor Pre-qualification</em></a>
+                <a id="fm_link-6" class="nav-link bullet-2-link" onclick="onClickActive(event)" href="#item4-2"><em>4.2	RFx Document</em></a>
+                <a id="fm_link-7" class="nav-link bullet-2-link" onclick="onClickActive(event)" href="#item4-3"><em>4.3	RFx Evaluation Process</em></a>
 
                 </nav>
             </nav>
@@ -2657,16 +2658,16 @@
           
         <nav id="navbar-example3" class="navbar navbar-light bg-light position-fixed">
          <nav class="nav nav-pills flex-column">
-         <a id="e2e_link-1" class="nav-link bullet-2-link" onclick="onClickActive(event)" href="#item5"><strong>5. Vendor Management</strong></a>
-         <a id="e2e_link-2" class="nav-link bullet-2-link" onclick="onClickActive(event)" href="#item5-1"><em>5.1 Contract Management</em></a>
-         <a id="e2e_link-3" class="nav-link bullet-2-link" onclick="onClickActive(event)" href="#item5-2"><em>5.2 Performance Management</em></a>
-         <a id="e2e_link-4"class="nav-link bullet-2-link" onclick="onClickActive(event)" href="#item5-3"><em>5.3 Invoice Management</em></a>
-         <a id="e2e_link-5"class="nav-link bullet-2-link" onclick="onClickActive(event)" href="#item5-4"><em>5.4 Risk Managementn</em></a>
-         <a id="e2e_link-6" class="nav-link bullet-2-link" onclick="onClickActive(event)" href="#item6"><strong>6. Procurement Management Software</strong></a>
-         <a id="e2e_link-7" class="nav-link bullet-2-link" onclick="onClickActive(event)" href="#item6-1"><em>6.1 Benefits of Procurement Software</em></a>
-         <a id="e2e_link-8" class="nav-link bullet-2-link" onclick="onClickActive(event)" href="#item6-2"><em>6.2 Common Use Cases for Procurement tools</em></a>
-         <a id="e2e_link-9" class="nav-link bullet-2-link" onclick="onClickActive(event)" href="#item6-3"><em>6.3 Considerations when selecting procurement software</em></a>
-         <a id="e2e_link-10" class="nav-link bullet-2-link" onclick="onClickActive(event)" href="#item6-4"><em>6.4 Procurement Management Software Examples</em></a>
+         <a id="e2e_link-1" class="nav-link bullet-2-link" onclick="onClickActive(event)" href="#item5"><strong>5. PROJECT MANAGEMENT</strong></a>
+         <a id="e2e_link-2" class="nav-link bullet-2-link" onclick="onClickActive(event)" href="#item5-1"><em>5.1 Vendor Management</em></a>
+         <a id="e2e_link-3" class="nav-link bullet-2-link" onclick="onClickActive(event)" href="#item5-2"><em>5.2 Quality Assurance</em></a>
+         <a id="e2e_link-4" class="nav-link bullet-2-link" onclick="onClickActive(event)" href="#item6"><strong>6. TEST AND ACCEPTANCE</strong></a>
+         <a id="e2e_link-5" class="nav-link bullet-2-link" onclick="onClickActive(event)" href="#item6-1"><em>6.1 General Acceptance Process</em></a>
+         <a id="e2e_link-6" class="nav-link bullet-2-link" onclick="onClickActive(event)" href="#item6-2"><em>6.2 Pre-Installation Tests</em></a>
+         <a id="e2e_link-7" class="nav-link bullet-2-link" onclick="onClickActive(event)" href="#item6-3"><em>6.3 Post-Installation Tests</em></a>
+         <a id="e2e_link-8" class="nav-link bullet-2-link" onclick="onClickActive(event)" href="#item6-4"><em>6.4 Definition of acceptance requirements</em></a>
+         <a id="e2e_link-9" class="nav-link bullet-2-link" onclick="onClickActive(event)" href="#item6-5"><em>6.5 Documentation and Inventory</em></a>
+         <a id="e2e_link-10" class="nav-link bullet-2-link" onclick="onClickActive(event)" href="#item6-6"><em>6.6 Network Infrastructure Operation and Maintenance Documentation</em></a>
          </nav>
      </nav>
         </section>
@@ -2728,76 +2729,79 @@
                                 }
                                 else if(scrollTop >= 301 && scrollTop <= 650){
                                     document.getElementById("link-2").classList.add('link-active');
-                                }else if(scrollTop >= 651 && scrollTop <= 2250){
+                                }else if(scrollTop >= 651 && scrollTop <= 1800){
                                     document.getElementById("link-3").classList.add('link-active'); 
-                                }else if(scrollTop >= 2251 && scrollTop <= 2800){
+                                }else if(scrollTop >= 1801 && scrollTop <= 2100){
                                     document.getElementById("link-4").classList.add('link-active');
                                     
-                                }else if(scrollTop >= 2801 ){
+                                }else if(scrollTop >= 2101 && scrollTop <= 2300){
                                     document.getElementById("link-5").classList.add('link-active');
+                                    
+                                }else if(scrollTop >= 2301 && scrollTop <= 2500){
+                                    document.getElementById("link-6").classList.add('link-active');
+                                    
+                                }else if(scrollTop >= 2501 && scrollTop <= 2600){
+                                    document.getElementById("link-7").classList.add('link-active');
+                                    
+                                }else if(scrollTop >= 2601 ){
+                                    document.getElementById("link-8").classList.add('link-active');
                                     
                                 }
                             } else if(tab == '#fm'){
-                                if(scrollTop >= 0 && scrollTop <= 750){
+                                if(scrollTop >= 0 && scrollTop <= 350){
 								    document.getElementById("fm_link-1").classList.add('link-active');
-                                }else if(scrollTop >= 751 && scrollTop <= 1000){
+                                }else if(scrollTop >= 351 && scrollTop <= 4100){
                                     document.getElementById("fm_link-2").classList.add('link-active');
 
-                                }else if(scrollTop >= 1001 && scrollTop <= 1950){
+                                }else if(scrollTop >= 4101 && scrollTop <= 10100){
                                     document.getElementById("fm_link-3").classList.add('link-active');
 
-                                }else if(scrollTop >= 1951 && scrollTop <= 3900){
+                                }else if(scrollTop >= 10101 && scrollTop <= 11000){
                                     document.getElementById("fm_link-4").classList.add('link-active');
                                     
-                                }else if(scrollTop >= 3901 && scrollTop <= 5200){
+                                }else if(scrollTop >= 11001 && scrollTop <= 12500){
                                     document.getElementById("fm_link-5").classList.add('link-active');
 
-                                }else if(scrollTop >= 5201 && scrollTop <= 5850){
+                                }else if(scrollTop >= 12501 && scrollTop <= 12600){
                                     document.getElementById("fm_link-6").classList.add('link-active');
 
-                                }else if(scrollTop >= 5851 && scrollTop <= 6350){
+                                }else if(scrollTop >= 12601 && scrollTop <= 12700){
                                     document.getElementById("fm_link-7").classList.add('link-active');
 
-                                }else if(scrollTop >= 6351 && scrollTop <= 6950){
+                                }else if(scrollTop >= 12701 ){
                                     document.getElementById("fm_link-8").classList.add('link-active');
-
-                                }else if(scrollTop >= 6951 && scrollTop <= 7100){
-                                    document.getElementById("fm_link-9").classList.add('link-active');
-
-                                }else if(scrollTop >= 7101 ){
-                                    document.getElementById("fm_link-10").classList.add('link-active');
                                     
                                 }
 
                             } else if(tab == '#e2e'){
-                                if(scrollTop >= 0 && scrollTop <= 450){
+                                if(scrollTop >= 0 && scrollTop <= 400){
 								    document.getElementById("e2e_link-1").classList.add('link-active');
                                 }
-                                else if(scrollTop >= 451 && scrollTop <= 2400){
+                                else if(scrollTop >= 401 && scrollTop <= 5100){
                                     document.getElementById("e2e_link-2").classList.add('link-active');
 
-                                }else if(scrollTop >= 2401 && scrollTop <= 3500){
+                                }else if(scrollTop >= 5101 && scrollTop <= 5900){
                                     document.getElementById("e2e_link-3").classList.add('link-active');
                                     
-                                }else if(scrollTop >= 3501 && scrollTop <= 4500 ){
+                                }else if(scrollTop >= 5901 && scrollTop <= 6100){
                                     document.getElementById("e2e_link-4").classList.add('link-active');
                                     
-                                }if(scrollTop >= 4501 && scrollTop <= 5500){
+                                }else if(scrollTop >= 6101 && scrollTop <= 6700){
 								    document.getElementById("e2e_link-5").classList.add('link-active');
                                 }
-                                else if(scrollTop >= 5501 && scrollTop <= 5700){
+                                else if(scrollTop >= 6701 && scrollTop <= 7900){
                                     document.getElementById("e2e_link-6").classList.add('link-active');
 
-                                }else if(scrollTop >= 5701 && scrollTop <= 6100){
+                                }else if(scrollTop >= 7901 && scrollTop <= 9000){
                                     document.getElementById("e2e_link-7").classList.add('link-active');
                                     
-                                }else if(scrollTop >= 6101 && scrollTop <= 6500 ){
+                                }else if(scrollTop >= 9001 && scrollTop <= 9500 ){
                                     document.getElementById("e2e_link-8").classList.add('link-active');
                                     
-                                }else if(scrollTop >= 6501 && scrollTop <= 7000 ){
+                                }else if(scrollTop >= 9501 && scrollTop <= 9700 ){
                                     document.getElementById("e2e_link-9").classList.add('link-active');
                                     
-                                }else if(scrollTop >= 7001 ){
+                                }else if(scrollTop >= 9701 ){
                                     document.getElementById("e2e_link-10").classList.add('link-active');
                                     
                                 }
