@@ -1,0 +1,2765 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+        <title>RunBook</title>
+
+         <!-- Bootstrap CSS CDN -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <!-- Our Custom CSS -->
+        <link rel="stylesheet" href="style2.css">
+  
+        <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+	</head>
+		
+    <body onscroll="updateSection()">
+
+    <div class >
+        <ul class="barra_superior">
+            <li class="li_superior"><a class="active" href="Home.html">Home</a></li>
+            <li class="li_superior"><a href="comming_soon/comming-soon.html">About</a></li>
+            
+            <li class="topnav-right"><a href="#" onclick="switchContent('#e2e')">Site Survey Process</a></li>
+            <li class="topnav-right"><a href="#" onclick="switchContent('#fm')">Site Survey Strategy</a></li>
+            <li class="topnav-right"><a href="#" onclick="switchContent('#hld')" >Introduction</a></li>
+        </ul>
+    </div>
+
+    <div class="wrapper">
+        <!-- Sidebar Holder -->
+        <nav id="sidebar">
+            <div class="sidebar-header">
+                <h3>NaaS RunBook</h3>
+                <!--strong>NaaS</strong-->
+                <img src="smiley.png" alt="Go to W3Schools!" width="42" height="42" border="0">
+            </div>
+
+            <ul class="list-unstyled components">
+                <li>
+                    <a href="#runbookSubmenu" data-toggle="collapse" aria-expanded="false">
+                        <i class="glyphicon glyphicon-option-horizontal"></i>
+                        RunBook Modules
+                    </a>
+                    <ul class="list-unstyled" id="runbookSubmenu">
+                            <li>
+                                <a href="#">
+                                    &#187 Strategic Plan & Scope
+                                </a>
+                            </li>
+                            <li  class="active">
+                                <a href="#HLNA" data-toggle="collapse" aria-expanded="false">
+                                    &#187 High Level Network Architecture
+                                </a>
+                                <ul class="list-unstyled collapse" id="HLNA">
+                                    <li><a href="ran_hld_architecture.html"style="margin-left:2em">&bull; RAN Architecture</a></li>
+                                    <li><a href="tx_ip_architecture.html" style="margin-left:2em">&bull; TX & IP Architecture</a></li>
+                                    <li><a href="mobile_core_archi.html" style="margin-left:2em"> &bull; Core Architecture</a></li>
+                                    <li><a href="network_monitoring_architecture.html" style="margin-left:2em"> &bull; Network Monitoring</a></li>
+                                    <li><a href="comming_soon/comming-soon.html" style="margin-left:2em"> &bull; Engineering Specifications</a></li>
+                                </ul>
+                            </li>
+                            <li class="active">
+                                <a href="#homeSubmenu"  data-toggle="collapse" aria-expanded="false">
+                                    &#187 Network Design
+                                </a>
+                                <ul class="list-unstyled collapse" id="homeSubmenu">
+                                    <li><a href="#transportMenu" data-toggle="collapse" style="margin-left:2em">&bull; Transport</a></li>
+                                        <ul class="list-unstyled collapse" id="transportMenu">
+                                            <li><a href="tx_hld_module.html" style="margin-left:4em;">&#9657; Tx Network HLD</a></li>
+<li><a href="tx_lld_module.html" style="margin-left:4em;">&#9657; Tx Network LLD</a></li>
+                                        </ul>
+            
+                                    <li><a href="#transportMenu2" data-toggle="collapse" style="margin-left:2em">&bull; RAN</a></li>
+                                        <ul class="list-unstyled collapse" id="transportMenu2">
+                                            <li><a href="ran_hld_module.html" style="margin-left:4em">&#9657; RAN Network HLD</a></li>
+                                        </ul>
+                                    <li><a href="#transportMenu3" data-toggle="collapse" style="margin-left:2em">&bull; Core</a></li>
+                                        <ul class="list-unstyled collapse" id="transportMenu3">
+                                            <li><a href="mobile_core_hld.html" style="margin-left:4em;">&#9657; Mobile Core HLD</a></li>
+											<li><a href="mobile_core_lld.html" style="margin-left:4em;">&#9657; Mobile Core LLD</a></li>
+                                        </ul>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#deployment_m" data-toggle="collapse" aria-expanded="false">
+                                    &#187 Deployment
+                                </a>
+                                <ul class="list-unstyled" id="deployment_m">
+                                    <li><a href="deployment_mgmt.html"style="margin-left:2em">&bull; Deployment Mgmt</a></li>
+                                    <li><a href="site_survey.html"style="margin-left:2em;color: black;"><strong>&bull; Site Survey</strong></a></li>
+                                    <li><a href="#"style="margin-left:2em">&bull; Construction</a></li>
+                                    <li><a href="#"style="margin-left:2em">&bull; I & C</a></li>
+                                        <li><a href="fiber_const_mgmt.html"style="margin-left:2em">&bull; Fiber Construction</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    &#187 O & M
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    &#187 Field Maintenance
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    &#187 Post-Launch Engineering
+                                </a>
+                            </li>
+    
+                            <li  class="active">
+                                <a href="#supply" data-toggle="collapse" aria-expanded="false">
+                                    &#187 Supply Chain Management
+                                </a>
+                                <ul class="collapse list-unstyled " id="supply">
+                                    <li><a href=""style="margin-left:2em">&bull; RFx Process</a></li>
+                                    <li><a href="proc_pro_vendor_mgmt.html" style="margin-left:2em;">&bull; Procurement Proc. & Vendor Mgmt.</a></li>
+                                    <li><a href="" style="margin-left:2em"> &bull; Logistic & Warehousing</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#engagementSubmenu" data-toggle="collapse" aria-expanded="false">
+                            <i class="glyphicon glyphicon-option-horizontal"></i>
+                            Methods of Engagement
+                        </a>
+                        <ul class="collapse list-unstyled" id="engagementSubmenu">
+                            <li><a href="#">&#187 Primer</a></li>
+                            <li class="active">
+                                <a href="#widgets" data-toggle="collapse" aria-expanded="false">
+                                    &#187 Wizards
+                                </a>
+                                <ul class="collapse list-unstyled" id="widgets">
+                                    <li><a href="core_hld_wizard.html" style="margin-left:2em">&bull; Core HLD - Wizard</a></li>
+                                    <li><a href="net_mon_arch_wizard_1.html" style="margin-left:2em">&bull; Net Mon Arch - Wizard 1</a></li>
+                                    <li><a href="net_mon_arch_wizard_2.html" style="margin-left:2em">&bull; Net Mon Arch - Wizard 2</a></li>
+                                    <li><a href="tx_ip_arch_wizard_1.html" style="margin-left:2em">&bull; Tx & IP Archi Wizard</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">&#187 Templates</a></li>
+                            <!--li><a href="friss.html">Widgets</a></li-->
+                                            
+                            <li class="active">
+                                <a href="#homeSubmenu22" data-toggle="collapse" aria-expanded="false">
+                                    &#187 Widgets
+                                </a>
+                                <ul class="collapse list-unstyled" id="homeSubmenu22">
+                                    <li><a href="ran_hld_widget_1.html" style="margin-left:2em">&bull; RAN - Capacity-Based</a></li>
+                                    <li><a href="ran_hld_widget_2.html" style="margin-left:2em">&bull; RAN - Coverage-Based</a></li>
+                                    <li><a href="tx_hld_widget_1.html" style="margin-left:2em">&bull; Tx - Capacity Forecast</a></li>
+                                    <li><a href="tx_hld_widget_2.html" style="margin-left:2em">&bull; Tx - Availability FO</a></li>
+                                    <li><a href="tx_hld_widget_3.html" style="margin-left:2em">&bull; Tx - Availability MW</a></li>
+                                    <li><a href="tx_hld_widget_4.html" style="margin-left:2em">&bull; Tx – MW Analysis</a></li>
+                                    <li><a href="core_hld_widget_1.html" style="margin-left:2em">&bull; Core - Capacity Planning</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="comming_soon/comming-soon.html">
+                            <i class="glyphicon glyphicon-paperclip"></i>
+                            FAQ 
+                        </a>
+                    </li>
+                    <li>
+                        <a href="comming_soon/comming-soon.html">
+                            <i class="glyphicon glyphicon-send"></i>
+                            Contact
+                        </a>
+                    </li>
+            </ul>
+        </nav>
+        <!-- Page Content Holder -->
+       <section id="hld" hidden>
+            <div id="content"> 
+
+                <div data-spy="scroll" data-target="#navbar-example3" data-offset="0">
+                    <h1><a class="titulo-h1 anchor-bum" name="item1">1
+                        Introduction</a></h1>
+                        
+                        <p class="normal-text">A Site Survey is
+                        the process of collecting data from an existing site or new area before the
+                        deployment of Network Equipment takes place. Site Survey is done through a
+                        physical visit to the desired location by a team that will collect the most
+                        relevant data according to the NaaS Deployment requirements. A Site Survey is
+                        required to evaluate whether the selected site is suitable for
+                        construction/adaptation of a Radio/Transport site, and to validate that it
+                        fulfills both design and construction criteria.</p>
+                        
+                        <p class="normal-text">The Site Survey
+                        module provides the NaaS Operator with strategic guidelines that serve as a
+                        reference point to decide when a Site Survey is required and which is the best
+                        approach to carry it out based on NaaS deployment requirements and use cases.</p>
+                        
+                        <p class="normal-text">Finally, through
+                        the use of this module, NaaS Operators will be able to generate a comprehensive
+                        and complete Site Survey Report, which will be leveraged by Site Construction
+                        Management and Network Design modules to adapt network requirements based on it.</p>
+                        
+                        <br><h2><a class="titulo-h2 anchor-bum" name="item1-1">1.1
+                        Module Objectives</a></h2>
+                        
+                        <p class="normal-text">This module will
+                        enable a NaaS Operator to carry out Site Survey activities for different use
+                        cases. The specific objectives of this module are to:</p>
+                        
+                        <ol class="normal-text ul-iconos" style='margin-top:0in' start=1 type=1>
+                            <li class="normal-text">Provide an information base and fundamentals of
+                            the Site Survey process, highlighting its relevance in a NaaS deployment and
+                            describing possible use cases.</li>
+                        
+                            <li class="normal-text">
+                            Provide guidelines for the definition of a
+                            Strategy and the identification of use case(s), enabling the NaaS Operator to
+                            establish policies and procedures for the execution of Site Surveys.</li>
+                            
+                            <li class="normal-text">
+                            Based on NaaS Operator defined use cases,
+                            provide how-to instruction on key Site Survey activities highlighting most
+                            relevant information required and guidelines for the customization of the Site
+                            Survey report.</li>
+                        </ol>
+                        
+                        <br><h2><a class="titulo-h2 anchor-bum" name="item1-2">1.2
+                        Module Framework</a></h2>
+                        
+                        <p class="normal-text">The NaaS Runbook Framework shown
+                        in Figure 1 displays the Runbook modules and their relationship to the Site
+                        Survey Module.</p>
+                        
+                        <p class="normal-text"></p>
+                        
+                        <p class="normal-text">Strategic Plan &amp; Scope and
+                        High-Level Network Architecture drive the strategic decisions to forthcoming
+                        phases. Deployment is the second step in the implementation strategy, and as
+                        other modules, it is supported by Supply Chain Management.</p>
+                        
+                        <p class="normal-text"></p>
+                        
+                        <p class="normal-text">The Site Survey module is included
+                        within the Deployment stream and its target is to gather the most relevant data
+                        from existing sites, or new areas before the development of new sites takes
+                        place. The generated output from this module will be used by Site Construction
+                        Management and Network Design modules in order to have a clear image of the
+                        existing conditions and accordingly adapt site infrastructure and network
+                        design.</p><br>
+                        
+                        
+                        <p class="normal-text"><img width=688 height=305 id=image37.png
+                        src="images/site_survey/image001.png"></p>
+                        
+                        <p align=center><i>Figure 1. Module Framework.</i></p><br>
+                        
+                        <p class="normal-text"><a></a>Figure 2 presents a functional view of the Site Survey module where
+                        the main functional components are exhibited. Process overview together with
+                        critical module inputs are further described and examined in section 2.1.</p><br>
+                        
+                        <p class="normal-text"><img
+                        width=686 height=306 id=image24.png
+                        src="images/site_survey/image002.png"></p>
+                        
+                        <p align=center><i>Figure 2. Site Survey Module Functional
+                        view.</i></p><br>
+                        
+                        <p class="normal-text">The rest of the
+                        module is structured in three sections. Section 2 is a birds-eye view of
+                        the Site Survey process fundamentals. Section 3 provides guidelines to define a
+                        Site Survey strategy, identifying the site surveys and establishing policies
+                        for execution. Section 4 provides instructions and recommendations for the
+                        execution of the Site Survey activities finalizing with the customization of
+                        the <a class="a_link" href="site_survey_report">Site Survey Report Template</a> to match with the NaaS Operator deployment use
+                        cases.</p><br>
+                        
+                        <h1><a class="titulo-h1 anchor-bum" name="item2">2
+                        Site Survey Fundamentals </a></h1>
+                        
+                        <p class="normal-text">This section
+                        presents a general overview of the Site Survey process, its importance in a
+                        NaaS Deployment and possible use cases in which it can be applied.</p>
+                        
+                        <br><h2><a class="titulo-h2 anchor-bum" name="item2-1">2.1
+                        Process Overview</a></h2>
+                        
+                        <p class="normal-text">A Site Survey is
+                        the examination and data collection of a location which has been proposed to
+                        deploy a NaaS network site. This location can be an existing site or area in
+                        which a new site is intended to be built.</p>
+                        
+                        <p class="normal-text">Site survey
+                        process is composed by two general subprocesses: </p>
+                        
+                        <ul class="normal-text ul-iconos" style='margin-top:0in' start=1 type=1>
+                            <li> Site Survey Pre work: This
+                            subprocess considers all activities that must be carried out before visiting
+                            each location. These activities range from identifying the NaaS deployment
+                            characteristics, extracting relevant information from input data and define an
+                            optimum plan for the site survey activities.</li>
+                        
+                            <li> 
+                            Site Survey Activities: This
+                            subprocess contains the main activities to be done during a Site Survey. Main
+                            activities may vary based on NaaS Deployment conditions and requirements (as
+                            will be discussed in section 2.3). Each site survey activity is composed of required information and photographic
+                            evidence to be collected at each step.</li>
+                        </ul>
+                        
+                        <p class="normal-text">Table 1
+                        describes main inputs required to define the Site Survey process and main
+                        activities.</p>
+                        
+                        <div align=center>
+                        
+                        <table class=a border=1 cellspacing=0 cellpadding=0 width=604 style='border-collapse:
+                         collapse;border:none'>
+                         <tr>
+                          <td width=132 valign=top style='width:99.0pt;border:solid black 1.0pt;
+                          background:#1F4E79;padding:0cm 5.4pt 0cm 5.4pt'>
+                          <p align=center style='color:#fff;'>Input</p>
+                          </td>
+                          <td width=246 valign=top style='width:184.25pt;border:solid black 1.0pt;
+                          border-left:none;background:#1F4E79;padding:0cm 5.4pt 0cm 5.4pt'>
+                          <p align=center style='color:#fff;'>Description</p>
+                          </td>
+                          <td width=227 valign=top style='width:6.0cm;border:solid black 1.0pt;
+                          border-left:none;background:#1F4E79;padding:0cm 5.4pt 0cm 5.4pt'>
+                          <p align=center style='color:#fff;'>Impact</p>
+                          </td>
+                         </tr>
+                         <tr>
+                          <td width=132 style='width:99.0pt;border:solid black 1.0pt;border-top:none;
+                          padding:0cm 5.4pt 0cm 5.4pt'>
+                          <p class="normal-text">Local Map</p>
+                          </td>
+                          <td width=246 style='width:184.25pt;border-top:none;border-left:none;
+                          border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 5.4pt 0cm 5.4pt'>
+                          <p class="normal-text">An updated map of the region in which the surveying
+                          sites are located.</p>
+                          </td>
+                          <td width=227 style='width:6.0cm;border-top:none;border-left:none;border-bottom:
+                          solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 5.4pt 0cm 5.4pt'>
+                          <p class="normal-text">An updated map of the region is
+                          sometimes more useful than information from Google Earth.</p>
+                          <p class="normal-text">This is required to accurately
+                          locate the sites in the region.</p>
+                          </td>
+                         </tr>
+                         <tr>
+                          <td width=132 style='width:99.0pt;border:solid black 1.0pt;border-top:none;
+                          padding:0cm 5.4pt 0cm 5.4pt'>
+                          <p class="normal-text">Existing Services in
+                          the region (energy, communications, etc.)</p>
+                          </td>
+                          <td width=246 style='width:184.25pt;border-top:none;border-left:none;
+                          border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 5.4pt 0cm 5.4pt'>
+                          <p class="normal-text">Information about existing power and telecom
+                          services in the region.</p>
+                          </td>
+                          <td width=227 style='width:6.0cm;border-top:none;border-left:none;border-bottom:
+                          solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 5.4pt 0cm 5.4pt'>
+                          <p class="normal-text">Site Survey responsible must be
+                          aware of the current state of the location before visiting it.</p>
+                          </td>
+                         </tr>
+                         <tr>
+                          <td width=132 style='width:99.0pt;border:solid black 1.0pt;border-top:none;
+                          padding:0cm 5.4pt 0cm 5.4pt'>
+                          <p class="normal-text">Site Engineering
+                          Information</p>
+                          </td>
+                          <td width=246 style='width:184.25pt;border-top:none;border-left:none;
+                          border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 5.4pt 0cm 5.4pt'>
+                          <p class="normal-text">Engineering layout of the existing construction and
+                          structures on a site.</p>
+                          </td>
+                          <td width=227 style='width:6.0cm;border-top:none;border-left:none;border-bottom:
+                          solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 5.4pt 0cm 5.4pt'>
+                          <p class="normal-text">For existing sites, construction
+                          experts of the site survey team must be aware of existing buildings and/or
+                          structures to facilitate the survey.</p>
+                          </td>
+                         </tr>
+                         <tr>
+                          <td width=132 style='width:99.0pt;border:solid black 1.0pt;border-top:none;
+                          padding:0cm 5.4pt 0cm 5.4pt'>
+                          <p class="normal-text">High-Level Design
+                          (HLD) Reports (RAN / TX)</p>
+                          </td>
+                          <td width=246 style='width:184.25pt;border-top:none;border-left:none;
+                          border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 5.4pt 0cm 5.4pt'>
+                          <p class="normal-text">Proposed RF configuration and TX solutions to be
+                          deployed on a proposed location.</p>
+                          </td>
+                          <td width=227 style='width:6.0cm;border-top:none;border-left:none;border-bottom:
+                          solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 5.4pt 0cm 5.4pt'>
+                          <p class="normal-text">Site
+                          survey team must collect relevant information of the proposed location for it
+                          to be evaluated.</p>
+                          </td>
+                         </tr>
+                        </table>
+                        
+                        </div>
+                        
+                        <p align=center><i>Table 1. Site Survey Module Input Data.</i></p>
+                        
+                        <p class="normal-text">Main output of
+                        the Site Survey Module is the Site Survey Report (SSR) which contains all
+                        relevant information and photographic evidence to be used as a base for the
+                        evaluation of the location by the Site Construction and the Civil &amp; Power
+                        Design modules. In addition, the SSR can be used as a feedback of the HLD
+                        reports. If proposed solutions dont match with the site's requirement or if a
+                        new site is to be considered, the design team must apply the required changes
+                        based on the SSR.</p>
+                        
+                        <br><h2><a class="titulo-h2 anchor-bum" name="item2-2">2.2
+                        Role of Site Survey in NaaS Deployment</a></h2>
+                        
+                        <p class="normal-text"><a></a>Site Surveying is an important step in the deployment of a network
+                        as it provides exact insight into the current state of the proposed location.
+                        Site Survey report is a compilation of evidence that shall be analyzed in
+                        further steps to ensure that the proposed solutions (construction, RF and/or TX
+                        solutions) will fit with the current state of the facility/site.</p>
+                        
+                        <p class="normal-text">A site survey
+                        will serve as the foundations for a solid site deployment as the survey team
+                        will collect important information about the current status of the site; from
+                        how to access the location and its layout, to how existing equipment is
+                        installed at the site and available space and infrastructure for the
+                        installation of new equipment.</p>
+                        
+                        <p class="normal-text">A site survey
+                        shall provide enough information to develop plans and designs which match with
+                        the current state of the site, allowing NaaS Operators to save time and resources
+                        by dealing with accurate information. If a site survey is not carried out, the
+                        NaaS Operator deployment team may end up with an unfeasible design or
+                        deployment plan, having to consume extra time and resources in a rework process
+                        which may lead in deployment delays and the consequences that this entails.</p>
+                        
+                        <br><h2><a class="titulo-h2 anchor-bum" name="item2-3">2.3
+                        Use Cases Review</a></h2>
+                        
+                        <p class="normal-text">Depending on the
+                        NaaS deployment requirements, a site survey can be used for different scenarios
+                        (use cases). Each use case will require the site survey to focus on specific
+                        details and collect specific data about the surveyed location. Table 2
+                        describes possible use cases for a site survey process.</p>
+                        
+                        <div align=center>
+                        
+                        <table class=a1 border=1 cellspacing=0 cellpadding=0 width=595
+                         style='border-collapse:collapse;border:none'>
+                         <tr>
+                          <td width=123 valign=top style='width:91.9pt;border:solid black 1.0pt;
+                          background:#1F4E79;padding:0cm 5.4pt 0cm 5.4pt'>
+                          <p align=center style='color:#fff;'>Use
+                          Case</p>
+                          </td>
+                          <td width=236 valign=top style='width:177.2pt;border:solid black 1.0pt;
+                          border-left:none;background:#1F4E79;padding:0cm 5.4pt 0cm 5.4pt'>
+                          <p align=center style='color:#fff;'>Description</p>
+                          </td>
+                          <td width=236 valign=top style='width:177.2pt;border:solid black 1.0pt;
+                          border-left:none;background:#1F4E79;padding:0cm 5.4pt 0cm 5.4pt'>
+                          <p align=center style='color:#fff;'>Survey
+                          Requirements</p>
+                          </td>
+                         </tr>
+                         <tr>
+                          <td width=123 style='width:91.9pt;border:solid black 1.0pt;border-top:none;
+                          padding:0cm 5.4pt 0cm 5.4pt'>
+                          <p class="normal-text">Greenfield Deployment
+                           </p>
+                          <p class="normal-text">New Tower</p>
+                          </td>
+                          <td width=236 style='width:177.2pt;border-top:none;border-left:none;
+                          border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 5.4pt 0cm 5.4pt'>
+                          <p class="normal-text">This scenario refers to a
+                          location which has no civil/tower infrastructure (and hence no telecom
+                          equipment).</p>
+                          <p class="normal-text">NaaS Deployment will evaluate
+                          the construction of a new site from the ground up in this location.</p>
+                          </td>
+                          <td width=236 style='width:177.2pt;border-top:none;border-left:none;
+                          border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 5.4pt 0cm 5.4pt'>
+                          <p class="normal-text">&#9679;
+                          Survey of the location and
+                          any existing element such as a fence.</p>
+                          <p class="normal-text">&#9679;
+                          How to access it.</p>
+                          <p class="normal-text">&#9679;
+                          Elements that surround it.</p>
+                          <p class="normal-text">&#9679;
+                          Terrain surface.</p>
+                          <p class="normal-text">&#9679;
+                          Available power supply on
+                          site.</p>
+                          </td>
+                         </tr>
+                         <tr>
+                          <td width=123 style='width:91.9pt;border:solid black 1.0pt;border-top:none;
+                          padding:0cm 5.4pt 0cm 5.4pt'>
+                          <p class="normal-text">Existing Tower </p>
+                          <p class="normal-text">No Overlay</p>
+                          </td>
+                          <td width=236 style='width:177.2pt;border-top:none;border-left:none;
+                          border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 5.4pt 0cm 5.4pt'>
+                          <p class="normal-text">Deployment of a site in a
+                          location which has an existing tower that can be used for a new base station.</p>
+                          </td>
+                          <td width=236 style='width:177.2pt;border-top:none;border-left:none;
+                          border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 5.4pt 0cm 5.4pt'>
+                          <p class="normal-text">&#9679;
+                          Requirements from previous
+                          use case, except for terrain surface</p>
+                          <p class="normal-text">&#9679;
+                          Survey of tower
+                          characteristics and available space for equipment.</p>
+                          <p class="normal-text">&#9679;
+                          Existing power equipment
+                          available capacity.</p>
+                          <p class="normal-text">&#9679;
+                          Existing telecom
+                          infrastructure.</p>
+                          <p class="normal-text">&#9679;
+                          Surroundings at tower
+                          level.</p>
+                          <p class="normal-text">&#9679;
+                          Evidence for the
+                          evaluation of proposed TX solution.</p>
+                          </td>
+                         </tr>
+                         <tr style='height:1.0cm'>
+                          <td width=123 style='width:91.9pt;border:solid black 1.0pt;border-top:none;
+                          padding:0cm 5.4pt 0cm 5.4pt;height:1.0cm'>
+                          <p class="normal-text">Existing Tower -
+                          Overlay</p>
+                          </td>
+                          <td width=236 style='width:177.2pt;border-top:none;border-left:none;
+                          border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;
+                          height:1.0cm'>
+                          <p class="normal-text">Deployment of a site reusing the
+                          Radio equipment (antennas and/or radio units) which are already operating on
+                          the location.</p>
+                          </td>
+                          <td width=236 style='width:177.2pt;border-top:none;border-left:none;
+                          border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;
+                          height:1.0cm'>
+                          <p class="normal-text">&#9679;
+                          Requirements from previous
+                          use case.</p>
+                          <p class="normal-text">&#9679;
+                          Current locations,
+                          connections, and models of installed equipment.</p>
+                          </td>
+                         </tr>
+                         <tr>
+                          <td width=123 style='width:91.9pt;border:solid black 1.0pt;border-top:none;
+                          padding:0cm 5.4pt 0cm 5.4pt'>
+                          <p class="normal-text">Greenfield Deployment
+                           Rooftop</p>
+                          </td>
+                          <td width=236 style='width:177.2pt;border-top:none;border-left:none;
+                          border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 5.4pt 0cm 5.4pt'>
+                          <p class="normal-text">Deployment of a new site on top
+                          of a building.</p>
+                          </td>
+                          <td width=236 style='width:177.2pt;border-top:none;border-left:none;
+                          border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 5.4pt 0cm 5.4pt'>
+                          <p class="normal-text">&#9679;
+                          Rooftop characteristics
+                          available space for construction.</p>
+                          <p class="normal-text">&#9679;
+                          How to access the building and the rooftop.</p>
+                          <p class="normal-text">&#9679;
+                          Elements surrounding the
+                          building.</p>
+                          <p class="normal-text">&#9679;
+                          Rooftop surface.</p>
+                          <p class="normal-text">&#9679;
+                          Available power supply on
+                          site.</p>
+                          </td>
+                         </tr>
+                         <tr>
+                          <td width=123 style='width:91.9pt;border:solid black 1.0pt;border-top:none;
+                          padding:0cm 5.4pt 0cm 5.4pt'>
+                          <p class="normal-text">Existing Rooftop</p>
+                          </td>
+                          <td width=236 style='width:177.2pt;border-top:none;border-left:none;
+                          border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 5.4pt 0cm 5.4pt'>
+                          <p class="normal-text">Deployment on an existing site
+                          located on a rooftop.</p>
+                          </td>
+                          <td width=236 style='width:177.2pt;border-top:none;border-left:none;
+                          border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 5.4pt 0cm 5.4pt'>
+                          <p class="normal-text">&#9679;
+                          Requirements from previous
+                          use case.</p>
+                          <p class="normal-text">&#9679;
+                          Antenna mounting structure
+                          characteristics and available space for equipment.</p>
+                          <p class="normal-text">&#9679;
+                          Existing power equipment
+                          available capacity</p>
+                          <p class="normal-text">&#9679;
+                          Existing telecom
+                          infrastructure.</p>
+                          <p class="normal-text">&#9679;
+                          Evidence for the evaluation
+                          of proposed TX solution.</p>
+                          </td>
+                         </tr>
+                        </table>
+                        
+                        </div>
+                        
+                        <p align=center><i>Table 2. Site Survey use cases</i>.</p>
+                        
+                        
+                </div>
+
+                <div class="right">
+                    <a class='link-next' href="#" onclick="switchContent('#fm')">Next &#8658;</a>
+                </div>
+                <br>
+            </div>
+
+            <nav id="navbar-example3" class="navbar navbar-light bg-light position-fixed">
+                <nav class="nav nav-pills flex-column">
+                
+                <a id="link-1" class="nav-link bullet-2-link" onclick="onClickActive(event)" href="#item1"><strong>1. INTRODUCTION</strong></a>
+                <a id="link-2" class="nav-link bullet-2-link" onclick="onClickActive(event)" href="#item1-1"><em>1.1 Module Objectives</em></a>
+                <a id="link-3" class="nav-link bullet-2-link" onclick="onClickActive(event)" href="#item1-2"><em>1.2 Module Framework</em></a>
+                <a id="link-4" class="nav-link bullet-2-link" onclick="onClickActive(event)" href="#item2"><strong>2. Site Survey Fundamentals</strong></a>
+                <a id="link-5" class="nav-link bullet-2-link" onclick="onClickActive(event)" href="#item2-1"><em>2.1 Process Overview</em></a>
+                <a id="link-5" class="nav-link bullet-2-link" onclick="onClickActive(event)" href="#item2-2"><em>2.2 Role of Site Survey in NaaS Deployment</em></a>
+                <a id="link-5" class="nav-link bullet-2-link" onclick="onClickActive(event)" href="#item2-3"><em>2.3 Use Cases Review</em></a>
+                </nav>
+            </nav>
+       </section>
+
+       <section id="fm" hidden>
+        <div id="content"> 
+
+
+            <div data-spy="scroll" data-target="#navbar-example3" data-offset="0">
+                <h1><a class="titulo-h1 anchor-bum" name="item3">3
+                    Site Survey Strategy Definition</a></h1>
+                    
+                    <p class="normal-text">This section
+                    presents guidelines for the definition of rules that will influence the overall
+                    Site Survey process based on NaaS deployment characteristics.</p>
+                    
+                    <br><h2><a class="titulo-h2 anchor-bum" name="item3-1">3.1
+                    Site Survey Policy</a></h2>
+                    
+                    <p class="normal-text"><a></a>Site Survey is a time-consuming process that implies an additional
+                    financial investment in the NaaS Deployment. For these reasons, NaaS Operators
+                    must establish some policies to help it decide which situations may trigger a
+                    Site Survey process. These situations will imply specific conditions and
+                    requirements that will govern the execution of the site survey process and
+                    specific activities. </p>
+                    
+                    <p class="normal-text">NaaS Operator may use Table 3 as a base to
+                    define its own site survey policies:</p>
+                    
+                    <div align=center>
+                    
+                    <table class=a2 border=1 cellspacing=0 cellpadding=0 width=604
+                     style='border-collapse:collapse;border:none'>
+                     <tr>
+                      <td width=127 valign=top style='width:95.15pt;border:solid black 1.0pt;
+                      background:#1F4E79;padding:0cm 5.4pt 0cm 5.4pt'>
+                      <p align=center style='color:#fff;'>Policy</p>
+                      </td>
+                      <td width=478 valign=top style='width:358.2pt;border:solid black 1.0pt;
+                      border-left:none;background:#1F4E79;padding:0cm 5.4pt 0cm 5.4pt'>
+                      <p align=center style='color:#fff;'>Description</p>
+                      </td>
+                      <td style='border:none' width=0><p class="normal-text"></td>
+                     </tr>
+                     <tr style='height:13.45pt'>
+                      <td width=127 rowspan=2 style='width:95.15pt;border:solid black 1.0pt;
+                      border-top:none;padding:0cm 5.4pt 0cm 5.4pt;height:13.45pt'>
+                      <p class="normal-text">Remote Locations</p>
+                      </td>
+                      <td width=478 rowspan=2 style='width:358.2pt;border-top:none;border-left:
+                      none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+                      padding:0cm 5.4pt 0cm 5.4pt;height:13.45pt'>
+                      <p class="normal-text">When the site is located on a remote and difficult
+                      to access location, NaaS Operators may evaluate if starting a site survey on
+                      that site is cost/time feasible to be carried out.</p>
+                      <p class="normal-text"></p>
+                      <p class="normal-text">However, the use case shall be considered in this
+                      situation as follows:</p>
+                      <p class="normal-text"></p>
+                      <p class="normal-text">&#9679;
+                      New Tower  It is
+                      recommended to perform a
+                      site survey to get the site's basic
+                      information (as descripted in section 4.2.1 and 4.2.2).</p>
+                      <p class="normal-text"></p>
+                      <p class="normal-text">&#9679;
+                      Existing Tower  Site
+                      Survey may not be required if enough documentation such as site/tower
+                      engineering plans are available.</p>
+                      <p class="normal-text"></p>
+                      <p class="normal-text">This documentation must display detailed
+                      information about all existing infrastructure: towers, buildings, equipment
+                      rooms, etc.</p>
+                      <p class="normal-text">Documentation must also include (if applicable) detailed
+                      sketch of radio and transport equipment deployed on the tower: heights,
+                      orientations, tilts, etc.</p>
+                      </td>
+                      <td style='height:13.45pt;border:none' width=0 height=18></td>
+                     </tr>
+                     <tr style='height:15.45pt'>
+                      <td style='height:15.45pt;border:none' width=0 height=21></td>
+                     </tr>
+                     <tr>
+                      <td width=127 style='width:95.15pt;border:solid black 1.0pt;border-top:none;
+                      padding:0cm 5.4pt 0cm 5.4pt'>
+                      <p class="normal-text">Previously done Site
+                      Surveys</p>
+                      </td>
+                      <td width=478 style='width:358.2pt;border-top:none;border-left:none;
+                      border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 5.4pt 0cm 5.4pt'>
+                      <p class="normal-text">Site Survey reports may be available from a previous
+                      process. NaaS Operators may define whether previously done Site Survey
+                      reports are valid and can be relied on based on their generation date, who
+                      elaborated it, etc.</p>
+                      </td>
+                      <td style='border:none' width=0><p class="normal-text"></td>
+                     </tr>
+                     <tr>
+                      <td width=127 style='width:95.15pt;border:solid black 1.0pt;border-top:none;
+                      padding:0cm 5.4pt 0cm 5.4pt'>
+                      <p class="normal-text">Priority</p>
+                      </td>
+                      <td width=478 style='width:358.2pt;border-top:none;border-left:none;
+                      border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 5.4pt 0cm 5.4pt'>
+                      <p class="normal-text">Based on NaaS deployment
+                      schedule, some locations may be considered prior to others. The less priority
+                      locations may not require a Site Survey to be done.</p>
+                      </td>
+                      <td style='border:none' width=0><p class="normal-text"></td>
+                     </tr>
+                    </table>
+                    
+                    </div>
+                    
+                    <p align=center><i>Table 3. Site Survey policies examples.</i></p>
+                    
+                    <p class="normal-text">In addition,
+                    sometimes GIS applications (like Google Street view) can help NaaS Operators in
+                    making a quick site survey without a visit to the location. However, NaaS
+                    Operators must evaluate the use of these applications for site surveying. Table
+                    4 can help in this evaluation by displaying main pros and cons of using Google
+                    applications for site surveying.</p>
+                    
+                    <div align=center>
+                    
+                    <table class=a3 border=1 cellspacing=0 cellpadding=0 width=604
+                     style='border-collapse:collapse;border:none'>
+                     <tr>
+                      <td width=245 style='width:184.05pt;border:solid black 1.0pt;background:#1F4E79;
+                      padding:0cm 5.4pt 0cm 5.4pt'>
+                      <p align=center style='color:#fff;'>Pros</p>
+                      </td>
+                      <td width=359 style='width:269.3pt;border:solid black 1.0pt;border-left:none;
+                      background:#1F4E79;padding:0cm 5.4pt 0cm 5.4pt'>
+                      <p align=center style='color:#fff;'>Cons</p>
+                      </td>
+                     </tr>
+                     <tr>
+                      <td width=245 style='width:184.05pt;border:solid black 1.0pt;border-top:none;
+                      padding:0cm 5.4pt 0cm 5.4pt'>
+                      <p class="normal-text">&#9679;
+                      Can avoid visiting the location, which means time
+                      and cost savings for the NaaS Operator.</p>
+                      <p class="normal-text">&#9679;
+                      Information about existing
+                      radio configurations (number of sectors) can be obtained.</p>
+                      </td>
+                      <td width=359 style='width:269.3pt;border-top:none;border-left:none;
+                      border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 5.4pt 0cm 5.4pt'>
+                      <p class="normal-text">&#9679;
+                      No accurate details can be
+                      obtained (towers height, exact dimensions of the location, etc.)</p>
+                      <p class="normal-text">&#9679;
+                      Details about equipment
+                      inside the location and installation details such as power sources, cabinets,
+                      cables, etc. may not be obtained.</p>
+                      <p class="normal-text">&#9679;
+                      Data on Google
+                      applications may be outdated (picture available on the street view may have
+                      been taken some years ago) making any information obtained from it not
+                      reliable.</p>
+                      </td>
+                     </tr>
+                    </table>
+                    
+                    </div>
+                    
+                    <p align=center><i>Table 4. Google applications main pros and
+                    cons for site surveying.</i></p>
+                    
+                    <p class="normal-text">Considering Table
+                    4, it is recommended to use Google applications for site surveying only as a
+                    complement to other data. For instance, if an existing site is located in a
+                    remote location but the NaaS Operator has access to the engineering
+                    documentation of the site, then Google Street view can be used to obtain
+                    additional information, avoiding a visit to the location.</p>
+                    
+                    <p class="normal-text">Table 5 displays
+                    site survey triggers examples, their description and required input data for
+                    each one.</p>
+                    
+                    <div align=center>
+                    
+                    <table class=a4 border=1 cellspacing=0 cellpadding=0 width=607
+                     style='border-collapse:collapse;border:none'>
+                     <tr>
+                      <td width=94 valign=top style='width:70.65pt;border:solid black 1.0pt;
+                      background:#1F4E79;padding:0cm 5.4pt 0cm 5.4pt'>
+                      <p align=center style='color:#fff;'>Trigger</p>
+                      </td>
+                      <td width=296 valign=top style='width:222.2pt;border:solid black 1.0pt;
+                      border-left:none;background:#1F4E79;padding:0cm 5.4pt 0cm 5.4pt'>
+                      <p align=center style='color:#fff;'>Description</p>
+                      </td>
+                      <td width=217 valign=top style='width:162.7pt;border:solid black 1.0pt;
+                      border-left:none;background:#1F4E79;padding:0cm 5.4pt 0cm 5.4pt'>
+                      <p align=center style='color:#fff;'>Required
+                      Input Data</p>
+                      </td>
+                     </tr>
+                     <tr>
+                      <td width=94 style='width:70.65pt;border:solid black 1.0pt;border-top:none;
+                      padding:0cm 5.4pt 0cm 5.4pt'>
+                      <p class="normal-text">Site Acquisition</p>
+                      </td>
+                      <td width=296 style='width:222.2pt;border-top:none;border-left:none;
+                      border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 5.4pt 0cm 5.4pt'>
+                      <p class="normal-text">Before the acquisition of a
+                      location (whether for the construction of the whole infrastructure or to
+                      reutilize any existing infrastructure), a site survey is required to evaluate
+                      if the location is feasible for a base station.</p>
+                      </td>
+                      <td width=217 style='width:162.7pt;border-top:none;border-left:none;
+                      border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 5.4pt 0cm 5.4pt'>
+                      <p class="normal-text">&#9679;
+                      Local Map</p>
+                      </td>
+                     </tr>
+                     <tr>
+                      <td width=94 style='width:70.65pt;border:solid black 1.0pt;border-top:none;
+                      padding:0cm 5.4pt 0cm 5.4pt'>
+                      <p class="normal-text">Site Construction</p>
+                      </td>
+                      <td width=296 style='width:222.2pt;border-top:none;border-left:none;
+                      border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 5.4pt 0cm 5.4pt'>
+                      <p class="normal-text">A site survey is required before
+                      the construction of a new site to develop a construction plan which matches
+                      with de NaaS deployment requirements.</p>
+                      </td>
+                      <td width=217 style='width:162.7pt;border-top:none;border-left:none;
+                      border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 5.4pt 0cm 5.4pt'>
+                      <p class="normal-text">&#9679;
+                      Local Map </p>
+                      <p class="normal-text">&#9679;
+                      Existing Services in the region (energy, communications,
+                      etc.) </p>
+                      <p class="normal-text">&#9679;
+                      Site Engineering
+                      Information</p>
+                      </td>
+                     </tr>
+                     <tr>
+                      <td width=94 style='width:70.65pt;border:solid black 1.0pt;border-top:none;
+                      padding:0cm 5.4pt 0cm 5.4pt'>
+                      <p class="normal-text">Site Modification</p>
+                      </td>
+                      <td width=296 style='width:222.2pt;border-top:none;border-left:none;
+                      border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 5.4pt 0cm 5.4pt'>
+                      <p class="normal-text">Site survey is required to
+                      obtain information of an existing site and which modifications to its
+                      infrastructure must be done to deploy an overlay configuration.</p>
+                      </td>
+                      <td width=217 style='width:162.7pt;border-top:none;border-left:none;
+                      border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 5.4pt 0cm 5.4pt'>
+                      <p class="normal-text">&#9679;
+                      Local Map </p>
+                      <p class="normal-text">&#9679;
+                      Existing Services in the region (energy, communications,
+                      etc.) </p>
+                      <p class="normal-text">&#9679;
+                      Site Engineering
+                      Information</p>
+                      </td>
+                     </tr>
+                     <tr style='height:68.1pt'>
+                      <td width=94 style='width:70.65pt;border:solid black 1.0pt;border-top:none;
+                      padding:0cm 5.4pt 0cm 5.4pt;height:68.1pt'>
+                      <p class="normal-text">Design Solutions
+                      Validation</p>
+                      </td>
+                      <td width=296 style='width:222.2pt;border-top:none;border-left:none;
+                      border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;
+                      height:68.1pt'>
+                      <p class="normal-text">Once High-Level designs (RF and
+                      TX) have been done, a site survey is required to obtain information that will
+                      be used for the feasibility evaluation of the proposed designs; whether for
+                      Greenfield or Overlay deployments.</p>
+                      </td>
+                      <td width=217 style='width:162.7pt;border-top:none;border-left:none;
+                      border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;
+                      height:68.1pt'>
+                      <p class="normal-text">&#9679;
+                      Local Map </p>
+                      <p class="normal-text">&#9679;
+                      Existing Services in the region (energy, communications,
+                      etc.) </p>
+                      <p class="normal-text">&#9679;
+                      Site Engineering
+                      Information</p>
+                      <p class="normal-text">&#9679;
+                      HLD Reports (RAN / TX)</p>
+                      </td>
+                     </tr>
+                    </table>
+                    
+                    </div>
+                    
+                    <p align=center><i>Table 5. Site Survey triggers.</i></p>
+                    
+                    <br><h2><a class="titulo-h2 anchor-bum" name="item3-2">3.2
+                    Resources and Logistics</a></h2>
+                    
+                    <p class="normal-text">This section
+                    provides an overview of the required resources (human and material) involved in
+                    a Site Survey process. In addition, guidelines are given on how to organize
+                    survey teams and schedule the site survey activities.</p>
+                    
+                    <h3><a></a>3.2.1
+                    Sourcing</h3>
+                    
+                    <p class="normal-text"><a></a>Site survey activities require a certain amount of personnel, as
+                    well as hours / days of work. The NaaS Operator can choose between to different
+                    approaches to carry out the site survey activities:</p>
+                    
+                    <ul class="normal-text ul-iconos" style='margin-top:0in' start=1 type=1>
+                        <li>In-sourcing:<br>
+                        This option requires that NaaS Operator
+                        personnel will be moved from their usual activities into site survey
+                        activities, which may impact the overall deployment schedule.</li>
+                    
+                        <li>
+                        Out-sourcing:<br>
+                        By hiring a third-party company, NaaS Operator
+                        can ensure that a specialized company will be in charge of carrying out site
+                        survey activities following the requirements given to them while keeping the
+                        internal team focused on tasks related to the deployment of the NaaS network.
+                        Furthermore, the third-party company is expected to have the necessary
+                        experience to carry out an efficient site survey. However, hiring the services
+                        of a company, implies making a financial investment that will depend on the
+                        number of sites to be surveyed.</li>
+                    </ul>
+                    
+                    <p class="normal-text">The choice
+                    between in-sourcing or out-sourcing depends on several factors such as the
+                    number of resources that the NaaS Operator has, its financial capacity to
+                    contract a third-party and the presence of third-party companies experienced
+                    in site surveys in the region.</p>
+                    
+                    <p class="normal-text"><a></a>The NaaS Operator can carry out a cost evaluation considering the
+                    cost of each one of the human resources that would be assigned to the site
+                    survey activities (as will be discussed in section 3.2.2) and comparing this
+                    result with the cost of hiring a third-party company. NaaS Operators can
+                    evaluate which one (in-sourcing or out-sourcing) comes at a lower cost. Figure
+                    3 represents a methodology that the NaaS Operator can use for the selection.</p>
+                    
+                    <p class="normal-text"><img width=543 height=172
+                    id=image20.jpg
+                    src="images/site_survey/image003.png"
+                    alt="A close up of a map&#10;&#10;Description automatically generated"></p>
+                    
+                    <p align=center><i>Figure 3. Sourcing definition process.</i></p>
+                    
+                    <h3><a></a>3.2.2
+                    Team Composition &amp; Material Description</h3>
+                    
+                    <p class="normal-text">This section
+                    will present requirements to establish an optimal team for Site Survey
+                    Activities and a description of materials required for such activities.</p>
+                    
+                    <h4>3.2.2.1
+                    Team Composition</h4>
+                    
+                    <p class="normal-text">Site survey is a
+                    set of tasks involving various areas: civil infrastructure and installations
+                    inspections, and in some cases, tower climbing. Therefore, the integration of
+                    specialized personnel in such areas is necessary to carry out the required
+                    activities. The number and specialization of the personnel will depend on the
+                    use case for which the site survey will be used. For instance, it may be
+                    possible that a well-trained engineer can perform more than one of the site
+                    survey activities. However, it is recommended, for safety reasons, that at
+                    least two engineers per site to carry out the site survey activities.</p>
+                    
+                    <p class="normal-text">Table 6 shows
+                    the required staff for the site survey and in which cases their participation
+                    is necessary:</p>
+                    
+                    <div align=center>
+                    
+                    <table class=a5 border=1 cellspacing=0 cellpadding=0 width=595
+                     style='border-collapse:collapse;border:none'>
+                     <tr>
+                      <td width=85 style='width:63.55pt;border:solid black 1.0pt;background:#1F4E79;
+                      padding:0cm 5.4pt 0cm 5.4pt'>
+                      <p align=center style='color:#fff;'>Required
+                      Skills</p>
+                      </td>
+                      <td width=350 style='width:262.25pt;border:solid black 1.0pt;border-left:
+                      none;background:#1F4E79;padding:0cm 5.4pt 0cm 5.4pt'>
+                      <p align=center style='color:#fff;'>Description
+                      of activities</p>
+                      </td>
+                      <td width=161 style='width:120.5pt;border:solid black 1.0pt;border-left:none;
+                      background:#1F4E79;padding:0cm 5.4pt 0cm 5.4pt'>
+                      <p align=center style='color:#fff;'>Use
+                      cases</p>
+                      </td>
+                     </tr>
+                     <tr>
+                      <td width=85 style='width:63.55pt;border:solid black 1.0pt;border-top:none;
+                      padding:0cm 5.4pt 0cm 5.4pt'>
+                      <p class="normal-text">RF Engineer</p>
+                      </td>
+                      <td width=350 style='width:262.25pt;border-top:none;border-left:none;
+                      border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 5.4pt 0cm 5.4pt'>
+                      <p class="normal-text">Check that there are no major
+                      obstructions not observable during Design Process and evaluate compliance
+                      with RF requirements.</p>
+                      </td>
+                      <td width=161 style='width:120.5pt;border-top:none;border-left:none;
+                      border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 5.4pt 0cm 5.4pt'>
+                      <p class="normal-text">&#9679;
+                      Recommended for all Use
+                      cases. Optional for Greenfield Towers</p>
+                      </td>
+                     </tr>
+                     <tr>
+                      <td width=85 style='width:63.55pt;border:solid black 1.0pt;border-top:none;
+                      padding:0cm 5.4pt 0cm 5.4pt'>
+                      <p class="normal-text">TX Engineer</p>
+                      </td>
+                      <td width=350 style='width:262.25pt;border-top:none;border-left:none;
+                      border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 5.4pt 0cm 5.4pt'>
+                      <p class="normal-text">Confirm that antenna location
+                      space satisfies MW requirements and validate MW LOS.</p>
+                      <p class="normal-text">May be necessary a tower
+                      climbing specialist.</p>
+                      </td>
+                      <td width=161 style='width:120.5pt;border-top:none;border-left:none;
+                      border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 5.4pt 0cm 5.4pt'>
+                      <p class="normal-text">&#9679;
+                      Whenever a MW solution is
+                      to be deployed</p>
+                      </td>
+                     </tr>
+                     <tr>
+                      <td width=85 style='width:63.55pt;border:solid black 1.0pt;border-top:none;
+                      padding:0cm 5.4pt 0cm 5.4pt'>
+                      <p class="normal-text">Civil Work specialist</p>
+                      </td>
+                      <td width=350 style='width:262.25pt;border-top:none;border-left:none;
+                      border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 5.4pt 0cm 5.4pt'>
+                      <p class="normal-text">Document the state of the site:
+                      structure, foundations, existing buildings and/or towers, etc.</p>
+                      </td>
+                      <td width=161 style='width:120.5pt;border-top:none;border-left:none;
+                      border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 5.4pt 0cm 5.4pt'>
+                      <p class="normal-text">&#9679;
+                      All use cases.</p>
+                      </td>
+                     </tr>
+                     <tr>
+                      <td width=85 style='width:63.55pt;border:solid black 1.0pt;border-top:none;
+                      padding:0cm 5.4pt 0cm 5.4pt'>
+                      <p class="normal-text">Tower climbing specialist</p>
+                      </td>
+                      <td width=350 style='width:262.25pt;border-top:none;border-left:none;
+                      border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 5.4pt 0cm 5.4pt'>
+                      <p class="normal-text">If equipment is installed on top
+                      of a tower, it is highly recommended to a person who can climb the tower and
+                      document the required data.</p>
+                      <p class="normal-text">Not every person can climb a
+                      tower. It requires a special certification to do so.</p>
+                      <p class="normal-text">One alternative to a certified
+                      specialist is to use a drone equipped with a camera if detailed data is not
+                      required for this task.</p>
+                      </td>
+                      <td width=161 style='width:120.5pt;border-top:none;border-left:none;
+                      border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 5.4pt 0cm 5.4pt'>
+                      <p class="normal-text">&#9679;
+                      Existing Tower scenarios.</p>
+                      <p class="normal-text">&#9679;
+                      Overlay scenario.</p>
+                      </td>
+                     </tr>
+                    </table>
+                    
+                    </div>
+                    
+                    <p align=center><i>Table 6. Site survey staff and description
+                    of activities.</i></p>
+                    
+                    <p class="normal-text">The number of
+                    human resources required to conform each site survey will depend on the number
+                    of surveying sites, the personnel available in the organization, and the
+                    deployment times (schedule). More details on the formation of the teams will be
+                    given in section 4.1.4. </p>
+                    
+                    <h4>3.2.2.2
+                    Required Materials</h4>
+                    
+                    <p class="normal-text">To carry out the
+                    documentation and measurement activities during the site survey, site survey
+                    team needs certain tools. Table 7 displays a list of the required materials and
+                    their use based on use cases.</p>
+                    
+                    <p><img width=561
+                    height=800 id="Picture 3"
+                    src="images/site_survey/table1.png"><img width=563
+                        height=280 id="Picture 3"
+                        src="images/site_survey/table2.png"></p>
+                    
+                    <p align=center><i>Table 7. Required site survey materials and
+                    use cases.</i></p>
+                    
+                    <h3>3.2.3
+                    Site Survey Tools</h3>
+                    
+                    <p class="normal-text">There are some
+                    tools and applications NaaS Operator can use to facilitate the organization and
+                    management before and during the site survey activities. These tools can be
+                    classified into three categories:</p>
+                    
+                    <ul class="normal-text ul-iconos" style='margin-top:0in' start=1 type=1>
+                        <li>Management Tools: It is
+                        recommended to rely on an application to keep a track on visited locations and
+                        locations to be visited. An example of a project management application is
+                        Microsoft Project. However, it is highly recommended to align with the
+                        management application previously selected in the management modules.</li>
+                        
+                        <li>
+                        Remote Surveying Tools:
+                        Applications like Google Earth and Google Street View may be useful for making
+                        quick surveying without visiting the desired location. The use of these applications has some limitations
+                        and their use must be evaluated by the Naas
+                        Operator as discussed in section 3.1.</li>
+                        
+                        <li>
+                        Data Organization Tools:
+                        Photographic evidence taken during each Site Survey activity as well as the
+                        generated Site Survey Reports can be managed and accessed by NaaS Operator deployment team using cloud applications such as Dropbox or Google Drive (both free access
+                        applications). Images can be organized into folders that reflect each site
+                        survey activity (as organized in section 4.2).</li>
+                    </ul>
+            </div>
+
+            <a class='link-next' href="#" onclick="switchContent('#hld')"> &#8656; Previous</a>
+                <a href="url" align="center"></a>
+                <div class="right">
+                    <a ></a>
+                    <a class="link-next" href="#" onclick="switchContent('#e2e')">Next &#8658;</a>
+                </div>
+                <br>
+            </div>
+
+            <nav id="navbar-example3" class="navbar navbar-light bg-light position-fixed">
+                <nav class="nav nav-pills flex-column">
+                <a id="fm_link-1" class="nav-link bullet-2-link" onclick="onClickActive(event)" href="#item3"><strong>3. Site Survey Strategy Definition</strong></a>
+                <a id="fm_link-2" class="nav-link bullet-2-link" onclick="onClickActive(event)" href="#item3-1"><em>3.1	Site Survey Policy</em></a>
+                <a id="fm_link-3" class="nav-link bullet-2-link" onclick="onClickActive(event)" href="#item3-2"><em>3.2 Resources and Logistics</em></a>
+
+                </nav>
+            </nav>
+       </section>
+
+       <section id="e2e" hidden>
+        <div id="content">
+
+            <div data-spy="scroll" data-target="#navbar-example3" data-offset="0">
+                <h1><a class="titulo-h1 anchor-bum" name="item4">4
+                    Site Survey Process Analysis and Customization</a></h1>
+                    
+                    <p class="normal-text">Figure 4
+                    displays a generic end-to-end process to perform a Site Survey for a NaaS
+                    Deployment.</p>
+                    
+                    <p class="normal-text"><img width=747 height=180 id=image40.jpg
+                    src="images/site_survey/image005.png"
+                    alt="A screenshot of a cell phone&#10;&#10;Description automatically generated"></p>
+                    
+                    <p align=center><i>Figure 4. Site Survey process description.</i></p>
+                    
+                    <p class="normal-text">Process starts
+                    by identifying the applicable use case for the specific site. <i>Data
+                    Collection </i>deals with the consolidation of required data provided as input
+                    documentation. Based on the identified use case, <i>Resource Preparation </i>defines
+                    the composition of the Site Survey team and required material to perform the
+                    site survey activities. <i>Survey Plan &amp; Logistics </i>guides the team for
+                    internal organization and survey planning. <i>Team Gathering</i> assigns
+                    resources to the site survey teams based on the required team composition.</p>
+                    
+                    <p class="normal-text">Site Survey
+                    activities start with <i>Sites Basic Information </i>which consists of the
+                    collection of basic details once the team arrives at the desired location. <i>Civil
+                    Infrastructure Survey </i>is performed to gather information regarding the
+                    site's current structure. <i>Power Supply Survey </i>is done to capture data
+                    about elements that energize sites equipment. <i>Telecom Infrastructure Survey
+                    </i>is then carried out to illustrate existing telecom infrastructure such as
+                    cabinets, racks, and cabling. Then, <i>RF Survey </i>and <i>TX Survey </i>are
+                    made to obtain data to be used in the evaluation of the proposed HLD
+                    configurations. Finally, <i>Site Survey Report Generation </i>guides the
+                    creation of the SSR.</p>
+                    
+                    <br><h2><a class="titulo-h2 anchor-bum" name="item4-1">4.1
+                    Site Survey Pre-Work</a></h2>
+                    
+                    <p class="normal-text">This section
+                    presents guidelines to establish and perform Site Survey preparation activities
+                    under the specific NaaS Operator environment and use cases.</p>
+                    
+                    <h3><a></a>4.1.1
+                    Use Case Identification</h3>
+                    
+                    <p class="normal-text">Specific use
+                    case(s) can be identified based on the available input data and NaaS Deployment
+                    characteristics. This may lead to having more than one use case for a single
+                    location. For instance, two use cases can apply for a site with an existing
+                    tower: no overlay deployment and rooftop use cases. Therefore, the NaaS
+                    deployment may be composed of a combination of locations with different use
+                    cases each. </p>
+                    
+                    <p class="normal-text">Each site in the NaaS
+                    deployment shall be matched (based on its own initial conditions) with its
+                    corresponding use case as shown in Table 2.</p>
+                    
+                    <p class="normal-text">Final selection
+                    of the possible use cases shall be done by analyzing the available inputs. For
+                    instance, if no HLD is available, then it is not required the evaluation of RF
+                    and TX solutions, this will eliminate the existing tower and overlay use cases
+                    from consideration.</p>
+                    
+                    <h3><a></a>4.1.2
+                    Data Collection</h3>
+                    
+                    <p class="normal-text">Site survey team
+                    must collect basic information about the locations and consolidate them into a
+                    single document which shall serve as a starting point in the planning
+                    definition.</p>
+                    
+                    <p class="normal-text">Main data to be
+                    collected is displayed in Table 8.</p>
+                    
+                    <div align=center>
+                    
+                    <table class=a6 border=1 cellspacing=0 cellpadding=0 width=515
+                     style='border-collapse:collapse;border:none'>
+                     <tr>
+                      <td width=227 valign=top style='width:170.4pt;border:solid black 1.0pt;
+                      background:#1F4E79;padding:0cm 5.4pt 0cm 5.4pt'>
+                      <p align=center style='color:#fff;'>Input</p>
+                      </td>
+                      <td width=288 valign=top style='width:215.85pt;border:solid black 1.0pt;
+                      border-left:none;background:#1F4E79;padding:0cm 5.4pt 0cm 5.4pt'>
+                      <p align=center style='color:#fff;'>Required
+                      data</p>
+                      </td>
+                     </tr>
+                     <tr>
+                      <td width=227 style='width:170.4pt;border:solid black 1.0pt;border-top:none;
+                      padding:0cm 5.4pt 0cm 5.4pt'>
+                      <p class="normal-text">Local Map</p>
+                      </td>
+                      <td width=288 style='width:215.85pt;border-top:none;border-left:none;
+                      border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 5.4pt 0cm 5.4pt'>
+                      <p class="normal-text">&#9679;
+                      Exact location (street
+                      name, number, etc.)</p>
+                      </td>
+                     </tr>
+                     <tr>
+                      <td width=227 style='width:170.4pt;border:solid black 1.0pt;border-top:none;
+                      padding:0cm 5.4pt 0cm 5.4pt'>
+                      <p class="normal-text">Existing Services in
+                      the region (energy, communications, etc.)</p>
+                      </td>
+                      <td width=288 style='width:215.85pt;border-top:none;border-left:none;
+                      border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 5.4pt 0cm 5.4pt'>
+                      <p class="normal-text">&#9679;
+                      Existing services on site</p>
+                      </td>
+                     </tr>
+                     <tr>
+                      <td width=227 style='width:170.4pt;border:solid black 1.0pt;border-top:none;
+                      padding:0cm 5.4pt 0cm 5.4pt'>
+                      <p class="normal-text">Site Engineering
+                      Information</p>
+                      </td>
+                      <td width=288 style='width:215.85pt;border-top:none;border-left:none;
+                      border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 5.4pt 0cm 5.4pt'>
+                      <p class="normal-text">&#9679;
+                      Existing infrastructure
+                      and buildings</p>
+                      </td>
+                     </tr>
+                     <tr>
+                      <td width=227 style='width:170.4pt;border:solid black 1.0pt;border-top:none;
+                      padding:0cm 5.4pt 0cm 5.4pt'>
+                      <p class="normal-text">High-Level Design
+                      (HLD) Reports (RAN / TX)</p>
+                      </td>
+                      <td width=288 style='width:215.85pt;border-top:none;border-left:none;
+                      border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 5.4pt 0cm 5.4pt'>
+                      <p class="normal-text">&#9679;
+                      Coordinates</p>
+                      <p class="normal-text">&#9679;
+                      Microwave Path</p>
+                      <p class="normal-text">&#9679;
+                      Configurations</p>
+                      <p class="normal-text">&#9679;
+                      Scenario (Greenfield or
+                      Overlay)</p>
+                      </td>
+                     </tr>
+                    </table>
+                    
+                    </div>
+                    
+                    <p align=center><i>Table 8. Basic information to be collected.</i></p>
+                    
+                    <p class="normal-text">NaaS Operators
+                    can use the <a href="site_consolidate" class="a_link">Site Consolidated Information Template</a> to
+                    create its own version of the consolidated information.</p>
+                    
+                    <h3><a></a>4.1.3
+                    Resource Preparation</h3>
+                    
+                    <p class="normal-text">Based on the
+                    defined use case, NaaS Operators will be able to identify the required
+                    resources that will integrate the surveying team as discussed in section
+                    3.2.2.1.</p>
+                    
+                    <p class="normal-text">NaaS Operators
+                    can use the <a href="site_survey_resources" class="a_link">Site Survey Resources Checklist Template</a> to
+                    identify its required resources based on the defined use case.</p>
+                    
+                    <h3><a></a>4.1.4
+                    Team Gathering</h3>
+                    
+                    <p class="normal-text">Once the use
+                    case has been defined and the NaaS Operator is aware of which specialists are
+                    required to conform the site survey teams, it must select the right personnel
+                    among its organization to conform the teams. Table 9 can help NaaS Operator in
+                    the selection based on optimal qualifications required for each activity.</p>
+                    
+                    <div align=center>
+                    
+                    <table class=a7 border=1 cellspacing=0 cellpadding=0 width=539
+                     style='border-collapse:collapse;border:none'>
+                     <tr>
+                      <td width=208 style='width:155.7pt;border:solid black 1.0pt;background:#1F4E79;
+                      padding:0cm 5.4pt 0cm 5.4pt'>
+                      <p align=center style='color:#fff;'>Required
+                      Site Survey Staff</p>
+                      </td>
+                      <td width=331 valign=top style='width:248.25pt;border:solid black 1.0pt;
+                      border-left:none;background:#1F4E79;padding:0cm 5.4pt 0cm 5.4pt'>
+                      <p align=center style='color:#fff;'>Qualifications</p>
+                      </td>
+                     </tr>
+                     <tr>
+                      <td width=208 style='width:155.7pt;border:solid black 1.0pt;border-top:none;
+                      padding:0cm 5.4pt 0cm 5.4pt'>
+                      <p class="normal-text">Civil work specialist.</p>
+                      </td>
+                      <td width=331 style='width:248.25pt;border-top:none;border-left:none;
+                      border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 5.4pt 0cm 5.4pt'>
+                      <p class="normal-text">&#9679;
+                      Knowledge and experience
+                      in civil engineering.</p>
+                      <p class="normal-text">&#9679;
+                      Experience in field
+                      measurement and field data collection.</p>
+                      <p class="normal-text">&#9679;
+                      Experience in base station
+                      construction (site foundations, towers construction, equipment room
+                      requirements).</p>
+                      <p class="normal-text">&#9679;
+                      Experience in power
+                      systems for base stations.</p>
+                      <p class="normal-text">&#9679;
+                      Experience in the
+                      installation of telecom equipment.</p>
+                      </td>
+                     </tr>
+                     <tr>
+                      <td width=208 style='width:155.7pt;border:solid black 1.0pt;border-top:none;
+                      padding:0cm 5.4pt 0cm 5.4pt'>
+                      <p class="normal-text">RF Engineer</p>
+                      </td>
+                      <td width=331 style='width:248.25pt;border-top:none;border-left:none;
+                      border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 5.4pt 0cm 5.4pt'>
+                      <p class="normal-text">&#9679;
+                      General knowledge in RF
+                      design</p>
+                      <p class="normal-text">&#9679;
+                      Familiarized with RF
+                      components of a base station.</p>
+                      <p class="normal-text">&#9679;
+                      Knowledge in the basic
+                      components of a base station, its installation and configuration: Baseband
+                      units, radio units and antennas.</p>
+                      </td>
+                     </tr>
+                     <tr>
+                      <td width=208 style='width:155.7pt;border:solid black 1.0pt;border-top:none;
+                      padding:0cm 5.4pt 0cm 5.4pt'>
+                      <p class="normal-text">TX Engineer</p>
+                      </td>
+                      <td width=331 style='width:248.25pt;border-top:none;border-left:none;
+                      border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 5.4pt 0cm 5.4pt'>
+                      <p class="normal-text">&#9679;
+                      General knowledge in TX
+                      design</p>
+                      <p class="normal-text">&#9679;
+                      Familiarized with TX
+                      components of a base station.</p>
+                      <p class="normal-text">&#9679;
+                      Knowledge in the basic
+                      components of a base station, its installation and configuration: Baseband
+                      units, radio units and antennas.</p>
+                      </td>
+                     </tr>
+                     <tr>
+                      <td width=208 style='width:155.7pt;border:solid black 1.0pt;border-top:none;
+                      padding:0cm 5.4pt 0cm 5.4pt'>
+                      <p class="normal-text">Tower climbing
+                      specialist (in case of tower &gt; 10 m)<sup> 1</sup></p>
+                      </td>
+                      <td width=331 style='width:248.25pt;border-top:none;border-left:none;
+                      border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 5.4pt 0cm 5.4pt'>
+                      <p class="normal-text">&#9679;
+                      Valid and updated tower
+                      climbing certification (may vary from one country to another).</p>
+                      <p class="normal-text">&#9679;
+                      Experience in base station
+                      deployments.</p>
+                      </td>
+                     </tr>
+                     <tr>
+                      <td width=539 colspan=2 style='width:403.95pt;border:solid black 1.0pt;
+                      border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+                      <p class="normal-text"><sup>1</sup>  NaaS Operator
+                      may require hiring external personal for this position.</p>
+                      </td>
+                     </tr>
+                    </table>
+                    
+                    </div>
+                    
+                    <p align=center><i>Table 9. Site Survey team members
+                    selection.</i></p>
+                    
+                    <h3><a></a>4.1.5
+                    Survey Plan &amp; Logistics</h3>
+                    
+                    <p class="normal-text">NaaS Operators
+                    must be aware that the site survey is a process that consumes a significant
+                    amount of time; as a general rule, it is considered that a site survey for one
+                    location requires one day. A proper project planning must be done for time and
+                    resource optimization.</p>
+                    
+                    <p class="normal-text">The project
+                    planning may start by dividing the NaaS deployment overall region in smaller
+                    subregions if the sites are distributed along several regions. Each subregion
+                    will contain a certain amount of survey sites. NaaS Operators can then assign
+                    each region to a Site Survey team to document all sites in that specific
+                    subregion. In this way, survey teams can be easily coordinated, and a NaaS
+                    Operator can have control of the surveyed sites.</p>
+                    
+                    <p class="normal-text">Creation of
+                    subregions and number of sites per subregion will depend on the distance
+                    between sites and NaaS deployment schedule. This means that a tradeoff exists
+                    between the number of subregions defined and deployment schedule: the more
+                    subregions defined; the more site survey teams will be required but the time to
+                    complete all Site Surveys can be reduced.</p>
+                    
+                    <p class="normal-text">NaaS Operators
+                    must consider assigning priorities to each location. Priority can be defined
+                    based on Site Survey policies. For instance, site surveys triggered by a site
+                    acquisition process may be assigned a higher priority in the schedule as those
+                    locations may require the site survey activities to be performed in order to
+                    start the acquisition process.</p>
+                    
+                    <p class="normal-text">Figure 5
+                    displays an example of a 7 locations deployment.</p>
+                    
+                    <p class="normal-text"><img width=463 height=340 id=image35.png
+                    src="images/site_survey/image006.png"></p>
+                    
+                    <p align=center><i>Figure 5. Example of region with 7
+                    locations.</i></p>
+                    
+                    <p class="normal-text">Two possible
+                    situations can be defined of the survey plan of the example region:</p>
+                    
+                    <ol class="normal-text ul-iconos" style='margin-top:0in' start=1 type=1>
+                        <li class="normal-text">Based on distance between
+                        locations, three subregions can be defined as shown in Figure 6. This will
+                        require three site survey teams and three days of site survey activities.<br>
+                        
+                        <p class="normal-text"><img
+                        width=409 height=340 id=image34.png
+                        src="images/site_survey/image008.png"></p>
+                        
+                        <p align=center style="font-size: 16px;"><i>Figure 6. Definition of possible
+                        sub-regions for the example region.</i></p>
+                        </li>
+                    
+                        <li class="normal-text">Based on NaaS Operators resources availability,
+                        it can be decided that only one Site Survey team can be afforded. In this case,
+                        the deployment schedule shall
+                        consider 7 days for the required site survey activities. In this case there is
+                        no need for the definition of subregions as one site survey team will oversee
+                        all locations.</li>
+                    </ol>
+                    
+                    <br><h2><a class="titulo-h2 anchor-bum" name="item4-2">4.2
+                    Site Survey Activities</a></h2>
+                    
+                    <p class="normal-text">This section
+                    provides a description of the site survey activities and guidelines to carry
+                    out each activity involved. In addition, instruction on how to gather
+                    photographic evidence will be reviewed. The goal is to obtain relevant
+                    information for each use case such as structural information present on site as
+                    well as any installed equipment. It must be noticed that site survey activities
+                    focus on any NaaS Operator existing equipment. Information regarding existing
+                    equipment belonging to other operators will be used only to measure available
+                    space on tower as will be descriptive in section 4.2.5. </p>
+                    
+                    <p class="normal-text">NaaS Operators
+                    are provided with a <a class="a_link" href="site_survey_report">Site Survey Report Template</a> which
+                    can be customized based on each site identified use case(s).</p>
+                    
+                    <h3><a></a>4.2.1
+                    Sites Basic Information</h3>
+                    
+                    <p class="normal-text">Upon arrival at
+                    the location, the survey team must collect all available data to help other
+                    teams (site construction team, I&amp;C team, etc.) to quickly identify and access
+                    the site. Data to be collected is described below.</p>
+                    
+                    <ul class="normal-text ul-iconos" style='margin-top:0in' start=1 type=1>
+                        <li>General Information: This
+                        information can be obtained directly on the location by reading a nearby street
+                        plate, by using an updated map of the region or, as a last option, using Google
+                        Earth information. Data to be obtained in this step is:</li>
+                    
+                        <ul class="normal-text ul-iconos" style='margin-top:0in' start=1 type=1>
+                            <li style="font-size: 16px;">Street Name, Postal Code, Region, State and
+                            Municipality.</li>
+                        </ul>
+                    
+                    
+                        <li>
+                        Coordinates, references, and
+                        site access: This section is composed of the following data:</li>
+                    
+                        <ul class="normal-text ul-iconos" style='margin-top:0in' start=1 type=1>
+                            <li style="font-size: 16px;">Coordinates: Using the GPS equipment, exact
+                            latitude and longitude of the location must be obtained.</li>
+                            
+                            <li style="font-size: 16px;">Location Access: Short note about how to access
+                            the site, i.e.: Site can be accessed directly by car, Site entrance is 50m away from the
+                            nearest road, walking is necessary, etc.</li>
+                            
+                            <li style="font-size: 16px;">Site Contact: Verify the name of the person(s)
+                            in charge of the location.</li>
+                            
+                            <li style="font-size: 16px;">Contact Phone: Phone number of the site contact.</li>
+                            
+                            <li style="font-size: 16px;">Location references: Notes about site
+                            surroundings in order to clearly identify the location without ambiguities.</li>
+                        </ul>
+                    
+                        <li>Site Access: Description of
+                        conditions to obtain access to the location.</li>
+                    
+                        <ul class="normal-text ul-iconos" style='margin-top:0in' start=1 type=1>
+                            <li style="font-size: 16px;">Access Type: Whether by using a key, permit,
+                            non-restricted, etc.</li>
+                    
+                            <li style="font-size: 16px;">Access Obtention: How to grant access to the
+                            location.</li>
+                        </ul>
+                    
+                        <li>
+                        Obstacles Location at floor
+                        level: One team member must step at the center of the location with the compass
+                        and identify all obstacles surrounding the location. Obstacles located must be
+                        clearly identified and displayed in the 360 Obstacles figure. Figure 7
+                        illustrates an example of an
+                        obstacle location.<br><br>
+                    
+                        <p class="normal-text"><img
+                        width=414 height=290 id=image33.png
+                        src="images/site_survey/image007.png"></p>
+                        
+                        <p align=center><i>Figure 7. Obstacle Identification example.</i></p>
+                        </li>
+                    </ul><br>
+                    
+                    <h4>4.2.1.1
+                    Photographic Evidence</h4>
+                    
+                    <p class="normal-text">Table 10 describes required pictures for
+                    the Site's Basic Information section.</p>
+                    
+                    <div align=center>
+                    
+                    <table class=a8 border=1 cellspacing=0 cellpadding=0 width=467
+                     style='border-collapse:collapse;border:none'>
+                     <tr>
+                      <td width=165 valign=top style='width:123.75pt;border:solid black 1.0pt;
+                      background:#1F4E79;padding:0cm 5.4pt 0cm 5.4pt'>
+                      <p align=center style='color:#fff;'>Item</p>
+                      </td>
+                      <td width=302 valign=top style='width:8.0cm;border:solid black 1.0pt;
+                      border-left:none;background:#1F4E79;padding:0cm 5.4pt 0cm 5.4pt'>
+                      <p align=center style='color:#fff;'>Description</p>
+                      </td>
+                     </tr>
+                     <tr>
+                      <td width=165 valign=top style='width:123.75pt;border:solid black 1.0pt;
+                      border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+                      <p class="normal-text">Access Road</p>
+                      </td>
+                      <td width=302 valign=top style='width:8.0cm;border-top:none;border-left:none;
+                      border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 5.4pt 0cm 5.4pt'>
+                      <p class="normal-text">Image to display how the access
+                      to the location looks like. Example is shown in Figure 8.</p>
+                      </td>
+                     </tr>
+                     <tr>
+                      <td width=165 valign=top style='width:123.75pt;border:solid black 1.0pt;
+                      border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+                      <p class="normal-text">Front Facade</p>
+                      </td>
+                      <td width=302 valign=top style='width:8.0cm;border-top:none;border-left:none;
+                      border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 5.4pt 0cm 5.4pt'>
+                      <p class="normal-text">Image of locations front facade
+                      showing main entrance. Example is shown in Figure 8<i>.</i></p>
+                      </td>
+                     </tr>
+                     <tr>
+                      <td width=165 valign=top style='width:123.75pt;border:solid black 1.0pt;
+                      border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+                      <p class="normal-text">Sites Panoramic View</p>
+                      </td>
+                      <td width=302 valign=top style='width:8.0cm;border-top:none;border-left:none;
+                      border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 5.4pt 0cm 5.4pt'>
+                      <p class="normal-text">Images
+                      displaying all sides of the location (Front, back and sides).</p>
+                      </td>
+                     </tr>
+                     <tr>
+                      <td width=165 valign=top style='width:123.75pt;border:solid black 1.0pt;
+                      border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+                      <p class="normal-text">Rooftop view</p>
+                      </td>
+                      <td width=302 valign=top style='width:8.0cm;border-top:none;border-left:none;
+                      border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 5.4pt 0cm 5.4pt'>
+                      <p class="normal-text">Image(s)
+                      displaying as much as parts of the base station as possible. Example is shown
+                      in Figure 9.</p>
+                      </td>
+                     </tr>
+                    </table>
+                    
+                    </div>
+                    
+                    <p align=center><i>Table 10. Sites Basic Information
+                    photographic evidence.</i></p><br>
+                    
+                    <p class="normal-text"></p>
+                    
+                    <p class="normal-text"><img width=545 height=200 id=image42.png
+                    src="images/site_survey/image009.png"></p>
+                    
+                    <p align=center><i>Figure 8. Main Access and Front Facade
+                    pictures. a) Main Access Road, b) Front facade.</i></p><br>
+                    
+                    <p class="normal-text"></p>
+                    
+                    <p class="normal-text"><img width=494 height=242 id=image45.png
+                    src="images/site_survey/image010.png"></p>
+                    
+                    <p align=center><i>Figure 9. Rooftop view. a) Base Station
+                    view, b) Panoramic view.</i></p><br>
+                    
+                    <h3><a></a>4.2.2
+                    Civil Infrastructure Survey</h3>
+                    
+                    <p class="normal-text">Civil
+                    Infrastructure refers to data regarding locations structure and, if present,
+                    data about any construction made on the location. Data to be collected in this
+                    step is:</p>
+                    
+                    <ul class="normal-text ul-iconos" style='margin-top:0in' start=1 type=1>
+                        <li>Terrain Surface: Survey Team
+                        must measure sites main perimeter and record an overview of the location. All objects and buildings
+                        inside the location (which cannot be removed and are part of the location
+                        itself) must be displayed in the drawing as well as the orientation of the
+                        site. Figure 10 displays an example of how the location's sketch may look like.<br>
+                        <img
+                        width=447 height=227 id=image38.png
+                        src="images/site_survey/image011.jpg">
+                        
+                        <p align=center><i>Figure 10. Location overview drawing.</i></p>
+                    
+                    <br>Information to be measured in this step:
+                    
+                        <ul class="normal-text ul-iconos" style='margin-top:0in' start=1 type=1>
+                            <li style="font-size: 16px;">Perimeter</li>
+                            <li style="font-size: 16px;">Total Area</li>
+                            <li style="font-size: 16px;">Available space on the floor</li>
+                        </ul>
+                        </li>
+                    
+                    <li>
+                    Existing Site Conditions:
+                    Team must run a quick evaluation (in terms of integrity: presence of fractures,
+                    stability, etc.) the conditions of the structures inside the location.
+                    Structures to be evaluated are:</li>
+                    
+                    <ul class="normal-text ul-iconos" style='margin-top:0in' start=1 type=1>
+                        <li style="font-size: 16px;">Outer fence</li>
+                        <li style="font-size: 16px;">Floor Foundations</li>
+                        <li style="font-size: 16px;">Tower Foundations</li>
+                        <li style="font-size: 16px;">Cabinet Foundations</li>
+                        <li style="font-size: 16px;">Cabinet outer and inner conditions</li>
+                    </ul>
+                    
+                    <li>
+                    Existing Tower: Team must
+                    collect basic information about tower infrastructure, which includes:</li>
+                    
+                    <ul class="normal-text ul-iconos" style='margin-top:0in' start=1 type=1>
+                        <li style="font-size: 16px;">Tower condition (rust, broken sections, etc.)</li>
+                        <li style="font-size: 16px;">Tower type  Identify tower type.</li>
+                        <li style="font-size: 16px;">Tower height  If required, a team member will
+                        need to climb to the tower in order to make this measurement.</li>
+                        <li style="font-size: 16px;">Number of faces (sides)</li>
+                        <li style="font-size: 16px;">Base Diameter &amp; Area  By measuring towers
+                        base structure</li>
+                        <li style="font-size: 16px;">Structure (Circular or polygonal)</li>
+                    </ul>
+                    </ul>
+                    
+                    <h4>4.2.2.1
+                    Photographic Evidence</h4>
+                    
+                    <p class="normal-text">Table 11 describes required pictures for
+                    the Civil Infrastructure Survey.</p>
+                    
+                    <div align=center>
+                    
+                    <table class=a9 border=1 cellspacing=0 cellpadding=0 width=467
+                     style='border-collapse:collapse;border:none'>
+                     <tr>
+                      <td width=165 valign=top style='width:123.75pt;border:solid black 1.0pt;
+                      background:#1F4E79;padding:0cm 5.4pt 0cm 5.4pt'>
+                      <p align=center style='color:#fff;'>Item</p>
+                      </td>
+                      <td width=302 valign=top style='width:8.0cm;border:solid black 1.0pt;
+                      border-left:none;background:#1F4E79;padding:0cm 5.4pt 0cm 5.4pt'>
+                      <p align=center style='color:#fff;'>Description</p>
+                      </td>
+                     </tr>
+                     <tr>
+                      <td width=165 valign=top style='width:123.75pt;border:solid black 1.0pt;
+                      border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+                      <p class="normal-text">Terrain Panoramic</p>
+                      </td>
+                      <td width=302 valign=top style='width:8.0cm;border-top:none;border-left:none;
+                      border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 5.4pt 0cm 5.4pt'>
+                      <p class="normal-text">Image (or images) that display
+                      the entire inner structure of the location. Example is shown in Figure 11.</p>
+                      </td>
+                     </tr>
+                     <tr>
+                      <td width=165 valign=top style='width:123.75pt;border:solid black 1.0pt;
+                      border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+                      <p class="normal-text">Terrain Ground Plan Sketch</p>
+                      </td>
+                      <td width=302 valign=top style='width:8.0cm;border-top:none;border-left:none;
+                      border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 5.4pt 0cm 5.4pt'>
+                      <p class="normal-text">Drawing of the terrain surface
+                      as described for Figure 10.</p>
+                      </td>
+                     </tr>
+                     <tr>
+                      <td width=165 valign=top style='width:123.75pt;border:solid black 1.0pt;
+                      border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+                      <p class="normal-text">Foundations</p>
+                      </td>
+                      <td width=302 valign=top style='width:8.0cm;border-top:none;border-left:none;
+                      border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 5.4pt 0cm 5.4pt'>
+                      <p class="normal-text">Clear
+                      image of any foundation present in the location. Figure 12 displays examples
+                      of tower and cabinet foundations.</p>
+                      </td>
+                     </tr>
+                     <tr style='height:9.45pt'>
+                      <td width=165 valign=top style='width:123.75pt;border:solid black 1.0pt;
+                      border-top:none;padding:0cm 5.4pt 0cm 5.4pt;height:9.45pt'>
+                      <p class="normal-text">Tower panoramic</p>
+                      </td>
+                      <td width=302 valign=top style='width:8.0cm;border-top:none;border-left:none;
+                      border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;
+                      height:9.45pt'>
+                      <p class="normal-text">Pictures from all angles of the
+                      existing tower as shown in Figure 13.</p>
+                      <p class="normal-text">Each angle must be documented (i.e. angle A, angle
+                      B, etc.)</p>
+                      </td>
+                     </tr>
+                    </table>
+                    
+                    </div>
+                    
+                    <p align=center><i>Table 11. Civil Infrastructure Survey
+                    photographic evidence.</i></p><br>
+                    
+                    <p class="normal-text"></p>
+                    
+                    <p class="normal-text"><img width=300 height=200
+                    id=image1.png src="images/site_survey/image011.png"></p>
+                    
+                    <p align=center><i>Figure 11. Terrain Panoramic.</i></p><br>
+                    
+                    <p class="normal-text"><img width=410 height=200
+                    id=image12.png
+                    src="images/site_survey/image012.png"></p>
+                    
+                    <p align=center><i>Figure 12. Terrain Foundations. a) Tower
+                    foundations, b) Cabinet foundations.</i></p><br><br>
+                    
+                    <p class="normal-text"><img width=315 height=349 id=image9.png
+                    src="images/site_survey/image013.png"></p>
+                    
+                    <p align=center><i>Figure 13. Tower Panoramic.</i></p><br><br>
+                    
+                    <h3><a></a>4.2.3
+                    Power Supply Survey</h3>
+                    
+                    <p class="normal-text">Power Supply survey must capture data about grid connections,
+                    grounding systems and elements to energize any equipment on site. Required data
+                    for this survey is:</p>
+                    
+                    <ul class="normal-text ul-iconos" style='margin-top:0in' start=1 type=1>
+                        <li>Site power supply: Team must
+                        get information about how the site is being energized: whether it is by an AC
+                        connection or by an alternative power source (solar, wind, etc.) and the location of the power connections. Data to be
+                        collected in this regard is:</li>
+                    
+                        <ul class="normal-text ul-iconos" style='margin-top:0in' start=1 type=1>
+                            <li style="font-size: 16px;">Type of AC Connection  How AC is reaching the
+                            location: Aerial or underground.</li>
+                            <li style="font-size: 16px;">Distance to the closest AC line</li>
+                            <li style="font-size: 16px;">Existing meter serial number  Serial number of
+                            the power meter which is feeding the equipment.</li>
+                            <li style="font-size: 16px;">Output Voltage</li>
+                            <li style="font-size: 16px;">Alternative power source  Identify and take
+                            note about any alternative power source which is feeding the current equipment.</li>
+                        </ul>
+                        
+                        <li>
+                        Rectifiers: Team must obtain
+                        relevant information about rectifiers supplying the equipment.</li>
+                    
+                        <ul class="normal-text ul-iconos" style='margin-top:0in' start=1 type=1>
+                            <li style="font-size: 16px;">Rectifier model  Can be obtained directly from
+                            the equipment.</li>
+                            <li style="font-size: 16px;">Number of rectifiers</li>
+                            <li style="font-size: 16px;">Capacity per rectifier (amp)  Can be obtained
+                            directly from the equipment.</li>
+                            <li style="font-size: 16px;">Available space for extra rectifiers</li>
+                        </ul>
+                    
+                        <li>
+                        Batteries: Team must obtain
+                        relevant information about battery banks supplying the equipment.</li>
+                    
+                        <ul class="normal-text ul-iconos" style='margin-top:0in' start=1 type=1>
+                            <li style="font-size: 16px;">Battery model  Can be obtained directly from
+                            the equipment.</li>
+                            <li style="font-size: 16px;">Number of batteries</li>
+                            <li style="font-size: 16px;">Capacity per battery (Ah)  Can be obtained
+                            directly from the equipment.</li>
+                            <li style="font-size: 16px;">Battery expiration date  Can be obtained
+                            directly from the equipment.</li>
+                            <li style="font-size: 16px;">Available space for extra batteries</li>
+                        </ul>
+                
+                    <li>
+                    Indoor and outdoor grounding
+                    system: Inspection grounding systems for indoor and outdoor equipment. Required
+                    data:</li>
+                    
+                    <ul class="normal-text ul-iconos" style='margin-top:0in' start=1 type=1>
+                        <li style="font-size: 16px;">Wire Gauge</li>
+                        <li style="font-size: 16px;">Type of the ground system</li>
+                        <li style="font-size: 16px;">Ground system material</li>
+                        <li style="font-size: 16px;">Height of the bar on tower (in case of existing tower)</li>
+                    </ul>
+                    </ul>
+                    
+                    <h4>4.2.3.1
+                    Photographic Evidence</h4>
+                    
+                    <p class="normal-text">Table 12 describes required pictures for
+                    the Power Supply Survey.</p>
+                    
+                    <div align=center>
+                    
+                    <table class=aa border=1 cellspacing=0 cellpadding=0 width=467
+                     style='border-collapse:collapse;border:none'>
+                     <tr>
+                      <td width=165 valign=top style='width:123.75pt;border:solid black 1.0pt;
+                      background:#1F4E79;padding:0cm 5.4pt 0cm 5.4pt'>
+                      <p align=center style='color:#fff;'>Item</p>
+                      </td>
+                      <td width=302 valign=top style='width:8.0cm;border:solid black 1.0pt;
+                      border-left:none;background:#1F4E79;padding:0cm 5.4pt 0cm 5.4pt'>
+                      <p align=center style='color:#fff;'>Description</p>
+                      </td>
+                     </tr>
+                     <tr>
+                      <td width=165 valign=top style='width:123.75pt;border:solid black 1.0pt;
+                      border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+                      <p class="normal-text">Main energy panel</p>
+                      </td>
+                      <td width=302 valign=top style='width:8.0cm;border-top:none;border-left:none;
+                      border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 5.4pt 0cm 5.4pt'>
+                      <p class="normal-text">Front images of the main energy
+                      panel. If it has a door, both closed and opened images must be taken.
+                      Examples are shown in Figure 14.</p>
+                      </td>
+                     </tr>
+                     <tr>
+                      <td width=165 valign=top style='width:123.75pt;border:solid black 1.0pt;
+                      border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+                      <p class="normal-text">Alternative power source</p>
+                      </td>
+                      <td width=302 valign=top style='width:8.0cm;border-top:none;border-left:none;
+                      border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 5.4pt 0cm 5.4pt'>
+                      <p class="normal-text">Images of the alternative power
+                      sources: solar panels or eolic generators.</p>
+                      </td>
+                     </tr>
+                     <tr>
+                      <td width=165 valign=top style='width:123.75pt;border:solid black 1.0pt;
+                      border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+                      <p class="normal-text">Rectifiers</p>
+                      </td>
+                      <td width=302 valign=top style='width:8.0cm;border-top:none;border-left:none;
+                      border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 5.4pt 0cm 5.4pt'>
+                      <p class="normal-text">Images to
+                      clearly identify existing rectifiers and where they are stored. Image of
+                      vendor plate with its main characteristics. Example is shown in Figure 15.</p>
+                      </td>
+                     </tr>
+                     <tr>
+                      <td width=165 valign=top style='width:123.75pt;border:solid black 1.0pt;
+                      border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+                      <p class="normal-text">Batteries</p>
+                      </td>
+                      <td width=302 valign=top style='width:8.0cm;border-top:none;border-left:none;
+                      border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 5.4pt 0cm 5.4pt'>
+                      <p class="normal-text">Images to
+                      clearly identify existing batteries and where they are stored. Image of vendor
+                      plate with its main characteristics. Photographic evidence is similar to
+                      rectifiers image (Figure 15).</p>
+                      </td>
+                     </tr>
+                     <tr>
+                      <td width=165 valign=top style='width:123.75pt;border:solid black 1.0pt;
+                      border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+                      <p class="normal-text">Indoor / Outdoor Ground Systems </p>
+                      </td>
+                      <td width=302 valign=top style='width:8.0cm;border-top:none;border-left:none;
+                      border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 5.4pt 0cm 5.4pt'>
+                      <p class="normal-text">Image
+                      displaying the grounding system used by indoor and/or outdoor equipment.
+                      Example is shown in Figure 16.</p>
+                      </td>
+                     </tr>
+                     <tr>
+                      <td width=165 valign=top style='width:123.75pt;border:solid black 1.0pt;
+                      border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+                      <p class="normal-text">Tower Ground System</p>
+                      </td>
+                      <td width=302 valign=top style='width:8.0cm;border-top:none;border-left:none;
+                      border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 5.4pt 0cm 5.4pt'>
+                      <p class="normal-text">Image(s)
+                      displaying all available ground systems for equipment mounted on towers.
+                      Example is shown in Figure 17.</p>
+                      </td>
+                     </tr>
+                    </table>
+                    
+                    </div>
+                    
+                    <p align=center><i>Table 12. Power Supply Survey photographic
+                    evidence.</i></p><br>
+                    
+                    <p class="normal-text"><img width=310 height=227
+                    id=image22.png
+                    src="images/site_survey/image014.png"></p>
+                    
+                    <p align=center><i>Figure 14. Main Energy Panel. a) Closed, b)
+                    Opened.</i></p><br>
+                    
+                    <p class="normal-text"></p>
+                    
+                    <p class="normal-text"><img width=378 height=227 id=image19.png
+                    src="images/site_survey/image015.png"></p>
+                    
+                    <p align=center><i>Figure 15. Rectifiers &amp; Batteries. a)
+                    Inside cabinet, b) Information plate.</i></p><br>
+                    
+                    <p class="normal-text"><img width=189 height=254 id=image23.png
+                    src="images/site_survey/image016.png"></p>
+                    
+                    <p align=center><i>Figure 16. Outdoor Ground System.</i></p><br>
+                    
+                    <p class="normal-text"><img width=479 height=168 id=image44.png
+                    src="images/site_survey/image017.png"></p>
+                    
+                    <p align=center><i>Figure 17. Tower Ground Systems. a) Ground
+                    system on top of the tower, b) ground system at the towers base.</i></p><br>
+                    
+                    <h3><a></a>4.2.4
+                    Telecom Infrastructure Survey</h3>
+                    
+                    <p class="normal-text">Telecom
+                    Infrastructure Survey must identify, describe, and gather evidence of the
+                    available infrastructure where telecom equipment is to be installed. Such
+                    infrastructure includes cabinets, racks, wall openings and cable trajectories.
+                    Information to be collected is composed by:</p>
+                    
+                    <ul class="normal-text ul-iconos" style='margin-top:0in' start=1 type=1>
+                        <li>Cabinet Information: Indoor
+                        or outdoor cabinets where equipment is hosted.</li>
+                        
+                        <ul class="normal-text ul-iconos" style='margin-top:0in' start=1 type=1>
+                            <li style="font-size: 16px;">Cabinet dimensions  To be measured by the survey team.</li>
+                            <li style="font-size: 16px;">Cabinet type.</li>
+                            <li style="font-size: 16px;">Available space for extra equipment.</li>
+                            <li style="font-size: 16px;">Available voltages inside the cabinet</li>
+                        </ul>
+                    
+                        <li>
+                        Indoor Rack(s): Racks where
+                        equipment is to be mounted.</li>
+                    
+                        <ul class="normal-text ul-iconos" style='margin-top:0in' start=1 type=1>
+                            <li style="font-size: 16px;">Rack dimensions To be measured by the survey
+                             team.</li>
+                             <li style="font-size: 16px;">Available space for extra equipment.</li>
+                        </ul>
+                    
+                        <li>
+                        Wall openings and cable
+                        trajectories: Document existing wall openings and cable racks.</li>
+                    
+                        <ul class="normal-text ul-iconos" style='margin-top:0in' start=1 type=1>
+                            <li style="font-size: 16px;">Available space on the existing wall opening 
+                            Survey team must measure the existing wall opening.</li>
+                            <li style="font-size: 16px;">Required cable rack for indoor, outdoor and/or
+                            tower equipment  Measure existing cable racks and evidence their capacity
+                            (number of cables).</li>
+                    
+                            <li style="font-size: 16px;">Cable trajectories sketch  Existing cable
+                            trajectories must be represented on the initial location overview draw. Example
+                            is shown in Figure 18.</li>
+                        </ul>
+                    </ul>
+                    
+                    <p class="normal-text"><img width=481 height=249
+                    id=image39.png
+                    src="images/site_survey/image018.png"></p>
+                    
+                    <p align=center><i>Figure 18. Cable trajectories sketch
+                    example.</i></p><br>
+                    
+                    <h4>4.2.4.1
+                    Photographic Evidence</h4>
+                    
+                    <p class="normal-text">Table 13 describes required pictures for
+                    the Power Supply Survey.</p>
+                    
+                    <div align=center>
+                    
+                    <table class=ab border=1 cellspacing=0 cellpadding=0 width=467
+                     style='border-collapse:collapse;border:none'>
+                     <tr>
+                      <td width=165 valign=top style='width:123.75pt;border:solid black 1.0pt;
+                      background:#1F4E79;padding:0cm 5.4pt 0cm 5.4pt'>
+                      <p align=center style='color:#fff;'>Item</p>
+                      </td>
+                      <td width=302 valign=top style='width:8.0cm;border:solid black 1.0pt;
+                      border-left:none;background:#1F4E79;padding:0cm 5.4pt 0cm 5.4pt'>
+                      <p align=center style='color:#fff;'>Description</p>
+                      </td>
+                     </tr>
+                     <tr>
+                      <td width=165 valign=top style='width:123.75pt;border:solid black 1.0pt;
+                      border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+                      <p class="normal-text">Outdoor / Indoor</p>
+                      <p class="normal-text">Cabinet(s) and/or Racks</p>
+                      </td>
+                      <td width=302 valign=top style='width:8.0cm;border-top:none;border-left:none;
+                      border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 5.4pt 0cm 5.4pt'>
+                      <p class="normal-text">Images of the indoor and outdoor
+                      cabinets and/or racks front panel. Both closed and opened images must be
+                      taken. Examples are shown in Figure 19 (outdoor) and Figure 20 (indoor).</p>
+                      </td>
+                     </tr>
+                     <tr>
+                      <td width=165 valign=top style='width:123.75pt;border:solid black 1.0pt;
+                      border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+                      <p class="normal-text">Wall Openings and indoor cable
+                      racks</p>
+                      </td>
+                      <td width=302 valign=top style='width:8.0cm;border-top:none;border-left:none;
+                      border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 5.4pt 0cm 5.4pt'>
+                      <p class="normal-text">Images to display cable openings
+                      (cables going through the wall) and how many cables going on of the cable
+                      racks. Example is shown in Figure 21.</p>
+                      </td>
+                     </tr>
+                     <tr>
+                      <td width=165 valign=top style='width:123.75pt;border:solid black 1.0pt;
+                      border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+                      <p class="normal-text">Outdoor cable racks</p>
+                      </td>
+                      <td width=302 valign=top style='width:8.0cm;border-top:none;border-left:none;
+                      border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 5.4pt 0cm 5.4pt'>
+                      <p class="normal-text">Images to
+                      display outdoor cable racks and how many cables are going through it. Figure
+                      22.</p>
+                      </td>
+                     </tr>
+                     <tr>
+                      <td width=165 valign=top style='width:123.75pt;border:solid black 1.0pt;
+                      border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+                      <p class="normal-text">Cable Trajectories.</p>
+                      </td>
+                      <td width=302 valign=top style='width:8.0cm;border-top:none;border-left:none;
+                      border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 5.4pt 0cm 5.4pt'>
+                      <p class="normal-text">Images to
+                      display the trajectories of the cables. They should display the main
+                      trajectories taken by the cables on their way to/from equipment. Example is
+                      shown in Figure 23.</p>
+                      </td>
+                     </tr>
+                    </table>
+                    
+                    </div>
+                    
+                    <p align=center><i>Table 13. Telecom Infrastructure Survey
+                    required photographic evidence.</i></p><br>
+                    
+                    <p class="normal-text"><img width=280 height=250 id=image46.png
+                    src="images/site_survey/image019.png"></p>
+                    
+                    <p align=center><i>Figure 19. Outdoor Cabinet picture. a)
+                    Closed, b) Opened.</i></p><br>
+                    
+                    <p class="normal-text"></p>
+                    
+                    <p class="normal-text"><img width=200 height=360 id=image43.png
+                    src="images/site_survey/image020.png"></p>
+                    
+                    <p align=center><i>Figure 20. Indoor rack picture.</i></p>
+                    
+                    <p class="normal-text"></p>
+                    
+                    <p class="normal-text"><img
+                    width=500 height=300 id=image14.png
+                    src="images/site_survey/image021.png"></p>
+                    
+                    <p align=center><i>Figure 21. Wall Openings and indoor cable
+                    racks. a) Wall Openings, b) Indoor Cable Rack availability.</i></p><br>
+                    
+                    <p class="normal-text"><img
+                    width=550 height=300 id=image18.png
+                    src="images/site_survey/image022.png"></p>
+                    
+                    <p align=center><i>Figure 22. Outdoor cable racks.</i></p><br>
+                    
+                    <p class="normal-text"><img
+                    width=220 height=275 id=image3.png
+                    src="images/site_survey/image023.png"></p>
+                    
+                    <p align=center><i>Figure 23. Cable trajectory towards tower.</i></p><br>
+                    
+                    <h3><a></a>4.2.5
+                    RF Survey</h3>
+                    
+                    <p class="normal-text">RF Survey is
+                    intended to collect data about the location's environment to be used for the
+                    evaluation of the proposed HLD RF configuration. In addition, information about
+                    NaaS Operator existing radio equipment present in the site must be obtained as
+                    well. If equipment present on site belongs to other operator(s), site survey
+                    must only focus in understanding how it limits the available space on tower and
+                    where new equipment can be mounted.</p>
+                    
+                    <p class="normal-text">Required
+                    information to be obtained from the RF survey is:</p>
+                    
+                    <ul class="normal-text ul-iconos" style='margin-top:0in' start=1 type=1>
+                        <li>For an existing tower:
+                        Evidence must be taken about available space in which new equipment can be
+                        installed. Images can be taken at floor level; however, this task must be done
+                        by a certified professional if the tower is tall and climbing is necessary.</li>
+                    
+                        <li>
+                        Existing RF equipment: If
+                        there is an existing base station and NaaS Operator is planning to reuse the
+                        installed equipment (i.e., for an overlay deployment), the
+                        survey team must get information about the installed
+                        equipment and configuration. Required data is:</li>
+                    
+                        <ul class="normal-text ul-iconos" style='margin-top:0in' start=1 type=1>
+                            <li style="font-size: 16px;">Number of antennas on the tower.</li>
+                    
+                            <li style="font-size:16px;">Antenna model  May need to climb the tower.</li>
+                            
+                            <li style="font-size:16px;">Azimuth of each antenna  Using the compass, see
+                            where the antenna is aiming to.</li>
+                            
+                            <li style="font-size:16px;">Tilt of each antenna  Using the clinometer next
+                            to the antenna to measure its tilt.</li>
+                            
+                            <li style="font-size:16px;">Location of the Radio Units  Radio units can be
+                            installed next to the antennas, on the tower or inside
+                            the floor cabinet. Surveyors must identify where they are installed and measure the
+                            distance between them and the antennas.</li>
+                            
+                            <li style="font-size:16px;">Radio unit model  May need to climb the tower.</li>
+                            
+                            <li style="font-size:16px;">Available space for new radio equipment (radio
+                            units and/or antennas)  if new equipment is to be installed, surveyors must measure the assigned space
+                            (negotiated by site acquisition) for the installation of new equipment. The
+                            measurement and images can be taken at floor level; however, this task must be
+                            done by a certified professional if the tower is tall and climbing is
+                            necessary.</li>
+                            
+                            <li style="font-size:16px;">Number of antennas and available space in the
+                            tower must be identified and drawn in a tower sketch. Figure 24 displays an example of a
+                            tower sketch.</li>
+
+                            <p class="normal-text"><img
+                            width=138 height=235 id=image15.png
+                            src="images/site_survey/image024.png"></p>
+                            <p align=center style="font-size:16px;" ><i>Figure 24. Tower Sketch example.</i></p>
+
+                        </ul>
+                        
+                        <li>
+                        Existing base band unit:
+                        Surveyor must identify the base band unit and evidence its model available
+                        capacity slots and interfaces for radio connection.</li>
+                    </ul>
+                    
+                                            
+                    <h4>4.2.5.1
+                    Photographic Evidence</h4>
+                    
+                    <p class="normal-text">Table 14 describes required pictures for
+                    the RF Survey.</p>
+                    
+                    <div align=center>
+                    
+                    <table class=a0 border=1 cellspacing=0 cellpadding=0 width=467
+                     style='border-collapse:collapse;border:none'>
+                     <tr>
+                      <td width=165 valign=top style='width:123.75pt;border:solid black 1.0pt;
+                      background:#1F4E79;padding:0cm 5.4pt 0cm 5.4pt'>
+                      <p align=center style='color:#fff;'>Item</p>
+                      </td>
+                      <td width=302 valign=top style='width:8.0cm;border:solid black 1.0pt;
+                      border-left:none;background:#1F4E79;padding:0cm 5.4pt 0cm 5.4pt'>
+                      <p align=center style='color:#fff;'>Description</p>
+                      </td>
+                     </tr>
+                     <tr>
+                      <td width=165 valign=top style='width:123.75pt;border:solid black 1.0pt;
+                      border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+                      <p class="normal-text">Available Space on tower</p>
+                      </td>
+                      <td width=302 valign=top style='width:8.0cm;border-top:none;border-left:none;
+                      border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 5.4pt 0cm 5.4pt'>
+                      <p class="normal-text">Images displaying the available
+                      space on the tower for the installation of new equipment. Examples are shown
+                      in Figure 25.</p>
+                      </td>
+                     </tr>
+                     <tr>
+                      <td width=165 valign=top style='width:123.75pt;border:solid black 1.0pt;
+                      border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+                      <p class="normal-text">Radio(s) units and antenna(s)
+                      connections</p>
+                      </td>
+                      <td width=302 valign=top style='width:8.0cm;border-top:none;border-left:none;
+                      border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 5.4pt 0cm 5.4pt'>
+                      <p class="normal-text">Images displaying RF equipment
+                      interfaces connections. Close up images are required. A certified
+                      professional may be needed if climbing is required. Example is shown in
+                      Figure 26.</p>
+                      </td>
+                     </tr>
+                     <tr>
+                      <td width=165 valign=top style='width:123.75pt;border:solid black 1.0pt;
+                      border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+                      <p class="normal-text">Existing Radio Units coverage
+                      zone</p>
+                      </td>
+                      <td width=302 valign=top style='width:8.0cm;border-top:none;border-left:none;
+                      border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 5.4pt 0cm 5.4pt'>
+                      <p class="normal-text">Images displaying coverage zones
+                      of every sector. A certified professional may be needed if climbing is
+                      required. Example is shown in Figure 27. Using a compass, the azimuth of the
+                      antenna must be measured and noted.</p>
+                      </td>
+                     </tr>
+                     <tr>
+                      <td width=165 valign=top style='width:123.75pt;border:solid black 1.0pt;
+                      border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+                      <p class="normal-text">Baseband unit</p>
+                      </td>
+                      <td width=302 valign=top style='width:8.0cm;border-top:none;border-left:none;
+                      border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 5.4pt 0cm 5.4pt'>
+                      <p class="normal-text">Images
+                      displaying front and back of the installed baseband unit. Example is shown in
+                      Figure 28.</p>
+                      </td>
+                     </tr>
+                     <tr>
+                      <td width=165 valign=top style='width:123.75pt;border:solid black 1.0pt;
+                      border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+                      <p class="normal-text">360 Panoramic View at tower
+                      level.</p>
+                      </td>
+                      <td width=302 valign=top style='width:8.0cm;border-top:none;border-left:none;
+                      border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 5.4pt 0cm 5.4pt'>
+                      <p class="normal-text">Using the
+                      compass, pictures must be taken at tower level covering all angles in steps
+                      of 30 (greater steps can be used in homogeneous areas). Examples are shown
+                      in Figure 29.</p>
+                      </td>
+                     </tr>
+                    </table>
+                    
+                    </div>
+                    
+                    <p align=center><i>Table 14. RF Survey required photographic
+                    evidence.</i></p><br>
+                    
+                    <p class="normal-text"><img
+                    width=455 height=228 id=image6.png
+                    src="images/site_survey/image025.png"></p>
+                    
+                    <p align=center><i>Figure 25. Available tower space. a)
+                    Panoramic view, b) Close up to the available space.</i></p><br>
+                    
+                    <p class="normal-text"><img
+                    width=376 height=224 id=image5.png
+                    src="images/site_survey/image026.png"></p>
+                    
+                    <p align=center><i>Figure 26. RF equipment interface
+                    connections. a) Radio Unit connections, b) Antenna Connections.</i></p><br>
+                    
+                    <p class="normal-text"><img width=415 height=238 id=image17.png
+                    src="images/site_survey/image027.png"></p>
+                    
+                    <p align=center><i>Figure 27. Coverage zone of existing
+                    sector. a) Antenna, b) Covered Zone</i></p><br>
+                    
+                    <p class="normal-text"></p>
+                    
+                    <p class="normal-text"><img width=547 height=159 id=image8.png
+                    src="images/site_survey/image028.png"></p>
+                    
+                    <p align=center><i>Figure 28. Installed Baseband unit example.
+                    a) Front, b) Back.</i></p><br>
+                    
+                    <p class="normal-text"></p>
+                    
+                    <p class="normal-text"><img width=600 height=700 id=image26.png
+                    src="images/site_survey/image029.png"></p>
+                    
+                    <p align=center><i>Figure 29. Panoramic view at tower level.</i></p><br>
+                    
+                    <h3><a></a>4.2.6
+                    TX Survey</h3>
+                    
+                    <p class="normal-text">TX Survey is
+                    intended to get data about the location's environment to be used for the
+                    evaluation of the proposed HLD TX solution. In addition, information about any
+                    transport equipment present in the site must be obtained as well. Required
+                    information to be obtained from the TX survey is:</p>
+                    
+                    <ul class="normal-text ul-iconos" style='margin-top:0in' start=1 type=1>
+                        <li>Available Transmission
+                        Media: Team must identify if any transport solution is already installed on the
+                        site.</li>
+                    
+                        <ul class="normal-text ul-iconos" style='margin-top:0in; font-size: 16px;' start=1 type=1>
+                            <li>Optical Fiber Solution.</li>
+
+                            <ul class="normal-text ul-iconos" style='margin-top:0in; font-size: 16px;' start=1 type=1>
+                                <li>Fiber connection (aerial /
+                                underground)</li>
+                                <li>Distance from fiber source to the equipment</li>
+                            </ul>
+                    
+                            <li>Microwave</li>
+                    
+                            <ul class="normal-text ul-iconos" style='margin-top:0in; font-size: 16px;' start=1 type=1>
+                                <li>Azimuth of any existing microwave antenna installed  Measure antenna azimuth using compass.</li>
+                                <li>
+                                New microwave link:
+                                Line-of-sight (LOS) feasible from current location to another base station.
+                                Using binoculars, aim (if possible) to a base station and verify LOS is
+                                possible or not (if the way is free from obstacles). Figure 29 from section
+                                3.2.5 can be used for LOS verification.</li>
+                            </ul>
+                    
+                            <li>Satellite</li>
+                    
+                            <ul class="normal-text ul-iconos" style='margin-top:0in; font-size: 16px;' start=1 type=1>
+                                <li>Existing satellite equipment
+                                Identify satellite equipment and antenna.</li>
+                                
+                                <li>
+                                New satellite installation 
+                                Identify any spot for the installation of the satellite antenna.</li>
+                            </ul>
+                        </ul>
+                    </ul>
+                    
+                    <h4>4.2.6.1
+                    Photographic Evidence</h4>
+                    
+                    <p class="normal-text">Table 15 describes required pictures for
+                    the Tx Survey.</p>
+                    
+                    <div align=center>
+                    
+                    <table class=ac border=1 cellspacing=0 cellpadding=0 width=467
+                     style='border-collapse:collapse;border:none'>
+                     <tr>
+                      <td width=165 valign=top style='width:123.75pt;border:solid black 1.0pt;
+                      background:#1F4E79;padding:0cm 5.4pt 0cm 5.4pt'>
+                      <p align=center style='color:#fff;'>Item</p>
+                      </td>
+                      <td width=302 valign=top style='width:8.0cm;border:solid black 1.0pt;
+                      border-left:none;background:#1F4E79;padding:0cm 5.4pt 0cm 5.4pt'>
+                      <p align=center style='color:#fff;'>Description</p>
+                      </td>
+                     </tr>
+                     <tr>
+                      <td width=165 valign=top style='width:123.75pt;border:solid black 1.0pt;
+                      border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+                      <p class="normal-text">Fiber connection</p>
+                      </td>
+                      <td width=302 valign=top style='width:8.0cm;border-top:none;border-left:none;
+                      border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 5.4pt 0cm 5.4pt'>
+                      <p class="normal-text">Images displaying fiber
+                      connections from fiber source, fiber path and fiber connection to the
+                      equipment.</p>
+                      </td>
+                     </tr>
+                     <tr>
+                      <td width=165 valign=top style='width:123.75pt;border:solid black 1.0pt;
+                      border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+                      <p class="normal-text">Microwave equipment</p>
+                      </td>
+                      <td width=302 valign=top style='width:8.0cm;border-top:none;border-left:none;
+                      border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 5.4pt 0cm 5.4pt'>
+                      <p class="normal-text">Images displaying microwave
+                      equipment installation (on tower, on rooftop, etc.). Close up images may be
+                      required. A certified professional may be needed if climbing is required.
+                      Example is shown in Figure 30.</p>
+                      </td>
+                     </tr>
+                     <tr>
+                      <td width=165 valign=top style='width:123.75pt;border:solid black 1.0pt;
+                      border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+                      <p class="normal-text">Satellite equipment</p>
+                      </td>
+                      <td width=302 valign=top style='width:8.0cm;border-top:none;border-left:none;
+                      border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 5.4pt 0cm 5.4pt'>
+                      <p class="normal-text">Images
+                      displaying installed satellite equipment of available space where it can be
+                      installed. Example is shown in Figure 31.</p>
+                      </td>
+                     </tr>
+                    </table>
+                    
+                    </div>
+                    
+                    <p align=center><i>Table 15. TX Survey required photographic
+                    evidence.</i></p>
+                    
+                    <p class="normal-text"></p>
+                    
+                    <p class="normal-text"><img width=400 height=250 id=image13.png
+                    src="images/site_survey/image030.png"></p>
+                    
+                    <p align=center><i>Figure 30. Microwave antenna mounted on tower.
+                    a) Panoramic View, b) Close up view.</i></p>
+                    
+                    <p class="normal-text"><img width=500 height=200 id=image21.png
+                    src="images/site_survey/image031.png"></p>
+                    
+                    <p align=center><i>Figure 31. Satellite equipment. a)
+                    Satellite Module, b) Satellite antenna.</i></p>
+                    
+                    <h3><a></a>4.2.7
+                    Site Survey Activities Customization</h3>
+                    
+                    <p class="normal-text">Depending on the
+                    defined use case, not every site survey activity may be required to be carried
+                    out. Table 16 matches each use case with its required survey activities.</p>
+                    
+                    <p class="normal-text"><a></a><i><img width=788 height=150 id=image11.png
+                    src="images/site_survey/table3.png"></i></p>
+                    
+                    <p align=center><i>Table 16. Matching between Use cases and required survey
+                    activities.</i></p>
+                    
+                    <br><h2><a class="titulo-h2 anchor-bum" name="item4-3">4.3
+                    Documentation</a></h2>
+                    
+                    <p class="normal-text">This section
+                    will provide guidance for the compilation and formatting of the Site Survey
+                    evidence for the generation of the Site Survey report. In addition, guidelines
+                    will be given for the customization of the Site Survey template based on the
+                    defined use cases</p>
+                    
+                    <h3><a></a>4.3.1
+                    Site Survey Template Customization</h3>
+                    
+                    <p class="normal-text">The <a class="a_link" href="site_survey_report">Site Survey Report Template</a> has one sheet dedicated to
+                    each site survey activity. Each sheet allows the insertion of data, images, and
+                    addition notes (if required). Based on the required use case, sheets which do
+                    not apply to the specific use case can be ignored. This way, the resultant
+                    report will contain only relevant information for the specific location.</p>
+                    
+                    <h3><a></a>4.3.2
+                    Site Survey Report Customization Generation</h3>
+                    
+                    <p class="normal-text">NaaS Operator
+                    can use the <a class="a_link" href="site_survey_report">Site Survey Report Template</a> for the
+                    generation of its own version of an SSR. </p>
+                    
+                    <p class="normal-text">The template
+                    allows the required images from each site survey activity to be inserted in its
+                    corresponding area. The Site Survey team shall select the best pictures (the
+                    clearest ones and those which reflect what was required) in order to avoid
+                    ambiguities for those who may use the SSR. In addition, any image can be
+                    formatted to highlight a desired feature of the picture. Figure 32 displays an
+                    example of an image formatting to highlight, in this case, batteries inside a
+                    cabinet.</p>
+                    
+                    <p class="normal-text"><img width=280 height=250
+                    id=image10.png
+                    src="images/site_survey/image032.png"></p>
+                    
+                    <p align=center><i>Figure 32. Example of image formatting. a)
+                    Original image, b) Formatted image highlighting batteries inside cabinet.</i></p>
+            </div>
+
+            <a href="#" class="link-next" onclick="switchContent('#fm')"> &#8656; Previous</a>
+            <br>
+            <a href="url" align="center"></a>
+            <div class="right">
+                <a ></a>
+                <a href="#">.</a>
+            </div>
+
+        </div>
+          
+        <nav id="navbar-example3" class="navbar navbar-light bg-light position-fixed">
+         <nav class="nav nav-pills flex-column">
+         <a id="e2e_link-1" class="nav-link bullet-2-link" onclick="onClickActive(event)" href="#item4"><strong>4. Site Survey Process Analysis and Customization</strong></a>
+         <a id="e2e_link-2" class="nav-link bullet-2-link" onclick="onClickActive(event)" href="#item4-1"><em>4.1 Site Survey Pre-Work</em></a>
+         <a id="e2e_link-3" class="nav-link bullet-2-link" onclick="onClickActive(event)" href="#item4-2"><em>4.2 Site Survey Activities</em></a>
+         <a id="e2e_link-4"class="nav-link bullet-2-link" onclick="onClickActive(event)" href="#item4-3"><em>4.3 Documentation</em></a>
+         </nav>
+     </nav>
+        </section>
+    
+    </div>
+
+        <!-- jQuery CDN border-left: 2px solid gray;-->
+         <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+         <!-- Bootstrap Js CDN -->
+         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+         <script type="text/javascript">
+             /*$(document).ready(function () {
+                 $('#sidebarCollapse').on('click', function () {
+                     $('#sidebar').toggleClass('active');
+                 });
+             });*/
+
+             let tab;
+             //$("#hld").show();
+             switchContent('#hld')
+
+             function switchContent(selector){
+                $("#hld").hide();
+                $("#fm").hide();
+                $("#e2e").hide();
+                $(selector).show();
+                tab = selector;
+            }
+
+             const onClickActive = (event) => {
+                
+                 var anchor = event.target;
+								 clearActiveLinks();
+                 anchor.classList.add('link-active');
+             }
+
+             const clearActiveLinks = () =>{
+                const activeLink = document.getElementsByClassName('link-active')[0];
+								//console.log(activeLink);
+								if(activeLink){
+									activeLink.classList.remove('link-active');
+								}
+             }
+						//227, 1633, 5616
+                        
+                        console.log(tab);
+						 const updateSection = () =>{
+							const scrollTop = window.pageYOffset || (document.documentElement || document.body.parentNode || document.body).scrollTop;
+							//console.log(scrollTop);
+                            console.log(tab);
+							let link;
+
+							clearActiveLinks();
+
+                            if(tab == '#hld'){
+                                if(scrollTop >= 0 && scrollTop <= 300){
+								    document.getElementById("link-1").classList.add('link-active');
+                                }
+                                else if(scrollTop >= 301 && scrollTop <= 650){
+                                    document.getElementById("link-2").classList.add('link-active');
+                                }else if(scrollTop >= 651 && scrollTop <= 2250){
+                                    document.getElementById("link-3").classList.add('link-active'); 
+                                }else if(scrollTop >= 2251 && scrollTop <= 2800){
+                                    document.getElementById("link-4").classList.add('link-active');
+                                    
+                                }else if(scrollTop >= 2801 ){
+                                    document.getElementById("link-5").classList.add('link-active');
+                                    
+                                }
+                            } else if(tab == '#fm'){
+                                if(scrollTop >= 0 && scrollTop <= 750){
+								    document.getElementById("fm_link-1").classList.add('link-active');
+                                }else if(scrollTop >= 751 && scrollTop <= 1000){
+                                    document.getElementById("fm_link-2").classList.add('link-active');
+
+                                }else if(scrollTop >= 1001 && scrollTop <= 1950){
+                                    document.getElementById("fm_link-3").classList.add('link-active');
+
+                                }else if(scrollTop >= 1951 && scrollTop <= 3900){
+                                    document.getElementById("fm_link-4").classList.add('link-active');
+                                    
+                                }else if(scrollTop >= 3901 && scrollTop <= 5200){
+                                    document.getElementById("fm_link-5").classList.add('link-active');
+
+                                }else if(scrollTop >= 5201 && scrollTop <= 5850){
+                                    document.getElementById("fm_link-6").classList.add('link-active');
+
+                                }else if(scrollTop >= 5851 && scrollTop <= 6350){
+                                    document.getElementById("fm_link-7").classList.add('link-active');
+
+                                }else if(scrollTop >= 6351 && scrollTop <= 6950){
+                                    document.getElementById("fm_link-8").classList.add('link-active');
+
+                                }else if(scrollTop >= 6951 && scrollTop <= 7100){
+                                    document.getElementById("fm_link-9").classList.add('link-active');
+
+                                }else if(scrollTop >= 7101 ){
+                                    document.getElementById("fm_link-10").classList.add('link-active');
+                                    
+                                }
+
+                            } else if(tab == '#e2e'){
+                                if(scrollTop >= 0 && scrollTop <= 450){
+								    document.getElementById("e2e_link-1").classList.add('link-active');
+                                }
+                                else if(scrollTop >= 451 && scrollTop <= 2400){
+                                    document.getElementById("e2e_link-2").classList.add('link-active');
+
+                                }else if(scrollTop >= 2401 && scrollTop <= 3500){
+                                    document.getElementById("e2e_link-3").classList.add('link-active');
+                                    
+                                }else if(scrollTop >= 3501 && scrollTop <= 4500 ){
+                                    document.getElementById("e2e_link-4").classList.add('link-active');
+                                    
+                                }if(scrollTop >= 4501 && scrollTop <= 5500){
+								    document.getElementById("e2e_link-5").classList.add('link-active');
+                                }
+                                else if(scrollTop >= 5501 && scrollTop <= 5700){
+                                    document.getElementById("e2e_link-6").classList.add('link-active');
+
+                                }else if(scrollTop >= 5701 && scrollTop <= 6100){
+                                    document.getElementById("e2e_link-7").classList.add('link-active');
+                                    
+                                }else if(scrollTop >= 6101 && scrollTop <= 6500 ){
+                                    document.getElementById("e2e_link-8").classList.add('link-active');
+                                    
+                                }else if(scrollTop >= 6501 && scrollTop <= 7000 ){
+                                    document.getElementById("e2e_link-9").classList.add('link-active');
+                                    
+                                }else if(scrollTop >= 7001 ){
+                                    document.getElementById("e2e_link-10").classList.add('link-active');
+                                    
+                                }
+
+                            }
+
+						 }
+
+         </script>
+    </body>
+</html>
