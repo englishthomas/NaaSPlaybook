@@ -166,9 +166,9 @@
                 <br>
                
                 <ol style='margin-top:0in' class="normal-text" start=1 type=1>
-                    <li>ENTER UPLINK AND DOWNLINK FREQs AT POINTS A AND B (IN MHz)</li>
-                    <li>IF FREQS LIE WITHIN MULTIPLE BANDS (INDICATED AT C), ENTER BAND NO AT D</li>
-                    <li>READ UPLINK AND DOWNLINK EARFCNs AT POINTS E AND F RESPECTIVELY</li>
+                    <li>ENTER UPLINK AND DOWNLINK FREQs (IN MHz)</li>
+                    <li>IF FREQS LIE WITHIN MULTIPLE BANDS, ENTER THE BAND NUMBER AT THE POPOUT (SEE CHANNELS AVAILABLES)</li>
+                    <li>READ UPLINK AND DOWNLINK EARFCNs RESPECTIVELY</li>
                 </ol>
 
                 
@@ -208,6 +208,14 @@
                         </div>
                         <br>
                         <br>
+                        <div class="row">
+                            <label  class="col-sm-3"></label >
+                            <label  class="col-sm-2 parag-1"><b>CHANNEL</b></label >
+                            <label  class="col-sm-1 parag-1"></label >
+                            <input  id='value_3' name="tx_lon" class="col-sm-2 result-cell" readonly>
+                        </div>
+                        <br>
+                        <br>
                         <br>
 
                         <div class="form-group">
@@ -216,14 +224,16 @@
                             </div>
                         </div>  
 
-                        <ul style='margin-top:0in' class="normal-text" start=1 type=1>
-                            <li>ENTER UPLINK AND DOWNLINK FREQs AT POINTS A AND B (IN MHz)</li>
-                            <li><b>Uplink</b> Nu = 10 * (FUL - FUL_low) + Noffs-UL, where FUL_low ≤ FUL ≤ FUL_high</li>
-                            <li><b>Downlink</b> Nd = 10 * (FDL - FDL_low) + Noffs-UL, where FDL_low ≤ FDL ≤ FDL_high</li>
-                        </ul>
+                      
                                             
                     </form>
+                   
                 </div>
+
+                <ul class="normal-text ul-iconos" style='margin-top:0in' start=1 type=1>
+                    <li><b>Uplink</b> Nu = 10 * (FUL - FUL_low) + Noffs-UL, where FUL_low ≤ FUL ≤ FUL_high</li>
+                    <li><b>Downlink</b> Nd = 10 * (FDL - FDL_low) + Noffs-UL, where FDL_low ≤ FDL ≤ FDL_high</li>
+                </ul>
             </div>
         </div>
 
@@ -244,15 +254,164 @@
             
 
             formulario.addEventListener('submit',function(evt){
+
                 evt.preventDefault();
 
                 var form_1_var = Number(formulario.form_1.value);
                 var form_2_var = Number(formulario.form_2.value);  
                 var value_1_int; 
+                var value_2_int;
+                var channel=[]; 
+                var fdl_low = {1: "2210", 2: "1930", 3: "1805", 4: "2110", 5: "869", 6: "875", 7: "2620", 8: "925", 9: "1844.9", 10: "2110",
+                            11: "1475.9", 12: "728", 13: "746", 14: "758", 17: "734",
+                            18: "860", 19: "875", 33: "1900", 34: "2010", 35: "1850",
+                            36: "1930", 37: "1910", 38: "2570", 39: "1880", 40: "2300"};
+
+                var fdl_high = {1: "2170", 2: "1990", 3: "1880", 4: "2155", 5: "894", 6: "885", 7: "2690", 8: "960", 9: "1879.9", 10: "2170",
+                            11: "1500.9", 12: "746", 13: "756", 14: "768", 17: "746",
+                            18: "875", 19: "890", 33: "1920", 34: "2025", 35: "1910",
+                            36: "1990", 37: "1930", 38: "2620", 39: "1920", 40: "2400"};
+
+                var ful_low = {1: "1920", 2: "1850", 3: "1710", 4: "1710", 5: "824", 6: "830", 7: "2500", 8: "880", 9: "1749.9", 10: "1710",
+                            11: "1475.9", 12: "698", 13: "777", 14: "788", 17: "704",
+                            18: "815", 19: "830", 33: "1900", 34: "2010", 35: "1850",
+                            36: "1930", 37: "1910", 38: "2570", 39: "1880", 40: "2300"};
+
+                var ful_high = {1: "1980", 2: "1910", 3: "1785", 4: "1755", 5: "849", 6: "840", 7: "2570", 8: "915", 9: "1784.9", 10: "1770",
+                            11: "1452.9", 12: "716", 13: "787", 14: "798", 17: "716",
+                            18: "830", 19: "845", 33: "1920", 34: "2025", 35: "1910",
+                            36: "1990", 37: "1930", 38: "2620", 39: "1920", 40: "2400"};
+
+
+                if( ((form_2_var-fdl_low[1]) >= 0)  && ((form_2_var-fdl_high[1]) <= 0) && ((form_1_var-ful_low[1]) >= 0) && ((form_1_var-ful_high[1]) <= 0)){
+                    channel.push(1);
+                }
+                if( ((form_2_var-fdl_low[2]) >= 0)  && ((form_2_var-fdl_high[2]) <= 0) && ((form_1_var-ful_low[2]) >= 0) && ((form_1_var-ful_high[2]) <= 0)){
+                    channel.push(2);
+                }
+                if( ((form_2_var-fdl_low[3]) >= 0)  && ((form_2_var-fdl_high[3]) <= 0) && ((form_1_var-ful_low[3]) >= 0) && ((form_1_var-ful_high[3]) <= 0)){
+                    channel.push(3);
+                }
+                if( ((form_2_var-fdl_low[4]) >= 0)  && ((form_2_var-fdl_high[4]) <= 0) && ((form_1_var-ful_low[4]) >= 0) && ((form_1_var-ful_high[4]) <= 0)){
+                    channel.push(4);
+                }
+                if( ((form_2_var-fdl_low[5]) >= 0)  && ((form_2_var-fdl_high[5]) <= 0) && ((form_1_var-ful_low[5]) >= 0) && ((form_1_var-ful_high[5]) <= 0)){
+                    channel.push(5);
+                }
+                if( ((form_2_var-fdl_low[6]) >= 0)  && ((form_2_var-fdl_high[6]) <= 0) && ((form_1_var-ful_low[6]) >= 0) && ((form_1_var-ful_high[6]) <= 0)){
+                    channel.push(6);
+                }
+                if( ((form_2_var-fdl_low[7]) >= 0)  && ((form_2_var-fdl_high[7]) <= 0) && ((form_1_var-ful_low[7]) >= 0) && ((form_1_var-ful_high[7]) <= 0)){
+                    channel.push(7);
+                }
+                if( ((form_2_var-fdl_low[8]) >= 0)  && ((form_2_var-fdl_high[8]) <= 0) && ((form_1_var-ful_low[8]) >= 0) && ((form_1_var-ful_high[8]) <= 0)){
+                    channel.push(8);
+                }
+                if( ((form_2_var-fdl_low[9]) >= 0)  && ((form_2_var-fdl_high[9]) <= 0) && ((form_1_var-ful_low[9]) >= 0) && ((form_1_var-ful_high[9]) <= 0)){
+                    channel.push(9);
+                }
+                if( ((form_2_var-fdl_low[10]) >= 0)  && ((form_2_var-fdl_high[10]) <= 0) && ((form_1_var-ful_low[10]) >= 0) && ((form_1_var-ful_high[10]) <= 0)){
+                    channel.push(10);
+                }
+                if( ((form_2_var-fdl_low[11]) >= 0)  && ((form_2_var-fdl_high[11]) <= 0) && ((form_1_var-ful_low[11]) >= 0) && ((form_1_var-ful_high[11]) <= 0)){
+                    channel.push(11);
+                }
+                if( ((form_2_var-fdl_low[12]) >= 0)  && ((form_2_var-fdl_high[12]) <= 0) && ((form_1_var-ful_low[12]) >= 0) && ((form_1_var-ful_high[12]) <= 0)){
+                    channel.push(12);
+                } 
+                if( ((form_2_var-fdl_low[13]) >= 0)  && ((form_2_var-fdl_high[13]) <= 0) && ((form_1_var-ful_low[13]) >= 0) && ((form_1_var-ful_high[13]) <= 0)){
+                    channel.push(13);
+                } 
+                if( ((form_2_var-fdl_low[14]) >= 0)  && ((form_2_var-fdl_high[14]) <= 0) && ((form_1_var-ful_low[14]) >= 0) && ((form_1_var-ful_high[14]) <= 0)){
+                    channel.push(14);
+                } 
+                if( ((form_2_var-fdl_low[17]) >= 0)  && ((form_2_var-fdl_high[17]) <= 0) && ((form_1_var-ful_low[17]) >= 0) && ((form_1_var-ful_high[17]) <= 0)){
+                    channel.push(17);
+                } 
+                if( ((form_2_var-fdl_low[18]) >= 0)  && ((form_2_var-fdl_high[18]) <= 0) && ((form_1_var-ful_low[18]) >= 0) && ((form_1_var-ful_high[18]) <= 0)){
+                    channel.push(18);
+                } 
+                if( ((form_2_var-fdl_low[19]) >= 0)  && ((form_2_var-fdl_high[19]) <= 0) && ((form_1_var-ful_low[19]) >= 0) && ((form_1_var-ful_high[19]) <= 0)){
+                    channel.push(19);
+                } 
+                if( ((form_2_var-fdl_low[33]) >= 0)  && ((form_2_var-fdl_high[33]) <= 0) && ((form_1_var-ful_low[33]) >= 0) && ((form_1_var-ful_high[33]) <= 0)){
+                    channel.push(33);
+                } 
+                if( ((form_2_var-fdl_low[34]) >= 0)  && ((form_2_var-fdl_high[34]) <= 0) && ((form_1_var-ful_low[34]) >= 0) && ((form_1_var-ful_high[34]) <= 0)){
+                    channel.push(34);
+                } 
+                if( ((form_2_var-fdl_low[35]) >= 0)  && ((form_2_var-fdl_high[35]) <= 0) && ((form_1_var-ful_low[35]) >= 0) && ((form_1_var-ful_high[35]) <= 0)){
+                    channel.push(35);
+                } 
+                if( ((form_2_var-fdl_low[36]) >= 0)  && ((form_2_var-fdl_high[36]) <= 0) && ((form_1_var-ful_low[36]) >= 0) && ((form_1_var-ful_high[36]) <= 0)){
+                    channel.push(36);
+                } 
+                if( ((form_2_var-fdl_low[37]) >= 0)  && ((form_2_var-fdl_high[37]) <= 0) && ((form_1_var-ful_low[37]) >= 0) && ((form_1_var-ful_high[37]) <= 0)){
+                    channel.push(37);
+                } 
+                if( ((form_2_var-fdl_low[38]) >= 0)  && ((form_2_var-fdl_high[38]) <= 0) && ((form_1_var-ful_low[38]) >= 0) && ((form_1_var-ful_high[38]) <= 0)){
+                    channel.push(38);
+                } 
+                if( ((form_2_var-fdl_low[39]) >= 0)  && ((form_2_var-fdl_high[39]) <= 0) && ((form_1_var-ful_low[39]) >= 0) && ((form_1_var-ful_high[39]) <= 0)){
+                    channel.push(39);
+                }
+                if( ((form_2_var-fdl_low[40]) >= 0)  && ((form_2_var-fdl_high[40]) <= 0) && ((form_1_var-ful_low[40]) >= 0) && ((form_1_var-ful_high[40]) <= 0)){
+                    channel.push(40);
+                }
+
+                console.log(channel.length);
+                console.log(channel);
+                //array.length == 0
+
+                var lol = channel[0];
+                if(channel.length != 1){
+                    //Pop Out
+                    var channelSelected = channelElection(channel);
+                    lol = channelSelected;
+                }
+
+                console.log(lol);
                 
-                document.getElementById("value_1").value = value_1_int.toFixed(2);
-                document.getElementById("value_2").value = value_2_int.toFixed(2);
+
+                var noffs_dl = {1: "0", 2: "600", 3: "1200", 4: "1950", 5: "2400", 6: "2650", 
+                            7: "2750", 8: "3450", 9: "3800", 10: "4150",
+                            11: "4750", 12: "5000", 13: "5180", 14: "5280", 17: "5730",
+                            18: "5850", 19: "6000", 33: "36000", 34: "36200", 35: "36350",
+                            36: "36950", 37: "37550", 38: "37750", 39: "38250", 40: "38650"};
+
+                var noffs_ul = {1: "18000", 2: "18600", 3: "19200", 4: "19950", 5: "20400", 6: "20650", 
+                            7: "20750", 8: "21450", 9: "21800", 10: "22150",
+                            11: "22750", 12: "23000", 13: "23180", 14: "23280", 17: "23730",
+                            18: "23850", 19: "24000", 33: "36000", 34: "36200", 35: "36350",
+                            36: "36950", 37: "37550", 38: "37750", 39: "38250", 40: "38650"};
+
+                var fdl_low_final = parseInt(fdl_low[lol]);
+                var noffs_dl_final = parseInt(noffs_dl[lol]);
+                var ful_low_final = parseInt(ful_low[lol]);
+                var noffs_ul_final = parseInt(noffs_ul[lol]);
+                lol=parseInt(lol);
+
+                value_1_int = 10*(form_1_var-ful_low_final)+noffs_ul_final;
+                value_2_int = 10*(form_2_var-fdl_low_final)+noffs_dl_final;
+
+                document.getElementById("value_1").value = value_1_int.toFixed(0);
+                document.getElementById("value_2").value = value_2_int.toFixed(0);
+                document.getElementById("value_3").value = lol.toFixed(0);
+                
             });
+
+            function channelElection(channel) {
+                var txt;
+                var canal = prompt("Select available channels: " + channel);
+                //console.log(channel.indexOf(canal));
+                if (canal == null || canal == "") {
+                    txt = "User cancelled the prompt.";
+                } else {
+                    return canal;
+                }
+                //confirm("Insert a valid channel.");
+                //document.getElementById("demo").innerHTML = txt;
+            }
          </script>
     </body>
 </html>
