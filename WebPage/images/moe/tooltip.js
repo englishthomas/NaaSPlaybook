@@ -1,21 +1,21 @@
 var tooltipOptions=
 {
-    showDelay: 100,
-    hideDelay: 300,
+    showDelay: 50,
+    hideDelay: 50,
     effect: "fade",
-    duration: 200,
+    duration: 20,
     relativeTo: "element",
-    position: 1,
+    position: 2,
     smartPosition: true,
     offsetX: 0,
     offsetY: 0,
-    maxWidth: 500,
+    maxWidth: 250,
     calloutSize: 16,
     calloutPosition: 0.3,
     cssClass: "",
     sticky: false,
     overlay: false,
-    license: "64628"
+    license: "64629"
 };
 
 /* JavaScript Tooltip v2018.8.8. Copyright www.menucool.com */
