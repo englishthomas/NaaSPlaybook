@@ -11,6 +11,8 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
         <!-- Our Custom CSS -->
         <link rel="stylesheet" href="style2.css">
+        <link href="images/moe/moe2/tooltip.css" rel="stylesheet" type="text/css" />
+        <script src="images/moe/moe2/tooltip.js" type="text/javascript"></script>
         
     <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
 	</head>
@@ -137,9 +139,9 @@
                                     <li><a href="ran_hld_widget_2.html">  RAN - Coverage-Based</a></li>
                                     <li><a href="tx_hld_widget_1.html"> Tx - Capacity Forecast</a></li>
                                     <li><a href="tx_hld_widget_2.html">  Tx - Availability FO</a></li>
-<li><a href="tx_hld_widget_3.html" style="margin-left:2em"> Tx - Availability MW</a></li>
-<li><a href="tx_hld_widget_4.html" style="margin-left:2em">  Tx – MW Analysis</a></li>
-<li><a href="core_hld_widget_1.html" style="margin-left:2em">  Core - Capacity Planning</a></li>
+                                    <li><a href="tx_hld_widget_3.html" style="margin-left:2em"> Tx - Availability MW</a></li>
+                                    <li><a href="tx_hld_widget_4.html" style="margin-left:2em">  Tx – MW Analysis</a></li>
+                                    <li><a href="core_hld_widget_1.html" style="margin-left:2em">  Core - Capacity Planning</a></li>
                                 </ul>
                             </li>
                         </ul>
@@ -162,7 +164,9 @@
             <!-- Page Content Holder -->
             <div id="content">
                 <h2>RAN - Coverage-Based Site Count</h2>
-                <p class="normal-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                <p class="normal-text">This widget provides a computation of the required number of sites to cover an specified area based on Link Budget analysis.<br>
+                Please fill the required information on each square.</p>
+                <p class="normal-text">Basics for this widget are addressed on sections 3.4 and 3.5 of the <a class="a_link" href="ran_hld_module.html">RAN HLD Module</a>.</p>
                 <br>
                 
                 <div class="caja_box">
@@ -173,13 +177,14 @@
                         <br>
                         
                         <div class="row">
-                            <label  class="col-sm-6 parag-1">Transmitter Power [W]</label >
-                            <input id="tx_power_html" name="tx_lon"class="col-sm-2 text-box" required>
+                            <label  class="col-sm-6 parag-1">Transmitter Power [W]</label>
+                            <span class="tooltip" onmouseover="tooltip.pop(this, '<b>1W to 60W</b>')"><input id="tx_power_html" name="tx_lon"class="col-sm-2 text-box"></span>
                         </div>
                         <br>
                         <div class="row">
                             <label  class="col-sm-6 parag-1">Transmitter Power [dBm]</label >
                             <input id='tx_power_dbm_et' name="tx_lat" type = "text" class="col-sm-2 result-cell" readonly>
+                            
                         </div>
                         <br>
                         <div class="row">
@@ -205,21 +210,21 @@
                         </div>
                         <br>
                         <div class="row">
-                            <label  class="col-sm-6 parag-1 parag-1-italic">Transmitter Feeder Loss [dB]</label >
-                            <input id="feeder_loss_html" name="tx_lon"class="col-sm-2 text-box" required>
+                            <label  class="col-sm-6 parag-1">Transmitter Feeder Loss [dB]</label >
+                            <span class="tooltip" onmouseover="tooltip.pop(this, '<p><b>0 dB to 3 dB</b></p>')"><input id="feeder_loss_html" name="tx_lon"class="col-sm-2 text-box"></span>
                         </div>
-                        <br>
+                        <!--br>
                         <div class="row">
                             <label  class="col-sm-6 parag-1">Transmitter Antenna Type</label >
                             <select id="antenna_type_html" name="tx_lon" class="col-sm-2"> 
                                 <option value="sectorial">Sectorial</option>
                                 <option value="omni">Omni</option>
                             </select>
-                        </div>
+                        </div-->
                         <br>
                         <div class="row">
-                            <label  class="col-sm-6 parag-1">Gain of the Base Station Antenna [dB]</label >
-                            <input id='gain_bs_et' name="tx_lat" type = "text" class="col-sm-2 result-cell" readonly>
+                            <label  class="col-sm-6 parag-1">Gain of the Base Station Antenna [dBi]</label >
+                            <span class="tooltip" onmouseover="tooltip.pop(this, '<b>&#9679; Omni Directional Antenna: 6 dBi to 12 dBi<br>&#9679; Sectorial Antenna: 10 dBi to 18 dBi</b>')"><input id='antenna_type_html' name="tx_lat" type = "text" class="col-sm-2 text-box"></span>
                         </div>
                         <br>
                         <div class="row">
@@ -227,47 +232,49 @@
                             <input id='eipr_subcarrier_et' name="tx_lat" type = "text" class="col-sm-2 result-cell" readonly>
                         </div>
                         <br>
-                        
-                        <div class="row">
-                            <label  class="col-sm-6 parag-1 parag-1-italic">Shadow Fading Std. Dev. [dBm]</label >
-                            <input id="shadow_fading_html" name="tx_lon"class="col-sm-2 text-box" required>
-                        </div>
-                        <br>
-                        <div class="row">
-                            <label  class="col-sm-6 parag-1" >Cell-edge coverage probability (%)</label >
-                            <input id="cell_edge_cov_html" name="tx_lon"class="col-sm-2 text-box" min="1" max="100"required>
-                        </div>
-                        <br>
                         <div class="row">
                             <label  class="col-sm-6 parag-1">Shadow Margin [dB]</label >
                             <input id='shadow_margin_et' name="tx_lat" type = "text" class="col-sm-2 result-cell" readonly>
                         </div>
                         <br>
+                        
+                        <div class="row">
+                            <label  class="col-sm-6 parag-1 parag-1-italic">Shadow Fading Std. Dev. [dB]</label >
+                            <span class="tooltip" onmouseover="tooltip.pop(this, '<b>&#9679; 6 dB in rural enviromenet<br>&#9679; 10 dB in dense urban enviromenet</b>')"><input id="shadow_fading_html" name="tx_lon"class="col-sm-2 text-box"></span>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <label  class="col-sm-6 parag-1 parag-1-italic" >Cell-edge coverage probability (%)</label >
+                            <span class="tooltip" onmouseover="tooltip.pop(this, '<b>70% to 90%</b>')"><input id="cell_edge_cov_html" name="tx_lon"class="col-sm-2 text-box" min="1" max="100"></span>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <label  class="col-sm-6 parag-1">Minimum required Power at UE antenna</label >
+                            <input id='ue_min_power_et' name="tx_lat" type = "text" class="col-sm-2 result-cell" readonly>
+                        </div>
+                        <br>
+                        
                         <div class="row">
                             <label  class="col-sm-6 parag-1 parag-1-italic">Interference Margin [dB]</label >
-                            <input id="int_margin_html" name="tx_lon"class="col-sm-2 text-box" required>
+                            <span class="tooltip" onmouseover="tooltip.pop(this, '<b>0 dB to 3 dB</b>')"><input id="int_margin_html" name="tx_lon"class="col-sm-2 text-box" ></span>
                         </div>
                         <br>
                         <div class="row">
-                            <label  class="col-sm-6 parag-1 parag-1-italic">Receiver Sensivity [dBm]</label >
-                            <input id="sensi_user_html" name="tx_lon"class="col-sm-2 text-box" required>
+                            <label  class="col-sm-6 parag-1 parag-1-italic">Receiver Sensitivity [dBm]</label >
+                            <span class="tooltip" onmouseover="tooltip.pop(this, '<b>RSRP Sensitivity (Per subcarrier)</b>')"><input id="sensi_user_html" name="tx_lon"class="col-sm-2 text-box" ></span>
                         </div>
                         <br>
                         <div class="row">
-                            <label  class="col-sm-6 parag-1 parag-1-italic">Receiver Antenna Gain [dB]</label >
-                            <input id="usr_eqt_gain_html" name="tx_lon"class="col-sm-2 text-box" required>
+                            <label  class="col-sm-6 parag-1 parag-1-italic">Receiver Antenna Gain [dBi]</label >
+                            <span class="tooltip" onmouseover="tooltip.pop(this, '<b>&#9679; Mobile: - 0 dBi to 1.5 dBi<br>&#9679; Fixed: - 0 dBi to 6 dBi </b>')"><input id="usr_eqt_gain_html" name="tx_lon"class="col-sm-2 text-box" ></span>
                         </div>
                         <br>
                         <div class="row">
                             <label  class="col-sm-6 parag-1 parag-1-italic">Receiver Body Loss [dB]</label >
-                            <input id="body_loss_html" name="tx_lon"class="col-sm-2 text-box" required>
+                            <span class="tooltip" onmouseover="tooltip.pop(this, '<b>0 dB to 2 dB</b>')"><input id="body_loss_html" name="tx_lon"class="col-sm-2 text-box" ></span>
                         </div>
                         <br>
-                        <div class="row">
-                            <label  class="col-sm-6 parag-1">UE minimum required Power</label >
-                            <input id='ue_min_power_et' name="tx_lat" type = "text" class="col-sm-2 result-cell" readonly>
-                        </div>
-                        <br>
+                        
                         <div class="row">
                             <label  class="col-sm-6 parag-1 parag-1-bold">Maximum Allowed Path Loss [dB]</label >
                             <input id='maximum_allow_et' name="tx_lat" type = "text" class="col-sm-2 result-cell"  readonly>
@@ -354,9 +361,9 @@
                 var tx_power_dbm = 10*Math.log10(tx_power_watt/Math.pow(10, -3));
                 var cell_band = formulario2.cell_band_html.value;
                 var feeder_loss = formulario2.feeder_loss_html.value;
-                var antenna_type = formulario2.antenna_type_html.value;
+                var gain_bs = Number(formulario2.antenna_type_html.value);
                 var int_margin = Number(formulario2.int_margin_html.value);
-                var shadow_fading = formulario2.shadow_fading_html.value;
+                var shadow_fading = Number(formulario2.shadow_fading_html.value);
                 var cell_edge_cov = formulario2.cell_edge_cov_html.value;
                 var antenna_height = formulario2.antenna_height_html.value;
                 var user_equi_height = formulario2.user_equi_height_html.value;
@@ -364,17 +371,29 @@
                 var area_to_cover = formulario2.area_to_cover_html.value;
 
                 var sensi_user = Number(formulario2.sensi_user_html.value);
-                var usr_eqt_gain = formulario2.usr_eqt_gain_html.value;
-                var body_loss = formulario2.body_loss_html.value;
+                var usr_eqt_gain = Number(formulario2.usr_eqt_gain_html.value);
+                var body_loss = Number(formulario2.body_loss_html.value);
 
                 var num_subcarriers;
                 cell_edge_cov = cell_edge_cov/100;
                 console.log(cell_edge_cov);
 
-                if(antenna_type == 'sectorial'){
+                /*if(antenna_type == 'sectorial'){
                     var gain_bs = 12;
                 } else if(antenna_type == 'omni'){
                     var gain_bs = 2;
+                }*/
+
+                if((tx_power_watt < 1 || tx_power_watt > 60) || (feeder_loss < 0 || feeder_loss > 3) || (gain_bs < 6 || gain_bs > 18)  ){// ||
+               
+                //(shadow_fading != 6 || shadow_fading != 10) ||
+                //(cell_edge_cov < 70 || cell_edge_cov > 90) ||
+                //(int_margin < 0 || int_margin > 3) ||
+                //(sensi_user < -150 || sensi_user > 0) ||
+                //(usr_eqt_gain < 0 || usr_eqt_gain > 6) ||
+                //(body_loss < 0 || body_loss > 2)){
+                    console.log("YOLO");
+                    alert("Insert correct values!");
                 }
 
                 if(cell_band == 'bw_1'){
@@ -401,10 +420,11 @@
                 antenna_height=30;
                 user_equi_height=1.5;*/
                 var tx_power_subcarrier = tx_power_dbm-10*Math.log10(num_subcarriers);
-                var eipr_subcarrier = tx_power_subcarrier - feeder_loss + gain_bs;
-                var ue_min_power = int_margin + sensi_user;
-                max_path_loss = eipr_subcarrier - shadow_margin - ue_min_power; 
-                
+                var eipr_subcarrier = (tx_power_subcarrier - feeder_loss) + gain_bs;
+                var ue_min_power = sensi_user + int_margin - usr_eqt_gain + body_loss;//int_margin + sensi_user;
+                max_path_loss = eipr_subcarrier - shadow_margin - ue_min_power; //sensi_user + int_margin - usr_eqt_gain + body_loss
+                //max_path_loss = sensi_user + int_margin - usr_eqt_gain + body_loss;
+
                 var arrow_1 = max_path_loss + 4.78 * Math.log10(Math.pow(freq, 2)) - (18.33 * Math.log10(freq)) + 40.94;
                 var arrow_2 = (1.1*Math.log10(freq)-0.7)*user_equi_height-(1.56*Math.log10(freq)-0.8)
                 var arrow_3 = (arrow_1 - 69.55 - 26.16 * Math.log10(freq) + 13.82 * Math.log10(antenna_height) + arrow_2) / (44.9-6.55 * Math.log10(antenna_height));
@@ -442,7 +462,7 @@
                 console.log(area_to_cover/cell_cov_area)
                 console.log(Math.ceil(area_to_cover/cell_cov_area))
 
-                document.getElementById("gain_bs_et").value = gain_bs.toFixed(0);
+                //document.getElementById("gain_bs_et").value = gain_bs.toFixed(0);
                 document.getElementById("num_subcarriers_et").value = num_subcarriers.toFixed(0);
                 document.getElementById("tx_power_subcarrier_et").value = tx_power_subcarrier.toFixed(3);
                 document.getElementById("eipr_subcarrier_et").value = eipr_subcarrier.toFixed(3);
