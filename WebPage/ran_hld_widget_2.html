@@ -384,15 +384,14 @@
                     var gain_bs = 2;
                 }*/
 
-                if((tx_power_watt < 1 || tx_power_watt > 60) || (feeder_loss < 0 || feeder_loss > 3) || (gain_bs < 6 || gain_bs > 18)  ){// ||
+                if((tx_power_watt < 1 || tx_power_watt > 60) || (feeder_loss < 0 || feeder_loss > 3) || (gain_bs < 6 || gain_bs > 18) || (cell_edge_cov < 70 || cell_edge_cov > 90) || (int_margin < 0 || int_margin > 3)  ){// ||
                
                 //(shadow_fading != 6 || shadow_fading != 10) ||
-                //(cell_edge_cov < 70 || cell_edge_cov > 90) ||
-                //(int_margin < 0 || int_margin > 3) ||
+                //||
+                // ||
                 //(sensi_user < -150 || sensi_user > 0) ||
                 //(usr_eqt_gain < 0 || usr_eqt_gain > 6) ||
                 //(body_loss < 0 || body_loss > 2)){
-                    console.log("YOLO");
                     alert("Insert correct values!");
                 }
 
