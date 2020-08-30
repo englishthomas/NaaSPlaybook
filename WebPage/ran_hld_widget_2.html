@@ -261,7 +261,7 @@
                         <br>
                         <div class="row">
                             <label  class="col-sm-6 parag-1 parag-1-italic">Receiver Antenna Gain [dBi]</label >
-                            <span class="tooltip" onmouseover="tooltip.pop(this, '<b>&#9679; Mobile: - 0 dBi to 1.5 dBi<br>&#9679; Fixed: - 0 dBi to 6 dBi </b>')"><input id="usr_eqt_gain_html" name="tx_lon"class="col-sm-2 text-box" ></span>
+                            <span class="tooltip" onmouseover="tooltip.pop(this, '<b>&#9679; Mobile: 0 dBi to 1.5 dBi<br>&#9679; Fixed: 0 dBi to 6 dBi </b>')"><input id="usr_eqt_gain_html" name="tx_lon"class="col-sm-2 text-box" ></span>
                         </div>
                         <br>
                         <div class="row">
@@ -279,17 +279,17 @@
                         <br>
                         <div class="row">
                             <label  class="col-sm-6 parag-1">Antenna Height [m]</label >
-                            <input id="antenna_height_html" name="tx_lon"class="col-sm-2 text-box" required>
+                            <input id="antenna_height_html" name="tx_lon"class="col-sm-2 text-box" >
                         </div>
                         <br>
                         <div class="row">
                             <label  class="col-sm-6 parag-1">User Equipment Height [m]</label >
-                            <input id="user_equi_height_html" name="tx_lon"class="col-sm-2 text-box" required>
+                            <input id="user_equi_height_html" name="tx_lon"class="col-sm-2 text-box" >
                         </div>
                         <br>
                         <div class="row">
                             <label  class="col-sm-6 parag-1">Frequency [MHz]</label >
-                            <input id="freq_html" name="tx_lon"class="col-sm-2 text-box" required>
+                            <input id="freq_html" name="tx_lon"class="col-sm-2 text-box" >
                         </div>
                         <br>
                         <div class="row">
@@ -301,7 +301,7 @@
                         <br>
                         <div class="row">
                             <label  class="col-sm-6 parag-1">Area to cover [Km2]</label >
-                            <input id="area_to_cover_html" name="tx_lon"class="col-sm-2 text-box" required>
+                            <input id="area_to_cover_html" name="tx_lon"class="col-sm-2 text-box" >
                         </div>
                         <br>
                         <div class="row">
@@ -379,7 +379,7 @@
                     var gain_bs = 2;
                 }*/
 
-                if((tx_power_watt < 1 || tx_power_watt > 60) || (feeder_loss < 0 || feeder_loss > 3) || (gain_bs < 6 || gain_bs > 18) || (cell_edge_cov < 70 || cell_edge_cov > 90) || (int_margin < 0 || int_margin > 3)  ){// ||
+                //if((tx_power_watt < 1 || tx_power_watt > 60) || (feeder_loss < 0 || feeder_loss > 3) || (gain_bs < 6 || gain_bs > 18) || (cell_edge_cov < 70 || cell_edge_cov > 90) || (int_margin < 0 || int_margin > 3)  ){// ||
                
                 //(shadow_fading != 6 || shadow_fading != 10) ||
                 //||
