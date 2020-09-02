@@ -36,7 +36,7 @@
                     <!--strong>NaaS</strong-->
                     <img src="smiley.png" alt="Go to W3Schools!" width="42" height="42" border="0">
                 </div>
-
+    
                 <ul class="list-unstyled components">
                     <li>
                         <a href="#runbookSubmenu" data-toggle="collapse" aria-expanded="false">
@@ -44,22 +44,21 @@
                             RunBook Modules
                         </a>
                         <ul class="list-unstyled" id="runbookSubmenu">
-                                
-                            <li  class="active">
-                                <a href="#stract" class="panel-collapse" data-toggle="collapse">
-                                    &#187 Strategic Plan & Scope
-                                </a>
-                                <ul class="list-unstyled" id="stract">
-                                    <li><a href="strategy_scope.html" style="margin-left:2em;">&bull; Strategy & Scope</a></li>
-                                    <li><a href="high_level_proyect_plan.html" style="margin-left:2em;color: black;"><strong>&bull; HL Project Plan</strong></a></li>
-                                </ul>
-                            </li>
+                                <li  class="active">
+                                    <a href="#stract" data-toggle="collapse" aria-expanded="false">
+                                        &#187 Strategic Plan & Scope
+                                    </a>
+                                    <ul class="list-unstyled collapse" id="stract">
+                                        <li><a href="strategy_scope.html"style="margin-left:2em;">&bull; Strategy & Scope</a></li>
+                                        <li><a href="high_level_proyect_plan.html" style="margin-left:2em">&bull; HL Project Plan</a></li>
+                                    </ul>
+                                </li>
                                 <li  class="active">
                                     <a href="#HLNA" data-toggle="collapse" aria-expanded="false">
                                         &#187 High Level Network Architecture
                                     </a>
                                     <ul class="list-unstyled collapse" id="HLNA">
-                                        <li><a href="ran_hld_architecture.html"style="margin-left:2em;">&bull; RAN Architecture</a></li>
+                                        <li><a href="ran_hld_architecture.html"style="margin-left:2em">&bull; RAN Architecture</a></li>
                                         <li><a href="tx_ip_architecture.html" style="margin-left:2em">&bull; TX & IP Architecture</a></li>
                                         <li><a href="mobile_core_archi.html" style="margin-left:2em"> &bull; Core Architecture</a></li>
                                         <li><a href="network_monitoring_architecture.html" style="margin-left:2em"> &bull; Network Monitoring</a></li>
@@ -67,28 +66,28 @@
                                     </ul>
                                 </li>
                                 <li class="active">
-                                    <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false">
-                                        &#187 Network Design
-                                    </a>
-                                    <ul class="list-unstyled collapse" id="homeSubmenu">
-                                        <li><a href="#transportMenu" data-toggle="collapse" style="margin-left:2em">&bull; Transport</a></li>
-                                            <ul class="list-unstyled collapse" id="transportMenu">
-                                                <li><a href="tx_hld_module.html" style="margin-left:4em;">&#9657; Tx Network HLD</a></li>
-<li><a href="tx_lld_module.html" style="margin-left:4em;">&#9657; Tx Network LLD</a></li>
+                                        <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false">
+                                            &#187 Network Design
+                                        </a>
+                                        <ul class="list-unstyled collapse" id="homeSubmenu">
+                                            <li><a href="#transportMenu" data-toggle="collapse" style="margin-left:2em">&bull; Transport</a></li>
+                                                <ul class="list-unstyled collapse" id="transportMenu">
+                                                    <li><a href="tx_hld_module.html" style="margin-left:4em;">&#9657; Tx Network HLD</a></li>
+                                                    <li><a href="tx_lld_module.html" style="margin-left:4em;">&#9657; Tx Network LLD</a></li>
+                                                </ul>
+                    
+                                            <li><a href="#transportMenu2" data-toggle="collapse" style="margin-left:2em">&bull; RAN</a></li>
+                                                <ul class="list-unstyled collapse" id="transportMenu2">
+                                                    <li><a href="ran_hld_module.html" style="margin-left:4em;">&#9657; RAN Network HLD</a></li>
+                                                    <li><a href="ran_lld_module.html" style="margin-left:4em;">&#9657; RAN Network LLD</a></li>
+                                                </ul>
+                                            <li><a href="#transportMenu3" data-toggle="collapse" style="margin-left:2em">&bull; Core</a></li>
+                                            <ul class="list-unstyled collapse" id="transportMenu3">
+                                                <li><a href="mobile_core_hld.html" style="margin-left:4em;">&#9657; Mobile Core HLD</a></li>
+                                                <li><a href="mobile_core_lld.html" style="margin-left:4em;">&#9657; Mobile Core LLD</a></li>
                                             </ul>
-                
-                                        <li><a href="#transportMenu2" data-toggle="collapse" style="margin-left:2em">&bull; RAN</a></li>
-                                            <ul class="list-unstyled collapse" id="transportMenu2">
-                                                <li><a href="ran_hld_module.html" style="margin-left:4em;">&#9657; RAN Network HLD</a></li>
-<li><a href="ran_lld_module.html" style="margin-left:4em;">&#9657; RAN Network LLD</a></li>
-                                            </ul>
-                                        <li><a href="#transportMenu3" data-toggle="collapse" style="margin-left:2em">&bull; Core</a></li>
-                                        <ul class="list-unstyled collapse" id="transportMenu3">
-                                            <li><a href="mobile_core_hld.html" style="margin-left:4em;">&#9657; Mobile Core HLD</a></li>
-											<li><a href="mobile_core_lld.html" style="margin-left:4em;">&#9657; Mobile Core LLD</a></li>
                                         </ul>
-                                    </ul>
-                                </li>
+                                    </li>
                                 <li>
                                     <a href="#deployment_m" data-toggle="collapse" aria-expanded="false">
                                         &#187 Deployment
@@ -98,8 +97,8 @@
                                         <li><a href="site_survey.html"style="margin-left:2em">&bull; Site Survey</a></li>
                                         <li><a href="#"style="margin-left:2em">&bull; Construction</a></li>
                                         <li><a href="i&c_module.html"style="margin-left:2em">&bull; I & C</a></li>
-                                        <li><a href="fiber_const_mgmt.html"style="margin-left:2em">&bull; Fiber Construction Mgmt</a></li>
-<li><a href="site_construction_mgmt.html"style="margin-left:2em">&bull; Site Construction Mgmt</a></li>
+                                            <li><a href="fiber_const_mgmt.html"style="margin-left:2em">&bull; Fiber Construction Mgmt</a></li>
+    <li><a href="site_construction_mgmt.html"style="margin-left:2em">&bull; Site Construction Mgmt</a></li>
                                     </ul>
                                 </li>
                                 <li>
@@ -117,33 +116,34 @@
                                         &#187 Post-Launch Engineering
                                     </a>
                                 </li>
+        
                                 <li  class="active">
-                                <a href="#supply" data-toggle="collapse" aria-expanded="false">
-                                    &#187 Supply Chain Management
-                                </a>
-                                <ul class="list-unstyled collapse" id="supply">
-                                    <li><a href=""style="margin-left:2em">&bull; RFx Process</a></li>
-                                    <li><a href="proc_pro_vendor_mgmt.html" style="margin-left:2em">&bull; Procurement Proc. & Vendor Mgmt.</a></li>
-                                    <li><a href="" style="margin-left:2em"> &bull; Logistic & Warehousing</a></li>
-                                </ul>
-                            </li>
+                                    <a href="#supply" data-toggle="collapse" aria-expanded="false">
+                                        &#187 Supply Chain Management
+                                    </a>
+                                    <ul class="list-unstyled " id="supply">
+                                        <li><a href="rfx_process.html"style="margin-left:2em;color: black;"><strong>&bull; RFx Process</strong></a></li>
+                                        <li><a href="proc_pro_vendor_mgmt.html" style="margin-left:2em;">&bull; Procurement Proc. & Vendor Mgmt.</a></li>
+                                        <li><a href="" style="margin-left:2em"> &bull; Logistic & Warehousing</a></li>
+                                    </ul>
+                                </li>
                             </ul>
                         </li>
                         <li>
-                            <a href="#engagementSubmenu" data-toggle="collapse" aria-expanded="false">
-                                <i class="glyphicon glyphicon-option-horizontal"></i>
-                                Methods of Engagement
-                            </a>
-                            <ul class="collapse list-unstyled" id="engagementSubmenu">
-                                
-                                <li><a href="MoE_Wizards.html">&#187 Wizards</a></li>
-                                <li><a href="MoE_Widgets.html">&#187 Widgets</a></li>
-                                <li><a href="MoE_Primers.html">&#187 Primers</a></li>
-                                <li><a href="MoE_Templates.html">&#187 Templates</a></li>
-                                <li><a href="MoE_Tool_Catalogue.html">&#187 Tool Catalogue</a></li>
-                                
-                            </ul>
-                        </li>
+                                <a href="#engagementSubmenu" data-toggle="collapse" aria-expanded="false">
+                                    <i class="glyphicon glyphicon-option-horizontal"></i>
+                                    Methods of Engagement
+                                </a>
+                                <ul class="collapse list-unstyled" id="engagementSubmenu">
+                                    
+                                    <li><a href="MoE_Wizards.html">&#187 Wizards</a></li>
+                                    <li><a href="MoE_Widgets.html">&#187 Widgets</a></li>
+                                    <li><a href="MoE_Primers.html">&#187 Primers</a></li>
+                                    <li><a href="MoE_Templates.html">&#187 Templates</a></li>
+                                    <li><a href="MoE_Tool_Catalogue.html">&#187 Tool Catalogue</a></li>
+                                    
+                                </ul>
+                            </li>
                         <li>
                             <a href="comming_soon/comming-soon.html">
                                 <i class="glyphicon glyphicon-paperclip"></i>
@@ -558,7 +558,7 @@
                             
                             <p class="normal-text"></p>
                             
-                            <p class="normal-text">The <a href="project_char_template" class="a_link">Project Charter
+                            <p class="normal-text">The <a href="https://github.com/teleworxllc/NaaSRunBook/blob/gh-pages/Supply%20Chain%20Management/Templates/Project%20Charter%20Template.docx" class="a_link">Project Charter
                             Template</a> provides a predefined format for the Chart, which can be easily
                             tailored to the specific RFx process.</p>
                             
@@ -669,7 +669,7 @@
                             capabilities.</p>
                             
                             <p class="normal-text">The potential bidders shall be sent an invitation letter,
-                            such as the example contained in the <a href="invitation_letter" class="a_link">Invitation
+                            such as the example contained in the <a href="https://github.com/teleworxllc/NaaSRunBook/blob/gh-pages/Supply%20Chain%20Management/Templates/Invitation%20Letter.docx" class="a_link">Invitation
                             Letter Template</a>. This letter provides the
                             vendor with an abstract of the project scope and relevant RFx dates. The
                             provided format will be populated with an abstract of the scope of work,
@@ -678,7 +678,7 @@
                             
                             <p class="normal-text">Those vendors who have confirmed interest in responding to
                             the RFx process shall be submitted a <b>Pre-Qualification Form</b> as the one
-                            included in the <a href="pre_quealification_template" class="a_link">Pre-qualification Template</a>. This form provides key questions that the NaaS Operator
+                            included in the <a href="https://github.com/teleworxllc/NaaSRunBook/blob/gh-pages/Supply%20Chain%20Management/Templates/Pre-Qualification%20Template.xlsx" class="a_link">Pre-qualification Template</a>. This form provides key questions that the NaaS Operator
                             will use to determine the suitability of the vendor to address the project
                             scope. This qualification form will include technical, commercial and legal
                             questions with the objective to short-list the number of companies receiving
@@ -687,7 +687,7 @@
                             <p class="normal-text">The <b>Pre-Qualification Form</b> can be
                             modified by the NaaS Operator by adding or removing questions as they appear
                             relevant to the process. The vendor shall be provided with an Excel form only
-                            containing the questions in the <a href="pre_quealification_template" class="a_link">Pre-qualification
+                            containing the questions in the <a href="https://github.com/teleworxllc/NaaSRunBook/blob/gh-pages/Supply%20Chain%20Management/Templates/Pre-Qualification%20Template.xlsx" class="a_link">Pre-qualification
                             Template</a>. When the responses are received, the
                             NaaS operator will insert them into the template to allow for a side by side
                             comparison between vendors.</p>
@@ -716,9 +716,9 @@
                     <a id="link-3" class="nav-link bullet-2-link" onclick="onClickActive(event)" href="#item1-2"><em>III. Module Framework</em></a>
                     <a id="link-4" class="nav-link bullet-2-link" onclick="onClickActive(event)" href="#item2"><strong>1. RFx Process Overview</strong></a>
                     <a id="link-5" class="nav-link bullet-2-link" onclick="onClickActive(event)" href="#item3"><strong>2. RFX PREPARATION PHASE</strong></a>
-                    <a id="link-7" class="nav-link bullet-2-link" onclick="onClickActive(event)" href="#item3-1"><em>2.1 RFx Scope & Project Chart</em></a>
-                    <a id="link-8" class="nav-link bullet-2-link" onclick="onClickActive(event)" href="#item3-2"><em>2.2 RFx Project Team Creation</em></a>
-                    <a id="link-9" class="nav-link bullet-2-link" onclick="onClickActive(event)" href="#item3-3"><em>2.3 Bidders Identification and Pre-Qualification</em></a>
+                    <a id="link-6" class="nav-link bullet-2-link" onclick="onClickActive(event)" href="#item3-1"><em>2.1 RFx Scope & Project Chart</em></a>
+                    <a id="link-7" class="nav-link bullet-2-link" onclick="onClickActive(event)" href="#item3-2"><em>2.2 RFx Project Team Creation</em></a>
+                    <a id="link-8" class="nav-link bullet-2-link" onclick="onClickActive(event)" href="#item3-3"><em>2.3 Bidders Identification and Pre-Qualification</em></a>
                     </nav>
                 </nav>
            </section>
@@ -1613,7 +1613,7 @@
                         section 4.1, the NaaS Operator will inform about the timeline and format for
                         vendor queries.</p>
                         
-                        <p class="normal-text">The <a href="bidder_queries_res" class="a_link">Bidders Queries and
+                        <p class="normal-text">The <a href="https://github.com/teleworxllc/NaaSRunBook/blob/gh-pages/Supply%20Chain%20Management/Templates/Bidders%20Queries%20and%20Responses%20Template.xlsx" class="a_link">Bidders Queries and
                         Responses Template</a> document provides a
                         template that the vendors can use to submit their questions. The template
                         provides a spreadsheet where each row will be used to request clarification on
@@ -1648,7 +1648,7 @@
                         how the vendor plans to resolve the scope of work.</p>
                         
                         <p class="normal-text">The evaluation guidelines in Table 5 are later implemented
-                        in the <a href="vendor_evaluation" class="a_link">Vendor Evaluation Matrix Template</a> which permits a side by side comparison between the vendor
+                        in the <a href="https://github.com/teleworxllc/NaaSRunBook/blob/gh-pages/Supply%20Chain%20Management/Templates/Vendor%20Evaluation%20Matrix%20Template.xlsx" class="a_link">Vendor Evaluation Matrix Template</a> which permits a side by side comparison between the vendor
                         proposals</p>
                         
                         
@@ -1695,7 +1695,7 @@
                         
                         <p class="normal-text"></p>
                         
-                        <p class="normal-text">The <a href="commercial_quatation" class="a_link">Commercial Quotation
+                        <p class="normal-text">The <a href="https://github.com/teleworxllc/NaaSRunBook/blob/gh-pages/Supply%20Chain%20Management/Templates/Commercial%20Quotation%20Template.docx" class="a_link">Commercial Quotation
                         Template</a> provides a sample of the document
                         that vendors will populate with pricing for the items requested in the RFx
                         Process. The template must be updated by the NaaS operator before submission
@@ -1709,7 +1709,7 @@
                         <a id="fm_link-2" class="nav-link bullet-2-link" onclick="onClickActive(event)" href="#item4-1"><em>3.1 RFx Information Collection</em></a>
                         <a id="fm_link-3" class="nav-link bullet-2-link" onclick="onClickActive(event)" href="#item4-2"><em>3.2 RFx Document Development</em></a>
                         <a id="fm_link-4" class="nav-link bullet-2-link" onclick="onClickActive(event)" href="#item4-3"><em>3.3 RFx Distribution</em></a>
-                        <a id="fm_link-4" class="nav-link bullet-2-link" onclick="onClickActive(event)" href="#item4-4"><em>3.4 Vendor Evaluation & Selection</em></a>
+                        <a id="fm_link-5" class="nav-link bullet-2-link" onclick="onClickActive(event)" href="#item4-4"><em>3.4 Vendor Evaluation & Selection</em></a>
                     </nav>
                 </nav>
            </section>
@@ -1734,7 +1734,7 @@
                         contract.</p>
                         
                         <p class="normal-text">The RFx Document sections are developed in the following
-                        paragraphs. An <a href="rfx_template" class="a_link">RFx Document Template</a> is also part of this module as a reference. The template
+                        paragraphs. An <a href="https://github.com/teleworxllc/NaaSRunBook/blob/gh-pages/Supply%20Chain%20Management/Templates/RFx%20Document%20Template.docx" class="a_link">RFx Document Template</a> is also part of this module as a reference. The template
                         has been developed around an RFP process, which is the most complete of the
                         three possibilities (RFI/RFQ/RFP) discussed in this Module. The NaaS Operator
                         may customize such template following the indications in the sections below and
@@ -1753,7 +1753,7 @@
                         the RFx. </p>
                         
                         <p class="normal-text">This section informs the respondents about the scope and
-                        conditions of the RFx process. The outline described here is used in the <a href="rfx_template" class="a_link">RFx Document Template</a> to
+                        conditions of the RFx process. The outline described here is used in the <a href="https://github.com/teleworxllc/NaaSRunBook/blob/gh-pages/Supply%20Chain%20Management/Templates/RFx%20Document%20Template.docx" class="a_link">RFx Document Template</a> to
                         establish the document structure.</p>
                         
                         <p class="normal-text">The <b>Introduction Section</b> provides a brief
@@ -1908,7 +1908,7 @@
                         
                         <p class="normal-text" style='margin-top:0in;font-size: 15px;'>2.5.
                         <b>Price:</b> This section refers to the proposed price for the
-                        above-mentioned approach. The <a class="a_link" href="commercial_quatation">Commercial
+                        above-mentioned approach. The <a class="a_link" href="https://github.com/teleworxllc/NaaSRunBook/blob/gh-pages/Supply%20Chain%20Management/Templates/Commercial%20Quotation%20Template.docx">Commercial
                         Quotation Template</a> document may be used as a
                         reference to how prices could be presented.</p>
                         </ol>
@@ -1942,7 +1942,7 @@
                         
                         <p class="normal-text">The <b>Contract Award </b>chapter
                         provides references to Terms and Conditions as well as generic contract items,
-                        which are further developed in the NaaS Operator <a class='a_link' href='procurement_module'>Procurement
+                        which are further developed in the NaaS Operator <a class='a_link' href='proc_pro_vendor_mgmt.html'>Procurement
                         and Vendor Management module</a>. The specification of the legal
                         documentation bound to the RFx process is heavily influenced by the national,
                         regional and local regulations, and may significantly vary from country to
@@ -2032,9 +2032,9 @@
                 <a id="e2e_link-1" class="nav-link bullet-2-link" onclick="onClickActive(event)" href="#item5"><strong>4. RFX DOCUMENT</strong></a>
                 <a id="e2e_link-2" class="nav-link bullet-2-link" onclick="onClickActive(event)" href="#item5-1"><em>4.1 Information for Bidders</em></a>
                 <a id="e2e_link-3" class="nav-link bullet-2-link" onclick="onClickActive(event)" href="#item5-2"><em>4.2 Scope of Work</em></a>
-                <a id="e2e_link-5" class="nav-link bullet-2-link" onclick="onClickActive(event)" href="#item5-3"><em>4.3 Bid Proposal Preparation and Submission</em></a>
-                <a id="e2e_link-6" class="nav-link bullet-2-link" onclick="onClickActive(event)" href="#item5-4"><em>4.4 Proposals Evaluation</em></a>
-                <a id="e2e_link-7" class="nav-link bullet-2-link" onclick="onClickActive(event)" href="#item5-5"><em>4.5 Contract Award</em></a>
+                <a id="e2e_link-4" class="nav-link bullet-2-link" onclick="onClickActive(event)" href="#item5-3"><em>4.3 Bid Proposal Preparation and Submission</em></a>
+                <a id="e2e_link-5" class="nav-link bullet-2-link" onclick="onClickActive(event)" href="#item5-4"><em>4.4 Proposals Evaluation</em></a>
+                <a id="e2e_link-6" class="nav-link bullet-2-link" onclick="onClickActive(event)" href="#item5-5"><em>4.5 Contract Award</em></a>
              </nav>
          </nav>
         </section>  
@@ -2105,44 +2105,51 @@
                                     document.getElementById("link-2").classList.add('link-active');
                                 }else if(scrollTop >= 651 && scrollTop <= 1950){
                                     document.getElementById("link-3").classList.add('link-active'); 
-                                }else if(scrollTop >= 1951 && scrollTop <= 2100){
+                                }else if(scrollTop >= 1951 && scrollTop <= 3400){
                                     document.getElementById("link-4").classList.add('link-active'); 
-                                }else if(scrollTop >= 2101 && scrollTop <= 2700){
+                                }else if(scrollTop >= 3401 && scrollTop <= 4000){
                                     document.getElementById("link-5").classList.add('link-active'); 
-                                }else if(scrollTop >= 2701){
+                                }else if(scrollTop >= 4001 && scrollTop <= 4900){
                                     document.getElementById("link-6").classList.add('link-active'); 
+                                }else if(scrollTop >= 4901 && scrollTop <= 5300){
+                                    document.getElementById("link-7").classList.add('link-active'); 
+                                }else if(scrollTop >= 5301){
+                                    document.getElementById("link-8").classList.add('link-active'); 
                                 }
                             } else if(tab == '#fm'){
-                                if(scrollTop >= 0 && scrollTop <= 50){
+                                if(scrollTop >= 0 && scrollTop <= 550){
 								    document.getElementById("fm_link-1").classList.add('link-active');
-                                }else if(scrollTop >= 51 && scrollTop <= 7300){
+                                }else if(scrollTop >= 551 && scrollTop <= 1800){
                                     document.getElementById("fm_link-2").classList.add('link-active');
 
-                                }else if(scrollTop >= 7301 && scrollTop <= 9000){
+                                }else if(scrollTop >= 1801 && scrollTop <= 4700){
                                     document.getElementById("fm_link-3").classList.add('link-active');
 
-                                }else if(scrollTop >= 9001 ){
+                                }else if(scrollTop >= 4701 && scrollTop <= 5000){
                                     document.getElementById("fm_link-4").classList.add('link-active');
+
+                                }else if(scrollTop >= 5001 ){
+                                    document.getElementById("fm_link-5").classList.add('link-active');
                                     
                                 }
 
                             } else if(tab == '#e2e'){
-                                if(scrollTop >= 0 && scrollTop <= 150){
+                                if(scrollTop >= 0 && scrollTop <= 450){
 								    document.getElementById("e2e_link-1").classList.add('link-active');
                                 }
-                                else if(scrollTop >= 151 && scrollTop <= 2500){
+                                else if(scrollTop >= 451 && scrollTop <= 1050){
                                     document.getElementById("e2e_link-2").classList.add('link-active');
 
-                                }else if(scrollTop >= 2501 && scrollTop <= 6600){
+                                }else if(scrollTop >= 1051 && scrollTop <= 2500){
                                     document.getElementById("e2e_link-3").classList.add('link-active');
                                     
-                                }else if(scrollTop >= 6601 && scrollTop <= 6900 ){
+                                }else if(scrollTop >= 2501 && scrollTop <= 3000 ){
                                     document.getElementById("e2e_link-4").classList.add('link-active');
                                     
-                                }else if(scrollTop >= 6901 && scrollTop <= 8300 ){
+                                }else if(scrollTop >= 3001 && scrollTop <= 3500 ){
                                     document.getElementById("e2e_link-5").classList.add('link-active');
                                     
-                                }else if(scrollTop >= 8301 && scrollTop <= 9300 ){
+                                }else if(scrollTop >= 3501 && scrollTop <= 9300 ){
                                     document.getElementById("e2e_link-6").classList.add('link-active');
                                     
                                 }else if(scrollTop >= 9301 ){
