@@ -13,6 +13,8 @@
         
         <!-- Our Custom CSS -->
         <link rel="stylesheet" href="style2.css">
+        <link href="images/moe/tooltip.css" rel="stylesheet" type="text/css" />
+        <script src="images/moe/tooltip.js" type="text/javascript"></script>
         
     <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
 	</head>
@@ -40,7 +42,7 @@
                             RunBook Modules
                         </a>
                         <ul class="list-unstyled collapse" id="runbookSubmenu">
-<li  class="active">
+                        <li  class="active">
                                     <a href="#stract" data-toggle="collapse" aria-expanded="false">
                                         &#187 Strategic Plan & Scope
                                     </a>
@@ -69,13 +71,13 @@
                                         <li><a href="#transportMenu" data-toggle="collapse" style="margin-left:2em">&bull; Transport</a></li>
                                             <ul class="list-unstyled collapse" id="transportMenu">
                                                 <li><a href="tx_hld_module.html" style="margin-left:4em;">&#9657; Tx Network HLD</a></li>
-<li><a href="tx_lld_module.html" style="margin-left:4em;">&#9657; Tx Network LLD</a></li>
+                                                <li><a href="tx_lld_module.html" style="margin-left:4em;">&#9657; Tx Network LLD</a></li>
                                             </ul>
                 
                                         <li><a href="#transportMenu2" data-toggle="collapse" style="margin-left:2em">&bull; RAN</a></li>
                                             <ul class="list-unstyled collapse" id="transportMenu2">
                                                 <li><a href="ran_hld_module.html" style="margin-left:4em;">&#9657; RAN Network HLD</a></li>
-<li><a href="ran_lld_module.html" style="margin-left:4em;">&#9657; RAN Network LLD</a></li>
+                                                <li><a href="ran_lld_module.html" style="margin-left:4em;">&#9657; RAN Network LLD</a></li>
                                             </ul>
                                         <li><a href="#transportMenu3" data-toggle="collapse" style="margin-left:2em">&bull; Core</a></li>
                                         <ul class="list-unstyled collapse" id="transportMenu3">
@@ -92,9 +94,9 @@
                                         <li><a href="deployment_mgmt.html"style="margin-left:2em">&bull; Deployment Mgmt</a></li>
                                         <li><a href="site_survey.html"style="margin-left:2em">&bull; Site Survey</a></li>
                                         <li><a href="#"style="margin-left:2em">&bull; Construction</a></li>
-                                        <li><a href="#"style="margin-left:2em">&bull; I & C</a></li>
+                                        <li><a href="i&c_module.html"style="margin-left:2em">&bull; I & C</a></li>
                                         <li><a href="fiber_const_mgmt.html"style="margin-left:2em">&bull; Fiber Construction Mgmt</a></li>
-<li><a href="site_construction_mgmt.html"style="margin-left:2em">&bull; Site Construction Mgmt</a></li>
+                                        <li><a href="site_construction_mgmt.html"style="margin-left:2em">&bull; Site Construction Mgmt</a></li>
                                     </ul>
                                 </li>
                                 <li>
@@ -117,7 +119,7 @@
                                     &#187 Supply Chain Management
                                 </a>
                                 <ul class="list-unstyled collapse" id="supply">
-                                    <li><a href=""style="margin-left:2em">&bull; RFx Process</a></li>
+                                    <li><a href="rfx_process.html"style="margin-left:2em">&bull; RFx Process</a></li>
                                     <li><a href="proc_pro_vendor_mgmt.html" style="margin-left:2em">&bull; Procurement Proc. & Vendor Mgmt.</a></li>
                                     <li><a href="" style="margin-left:2em"> &bull; Logistic & Warehousing</a></li>
                                 </ul>
@@ -130,35 +132,13 @@
                                 Methods of Engagement
                             </a>
                             <ul class="collapse list-unstyled" id="engagementSubmenu">
-                                <li><a href="#">&#187 Primer</a></li>
-                                <li class="active">
-                                    <a href="#widgets" data-toggle="collapse" aria-expanded="false">
-                                        &#187 Wizards
-                                    </a>
-                                    <ul class="collapse list-unstyled" id="widgets">
-                                        <li><a href="core_hld_wizard.html" style="margin-left:2em">&bull; Core HLD - Wizard</a></li>
-                                        <li><a href="net_mon_arch_wizard_1.html" style="margin-left:2em">&bull; Net Mon Arch - Wizard 1</a></li>
-                                        <li><a href="net_mon_arch_wizard_2.html" style="margin-left:2em">&bull; Net Mon Arch - Wizard 2</a></li>
-                                        <li><a href="tx_ip_arch_wizard_1.html" style="margin-left:2em">&bull; Tx & IP Archi Wizard</a></li>
-                                    </ul>
-                                </li>
-                                <li><a href="#">&#187 Templates</a></li>
-                                <!--li><a href="friss.html">Widgets</a></li-->
-                                                
-                                <li class="active">
-                                    <a href="#homeSubmenu22" data-toggle="collapse" aria-expanded="false">
-                                        &#187 Widgets
-                                    </a>
-                                    <ul class="collapse list-unstyled" id="homeSubmenu22">
-                                        <li><a href="ran_hld_widget_1.html" style="margin-left:2em">&bull; RAN - Capacity-Based</a></li>
-                                        <li><a href="ran_hld_widget_2.html" style="margin-left:2em">&bull; RAN - Coverage-Based</a></li>
-                                        <li><a href="tx_hld_widget_1.html" style="margin-left:2em">&bull; Tx - Capacity Forecast</a></li>
-                                        <li><a href="tx_hld_widget_2.html" style="margin-left:2em">&bull; Tx - Availability FO</a></li>
-                                        <li><a href="tx_hld_widget_3.html" style="margin-left:2em">&bull; Tx - Availability MW</a></li>
-                                        <li><a href="tx_hld_widget_4.html" style="margin-left:2em">&bull; Tx – MW Analysis</a></li>
-                                        <li><a href="core_hld_widget_1.html" style="margin-left:2em">&bull; Core - Capacity Planning</a></li>
-                                    </ul>
-                                </li>
+                                
+                                <li><a href="MoE_Wizards.html">&#187 Wizards</a></li>
+                                <li><a href="MoE_Widgets.html">&#187 Widgets</a></li>
+                                <li><a href="MoE_Primers.html">&#187 Primers</a></li>
+                                <li><a href="MoE_Templates.html">&#187 Templates</a></li>
+                                <li><a href="MoE_Tool_Catalogue.html">&#187 Tool Catalogue</a></li>
+                                
                             </ul>
                         </li>
                         <li>
@@ -183,11 +163,11 @@
             <br>
             <div align=center>
                 <div style="display:inline;">
-                    <button class="btn main-button-moe" onclick="location.href='MoE_Wizards.html'" type="button"> <span><strong>Wizards</strong></span> </button>
-                    <button class="btn main-button-moe" onclick="location.href='MoE_Widgets.html'" type="button"> <span><strong>Widgets</strong></span> </button>
-                    <button class="btn main-button-moe" onclick="location.href='MoE_Primers.html'" type="button"> <span><strong>Primers</strong></span> </button>
-                    <button class="btn main-button-moe" onclick="location.href='MoE_Templates.html'" type="button"> <span><strong>Templates</strong></span> </button>
-                    <button class="btn main-button-moe" onclick="location.href='MoE_Tool_Catalogue.html'" type="button"> <span><strong>Tool Catalogue</strong></span> </button> 
+                    <span class="tooltip" onmouseover="tooltip.pop(this, '<h5>Wizards</h5><p>Wizards are tools for a quick approach design. Wizards are user interfaces type that presents a user with a sequence of dialog boxes that lead the user through a series of well-defined steps</p>')"><button class="btn main-button-moe" onclick="location.href='MoE_Wizards.html'" type="button"> <span><strong>Wizards</strong></span> </button></span>
+                    <span class="tooltip" onmouseover="tooltip.pop(this, '<h5>Widgets</h5><p>Widgets are simple, easy-to-use applications intended for one or more modules within the RunBook. Serving as independent applications, widgets aim to help the analysis that is made in the modules by giving certain parameters</p>')"><button class="btn main-button-moe" onclick="location.href='MoE_Widgets.html'" type="button"> <span><strong>Widgets</strong></span> </button></span>
+                    <span class="tooltip" onmouseover="tooltip.pop(this, '<h5>Primers</h5><p>A primer gets you ready for what comes next. They present the most basic elements of any topic. These primers explain in a nutshell underlying topics that are presented in each module that might be relevant.</p>')"><button class="btn main-button-moe" onclick="location.href='MoE_Primers.html'" type="button"> <span><strong>Primers</strong></span> </button></span>
+                    <span class="tooltip" onmouseover="tooltip.pop(this, '<h5>Templates</h5><p>The templates are files that are created with an overall layout to be used with one or more documents. These templates help to accomplish, organize and request tasks that are required in the modules. Templates vary depending on the kind of work but should share similar themes and patterns throughout the completed work.</p>')"><button class="btn main-button-moe" onclick="location.href='MoE_Templates.html'" type="button"> <span><strong>Templates</strong></span> </button></span>
+                    <span class="tooltip" onmouseover="tooltip.pop(this, '<h5>Tools Catalogue</h5><p>Tools Catalogue contains the main sites ordered by categories associated each module within the RunBook.</p>')"><button class="btn main-button-moe" onclick="location.href='MoE_Tool_Catalogue.html'" type="button"> <span><strong>Tool Catalogue</strong></span> </button></span> 
                 </div>
             </div>
             <hr>
@@ -195,7 +175,7 @@
             
                 <div align=center>
                     <h2>Templates</h2>
-                    <p>Wizards are tools for a quick approach design. Wizards are user interfaces type that presents a user with a sequence of dialog boxes that lead the user through a series of well-defined steps</p>
+                    <p>The templates are files that are created with an overall layout to be used with one or more documents. These templates help to accomplish, organize and request tasks that are required in the modules. Templates vary depending on the kind of work but should share similar themes and patterns throughout the completed work.</p>
                     <div align=center>
                         <table id="example" class="display nowrap" style="width:100%">
                             <thead>

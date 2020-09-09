@@ -1,0 +1,777 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+        <title>RunBook - Widget</title>
+
+         <!-- Bootstrap CSS CDN -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <!-- Our Custom CSS -->
+        <link rel="stylesheet" href="style2.css">
+        
+    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+	</head>
+		
+    <body onscroll="updateSection()">
+
+    <div class >
+        <ul class="barra_superior">
+            <li class="li_superior"><a class="active" href="Home.html">Home</a></li>
+            <li class="li_superior"><a href="comming_soon/comming-soon.html">About</a></li>
+        </ul>
+    </div>
+
+        <div class="wrapper-2">
+            <!-- Sidebar Holder -->
+            <nav id="sidebar">
+                <div class="sidebar-header">
+                    <h3>NaaS RunBook</h3>
+                    <!--strong>NaaS</strong-->
+                    <img src="smiley.png" alt="Go to W3Schools!" width="42" height="42" border="0">
+                </div>
+
+                <ul class="list-unstyled components">
+                    <li>
+                        <a href="#runbookSubmenu" data-toggle="collapse" aria-expanded="false">
+                            <i class="glyphicon glyphicon-option-horizontal"></i>
+                            RunBook Modules
+                        </a>
+                        <ul class="list-unstyled collapse" id="runbookSubmenu">
+                        <li  class="active">
+                                    <a href="#stract" data-toggle="collapse" aria-expanded="false">
+                                        &#187 Strategic Plan & Scope
+                                    </a>
+                                    <ul class="list-unstyled collapse" id="stract">
+                                        <li><a href="strategy_scope.html"style="margin-left:2em;">&bull; Strategy & Scope</a></li>
+                                        <li><a href="high_level_proyect_plan.html" style="margin-left:2em">&bull; HL Project Plan</a></li>
+                                    </ul>
+                                </li>
+                                <li  class="active">
+                                    <a href="#HLNA" data-toggle="collapse" aria-expanded="false">
+                                        &#187 High Level Network Architecture
+                                    </a>
+                                    <ul class="list-unstyled collapse" id="HLNA">
+                                        <li><a href="ran_hld_architecture.html"style="margin-left:2em">&bull; RAN Architecture</a></li>
+                                        <li><a href="tx_ip_architecture.html" style="margin-left:2em">&bull; TX & IP Architecture</a></li>
+                                        <li><a href="mobile_core_archi.html" style="margin-left:2em"> &bull; Core Architecture</a></li>
+                                        <li><a href="network_monitoring_architecture.html" style="margin-left:2em"> &bull; Network Monitoring</a></li>
+                                        <li><a href="comming_soon/comming-soon.html" style="margin-left:2em"> &bull; Engineering Specifications</a></li>
+                                    </ul>
+                                </li>
+                                <li class="active">
+                                    <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false">
+                                        &#187 Network Design
+                                    </a>
+                                    <ul class="list-unstyled collapse" id="homeSubmenu">
+                                        <li><a href="#transportMenu" data-toggle="collapse" style="margin-left:2em">&bull; Transport</a></li>
+                                            <ul class="list-unstyled collapse" id="transportMenu">
+                                                <li><a href="tx_hld_module.html" style="margin-left:4em;">&#9657; Tx Network HLD</a></li>
+                                                <li><a href="tx_lld_module.html" style="margin-left:4em;">&#9657; Tx Network LLD</a></li>
+                                            </ul>
+                
+                                        <li><a href="#transportMenu2" data-toggle="collapse" style="margin-left:2em">&bull; RAN</a></li>
+                                            <ul class="list-unstyled collapse" id="transportMenu2">
+                                                <li><a href="ran_hld_module.html" style="margin-left:4em;">&#9657; RAN Network HLD</a></li>
+                                                <li><a href="ran_lld_module.html" style="margin-left:4em;">&#9657; RAN Network LLD</a></li>
+                                            </ul>
+                                        <li><a href="#transportMenu3" data-toggle="collapse" style="margin-left:2em">&bull; Core</a></li>
+                                        <ul class="list-unstyled collapse" id="transportMenu3">
+                                            <li><a href="mobile_core_hld.html" style="margin-left:4em;">&#9657; Mobile Core HLD</a></li>
+											<li><a href="mobile_core_lld.html" style="margin-left:4em;">&#9657; Mobile Core LLD</a></li>
+                                        </ul>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#deployment_m" data-toggle="collapse" aria-expanded="false">
+                                        &#187 Deployment
+                                    </a>
+                                    <ul class="list-unstyled collapse" id="deployment_m">
+                                        <li><a href="deployment_mgmt.html"style="margin-left:2em">&bull; Deployment Mgmt</a></li>
+                                        <li><a href="site_survey.html"style="margin-left:2em">&bull; Site Survey</a></li>
+                                        <li><a href="#"style="margin-left:2em">&bull; Construction</a></li>
+                                        <li><a href="i&c_module.html"style="margin-left:2em">&bull; I & C</a></li>
+                                        <li><a href="fiber_const_mgmt.html"style="margin-left:2em">&bull; Fiber Construction Mgmt</a></li>
+                                        <li><a href="site_construction_mgmt.html"style="margin-left:2em">&bull; Site Construction Mgmt</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        &#187 O & M
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        &#187 Field Maintenance
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        &#187 Post-Launch Engineering
+                                    </a>
+                                </li>
+                                <li  class="active">
+                                <a href="#supply" data-toggle="collapse" aria-expanded="false">
+                                    &#187 Supply Chain Management
+                                </a>
+                                <ul class="list-unstyled collapse" id="supply">
+                                    <li><a href="rfx_process.html"style="margin-left:2em">&bull; RFx Process</a></li>
+                                    <li><a href="proc_pro_vendor_mgmt.html" style="margin-left:2em">&bull; Procurement Proc. & Vendor Mgmt.</a></li>
+                                    <li><a href="" style="margin-left:2em"> &bull; Logistic & Warehousing</a></li>
+                                </ul>
+                            </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#engagementSubmenu" data-toggle="collapse" aria-expanded="false">
+                                <i class="glyphicon glyphicon-option-horizontal"></i>
+                                Methods of Engagement
+                            </a>
+                            <ul class="collapse list-unstyled" id="engagementSubmenu">
+                                
+                                <li><a href="MoE_Wizards.html">&#187 Wizards</a></li>
+                                <li><a href="MoE_Widgets.html">&#187 Widgets</a></li>
+                                <li><a href="MoE_Primers.html">&#187 Primers</a></li>
+                                <li><a href="MoE_Templates.html">&#187 Templates</a></li>
+                                <li><a href="MoE_Tool_Catalogue.html">&#187 Tool Catalogue</a></li>
+                                
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="comming_soon/comming-soon.html">
+                                <i class="glyphicon glyphicon-paperclip"></i>
+                                FAQ 
+                            </a>
+                        </li>
+                        <li>
+                            <a href="comming_soon/comming-soon.html">
+                                <i class="glyphicon glyphicon-send"></i>
+                                Contact
+                            </a>
+                        </li>
+                </ul>
+            </nav>
+
+            <!-- Page Content Holder -->
+            <div id="content">
+                <h2>Mobile Core LLD - Naming Convention + NAPTR Record Generator</h2>
+                <p class="normal-text">The Naming Convention section will help the NaaS Operator to define a naming structure for any element of the network.</p>
+                <p>The NAPTR Record Generator will aid the NaaS Operator to avoid any mistakes at the moment of generate and assign a DNS Record to an interface/EPC Node.</p>
+                <p>To start fill in the blanks and click on "Generate" button.</p>
+                <p class="normal-text">Basics for this wizard are addressed on the <a class="a_link" href="mobile_core_lld.html">Mobile Core LLD Module</a>.</p>
+                <br>
+                
+                <div class="caja_box">
+           
+                    <form class="form-horizontal-no-img" action="" name="forchi" id="formulario">
+                        
+                        <h4 class="title-results" style="border-style: solid;background-color:#005777;color:#fff"><center>Naming Convention</center></h4>
+                
+                        <br>
+                        <div class="row">
+                            <label  class="col-sm-2"></label >
+                            <label  class="col-sm-5 parag-1 parag-1-bold"><b>Operator Information</b></label >
+                            <label  class="col-sm-2 parag-1 parag-1-bold"><center><b>Complete Name</b></center></label >
+                            <label  class="col-sm-2 parag-1 parag-1-bold"><center><b>Abreviation</b></center></label >
+                        </div>
+                        
+                        <div class="row">
+                            <label  class="col-sm-2"></label >
+                            <label  class="col-sm-5 parag-1 parag-1-italic">* NaaS Operator's Name</label >
+                            <input id="form1_1" name="tx_lon"class="text-box col-sm-2" > <!--required-->
+                            <input id="form1_2" name="tx_lon"class="text-box col-sm-2" required>
+                        </div>
+                        <div class="row">
+                            <label  class="col-sm-2"></label >
+                            <label  class="col-sm-5 parag-1 parag-1-italic">* Presence (Country)</label >
+                            <input id="form1_3" name="tx_lon"class="text-box col-sm-2" > <!--required-->
+                            <input id="form1_4" name="tx_lon"class="text-box col-sm-2" required>
+                        </div>
+                        <div class="row">
+                            <label  class="col-sm-2"></label >
+                            <label  class="col-sm-5 parag-1 parag-1-italic">* Unique ID format A1, 01, A1)</label >
+                            <label  class="col-sm-2"></label >
+                            <input id="form1_6" name="tx_lon"class="text-box col-sm-2" required>
+                            <!--input  class="text-box" id="form1_6" name="tx_lon" class="col-sm-2" required-->
+                        </div><br>
+
+                        <div class="row">
+                            <label class="col-sm-4 parag-1 parag-1-bold"><center>Physical Equipment Information</center></label>
+                            <label class="col-sm-1 parag-1 parag-1-bold"><center>Quantity</center></label>
+                            <label  class="col-sm-1"></label >
+                            <label class="col-sm-2 parag-1 parag-1-bold"><center>Location(s) <br>[Separated by commas]</center></label>
+                            <label  class="col-sm-1"></label >
+                            <label class="col-sm-2 parag-1 parag-1-bold"><center>Abreviation(s) <br>[Separated by commas]</center></label>
+                        </div>
+
+                        <div class="row">
+                            <label  class="col-sm-4 parag-1"><center>NFV Infrastructure</center></label >
+                            <input id="form2_1_1" name="tx_lon" class="text-box col-sm-1" > <!--required-->
+                            <label  class="col-sm-1"></label >
+                            <input id="form2_1_2" name="tx_lon" class="text-box col-sm-2" > <!--required-->
+                            <label  class="col-sm-1"></label >
+                            <input id="form2_1_3" name="tx_lon" class="text-box col-sm-2" required>
+                        </div>
+                        
+                        <div class="row">
+                            <label  class="col-sm-4 parag-1"><center>Switch(es)</center></label >
+                            <input id="form2_2_1" name="tx_lon" class="text-box col-sm-1" > <!--required-->
+                            <label  class="col-sm-1"></label >
+                            <input id="form2_2_2" name="tx_lon" class="text-box col-sm-2" > <!--required-->
+                            <label  class="col-sm-1"></label >
+                            <input id="form2_2_3" name="tx_lon" class="text-box col-sm-2" required>
+                        </div>
+                        
+                        <div class="row">
+                            <label  class="col-sm-4 parag-1"><center>Router(s)</center></label >
+                            <input id="form2_3_1" name="tx_lon" class="text-box col-sm-1" > <!--required-->
+                            <label  class="col-sm-1"></label >
+                            <input id="form2_3_2" name="tx_lon" class="text-box col-sm-2" > <!--required-->
+                            <label  class="col-sm-1"></label >
+                            <input id="form2_3_3" name="tx_lon" class="text-box col-sm-2" required>
+                        </div>
+                        <div class="row">
+                            <label  class="col-sm-9"></label >
+                            <label  class="col-sm-2 parag-1"><center><b><i>*See results below</i></b></center></label >
+                        </div>
+
+                        <br><br><br><br>
+                        <br>
+                        <hr>
+                        <div class="row">
+                            <label  class="col-sm-5"></label >
+                            <label class="col-sm-3 parag-1 parag-1-bold" style="font-size: 20px;"><center>Origin</center></label>
+                            <label  class="col-sm-1"></label >
+                            <label class="col-sm-3 parag-1 parag-1-bold" style="font-size: 20px;"><center>Destination</center></label>
+                        </div><br>
+                        <div class="row">
+                            <label class="col-sm-3 parag-1 parag-1-bold"><center>Physical Ports Information</center></label>
+                            <label class="col-sm-1 parag-1 parag-1-bold"><center>Quantity</center></label>
+                            <label  class="col-sm-1"></label >
+                            <label class="col-sm-2 parag-1 parag-1-bold"><center>Physycal Equipment</center></label>
+                            <label class="col-sm-1 parag-1 parag-1-bold"><center>Abbreviation</center></label>
+                            <label  class="col-sm-1"></label >
+                            <label class="col-sm-2 parag-1 parag-1-bold"><center>Physycal Equipment</center></label>
+                            <label class="col-sm-1 parag-1 parag-1-bold"><center>Abbreviation</center></label>
+                        </div>
+                        
+                        <div class="row">
+                            <label  class="col-sm-3 parag-1"><center>GE</center></label >
+                            <input id="form3_1_1" name="tx_lon"class="text-box col-sm-1" > <!--required-->
+                            <label  class="col-sm-1"></label >
+                            <input id="form3_1_2" name="tx_lon"class="text-box col-sm-2" > <!--required-->
+                            <input id="form3_1_3" name="tx_lon"class="text-box col-sm-1" required>
+                            <label  class="col-sm-1"></label >
+                            <input id="form3_1_4" name="tx_lon"class="text-box col-sm-2" > <!--required-->
+                            <input id="form3_1_5" name="tx_lon"class="text-box col-sm-1" > <!--required-->
+                        </div>
+                        
+                        <div class="row">
+                            <label  class="col-sm-3 parag-1"><center>10GE</center></label >
+                            <input id="form3_2_1" name="tx_lon"class="text-box col-sm-1" > <!--required-->
+                            <label  class="col-sm-1"></label >
+                            <input id="form3_2_2" name="tx_lon"class="text-box col-sm-2" > <!--required-->
+                            <input id="form3_2_3" name="tx_lon"class="text-box col-sm-1" required>
+                            <label  class="col-sm-1"></label >
+                            <input id="form3_2_4" name="tx_lon"class="text-box col-sm-2" > <!--required-->
+                            <input id="form3_2_5" name="tx_lon"class="text-box col-sm-1" > <!--required-->
+                        </div>
+                        <div class="row">
+                            <label  class="col-sm-9"></label >
+                            <label  class="col-sm-2 parag-1"><center><b><i>*See results below</i></b></center></label >
+                        </div>
+                        <br><br>
+
+                        <div class="row">
+                            <label class="col-sm-4 parag-1 parag-1-bold"><center>EPC Equipment Information</center></label>
+                            <label class="col-sm-1 parag-1 parag-1-bold"><center>Quantity</center></label>
+                            <label  class="col-sm-1"></label >
+                            <label class="col-sm-2 parag-1 parag-1-bold"><center>Location(s) <br>[Separated by commas]</center></label>
+                            <label  class="col-sm-1"></label >
+                            <label class="col-sm-2 parag-1 parag-1-bold"><center>Abreviation(s) <br>[Separated by commas]</center></label>
+                        </div>
+
+                        <div class="row">
+                            <label  class="col-sm-4 parag-1"><center>MME</center></label >
+                            <input id="form4_1_1" name="tx_lon"class="text-box col-sm-1" > <!--required-->
+                            <label  class="col-sm-1"></label >
+                            <input id="form4_1_2" name="tx_lon"class="text-box col-sm-2" > <!--required-->
+                            <label  class="col-sm-1"></label >
+                            <input id="form4_1_3" name="tx_lon"class="text-box col-sm-2" required>
+                        </div>
+                        
+                        <div class="row">
+                            <label  class="col-sm-4 parag-1"><center>SGW</center></label >
+                            <input id="form4_2_1" name="tx_lon"class="text-box col-sm-1" > <!--required-->
+                            <label  class="col-sm-1"></label >
+                            <input id="form4_2_2" name="tx_lon"class="text-box col-sm-2" > <!--required-->
+                            <label  class="col-sm-1"></label >
+                            <input id="form4_2_3" name="tx_lon"class="text-box col-sm-2" required>
+                        </div>
+                        
+                        <div class="row">
+                            <label  class="col-sm-4 parag-1"><center>PGW</center></label >
+                            <input id="form4_3_1" name="tx_lon"class="text-box col-sm-1" > <!--required-->
+                            <label  class="col-sm-1"></label >
+                            <input id="form4_3_2" name="tx_lon"class="text-box col-sm-2" > <!--required-->
+                            <label  class="col-sm-1"></label >
+                            <input id="form4_3_3" name="tx_lon"class="text-box col-sm-2" required>
+                        </div>
+                        <div class="row">
+                            <label  class="col-sm-4 parag-1"><center>HSS</center></label >
+                            <input id="form4_4_1" name="tx_lon"class="text-box col-sm-1" > <!--required-->
+                            <label  class="col-sm-1"></label >
+                            <input id="form4_4_2" name="tx_lon"class="text-box col-sm-2" > <!--required-->
+                            <label  class="col-sm-1"></label >
+                            <input id="form4_4_3" name="tx_lon"class="text-box col-sm-2" required>
+                        </div>
+                        <div class="row">
+                            <label  class="col-sm-4 parag-1"><center>PCRF</center></label >
+                            <input id="form4_5_1" name="tx_lon"class="text-box col-sm-1" > <!--required-->
+                            <label  class="col-sm-1"></label >
+                            <input id="form4_5_2" name="tx_lon"class="text-box col-sm-2" > <!--required-->
+                            <label  class="col-sm-1"></label >
+                            <input id="form4_5_3" name="tx_lon"class="text-box col-sm-2" required>
+                        </div>
+                        <div class="row">
+                            <label  class="col-sm-4 parag-1"><center>OCS</center></label >
+                            <input id="form4_6_1" name="tx_lon"class="text-box col-sm-1" > <!--required-->
+                            <label  class="col-sm-1"></label >
+                            <input id="form4_6_2" name="tx_lon"class="text-box col-sm-2" > <!--required-->
+                            <label  class="col-sm-1"></label >
+                            <input id="form4_6_3" name="tx_lon"class="text-box col-sm-2" required>
+                        </div>
+                        <div class="row">
+                            <label  class="col-sm-4 parag-1"><center>OFCS</center></label >
+                            <input id="form4_7_1" name="tx_lon"class="text-box col-sm-1" > <!--required-->
+                            <label  class="col-sm-1"></label >
+                            <input id="form4_7_2" name="tx_lon"class="text-box col-sm-2" > <!--required-->
+                            <label  class="col-sm-1"></label >
+                            <input id="form4_7_3" name="tx_lon"class="text-box col-sm-2" required>
+                        </div>
+                        
+                        <div class="row">
+                            <label  class="col-sm-4 parag-1"><center>eNB_X</center></label >
+                            <input id="form4_8_1" name="tx_lon"class="text-box col-sm-1" > <!--required-->
+                            <label  class="col-sm-1"></label >
+                            <input id="form4_8_2" name="tx_lon"class="text-box col-sm-2" > <!--required-->
+                            <label  class="col-sm-1"></label >
+                            <input id="form4_8_3" name="tx_lon"class="text-box col-sm-2" required>
+                        </div>
+                        <div class="row">
+                            <label  class="col-sm-9"></label >
+                            <label  class="col-sm-2 parag-1"><center><b><i>*See results below</i></b></center></label >
+                        </div>
+                        <br><br><br>
+
+                        <div class="row">
+                            <label  class="col-sm-1"></label >
+                            <label class="col-sm-3 parag-1 parag-1-bold"><center>Physical Equipment Information</center></label>
+                            <label  class="col-sm-1"></label >
+                            <label class="col-sm-3 parag-1 parag-1-bold"><center>Physical Ports Information</center></label>
+                            <label  class="col-sm-1"></label >
+                            <label class="col-sm-3 parag-1 parag-1-bold"><center>EPC Equipment Information</center></label>
+                        </div>
+                        <div class="row">
+                            <label  class="col-sm-1"></label >
+                            <input  id='value1' name="tx_lat" type = "text" class="col-sm-3 result-cell" readonly>
+                            <label  class="col-sm-1"></label >
+                            <input  id='value2' name="tx_lat" type = "text" class="col-sm-3 result-cell" readonly>
+                            <label  class="col-sm-1"></label >
+                            <input  id='value3' name="tx_lat" type = "text" class="col-sm-3 result-cell" readonly>
+                        </div>
+                        <div class="row">
+                            <label  class="col-sm-1"></label >
+                            <input  id='value4' name="tx_lat" type = "text" class="col-sm-3 result-cell" readonly>
+                            <label  class="col-sm-1"></label >
+                            <input  id='value5' name="tx_lat" type = "text" class="col-sm-3 result-cell" readonly>
+                            <label  class="col-sm-1"></label >
+                            <input  id='value6' name="tx_lat" type = "text" class="col-sm-3 result-cell" readonly>
+                        </div>
+                        <div class="row">
+                            <label  class="col-sm-1"></label >
+                            <input  id='value7' name="tx_lat" type = "text" class="col-sm-3 result-cell" readonly>
+                            <label  class="col-sm-1"></label >
+                            <label  class="col-sm-3"></label >
+                            <label  class="col-sm-1"></label >
+                            <input  id='value8' name="tx_lat" type = "text" class="col-sm-3 result-cell" readonly>
+                        </div>
+                        <div class="row">
+                            <label  class="col-sm-1"></label >
+                            <label  class="col-sm-3"></label >
+                            <label  class="col-sm-1"></label >
+                            <label  class="col-sm-3"></label >
+                            <label  class="col-sm-1"></label >
+                            <input  id='value9' name="tx_lat" type = "text" class="col-sm-3 result-cell" readonly>
+                        </div>
+                        <div class="row">
+                            <label  class="col-sm-1"></label >
+                            <label  class="col-sm-3"></label >
+                            <label  class="col-sm-1"></label >
+                            <label  class="col-sm-3"></label >
+                            <label  class="col-sm-1"></label >
+                            <input  id='value10' name="tx_lat" type = "text" class="col-sm-3 result-cell" readonly>
+                        </div>
+                        <div class="row">
+                            <label  class="col-sm-1"></label >
+                            <label  class="col-sm-3"></label >
+                            <label  class="col-sm-1"></label >
+                            <label  class="col-sm-3"></label >
+                            <label  class="col-sm-1"></label >
+                            <input  id='value11' name="tx_lat" type = "text" class="col-sm-3 result-cell" readonly>
+                        </div>
+                        <div class="row">
+                            <label  class="col-sm-1"></label >
+                            <label  class="col-sm-3"></label >
+                            <label  class="col-sm-1"></label >
+                            <label  class="col-sm-3"></label >
+                            <label  class="col-sm-1"></label >
+                            <input  id='value12' name="tx_lat" type = "text" class="col-sm-3 result-cell" readonly>
+                        </div>
+                        <div class="row">
+                            <label  class="col-sm-1"></label >
+                            <label  class="col-sm-3"></label >
+                            <label  class="col-sm-1"></label >
+                            <label  class="col-sm-3"></label >
+                            <label  class="col-sm-1"></label >
+                            <input  id='value13' name="tx_lat" type = "text" class="col-sm-3 result-cell" readonly>
+                        </div><br><br><br>
+                        <hr>
+                        <div class="row">
+                            <label  class="col-sm-1"></label >
+                            <label class="col-sm-3 parag-1 parag-1-bold"><center>Logical Interface Information</center></label>
+                            <label  class="col-sm-3"></label >
+                        </div>
+                        <div class="row">
+                            <label  class="col-sm-1"></label >
+                            <label class="col-sm-1 parag-1 parag-1-bold"><center>Origin</center></label>
+                            <label class="col-sm-1 parag-1 parag-1-bold"><center>Destination</center></label>
+                            <label  class="col-sm-3"></label >
+                            <label class="col-sm-3 parag-1 parag-1-bold"><center>Origin</center></label>
+                            <label class="col-sm-3 parag-1 parag-1-bold"><center>Destination</center></label>
+                        </div>
+                        <div class="row">
+                            <label  class="col-sm-1 parag-1"><center>S11</center></label>
+                            <label  class="col-sm-1 parag-1"><center>MME</center></label>
+                            <label  class="col-sm-1 parag-1"><center>SGW</center></label>
+                            <label  class="col-sm-3"></label >
+                            <input  id='value1_1' name="tx_lat" type = "text" class="col-sm-3 result-cell" readonly>
+                            <input  id='value1_2' name="tx_lat" type = "text" class="col-sm-3 result-cell" readonly>
+                        </div>
+                        <div class="row">
+                            <label  class="col-sm-1 parag-1"><center>S1-MME</center></label>
+                            <label  class="col-sm-1 parag-1"><center>MME</center></label>
+                            <label  class="col-sm-1 parag-1"><center>eNB_X</center></label>
+                            <label  class="col-sm-3"></label >
+                            <input  id='value1_3' name="tx_lat" type = "text" class="col-sm-3 result-cell" readonly>
+                            <input  id='value1_4' name="tx_lat" type = "text" class="col-sm-3 result-cell" readonly>
+                        </div>
+                        <div class="row">
+                            <label  class="col-sm-1 parag-1"><center>S1-U</center></label>
+                            <label  class="col-sm-1 parag-1"><center>SGW</center></label>
+                            <label  class="col-sm-1 parag-1"><center>eNB_X</center></label>
+                            <label  class="col-sm-3"></label >
+                            <input  id='value1_5' name="tx_lat" type = "text" class="col-sm-3 result-cell" readonly>
+                            <input  id='value1_6' name="tx_lat" type = "text" class="col-sm-3 result-cell" readonly>
+                        </div>
+                        <div class="row">
+                            <label  class="col-sm-1 parag-1"><center>Gx</center></label>
+                            <label  class="col-sm-1 parag-1"><center>PGW</center></label>
+                            <label  class="col-sm-1 parag-1"><center>PCRF</center></label>
+                            <label  class="col-sm-3"></label >
+                            <input  id='value1_7' name="tx_lat" type = "text" class="col-sm-3 result-cell" readonly>
+                            <input  id='value1_8' name="tx_lat" type = "text" class="col-sm-3 result-cell" readonly>
+                        </div>
+                        <div class="row">
+                            <label  class="col-sm-1 parag-1"><center>Gy</center></label>
+                            <label  class="col-sm-1 parag-1"><center>PGW</center></label>
+                            <label  class="col-sm-1 parag-1"><center>OCS</center></label>
+                            <label  class="col-sm-3"></label >
+                            <input  id='value1_9' name="tx_lat" type = "text" class="col-sm-3 result-cell" readonly>
+                            <input  id='value1_10' name="tx_lat" type = "text" class="col-sm-3 result-cell" readonly>
+                        </div>
+                        <div class="row">
+                            <label  class="col-sm-1 parag-1"><center>S6a</center></label>
+                            <label  class="col-sm-1 parag-1"><center>MME</center></label>
+                            <label  class="col-sm-1 parag-1"><center>HSS</center></label>
+                            <label  class="col-sm-3"></label >
+                            <input  id='value1_11' name="tx_lat" type = "text" class="col-sm-3 result-cell" readonly>
+                            <input  id='value1_12' name="tx_lat" type = "text" class="col-sm-3 result-cell" readonly>
+                        </div>
+                        <div class="row">
+                            <label  class="col-sm-1 parag-1"><center>S9</center></label>
+                            <label  class="col-sm-1 parag-1"><center>PCRF</center></label>
+                            <label  class="col-sm-1 parag-1"><center></center></label>
+                            <label  class="col-sm-3"></label >
+                            <input  id='value1_13' name="tx_lat" type = "text" class="col-sm-3 result-cell" readonly>
+                            <label  class="col-sm-3"></label >
+                        </div>
+                        <div class="row">
+                            <label  class="col-sm-1 parag-1"><center>S8</center></label>
+                            <label  class="col-sm-1 parag-1"><center>PGW</center></label>
+                            <label  class="col-sm-1 parag-1"><center></center></label>
+                            <label  class="col-sm-3"></label >
+                            <input  id='value1_15' name="tx_lat" type = "text" class="col-sm-3 result-cell" readonly>
+                            <label  class="col-sm-3"></label >
+                        </div>
+                        <div class="row">
+                            <label  class="col-sm-1 parag-1"><center>S5</center></label>
+                            <label  class="col-sm-1 parag-1"><center>SGW</center></label>
+                            <label  class="col-sm-1 parag-1"><center>PGW</center></label>
+                            <label  class="col-sm-3"></label >
+                            <input  id='value1_17' name="tx_lat" type = "text" class="col-sm-3 result-cell" readonly>
+                            <input  id='value1_18' name="tx_lat" type = "text" class="col-sm-3 result-cell" readonly>
+                        </div>
+                        <div class="row">
+                            <label  class="col-sm-1 parag-1"><center>SGi</center></label>
+                            <label  class="col-sm-1 parag-1"><center>PGW</center></label>
+                            <label  class="col-sm-1 parag-1"><center></center></label>
+                            <label  class="col-sm-3"></label >
+                            <input  id='value1_19' name="tx_lat" type = "text" class="col-sm-3 result-cell" readonly>
+                            <label  class="col-sm-3"></label >
+                        </div>
+                        <br><br><br>
+                        <h4 class="title-results" style="border-style: solid;background-color:#005777;color:#fff"><center>NAPTR Record Generator</center></h4>
+
+                        <div class="row">
+                            <label  class="col-sm-2"></label >
+                            <label  class="col-sm-6 parag-1">Is topologically close node?</label >
+                            <select id="form5" name="tx_lon" class="col-sm-2 text-box"> 
+                                <option value="topon">Yes</option>
+                                <option value="topoff">No</option>
+                            </select>
+                        </div> 
+                        <div class="row">
+                            <label  class="col-sm-2"></label >
+                            <label  class="col-sm-6 parag-1">Interface ID</label >
+                            <select id="form6" name="tx_lon" class="col-sm-2 text-box"> 
+                                <option value="s11">S11</option>
+                                <option value="s1-mme">S1-MME</option>
+                                <option value="s1-u">S1-U</option>
+                                <option value="gx">Gx</option>
+                                <option value="gy">Gy</option>
+                                <option value="s6a">S6a</option>
+                                <option value="s9">S9</option>
+                                <option value="s8">S8</option>
+                                <option value="s5">S5</option>
+                                <option value="sgi">SGi</option>
+                            </select>
+                        </div> 
+                        <div class="row">
+                            <label  class="col-sm-2"></label >
+                            <label  class="col-sm-6 parag-1">Node ID</label >
+                            <select id="form7" name="tx_lon" class="col-sm-2 text-box"> 
+                                <option value="mme">MME</option>
+                                <option value="sgw">SGW</option>
+                                <option value="pgw">PGW</option>
+                                <option value="hss">HSS</option>
+                                <option value="pcrf">PCRF</option>
+                                <option value="ocs">OCS</option>
+                                <option value="ofcs">OFCS</option>
+                                <option value="enb_x">eNB_X</option>
+                            </select>
+                        </div> 
+                        <div class="row">
+                            <label  class="col-sm-2"></label >
+                            <label  class="col-sm-6 parag-1">MNC</label >
+                            <input id="form8" name="tx_lon"class="text-box col-sm-2" required>
+                        </div> 
+                        <div class="row">
+                            <label  class="col-sm-2"></label >
+                            <label  class="col-sm-6 parag-1">MCC</label >
+                            <input id="form9" name="tx_lon"class="text-box col-sm-2" required>
+                        </div> <br>
+                        <div class="row">
+                            <label  class="col-sm-3"></label >
+                            <input  id='value99' name="tx_lat" type = "text" class="col-sm-5 result-cell" readonly>
+                        </div>
+
+                        <br>
+                        <br>
+                        
+
+                        <div class="form-group">
+                            <div class="col-sm-offset-6">
+                              <button type="submit" id='btn' class="btn btn-default" >Calculate</button>
+                            </div>
+                        </div>                                              
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!-- jQuery CDN border-left: 2px solid gray;-->
+         <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+         <!-- Bootstrap Js CDN -->
+         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+         <script type="text/javascript">
+             /*$(document).ready(function () {
+                 $('#sidebarCollapse').on('click', function () {
+                     $('#sidebar').toggleClass('active');
+                 });
+             });*/
+             var formulario2 = document.getElementsByName('forchi')[0],
+                elementos = formulario2.elements,
+                boton = document.getElementById('btn');         
+            
+
+            formulario2.addEventListener('submit',function(evt){
+                evt.preventDefault();
+
+                //Primer Formulario ************************************************
+                var form1_1_var = formulario2.form1_1.value;
+                var form1_2_var = formulario2.form1_2.value;
+                var form1_3_var = formulario2.form1_3.value;
+                var form1_4_var = formulario2.form1_4.value;
+                var form1_5_var = formulario2.form1_5.value;
+                var form1_6_var = formulario2.form1_6.value; 
+
+                var form2_1_1_var = formulario2.form2_1_1.value;
+                var form2_1_2_var = formulario2.form2_1_2.value;
+                var form2_1_3_var = formulario2.form2_1_3.value;
+                var form2_2_1_var = formulario2.form2_2_1.value;
+                var form2_2_2_var = formulario2.form2_2_2.value;
+                var form2_2_3_var = formulario2.form2_2_3.value;
+                var form2_3_1_var = formulario2.form2_3_1.value;
+                var form2_3_2_var = formulario2.form2_3_2.value;
+                var form2_3_3_var = formulario2.form2_3_3.value; 
+
+                var form3_1_1_var = (formulario2.form3_1_1.value);
+                var form3_1_2_var = (formulario2.form3_1_2.value);
+                var form3_1_3_var = (formulario2.form3_1_3.value);
+                var form3_1_4_var = (formulario2.form3_1_4.value);
+                var form3_1_5_var = (formulario2.form3_1_5.value);
+                var form3_2_1_var = (formulario2.form3_2_1.value);
+                var form3_2_2_var = (formulario2.form3_2_2.value);
+                var form3_2_3_var = (formulario2.form3_2_3.value);
+                var form3_2_4_var = (formulario2.form3_2_4.value); 
+                var form3_2_5_var = (formulario2.form3_2_5.value); 
+
+
+                var form3_1_1_var = (formulario2.form3_1_1.value);
+                var form3_1_2_var = (formulario2.form3_1_2.value);
+                var form3_1_3_var = (formulario2.form3_1_3.value);
+                var form3_1_4_var = (formulario2.form3_1_4.value);
+                var form3_1_5_var = (formulario2.form3_1_5.value);
+                var form3_2_1_var = (formulario2.form3_2_1.value);
+                var form3_2_2_var = (formulario2.form3_2_2.value);
+                var form3_2_3_var = (formulario2.form3_2_3.value);
+                var form3_2_4_var = (formulario2.form3_2_4.value); 
+                var form3_2_5_var = (formulario2.form3_2_5.value);
+
+
+                var form4_1_1_var = (formulario2.form4_1_1.value);
+                var form4_1_2_var = (formulario2.form4_1_2.value);
+                var form4_1_3_var = (formulario2.form4_1_3.value);
+                var form4_2_1_var = (formulario2.form4_2_1.value);
+                var form4_2_2_var = (formulario2.form4_2_2.value);
+                var form4_2_3_var = (formulario2.form4_2_3.value);
+                var form4_3_1_var = (formulario2.form4_3_1.value);
+                var form4_3_2_var = (formulario2.form4_3_2.value);
+                var form4_3_3_var = (formulario2.form4_3_3.value);
+                var form4_4_1_var = (formulario2.form4_4_1.value);
+                var form4_4_2_var = (formulario2.form4_4_2.value);
+                var form4_4_3_var = (formulario2.form4_4_3.value);
+                var form4_5_1_var = (formulario2.form4_5_1.value);
+                var form4_5_2_var = (formulario2.form4_5_2.value);
+                var form4_5_3_var = (formulario2.form4_5_3.value);
+                var form4_6_1_var = (formulario2.form4_6_1.value);
+                var form4_6_2_var = (formulario2.form4_6_2.value);
+                var form4_6_3_var = (formulario2.form4_6_3.value);
+                var form4_7_1_var = (formulario2.form4_7_1.value);
+                var form4_7_2_var = (formulario2.form4_7_2.value);
+                var form4_7_3_var = (formulario2.form4_7_3.value);
+                var form4_8_1_var = (formulario2.form4_8_1.value);
+                var form4_8_2_var = (formulario2.form4_8_2.value);
+                var form4_8_3_var = (formulario2.form4_8_3.value);
+
+                var form5_var = (formulario2.form5.value);
+                var form6_var = (formulario2.form6.value);
+                var form7_var = (formulario2.form7.value);
+                var form8_var = (formulario2.form8.value);
+                var form9_var = (formulario2.form9.value);
+
+                var value1_int = "NFVI_A" + "-" + form1_4_var + "_" + form2_1_3_var + "_" + form1_2_var + "-" + form1_6_var;
+                var value2_int = "Switch" + "-" + form1_4_var + "_" + form2_2_3_var + "_" + form1_2_var + "-" + form1_6_var;
+                var value3_int = "Router" + "-" + form1_4_var + "_" + form2_3_3_var + "_" + form1_2_var + "-" + form1_6_var;
+
+                var value4_int = "Port0/0_" + form3_1_3_var + "-" + "Port0/0_" + form3_1_5_var + "-" + form1_2_var + "-" + form1_6_var;
+                var value5_int = "Port0/0_" + form3_2_3_var + "-" + "Port0/0_" + form3_2_5_var + "-" + form1_2_var + "-" + form1_6_var;
+
+                var value6_int = "MME" + "-" + form1_4_var + "_" + form4_1_3_var + "-" + form1_2_var + "-" + form1_6_var;
+                var value7_int = "SGW" + "-" + form1_4_var + "_" + form4_2_3_var + "-" + form1_2_var + "-" + form1_6_var;
+                var value8_int = "PGW" + "-" + form1_4_var + "_" + form4_3_3_var + "-" + form1_2_var + "-" + form1_6_var;
+                var value9_int = "HSS" + "-" + form1_4_var + "_" + form4_4_3_var + "-" + form1_2_var + "-" + form1_6_var;
+                var value10_int = "PCRF" + "-" + form1_4_var + "_" + form4_5_3_var + "-" + form1_2_var + "-" + form1_6_var;
+                var value11_int = "OCS" + "-" + form1_4_var + "_" + form4_6_3_var + "-" + form1_2_var + "-" + form1_6_var;
+                var value12_int = "OFCS" + "-" + form1_4_var + "_" + form4_7_3_var + "-" + form1_2_var + "-" + form1_6_var;
+                var value13_int = "eNB_X" + "-" + form1_4_var + "_" + form4_8_3_var + "-" + form1_2_var + "-" + form1_6_var;
+
+                var value1_1_int = "S11" + "_" + "MME" + "-" + form1_4_var + "_" + form4_1_3_var + "-" + form1_2_var + "-" + form1_6_var;
+                var value1_2_int = "S11" + "_" + "SGW" + "-" + form1_4_var + "_" + form4_2_3_var + "-" + form1_2_var + "-" + form1_6_var;
+                var value1_3_int = "S1-MME" + "_" + "MME" + "-" + form1_4_var + "_" + form4_1_3_var + "-" + form1_2_var + "-" + form1_6_var;
+                var value1_4_int = "S1-MME" + "_" + "eNB_X" + "-" + form1_4_var + "_" + form4_8_3_var + "-" + form1_2_var + "-" + form1_6_var;
+                var value1_5_int = "S1-U" + "_" + "SGW" + "-" + form1_4_var + "_" + form4_2_3_var + "-" + form1_2_var + "-" + form1_6_var;
+                var value1_6_int = "S1-U" + "_" + "eNB_X" + "-" + form1_4_var + "_" + form4_8_3_var + "-" + form1_2_var + "-" + form1_6_var;
+                var value1_7_int = "Gx" + "_" + "PGW" + "-" + form1_4_var + "_" + form4_3_3_var + "-" + form1_2_var + "-" + form1_6_var;
+                var value1_8_int = "Gx" + "_" + "PCRF" + "-" + form1_4_var + "_" + form4_5_3_var + "-" + form1_2_var + "-" + form1_6_var;
+                var value1_9_int = "Gy" + "_" + "PGW" + "-" + form1_4_var + "_" + form4_3_3_var + "-" + form1_2_var + "-" + form1_6_var;
+                var value1_10_int = "Gy" + "_" + "OCS" + "-" + form1_4_var + "_" + form4_6_3_var + "-" + form1_2_var + "-" + form1_6_var;
+                var value1_11_int = "S6a" + "_" + "MME" + "-" + form1_4_var + "_" + form4_1_3_var + "-" + form1_2_var + "-" + form1_6_var;
+                var value1_12_int = "S6a" + "_" + "HSS" + "-" + form1_4_var + "_" + form4_4_3_var + "-" + form1_2_var + "-" + form1_6_var;
+                var value1_13_int = "S9" + "_" + "PCRF" + "-" + form1_4_var + "_" + form4_5_3_var + "-" + form1_2_var + "-" + form1_6_var;
+                //var value1_14_int = "S9" + "_" + "HSS" + "-" + form1_4_var + "_" + form4_4_3_var + "-" + form1_2_var + "-" + form1_6_var;
+                var value1_15_int = "S8" + "_" + "PGW" + "-" + form1_4_var + "_" + form4_3_3_var + "-" + form1_2_var + "-" + form1_6_var;
+                //var value1_16_int = "S8" + "_" + "HSS" + "-" + form1_4_var + "_" + form4_4_3_var + "-" + form1_2_var + "-" + form1_6_var;
+                var value1_17_int = "S5" + "_" + "SGW" + "-" + form1_4_var + "_" + form4_2_3_var + "-" + form1_2_var + "-" + form1_6_var;
+                var value1_18_int = "S5" + "_" + "PGW" + "-" + form1_4_var + "_" + form4_3_3_var + "-" + form1_2_var + "-" + form1_6_var;
+                var value1_19_int = "SGi" + "_" + "PGW" + "-" + form1_4_var + "_" + form4_3_3_var + "-" + form1_2_var + "-" + form1_6_var;
+                //var value1_20_int = "SGi" + "_" + "PGW" + "-" + form1_4_var + "_" + form4_3_3_var + "-" + form1_2_var + "-" + form1_6_var;
+               
+                
+                var value99_int = form5_var + "." + form6_var + "." + form7_var + ".node.epc.mnc" + form8_var + ".mcc" + form9_var + ".3gppnetwork.org";
+                
+                document.getElementById("value99").value = value99_int; 
+                document.getElementById("value1").value = value1_int; 
+                document.getElementById("value2").value = value4_int; 
+                document.getElementById("value3").value = value6_int; 
+                document.getElementById("value4").value = value2_int; 
+                document.getElementById("value5").value = value5_int; 
+                document.getElementById("value6").value = value7_int; 
+                document.getElementById("value7").value = value3_int; 
+                document.getElementById("value8").value = value8_int;
+                document.getElementById("value9").value = value9_int;
+                document.getElementById("value10").value = value10_int;
+                document.getElementById("value11").value = value11_int;
+                document.getElementById("value12").value = value12_int;
+                document.getElementById("value13").value = value13_int;
+                
+                document.getElementById("value1_1").value = value1_1_int;
+                document.getElementById("value1_2").value = value1_2_int;
+                document.getElementById("value1_3").value = value1_3_int;
+                document.getElementById("value1_4").value = value1_4_int;
+                document.getElementById("value1_5").value = value1_5_int;
+                document.getElementById("value1_6").value = value1_6_int;
+                document.getElementById("value1_7").value = value1_7_int;
+                document.getElementById("value1_8").value = value1_8_int;
+                document.getElementById("value1_9").value = value1_9_int;
+                document.getElementById("value1_10").value = value1_10_int;
+                document.getElementById("value1_11").value = value1_11_int;
+                document.getElementById("value1_12").value = value1_12_int;
+                document.getElementById("value1_13").value = value1_13_int;
+                //document.getElementById("value1_14").value = value1_14_int;
+                document.getElementById("value1_15").value = value1_15_int;
+                //document.getElementById("value1_16").value = value1_16_int;
+                document.getElementById("value1_17").value = value1_17_int;
+                document.getElementById("value1_18").value = value1_18_int;
+                document.getElementById("value1_19").value = value1_19_int;
+                //document.getElementById("value1_20").value = value1_20_int;
+
+            });
+
+         </script>
+    </body>
+</html>
