@@ -1,0 +1,1290 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+        <title>RunBook - Widget</title>
+
+         <!-- Bootstrap CSS CDN -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <!-- Our Custom CSS -->
+        <link rel="stylesheet" href="style2.css">
+        
+    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+	</head>
+		
+    <body >
+
+    <div class >
+        <ul class="barra_superior">
+            <li class="li_superior"><a class="active" href="Home.html">Home</a></li>
+            <li class="li_superior"><a href="comming_soon/comming-soon.html">About</a></li>
+        </ul>
+    </div>
+
+        <div class="wrapper-2">
+            <!-- Sidebar Holder -->
+            <nav id="sidebar">
+                <div class="sidebar-header">
+                    <h3>NaaS RunBook</h3>
+                </div>
+
+                <ul class="list-unstyled components">
+                    <li>
+                        <a href="#runbookSubmenu" data-toggle="collapse" aria-expanded="false">
+                            <i class="glyphicon glyphicon-option-horizontal"></i>
+                            RunBook Modules
+                        </a>
+                        <ul class="list-unstyled collapse" id="runbookSubmenu">
+                        <li  class="active">
+                                    <a href="#stract" data-toggle="collapse" aria-expanded="false">
+                                        &#187 Strategic Plan & Scope
+                                    </a>
+                                    <ul class="list-unstyled collapse" id="stract">
+                                        <li><a href="strategy_scope.html"style="margin-left:2em;">&bull; Strategy & Scope</a></li>
+                                        <li><a href="high_level_proyect_plan.html" style="margin-left:2em">&bull; HL Project Plan</a></li>
+                                    </ul>
+                                </li>
+                                <li  class="active">
+                                    <a href="#HLNA" data-toggle="collapse" aria-expanded="false">
+                                        &#187 High Level Network Architecture
+                                    </a>
+                                    <ul class="list-unstyled collapse" id="HLNA">
+                                        <li><a href="ran_hld_architecture.html"style="margin-left:2em">&bull; RAN Architecture</a></li>
+                                        <li><a href="tx_ip_architecture.html" style="margin-left:2em">&bull; TX & IP Architecture</a></li>
+                                        <li><a href="mobile_core_archi.html" style="margin-left:2em"> &bull; Core Architecture</a></li>
+                                        <li><a href="network_monitoring_architecture.html" style="margin-left:2em"> &bull; Network Monitoring</a></li>
+                                        <li><a href="comming_soon/comming-soon.html" style="margin-left:2em"> &bull; Engineering Specifications</a></li>
+                                    </ul>
+                                </li>
+                                <li class="active">
+                                    <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false">
+                                        &#187 Network Design
+                                    </a>
+                                    <ul class="list-unstyled collapse" id="homeSubmenu">
+                                        <li><a href="#transportMenu" data-toggle="collapse" style="margin-left:2em">&bull; Transport</a></li>
+                                            <ul class="list-unstyled collapse" id="transportMenu">
+                                                <li><a href="tx_hld_module.html" style="margin-left:4em;">&#9657; Tx Network HLD</a></li>
+                                                <li><a href="tx_lld_module.html" style="margin-left:4em;">&#9657; Tx Network LLD</a></li>
+                                            </ul>
+                
+                                        <li><a href="#transportMenu2" data-toggle="collapse" style="margin-left:2em">&bull; RAN</a></li>
+                                            <ul class="list-unstyled collapse" id="transportMenu2">
+                                                <li><a href="ran_hld_module.html" style="margin-left:4em;">&#9657; RAN Network HLD</a></li>
+                                                <li><a href="ran_lld_module.html" style="margin-left:4em;">&#9657; RAN Network LLD</a></li>
+                                            </ul>
+                                        <li><a href="#transportMenu3" data-toggle="collapse" style="margin-left:2em">&bull; Core</a></li>
+                                        <ul class="list-unstyled collapse" id="transportMenu3">
+                                            <li><a href="mobile_core_hld.html" style="margin-left:4em;">&#9657; Mobile Core HLD</a></li>
+											<li><a href="mobile_core_lld.html" style="margin-left:4em;">&#9657; Mobile Core LLD</a></li>
+                                        </ul>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#deployment_m" data-toggle="collapse" aria-expanded="false">
+                                        &#187 Deployment
+                                    </a>
+                                    <ul class="list-unstyled collapse" id="deployment_m">
+                                        <li><a href="deployment_mgmt.html"style="margin-left:2em">&bull; Deployment Mgmt</a></li>
+                                        <li><a href="site_survey.html"style="margin-left:2em">&bull; Site Survey</a></li>
+                                        <li><a href="#"style="margin-left:2em">&bull; Construction</a></li>
+                                        <li><a href="i&c_module.html"style="margin-left:2em">&bull; I & C</a></li>
+                                        <li><a href="fiber_const_mgmt.html"style="margin-left:2em">&bull; Fiber Construction Mgmt</a></li>
+                                        <li><a href="site_construction_mgmt.html"style="margin-left:2em">&bull; Site Construction Mgmt</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        &#187 O & M
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        &#187 Field Maintenance
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        &#187 Post-Launch Engineering
+                                    </a>
+                                </li>
+                                <li  class="active">
+                                <a href="#supply" data-toggle="collapse" aria-expanded="false">
+                                    &#187 Supply Chain Management
+                                </a>
+                                <ul class="list-unstyled collapse" id="supply">
+                                    <li><a href="rfx_process.html"style="margin-left:2em">&bull; RFx Process</a></li>
+                                    <li><a href="proc_pro_vendor_mgmt.html" style="margin-left:2em">&bull; Procurement Proc. & Vendor Mgmt.</a></li>
+                                    <li><a href="" style="margin-left:2em"> &bull; Logistic & Warehousing</a></li>
+                                </ul>
+                            </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#engagementSubmenu" data-toggle="collapse" aria-expanded="false">
+                                <i class="glyphicon glyphicon-option-horizontal"></i>
+                                Methods of Engagement
+                            </a>
+                            <ul class="collapse list-unstyled" id="engagementSubmenu">
+                                
+                                <li><a href="MoE_Wizards.html">&#187 Wizards</a></li>
+                                <li><a href="MoE_Widgets.html">&#187 Widgets</a></li>
+                                <li><a href="MoE_Primers.html">&#187 Primers</a></li>
+                                <li><a href="MoE_Templates.html">&#187 Templates</a></li>
+                                <li><a href="MoE_Tool_Catalogue.html">&#187 Tool Catalogue</a></li>
+                                
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="comming_soon/comming-soon.html">
+                                <i class="glyphicon glyphicon-paperclip"></i>
+                                FAQ 
+                            </a>
+                        </li>
+                        <li>
+                            <a href="comming_soon/comming-soon.html">
+                                <i class="glyphicon glyphicon-send"></i>
+                                Contact
+                            </a>
+                        </li>
+                </ul>
+            </nav>
+
+            <!-- Page Content Holder -->
+            <div id="content">
+                <h2>Network Monitoring Parameters Definition Wizard</h2>
+                <p class="normal-text">This wizard provides a list of recommended monitoring parameters, reporting intervals and alarm thresholds based on network architecture and KPIs provided by the user.</p>
+                <p class="normal-text">Basics for this wizard are addressed on the <a class="a_link" href="network_monitoring_architecture.html">Network Monitoring Architecture Module</a>.</p>
+                
+                <br>
+                
+                <div class="caja_box">
+           
+                    <form class="form-horizontal-no-img" action="" name="forchi" id="formulario">
+
+                        <h4 class="title-results"><center>1. Use Cases</center></h4>
+                        
+                        <br>
+                        <div class="row">
+                            <label  class="col-sm-2"></label >
+                        </div>
+                        
+                        <div class="row">
+                            <label  class="col-sm-2"></label >
+                            <label  class="col-sm-7 parag-1" >1.1. Strategic Planning</label >
+                            <input id="_1_1" type="checkbox" >
+                        </div><br>
+                        <div class="row">
+                            <label  class="col-sm-2"></label >
+                            <label  class="col-sm-7 parag-1" >1.2. Network Implementation Guide</label >
+                            <input id="_1_2" type="checkbox" >
+                        </div><br>
+                        <div class="row">
+                            <label  class="col-sm-2"></label >
+                            <label  class="col-sm-7 parag-1" >1.3. Task-Specific Support</label >
+                            <input id="_1_3" type="checkbox" >
+                        </div>
+                        <br><br>
+                        <h4 class="title-results"><center>2. Status and pre-conditions of the Initiative</center></h4>
+                        <br>
+                        <div class="row">
+                            <label  class="col-sm-2"></label >
+                            <label  class="col-sm-6 parag-1">2.1. Has the RAN Architecture been pre-defined based on commercial agreements and/or partner requirements?</label >
+                            <select id="_2_1_vocab" name="tx_lon" class="col-sm-2 text-box"> 
+                                <option value="yes">Yes</option>
+                                <option value="no">No</option>
+                            </select>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <label  class="col-sm-2"></label >
+                            <label  class="col-sm-6 parag-1">2.2. Has the Transport Architecture been pre-defined based on commercial agreements and/or partner requirements?</label >
+                            <select id="_2_2_vocab" name="tx_lon" class="col-sm-2 text-box"> 
+                                <option value="yes">Yes</option>
+                                <option value="no">No</option>
+                            </select>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <label  class="col-sm-2"></label >
+                            <label  class="col-sm-6 parag-1">2.3. Is the NaaS Operator deploying a Mobile Core?</label >
+                            <select id="_2_3_vocab" name="tx_lon" class="col-sm-2 text-box"> 
+                                <option value="yes">Yes</option>
+                                <option value="no">No</option>
+                                <option value="unknown">Unknown</option>
+                            </select>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <label  class="col-sm-2"></label >
+                            <label  class="col-sm-6 parag-1">2.4. Has the Mobile Core Architecture been pre-defined based on commercial agreements and/or partner requirements?</label >
+                            <select id="_2_4_vocab" name="tx_lon" class="col-sm-2 text-box"> 
+                                <option value="yes">Yes</option>
+                                <option value="no">No</option>
+                            </select>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <label  class="col-sm-2"></label >
+                            <label  class="col-sm-6 parag-1">2.5. Will Network Equipment vendors be responsible for implementing the network monitoring solution under a turn-key approach?</label >
+                            <select id="_2_5_vocab" name="tx_lon" class="col-sm-2 text-box"> 
+                                <option value="yes">Yes</option>
+                                <option value="no">No</option>
+                                <option value="unknown">Unknown</option>
+                            </select>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <label  class="col-sm-2"></label >
+                            <label  class="col-sm-6 parag-1">2.6. Will the NaaS Operator outsource the RAN High Level Design tasks?</label >
+                            <select id="_2_6_vocab" name="tx_lon" class="col-sm-2 text-box"> 
+                                <option value="yes">Yes</option>
+                                <option value="no">No</option>
+                                <option value="unknown">Unknown</option>
+                            </select>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <label  class="col-sm-2"></label >
+                            <label  class="col-sm-6 parag-1">2.7. Will the NaaS Operator outsource the Transport High Level Design tasks?</label >
+                            <select id="_2_7_vocab" name="tx_lon" class="col-sm-2 text-box"> 
+                                <option value="yes">Yes</option>
+                                <option value="no">No</option>
+                                <option value="unknown">Unknown</option>
+                            </select>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <label  class="col-sm-2"></label >
+                            <label  class="col-sm-6 parag-1">2.8. Will the NaaS Operator outsource the Mobile Core High Level Design tasks?</label >
+                            <select id="_2_8_vocab" name="tx_lon" class="col-sm-2 text-box"> 
+                                <option value="yes">Yes</option>
+                                <option value="no">No</option>
+                                <option value="unknown">Unknown</option>
+                            </select>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <label  class="col-sm-2"></label >
+                            <label  class="col-sm-6 parag-1">2.9. Will the NaaS Operator outsource the RAN Low Level Design tasks?</label >
+                            <select id="_2_9_vocab" name="tx_lon" class="col-sm-2 text-box"> 
+                                <option value="yes">Yes</option>
+                                <option value="no">No</option>
+                                <option value="unknown">Unknown</option>
+                            </select>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <label  class="col-sm-2"></label >
+                            <label  class="col-sm-6 parag-1">2.10. Will the NaaS Operator outsource the Transport Low Level Design tasks?</label >
+                            <select id="_2_10_vocab" name="tx_lon" class="col-sm-2 text-box"> 
+                                <option value="yes">Yes</option>
+                                <option value="no">No</option>
+                                <option value="unknown">Unknown</option>
+                            </select>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <label  class="col-sm-2"></label >
+                            <label  class="col-sm-6 parag-1">2.11. Will the NaaS Operator outsource the Mobile Core Low Level Design tasks?</label >
+                            <select id="_2_11_vocab" name="tx_lon" class="col-sm-2 text-box"> 
+                                <option value="yes">Yes</option>
+                                <option value="no">No</option>
+                                <option value="unknown">Unknown</option>
+                            </select>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <label  class="col-sm-2"></label >
+                            <label  class="col-sm-6 parag-1">2.12. Is the Mobile Core being deployed at a leased facility using an already powered rack?</label >
+                            <select id="_2_12_vocab" name="tx_lon" class="col-sm-2 text-box"> 
+                                <option value="yes">Yes</option>
+                                <option value="no">No</option>
+                                <option value="unknown">Unknown</option>
+                            </select>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <label  class="col-sm-2"></label >
+                            <label  class="col-sm-6 parag-1">2.13. Expected number of network sites</label >
+                            <input id="_2_13_vocab" name="tx_lon" class="text-box col-sm-2" >
+                        </div>
+                        <br>
+                        <div class="row">
+                            <label  class="col-sm-2"></label >
+                            <label  class="col-sm-6 parag-1">2.14. Will the NaaS Operator outsource the Network Deployment under a turn-key scheme?</label >
+                            <select id="_2_14_vocab" name="tx_lon" class="col-sm-2 text-box"> 
+                                <option value="yes">Yes</option>
+                                <option value="no">No</option>
+                                <option value="unknown">Unknown</option>
+                            </select>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <label  class="col-sm-2"></label >
+                            <label  class="col-sm-6 parag-1">2.15. In case of deploying network in existing sites, is there quality site survey data of the sites?</label >
+                            <select id="_2_15_vocab" name="tx_lon" class="col-sm-2 text-box"> 
+                                <option value="yes">Yes</option>
+                                <option value="no">No</option>
+                                <option value="unknown">Unknown</option>
+                            </select>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <label  class="col-sm-2"></label >
+                            <label  class="col-sm-6 parag-1">2.16. Is the NaaS Operator deploying any new sites?</label >
+                            <select id="_2_16_vocab" name="tx_lon" class="col-sm-2 text-box"> 
+                                <option value="yes">Yes</option>
+                                <option value="no">No</option>
+                                <option value="unknown">Unknown</option>
+                            </select>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <label  class="col-sm-2"></label >
+                            <label  class="col-sm-6 parag-1">2.17. Is the NaaS Operator willing to deploy fiber for backhaul?</label >
+                            <select id="_2_17_vocab" name="tx_lon" class="col-sm-2 text-box"> 
+                                <option value="yes">Yes</option>
+                                <option value="no">No</option>
+                                <option value="unknown">Unknown</option>
+                            </select>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <label  class="col-sm-2"></label >
+                            <label  class="col-sm-6 parag-1">2.18. Is the NaaS Operator outsourcing a NOC?</label >
+                            <select id="_2_18_vocab" name="tx_lon" class="col-sm-2 text-box"> 
+                                <option value="yes">Yes</option>
+                                <option value="no">No</option>
+                                <option value="unknown">Unknown</option>
+                            </select>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <label  class="col-sm-2"></label >
+                            <label  class="col-sm-6 parag-1">2.19. Is the NaaS Operator implementing a Service Operation Center?</label >
+                            <select id="_2_19_vocab" name="tx_lon" class="col-sm-2 text-box"> 
+                                <option value="yes">Yes</option>
+                                <option value="no">No</option>
+                                <option value="unknown">Unknown</option>
+                            </select>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <label  class="col-sm-2"></label >
+                            <label  class="col-sm-6 parag-1">2.20. Is the NaaS Operator outsourcing Field Maintenance Tasks?</label >
+                            <select id="_2_20_vocab" name="tx_lon" class="col-sm-2 text-box"> 
+                                <option value="yes">Yes</option>
+                                <option value="no">No</option>
+                                <option value="unknown">Unknown</option>
+                            </select>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <label  class="col-sm-2"></label >
+                            <label  class="col-sm-6 parag-1">2.21. Is the NaaS Operator outsourcing RF Optimization Tasks?</label >
+                            <select id="_2_21_vocab" name="tx_lon" class="col-sm-2 text-box"> 
+                                <option value="yes">Yes</option>
+                                <option value="no">No</option>
+                                <option value="unknown">Unknown</option>
+                            </select>
+                        </div>
+                        <br>
+
+                        
+                        <br>
+                        <div class="row">
+                            <label  class="col-sm-2"></label >
+                            <label  class="col-sm-6 parag-1 parag-1-bold">Check the milestones that have been achieved by your NaaS Organization</label >
+                        </div>
+                        <br>
+                        <div class="row">
+                            <input id="_2_1" type="checkbox" >
+                            <label  class="col-sm-3"></label >
+                            <label  class="col-sm-4 parag-1"><b>2.1. Project Plan Ready</b></label >
+                            
+                        </div>
+                        <div class="row">
+                            <label  class="col-sm-3"></label >
+                            <label  class="col-sm-4 parag-1" >2.1.1. Strategic Plan Complete</label >
+                            <input id="_2_1_1" type="checkbox" >
+                        </div>
+                        <div class="row">
+                            <label  class="col-sm-3"></label >
+                            <label  class="col-sm-4 parag-1" >2.1.2. Network Services Defined</label >
+                            <input id="_2_1_2" type="checkbox" >
+                        </div>
+                        <div class="row">
+                            <label  class="col-sm-3"></label >
+                            <label  class="col-sm-4 parag-1" >2.1.3. Funding Ready</label >
+                            <input id="_2_1_3" type="checkbox" >
+                        </div>
+                        <div class="row">
+                            <label  class="col-sm-3"></label >
+                            <label  class="col-sm-4 parag-1" >2.1.4. Engagement with MNOs & other partners Initiated</label >
+                            <input id="_2_1_4" type="checkbox" >
+                        </div>
+                        <div class="row">
+                            <label  class="col-sm-3"></label >
+                            <label  class="col-sm-4 parag-1" >2.1.5. Governance Mechanisms Established</label >
+                            <input id="_2_1_5" type="checkbox" >
+                        </div>
+                        <div class="row">
+                            <label  class="col-sm-3"></label >
+                            <label  class="col-sm-4 parag-1" >2.1.6. RAN Architecture Established</label >
+                            <input id="_2_1_6" type="checkbox" >
+                        </div>
+                        <div class="row">
+                            <label  class="col-sm-3"></label >
+                            <label  class="col-sm-4 parag-1" >2.1.7. Transport Architecture Established</label >
+                            <input id="_2_1_7" type="checkbox" >
+                        </div>
+                        <div class="row">
+                            <label  class="col-sm-3"></label >
+                            <label  class="col-sm-4 parag-1" >2.1.8. Mobile Core Architecture Established</label >
+                            <input id="_2_1_8" type="checkbox" >
+                        </div>
+                        <div class="row">
+                            <label  class="col-sm-3"></label >
+                            <label  class="col-sm-4 parag-1" >2.1.9. Network Monitoring Architecture Established</label >
+                            <input id="_2_1_9" type="checkbox" >
+                        </div>
+                        <br>
+                        <div class="row">
+                            <input id="_2_2" type="checkbox" >
+                            <label  class="col-sm-3"></label >
+                            <label  class="col-sm-4 parag-1"><b>2.2. Network Design (HLD & LLD) Complete</b></label >
+                            
+                        </div>
+                        <div class="row">
+                            <label  class="col-sm-3"></label >
+                            <label  class="col-sm-4 parag-1" >2.2.1. RAN High Level Design Ready</label >
+                            <input id="_2_2_1" type="checkbox" >
+                        </div>
+                        <div class="row">
+                            <label  class="col-sm-3"></label >
+                            <label  class="col-sm-4 parag-1" >2.2.2. Transport High Level Design Ready</label >
+                            <input id="_2_2_2" type="checkbox" >
+                        </div>
+                        <div class="row">
+                            <label  class="col-sm-3"></label >
+                            <label  class="col-sm-4 parag-1" >2.2.3. Mobile Core High Level Design Ready</label >
+                            <input id="_2_2_3" type="checkbox" >
+                        </div>
+                        <div class="row">
+                            <label  class="col-sm-3"></label >
+                            <label  class="col-sm-4 parag-1" >2.2.4. RAN Low Level Design Ready</label >
+                            <input id="_2_2_4" type="checkbox" >
+                        </div>
+                        <div class="row">
+                            <label  class="col-sm-3"></label >
+                            <label  class="col-sm-4 parag-1" >2.2.5. Transport Low Level Design Ready</label >
+                            <input id="_2_2_5" type="checkbox" >
+                        </div>
+                        <div class="row">
+                            <label  class="col-sm-3"></label >
+                            <label  class="col-sm-4 parag-1" >2.2.6. Mobile Core Low Level Design Ready</label >
+                            <input id="_2_2_6" type="checkbox" >
+                        </div>
+                        <div class="row">
+                            <label  class="col-sm-3"></label >
+                            <label  class="col-sm-4 parag-1" >2.2.7. RAN Site Power Design Ready</label >
+                            <input id="_2_2_7" type="checkbox" >
+                        </div>
+                        <div class="row">
+                            <label  class="col-sm-3"></label >
+                            <label  class="col-sm-4 parag-1" >2.2.8. RAN Site Layouts Ready</label >
+                            <input id="_2_2_8" type="checkbox" >
+                        </div>
+                        <div class="row">
+                            <label  class="col-sm-3"></label >
+                            <label  class="col-sm-4 parag-1" >2.2.9. Core Site Power Design Ready</label >
+                            <input id="_2_2_9" type="checkbox" >
+                        </div>
+                        <div class="row">
+                            <label  class="col-sm-3"></label >
+                            <label  class="col-sm-4 parag-1" >2.2.10. Core Site Layouts Ready</label >
+                            <input id="_2_2_10" type="checkbox" >
+                        </div>
+                        <br>
+                        <div class="row">
+                            <input id="_2_3" type="checkbox" >
+                            <label  class="col-sm-3"></label >
+                            <label  class="col-sm-4 parag-1"><b>2.3. Site Deployment Complete / All Sites On-Air</b></label >
+                            
+                        </div>
+                        <div class="row">
+                            <label  class="col-sm-3"></label >
+                            <label  class="col-sm-4 parag-1" >2.3.1. Strategic Vendors Selected & Onboarded</label >
+                            <input id="_2_3_1" type="checkbox" >
+                        </div>
+                        <div class="row">
+                            <label  class="col-sm-3"></label >
+                            <label  class="col-sm-4 parag-1" >2.3.2. Network Equipment Purchase Orders Issued</label >
+                            <input id="_2_3_2" type="checkbox" >
+                        </div>
+                        <div class="row">
+                            <label  class="col-sm-3"></label >
+                            <label  class="col-sm-4 parag-1" >2.3.3. Ongoing RFx Processes</label >
+                            <input id="_2_3_3" type="checkbox" >
+                        </div>
+                        <div class="row">
+                            <label  class="col-sm-3"></label >
+                            <label  class="col-sm-4 parag-1" >2.3.4. Procurement Processes, Tools and Formats Established</label >
+                            <input id="_2_3_4" type="checkbox" >
+                        </div>
+                        <div class="row">
+                            <label  class="col-sm-3"></label >
+                            <label  class="col-sm-4 parag-1" >2.3.5. 3rd Party Warehouses Selected & Onboarded</label >
+                            <input id="_2_3_5" type="checkbox" >
+                        </div>
+                        <div class="row">
+                            <label  class="col-sm-3"></label >
+                            <label  class="col-sm-4 parag-1" >2.3.6. Kitting Process Established</label >
+                            <input id="_2_3_6" type="checkbox" >
+                        </div>
+                        <div class="row">
+                            <label  class="col-sm-3"></label >
+                            <label  class="col-sm-4 parag-1" >2.3.7. Deployment Plan & Schedule Ready</label >
+                            <input id="_2_3_7" type="checkbox" >
+                        </div>
+                        <div class="row">
+                            <label  class="col-sm-3"></label >
+                            <label  class="col-sm-4 parag-1" >2.3.8. Site Deployment Started</label >
+                            <input id="_2_3_8" type="checkbox" >
+                        </div>
+                        <div class="row">
+                            <label  class="col-sm-3"></label >
+                            <label  class="col-sm-4 parag-1" >2.3.9. Construction Company Onboarded</label >
+                            <input id="_2_3_9" type="checkbox" >
+                        </div>
+                        <div class="row">
+                            <label  class="col-sm-3"></label >
+                            <label  class="col-sm-4 parag-1" >2.3.10. Deployment Contractors Onboarded</label >
+                            <input id="_2_3_10" type="checkbox" >
+                        </div>
+                        <div class="row">
+                            <label  class="col-sm-3"></label >
+                            <label  class="col-sm-4 parag-1" >2.3.11. Sites Acquired</label >
+                            <input id="_2_3_11" type="checkbox" >
+                        </div>
+                        <div class="row">
+                            <label  class="col-sm-3"></label >
+                            <label  class="col-sm-4 parag-1" >2.3.12. Site Construction Started</label >
+                            <input id="_2_3_12" type="checkbox" >
+                        </div>
+                        <div class="row">
+                            <label  class="col-sm-3"></label >
+                            <label  class="col-sm-4 parag-1" >2.3.13. All Sites already built</label >
+                            <input id="_2_3_13" type="checkbox" >
+                        </div>
+                        <div class="row">
+                            <label  class="col-sm-3"></label >
+                            <label  class="col-sm-4 parag-1" >2.3.14. Fiber already deployed</label >
+                            <input id="_2_3_14" type="checkbox" >
+                        </div>
+                        <br>
+                        <div class="row">
+                            <input id="_2_4" type="checkbox" >
+                            <label  class="col-sm-3"></label >
+                            <label  class="col-sm-4 parag-1"><b>2.4. Network Operation Center On-Air</b></label >
+                            
+                        </div>
+                        <div class="row">
+                            <input id="_2_5" type="checkbox" >
+                            <label  class="col-sm-3"></label >
+                            <label  class="col-sm-4 parag-1"><b>2.5. Service Operation Center On-Air</b></label >
+                            
+                        </div>
+                        <div class="row">
+                            <input id="_2_6" type="checkbox" >
+                            <label  class="col-sm-3"></label >
+                            <label  class="col-sm-4 parag-1"><b>2.6. Processes & Tools for Field Maintenance Established</b></label >
+                        </div>
+                        <br><br>
+                        <h4 class="title-results"><center>3. Skills & Expertise</center></h4>
+
+                        <br>
+                        <div class="row">
+                            <label  class="col-sm-2"></label >
+                            <label  class="col-sm-8 parag-1 parag-1-bold">Check all the areas where the NaaS Organization has expertise, or those for which the staff members have qualified skills and proven experience</label >
+                        </div>
+                        <br>
+                        <div class="row">
+                            <label  class="col-sm-2"></label >
+                            <label  class="col-sm-6 parag-1"><b>3.1. Telecom Management & Architecture</b></label >
+                            
+                        </div>
+                        <div class="row">
+                            <label  class="col-sm-2"></label >
+                            <label  class="col-sm-6 parag-1" >3.1.1. Implementation and Management of E2E telecom projects in rural environments of the same or larger size</label >
+                            <input id="_3_1_1" type="checkbox" >
+                        </div>
+                        <div class="row">
+                            <label  class="col-sm-2"></label >
+                            <label  class="col-sm-6 parag-1" >3.1.2. Solid technical background on LTE RAN technologies and architectures</label >
+                            <input id="_3_1_2" type="checkbox" >
+                        </div>
+                        <div class="row">
+                            <label  class="col-sm-2"></label >
+                            <label  class="col-sm-6 parag-1" >3.1.3. Solid technical background on Transport technologies and architectures</label >
+                            <input id="_3_1_3" type="checkbox" >
+                        </div>
+                        <div class="row">
+                            <label  class="col-sm-2"></label >
+                            <label  class="col-sm-6 parag-1" >3.1.4. Solid technical background on LTE Mobile Core technologies and architectures</label >
+                            <input id="_3_1_4" type="checkbox" >
+                        </div>
+                        <div class="row">
+                            <label  class="col-sm-2"></label >
+                            <label  class="col-sm-6 parag-1" >3.1.5. Solid technical background on network monitoring technologies and architectures</label >
+                            <input id="_3_1_5" type="checkbox" >
+                        </div>
+                        <div class="row">
+                            <label  class="col-sm-2"></label >
+                            <label  class="col-sm-6 parag-1" >3.1.6. Solid technical knowledge on networking protocols</label >
+                            <input id="_3_1_6" type="checkbox" >
+                        </div>
+                        <br>
+                        <div class="row">
+                            <label  class="col-sm-2"></label >
+                            <label  class="col-sm-6 parag-1"><b>3.2. Network Design</b></label >
+                       </div>
+                       <div class="row">
+                        <label  class="col-sm-2"></label >
+                        <label  class="col-sm-6 parag-1" >3.2.1. LTE RAN design for Small Cells in rural environments</label >
+                        <input id="_3_2_1" type="checkbox" >
+                        </div>
+                        <div class="row">
+                            <label  class="col-sm-2"></label >
+                            <label  class="col-sm-6 parag-1" >3.2.2. LTE RAN design for Macro Cells in rural environments</label >
+                            <input id="_3_2_2" type="checkbox" >
+                        </div>
+                        <div class="row">
+                            <label  class="col-sm-2"></label >
+                            <label  class="col-sm-6 parag-1" >3.2.3. Microwave link design</label >
+                            <input id="_3_2_3" type="checkbox" >
+                        </div>
+                        <div class="row">
+                            <label  class="col-sm-2"></label >
+                            <label  class="col-sm-6 parag-1" >3.2.4. Satellite link design</label >
+                            <input id="_3_2_4" type="checkbox" >
+                        </div>
+                        <div class="row">
+                            <label  class="col-sm-2"></label >
+                            <label  class="col-sm-6 parag-1" >3.2.5. Fiber Path design</label >
+                            <input id="_3_2_5" type="checkbox" >
+                            </div>
+                        <div class="row">
+                            <label  class="col-sm-2"></label >
+                            <label  class="col-sm-6 parag-1" >3.2.6. IP Planning</label >
+                            <input id="_3_2_6" type="checkbox" >
+                        </div>
+                        <div class="row">
+                            <label  class="col-sm-2"></label >
+                            <label  class="col-sm-6 parag-1" >3.2.7. Mobile Core Design</label >
+                            <input id="_3_2_7" type="checkbox" >
+                        </div>
+                        <div class="row">
+                            <label  class="col-sm-2"></label >
+                            <label  class="col-sm-6 parag-1" >3.2.8. Tools & Processes for LTE RAN Datafill generation</label >
+                            <input id="_3_2_8" type="checkbox" >
+                        </div>
+                        <div class="row">
+                            <label  class="col-sm-2"></label >
+                            <label  class="col-sm-6 parag-1" >3.2.9. Tools & Processes for Mobile Backhaul / Transport Datafill generation</label >
+                            <input id="_3_2_9" type="checkbox" >
+                        </div>
+                        <div class="row">
+                            <label  class="col-sm-2"></label >
+                            <label  class="col-sm-6 parag-1" >3.2.10. DC Power System Dimensioning</label >
+                            <input id="_3_2_10" type="checkbox" >
+                        </div>
+                        <div class="row">
+                            <label  class="col-sm-2"></label >
+                            <label  class="col-sm-6 parag-1" >3.2.11. Solar Power System Dimensioning</label >
+                            <input id="_3_2_11" type="checkbox" >
+                        </div>
+                        <div class="row">
+                            <label  class="col-sm-2"></label >
+                            <label  class="col-sm-6 parag-1" >3.2.12. IT Rack Power System Dimensioning</label >
+                            <input id="_3_2_12" type="checkbox" >
+                        </div>
+                        <div class="row">
+                            <label  class="col-sm-2"></label >
+                            <label  class="col-sm-6 parag-1" >3.2.13. Site Layout Generation</label >
+                            <input id="_3_2_13" type="checkbox" >
+                        </div>
+                        <br>
+                        <div class="row">
+                            <label  class="col-sm-2"></label >
+                            <label  class="col-sm-6 parag-1"><b>3.3. Network Deployment</b></label >
+                       </div>
+                       <div class="row">
+                        <label  class="col-sm-2"></label >
+                        <label  class="col-sm-6 parag-1" >3.3.1. Deployment of LTE Small cells in rural environments</label >
+                        <input id="_3_3_1" type="checkbox" >
+                        </div>
+                        <div class="row">
+                            <label  class="col-sm-2"></label >
+                            <label  class="col-sm-6 parag-1" >3.3.2. Deployment of LTE Macro Cells in rural environments</label >
+                            <input id="_3_3_2" type="checkbox" >
+                        </div>
+                        <div class="row">
+                            <label  class="col-sm-2"></label >
+                            <label  class="col-sm-6 parag-1" >3.3.3. Microwave link deployment</label >
+                            <input id="_3_3_3" type="checkbox" >
+                        </div>
+                        <div class="row">
+                            <label  class="col-sm-2"></label >
+                            <label  class="col-sm-6 parag-1" >3.3.4. Satellite link deployment</label >
+                            <input id="_3_3_4" type="checkbox" >
+                        </div>
+                        <div class="row">
+                            <label  class="col-sm-2"></label >
+                            <label  class="col-sm-6 parag-1" >3.3.5. Fiber deployment in rural environments</label >
+                            <input id="_3_3_5" type="checkbox" >
+                            </div>
+                        <div class="row">
+                            <label  class="col-sm-2"></label >
+                            <label  class="col-sm-6 parag-1" >3.3.6. Roaming, Interconnection and MVNO Integration</label >
+                            <input id="_3_3_6" type="checkbox" >
+                        </div>
+                        <div class="row">
+                            <label  class="col-sm-2"></label >
+                            <label  class="col-sm-6 parag-1" >3.3.7. Deployment and setup of virtual EPC</label >
+                            <input id="_3_3_7" type="checkbox" >
+                        </div>
+                        <div class="row">
+                            <label  class="col-sm-2"></label >
+                            <label  class="col-sm-6 parag-1" >3.3.8. End-to-end network deployment project management</label >
+                            <input id="_3_3_8" type="checkbox" >
+                        </div>
+                        <div class="row">
+                            <label  class="col-sm-2"></label >
+                            <label  class="col-sm-6 parag-1" >3.3.9. Project Management Best Practices</label >
+                            <input id="_3_3_9" type="checkbox" >
+                        </div>
+                        <div class="row">
+                            <label  class="col-sm-2"></label >
+                            <label  class="col-sm-6 parag-1" >3.3.10. Existing Tracking & Monitoring Tools</label >
+                            <input id="_3_3_10" type="checkbox" >
+                        </div>
+                        <div class="row">
+                            <label  class="col-sm-2"></label >
+                            <label  class="col-sm-6 parag-1" >3.3.11. Site Surveys in rural environments</label >
+                            <input id="_3_3_11" type="checkbox" >
+                        </div>
+                        <div class="row">
+                            <label  class="col-sm-2"></label >
+                            <label  class="col-sm-6 parag-1" >3.3.12. Existing formats and tools for Site Surveys</label >
+                            <input id="_3_3_12" type="checkbox" >
+                        </div>
+                        <div class="row">
+                            <label  class="col-sm-2"></label >
+                            <label  class="col-sm-6 parag-1" >3.3.13. Installation & Commissioning of LTE Base Stations</label >
+                            <input id="_3_3_13" type="checkbox" >
+                        </div>
+                        <div class="row">
+                            <label  class="col-sm-2"></label >
+                            <label  class="col-sm-6 parag-1" >3.3.14. Field Contractors training</label >
+                            <input id="_3_3_14" type="checkbox" >
+                        </div>
+                        <br>
+                        <div class="row">
+                            <label  class="col-sm-2"></label >
+                            <label  class="col-sm-6 parag-1"><b>3.4. Procurement</b></label >
+                       </div>
+                       <div class="row">
+                        <label  class="col-sm-2"></label >
+                        <label  class="col-sm-6 parag-1" >3.4.1. Procurement at the same or larger scale</label >
+                        <input id="_3_4_1" type="checkbox" >
+                        </div>
+                        <div class="row">
+                            <label  class="col-sm-2"></label >
+                            <label  class="col-sm-6 parag-1" >3.4.2. RFx Document Preparation</label >
+                            <input id="_3_4_2" type="checkbox" >
+                        </div>
+                        <div class="row">
+                            <label  class="col-sm-2"></label >
+                            <label  class="col-sm-6 parag-1" >3.4.3. RFx Process Management</label >
+                            <input id="_3_4_3" type="checkbox" >
+                        </div>
+                        <div class="row">
+                            <label  class="col-sm-2"></label >
+                            <label  class="col-sm-6 parag-1" >3.4.4. Network Equipment Vendor Management</label >
+                            <input id="_3_4_4" type="checkbox" >
+                        </div>
+                        <div class="row">
+                            <label  class="col-sm-2"></label >
+                            <label  class="col-sm-6 parag-1" >3.4.5. Tower Co Management</label >
+                            <input id="_3_4_5" type="checkbox" >
+                            </div>
+                        <div class="row">
+                            <label  class="col-sm-2"></label >
+                            <label  class="col-sm-6 parag-1" >3.4.6. Engineering & Construction Vendor Management</label >
+                            <input id="_3_4_6" type="checkbox" >
+                        </div>
+                        <div class="row">
+                            <label  class="col-sm-2"></label >
+                            <label  class="col-sm-6 parag-1" >3.4.7. Field Contractors Management</label >
+                            <input id="_3_4_7" type="checkbox" >
+                        </div>
+                        <div class="row">
+                            <label  class="col-sm-2"></label >
+                            <label  class="col-sm-6 parag-1" >3.4.8. Transportation / Logistics of the same or larger volumes</label >
+                            <input id="_3_4_8" type="checkbox" >
+                        </div>
+                        <div class="row">
+                            <label  class="col-sm-2"></label >
+                            <label  class="col-sm-6 parag-1" >3.4.9. Operation of warehouses</label >
+                            <input id="_3_4_9" type="checkbox" >
+                        </div>
+                        
+                        <br>
+                        <div class="row">
+                            <label  class="col-sm-2"></label >
+                            <label  class="col-sm-6 parag-1"><b>3.5. Operations & Maintenance</b></label >
+                       </div>
+                       <div class="row">
+                        <label  class="col-sm-2"></label >
+                        <label  class="col-sm-6 parag-1" >3.5.1. LTE Network Monitoring & Fault Management</label >
+                        <input id="_3_5_1" type="checkbox" >
+                        </div>
+                        <div class="row">
+                            <label  class="col-sm-2"></label >
+                            <label  class="col-sm-6 parag-1" >3.5.2. Service Assurance</label >
+                            <input id="_3_5_2" type="checkbox" >
+                        </div>
+                        <div class="row">
+                            <label  class="col-sm-2"></label >
+                            <label  class="col-sm-6 parag-1" >3.5.3. Quality of Experience Management</label >
+                            <input id="_3_5_3" type="checkbox" >
+                        </div>
+                        <div class="row">
+                            <label  class="col-sm-2"></label >
+                            <label  class="col-sm-6 parag-1" >3.5.4. Preventive & Corrective Maintenance of RAN Equipment</label >
+                            <input id="_3_5_4" type="checkbox" >
+                        </div>
+                        <div class="row">
+                            <label  class="col-sm-2"></label >
+                            <label  class="col-sm-6 parag-1" >3.5.5. Preventive & Corrective Maintenance of MW Equipment</label >
+                            <input id="_3_5_5" type="checkbox" >
+                            </div>
+                        <div class="row">
+                            <label  class="col-sm-2"></label >
+                            <label  class="col-sm-6 parag-1" >3.5.6. Preventive & Corrective Maintenance of R&S Equipment</label >
+                            <input id="_3_5_6" type="checkbox" >
+                        </div>
+                        <div class="row">
+                            <label  class="col-sm-2"></label >
+                            <label  class="col-sm-6 parag-1" >3.5.7. Preventive & Corrective Maintenance of VSAT</label >
+                            <input id="_3_5_7" type="checkbox" >
+                        </div>
+                        <div class="row">
+                            <label  class="col-sm-2"></label >
+                            <label  class="col-sm-6 parag-1" >3.5.8. Preventive & Corrective Maintenance of IT Equipment</label >
+                            <input id="_3_5_8" type="checkbox" >
+                        </div>
+                        <div class="row">
+                            <label  class="col-sm-2"></label >
+                            <label  class="col-sm-6 parag-1" >3.5.9. Preventive & Corrective Maintenance of Cell Site Infrastructure</label >
+                            <input id="_3_5_9" type="checkbox" >
+                        </div>
+                        <div class="row">
+                            <label  class="col-sm-2"></label >
+                            <label  class="col-sm-6 parag-1" >3.5.10. Preventive & Corrective Maintenance of Data Center Facilities</label >
+                            <input id="_3_5_10" type="checkbox" >
+                        </div>
+                        <div class="row">
+                            <label  class="col-sm-2"></label >
+                            <label  class="col-sm-6 parag-1" >3.5.11. LTE Capacity Planning</label >
+                            <input id="_3_5_11" type="checkbox" >
+                            </div>
+                        <div class="row">
+                            <label  class="col-sm-2"></label >
+                            <label  class="col-sm-6 parag-1" >3.5.12. Transport & IP Capacity Planning</label >
+                            <input id="_3_5_12" type="checkbox" >
+                        </div>
+                        <div class="row">
+                            <label  class="col-sm-2"></label >
+                            <label  class="col-sm-6 parag-1" >3.5.13. Mobile Core Capacity Planning</label >
+                            <input id="_3_5_13" type="checkbox" >
+                        </div>
+                        <div class="row">
+                            <label  class="col-sm-2"></label >
+                            <label  class="col-sm-6 parag-1" >3.5.14. LTE RF Optimization</label >
+                            <input id="_3_5_14" type="checkbox" >
+                        </div>
+                        <div class="row">
+                            <label  class="col-sm-2"></label >
+                            <label  class="col-sm-6 parag-1" >3.5.15. TX Network configuration audit</label >
+                            <input id="_3_5_15" type="checkbox" >
+                        </div>
+                        <div class="row">
+                            <label  class="col-sm-2"></label >
+                            <label  class="col-sm-6 parag-1" >3.5.16. Performance Monitoring & Optimization</label >
+                            <input id="_3_5_16" type="checkbox" >
+                        </div>
+                        <br>
+                       
+                        <!--div class="row">
+                            <label  class="col-sm-2"></label >
+                            <label  class="col-sm-7 parag-1" >Monthly Availability</label >
+                            <input class="inp-cbx" id="cbx_1" type="checkbox" style="display: none">
+                            <label class="cbx" for="cbx_1"><span>
+                                <svg width="12px" height="10px" viewbox="0 0 12 10">
+                                <polyline points="1.5 6 4.5 9 10.5 1"></polyline>
+                                </svg></span>
+                            </label>
+                        </div-->
+
+                        
+                        <center><button type="submit" class="btn btn-default" >Calculate</button></center>
+
+                        <br><br><hr>   
+
+                           
+                    </form>
+
+                    
+                    <h4 class="title-results"><center>Network Monitoring Parameters Table</center></h4>
+
+                    <br>
+                    <div id="tablita" align="center" name="tabla">
+
+                    </div>
+                  
+                    
+                </div>
+            </div>
+        </div>
+
+        <!-- jQuery CDN border-left: 2px solid gray;-->
+         <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+         <!-- Bootstrap Js CDN -->
+         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+         <script type="text/javascript">
+
+            $(document).ready(function() {
+            $('.mdb-select').materialSelect();
+            });
+            
+            var form1_global = "N/A";
+            var form2_global = "N/A";
+            var form3_global = "N/A";
+            var form4_global = "N/A";
+            var form5_global = "N/A";
+            var form6_global = "N/A";
+
+            var formulario_5 = document.getElementsByName('forchi')[0],
+            elementos = formulario_5.elements,
+            boton = document.getElementById('btn'); 
+  
+            formulario_5.addEventListener('submit',function(evt){
+            evt.preventDefault();
+
+               var _1_1_var = document.getElementById("_1_1").checked;
+               var _1_2_var = document.getElementById("_1_2").checked;
+               var _1_3_var = document.getElementById("_1_3").checked;
+                
+               var _2_1_vocab_var = formulario_5._2_1_vocab.value; 
+               var _2_2_vocab_var = formulario_5._2_2_vocab.value; 
+               var _2_3_vocab_var = formulario_5._2_3_vocab.value; 
+               var _2_4_vocab_var = formulario_5._2_4_vocab.value; 
+               var _2_5_vocab_var = formulario_5._2_5_vocab.value; 
+               var _2_6_vocab_var = formulario_5._2_6_vocab.value; 
+               var _2_7_vocab_var = formulario_5._2_7_vocab.value; 
+               var _2_8_vocab_var = formulario_5._2_8_vocab.value; 
+               var _2_9_vocab_var = formulario_5._2_9_vocab.value; 
+               var _2_10_vocab_var = formulario_5._2_10_vocab.value; 
+               var _2_11_vocab_var = formulario_5._2_11_vocab.value;  
+               var _2_12_vocab_var = formulario_5._2_12_vocab.value; 
+               var _2_13_vocab_var = Number(formulario_5._2_13_vocab.value); 
+               var _2_14_vocab_var = formulario_5._2_14_vocab.value; 
+               var _2_15_vocab_var = formulario_5._2_15_vocab.value; 
+               var _2_16_vocab_var = formulario_5._2_16_vocab.value; 
+               var _2_17_vocab_var = formulario_5._2_17_vocab.value; 
+               var _2_18_vocab_var = formulario_5._2_18_vocab.value; 
+               var _2_19_vocab_var = formulario_5._2_19_vocab.value; 
+               var _2_20_vocab_var = formulario_5._2_20_vocab.value; 
+               var _2_21_vocab_var = formulario_5._2_21_vocab.value; 
+               
+               var _2_1_var = document.getElementById("_2_1").checked;
+               var _2_1_1_var = document.getElementById("_2_1_1").checked;
+               var _2_1_2_var = document.getElementById("_2_1_2").checked;
+               var _2_1_3_var = document.getElementById("_2_1_3").checked;
+               var _2_1_4_var = document.getElementById("_2_1_4").checked;
+               var _2_1_5_var = document.getElementById("_2_1_5").checked;
+               var _2_1_6_var = document.getElementById("_2_1_6").checked;
+               var _2_1_7_var = document.getElementById("_2_1_7").checked;
+               var _2_1_8_var = document.getElementById("_2_1_8").checked;
+               var _2_1_9_var = document.getElementById("_2_1_9").checked;
+
+               var _2_2_var = document.getElementById("_2_2").checked;
+               var _2_2_1_var = document.getElementById("_2_2_1").checked;
+               var _2_2_2_var = document.getElementById("_2_2_2").checked;
+               var _2_2_3_var = document.getElementById("_2_2_3").checked;
+               var _2_2_4_var = document.getElementById("_2_2_4").checked;
+               var _2_2_5_var = document.getElementById("_2_2_5").checked;
+               var _2_2_6_var = document.getElementById("_2_2_6").checked;
+               var _2_2_7_var = document.getElementById("_2_2_7").checked;
+               var _2_2_8_var = document.getElementById("_2_2_8").checked;
+               var _2_2_9_var = document.getElementById("_2_2_9").checked;
+               var _2_2_10_var = document.getElementById("_2_2_10").checked;
+
+               var _2_3_var = document.getElementById("_2_3").checked;
+               var _2_3_1_var = document.getElementById("_2_3_1").checked;
+               var _2_3_2_var = document.getElementById("_2_3_2").checked;
+               var _2_3_3_var = document.getElementById("_2_3_3").checked;
+               var _2_3_4_var = document.getElementById("_2_3_4").checked;
+               var _2_3_5_var = document.getElementById("_2_3_5").checked;
+               var _2_3_6_var = document.getElementById("_2_3_6").checked;
+               var _2_3_7_var = document.getElementById("_2_3_7").checked;
+               var _2_3_8_var = document.getElementById("_2_3_8").checked;
+               var _2_3_9_var = document.getElementById("_2_3_9").checked;
+               var _2_3_10_var = document.getElementById("_2_3_10").checked;
+               var _2_3_11_var = document.getElementById("_2_3_11").checked;
+               var _2_3_12_var = document.getElementById("_2_3_12").checked;
+               var _2_3_13_var = document.getElementById("_2_3_13").checked;
+               var _2_3_14_var = document.getElementById("_2_3_14").checked;
+
+               var _2_4_var = document.getElementById("_2_4").checked;
+               var _2_5_var = document.getElementById("_2_5").checked;
+               var _2_6_var = document.getElementById("_2_6").checked;
+
+               var _3_1_1_var = document.getElementById("_3_1_1").checked;
+               var _3_1_2_var = document.getElementById("_3_1_2").checked;
+               var _3_1_3_var = document.getElementById("_3_1_3").checked;
+               var _3_1_4_var = document.getElementById("_3_1_4").checked;
+               var _3_1_5_var = document.getElementById("_3_1_5").checked;
+               var _3_1_6_var = document.getElementById("_3_1_6").checked;
+
+               var _3_2_1_var = document.getElementById("_3_2_1").checked;
+               var _3_2_2_var = document.getElementById("_3_2_2").checked;
+               var _3_2_3_var = document.getElementById("_3_2_3").checked;
+               var _3_2_4_var = document.getElementById("_3_2_4").checked;
+               var _3_2_5_var = document.getElementById("_3_2_5").checked;
+               var _3_2_6_var = document.getElementById("_3_2_6").checked;
+               var _3_2_7_var = document.getElementById("_3_2_7").checked;
+               var _3_2_8_var = document.getElementById("_3_2_8").checked;
+               var _3_2_9_var = document.getElementById("_3_2_9").checked;
+               var _3_2_10_var = document.getElementById("_3_2_10").checked;
+               var _3_2_11_var = document.getElementById("_3_2_11").checked;
+               var _3_2_12_var = document.getElementById("_3_2_12").checked;
+               var _3_2_13_var = document.getElementById("_3_2_13").checked;
+
+               var _3_3_1_var = document.getElementById("_3_3_1").checked;
+               var _3_3_2_var = document.getElementById("_3_3_2").checked;
+               var _3_3_3_var = document.getElementById("_3_3_3").checked;
+               var _3_3_4_var = document.getElementById("_3_3_4").checked;
+               var _3_3_5_var = document.getElementById("_3_3_5").checked;
+               var _3_3_6_var = document.getElementById("_3_3_6").checked;
+               var _3_3_7_var = document.getElementById("_3_3_7").checked;
+               var _3_3_8_var = document.getElementById("_3_3_8").checked;
+               var _3_3_9_var = document.getElementById("_3_3_9").checked;
+               var _3_3_10_var = document.getElementById("_3_3_10").checked;
+               var _3_3_11_var = document.getElementById("_3_3_11").checked;
+               var _3_3_12_var = document.getElementById("_3_3_12").checked;
+               var _3_3_13_var = document.getElementById("_3_3_13").checked;
+               var _3_3_14_var = document.getElementById("_3_3_14").checked;
+                
+               var _3_4_1_var = document.getElementById("_3_4_1").checked;
+               var _3_4_2_var = document.getElementById("_3_4_2").checked;
+               var _3_4_3_var = document.getElementById("_3_4_3").checked;
+               var _3_4_4_var = document.getElementById("_3_4_4").checked;
+               var _3_4_5_var = document.getElementById("_3_4_5").checked;
+               var _3_4_6_var = document.getElementById("_3_4_6").checked;
+               var _3_4_7_var = document.getElementById("_3_4_7").checked;
+               var _3_4_8_var = document.getElementById("_3_4_8").checked;
+               var _3_4_9_var = document.getElementById("_3_4_9").checked;
+               
+               var _3_5_1_var = document.getElementById("_3_5_1").checked;
+               var _3_5_2_var = document.getElementById("_3_5_2").checked;
+               var _3_5_3_var = document.getElementById("_3_5_3").checked;
+               var _3_5_4_var = document.getElementById("_3_5_4").checked;
+               var _3_5_5_var = document.getElementById("_3_5_5").checked;
+               var _3_5_6_var = document.getElementById("_3_5_6").checked;
+               var _3_5_7_var = document.getElementById("_3_5_7").checked;
+               var _3_5_8_var = document.getElementById("_3_5_8").checked;
+               var _3_5_9_var = document.getElementById("_3_5_9").checked;
+               var _3_5_10_var = document.getElementById("_3_5_10").checked;
+               var _3_5_11_var = document.getElementById("_3_5_11").checked;
+               var _3_5_12_var = document.getElementById("_3_5_12").checked;
+               var _3_5_13_var = document.getElementById("_3_5_13").checked;
+               var _3_5_14_var = document.getElementById("_3_5_14").checked;
+               var _3_5_15_var = document.getElementById("_3_5_15").checked;
+               var _3_5_16_var = document.getElementById("_3_5_16").checked;
+
+
+
+                //COMIENZA TABLA
+                $('#tablaa-2').show();
+               document.getElementById("tablita").innerHTML = "";
+               var body = document.getElementsByName("tabla")[0];
+
+                // creates a <table> element and a <tbody> element
+                var tbl = document.createElement("table");
+                //tbl.setAttribute('style', 'border-collapse:collapse');
+                //tbl.style.backgroundColor = "red";
+                var tblBody = document.createElement("tbody");
+
+                var row = document.createElement("tr");
+                row.style.backgroundColor = "#005777";
+                row.style.height = "40px";
+                row.style.fontSize = "16px";
+                row.style.color = "white";
+                row.style.fontSize = "apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol";
+                var cell = document.createElement("td");
+                cell.style.width = "200px";
+                cell.style.fontWeight = "bold";
+                cell.style.textAlign = "center";
+                //cell.style.padding = "0in 3.5pt 0in 3.5pt";
+                var cellText = document.createTextNode("Stream");
+                //cell.setAttribute("border", "5");
+                cell.appendChild(cellText);
+                row.appendChild(cell);
+                var cell = document.createElement("td");
+                cell.style.width = "400px";
+                cell.style.fontWeight = "bold";
+                cell.style.textAlign = "center"
+                var cellText = document.createTextNode("Module");
+                cell.appendChild(cellText);
+                row.appendChild(cell);
+                tblBody.appendChild(row);
+
+                if( (_2_1_1_var || (_2_1_2_var && _2_1_3_var && _2_1_4_var && _2_1_5_var)) == true ){
+                    alert("No mostrar");
+                }
+
+                if(_1_1_var == true && ((_2_1_1_var || (_2_1_2_var && _2_1_3_var && _2_1_4_var && _2_1_5_var)) == false) && _3_1_1_var == false){
+                    tblBody.appendChild(addRow("Strategic Plan & Scope","Strategy & Scope"));
+                } 
+                if(_1_1_var == true || _1_2_var == true && (_2_1_var == false) && (_3_1_1_var == false)){
+                    tblBody.appendChild(addRow("Strategic Plan & Scope","High Level Project Plan"));
+                } 
+                if(_1_2_var == true && (_2_1_6_var || _2_1_vocab_var == false) && ((_3_1_2_var && (_3_2_1_var || __3_3_1_var) && (_3_2_2_var || _3_3_2_var) ) == false)){
+                    tblBody.appendChild(addRow("High Level Network Architecture","RAN Architecture"));
+                } 
+                if(_1_2_var == true && ((_2_1_7_var || _2_2_vocab) == false) && (_3_1_3_var && (_3_2_3_var || _3_3_3_var) && (_3_2_4_var || _3_3_4_var) && (_3_2_5_var || _3_3_5_var) && _3_2_6_var)){
+                    tblBody.appendChild(addRow("High Level Network Architecture","TX & IP Architecture"));
+                } 
+                if(_1_2_var == true && _2_3_vocab_var == 'no' && ((_2_1_8_var || _2_4_vocab_var) == false) && ((_3_1_4_var && _3_2_7_var && _3_3_6_var) == false)){
+                    tblBody.appendChild(addRow("High Level Network Architecture","Mobile Core Architecture"));
+                } 
+                if(_1_2_var == true && ((_2_5_vocab_var || _2_1_9_var) == false) && (_3_1_5_var == false)){
+                    tblBody.appendChild(addRow("High Level Network Architecture","Network Monitoring Architecture"));
+                } 
+                if(_1_1_var == true || _1_2_var == true || _1_3_var == true && ( (_2_2_1_var || _2_6_vocab_var) == false) && ((_3_2_1_var && _3_2_2_var) == false)){
+                    tblBody.appendChild(addRow("Network Design","RAN HLD"));
+                } 
+                if(_1_1_var == true || _1_2_var == true || _1_3_var == true && ( (_2_2_2_var || _2_7_vocab_var) == false) && ((_3_2_3_var && _3_2_4_var && _3_2_5_var && _3_2_6_var) == false) ){
+                    tblBody.appendChild(addRow("Network Design","Transport HLD"));
+                } 
+                if(_1_1_var == true || _1_2_var == true || _1_3_var == true && _2_3_vocab_var == 'no' && ((_2_2_3_var || _2_8_vocab_var) == false) &&((_3_2_7_var && _3_3_6_var)== false)){
+                    tblBody.appendChild(addRow("Network Design","Mobile Core HLD"));
+                } 
+                if(_1_1_var == true || _1_3_var == true && ((_2_2_4_var ||_2_9_vocab_var)== false) && ((_3_2_1_var && _3_2_2_var && _3_2_8_var)==false)){
+                    tblBody.appendChild(addRow("Network Design","RAN LLD"));
+                } 
+                if(_1_1_var == true || _1_3_var == true && ((_2_2_5_var ||_2_9_vocab_var)== false) && ((_3_2_3_var && _3_2_4_var && _3_2_5_var && _3_2_6_var && _3_2_9_var)==false) ){
+                    tblBody.appendChild(addRow("Network Design","Transport LLD"));
+                } 
+                if(_1_1_var == true || _1_3_var == true && (((_2_3_vocab_var == 'no') || _2_2_3_var || _2_10_vocab_var) == false) && ((_3_2_7_var && _3_3_6_var && _3_3_7_var)== false)){
+                    tblBody.appendChild(addRow("Network Design","Mobile Core LLD"));
+                } 
+                if(_1_1_var == true || _1_3_var == true && ((_2_2_7_var && _2_2_8_var) == false) && ((_3_2_10_var & _3_2_11_var & _3_2_13_var)==false)){
+                    tblBody.appendChild(addRow("Network Design","Civil & Power Design for RAN Sites"));
+                } 
+                if(_1_1_var == true || _1_3_var == true && (((_2_2_9_var || _2_12_vocab_var) && _2_2_10_var)==false) && ((_3_2_12_var && _3_2_13_var)==false)){
+                    tblBody.appendChild(addRow("Network Design","Civil & Power Design for Core Sites"));
+                } 
+                if(_1_1_var == true || _1_3_var == true && ((_2_3_1_var || _2_3_2_var || _2_3_3_var || (_2_13_vocab_var < 10))==false) && ((_3_4_2_var && _3_4_3_var && (_3_4_4_var || _3_4_5_var || _3_4_6_var || _3_4_7_var))==false)){
+                    tblBody.appendChild(addRow("Supply Chain Management","RFx Process"));
+                } 
+                if(_1_1_var == true || _1_3_var == true && (_2_3_4_var == false) && (_3_4_1_var == false)){
+                    tblBody.appendChild(addRow("Supply Chain Management","Procurement Process & Vendor Mgmt."));
+                } 
+                if(_1_1_var == true || _1_3_var == true && ((_2_3_5_var || (_2_3_6_var && _2_3_7_var) || (_2_5_vocab_var && _2_14_vocab_var) || (_2_13_vocab_var < _25)) == false) && ((_3_4_8_var || _3_4_9_var) == false)){
+                    tblBody.appendChild(addRow("Supply Chain Management","Logistics & Warehousing"));
+                } 
+                if(_1_1_var == true || _1_3_var == true && _2_3_var == false && (((_3_1_1_var && _3_3_9_var) || _3_3_10_var)==false)){
+                    tblBody.appendChild(addRow("Deployment","Deployment Management"));
+                } 
+                if(_1_1_var == true || _1_3_var == true && ((_2_15_vocab_var || _2_3_12_var || _2_3_10_var)== false) && ((_3_3_11_var && _3_3_12_var)==false)){
+                    tblBody.appendChild(addRow("Deployment","Site Survey"));
+                } 
+                if(_1_1_var == true || _1_3_var == true && ((_2_3_13_var || _2_16_vocab_var)==false) && ((_3_4_5_var || _3_4_6_var)==false)){
+                    tblBody.appendChild(addRow("Deployment","Site Construction Management"));
+                } 
+                if(_1_1_var == true || _1_3_var == true && (_2_3_14_var == false) && ((_3_3_5_var || (_3_3_6_var && _3_4_7_var))==false)){
+                    tblBody.appendChild(addRow("Deployment","Fiber Construction Management"));
+                } 
+                if(_1_1_var == true || _1_3_var == true && (((_2_14_vocab_var || _2_5_vocab_var) || _2_3_var) == false) && ((_3_3_13_var || _3_3_14_var) == false)){
+                    tblBody.appendChild(addRow("Deployment","Installation & Commissioning"));
+                } 
+                if(_1_1_var == true || _1_3_var == true && (_2_18_vocab_var==false) && (_3_5_1_var == false)){
+                    tblBody.appendChild(addRow("Operations & Maintenance","Network Operations Center"));
+                } 
+                if(_1_1_var == true || _1_3_var == true && (((_2_13_vocab_var < 25) || _2_16_vocab_var || _2_5_var)==false) && ((_3_5_2_var || _3_5_3_var)==false)){
+                    tblBody.appendChild(addRow("Operations & Maintenance","Service Operations Center"));
+                } 
+                if(_1_3_var == true && _2_6_var == false && ((_2_20_vocab_var || _3_4_7_var)==false)){
+                    tblBody.appendChild(addRow("Field Maintenance","Field Force Management"));
+                } 
+                if(_1_3_var == true && ((_3_5_9_var || (_2_18_vocab_var && _2_17_vocab_var))==false) && ((_3_5_4_var && _3_5_5_var && _3_5_9_var)==false)){
+                    tblBody.appendChild(addRow("Field Maintenance","Cell Site Maintenance"));
+                } 
+                if(_1_3_var == true && ((_3_5_10_var || (_2_18_vocab_var && _2_17_vocab_var))==false) && ((_3_5_8_var && _3_5_10_var) == false)){
+                    tblBody.appendChild(addRow("Field Maintenance","Core/Aggregation Site Maintenance"));
+                }
+                if(_1_3_var == true && ((_3_5_11_var && _3_5_12_var && _3_5_13_var)==false)){
+                    tblBody.appendChild(addRow("Post-Launch Engineering","Capacity Planning"));
+                }
+                if(_1_3_var == true || _1_2_var == true && (_2_21_vocab_var == false) && (_3_5_14_var == false)){
+                    tblBody.appendChild(addRow("Post-Launch Engineering","RF Optimization"));
+                }
+                if(_1_3_var == true && ((_3_5_15_var || _3_5_16_var || _3_1_6_var)==false)){
+                    tblBody.appendChild(addRow("Post-Launch Engineering","Transport Performance Management"));
+                }
+
+               
+               //$('#tablaa-1').show();
+               //$('#tablaa-2').show();
+               //$('#tablaa-3').show();
+               //$('#tablaa-4').show();
+
+                // put the <tbody> in the <table>
+                tbl.appendChild(tblBody);
+                // appends <table> into <body>
+                body.appendChild(tbl);
+                // sets the border attribute of tbl to 2;
+                tbl.setAttribute("border", "2"); 
+                  
+            });
+
+            function addRow(row_4,row_5){
+                console.log("ENTRO");
+
+                var row = document.createElement("tr");
+
+                var cell = document.createElement("td");
+                var cellText = document.createTextNode(row_4);
+                cell.appendChild(cellText);
+                row.appendChild(cell);
+                cell.style.padding = "0in 3.5pt 0in 3.5pt";
+                var cell = document.createElement("td");
+                var cellText = document.createTextNode(row_5);
+                cell.appendChild(cellText);
+                row.appendChild(cell);
+                cell.style.padding = "0in 3.5pt 0in 3.5pt";
+                return row;
+                //tblBody.appendChild(row);
+            }
+
+        </script>
+    </body>
+</html>
