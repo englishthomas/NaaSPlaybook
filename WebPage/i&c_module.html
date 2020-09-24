@@ -13,6 +13,7 @@
         <link rel="stylesheet" href="style2.css">
   
         <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+        <script src="https://unpkg.com/js-image-zoom@0.4.1/js-image-zoom.js" type="application/javascript"></script>
 	</head>
 		
     <body>
@@ -211,7 +212,7 @@
                                 responsibilities of the field and support staff based on the rural NaaS
                                 environment.</li>
                                 <li class="normal-text">Provide detailed how-to instructions to create a
-                                MOPguidelines and checklists for installation, commissioning, integration,
+                                MOP guidelines and checklists for installation, commissioning, integration,
                                 and acceptance test activities.</li>
                            </ol>
                         
@@ -240,10 +241,14 @@
                         
                         <p class="normal-text"><a></a>Figure 2 presents the I&amp;C process view, where the
                             inputs and tasks are exhibited.</p><br>
+
+                            <div id="img-container" style="width: 600px">
+                                <p class="normal-text"><img width=620
+                                    height=300 id=image16.png
+                                    src="images/i&c/image002.png"></p>
+                            <div>
                         
-                        <p class="normal-text"><img width=620
-                        height=300 id=image16.png
-                        src="images/i&c/image002.png"></p>
+                        
                         
                         <p align=center><i>Figure
                             2  Installation &amp; commissioning process view</i></p>
@@ -328,7 +333,7 @@
                                 the MOP prepared during the prework
                                 stage.</li>
                              <li class="normal-text">Then the
-                                power equipmentincluding power rectifiers or solar panels and batteries
+                                power equipmentin cluding power rectifiers or solar panels and batteries
                                 is to be installed and tested following all safety and engineering
                                 standards. (Grounding of the tower has been performed in the site
                                 construction phase.)</li>
@@ -698,7 +703,7 @@
                     
                     <p class="normal-text">Overseeing the progress of key I&amp;C tasks will help in keeping a
                         record of when milestones are completed for each site per the planned schedule
-                        . Contractor reports s may be used as a trigger for milestone completion.
+                        . Contractor reports may be used as a trigger for milestone completion.
                         Reviewing all activity reports will improve quality by locating works that need
                         improvement (or reworks if necessary), until
                         the required task meets the expected outcome. </p>
@@ -770,7 +775,7 @@
                     <p class="normal-text">Another option is to develop a strategy that reflects the
                     NaaS operators own conditions. This strongly depends on choosing personnel who
                     know the deployment area and are able to work in challenging field
-                    conditionseven if they dont have full technical knowledge to perform more
+                    condition seven if they don't have full technical knowledge to perform more
                     complex I&amp;C tasks. Under these conditions, this playbook introduces the
                     low-tech model; its an approach for NaaS operators to adapt their
                     organization, processes, and tasks to achieve the first-time right goal using
@@ -975,9 +980,8 @@
                     <p align=center><i>Table 1 
                         Advantages and disadvantages of the low-tech model</i></p>
                     
-                    <ul class="normal-text ul-iconos" style='margin-top:0in' start=1 type=1>
-                        <li>low-tech model should be considered under the
-                            following circumstances:</li>
+                    <p class="normal-text">low-tech model should be considered under the
+                            following circumstances:</p>
                     
                         <ul class="normal-text ul-iconos" style='margin-top:0in;font-size:16px;' start=1 type=1>
                             <li>Lack of experienced field technicians and/or supervisors in
@@ -989,7 +993,6 @@
                                 it more reasonable to have local resources instead of those who are highly
                                 skilled.</li>
                         </ul>
-                    </ul>
                     
                     <br><h2><a class="titulo-h2 anchor-bum color-luminati-2" name="item3-3">3.3 Technician
                         Training</a></h2>
@@ -1067,11 +1070,11 @@
                         <br>The<b> </b>kitting process may be performed during various
                         supply chain phases ; therefore, task responsibility may vary.</li>
 
-                        <ul class="normal-text ul-iconos" style='margin-top:0in;font-size:16px;' start=1 type=1>
+                        <ol class="normal-text ul-iconos" style='margin-top:0in;font-size:16px;' start=1 type='a'>
                             <li>Before shipping: kitting could be performed by vendors.</li>
                             <li>Upon local warehouse arrival: by a NaaS operator employee, or
                                 it can be requested it be performed by the warehouse operator.</li>
-                        </ul>
+                        </ol>
                     </ol>
 
                     <ol class="normal-text ul-iconos" style='margin-top:0in' start=2 type=1>
@@ -2324,7 +2327,7 @@
                     the Figure 12 example, it considers the following: three-sector scenario MIMO
                     2X2 with fiber backhaul and a rectifier that takes power from the grid.
                     Connection diagrams are intended to represent a high-level overview of the entire
-                    installation and dont require the use of actual equipment images. Additional
+                    installation and don't require the use of actual equipment images. Additional
                     details for connections procedures could be detailed in equipment installation
                     sections.</p>
                     
@@ -2349,7 +2352,7 @@
                     <h4>4.2.3.6 Ancillaries List</h4>
                     
                     <p class="normal-text">The MOP can include a list of ancillaries required to
-                        install the equipmentespecially those used for equipment to be installed at
+                        install the equipment especially those used for equipment to be installed at
                         height (e.g., antennas and radio units). This can help ensure that field
                         technicians have everything in their bag before climbing a tower, thereby
                         saving time in their tasks. Required ancillaries for each equipment element
@@ -2712,7 +2715,7 @@
                     <p class="normal-text">If the integration tasks have not been completed and the
                     maintenance window exceeded, there may be penalties and a rollback procedure to
                     be carried out. This cancels all progress of the integration tasks and is done
-                    to maintain MNO core network data integrity of . </p>
+                    to maintain MNO core network data integrity. </p>
                     
                     <p class="normal-text">Next is a list of some preparation tasks: </p>
                     
@@ -2788,7 +2791,7 @@
                     arranged maintenance window, or MNO personnel can carry out the configuration. </p>
                     
                     <p class="normal-text">Regardless of the agreement, the integration engineer must
-                    validate the connectionverifying if the user plane and control plane links are
+                    validate the connection verifying if the user plane and control plane links are
                     working properly. If not, troubleshooting may be required using common
                     techniques such as ping and traceroute to the faulty core element link. </p>
                     
@@ -3067,7 +3070,7 @@
                     <p class="normal-text">An
                         installation Inspection must be performed for physical elements of the site,
                         such as cabinet installation, cabling and labeling, base station,
-                        antennasincluding a visual operative inspection. The following subsections
+                        antennas including a visual operative inspection. The following subsections
                         include examples of the objectives, prerequisites, and criteria that can be
                         used by a NaaS operator for reference. </p>
                     
@@ -3629,6 +3632,13 @@
          <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
          <script type="text/javascript">
+
+        var options = {
+            width: 600,
+            zoomWidth: 500,
+            offset: {vertical: 0, horizontal: 10}
+        };
+        new ImageZoom(document.getElementById("img-container"), options);
              
             let tab;
             var setPin = true;
