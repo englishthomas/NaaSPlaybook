@@ -1,0 +1,2891 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+        <title>PlayBook</title>
+
+         <!-- Bootstrap CSS CDN -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <!-- Our Custom CSS -->
+        <link rel="stylesheet" href="style2.css">
+        
+    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+	</head>
+		
+    <body>
+
+    <div class >
+        <ul class="barra_superior">
+            <li class="li_superior"><a class="active" href="Home.html">Home</a></li>
+            <li class="li_superior"><a href="comming_soon/comming-soon.html">About</a></li>
+            
+            <li class="topnav-right"><a href="#" onclick="switchContent('#e2e')">Definition Process</a></li>
+            <li class="topnav-right"><a href="#" onclick="switchContent('#fm')">Architecture Fundamentals</a></li>
+            <li class="topnav-right"><a href="#" onclick="switchContent('#hld')" >Introduction</a></li>
+        </ul>
+    </div>
+
+        <div class="wrapper">
+            <!-- Sidebar Holder -->
+            <nav id="sidebar">
+                <div class="sidebar-header">
+                    <h3>NaaS PlayBook</h3>
+                    <!--strong>NaaS</strong-->
+                    <img src="smiley.png" alt="Go to W3Schools!" width="42" height="42" border="0">
+                </div>
+
+                <ul class="list-unstyled components">
+                    <li>
+                        <a href="#runbookSubmenu" data-toggle="collapse" aria-expanded="false">
+                            <i class="glyphicon glyphicon-option-horizontal"></i>
+                            PlayBook Modules
+                        </a>
+                        <ul class="list-unstyled" id="runbookSubmenu">
+<li  class="active">
+                                    <a href="#stract" data-toggle="collapse" aria-expanded="false">
+                                        &#187 Strategic Plan & Scope
+                                    </a>
+                                    <ul class="list-unstyled collapse" id="stract">
+                                        <li><a href="strategy_scope.html"style="margin-left:2em;">&bull; Strategy & Scope</a></li>
+                                        <li><a href="high_level_proyect_plan.html" style="margin-left:2em">&bull; HL Project Plan</a></li>
+                                    </ul>
+                                </li>
+                                <li  class="active">
+                                    <a href="#HLNA" class="panel-collapse" data-toggle="collapse">
+                                        &#187 High Level Network Architecture
+                                    </a>
+                                    <ul class="list-unstyled" id="HLNA">
+                                        <li><a href="ran_hld_architecture.html"style="margin-left:2em;color: black;"><strong>&bull; RAN Architecture</strong></a></li>
+                                        <li><a href="tx_ip_architecture.html" style="margin-left:2em">&bull; TX & IP Architecture</a></li>
+                                        <li><a href="mobile_core_archi.html" style="margin-left:2em"> &bull; Core Architecture</a></li>
+                                        <li><a href="network_monitoring_architecture.html" style="margin-left:2em"> &bull; Network Monitoring</a></li>
+                                        <li><a href="comming_soon/comming-soon.html" style="margin-left:2em"> &bull; Engineering Specifications</a></li>
+                                    </ul>
+                                </li>
+                                <li class="active">
+                                    <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false">
+                                        &#187 Network Design
+                                    </a>
+                                    <ul class="list-unstyled collapse" id="homeSubmenu">
+                                        <li><a href="#transportMenu" data-toggle="collapse" style="margin-left:2em">&bull; Transport</a></li>
+                                            <ul class="list-unstyled collapse" id="transportMenu">
+                                                <li><a href="tx_hld_module.html" style="margin-left:4em;">&#9657; Tx Network HLD</a></li>
+<li><a href="tx_lld_module.html" style="margin-left:4em;">&#9657; Tx Network LLD</a></li>
+                                            </ul>
+                
+                                        <li><a href="#transportMenu2" data-toggle="collapse" style="margin-left:2em">&bull; RAN</a></li>
+                                            <ul class="list-unstyled collapse" id="transportMenu2">
+                                                <li><a href="ran_hld_module.html" style="margin-left:4em;">&#9657; RAN Network HLD</a></li>
+<li><a href="ran_lld_module.html" style="margin-left:4em;">&#9657; RAN Network LLD</a></li>
+                                            </ul>
+                                        <li><a href="#transportMenu3" data-toggle="collapse" style="margin-left:2em">&bull; Core</a></li>
+                                        <ul class="list-unstyled collapse" id="transportMenu3">
+                                            <li><a href="mobile_core_hld.html" style="margin-left:4em;">&#9657; Mobile Core HLD</a></li>
+											<li><a href="mobile_core_lld.html" style="margin-left:4em;">&#9657; Mobile Core LLD</a></li>
+                                        </ul>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#deployment_m" data-toggle="collapse" aria-expanded="false">
+                                        &#187 Deployment
+                                    </a>
+                                    <ul class="list-unstyled collapse" id="deployment_m">
+                                        <li><a href="deployment_mgmt.html"style="margin-left:2em">&bull; Deployment Mgmt</a></li>
+                                        <li><a href="site_survey.html"style="margin-left:2em">&bull; Site Survey</a></li>
+                                        <li><a href="#"style="margin-left:2em">&bull; Construction</a></li>
+                                        <li><a href="i&c_module.html"style="margin-left:2em">&bull; I & C</a></li>
+                                        <li><a href="fiber_const_mgmt.html"style="margin-left:2em">&bull; Fiber Construction Mgmt</a></li>
+<li><a href="site_construction_mgmt.html"style="margin-left:2em">&bull; Site Construction Mgmt</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        &#187 O & M
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        &#187 Field Maintenance
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        &#187 Post-Launch Engineering
+                                    </a>
+                                </li>
+                                <li  class="active">
+                                <a href="#supply" data-toggle="collapse" aria-expanded="false">
+                                    &#187 Supply Chain Management
+                                </a>
+                                <ul class="list-unstyled collapse" id="supply">
+                                    <li><a href="rfx_process.html"style="margin-left:2em">&bull; RFx Process</a></li>
+                                    <li><a href="proc_pro_vendor_mgmt.html" style="margin-left:2em">&bull; Procurement Proc. & Vendor Mgmt.</a></li>
+                                    <li><a href="" style="margin-left:2em"> &bull; Logistic & Warehousing</a></li>
+                                </ul>
+                            </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#engagementSubmenu" data-toggle="collapse" aria-expanded="false">
+                                <i class="glyphicon glyphicon-option-horizontal"></i>
+                                Methods of Engagement
+                            </a>
+                            <ul class="collapse list-unstyled" id="engagementSubmenu">
+                                
+                                <li><a href="MoE_Wizards.html">&#187 Wizards</a></li>
+                                <li><a href="MoE_Widgets.html">&#187 Widgets</a></li>
+                                <li><a href="MoE_Primers.html">&#187 Primers</a></li>
+                                <li><a href="MoE_Templates.html">&#187 Templates</a></li>
+                                <li><a href="MoE_Tool_Catalogue.html">&#187 Tool Catalogue</a></li>
+                                
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="comming_soon/comming-soon.html">
+                                <i class="glyphicon glyphicon-paperclip"></i>
+                                FAQ 
+                            </a>
+                        </li>
+                        <li>
+                            <a href="comming_soon/comming-soon.html">
+                                <i class="glyphicon glyphicon-send"></i>
+                                Contact
+                            </a>
+                        </li>
+                </ul>
+            </nav>
+            <!-- Page Content Holder -->
+           <section id="hld" hidden>
+                <div id="content"> 
+                    
+                    <div data-spy="scroll" data-target="#navbar-example3" data-offset="0">
+                        <h1><a class="titulo-h1 anchor-bum color-luminati" name="item1">1. Introduction</a></h1>
+                        
+                        <p class="normal-text">This module provides the NaaS operator with
+                        defining radio access network (RAN) architecture principles and guidelines that
+                        comply with its own service and business requirements.</p>
+                        
+                        <p class="normal-text">In addition, an end-to-end (E2E) process is
+                        defined that considers a range of implementation options for base stations to
+                        be adopted by the NaaS operator for an optimal deployment.</p>
+                        
+                        <p class="normal-text">Through use of this module, NaaS operators
+                        will be able to generate a reference RAN architecture. In addition, a detailed
+                        list of engineering guidelines and equipment requirements to guide subsequent
+                        design and deployment tasks to achieve business targets is provided.</p>
+                        
+                        <br><h2><a class="titulo-h2 anchor-bum color-luminati" name="item1-1">1.1
+                        Module Objectives</a></h2>
+                        
+                        <p class="normal-text">This module will enable a NaaS operator to
+                        define all architectural aspects regarding a RAN. The specific objectives of
+                        this module are to: </p>
+
+                        <ol style='margin-top:0in' start=1 type=1>
+                            <li class="normal-text">provide a general overview and fundamentals of RAN
+                                architectural options in an LTE system.</li>
+                        
+                            <li class="normal-text">provide guidance in defining a RAN architecture
+                                that matches the NaaS operators requirements, capabilities, and business
+                                model.</li>
+                        
+                            <li class="normal-text">enable operators to define engineering
+                                guidelines that will serve the RAN design team <br>
+                                to develop compliant designs.</li>
+                        
+                            <li class="normal-text">provide guidelines for requirements and
+                                specifications that can serve to evaluate <br>
+                                and select vendors and specific equipment to be part of the RAN solution.</li>
+                        </ol>
+                        
+                        
+                        <br><h2><a class="titulo-h2 anchor-bum color-luminati" name="item1-2">1.2.
+                        Module Framework</a></h2>
+                        
+                        <p class="normal-text">Figure 1 shows the relationship of RAN architecture modules comprising
+                        the NaaS playbook framework.</p>
+                                                
+                        <p class="normal-text">The Strategic Plan &amp; Scope provides business context for the NaaS
+                        operator and serves as a guideline for defining the high-level network architecture.</p>
+                        
+                        <p class="normal-text">The RAN architecture module is within the high-level network
+                        architecture stream. The generated output of this module serves as a starting
+                        point, while also providing scenarios and defining constraints for the network
+                        design modules.</p>
+                        
+                        <br><p class="normal-text"><img width=703
+                            height=351 id=image16.png
+                            src="images/ran_arquitecture/image001.gif"></p>
+                        
+                        <p align=center><i>Figure 1 
+                        Network deployment and management framework</i><a></a></p>
+                        
+                        <p class="normal-text">Figure 2
+                        presents a functional view of the RAN architecture module, where the main
+                        functional components are exhibited. Critical module inputs are further
+                        described and examined in section 2.2. Section 3 describes aspects for the RAN
+                        architecture definition and organizes them into an E2E process to facilitate
+                        decision-making regarding each component.</p>
+                        
+                        <br><p class="normal-text"><img width=732 height=317 id=image21.png
+                            src="images/ran_arquitecture/image002.gif"></p>
+                        
+                        <p align=center><i>Figure 2  RAN architecture module functional view</i></p>
+ 
+                    </div>
+
+                    <div class="right">
+                        <a class='link-next' href="#" onclick="switchContent('#fm')">Next &#8658;</a>
+                    </div>
+                    <br>
+                </div>
+
+                <nav id="navbar-example3" class="navbar navbar-light bg-light position-fixed">
+                    <nav class="nav nav-pills flex-column">
+                    
+                    <a id="link-1" class="nav-link bullet-2-link" onclick="onClickActive(event)" href="#item-1"><strong>1. INTRODUCTION</strong></a>
+                    <a id="link-2" class="nav-link bullet-2-link" onclick="onClickActive(event)" href="#item1-1"><em>1.1 Module Objectives</em></a>
+                    <a id="link-3" class="nav-link bullet-2-link" onclick="onClickActive(event)" href="#item1-2"><em>1.2 Module Framework</em></a>
+                    </nav>
+                </nav>
+           </section>
+
+           <section id="fm" hidden>
+            <div id="content"> 
+                
+                <div div data-spy="scroll" data-target="#navbar-example3" data-offset="0">
+                                        
+                    <h1><a class="titulo-h1 anchor-bum color-luminati-2" name="item2">2. Architecture Fundamentals </a></h1>
+                    
+                    <p class="normal-text">This section provides a general overview of
+                    the baseline concepts of the RAN architecture.</p>
+                    
+                    <br><h2><a class="titulo-h2 anchor-bum color-luminati-2" name="item2-1">2.1
+                    LTE RAN Architecture &amp; Main Challenges</a></h2>
+                    
+                    <p class="normal-text">An LTE network is composed by three major
+                    elements as shown in Figure 3.</p>
+                    
+                    <br><p class="normal-text"><img width=635 height=238 id=image5.png
+                        src="images/ran_arquitecture/image003.gif"></p>
+                    
+                    <p align=center><i>Figure 3  High level view of overall LTE network</i></p>
+
+                    <ul class="normal-text ul-iconos" style='margin-top:0in' start=1 type=1>
+                        <li>Radio Access Network (RAN) 
+                            A set of radio base stations (BTS) that serve as access points to the LTE
+                            network. Each BTS provides radio resources to user equipment (UE) to access
+                            network services. In an LTE network, a BTS is also referred to as eNodeB.</li>
+                        
+                        <li>Transport Network  Provides
+                            interconnection from the RAN to the core network. In some cases, it also
+                            connects different parts of the RAN. This network is composed of various
+                            elements depending on the selected transport solution: fiber optic, microwave,
+                            or satellite.</li>
+                        
+                        <li>Mobile Core (Evolved Packet
+                            Core)  A core network that manages user sessionsincluding authentication,
+                            mobility, and access to external networks (e.g., internet). Some elements
+                            composing the mobile core network are: mobility management entity (MME), home
+                            subscriber server (HSS), serving gateway (S-GW), and packet data network
+                            gateway (P-GW), among others.</li>
+                    </ul>
+                    
+                    <p class="normal-text">Further details of the overall LTE is
+                    presented in the <a class="a_link" 
+                    href="https://github.com/teleworxllc/NaaSRunBook/tree/gh-pages/High%20Level%20Network%20Architecture/Primers/LTE_Architecture_Basics.pdf">Primer on LTE RAN Architecture Basics</a>.</p>
+                    
+                    <p class="normal-text">A RAN can be comprised of one or more eNodeBs
+                    distributed over the coverage region. Basic components of an eNodeB are:
+                    antenna, radio frequency (RF) unit (a.k.a., remote radio unit, or RRU, and a baseband
+                    unit (BBU). These components can be arranged in a couple of ways
+                    (configurations) depending on location of the BBU versus RRUs and antennas. Such
+                    configurations are classified into distributed and centralized RAN.</p>
+                    
+                    <h3><a></a>Distributed
+                    RAN (D-RAN) Architecture</h3>
+                    
+                    <p class="normal-text">This option reflects the most common
+                    architecture in which each eNodeB is comprised of one BBU and one or more RRUs with
+                    their corresponding antenna. The interface between the BBU and RRUs is known as
+                    fronthaul. Each eNodeB has direct communication to the core network via the
+                    transport network. Figure 4 shows D-RAN distribution.</p>
+                    
+                    <br><p class="normal-text"><img width=459 height=215 id=image2.png
+                        src="images/ran_arquitecture/image004.gif"></p>
+                    
+                    <p align=center><i>Figure 4  Basic D-RAN concept</i></p>
+                    
+                    <p class="normal-text">Advances in radio design have led to the integration
+                    of a BBU and RRU in a single box (all-in-one equipment) located closer to the
+                    antenna on the tower or pole. This equates to savings in both space and energy
+                    consumption, thereby reducing CAPEX compared to the traditional BBU+RRU
+                    approach. This all-in-one (AiO) solution is commonly used for small cell sites.</p>
+                    
+                    <h3><a></a>Centralized
+                    RAN (C-RAN) Architecture</h3>
+                    
+                    <p class="normal-text">C-RAN is an evolution to D-RAN in which
+                    every eNodeB is split into two parts. Multiple RRUs and antennas are remotely
+                    located on each site, with all being managed by a centralized BBU. Figure 5 illustrates
+                    a C-RAN deployment.</p>
+                    
+                    <br><p class="normal-text"><img width=683 height=194 id=image18.png
+                        src="images/ran_arquitecture/image005.gif"></p>
+                    
+                    <p align=center><i>Figure 5  Basic C-RAN concept</i></p>
+                    
+                    <p class="normal-text">Communication between RRUs and the centralized
+                    BBU is done via a fronthaul network. Its set of elements have strict capacity,
+                    latency, and synchronization requirements. These usually require fiber optic to
+                    connect a remote site with its centralized BBU. In addition, distance between
+                    the centralized and remote sites is constrained (maximum distance is between 10
+                    and 40km). Further fronthaul network details are provided in the <a class="a_link" href="https://github.com/teleworxllc/NaaSRunBook/tree/gh-pages/High%20Level%20Network%20Architecture/Primers/Cloud_RAN_Basics.pdf">Primer
+                        on Cloud RAN Basics.</a></p>
+                    
+                    <p class="normal-text">C-RAN permits a NaaS operator to maintain or
+                    increase the number of network access points (RRUs) while (almost) keeping the
+                    central BBU untouched. This operating mode is often referred to as the central
+                    BBU and is seen as a pool of radio resources for the remote RRUs. C-RAN also offers
+                    functionalities that improve network performance by coordinating cells from disparate
+                    BTS. The coordinated multipoint (CoMP) functionality is a transmission method
+                    in which the reception from disparate cells is tightly coordinated. This
+                    results in higher system capacity and improved data rates.</p>
+                    
+                    <p class="normal-text">BBU centralization simplifies radio
+                    resource management in areas with high concentrations of network users (e.g., populated
+                    towns, transportation stations, large events) that can put high stress on the
+                    base station serving the area. Here, having to add more D-RAN type sites can
+                    increase cost and can lead to signal interference if the base stations arent
+                    carefully coordinated.</p>
+                    
+                    <p class="normal-text">Although the need of a fronthaul transport
+                    network might appear to increase RAN total cost of ownership (TCO), it has been
+                    proven that a centralized RAN reduces both CAPEX and OPEX compared to a
+                    traditional RAN.</p>
+                    
+                    <p class="normal-text">In addition, some network suppliers offer
+                    the possibility of deploying virtualized versions of the physical BBU equipment
+                    as virtual network functions (VNFs). These are deployed at a data center
+                    together with VNFs corresponding to other network components (e.g., core
+                    network components). Virtualization is gaining strong interest and popularity
+                    in 5G standards and networks. 5G is a cloud-native solution that considers most
+                    of its components to operate in cloud environmentsintroducing flexibility of using
+                    the same equipment (such as data centers) to host multiple virtual elements
+                    instead of current function-specific equipment.</p>
+                    
+                    <p class="normal-text">Deeper insight into the differences between
+                    D-RAN and C-RAN and how the of cloud RAN integration is performed is found in <a class="a_link" href="https://github.com/teleworxllc/NaaSRunBook/tree/gh-pages/High%20Level%20Network%20Architecture/Primers/Cloud_RAN_Basics.pdf">Primer
+                        on Cloud RAN Basics.</a>.</p>
+                    
+                    <h3><a></a>D-RAN vs.
+                    C-RAN Cost Efficiency</h3>
+                    
+                    <p class="normal-text">C-RAN pools BBU resources, eliminating cooling
+                    and space requirements at the cell site. It reduces both CAPEX and OPEX due to its
+                    smaller footprint, lower power consumption, and fewer maintenance visits.</p>
+                    
+                    <p class="normal-text">But remember that C-RAN requires a fiber
+                    network for its fronthaul. In rural environments, this often represents a
+                    bigger investment than the savings introduced by the baseband pooling
+                    functionality and CAPEX/OPEX savings. Moreover, the distance between each cell
+                    site and its centralized BBU cannot be greater than 40 km.</p>
+                    
+                    <p class="normal-text">Thus, in most rural scenarios D-RAN is the
+                    best option due to cost trade-offs and the distance limitation. C-RAN could be
+                    selected in specific urban-like scenarios where the traffic demand is high and
+                    concentrated in small areasideally where fiber optic is already available. </p>
+                    
+                    <p class="normal-text"><i>Table 1</i>
+                    provides a comparison between C-RAN and D-RAN.</p>
+                    
+                    <br
+                    clear=all style='page-break-before:always'>
+                    
+                    
+                    <p class="normal-text"></p>
+                    
+                    <p class="normal-text"><a></a></p>
+                    
+                    <div align=center>
+                    
+                    <table class=a border=1 cellspacing=0 cellpadding=0 width=546 style='border-collapse:
+                    collapse;border:none'>
+                    <tr style='height:13.2pt'>
+                    <td width=100 valign=top style='width:75.0pt;border:solid black 1.0pt;
+                    background:#1F4E79;padding:0cm 5.4pt 0cm 5.4pt;height:13.2pt'>
+                    <p align=center style='color:#fff;'>Architecture</p>
+                    </td>
+                    <td width=164 valign=top style='width:123.0pt;border:solid black 1.0pt;
+                    border-left:none;background:#1F4E79;padding:0cm 5.4pt 0cm 5.4pt;height:13.2pt'>
+                    <p align=center style='color:#fff;'>BTS
+                    Functionalities</p>
+                    </td>
+                    <td width=145 valign=top style='width:109.05pt;border:solid black 1.0pt;
+                    border-left:none;background:#1F4E79;padding:0cm 5.4pt 0cm 5.4pt;height:13.2pt'>
+                    <p align=center style='color:#fff;'>Pros</p>
+                    </td>
+                    <td width=136 valign=top style='width:102.35pt;border:solid black 1.0pt;
+                    border-left:none;background:#1F4E79;padding:0cm 5.4pt 0cm 5.4pt;height:13.2pt'>
+                    <p align=center style='color:#fff;'>Cons</p>
+                    </td>
+                    </tr>
+                    <tr style='height:92.7pt'>
+                    <td width=100 valign=top style='width:75.0pt;border:solid black 1.0pt;
+                    border-top:none;padding:0cm 5.4pt 0cm 5.4pt;height:92.7pt'>
+                    <p class="normal-text">Distributed</p>
+                    </td>
+                    <td width=164 valign=top style='width:123.0pt;border-top:none;border-left:
+                    none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+                    padding:0cm 5.4pt 0cm 5.4pt;height:92.7pt'>
+                    <p class="normal-text">All elements co-located <br>
+                    in single site</p>
+                    </td>
+                    <td width=145 valign=top style='width:109.05pt;border-top:none;border-left:
+                    none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+                    padding:0cm 5.4pt 0cm 5.4pt;height:92.7pt'>
+                    <p class="normal-text">Easiest and faster deployment</p>
+                    <p class="normal-text">Supported by all <br>
+                    equipment suppliers</p>
+                    <p class="normal-text">Operates over multiple transport technologies</p>
+                    </td>
+                    <td width=136 valign=top style='width:102.35pt;border-top:none;border-left:
+                    none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+                    padding:0cm 5.4pt 0cm 5.4pt;height:92.7pt'>
+                    <p class="normal-text">BTS resources are usually underutilized</p>
+                    <p class="normal-text">CapEx and OpEx inefficiencies</p>
+                    </td>
+                    </tr>
+                    <tr style='height:117.8pt'>
+                    <td width=100 valign=top style='width:75.0pt;border:solid black 1.0pt;
+                    border-top:none;padding:0cm 5.4pt 0cm 5.4pt;height:117.8pt'>
+                    <p class="normal-text">Centralized</p>
+                    </td>
+                    <td width=164 valign=top style='width:123.0pt;border-top:none;border-left:
+                    none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+                    padding:0cm 5.4pt 0cm 5.4pt;height:117.8pt'>
+                    <p class="normal-text">RRUs and antennas located away from central
+                    BBU</p>
+                    <p class="normal-text">One BBU can manage several RRUs</p>
+                    </td>
+                    <td width=145 valign=top style='width:109.05pt;border-top:none;border-left:
+                    none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+                    padding:0cm 5.4pt 0cm 5.4pt;height:117.8pt'>
+                    <p class="normal-text">Better performance, as resources can be shared
+                    more efficiently on the <br>
+                    RF domain</p>
+                    <p class="normal-text">Possibility to deploy a cloud RAN solution</p>
+                    </td>
+                    <td width=136 valign=top style='width:102.35pt;border-top:none;border-left:
+                    none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+                    padding:0cm 5.4pt 0cm 5.4pt;height:117.8pt'>
+                    <p class="normal-text">Not all equipment suppliers can support this
+                    architecture</p>
+                    <p class="normal-text">Requires an additional fronthaul network
+                    (usually <br>
+                    a fiber connection between BBU and each RRU)</p>
+                    </td>
+                    </tr>
+                    </table>
+                    
+                    </div>
+                    
+                    <p align=center><i>Table 1 
+                    Comparison of D-RAN and C-RAN architectures</i></p>
+                    
+                    <br><h2><a class="titulo-h2 anchor-bum color-luminati-2" name="item2-2">2.2
+                    Radio Access Network Architecture Design Inputs Description</a></h2>
+                    
+                    <p class="normal-text"><a></a>Table 2 describes
+                    module input data and candidate sources required for a RAN architecture
+                    definition. The impact of each input on the design process is also examined.</p>
+                    
+                    <div align=center>
+                    
+                    <table class=a1 border=1 cellspacing=0 cellpadding=0 style='border-collapse:
+                    collapse;border:none'>
+                    <tr>
+                    <td width=147 valign=top style='width:110.45pt;border:solid black 1.0pt;
+                    background:#1F4E79;padding:0cm 5.4pt 0cm 5.4pt'>
+                    <p align=center style='color:#fff;'>Input
+                    Required</p>
+                    </td>
+                    <td width=147 valign=top style='width:110.45pt;border:solid black 1.0pt;
+                    border-left:none;background:#1F4E79;padding:0cm 5.4pt 0cm 5.4pt'>
+                    <p align=center style='color:#fff;'>Description</p>
+                    </td>
+                    <td width=147 valign=top style='width:110.45pt;border:solid black 1.0pt;
+                    border-left:none;background:#1F4E79;padding:0cm 5.4pt 0cm 5.4pt'>
+                    <p align=center style='color:#fff;'>Impact</p>
+                    </td>
+                    <td width=115 valign=top style='width:86.6pt;border:solid black 1.0pt;
+                    border-left:none;background:#1F4E79;padding:0cm 5.4pt 0cm 5.4pt'>
+                    <p align=center style='color:#fff;'>Source</p>
+                    </td>
+                    </tr>
+                    <tr>
+                    <td width=147 valign=top style='width:110.45pt;border:solid black 1.0pt;
+                    border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+                    <p class="normal-text">Strategic Rules</p>
+                    </td>
+                    <td width=147 valign=top style='width:110.45pt;border-top:none;border-left:
+                    none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+                    padding:0cm 5.4pt 0cm 5.4pt'>
+                    <p class="normal-text">NaaS operators operating rules and plans for network deployment
+                    and operation</p>
+                    </td>
+                    <td width=147 rowspan=2 valign=top style='width:110.45pt;border-top:none;
+                    border-left:none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+                    padding:0cm 5.4pt 0cm 5.4pt'>
+                    <p class="normal-text">Will limit some RAN architecture module decisions</p>
+                    </td>
+                    <td width=115 rowspan=2 valign=top style='width:86.6pt;border-top:none;
+                    border-left:none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+                    padding:0cm 5.4pt 0cm 5.4pt'>
+                    <p class="normal-text"><i>Strategic Plan <br>
+                    &amp; Scope</i> module</p>
+                    </td>
+                    </tr>
+                    <tr>
+                    <td width=147 valign=top style='width:110.45pt;border:solid black 1.0pt;
+                    border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+                    <p class="normal-text">Business Case</p>
+                    </td>
+                    <td width=147 valign=top style='width:110.45pt;border-top:none;border-left:
+                    none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+                    padding:0cm 5.4pt 0cm 5.4pt'>
+                    <p class="normal-text">Main targets and objectives <br>
+                    of overall project</p>
+                    </td>
+                    </tr>
+                    <tr>
+                    <td width=147 valign=top style='width:110.45pt;border:solid black 1.0pt;
+                    border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+                    <p class="normal-text">Gov &amp; Social Regulations</p>
+                    </td>
+                    <td width=147 valign=top style='width:110.45pt;border-top:none;border-left:
+                    none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+                    padding:0cm 5.4pt 0cm 5.4pt'>
+                    <p class="normal-text">Local regulations regarding available spectrum and maximum transmitter
+                    power allowed</p>
+                    </td>
+                    <td width=147 valign=top style='width:110.45pt;border-top:none;border-left:
+                    none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+                    padding:0cm 5.4pt 0cm 5.4pt'>
+                    <p class="normal-text">Will constrain selection <br>
+                    of an operating band and definition of maximum transmitter power</p>
+                    </td>
+                    <td width=115 rowspan=4 valign=top style='width:86.6pt;border-top:none;
+                    border-left:none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+                    padding:0cm 5.4pt 0cm 5.4pt'>
+                    <p class="normal-text">Operator <br>
+                    network <br>
+                    data</p>
+                    </td>
+                    </tr>
+                    <tr>
+                    <td width=147 valign=top style='width:110.45pt;border:solid black 1.0pt;
+                    border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+                    <p class="normal-text">Coverage Targets</p>
+                    </td>
+                    <td width=147 valign=top style='width:110.45pt;border-top:none;border-left:
+                    none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+                    padding:0cm 5.4pt 0cm 5.4pt'>
+                    <p class="normal-text">Locations where the RAN <br>
+                    is planned to be deployed</p>
+                    </td>
+                    <td width=147 valign=top style='width:110.45pt;border-top:none;border-left:
+                    none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+                    padding:0cm 5.4pt 0cm 5.4pt'>
+                    <p class="normal-text">Will define some RAN parameters based on regions characteristics</p>
+                    </td>
+                    </tr>
+                    <tr>
+                    <td width=147 valign=top style='width:110.45pt;border:solid black 1.0pt;
+                    border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+                    <p class="normal-text">Service Penetration</p>
+                    </td>
+                    <td width=147 valign=top style='width:110.45pt;border-top:none;border-left:
+                    none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+                    padding:0cm 5.4pt 0cm 5.4pt'>
+                    <p class="normal-text">Percentage of overall population to be
+                    provided with network services</p>
+                    </td>
+                    <td width=147 valign=top style='width:110.45pt;border-top:none;border-left:
+                    none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+                    padding:0cm 5.4pt 0cm 5.4pt'>
+                    <p class="normal-text">Will define some RAN parameters based on how population size <br>
+                    to be covered</p>
+                    </td>
+                    </tr>
+                    <tr>
+                    <td width=147 valign=top style='width:110.45pt;border:solid black 1.0pt;
+                    border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+                    <p class="normal-text">Existing Equipment &amp; Infrastructure<sup>1</sup></p>
+                    </td>
+                    <td width=147 valign=top style='width:110.45pt;border-top:none;border-left:
+                    none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+                    padding:0cm 5.4pt 0cm 5.4pt'>
+                    <p class="normal-text">Complete list of existing sites and technology they are operating
+                    with</p>
+                    </td>
+                    <td width=147 valign=top style='width:110.45pt;border-top:none;border-left:
+                    none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+                    padding:0cm 5.4pt 0cm 5.4pt'>
+                    <p class="normal-text">Will influence the decision between greenfield or overlay
+                    architecture</p>
+                    </td>
+                    </tr>
+                    <tr>
+                    <td width=557 colspan=4 valign=top style='width:417.95pt;border:solid black 1.0pt;
+                    border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+                    <p class="normal-text"><i><sup>1</sup></i><i> Inputs required only for RAN overlay initiatives.</i></p>
+                    </td>
+                    </tr>
+                    </table>
+                    
+                    </div>
+                    
+                    <p align=center><i>Table 2 
+                    Module input data</i></p>
+                    
+                    <br><h2><a class="titulo-h2 anchor-bum color-luminati-2" name="item2-3">2.3 LTE
+                    RAN Deployment Scenarios</a></h2>
+                    
+                    <p class="normal-text">A deployment scenario for the radio access
+                    network refers to available options the NaaS operator can select to build base
+                    stations. These depend on NaaS operator initial conditions and resources as
+                    well as service requirements.</p>
+                    
+                    <p class="normal-text">While initial conditions determine how the
+                    base station is going to be built (either as a greenfield or overlay site),
+                    service requirements impact the BTS type (macro cell or small cell site).</p>
+                    
+                    <h3><a></a>Greenfield &amp; Overlay Scenarios</h3>
+                    
+                    <p class="normal-text">RAN scenarios offer two categories
+                    depending on NaaS operator initial conditions:</p>
+
+                    <ul class="normal-text ul-iconos" style='margin-top:0in' start=1 type=1>
+                        <li>Greenfield  A greenfield
+                            scenario means building the network without the support of existing sites or
+                            telecom infrastructure (such as existing towers). The design process (<i>RAN
+                            HLD Module</i>) has to work together with a site acquisition and construction
+                            process.</li>
+                    
+                        <li>Overlay  Here an operator wants
+                            to deploy a new radio access technology (RAT) such as LTE on top of its
+                            existing network for capacity expansion.</li>
+                    </ul>
+                    
+                    
+                    <p class="normal-text">Both scenarios have their specifics and
+                    challenges to meet business and technical requirements. Deeper insight is
+                    covered in the <a class="a_link" href="ran_hld_module.html">RAN HLD</a> and <a class="a_link" href="ran_lld_module.html">RAN LLD </a>modules.</p>
+                    
+                    <h3><a></a>Macro
+                    Cell &amp; Small Cell Sites</h3>
+                    
+                    <p class="normal-text">Depending on coverage and capacity
+                    requirements, as well as geodemographic characteristics of the coverage region,
+                    two BTS types can be implemented:</p>
+
+                    <ul class="normal-text ul-iconos" style='margin-top:0in' start=1 type=1>
+                        <li><b>Macro Cell Site</b>  Macro cell refers to a BTS capable of
+                            providing coverage for a large area (~510 km, depending on terrain conditions
+                            and selected frequency). Wide coverage is achieved due to high transmitter
+                            power (up to 40W per antenna port, depending on equipment supplier) and high
+                            towers (up to 40 m and higher) Both are macro cell site differentiators. Being
+                            a high CAPEX option, installation (tower) and power supply result in a large
+                            infrastructure investment.</li>
+                    
+                        <li><b>Small Cell Site</b>  Small cells use a low-powered (usually up to
+                            10W) BTS that doesnt require large infrastructure (usually installed on lamp
+                            poles or small towers (up to 10m)) for their operation. These characteristics afford
+                            it a smaller coverage range (~25km) compared to a macro cell range. Consequently,
+                            small cells are ideal in hotspot traffic areas to enhance network capacity or
+                            to fill coverage holes left by macro cell sites. Small cells are usually
+                            deployed in rural environments where deploying a macro cell site isnt
+                            cost-effective due to geodemographic and traffic characteristics.</li>
+                    </ul>
+                    
+                    <p class="normal-text">Figure 6 displays macro and a mall cell
+                    site coverage difference.</p>
+                    
+                    <br><p class="normal-text"><img width=569 height=273 id=image11.png
+                        src="images/ran_arquitecture/image008.gif"></p>
+                    
+                    <p align=center><i>Figure 6  Macro vs small cell site
+                    coverage</i></p>
+                    
+                    <p class="normal-text">Both BTS types provide radio access coverage
+                    but in quite different ways, making each more effective in different
+                    situations. A selection analysis is detailed in the <i>RAN HLD</i> module.</p>
+                </div>
+
+                <a class='link-next' href="#" onclick="switchContent('#hld')"> &#8656; Previous</a>
+                    <a href="url" align="center"></a>
+                    <div class="right">
+                        <a ></a>
+                        <a class="link-next" href="#" onclick="switchContent('#e2e')">Next &#8658;</a>
+                    </div>
+                    <br>
+                </div>
+
+                <nav id="navbar-example3" class="navbar navbar-light bg-light position-fixed">
+                    <nav class="nav nav-pills flex-column">
+                    <a id="fm_link-1" class="nav-link bullet-2-link" onclick="onClickActive(event)" href="#item2"><strong>2. ARCHITECTURE FUNDAMENTALS</strong></a>
+                    <a id="fm_link-2" class="nav-link bullet-2-link" onclick="onClickActive(event)" href="#item2-1"><em>2.1 LTE RAN Architecture & Main challenges</em></a>
+                    <a id="fm_link-3" class="nav-link bullet-2-link" onclick="onClickActive(event)" href="#item2-2"><em>2.2 Radio Access Network Architecture Design Inputs Description</em></a>
+                    <a id="fm_link-4"class="nav-link bullet-2-link" onclick="onClickActive(event)" href="#item2-3"><em>2.3 LTE RAN Deployment Scenarios</em></a>
+                    </nav>
+                </nav>
+           </section>
+
+           <section id="e2e" hidden>
+            <div id="content">
+
+                <div data-spy="scroll" data-target="#navbar-example3" data-offset="0">
+                    <h1><a class="titulo-h1 anchor-bum color-luminati-3" name="item3">3. RAN Architecture Definition Process</a></h1>
+                    
+                    <p class="normal-text">Figure 7
+                    displays the E2E process for defining the RAN architecture.</p>
+                    
+                    <br><p class="normal-text"><img width=760 height=150 id=image8.jpg
+                        src="images/ran_arquitecture/image009.jpg"
+                        alt="A close up of a device&#10;&#10;Description automatically generated"></p>
+                    
+                    <p align=center><i>Figure 7. RAN architecture E2E
+                        process.</i></p>
+                    
+                    <p class="normal-text">A first step is to define RF specifications
+                    in contemplating operating band selection, guard band (for overlay scenarios),
+                    and maximum allowed transmitter power for all BTSs.</p>
+                    
+                    <p class="normal-text">The<i> RAN Topology &amp; Scenario
+                    Definition</i> section guides the election of BTS architecture, deployment
+                    scenarios, and BTS type(s) (macro or small cell). It also provides guidance for
+                    evaluating a demarcation point between the RAN and core network if the NaaS
+                    operator isnt deploying its own core network.</p>
+                    
+                    <p class="normal-text"><i>Functional Requirements </i>defines required network functionalities based on RAN sharing
+                    schemes and VoLTE, if the latter applies.</p>
+                    
+                    <p class="normal-text">The <i>Engineering Guidelines Definition </i>section
+                    provides instructions about defining engineering rules to be considered during
+                    the design process.</p>
+                    
+                    <br><h2><a class="titulo-h2 anchor-bum color-luminati-3" name="item3-1">3.1 RF
+                    Specifications</a></h2>
+                    
+                    <p class="normal-text">BTS operation is conditioned by multiple
+                    parameters. These are:</p>
+
+
+                    <ul class="normal-text ul-iconos" style='margin-top:0in' start=1 type=1>
+                        <li>Operating frequency band</li>
+                        <li>Guardband requirements (for
+                        overlay scenarios)</li>
+                        
+                        <li>
+                        Duplexing scheme (which is
+                        associated to the operating band)</li>
+                        
+                        <li>
+                        Transmission power</li>
+                    </ul>
+
+                    <p class="normal-text">These parameters must be selected based on NaaS
+                    operator service requirements, available resources, and the respective countrys
+                    policies and regulations.</p>
+                    
+                    <p class="normal-text">In this section, selection guidance for the
+                    parameters is provided.</p>
+                    
+                    <h3><a></a>3.1.1 Spectrum Definition</h3>
+                    
+                    <p class="normal-text">Electromagnetic spectrum is a limited
+                    resource managed by a regulatory body in each country. For this reason, selection
+                    of an appropriate spectrum band and carrier bandwidth depends on factors such
+                    as the countrys regulatory policies, spectrum fees, available spectrum chunks,
+                    MNO partners spectrum position, and unlicensed spectrum conditions.</p>
+                    
+                    <p class="normal-text">For overlay scenarios its necessary to set
+                    guard bands between LTE and existing 2G and 3G technologies to avoid
+                    interference between co-located systems and service degradation.</p>
+                    
+                    <h5><a></a>Band Selection</h5>
+                    
+                    <p class="normal-text">A NaaS operator can select its operating
+                    band based on one of the following considerations:</p>
+
+                    <ol style='margin-top:0in' start=1 type=1>
+                        <li class="normal-text">Refarming (overlay scenario)
+                            An LTE system can operate over existing 2G  GSM and 3G  UMTS bands (e.g.,
+                            Band 3: 1800MHz or Band 8: 900MHz). As a result, operators can refarm parts of
+                            the spectrum currently used for 2G or 3G voice and data services to support
+                            LTE. By reusing infrastructure to overlay LTE, this is a cost-effective way to
+                            increase capacity in existing networks without having to bid for new spectrum. But
+                            its only feasible when the NaaS operator or its partners/customers have enough
+                            contiguous spectrum to enable simultaneous operation of two or three
+                            technologies in a frequency band. That is, the operating frequency band has
+                            enough remaining spectrum to insert a new carrier.</li>
+                        <li class="normal-text">Leverage from partners
+                            spectrum  A NaaS operator can use spectrum previously assigned to its partner
+                            (in the event the partner has already been assigned a 4G band).</li>
+                        <li class="normal-text">Use an unlicensed band  Use
+                            of unlicensed spectrum in the 5GHz range has been gaining interest in past years because it permits an
+                            operator to deploy LTE services without having to bid for a licensed spectrum. But
+                            using unlicensed spectrum imposes transmission power limitations, thereby limiting
+                            BTS coverage area. In addition, the NaaS operator needs to verify if other
+                            operations in the area are using unlicensed spectrum, as this may cause
+                            considerable interference. An operator can find additional information about
+                            unlicensed LTE bands in the <a class="a_link" href="https://github.com/teleworxllc/NaaSRunBook/tree/gh-pages/High%20Level%20Network%20Architecture/Primers/LTE_Unlicensed_Spectrum.pdf">Primer for LTE in Unlicensed Spectrum</a>. 
+                        <br>The NaaS
+                            operator must be aware that LTE operation in unlicensed spectrum may not be
+                            supported by all user devices.</li>
+                        <li class="normal-text">Get spectrum from government
+                            A NaaS operator can bid to be assigned an LTE band according to country
+                            regulations. Moreover, some countries have been interested in facilitating
+                            unused spectrum to service providers willing to bring mobile services to underserved
+                            populations (see <a class="a_link" href="https://www.rhizomatica.org/">Rhizomatica</a> initiative). The NaaS operator can assess if this same
+                            principle applies in its own environment.</li>
+                    </ol>
+
+                    
+                    <p class="normal-text">Spectrum bands differ in relation to their
+                    use (coverage or capacity), available bandwidth, clutter type (rural/urban) and
+                    whether theyre paired (spectrum block in a lower frequency band and associated
+                    block in an upper frequency band).</p>
+                    
+                    <p class="normal-text">Low frequencies (&lt; 1GHz) provide
+                    extended network coverage at lower cost, as fewer base stations are required to
+                    achieve greater geographic coverage. Higher frequencies (&gt;1 GHz) are
+                    primarily used to cover urban and suburban areas where data traffic is dense
+                    and substantial network capacity is required. (Higher spectrum bands normally
+                    provide larger bandwidths which allow for larger transmission rates). Figure 8
+                    shows spectrum band usage from a coverage and capacity point of view.</p>
+                    
+                    <p class="normal-text"><br><img border=0 width=463 height=175 id=image19.png
+                        src="images/ran_arquitecture/image010.gif"></p>
+                    
+                    <p align=center><i>Figure
+                    8  Coverage and capacity characteristics of spectrum bands</i><a></a></p>
+                    
+                    <p class="normal-text"><a></a>A NaaS operator can leverage Table 3 information to choose a band
+                    that best fits its business strategy.</p>
+                    
+                    <div align=center>
+                    
+                    <table class=a2 border=1 cellspacing=0 cellpadding=0 style='border-collapse:
+                    collapse;border:none'>
+                    <tr>
+                    <td width=98 rowspan=2 valign=top style='width:73.65pt;border:solid black 1.0pt;
+                    background:#1F4E79;padding:0cm 5.4pt 0cm 5.4pt'>
+                    <p align=center style='color:#fff;'>Spectrum Band</p>
+                    </td>
+                    <td width=98 rowspan=2 valign=top style='width:73.65pt;border:solid black 1.0pt;
+                    border-left:none;background:#1F4E79;padding:0cm 5.4pt 0cm 5.4pt'>
+                    <p align=center style='color:#fff;'>Band Size</p>
+                    <p align=center style='color:#fff;'>(available <br>
+                    bandwidth)</p>
+                    </td>
+                    <td width=98 rowspan=2 valign=top style='width:73.65pt;border:solid black 1.0pt;
+                    border-left:none;background:#1F4E79;padding:0cm 5.4pt 0cm 5.4pt'>
+                    <p align=center style='color:#fff;'>Propagation</p>
+                    </td>
+                    <td width=263 colspan=3 valign=top style='width:197.0pt;border:solid black 1.0pt;
+                    border-left:none;background:#1F4E79;padding:0cm 5.4pt 0cm 5.4pt'>
+                    <p align=center style='color:#fff;'>Clutter Type (main
+                    use)</p>
+                    </td>
+                    </tr>
+                    <tr>
+                    <td width=93 valign=top style='width:69.4pt;border-top:none;border-left:none;
+                    border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;background:
+                    #1F4E79;padding:0cm 5.4pt 0cm 5.4pt'>
+                    <p align=center style='color:#fff;'>Rural</p>
+                    <p align=center style='color:#fff;'>(coverage)</p>
+                    </td>
+                    <td width=85 valign=top style='width:63.8pt;border-top:none;border-left:none;
+                    border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;background:
+                    #1F4E79;padding:0cm 5.4pt 0cm 5.4pt'>
+                    <p align=center style='color:#fff;'>Suburban</p>
+                    <p align=center style='color:#fff;'>(capacity)</p>
+                    </td>
+                    <td width=85 valign=top style='width:63.8pt;border-top:none;border-left:none;
+                    border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;background:
+                    #1F4E79;padding:0cm 5.4pt 0cm 5.4pt'>
+                    <p align=center style='color:#fff;'>Urban</p>
+                    </td>
+                    </tr>
+                    <tr>
+                    <td width=98 valign=top style='width:73.65pt;border:solid black 1.0pt;
+                    border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+                    <p class="normal-text">Low Bands </p>
+                    <p class="normal-text">(below 1 GHz)</p>
+                    </td>
+                    <td width=98 valign=top style='width:73.65pt;border-top:none;border-left:
+                    none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+                    padding:0cm 5.4pt 0cm 5.4pt'>
+                    <p class="normal-text">Low</p>
+                    </td>
+                    <td width=98 valign=top style='width:73.65pt;border-top:none;border-left:
+                    none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+                    padding:0cm 5.4pt 0cm 5.4pt'>
+                    <p class="normal-text">High</p>
+                    </td>
+                    <td width=93 valign=top style='width:69.4pt;border-top:none;border-left:none;
+                    border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 5.4pt 0cm 5.4pt'>
+                    <p class="normal-text">Good</p>
+                    </td>
+                    <td width=85 valign=top style='width:63.8pt;border-top:none;border-left:none;
+                    border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 5.4pt 0cm 5.4pt'>
+                    <p class="normal-text">Medium</p>
+                    </td>
+                    <td width=85 valign=top style='width:63.8pt;border-top:none;border-left:none;
+                    border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 5.4pt 0cm 5.4pt'>
+                    <p class="normal-text">Poor</p>
+                    </td>
+                    </tr>
+                    <tr>
+                    <td width=98 valign=top style='width:73.65pt;border:solid black 1.0pt;
+                    border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+                    <p class="normal-text">Medium Bands</p>
+                    <p class="normal-text">(~1800 MHz)</p>
+                    </td>
+                    <td width=98 rowspan=3 valign=top style='width:73.65pt;border-top:none;
+                    border-left:none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+                    padding:0cm 5.4pt 0cm 5.4pt'>
+                    <p class="normal-text">High</p>
+                    </td>
+                    <td width=98 valign=top style='width:73.65pt;border-top:none;border-left:
+                    none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+                    padding:0cm 5.4pt 0cm 5.4pt'>
+                    <p class="normal-text">Medium</p>
+                    </td>
+                    <td width=93 valign=top style='width:69.4pt;border-top:none;border-left:none;
+                    border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 5.4pt 0cm 5.4pt'>
+                    <p class="normal-text">Medium</p>
+                    </td>
+                    <td width=85 valign=top style='width:63.8pt;border-top:none;border-left:none;
+                    border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 5.4pt 0cm 5.4pt'>
+                    <p class="normal-text">Good</p>
+                    </td>
+                    <td width=85 valign=top style='width:63.8pt;border-top:none;border-left:none;
+                    border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 5.4pt 0cm 5.4pt'>
+                    <p class="normal-text">Good</p>
+                    </td>
+                    </tr>
+                    <tr>
+                    <td width=98 valign=top style='width:73.65pt;border:solid black 1.0pt;
+                    border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+                    <p class="normal-text">High Bands</p>
+                    <p class="normal-text">(&gt; 2 GHz)</p>
+                    </td>
+                    <td width=98 rowspan=2 valign=top style='width:73.65pt;border-top:none;
+                    border-left:none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+                    padding:0cm 5.4pt 0cm 5.4pt'>
+                    <p class="normal-text">Poor</p>
+                    </td>
+                    <td width=93 rowspan=2 valign=top style='width:69.4pt;border-top:none;
+                    border-left:none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+                    padding:0cm 5.4pt 0cm 5.4pt'>
+                    <p class="normal-text">Poor</p>
+                    </td>
+                    <td width=85 rowspan=2 valign=top style='width:63.8pt;border-top:none;
+                    border-left:none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+                    padding:0cm 5.4pt 0cm 5.4pt'>
+                    <p class="normal-text">Medium</p>
+                    </td>
+                    <td width=85 rowspan=2 valign=top style='width:63.8pt;border-top:none;
+                    border-left:none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+                    padding:0cm 5.4pt 0cm 5.4pt'>
+                    <p class="normal-text">High</p>
+                    </td>
+                    </tr>
+                    <tr>
+                    <td width=98 valign=top style='width:73.65pt;border:solid black 1.0pt;
+                    border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+                    <p class="normal-text">Unlicensed Band</p>
+                    <p class="normal-text">(5GHz)</p>
+                    </td>
+                    </tr>
+                    </table>
+                    
+                    </div>
+                    
+                    <p align=center><i>Table 3  Main
+                    characteristics of LTE bands</i></p>
+                    
+                    <p class="normal-text">LTE spectrum can operate in a wide range of
+                    bandwidths: 1.4, 3, 5, 10, 15, or 20 MHz. </p>
+                    
+                    <p class="normal-text">If the NaaS operator has the opportunity to
+                    select a specific LTE spectrum band for a rural network deployment, its
+                    recommended to aim for a low band (below 1GHz) and a bandwidth that covers its
+                    present and future necessities in terms of coverage and capacity.</p>
+                    
+                    <p class="normal-text">Cell bandwidth of 20MHz is often used in
+                    urban and suburban environments in which capacity is the focus. However, having
+                    a 10MHz bandwidth can be a good trade-off between coverage and capacity
+                    performance. A 5MHz bandwidth can be useful to bring connectivity to an uncovered
+                    population but will be limited in its capacity performance. Having large
+                    bandwidths (e.g., higher than 20MHz) introduces the possibility for a capacity
+                    expansion using a second carrier.</p>
+                    
+                    <p class="normal-text">For instance, in recent countrywide rural projects
+                    (e.g., Internet para Todos in Peru), most mobile network operators (MNOs) and NaaS
+                    operators have selected Band 28  700MHz and 10MHz cell bandwidth, for this
+                    combination has been proven to provide good-to-provide rural coverage.</p>
+                    
+                    <br
+                    clear=all style='page-break-before:always'>
+                    
+                    
+                    <p class="normal-text"></p>
+                    
+                    <h5><a></a>Guard Band Requirements (overlay
+                    scenario)</h5>
+                    
+                    <p class="normal-text">One of the important aspects when
+                    introducing an LTE system on top of existing systems such as 2G-GSM or 3G-UMTS
+                    is the guard band requirement. More specifically, when LTE is collocated with
+                    other technologies in the same site where nearby antennas or sharing scenarios
+                    are adopted, then a guard band needs to be maintained to avoid interference
+                    between collocated systems.</p>
+                    
+                    <p class="normal-text">The guard band requirement can be
+                    summarized as follows:</p>
+
+                    <ul class="normal-text ul-iconos" style='margin-top:0in' start=1 type=1>
+                        <li>For collocated LTE and GSM
+                            operating on the same band, then a single carrier of GSM 200 kHz is enough to
+                            avoid interference between the two systems as shown in Figure 9.</li>
+                        
+                        <p class="normal-text"><br><img border=0 width=310 height=151 id=image10.png
+                        src="images/ran_arquitecture/image012.gif"></p>
+                    
+                        <p align=center><i>Figure 9  Guard band requirement for
+                            collocated LTE and GSM systems in the same band</i></p>
+                    
+                        <li>If LTE is collocated with
+                            another system in a different band (e.g., LTE at 2.6 GHz and GSM 1800 MHz) then
+                            no guard band is needed.</li>
+                        
+                        <li>No guard band is required if collocated LTE and UMTS operate on the same band, although both systems need to deploy a strict filter on the
+                            RF power amplifiers to avoid interference.</li>
+                        
+                        <li>When FDD-LTE is collocated
+                            with TDD-LTE, then half of the channel bandwidth (whichever is higher between
+                            FDD and TDD) is needed as a guard band.</li>
+                        
+                        <li>Where LTE is collocated with
+                            another LTE system (from another
+                            operator), there is minimum-to-no interference due to the orthogonal nature of the
+                            LTE access scheme. For this reason, there is no need for guard bands if adjacent
+                            technologies are FDD-LTE.</li>
+                    
+                    </ul>
+
+                    
+                    <p class="normal-text">Table 4 summarizes the guard band requirement
+                    for LTE with various collocated technologies.</p>
+                    
+                    <div align=center>
+                    
+                        <table class=a border=1 cellspacing=0 cellpadding=0 width=491 style='border-collapse:
+                        collapse;border:none'>
+                        <tr>
+                        <td width=217 style='width:162.8pt;border:solid black 1.0pt;background:#1F4E79;
+                        padding:0cm 5.4pt 0cm 5.4pt'>
+                        <p align=center style="color:#FFF">Co-existing
+                        systems<a></a></p>
+                        </td>
+                        <td width=274 style='width:205.5pt;border:solid black 1.0pt;border-left:none;
+                        background:#1F4E79;padding:0cm 5.4pt 0cm 5.4pt'>
+                        <p align=center style="color:#FFF">Required
+                        Guardband</p>
+                        </td>
+                        </tr>
+                        <tr>
+                        <td width=217 style='width:162.8pt;border:solid black 1.0pt;border-top:none;
+                        padding:0cm 5.4pt 0cm 5.4pt'>
+                        <p class="normal-text">LTE band X + GSM band
+                        X</p>
+                        </td>
+                        <td width=274 style='width:205.5pt;border-top:none;border-left:none;
+                        border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 5.4pt 0cm 5.4pt'>
+                        <p class="normal-text">0.2 MHz (One GSM
+                        carrier)</p>
+                        </td>
+                        </tr>
+                        <tr>
+                        <td width=217 style='width:162.8pt;border:solid black 1.0pt;border-top:none;
+                        padding:0cm 5.4pt 0cm 5.4pt'>
+                        <p class="normal-text">LTE band X + LTE band
+                        Y</p>
+                        </td>
+                        <td width=274 style='width:205.5pt;border-top:none;border-left:none;
+                        border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 5.4pt 0cm 5.4pt'>
+                        <p class="normal-text">0 MHz</p>
+                        </td>
+                        </tr>
+                        <tr>
+                        <td width=217 style='width:162.8pt;border:solid black 1.0pt;border-top:none;
+                        padding:0cm 5.4pt 0cm 5.4pt'>
+                        <p class="normal-text">LTE band X + UMTS band
+                        X</p>
+                        </td>
+                        <td width=274 style='width:205.5pt;border-top:none;border-left:none;
+                        border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 5.4pt 0cm 5.4pt'>
+                        <p class="normal-text">0 MHz (RRU must
+                        implement a strict RF filter to avoid interference)</p>
+                        </td>
+                        </tr>
+                        <tr>
+                        <td width=217 style='width:162.8pt;border:solid black 1.0pt;border-top:none;
+                        padding:0cm 5.4pt 0cm 5.4pt'>
+                        <p class="normal-text">LTE-FDD + LTE-TDD</p>
+                        </td>
+                        <td width=274 style='width:205.5pt;border-top:none;border-left:none;
+                        border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 5.4pt 0cm 5.4pt'>
+                        <p class="normal-text">Half of the channel BW
+                        (the higher one)</p>
+                        </td>
+                        </tr>
+                        <tr>
+                        <td width=217 style='width:162.8pt;border:solid black 1.0pt;border-top:none;
+                        padding:0cm 5.4pt 0cm 5.4pt'>
+                        <p class="normal-text">LTE band X + LTE band
+                        X</p>
+                        </td>
+                        <td width=274 style='width:205.5pt;border-top:none;border-left:none;
+                        border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 5.4pt 0cm 5.4pt'>
+                        <p class="normal-text">0 MHz</p>
+                        </td>
+                        </tr>
+                        </table>
+                    
+                    </div>
+                    
+                    <p align=center><i>Table 4  Summary
+                    of guard band requirements</i></p>
+                    
+                    <h3>3.1.2 LTE
+                    Duplexing Scheme Selection</h3>
+                    
+                    <p class="normal-text">LTE has two schemes for resource sharing
+                    and to achieve two-way communication (between the eNodeB and UE): frequency
+                    division duplexing (FDD) and time division duplexing (TDD). The FDD scheme uses
+                    one frequency for downlink (DL) and another for uplink (UL), permitting simultaneous
+                    communication between BTS and UE. But in a TDD scheme, both BTS and UE use the
+                    same frequency for their transmissions, thereby preventing simultaneous
+                    communication and implementing a dedicated time slot for transmission (TX) and
+                    for reception (RX). Figure 10 shows the operation of FDD and TDD schemes.</p>
+                    
+                    <p class="normal-text"><br><img border=0 width=500 height=237 id=image14.png
+                        src="images/ran_arquitecture/image013.gif"></p>
+                    
+                    <p align=center><i>Figure 10  LTE duplexing schemes</i></p>
+                    
+                    <p class="normal-text">The NaaS operator must be aware that the
+                    duplexing scheme also depends on the operating band. Where the selected (available
+                    or allocated) frequency band differs from the chosen duplexing scheme, the
+                    operator will be tied to working with the scheme associated to that band.</p>
+                    
+                    <p class="normal-text">Table 5 shows a comparison of the FDD and
+                    TDD schemes between transmission rate, coverage, and CAPEX performance. A NaaS
+                    operator can use this criteria to choose the scheme that best fits its service
+                    requirements.</p>
+                    
+                    <div align=center>
+                    
+                        <table class=a0 border=1 cellspacing=0 cellpadding=0 width=557
+                        style='border-collapse:collapse;border:none'>
+                        <tr>
+                        <td width=124 style='width:93.35pt;border:solid black 1.0pt;background:#1F4E79;
+                        padding:0cm 5.4pt 0cm 5.4pt'>
+                        <p align=center style="color:#FFF">Performance
+                        Item<a></a></p>
+                        </td>
+                        <td width=206 style='width:154.5pt;border:solid black 1.0pt;border-left:none;
+                        background:#1F4E79;padding:0cm 5.4pt 0cm 5.4pt'>
+                        <p align=center style="color:#FFF">FDD
+                        - LTE</p>
+                        </td>
+                        <td width=227 valign=top style='width:6.0cm;border:solid black 1.0pt;
+                        border-left:none;background:#1F4E79;padding:0cm 5.4pt 0cm 5.4pt'>
+                        <p align=center style="color:#FFF">TDD
+                        - LTE</p>
+                        </td>
+                        </tr>
+                        <tr>
+                        <td width=124 style='width:93.35pt;border:solid black 1.0pt;border-top:none;
+                        padding:0cm 5.4pt 0cm 5.4pt'>
+                        <p class="normal-text">Transmission Rate
+                        Performance</p>
+                        </td>
+                        <td width=206 style='width:154.5pt;border-top:none;border-left:none;
+                        border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 5.4pt 0cm 5.4pt'>
+                        <p class="normal-text">FDD allows higher throughputs.</p>
+                        </td>
+                        <td width=227 valign=top style='width:6.0cm;border-top:none;border-left:none;
+                        border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 5.4pt 0cm 5.4pt'>
+                        <p class="normal-text">Transmission rates cannot be achieved
+                        at similar distances when compared to FDD. However, it allows the
+                        implementation of advanced antenna techniques such as beamforming.</p>
+                        </td>
+                        </tr>
+                        <tr>
+                        <td width=124 style='width:93.35pt;border:solid black 1.0pt;border-top:none;
+                        padding:0cm 5.4pt 0cm 5.4pt'>
+                        <p class="normal-text">Site Count</p>
+                        </td>
+                        <td width=206 style='width:154.5pt;border-top:none;border-left:none;
+                        border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 5.4pt 0cm 5.4pt'>
+                        <p class="normal-text">Since FDD achieves cell edge
+                        rates at farther distances, the number of sites required to serve a given
+                        area is lower than TDD.</p>
+                        </td>
+                        <td width=227 valign=top style='width:6.0cm;border-top:none;border-left:none;
+                        border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 5.4pt 0cm 5.4pt'>
+                        <p class="normal-text">In a <a class="a_link" href="https://www.qualcomm.com/media/documents/files/fdd-tdd-comparison.pdf">system comparison</a> using the same frequency
+                        band, the TDD system requires 31% more base stations than FDD when using a
+                        1:1 (same number of RX and TX slots) and 65% more base stations when using a
+                        2:1 (twice the amount of RX than TX slots) due to capacity constraints.</p>
+                        </td>
+                        </tr>
+                        <tr>
+                        <td width=124 style='width:93.35pt;border:solid black 1.0pt;border-top:none;
+                        padding:0cm 5.4pt 0cm 5.4pt'>
+                        <p class="normal-text">Spectrum Arrangement</p>
+                        </td>
+                        <td width=206 style='width:154.5pt;border-top:none;border-left:none;
+                        border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 5.4pt 0cm 5.4pt'>
+                        <p class="normal-text">FDD operation requires twice
+                        more spectrum for a single LTE carrier for a given channel bandwidth. </p>
+                        </td>
+                        <td width=227 style='width:6.0cm;border-top:none;border-left:none;border-bottom:
+                        solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 5.4pt 0cm 5.4pt'>
+                        <p class="normal-text">TDD can operate in an unpaired
+                        spectrum. In addition, it can also be suitable for asymmetric transmission
+                        demands (like fixed wireless access deployments).</p>
+                        </td>
+                        </tr>
+                        <tr>
+                        <td width=124 style='width:93.35pt;border:solid black 1.0pt;border-top:none;
+                        padding:0cm 5.4pt 0cm 5.4pt'>
+                        <p class="normal-text">CAPEX</p>
+                        </td>
+                        <td width=433 colspan=2 style='width:324.6pt;border-top:none;border-left:
+                        none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+                        padding:0cm 5.4pt 0cm 5.4pt'>
+                        <p class="normal-text">The fact that FDD requires fewer
+                        BTSs to serve a specific area using the same frequency allows the NaaS
+                        Operator to incur in lower equipment and infrastructure associated costs.</p>
+                        <p class="normal-text">On the other hand, FDD spectrum
+                        fees can make it a more expensive option.</p>
+                        </td>
+                        </tr>
+                        </table>
+                    
+                    </div>
+                    
+                    <p align=center><i>Table 5  FDD
+                    vs TDD performance comparison.</i></p>
+                    
+                    <h3><a></a>3.1.3
+                    Transmitter Power Definition</h3>
+                    
+                    <p class="normal-text">Together with the operating band, maximum
+                    transmitter power (per antenna port) is one of the most important parameters to
+                    be considered ahead of the design step. BTS transmission power must be set
+                    based on the following considerations:</p>
+
+                    <ul class="normal-text ul-iconos" style='margin-top:0in' start=1 type=1>
+                        <li>BTS Type  There are no
+                            formal rules to define the transmitter power of a BTS based on its type (macro cell or small cell). Table
+                            6 displays classification between BTS types based on transmitter maximum power.</li>
+                        <br>
+                    
+                    
+                    
+                        <div align=center>
+                        
+                        <table class=a1 border=1 cellspacing=0 cellpadding=0 width=468
+                        style='border-collapse:collapse;border:none'>
+                        <tr>
+                        <td width=236 valign=top style='width:176.95pt;border:solid black 1.0pt;
+                        background:#1F4E79;padding:0cm 5.4pt 0cm 5.4pt'>
+                        <p align=center style="color:#FFF">BTS
+                        Type</p>
+                        </td>
+                        <td width=232 valign=top style='width:173.95pt;border:solid black 1.0pt;
+                        border-left:none;background:#1F4E79;padding:0cm 5.4pt 0cm 5.4pt'>
+                        <p align=center style="color:#FFF">Radiated
+                        Power</p>
+                        </td>
+                        </tr>
+                        <tr>
+                        <td width=236 valign=top style='width:176.95pt;border:solid black 1.0pt;
+                        border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+                        <p class="normal-text">Medium Range (Small Cell) BTS</p>
+                        </td>
+                        <td width=232 valign=top style='width:173.95pt;border-top:none;border-left:
+                        none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+                        padding:0cm 5.4pt 0cm 5.4pt'>
+                        <p class="normal-text">
+                        Up to 10W (40 dBm)</p>
+                        </td>
+                        </tr>
+                        <tr>
+                        <td width=236 valign=top style='width:176.95pt;border:solid black 1.0pt;
+                        border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+                        <p class="normal-text">Wide Area (Macro Cell) BTS</p>
+                        </td>
+                        <td width=232 valign=top style='width:173.95pt;border-top:none;border-left:
+                        none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+                        padding:0cm 5.4pt 0cm 5.4pt'>
+                        <p class="normal-text">
+                        There is no upper limit
+                        for the radiated output power of a Wide Area (Macro Cell) BTS</p>
+                        </td>
+                        </tr>
+                        </table>
+                        
+                        </div>
+                    
+                        <p align=center><i>Table 6. BTS classification based on transmitter power.</i></p>
+                    
+                    
+                    
+                        <p style="font-size: 16px;">For small cells, most equipment in the market can achieve
+                        10W (40 dBm) as maximum transmission power. In MORAN scenarios (section 3.3.1)
+                        a 10W small cell can permit the implementation of two independent 5W carriers
+                        (one per mobile operator). This rule should be always considered for small cell
+                        definition because increasing power with a small transmitter height has
+                        diminishing returns.</p>
+                    
+                        <p style="font-size: 16px;">For transmit power ranges above 10W, network design should consider
+                        a macro cell site for the design process. Maximum power can be set according to
+                        the following point.</p>
+                    
+                        <li>Tower height  As detailed
+                        in the <a href="ran_hld_module.html" class="a_link">RAN HLD</a> module, the higher a transmitter is from the ground, the
+                        wider the coverage area achieved by the BTS. (Tower height consideration doesnt
+                        have an important impact in small cells as theyre usually located in a smaller
+                        infrastructure). In this sense, a NaaS operator can use this principle to set
+                        higher transmitter power for those sites placed on high towers to reach a wider coverage area. Table 7
+                        shows an example of how to define maximum permitted transmitter power for macro
+                        cell sites according to a transmitters mounted height.</li>
+                        <br>
+                    
+                        <div align=center>
+                        
+                        <table class=a2 border=1 cellspacing=0 cellpadding=0 width=369
+                        style='border-collapse:collapse;border:none'>
+                        <tr>
+                        <td width=189 style='width:141.5pt;border:solid black 1.0pt;background:#1F4E79;
+                        padding:0cm 5.4pt 0cm 5.4pt'>
+                        <p align=center style="color:#FFF">Transmitter
+                        Height<a></a></p>
+                        </td>
+                        <td width=180 style='width:134.9pt;border:solid black 1.0pt;border-left:none;
+                        background:#1F4E79;padding:0cm 5.4pt 0cm 5.4pt'>
+                        <p align=center style="color:#FFF">Maximum
+                        Allowed Transmit Power</p>
+                        </td>
+                        </tr>
+                        <tr>
+                        <td width=189 style='width:141.5pt;border:solid black 1.0pt;border-top:none;
+                        padding:0cm 5.4pt 0cm 5.4pt'>
+                        <p class="normal-text">&lt; 10m</p>
+                        </td>
+                        <td width=180 style='width:134.9pt;border-top:none;border-left:none;
+                        border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 5.4pt 0cm 5.4pt'>
+                        <p class="normal-text">&lt;= 10 W</p>
+                        </td>
+                        </tr>
+                        <tr>
+                        <td width=189 style='width:141.5pt;border:solid black 1.0pt;border-top:none;
+                        padding:0cm 5.4pt 0cm 5.4pt'>
+                        <p class="normal-text">From 10m to 20m</p>
+                        </td>
+                        <td width=180 style='width:134.9pt;border-top:none;border-left:none;
+                        border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 5.4pt 0cm 5.4pt'>
+                        <p class="normal-text">10W to 20 W</p>
+                        </td>
+                        </tr>
+                        <tr>
+                        <td width=189 style='width:141.5pt;border:solid black 1.0pt;border-top:none;
+                        padding:0cm 5.4pt 0cm 5.4pt'>
+                        <p class="normal-text">From 20m to 30m</p>
+                        </td>
+                        <td width=180 style='width:134.9pt;border-top:none;border-left:none;
+                        border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 5.4pt 0cm 5.4pt'>
+                        <p class="normal-text">20W to 30W</p>
+                        </td>
+                        </tr>
+                        <tr>
+                        <td width=189 style='width:141.5pt;border:solid black 1.0pt;border-top:none;
+                        padding:0cm 5.4pt 0cm 5.4pt'>
+                        <p class="normal-text">&gt; 30m</p>
+                        </td>
+                        <td width=180 style='width:134.9pt;border-top:none;border-left:none;
+                        border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 5.4pt 0cm 5.4pt'>
+                        <p class="normal-text">&gt;= 30W</p>
+                        </td>
+                        </tr>
+                        </table>
+                        
+                        </div>
+                    
+                        <p align=center><i>Table 7. Tower height and Maximum Allowed Transmitter Power
+                        relation example.</i></p>
+                    
+                        <li>Local and regional
+                        regulation  The NaaS operator must be aware of any local or regional
+                        regulations that prevent high transmit powers to be used. Such regulations are
+                        mandatory to be followed by all operators. For example, maximum permitted
+                        transmitter power for a certain region might be set to 30W. Here, the operator must
+                        arrange its transmitter height vs. maximum permitted transmitter power considering
+                        the 30W limitation.</li>
+                    </ul>
+
+
+
+                    
+                    <br><h2><a class="titulo-h2 anchor-bum color-luminati-3" name="item3-2">3.2 RAN
+                    Topology &amp; Scenario Definition</a></h2>
+                    
+                    <p class="normal-text">This section guides the NaaS operator on
+                    its way to standardizing the topology that will be implemented on the RAN,
+                    considering possible scenarios that include:</p>
+
+
+                    <ul class="normal-text ul-iconos" style='margin-top:0in' start=1 type=1>
+                        <li>D-RAN vs C-RAN Architecture.</li>
+                    
+                        <li>
+                        Greenfield and/or overlay
+                        deployment.</li>
+                        
+                        <li>
+                        Macro cells and/or Small
+                        cells</li>
+                        
+                        <li>
+                        Use of a demarcation point
+                        between access and core network</li>
+                    </ul>
+                    
+                                        
+                    <h3><a></a>3.2.1
+                    D-RAN vs C-RAN Definition</h3>
+                    
+                    <p class="normal-text">As shown in Table 11, there are several
+                    tradeoffs that must be considered when choosing between D-RAN and C-RAN. In
+                    addition, this selection will condition several aspects of the overall
+                    networkmainly transport and core design and infrastructure.</p>
+                    
+                    <p class="normal-text">Despite being a promising solution in terms
+                    of performance management and being future-proof, C-RAN is only feasible in a
+                    reduced number of scenarios. Considering this, deciding between <br>
+                    D-RAN and C-RAN can be reduced to the following points:</p>
+                    
+                    <ul class="normal-text ul-iconos" style='margin-top:0in' start=1 type=1>
+                        <li>Number of coverage areas  Defined
+                            as towns or cities that will be covered. A C-RAN architecture isnt efficient
+                            for less than three coverage areas.</li>
+                        
+                        <li>Separation between coverage
+                            areas  If a separation greater that 40 km exists between coverage areas, C-RAN
+                            architecture isnt feasible due to latency issues</li>
+                        
+                        <li>Optical fronthaul network  C-RAN
+                            requires an optical fronthaul network that comes with a high investment. Link lengths
+                            must also be below 40km site
+                            to operate properly. C-RAN can only be considered if operator can afford construction
+                            of a fronthaul (fiber) network.</li>
+                    </ul>
+                    
+                    
+                    <p class="normal-text">The methodology
+                    to select between a D-RAN or C-RAN architecture is shown in Figure 11:</p>
+                    
+                    <p class="normal-text"><br><img border=0 width=250 height=340 id=image7.jpg
+                        src="images/ran_arquitecture/image014.jpg"
+                        alt="A close up of a map&#10;&#10;Description automatically generated"></p>
+                    
+                    <p align=center><i>Figure 11  Methodology for selecting D-RAN or C-RAN architecture</i></p>
+                    
+                    <h3 style='margin-bottom:6.0pt'><a></a>3.2.2 Greenfield/Overlay Scenarios Identification</h3>
+                    
+                    <p class="normal-text">A NaaS operator can identify its initial
+                    scenarios by considering the following points:</p>
+
+                    <ul class="normal-text ul-iconos" style='margin-top:0in' start=1 type=1>
+                        <li>Greenfield site definition 
+                            No existing sites available.</li>
+                    
+                        <li>Overlay site definition  The
+                            operator already has an existing operating network in desired region and all
+                            sites on the network have enough resources to support adding a new RAT.</li>
+                        
+                        <li>Greenfield + overlay  The
+                            operator already has an existing operating network in desired region, but only
+                            some sites have enough resources (i.e., available tower space and enough power
+                            supply for new equipment) to support a new RAT addition. Remaining sites will
+                            need to be greenfield.</li>
+                    </ul>
+
+
+                    <p class="normal-text">Figure 12 shows a methodology to identify initial
+                    scenarios in a NaaS operators environment. The network can comprise a combination
+                    of greenfield and overlay sites if conditions are met.</p>
+                    
+                    <p class="normal-text"><br><img border=0 width=474 height=302 id=image6.jpg
+                        src="images/ran_arquitecture/image015.jpg"
+                        alt="A close up of a map&#10;&#10;Description automatically generated"></p>
+                    
+                    <p align=center><i>Figure 12  Methodology to select between
+                    greenfield and overlay scenarios</i></p>
+                    
+                    <p class="normal-text">Existing sites must be able to accommodate
+                    new infrastructure (e.g., BBU, RRUs, antennas) to be considered as overlays.
+                    This means they must have enough tower space and power sources for new
+                    equipment. A site survey should be held to assess if existing sites are overlay
+                    deployment candidates. The <a class="a_link" href="ran_hld_module.html">RAN HLD</a> module provides a questionnaire for determining
+                    whether existing sites can be used for an overlay. Such an evaluation must be made
+                    by way of a site survey at the site in question. Site survey creation details are
+                    in the <a class="a_link" href="site_survey.html">Site Survey</a> module.</p>
+                    
+                    <br
+                    clear=all style='page-break-before:always'>
+                    
+                    
+                    <p class="normal-text"></p>
+                    
+                    <h3><a></a>3.2.3 Macro/Small
+                    Cell Scenario Definition</h3>
+                    
+                    <p class="normal-text">A NaaS operator network can comprise a
+                    combination of both macro and small cells. Table 8 <br>
+                    is a technical comparison between the cell types. </p>
+                    
+                    <div align=center>
+                    
+                        <table class=a3 border=1 cellspacing=0 cellpadding=0 width=518
+                        style='border-collapse:collapse;border:none'>
+                        <tr>
+                        <td width=113 style='width:3.0cm;border:solid black 1.0pt;background:#1F4E79;
+                        padding:0cm 5.4pt 0cm 5.4pt'>
+                        
+                        </td>
+                        <td width=199 style='width:149.1pt;border:solid black 1.0pt;border-left:none;
+                        background:#1F4E79;padding:0cm 5.4pt 0cm 5.4pt'>
+                        <p align=center style="color:#FFF">Macro
+                        Cell BTS</p>
+                        </td>
+                        <td width=206 style='width:154.3pt;border:solid black 1.0pt;border-left:none;
+                        background:#1F4E79;padding:0cm 5.4pt 0cm 5.4pt'>
+                        <p align=center style="color:#FFF">Small
+                        Cell BTS</p>
+                        </td>
+                        </tr>
+                        <tr>
+                        <td width=113 style='width:3.0cm;border:solid black 1.0pt;border-top:none;
+                        padding:0cm 5.4pt 0cm 5.4pt'>
+                        <p class="normal-text"><a></a>Main purpose</p>
+                        </td>
+                        <td width=199 style='width:149.1pt;border-top:none;border-left:none;
+                        border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 5.4pt 0cm 5.4pt'>
+                        <p class="normal-text">Coverage and capacity</p>
+                        </td>
+                        <td width=206 style='width:154.3pt;border-top:none;border-left:none;
+                        border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 5.4pt 0cm 5.4pt'>
+                        <p class="normal-text">Additional Capacity and
+                        cover small targeted areas.</p>
+                        <p class="normal-text">Can be selected if
+                        Macro Cell BTS is too expensive.</p>
+                        </td>
+                        </tr>
+                        <tr>
+                        <td width=113 style='width:3.0cm;border:solid black 1.0pt;border-top:none;
+                        padding:0cm 5.4pt 0cm 5.4pt'>
+                        <p class="normal-text">Transmit Power</p>
+                        </td>
+                        <td width=199 style='width:149.1pt;border-top:none;border-left:none;
+                        border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 5.4pt 0cm 5.4pt'>
+                        <p class="normal-text">Up to 80W (depending
+                        on equipment suppliers capabilities)</p>
+                        </td>
+                        <td width=206 style='width:154.3pt;border-top:none;border-left:none;
+                        border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 5.4pt 0cm 5.4pt'>
+                        <p class="normal-text">Up to 10W</p>
+                        </td>
+                        </tr>
+                        <tr>
+                        <td width=113 style='width:3.0cm;border:solid black 1.0pt;border-top:none;
+                        padding:0cm 5.4pt 0cm 5.4pt'>
+                        <p class="normal-text">Cell Coverage</p>
+                        </td>
+                        <td width=199 style='width:149.1pt;border-top:none;border-left:none;
+                        border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 5.4pt 0cm 5.4pt'>
+                        <p class="normal-text">~5  10 km</p>
+                        </td>
+                        <td width=206 style='width:154.3pt;border-top:none;border-left:none;
+                        border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 5.4pt 0cm 5.4pt'>
+                        <p class="normal-text">~2  5 km</p>
+                        </td>
+                        </tr>
+                        <tr>
+                        <td width=113 style='width:3.0cm;border:solid black 1.0pt;border-top:none;
+                        padding:0cm 5.4pt 0cm 5.4pt'>
+                        <p class="normal-text">Site Solution</p>
+                        </td>
+                        <td width=199 style='width:149.1pt;border-top:none;border-left:none;
+                        border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 5.4pt 0cm 5.4pt'>
+                        <p class="normal-text">BBU + RRU + Antenna</p>
+                        </td>
+                        <td width=206 style='width:154.3pt;border-top:none;border-left:none;
+                        border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 5.4pt 0cm 5.4pt'>
+                        <p class="normal-text">All-in-One equipment.</p>
+                        <p class="normal-text">Integrated BBU and
+                        RRUs (in some cases, antennas can also be integrated into the same box.</p>
+                        </td>
+                        </tr>
+                        <tr>
+                        <td width=113 style='width:3.0cm;border:solid black 1.0pt;border-top:none;
+                        padding:0cm 5.4pt 0cm 5.4pt'>
+                        <p class="normal-text">Antenna Configurations</p>
+                        </td>
+                        <td width=199 style='width:149.1pt;border-top:none;border-left:none;
+                        border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 5.4pt 0cm 5.4pt'>
+                        <p class="normal-text">2x2, 4x4 MIMO</p>
+                        </td>
+                        <td width=206 style='width:154.3pt;border-top:none;border-left:none;
+                        border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 5.4pt 0cm 5.4pt'>
+                        <p class="normal-text">2x2 MIMO</p>
+                        </td>
+                        </tr>
+                        <tr>
+                        <td width=113 style='width:3.0cm;border:solid black 1.0pt;border-top:none;
+                        padding:0cm 5.4pt 0cm 5.4pt'>
+                        <p class="normal-text">Installation options</p>
+                        </td>
+                        <td width=199 style='width:149.1pt;border-top:none;border-left:none;
+                        border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 5.4pt 0cm 5.4pt'>
+                        <p class="normal-text">Tall towers (10m 
+                        40m)</p>
+                        <p class="normal-text">Rooftops</p>
+                        </td>
+                        <td width=206 style='width:154.3pt;border-top:none;border-left:none;
+                        border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 5.4pt 0cm 5.4pt'>
+                        <p class="normal-text">Small towers (up to
+                        10m)</p>
+                        <p class="normal-text">Lamp poles</p>
+                        <p class="normal-text">Rooftops</p>
+                        </td>
+                        </tr>
+                        </table>
+                    
+                    </div>
+                    
+                    <p align=center><i>Table 8  Macro
+                    and small cell BTS technical comparison</i></p>
+                    
+                    <p class="normal-text">Selecting BTS types must take into
+                    consideration several conditions ranging from technical, infrastructural, and
+                    financial constraints to population distribution and traffic behavior. The
+                    combination of these conditions could present scenarios that vary from one
+                    region to another. Table 9 displays a scenario definition based on population
+                    classification.</p>
+                    
+                    <div align=center>
+                    
+                        <table class=a4 border=1 cellspacing=0 cellpadding=0 width=397
+                        style='border-collapse:collapse;border:none'>
+                        <tr>
+                        <td width=132 style='width:99.2pt;border:solid black 1.0pt;background:#1F4E79;
+                        padding:0cm 5.4pt 0cm 5.4pt'>
+                        <p align=center style="color:#FFF">Town
+                        Size<a></a></p>
+                        </td>
+                        <td width=132 style='width:99.2pt;border:solid black 1.0pt;border-left:none;
+                        background:#1F4E79;padding:0cm 5.4pt 0cm 5.4pt'>
+                        <p align=center style="color:#FFF">Population
+                        Density</p>
+                        </td>
+                        <td width=132 style='width:99.2pt;border:solid black 1.0pt;border-left:none;
+                        background:#1F4E79;padding:0cm 5.4pt 0cm 5.4pt'>
+                        <p align=center style="color:#FFF">Separation
+                        between Towns</p>
+                        </td>
+                        </tr>
+                        <tr>
+                        <td width=132 style='width:99.2pt;border:solid black 1.0pt;border-top:none;
+                        padding:0cm 5.4pt 0cm 5.4pt'>
+                        <p class="normal-text">Small</p>
+                        </td>
+                        <td width=132 style='width:99.2pt;border-top:none;border-left:none;
+                        border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 5.4pt 0cm 5.4pt'>
+                        <p class="normal-text">Low</p>
+                        </td>
+                        <td width=132 style='width:99.2pt;border-top:none;border-left:none;
+                        border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 5.4pt 0cm 5.4pt'>
+                        <p class="normal-text">High</p>
+                        </td>
+                        </tr>
+                        <tr>
+                        <td width=132 style='width:99.2pt;border:solid black 1.0pt;border-top:none;
+                        padding:0cm 5.4pt 0cm 5.4pt'>
+                        <p class="normal-text">Small</p>
+                        </td>
+                        <td width=132 style='width:99.2pt;border-top:none;border-left:none;
+                        border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 5.4pt 0cm 5.4pt'>
+                        <p class="normal-text">High</p>
+                        </td>
+                        <td width=132 style='width:99.2pt;border-top:none;border-left:none;
+                        border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 5.4pt 0cm 5.4pt'>
+                        <p class="normal-text">High / Low</p>
+                        </td>
+                        </tr>
+                        <tr>
+                        <td width=132 style='width:99.2pt;border:solid black 1.0pt;border-top:none;
+                        padding:0cm 5.4pt 0cm 5.4pt'>
+                        <p class="normal-text">Big</p>
+                        </td>
+                        <td width=132 style='width:99.2pt;border-top:none;border-left:none;
+                        border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 5.4pt 0cm 5.4pt'>
+                        <p class="normal-text">Low</p>
+                        </td>
+                        <td width=132 style='width:99.2pt;border-top:none;border-left:none;
+                        border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 5.4pt 0cm 5.4pt'>
+                        <p class="normal-text">High / Low</p>
+                        </td>
+                        </tr>
+                        <tr>
+                        <td width=132 style='width:99.2pt;border:solid black 1.0pt;border-top:none;
+                        padding:0cm 5.4pt 0cm 5.4pt'>
+                        <p class="normal-text">Big</p>
+                        </td>
+                        <td width=132 style='width:99.2pt;border-top:none;border-left:none;
+                        border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 5.4pt 0cm 5.4pt'>
+                        <p class="normal-text">High</p>
+                        </td>
+                        <td width=132 style='width:99.2pt;border-top:none;border-left:none;
+                        border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 5.4pt 0cm 5.4pt'>
+                        <p class="normal-text">Low</p>
+                        </td>
+                        </tr>
+                        </table>
+                    
+                    </div>
+                    
+                    <p align=center><i>Table 9 
+                    Scenario definition</i></p>
+                    
+                    <p class="normal-text">Multiple scenarios might require considering
+                    a wide range of BTS types and configurations.</p>
+                    
+                    <p class="normal-text">To create a homogeneous network (that will
+                    simplify future processes such as site catalog, network construction, and
+                    maintenance, et al.), the NaaS operator can reduce all BTS configurations to a
+                    few options. While having a low number of configurations might limit performance,
+                    it provides for cost-effective and easy network operation.</p>
+                    
+                    <p class="normal-text">Table 10 shows BTS configurations for the operator
+                    to consider for its entire network. The design team will decide during the HLD
+                    process which option best suits a specific area.</p>
+                    
+                    <div align=center>
+                    
+                        <table class=a5 border=1 cellspacing=0 cellpadding=0 width=425
+                        style='border-collapse:collapse;border:none'>
+                        <tr>
+                        <td width=85 style='width:63.8pt;border:solid black 1.0pt;background:#1F4E79;
+                        padding:0cm 5.4pt 0cm 5.4pt'>
+                        <p align=center style="color:#FFF">BTS
+                        Type<a></a></p>
+                        </td>
+                        <td width=212 style='width:159.0pt;border:solid black 1.0pt;border-left:none;
+                        background:#1F4E79;padding:0cm 5.4pt 0cm 5.4pt'>
+                        <p align=center style="color:#FFF">Number
+                        of sectors per BTS</p>
+                        </td>
+                        <td width=128 valign=top style='width:95.9pt;border:solid black 1.0pt;
+                        border-left:none;background:#1F4E79;padding:0cm 5.4pt 0cm 5.4pt'>
+                        <p align=center style="color:#FFF">Tower
+                        Hight</p>
+                        </td>
+                        </tr>
+                        <tr>
+                        <td width=85 style='width:63.8pt;border:solid black 1.0pt;border-top:none;
+                        padding:0cm 5.4pt 0cm 5.4pt'>
+                        <p class="normal-text">Small Cells</p>
+                        </td>
+                        <td width=212 style='width:159.0pt;border-top:none;border-left:none;
+                        border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 5.4pt 0cm 5.4pt'>
+                        <p class="normal-text">-
+                        1 sector (omni)</p>
+                        </td>
+                        <td width=128 style='width:95.9pt;border-top:none;border-left:none;
+                        border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 5.4pt 0cm 5.4pt'>
+                        <p class="normal-text">Indistinct</p>
+                        </td>
+                        </tr>
+                        <tr style='height:13.5pt'>
+                        <td width=85 rowspan=3 style='width:63.8pt;border:solid black 1.0pt;
+                        border-top:none;padding:0cm 5.4pt 0cm 5.4pt;height:13.5pt'>
+                        <p class="normal-text">Macro Cells</p>
+                        </td>
+                        <td width=212 style='width:159.0pt;border-top:none;border-left:none;
+                        border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;
+                        height:13.5pt'>
+                        <p class="normal-text">-
+                        1 sector (directional)</p>
+                        <p class="normal-text"><b>(Only for highway
+                        coverage)</b></p>
+                        </td>
+                        <td width=128 style='width:95.9pt;border-top:none;border-left:none;
+                        border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;
+                        height:13.5pt'>
+                        <p class="normal-text">Indistinct</p>
+                        </td>
+                        </tr>
+                        <tr style='height:13.5pt'>
+                        <td width=212 style='width:159.0pt;border-top:none;border-left:none;
+                        border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;
+                        height:13.5pt'>
+                        <p class="normal-text">-
+                        2 sectors (directional)</p>
+                        </td>
+                        <td width=128 valign=top style='width:95.9pt;border-top:none;border-left:
+                        none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+                        padding:0cm 5.4pt 0cm 5.4pt;height:13.5pt'>
+                        <p class="normal-text">10m to 20m</p>
+                        </td>
+                        </tr>
+                        <tr style='height:13.5pt'>
+                        <td width=212 style='width:159.0pt;border-top:none;border-left:none;
+                        border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;
+                        height:13.5pt'>
+                        <p class="normal-text">-
+                        3 sectors (directional)</p>
+                        </td>
+                        <td width=128 valign=top style='width:95.9pt;border-top:none;border-left:
+                        none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+                        padding:0cm 5.4pt 0cm 5.4pt;height:13.5pt'>
+                        <p class="normal-text">&gt; 20m</p>
+                        </td>
+                        </tr>
+                        </table>
+                    
+                    </div>
+                    
+                    <p align=center><i>Table 10 
+                    Number of sectors per BTS type</i></p>
+                    
+                    <h3><a></a>3.2.4
+                    Demarcation Point </h3>
+                    
+                    <p class="normal-text">Network demarcation points divides it into
+                    two or more sections. For example, S-GW acts <br>
+                    as a demarcation point between the RAN and core network.</p>
+                    
+                    <p class="normal-text">A RAN demarcation point is required if the
+                    core network isnt maintained/owned by the NaaS operator. The demarcation point
+                    provides control over RAN performance and to perform charging activities to its
+                    customers (mobile operators). If a mobile core deployment is considered as part
+                    <br>
+                    of the architecture, then the demarcation point is the SGW or PDN gateway. But
+                    if there are no plans for a mobile core, then a demarcation point must be
+                    considered in the RAN.</p>
+                    
+                    <p class="normal-text">The following are some functionalities
+                    introduced by a RAN demarcation point:</p>
+
+                    <ul class="normal-text ul-iconos" style='margin-top:0in' start=1 type=1>
+                        <li>NaaS operator independence 
+                            Creates a logical separation between an MNO and NaaS operator network. It enables
+                            deployment, configuration, operation, and monitoring <br>
+                            of sites without depending on the MNO.</li>
+                        
+                        <li>Security towards core
+                            network  Provides a security layer protecting the core network.</li>
+                    </ul>
+                    
+                    
+                    <p class="normal-text">Some demarcation points that can be
+                    implemented in the RAN are:</p>
+
+
+
+
+                    <ul class="normal-text ul-iconos" style='margin-top:0in' start=1 type=1>
+                        <li>RAN gateway (GW) for traffic
+                            aggregation &#8210 This GW improves management and performance operations in
+                            multi-RAT or multi-MNO scenarios.<br>
+                        Additional functionalities introduced by a RAN GW are:</li>
+                        
+                        <ul class="normal-text ul-iconos" style='margin-top:0in' start=1 type=1>
+                            <li style="font-size: 16px;">RAN homologation - Abstracts
+                                the complexity of multi-RAT solutions toward transport networks.</li>
+                        
+                            <li style="font-size: 16px;">Multi-vendor support  Connectivity
+                                with equipment from different suppliers.</li>
+                            
+                            <li style="font-size: 16px;">Connection with third parties
+                                Facilitates interconnection of third parties <br>
+                                to the MNOs.</li>
+                        </ul>
+
+                        <p style="font-size: 16px;">The general
+                            RAN GW concept is shown in Figure 13.</p>
+
+                        <p class="normal-text"><img
+                        border=0 width=365 height=208 id=image13.png
+                        src="images/ran_arquitecture/image016.gif"></p>
+                        
+                        <p align=center><i>Figure 13. RAN gateway concept.</i></p>
+                    
+                        <li>IPsec Gateway</li>
+                    
+                        <p style="font-size: 16px;">IPsec gateway  An IPsec GW
+                            can be introduced to provide tunneling termination toward RAN and the core
+                            network, thereby improving network security for all parties. The IPsec GW
+                            concept is shown in Figure 14.</p>
+                    
+                        <p class="normal-text"><img
+                        border=0 width=519 height=208 id=image20.png
+                        src="images/ran_arquitecture/image017.gif"></p>
+                        
+                        <p align=center><i>Figure 14. IPsec gateway concept.</i></p>
+                    </ul>
+
+
+                    
+                    <p class="normal-text"><a></a>The NaaS operator must
+                    be aware that demarcation point functionalities can vary from one equipment
+                    supplier to another.</p>
+                    
+                    <br><h2><a class="titulo-h2 anchor-bum color-luminati-3" name="item3-3">3.3
+                    Functional Requirements</a></h2>
+                    
+                    <p class="normal-text">This section defines required RAN
+                    functionalities for the defined topology operation and of service requirements
+                    defined as part of the NaaS operator business strategy.</p>
+                    
+                    <h3><a></a>3.3.1 RAN
+                    Sharing Scenarios Definition</h3>
+                    
+                    <p class="normal-text">A central NaaS operator strategy is to
+                    enable business for MNOs in new areas without the latter having to invest in
+                    network infrastructure. Instead, MNOs can provide network services using the NaaS
+                    operators infrastructure and network resources.</p>
+                    
+                    <br
+                    clear=all style='page-break-before:always'>
+                    
+                    
+                    <p class="normal-text"></p>
+                    
+                    <p class="normal-text">An operator can provide its RAN
+                    infrastructure to multiple MNOs based on the following sharing schemes: </p>
+
+                    <ul class="normal-text ul-iconos" style='margin-top:0in' start=1 type=1>
+                        <li>Multi-operator RAN (MORAN) 
+                            This scheme can share BBUs between MNOs but not radio carriers (RRUs arent
+                            shared). This implies that every MNO will serve its subscribers in its own
+                            spectrum chunk.</li>
+                        <li>Multi-operator core network
+                            (MOCN)  All RAN elements (BBUs and RRUs) are shared. It permits radio carriers
+                            to also be shared, making MOCN the most resource-efficient. It only requires configuration
+                            in the RANmaking MOCN ideal for quick coverage expansion. By activating it on
+                            an existing network, subscribers from a new MNO customer can get access to the NaaS
+                            operator network. Mobile cores of the MNOs using the network are independent.</li>
+                        <li>Roaming agreements between NaaS
+                            operator and MNO  In this scheme no RAN resources are shared. Instead, the
+                            operator owns the RAN and core network, redirecting traffic to MNOs core networks.
+                            In this case, a user might have to enable roaming on their phone to access the
+                            NaaS network.</li>
+                    </ul>
+
+
+                    
+                    <p class="normal-text">A NaaS operator can use Table 11 to decide
+                    which sharing scheme best fits its strategic plans.</p>
+                    
+                    <div align=center>
+                    
+                    <table class=a0 border=1 cellspacing=0 cellpadding=0 width=557
+                    style='border-collapse:collapse;border:none'>
+                    <tr>
+                    <td width=179 style='width:134.45pt;border:solid black 1.0pt;background:#1F4E79;
+                    padding:0cm 5.4pt 0cm 5.4pt'>
+                    <p align=center style='color:#fff;'>MORAN<a></a></p>
+                    </td>
+                    <td width=198 style='width:148.8pt;border:solid black 1.0pt;border-left:none;
+                    background:#1F4E79;padding:0cm 5.4pt 0cm 5.4pt'>
+                    <p align=center style='color:#fff;'>MOCN</p>
+                    </td>
+                    <td width=180 style='width:134.7pt;border:solid black 1.0pt;border-left:none;
+                    background:#1F4E79;padding:0cm 5.4pt 0cm 5.4pt'>
+                    <p align=center style='color:#fff;'>Roaming</p>
+                    </td>
+                    </tr>
+                    <tr>
+                    <td width=179 style='width:134.45pt;border:solid black 1.0pt;border-top:none;
+                    padding:0cm 5.4pt 0cm 5.4pt'>
+                    <p class="normal-text">MNOs willing to use their own spectrum.</p>
+                    <p class="normal-text">NaaS operator needs to select RAN equipment based on this
+                    constraint</p>
+                    </td>
+                    <td width=198 style='width:148.8pt;border-top:none;border-left:none;
+                    border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 5.4pt 0cm 5.4pt'>
+                    <p class="normal-text">This scheme can be applied in the following scenarios:</p>
+                    <p class="normal-text">-
+                    NaaS operator has its own
+                    spectrum</p>
+                    <p class="normal-text">-
+                    One MNO will share its
+                    spectrum with others</p>
+                    <p class="normal-text">-
+                    Two or more MNOs will
+                    combine their spectrums</p>
+                    </td>
+                    <td width=180 style='width:134.7pt;border-top:none;border-left:none;
+                    border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 5.4pt 0cm 5.4pt'>
+                    <p class="normal-text">Can be applied if NaaS operator will be deploying both the RAN and
+                    the core network. An agreement can be reached to redirect traffic to MNOs own
+                    core networks.</p>
+                    </td>
+                    </tr>
+                    </table>
+                    
+                    </div>
+                    
+                    <p align=center><i>Table 11  RAN sharing
+                    application schemes</i></p>
+                    
+                    <p class="normal-text">Figure 15
+                    illustrates the implementation of each RAN sharing scheme.</p>
+                    
+                    <p class="normal-text"><br><img border=0 width=586 height=246 id=image12.png
+                        src="images/ran_arquitecture/image019.gif"></p>
+                    
+                    <p align=center><i>Figure 15  Possible ran sharing scheme</i></p>
+                    
+                    <p class="normal-text">Table 12 summarizes the technical
+                    characteristics of each scheme.</p>
+                    
+                    <div align=center>
+                    
+                    <table class=aa border=1 cellspacing=0 cellpadding=0 width=576
+                    style='border-collapse:collapse;border:none'>
+                    <tr>
+                    <td width=123 style='width:92.15pt;border:solid black 1.0pt;background:#1F4E79;
+                    padding:0cm 5.4pt 0cm 5.4pt'>
+                    <p class="normal-text"></p>
+                    </td>
+                    <td width=161 style='width:120.5pt;border:solid black 1.0pt;border-left:none;
+                    background:#1F4E79;padding:0cm 5.4pt 0cm 5.4pt'>
+                    <p align=center style='color:#fff;'>MORAN</p>
+                    </td>
+                    <td width=149 style='width:111.85pt;border:solid black 1.0pt;border-left:
+                    none;background:#1F4E79;padding:0cm 5.4pt 0cm 5.4pt'>
+                    <p align=center style='color:#fff;'>MOCN</p>
+                    </td>
+                    <td width=144 style='width:107.85pt;border:solid black 1.0pt;border-left:
+                    none;background:#1F4E79;padding:0cm 5.4pt 0cm 5.4pt'>
+                    <p align=center style='color:#fff;'>Roaming</p>
+                    </td>
+                    </tr>
+                    <tr>
+                    <td width=123 style='width:92.15pt;border:solid black 1.0pt;border-top:none;
+                    padding:2.9pt 5.75pt 2.9pt 5.75pt'>
+                    <p class="normal-text"><a></a>Spectrum
+                    Resources</p>
+                    </td>
+                    <td width=161 style='width:120.5pt;border-top:none;border-left:none;
+                    border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:2.9pt 5.75pt 2.9pt 5.75pt'>
+                    <p class="normal-text">Each MNO uses its own spectrum resources</p>
+                    <p class="normal-text">(independent cells <br>
+                    per MNO)</p>
+                    </td>
+                    <td width=149 style='width:111.85pt;border-top:none;border-left:none;
+                    border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:2.9pt 5.75pt 2.9pt 5.75pt'>
+                    <p class="normal-text">Spectrum is shared between MNOs</p>
+                    <p class="normal-text">(shared cells for all MNOs)</p>
+                    </td>
+                    <td width=144 style='width:107.85pt;border-top:none;border-left:none;
+                    border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:2.9pt 5.75pt 2.9pt 5.75pt'>
+                    <p class="normal-text">NaaS operator provides spectrum used for
+                    <br>
+                    all MNOs</p>
+                    </td>
+                    </tr>
+                    <tr>
+                    <td width=123 style='width:92.15pt;border:solid black 1.0pt;border-top:none;
+                    padding:2.9pt 5.75pt 2.9pt 5.75pt'>
+                    <p class="normal-text">Radio Equipment Shared</p>
+                    </td>
+                    <td width=161 style='width:120.5pt;border-top:none;border-left:none;
+                    border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:2.9pt 5.75pt 2.9pt 5.75pt'>
+                    <p class="normal-text">BBU shared</p>
+                    </td>
+                    <td width=149 style='width:111.85pt;border-top:none;border-left:none;
+                    border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:2.9pt 5.75pt 2.9pt 5.75pt'>
+                    <p class="normal-text">BBU and RRUs shared</p>
+                    </td>
+                    <td width=144 style='width:107.85pt;border-top:none;border-left:none;
+                    border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:2.9pt 5.75pt 2.9pt 5.75pt'>
+                    <p class="normal-text">No share</p>
+                    </td>
+                    </tr>
+                    <tr>
+                    <td width=123 style='width:92.15pt;border:solid black 1.0pt;border-top:none;
+                    padding:2.9pt 5.75pt 2.9pt 5.75pt'>
+                    <p class="normal-text">Autonomy for the NaaS Operator</p>
+                    </td>
+                    <td width=161 style='width:120.5pt;border-top:none;border-left:none;
+                    border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:2.9pt 5.75pt 2.9pt 5.75pt'>
+                    <p class="normal-text">NaaS operator depends on MNO spectrum</p>
+                    <p class="normal-text">Agreement required between MNOs <br>
+                    and NaaS operator</p>
+                    </td>
+                    <td width=149 style='width:111.85pt;border-top:none;border-left:none;
+                    border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:2.9pt 5.75pt 2.9pt 5.75pt'>
+                    <p class="normal-text">Requirements agreement among MNOs and regulator
+                    approval</p>
+                    </td>
+                    <td width=144 style='width:107.85pt;border-top:none;border-left:none;
+                    border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:2.9pt 5.75pt 2.9pt 5.75pt'>
+                    <p class="normal-text">Requires agreement between NaaS <br>
+                    operator and MNOs</p>
+                    </td>
+                    </tr>
+                    <tr>
+                    <td width=123 style='width:92.15pt;border:solid black 1.0pt;border-top:none;
+                    padding:2.9pt 5.75pt 2.9pt 5.75pt'>
+                    <p class="normal-text">Capacity Limitation</p>
+                    </td>
+                    <td width=161 style='width:120.5pt;border-top:none;border-left:none;
+                    border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:2.9pt 5.75pt 2.9pt 5.75pt'>
+                    <p class="normal-text">Each MNO is limited <br>
+                    by its own spectrum</p>
+                    </td>
+                    <td width=149 style='width:111.85pt;border-top:none;border-left:none;
+                    border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:2.9pt 5.75pt 2.9pt 5.75pt'>
+                    <p class="normal-text">Capacity limited by <br>
+                    pooled MNO spectrum</p>
+                    </td>
+                    <td width=144 style='width:107.85pt;border-top:none;border-left:none;
+                    border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:2.9pt 5.75pt 2.9pt 5.75pt'>
+                    <p class="normal-text">Capacity limited by spectrum provided by
+                    the NaaS operator</p>
+                    </td>
+                    </tr>
+                    <tr style='height:42.0pt'>
+                    <td width=123 style='width:92.15pt;border:solid black 1.0pt;border-top:none;
+                    padding:2.9pt 5.75pt 2.9pt 5.75pt;height:42.0pt'>
+                    <p class="normal-text">Configuration Upgrade</p>
+                    </td>
+                    <td width=161 style='width:120.5pt;border-top:none;border-left:none;
+                    border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:2.9pt 5.75pt 2.9pt 5.75pt;
+                    height:42.0pt'>
+                    <p class="normal-text">Each MNO can independently upgrade <br>
+                    its radio configuration </p>
+                    </td>
+                    <td width=149 style='width:111.85pt;border-top:none;border-left:none;
+                    border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:2.9pt 5.75pt 2.9pt 5.75pt;
+                    height:42.0pt'>
+                    <p class="normal-text">Radio configurations impact all MNOs</p>
+                    </td>
+                    <td width=144 style='width:107.85pt;border-top:none;border-left:none;
+                    border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:2.9pt 5.75pt 2.9pt 5.75pt;
+                    height:42.0pt'>
+                    <p class="normal-text">Impacts on NaaS operator customers <br>
+                    and those roaming</p>
+                    </td>
+                    </tr>
+                    <tr>
+                    <td width=123 style='width:92.15pt;border:solid black 1.0pt;border-top:none;
+                    padding:2.9pt 5.75pt 2.9pt 5.75pt'>
+                    <p class="normal-text">Introduce an additional MNO</p>
+                    </td>
+                    <td width=161 style='width:120.5pt;border-top:none;border-left:none;
+                    border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:2.9pt 5.75pt 2.9pt 5.75pt'>
+                    <p class="normal-text">Requires additional <br>
+                    RAN equipment</p>
+                    </td>
+                    <td width=149 style='width:111.85pt;border-top:none;border-left:none;
+                    border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:2.9pt 5.75pt 2.9pt 5.75pt'>
+                    <p class="normal-text">Can be accommodated in existing
+                    equipment (in scenarios where three MNOs can operate with two or fewer carriers)</p>
+                    </td>
+                    <td width=144 style='width:107.85pt;border-top:none;border-left:none;
+                    border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:2.9pt 5.75pt 2.9pt 5.75pt'>
+                    <p class="normal-text">Can be accommodated in existing NaaS
+                    operator equipment (if enough available capacity)</p>
+                    </td>
+                    </tr>
+                    </table>
+                    
+                    </div>
+                    
+                    <p align=center><i>Table 12  RAN sharing schemes characteristics</i></p>
+                    
+                    <h3>3.3.2 VoLTE Implementation
+                    Evaluation</h3>
+                    
+                    <p class="normal-text">Voice over LTE (VoLTE) is the 4G-LTE s
+                    network solution providing high-quality voice and video services. This section
+                    only applies if (at strategy level) the NaaS operator has decided to provide
+                    voice services.</p>
+                    
+                    <p class="normal-text">Implementing VoLTE on a network requires the
+                    following:</p>
+
+                    <ul class="normal-text ul-iconos" style='margin-top:0in' start=1 type=1>
+                        <li>Integration of an IP
+                            multimedia subsystem (IMS) on the core structure, as standard EPC <br>
+                            is not able to support VoLTE on its own. A
+                            possible strategy is to reach an agreement with MNO(s) to redirect traffic from
+                            the NaaS operators core network to the MNOs IMS, or from the operators RAN
+                            to the MNOs core network (that includes an IMS).</li>
+                        <li>Additional RAN functionalities
+                            (detailed in section 3.3.3) are basic for VoLTE operation <br>
+                            in the air interface.</li>
+                    </ul>
+                                        
+                    <p class="normal-text">These requirements represent an addition to
+                    network CAPEX, thus increasing NaaS operator investment. Additionally, configuration
+                    of VoLTE on a BTS equates to extra integration efforts.</p>
+                    
+                    <p class="normal-text">However, a NaaS operator can avoid implementing
+                    VoLTE if LTE BTSs are deployed as an overlay in locations where existing 2G
+                    and/or 3G sites are operating. Voice in overlay scenarios can be carried by existing
+                    RATs using circuit switched fallback (CSFB) functionality that permits connected
+                    UE to move to 2G-GSM or 3G-UMTS so as to complete the voice communication. Once
+                    the voice call is over, the UE returns to LTE. The CSFB principle is shown in Figure
+                    17.</p>
+                    
+                    <p class="normal-text"><br><img border=0 width=340 height=259 id=image15.png
+                        src="images/ran_arquitecture/image021.gif"></p>
+                    
+                    <p align=center><i>Figure 16  Circuit switched </i><i>fallback principle</i></p>
+                    
+                    <p class="normal-text">For these reasons, implementing CSFB
+                    functionality is preferable from both a financial and site configuration point
+                    of view. However, the CSFB principle doesnt apply where there are no existing
+                    sites operating with 2G and/or 3G. In other words, VoLTE is the only option to
+                    provide voice service in greenfield scenarios.</p>
+                    
+                    <p class="normal-text">Figure 17 shows strategic criteria to guide
+                    a NaaS operator in the VoLTE decision-making process:</p>
+                    
+                    <p class="normal-text"><br><img border=0 width=515 height=192 id=image17.jpg
+                        src="images/ran_arquitecture/image022.jpg"
+                        alt="A close up of a map&#10;&#10;Description automatically generated"></p>
+                    
+                    <p align=center><i>Figure 17  VoLTE decision-making process</i></p>
+                    
+                    
+                    <h3>3.3.3
+                    Equipment Requirements Definition</h3>
+                    
+                    <p class="normal-text">Network equipment for RAN deployment must support
+                    the selected architecture established up <br>
+                    to this point and depends on the BTS type (macro cell or small cell). RAN
+                    features and functional requirements must also be considered for its implementation
+                    and operation.</p>
+                    
+                    <p class="normal-text">Table 13 summarizes required equipment and features
+                    based on the defined RAN architecture.</p>
+                    
+                    <p class="normal-text">NaaS Operator
+                        can use the <a class="a_link" href="https://github.com/teleworxllc/NaaSRunBook/tree/gh-pages/High%20Level%20Network%20Architecture/Templates/Equipment_Requirements.xlsx">RAN Equipment Requirements Template</a> to
+                        create its own version.</p>
+                    
+                    <div align=center>
+                    
+                    <table class=ab border=1 cellspacing=0 cellpadding=0 width=552
+                    style='border-collapse:collapse;border:none'>
+                    <tr>
+                    <td width=159 valign=top style='width:119.2pt;border:solid black 1.0pt;
+                    background:#1F4E79;padding:0cm 5.4pt 0cm 5.4pt'>
+                    <p align=center style='color:#fff;'>Category<a></a></p>
+                    </td>
+                    <td width=196 valign=top style='width:147.3pt;border:solid black 1.0pt;
+                    border-left:none;background:#1F4E79;padding:0cm 5.4pt 0cm 5.4pt'>
+                    <p align=center style='color:#fff;'>Item</p>
+                    </td>
+                    <td width=196 valign=top style='width:147.3pt;border:solid black 1.0pt;
+                    border-left:none;background:#1F4E79;padding:0cm 5.4pt 0cm 5.4pt'>
+                    <p align=center style='color:#fff;'>Comment</p>
+                    </td>
+                    </tr>
+                    <tr>
+                    <td width=159 rowspan=6 style='width:119.2pt;border:solid black 1.0pt;
+                    border-top:none;padding:2.9pt 5.4pt 2.9pt 5.4pt'>
+                    <p class="normal-text">RF </p>
+                    <p class="normal-text">Parameters</p>
+                    </td>
+                    <td width=196 style='width:147.3pt;border-top:none;border-left:none;
+                    border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:2.9pt 5.4pt 2.9pt 5.4pt'>
+                    <p class="normal-text">4G operating band</p>
+                    </td>
+                    <td width=196 rowspan=2 style='width:147.3pt;border-top:none;border-left:
+                    none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+                    padding:2.9pt 5.4pt 2.9pt 5.4pt'>
+                    <p class="normal-text">Defined in section 3.1.1</p>
+                    </td>
+                    </tr>
+                    <tr>
+                    <td width=196 style='width:147.3pt;border-top:none;border-left:none;
+                    border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:2.9pt 5.4pt 2.9pt 5.4pt'>
+                    <p class="normal-text">4G operating bandwidth</p>
+                    </td>
+                    </tr>
+                    <tr>
+                    <td width=196 style='width:147.3pt;border-top:none;border-left:none;
+                    border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:2.9pt 5.4pt 2.9pt 5.4pt'>
+                    <p class="normal-text">4G duplexing scheme</p>
+                    </td>
+                    <td width=196 style='width:147.3pt;border-top:none;border-left:none;
+                    border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:2.9pt 5.4pt 2.9pt 5.4pt'>
+                    <p class="normal-text">Defined in section 3.1.2</p>
+                    </td>
+                    </tr>
+                    <tr>
+                    <td width=196 style='width:147.3pt;border-top:none;border-left:none;
+                    border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:2.9pt 5.4pt 2.9pt 5.4pt'>
+                    <p class="normal-text">Transmitter power</p>
+                    </td>
+                    <td width=196 style='width:147.3pt;border-top:none;border-left:none;
+                    border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:2.9pt 5.4pt 2.9pt 5.4pt'>
+                    <p class="normal-text">Defined in section 3.1.3</p>
+                    </td>
+                    </tr>
+                    <tr style='height:95.25pt'>
+                    <td width=196 style='width:147.3pt;border-top:none;border-left:none;
+                    border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:2.9pt 5.4pt 2.9pt 5.4pt;
+                    height:95.25pt'>
+                    <p class="normal-text">Modulation scheme</p>
+                    </td>
+                    <td width=196 style='width:147.3pt;border-top:none;border-left:none;
+                    border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:2.9pt 5.4pt 2.9pt 5.4pt;
+                    height:95.25pt'>
+                    <p class="normal-text">Basic requirements for LTE operation:</p>
+                    <p class="normal-text">-
+                    64 QAM DL/16 QAM UL</p>
+                    <p class="normal-text">Improved capacity performance <br>
+                    can be reached with:</p>
+                    <p class="normal-text">-
+                    256 QAM DL </p>
+                    <p class="normal-text">-
+                    64 QAM UL</p>
+                    </td>
+                    </tr>
+                    <tr style='height:80.75pt'>
+                    <td width=196 style='width:147.3pt;border-top:none;border-left:none;
+                    border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:2.9pt 5.4pt 2.9pt 5.4pt;
+                    height:80.75pt'>
+                    <p class="normal-text">MIMO Scheme</p>
+                    </td>
+                    <td width=196 style='width:147.3pt;border-top:none;border-left:none;
+                    border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:2.9pt 5.4pt 2.9pt 5.4pt;
+                    height:80.75pt'>
+                    <p class="normal-text">Basic requirements for LTE operation:</p>
+                    <p class="normal-text">-
+                    2x2 MIMO</p>
+                    <p class="normal-text">Improved coverage and capacity performance can be reached with:</p>
+                    <p class="normal-text">-
+                    4x4 MIMO</p>
+                    </td>
+                    </tr>
+                    <tr>
+                    <td width=159 rowspan=8 style='width:119.2pt;border:solid black 1.0pt;
+                    border-top:none;padding:2.9pt 5.75pt 2.9pt 5.75pt'>
+                    <p class="normal-text">Additional Functionalities</p>
+                    </td>
+                    <td width=196 style='width:147.3pt;border-top:none;border-left:none;
+                    border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:2.9pt 5.75pt 2.9pt 5.75pt'>
+                    <p class="normal-text">Support for C-RAN</p>
+                    </td>
+                    <td width=196 rowspan=2 style='width:147.3pt;border-top:none;border-left:
+                    none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+                    padding:2.9pt 5.75pt 2.9pt 5.75pt'>
+                    <p class="normal-text">Defined in section 3.2.1</p>
+                    </td>
+                    </tr>
+                    <tr>
+                    <td width=196 style='width:147.3pt;border-top:none;border-left:none;
+                    border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:2.9pt 5.75pt 2.9pt 5.75pt'>
+                    <p class="normal-text">Support of RAN sharing scheme</p>
+                    </td>
+                    </tr>
+                    <tr>
+                    <td width=196 style='width:147.3pt;border-top:none;border-left:none;
+                    border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:2.9pt 5.4pt 2.9pt 5.4pt'>
+                    <p class="normal-text">Robust header compression (RoC)</p>
+                    </td>
+                    <td width=196 rowspan=4 style='width:147.3pt;border-top:none;border-left:
+                    none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+                    padding:2.9pt 5.4pt 2.9pt 5.4pt'>
+                    <p class="normal-text">Required for VoLTE operation</p>
+                    </td>
+                    </tr>
+                    <tr>
+                    <td width=196 style='width:147.3pt;border-top:none;border-left:none;
+                    border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:2.9pt 5.4pt 2.9pt 5.4pt'>
+                    <p class="normal-text">Support of QCI 1 <br>
+                    (conversational voice)</p>
+                    </td>
+                    </tr>
+                    <tr>
+                    <td width=196 style='width:147.3pt;border-top:none;border-left:none;
+                    border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:2.9pt 5.4pt 2.9pt 5.4pt'>
+                    <p class="normal-text">TTI bundling</p>
+                    </td>
+                    </tr>
+                    <tr>
+                    <td width=196 style='width:147.3pt;border-top:none;border-left:none;
+                    border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:2.9pt 5.4pt 2.9pt 5.4pt'>
+                    <p class="normal-text">Support of IMS emergency sessions</p>
+                    </td>
+                    </tr>
+                    <tr>
+                    <td width=196 style='width:147.3pt;border-top:none;border-left:none;
+                    border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:2.9pt 5.4pt 2.9pt 5.4pt'>
+                    <p class="normal-text">Support of CSFB to 2G</p>
+                    </td>
+                    <td width=196 rowspan=2 style='width:147.3pt;border-top:none;border-left:
+                    none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+                    padding:2.9pt 5.4pt 2.9pt 5.4pt'>
+                    <p class="normal-text">Required for CSFB operation</p>
+                    </td>
+                    </tr>
+                    <tr>
+                    <td width=196 style='width:147.3pt;border-top:none;border-left:none;
+                    border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:2.9pt 5.4pt 2.9pt 5.4pt'>
+                    <p class="normal-text">Support of CSFB to 3G</p>
+                    </td>
+                    </tr>
+                    </table>
+                    
+                    </div>
+                    
+                    <p align=center><i>Table 13 
+                    Equipment requirements based on RAN architecture specifications</i></p>
+                    
+                    
+                    <br><h2><a class="titulo-h2 anchor-bum color-luminati-3" name="item3-4">3.4
+                    Engineering Guidelines Definition</a></h2>
+                    
+                    <p class="normal-text">Engineering guidelines are a set of rules to
+                    be followed during the high-level design (HLD) process. They must correlate
+                    with the defined RAN architecture and cover minimum requirements for the
+                    network to function as desired. The network designer will establish site
+                    configurations based on them, which cover radio (coverage and capacity) as well
+                    as network infrastructure aspects.</p>
+                    
+                    <p class="normal-text">A NaaS operator can use the <a class="a_link" href="https://github.com/teleworxllc/NaaSRunBook/tree/gh-pages/High%20Level%20Network%20Architecture/Customization%20Guidelines/Engineering_Guidelines.xlsx">Engineering Guidelines Template</a> to set the rules
+                    to be considered during HLD. Recommended values for each parameter are provided
+                    as a starting point.</p>
+                    
+                    <h3>3.4.1
+                    Coverage &amp; Capacity Guidelines Definition</h3>
+                    
+                    <p class="normal-text">Guidelines for the radio aspects include
+                    parameters that must be considered during network dimensioning. Table 14
+                    summarizes required coverage and capacity parameters that must be set before HLD
+                    (additional parameters are in the <a href="ran_hld_module.html" class="a_link">RAN HLD</a> module). </p>
+                    
+                    <div align=center>
+                    
+                    <table class=ac border=1 cellspacing=0 cellpadding=0 width=582
+                    style='border-collapse:collapse;border:none'>
+                    <tr>
+                    <td width=85 valign=top style='width:63.8pt;border:solid black 1.0pt;
+                    background:#1F4E79;padding:0cm 5.4pt 0cm 5.4pt'>
+                    <p align=center style='color:#fff;'>Category<a></a></p>
+                    </td>
+                    <td width=137 valign=top style='width:102.45pt;border:solid black 1.0pt;
+                    border-left:none;background:#1F4E79;padding:0cm 5.4pt 0cm 5.4pt'>
+                    <p align=center style='color:#fff;'>Item</p>
+                    </td>
+                    <td width=192 valign=top style='width:144.0pt;border:solid black 1.0pt;
+                    border-left:none;background:#1F4E79;padding:0cm 5.4pt 0cm 5.4pt'>
+                    <p align=center style='color:#fff;'>Description</p>
+                    </td>
+                    <td width=168 valign=top style='width:126.0pt;border:solid black 1.0pt;
+                    border-left:none;background:#1F4E79;padding:0cm 5.4pt 0cm 5.4pt'>
+                    <p align=center style='color:#fff;'>Recommendation</p>
+                    </td>
+                    </tr>
+                    <tr>
+                    <td width=85 rowspan=4 style='width:63.8pt;border:solid black 1.0pt;
+                    border-top:none;padding:2.9pt 5.75pt 2.9pt 5.75pt'>
+                    <p class="normal-text">Coverage Guidelines</p>
+                    </td>
+                    <td width=137 style='width:102.45pt;border-top:none;border-left:none;
+                    border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:2.9pt 5.75pt 2.9pt 5.75pt'>
+                    <p class="normal-text">Cell-edge coverage probability</p>
+                    </td>
+                    <td width=192 style='width:144.0pt;border-top:none;border-left:none;
+                    border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:2.9pt 5.75pt 2.9pt 5.75pt'>
+                    <p class="normal-text">Probability that RF signal strength at cell edge will <br>
+                    meet desired level</p>
+                    </td>
+                    <td width=168 style='width:126.0pt;border-top:none;border-left:none;
+                    border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:2.9pt 5.75pt 2.9pt 5.75pt'>
+                    <p class="normal-text">70%  80%</p>
+                    </td>
+                    </tr>
+                    <tr>
+                    <td width=137 style='width:102.45pt;border-top:none;border-left:none;
+                    border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:2.9pt 5.75pt 2.9pt 5.75pt'>
+                    <p class="normal-text">Interference <br>
+                    margin</p>
+                    </td>
+                    <td width=192 style='width:144.0pt;border-top:none;border-left:none;
+                    border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:2.9pt 5.75pt 2.9pt 5.75pt'>
+                    <p class="normal-text">To be considered to account <br>
+                    for signal degradation due to interference from other BTS</p>
+                    </td>
+                    <td width=168 style='width:126.0pt;border-top:none;border-left:none;
+                    border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:2.9pt 5.75pt 2.9pt 5.75pt'>
+                    <p class="normal-text">3 dB</p>
+                    </td>
+                    </tr>
+                    <tr>
+                    <td width=137 style='width:102.45pt;border-top:none;border-left:none;
+                    border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:2.9pt 5.75pt 2.9pt 5.75pt'>
+                    <p class="normal-text">UE receiver sensitivity</p>
+                    </td>
+                    <td width=192 style='width:144.0pt;border-top:none;border-left:none;
+                    border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:2.9pt 5.75pt 2.9pt 5.75pt'>
+                    <p class="normal-text">Minimum signal strength required for the UE to <br>
+                    decode a message</p>
+                    </td>
+                    <td width=168 style='width:126.0pt;border-top:none;border-left:none;
+                    border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:2.9pt 5.75pt 2.9pt 5.75pt'>
+                    <p class="normal-text">Value around <br>
+                    105 dBm to <br>
+                    100 dBm can be set</p>
+                    </td>
+                    </tr>
+                    <tr>
+                    <td width=137 style='width:102.45pt;border-top:none;border-left:none;
+                    border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:2.9pt 5.75pt 2.9pt 5.75pt'>
+                    <p class="normal-text">Body loss</p>
+                    </td>
+                    <td width=192 style='width:144.0pt;border-top:none;border-left:none;
+                    border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:2.9pt 5.75pt 2.9pt 5.75pt'>
+                    <p class="normal-text">Loss generated due to <br>
+                    signal blocking and <br>
+                    absorption by human body</p>
+                    </td>
+                    <td width=168 style='width:126.0pt;border-top:none;border-left:none;
+                    border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:2.9pt 5.75pt 2.9pt 5.75pt'>
+                    <p class="normal-text">0 dB is <br>
+                    recommended <br>
+                    value </p>
+                    </td>
+                    </tr>
+                    <tr>
+                    <td width=85 rowspan=3 style='width:63.8pt;border:solid black 1.0pt;
+                    border-top:none;padding:2.9pt 5.75pt 2.9pt 5.75pt'>
+                    <p class="normal-text">Capacity Guidelines</p>
+                    </td>
+                    <td width=137 style='width:102.45pt;border-top:none;border-left:none;
+                    border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:2.9pt 5.75pt 2.9pt 5.75pt'>
+                    <p class="normal-text">Service penetration</p>
+                    </td>
+                    <td width=192 style='width:144.0pt;border-top:none;border-left:none;
+                    border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:2.9pt 5.75pt 2.9pt 5.75pt'>
+                    <p class="normal-text">Percentage of overall <br>
+                    covered population</p>
+                    <p class="normal-text">Based on NaaS operators business case</p>
+                    </td>
+                    <td width=168 style='width:126.0pt;border-top:none;border-left:none;
+                    border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:2.9pt 5.75pt 2.9pt 5.75pt'>
+                    <p class="normal-text">Values around 40% <br>
+                    to 60% can be used <br>
+                    for rural environments</p>
+                    </td>
+                    </tr>
+                    <tr>
+                    <td width=137 style='width:102.45pt;border-top:none;border-left:none;
+                    border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:2.9pt 5.75pt 2.9pt 5.75pt'>
+                    <p class="normal-text">Active users <br>
+                    at busy hour</p>
+                    </td>
+                    <td width=192 style='width:144.0pt;border-top:none;border-left:none;
+                    border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:2.9pt 5.75pt 2.9pt 5.75pt'>
+                    <p class="normal-text">Average number of active subscribers in the busiest </p>
+                    <p class="normal-text">hour of day</p>
+                    </td>
+                    <td width=168 style='width:126.0pt;border-top:none;border-left:none;
+                    border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:2.9pt 5.75pt 2.9pt 5.75pt'>
+                    <p class="normal-text">Values around 20% (simultaneous/active
+                    users) can be considered</p>
+                    </td>
+                    </tr>
+                    <tr>
+                    <td width=137 style='width:102.45pt;border-top:none;border-left:none;
+                    border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:2.9pt 5.75pt 2.9pt 5.75pt'>
+                    <p class="normal-text">Average busy hour DL &amp; UL throughput</p>
+                    </td>
+                    <td width=192 style='width:144.0pt;border-top:none;border-left:none;
+                    border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:2.9pt 5.75pt 2.9pt 5.75pt'>
+                    <p class="normal-text">Network throughput during busiest hour of the day</p>
+                    <p class="normal-text">These parameters provided <br>
+                    by NaaS operator depending <br>
+                    on specific environment</p>
+                    </td>
+                    <td width=168 style='width:126.0pt;border-top:none;border-left:none;
+                    border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:2.9pt 5.75pt 2.9pt 5.75pt'>
+                    <p class="normal-text">Values vary from 16 kbps  128 kbps per
+                    user</p>
+                    </td>
+                    </tr>
+                    </table>
+                    
+                    </div>
+                    
+                    <p align=center><i>Table 14. Description of
+                        coverage and capacity engineering rules categories.</i></p>
+                    
+                    
+                    
+                    <p class="normal-text"><i></i></p>
+                    
+                    <h3><a></a>3.4.2 Infrastructure Guidelines
+                    Definition</h3>
+                    
+                    <p class="normal-text">Here are guidelines for infrastructure
+                    aspects required to build site configurations during the HLD process. Table 15
+                    summarizes the categories of the infrastructure engineering rules:</p>
+                    
+                    <div align=center>
+                    
+                    <table class=ad border=1 cellspacing=0 cellpadding=0 width=570
+                    style='border-collapse:collapse;border:none'>
+                    <tr>
+                    <td width=89 valign=top style='width:66.55pt;border:solid black 1.0pt;
+                    background:#1F4E79;padding:0cm 5.4pt 0cm 5.4pt'>
+                    <p align=center style='color:#fff;'>Category<a></a></p>
+                    </td>
+                    <td width=127 valign=top style='width:95.2pt;border:solid black 1.0pt;
+                    border-left:none;background:#1F4E79;padding:0cm 5.4pt 0cm 5.4pt'>
+                    <p align=center style='color:#fff;'>Item</p>
+                    </td>
+                    <td width=132 valign=top style='width:99.0pt;border:solid black 1.0pt;
+                    border-left:none;background:#1F4E79;padding:0cm 5.4pt 0cm 5.4pt'>
+                    <p align=center style='color:#fff;'>Description</p>
+                    </td>
+                    <td width=222 valign=top style='width:166.5pt;border:solid black 1.0pt;
+                    border-left:none;background:#1F4E79;padding:0cm 5.4pt 0cm 5.4pt'>
+                    <p align=center style='color:#fff;'>Instruction</p>
+                    </td>
+                    </tr>
+                    <tr>
+                    <td width=89 rowspan=2 style='width:66.55pt;border:solid black 1.0pt;
+                    border-top:none;padding:2.9pt 5.75pt 2.9pt 5.75pt'>
+                    <p class="normal-text">Tower</p>
+                    </td>
+                    <td width=127 style='width:95.2pt;border-top:none;border-left:none;
+                    border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:2.9pt 5.75pt 2.9pt 5.75pt'>
+                    <p class="normal-text">Maximum tower <br>
+                    height (greenfield scenarios)</p>
+                    </td>
+                    <td width=132 style='width:99.0pt;border-top:none;border-left:none;
+                    border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:2.9pt 5.75pt 2.9pt 5.75pt'>
+                    <p class="normal-text">Maximum considered <br>
+                    tower height </p>
+                    </td>
+                    <td width=222 style='width:166.5pt;border-top:none;border-left:none;
+                    border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:2.9pt 5.75pt 2.9pt 5.75pt'>
+                    <p class="normal-text">Depends on the region under consideration (government
+                    restrictions) and available CAPEX</p>
+                    <p class="normal-text">The higher the tower<br>
+                    , the more expensive</p>
+                    </td>
+                    </tr>
+                    <tr>
+                    <td width=127 style='width:95.2pt;border-top:none;border-left:none;
+                    border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:2.9pt 5.75pt 2.9pt 5.75pt'>
+                    <p class="normal-text">Number of sectors</p>
+                    </td>
+                    <td width=132 style='width:99.0pt;border-top:none;border-left:none;
+                    border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:2.9pt 5.75pt 2.9pt 5.75pt'>
+                    <p class="normal-text">Number of sectors considered per site</p>
+                    </td>
+                    <td width=222 style='width:166.5pt;border-top:none;border-left:none;
+                    border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:2.9pt 5.75pt 2.9pt 5.75pt'>
+                    <p class="normal-text">Trade-off between number <br>
+                    of sectors and tower height depends on NaaS operator financial constraints</p>
+                    </td>
+                    </tr>
+                    </table>
+                    
+                    </div>
+                    
+                    <p align=center><i>Table 15 
+                    Description of infrastructure requirements categories</i></p>
+                    
+                    <h1><a class="titulo-h1 anchor-bum color-luminati-3" name="item4">4. RAN Architecture Report</a></h1>
+                    
+                    <p class="normal-text">A RAN architecture report must be
+                    elaborated to provide overall network and engineering guidelines to the design
+                    team. Additionally, equipment requirements can be considered for the RFx
+                    process. The report must cover all considerations that define each BTS in the
+                    RAN and its main functionalities.</p>
+                    
+                    <ul class="normal-text ul-iconos" style='margin-top:0in' start=1 type=1>
+                        <li>Reference RAN architecture  &#8210 Defined overall RAN
+                    architecture.</li>
+                    
+                        <ul class="normal-text ul-iconos" style='margin-top:0in' start=1 type=1>
+                            <li style="font-size: 16px;">RF Specification</li>  
+                            <ul class="normal-text ul-iconos" style='margin-top:0in' start=1 type=1>
+                                <li style="font-size: 16px;">Band and guard band</li>
+                                <li style="font-size: 16px;">Transmitter power</li>
+                                <li style="font-size: 16px;">RAN Topology and Scenarios</li>
+                                <li style="font-size: 16px;">BTS architecture and type</li>
+                                <li style="font-size: 16px;">Deployment scenario</li>
+                                <li style="font-size: 16px;">Demarcation point</li>
+                            </ul> 
+
+                                
+                            <li style="font-size: 16px;">Functional requirements</li>
+                            <ul class="normal-text ul-iconos" style='margin-top:0in' start=1 type=1>
+                                <li style="font-size: 16px;">RAN sharing scheme</li>
+                                <li style="font-size: 16px;">Voice services implementation</li>
+                                <li style="font-size: 16px;">Equipment and functionalities requirements</li>
+                               
+                            </ul>
+
+                            <li style="font-size: 16px;">Engineering Guidelines</li>
+                            <ul class="normal-text ul-iconos" style='margin-top:0in' start=1 type=1>
+                                <li style="font-size: 16px;">Coverage, capacity, and
+                                infrastructure rules to be considered during the design process.</li>
+                            </ul>
+                        </ul>
+
+                    </ul>
+
+                    <p class="normal-text">A NaaS operator can use the <a class="a_link" href="https://github.com/teleworxllc/NaaSRunBook/tree/gh-pages/High%20Level%20Network%20Architecture/Templates/Architecture_Report.docx">RAN Architecture Report template</a> as a reference to create
+                    its own version.
+                    </p>
+                    
+                    <h1><a class="titulo-h1 anchor-bum color-luminati-3" name="item5">Appendix
+                    </a></h1>
+                    
+                    <p class="normal-text">Table 16 lists the
+                    supported bands frequency division duplex (FDD) LTE.</p>
+                    
+                    <p class="normal-text"><a></a><a></a><br><img border=0 width=590 height=512
+                        id="Picture 28"
+                        src="images/ran_arquitecture/image026.jpg"></p>
+                    
+                    <p align=center><i>Table 16  FDD-LTE 3GPP bands</i></p>
+                    
+                    <p class="normal-text">Table 17 lists bands
+                    for time division duplex (TDD) LTE according to 3GPP.</p>
+                    
+                    <p class="normal-text"><img
+                        border=0 width=553 height=265 id="Picture 29"
+                        src="images/ran_arquitecture/image027.jpg"></p>
+                    
+                    <p align=center><i>Table 17  TDD-LTE 3GPP bands</i></p>
+                </div>
+                
+               
+
+                <a href="#" class="link-next" onclick="switchContent('#fm')"> &#8656; Previous</a>
+                <br>
+                <a href="url" align="center"></a>
+                <div class="right">
+                    <a ></a>
+                    <a href="#">.</a>
+                </div>
+
+            </div>
+              
+            <nav id="navbar-example3" class="navbar navbar-light bg-light position-fixed">
+             <nav class="nav nav-pills flex-column">
+             <a id="e2e_link-1" class="nav-link bullet-2-link" onclick="onClickActive(event)" href="#item3"><strong>3. RAN ARCHITECTURE DEFINITION PROCESS</strong></a>
+             <a id="e2e_link-2" class="nav-link bullet-2-link" onclick="onClickActive(event)" href="#item3-1"><em>3.1 RF Specifications</em></a>
+             <a id="e2e_link-3" class="nav-link bullet-2-link" onclick="onClickActive(event)" href="#item3-2"><em>3.2 RAN Topology & Scenario Definition</em></a>
+             <a id="e2e_link-4"class="nav-link bullet-2-link" onclick="onClickActive(event)" href="#item3-3"><em>3.3 Functional Requirements</em></a>
+             <a id="e2e_link-5"class="nav-link bullet-2-link" onclick="onClickActive(event)" href="#item3-4"><em>3.4 Engineering Guidelines Definition</em></a>
+             <a id="e2e_link-6" class="nav-link bullet-2-link" onclick="onClickActive(event)" href="#item4"><strong>4. RAN ARCHITECTURE REPORT</strong></a>
+             <a id="e2e_link-7" class="nav-link bullet-2-link" onclick="onClickActive(event)" href="#item5"><strong>5. ANNEX I</strong></a>
+             </nav>
+         </nav>
+        </section>
+
+        </div>
+
+        <!-- jQuery CDN border-left: 2px solid gray;-->
+         <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+         <!-- Bootstrap Js CDN -->
+         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+         <script type="text/javascript">
+                 
+                let tab;
+                var setPin = true;
+                switchContent('#hld');
+                window.scrollTo(0, 0);
+    
+                function switchContent(selector){
+                   $("#hld").hide();
+                   $("#fm").hide();
+                   $("#e2e").hide();
+                   $(selector).show();
+                   tab = selector;
+               }
+    
+               window.addEventListener('scroll', function(e) {
+               let reachActive = false;
+                   if(tab=="#hld"){
+                       $('.color-luminati').each(function(index, element) {
+                           const elem = element.getBoundingClientRect();
+                           if (elem.top < 30) {
+                               $('nav.nav.nav-pills a').removeClass('link-active');
+                               $('nav.nav.nav-pills a:nth-child('+(index+1)+')').addClass('link-active');
+                           }
+                           });
+                   }
+                   if(tab=="#fm"){
+                       $('.color-luminati-2').each(function(index, element) {
+                           const elem = element.getBoundingClientRect();
+                           if (elem.top < 30) {
+                               $('nav.nav.nav-pills a').removeClass('link-active');
+                               $('nav.nav.nav-pills a:nth-child('+(index+1)+')').addClass('link-active');
+                           }
+                           });
+                   }
+                   if(tab=="#e2e"){
+                       $('.color-luminati-3').each(function(index, element) {
+                           const elem = element.getBoundingClientRect();
+                           if (elem.top < 30) {
+                               $('nav.nav.nav-pills a').removeClass('link-active');
+                               $('nav.nav.nav-pills a:nth-child('+(index+1)+')').addClass('link-active');
+                           }
+                           });
+                   }
+               });
+            </script>
+    </body>
+</html>
