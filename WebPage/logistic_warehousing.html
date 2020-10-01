@@ -1,0 +1,1654 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+        <title>PlayBook</title>
+
+         <!-- Bootstrap CSS CDN -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <!-- Our Custom CSS -->
+        <link rel="stylesheet" href="style2.css">
+        
+    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+	</head>
+		
+    <body>
+
+    <div class >
+        <ul class="barra_superior">
+            <li class="li_superior"><a class="active" href="Home.html">Home</a></li>
+            <li class="li_superior"><a href="comming_soon/comming-soon.html">About</a></li>
+            
+            <li class="topnav-right"><a href="#" onclick="switchContent('#e2e')">RFx Document</a></li>
+            <li class="topnav-right"><a href="#" onclick="switchContent('#fm')">RFx Execution Phase</a></li>
+            <li class="topnav-right"><a href="#" onclick="switchContent('#hld')">Introduction</a></li>
+        </ul>
+    </div>
+
+        <div class="wrapper">
+            <!-- Sidebar Holder -->
+            <nav id="sidebar">
+                <div class="sidebar-header">
+                    <h3>NaaS PlayBook</h3>
+                    <!--strong>NaaS</strong-->
+                    
+                </div>
+    
+                <ul class="list-unstyled components">
+                    <li>
+                        <a href="#runbookSubmenu" data-toggle="collapse" aria-expanded="false">
+                            <i class="glyphicon glyphicon-option-horizontal"></i>
+                            PlayBook Modules
+                        </a>
+                        <ul class="list-unstyled" id="runbookSubmenu">
+                                <li  class="active">
+                                    <a href="#stract" data-toggle="collapse" aria-expanded="false">
+                                        &#187 Strategic Plan & Scope
+                                    </a>
+                                    <ul class="list-unstyled collapse" id="stract">
+                                        <li><a href="strategy_scope.html"style="margin-left:2em;">&bull; Strategy & Scope</a></li>
+                                        <li><a href="high_level_proyect_plan.html" style="margin-left:2em">&bull; HL Project Plan</a></li>
+                                    </ul>
+                                </li>
+                                <li  class="active">
+                                    <a href="#HLNA" data-toggle="collapse" aria-expanded="false">
+                                        &#187 High Level Network Architecture
+                                    </a>
+                                    <ul class="list-unstyled collapse" id="HLNA">
+                                        <li><a href="ran_hld_architecture.html"style="margin-left:2em">&bull; RAN Architecture</a></li>
+                                        <li><a href="tx_ip_architecture.html" style="margin-left:2em">&bull; TX & IP Architecture</a></li>
+                                        <li><a href="mobile_core_archi.html" style="margin-left:2em"> &bull; Core Architecture</a></li>
+                                        <li><a href="network_monitoring_architecture.html" style="margin-left:2em"> &bull; Network Monitoring</a></li>
+                                        
+                                    </ul>
+                                </li>
+                                <li class="active">
+                                        <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false">
+                                            &#187 Network Design
+                                        </a>
+                                        <ul class="list-unstyled collapse" id="homeSubmenu">
+                                            <li><a href="#transportMenu" data-toggle="collapse" style="margin-left:2em">&bull; Transport</a></li>
+                                                <ul class="list-unstyled collapse" id="transportMenu">
+                                                    <li><a href="tx_hld_module.html" style="margin-left:4em;">&#9657; Tx Network HLD</a></li>
+                                                    <li><a href="tx_lld_module.html" style="margin-left:4em;">&#9657; Tx Network LLD</a></li>
+                                                </ul>
+                    
+                                            <li><a href="#transportMenu2" data-toggle="collapse" style="margin-left:2em">&bull; RAN</a></li>
+                                                <ul class="list-unstyled collapse" id="transportMenu2">
+                                                    <li><a href="ran_hld_module.html" style="margin-left:4em;">&#9657; RAN Network HLD</a></li>
+                                                    <li><a href="ran_lld_module.html" style="margin-left:4em;">&#9657; RAN Network LLD</a></li>
+                                                </ul>
+                                            <li><a href="#transportMenu3" data-toggle="collapse" style="margin-left:2em">&bull; Core</a></li>
+                                            <ul class="list-unstyled collapse" id="transportMenu3">
+                                                <li><a href="mobile_core_hld.html" style="margin-left:4em;">&#9657; Mobile Core HLD</a></li>
+                                                <li><a href="mobile_core_lld.html" style="margin-left:4em;">&#9657; Mobile Core LLD</a></li>
+                                            </ul>
+                                        </ul>
+                                    </li>
+                                <li>
+                                    <a href="#deployment_m" data-toggle="collapse" aria-expanded="false">
+                                        &#187 Deployment
+                                    </a>
+                                    <ul class="list-unstyled collapse" id="deployment_m">
+                                        <li><a href="deployment_mgmt.html"style="margin-left:2em">&bull; Deployment Mgmt</a></li>
+                                        <li><a href="site_survey.html"style="margin-left:2em">&bull; Site Survey</a></li>
+                                        
+                                        <li><a href="i&c_module.html"style="margin-left:2em">&bull; I & C</a></li>
+                                            <li><a href="fiber_const_mgmt.html"style="margin-left:2em">&bull; Fiber Construction Mgmt</a></li>
+                                            <li><a href="site_construction_mgmt.html"style="margin-left:2em">&bull; Site Construction Mgmt</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        &#187 O & M
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        &#187 Field Maintenance
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        &#187 Post-Launch Engineering
+                                    </a>
+                                </li>
+        
+                                <li  class="active">
+                                    <a href="#supply" data-toggle="collapse" aria-expanded="false">
+                                        &#187 Supply Chain Management
+                                    </a>
+                                    <ul class="list-unstyled " id="supply">
+                                        <li><a href="rfx_process.html"style="margin-left:2em;">&bull; RFx Process</a></li>
+                                        <li><a href="proc_pro_vendor_mgmt.html" style="margin-left:2em;">&bull; Procurement Proc. & Vendor Mgmt.</a></li>
+                                        <li><a href="logistic_warehousing.html" style="margin-left:2em;color: black;"><strong>&bull; Logistics & Warehousing</strong></a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                                <a href="#engagementSubmenu" data-toggle="collapse" aria-expanded="false">
+                                    <i class="glyphicon glyphicon-option-horizontal"></i>
+                                    Methods of Engagement
+                                </a>
+                                <ul class="collapse list-unstyled" id="engagementSubmenu">
+                                    
+                                    <li><a href="MoE_Wizards.html">&#187 Wizards</a></li>
+                                    <li><a href="MoE_Widgets.html">&#187 Widgets</a></li>
+                                    <li><a href="MoE_Primers.html">&#187 Primers</a></li>
+                                    <li><a href="MoE_Templates.html">&#187 Templates</a></li>
+                                    <li><a href="MoE_Tool_Catalogue.html">&#187 Tool Catalogue</a></li>
+                                    
+                                </ul>
+                            </li>
+                        <li>
+                            <a href="comming_soon/comming-soon.html">
+                                <i class="glyphicon glyphicon-paperclip"></i>
+                                FAQ 
+                            </a>
+                        </li>
+                        <li>
+                            <a href="comming_soon/comming-soon.html">
+                                <i class="glyphicon glyphicon-send"></i>
+                                Contact
+                            </a>
+                        </li>
+                </ul>
+            </nav>
+            <!-- Page Content Holder -->
+           <section id="hld" hidden>
+                <div id="content"> 
+
+                    <div data-spy="scroll" data-target="#navbar-example3" data-offset="0">
+                        <h1><a class="titulo-h1 anchor-bum color-luminati" name="item1">1
+                            Introduction</a></h1>
+                            
+                            <p class="normal-text">The Logistics
+                            &amp; Warehousing area plays an important role in the NaaS Operator as it
+                            defines the overall process in which the different network elements are
+                            ordered, stored and transported to the final destination. Through an optimal
+                            definition of these aspects, and optimization of the working capital can be
+                            achieved and potential delays on the network deployment can be avoided.</p>
+                            
+                            <p class="normal-text">This module
+                            guides the NaaS operator through an overview of the Logistics &amp; Warehousing
+                            fundamentals and the imperative of its optimal definition and implementation.
+                            Furthermore, it provides methodologies and procedures to support NaaS Operators
+                            in the definition of the required design and operational processes to implement
+                            and operate their Logistics &amp; Warehousing activities.</p>
+                            
+                            <br><h2><a class="titulo-h2 anchor-bum color-luminati" name="item1-1">1.1
+                            Module Objectives</a></h2>
+                            
+                            <p class="normal-text">This module will
+                            enable the NaaS Operator to stand-up, run and manage the Logistics &amp;
+                            Warehousing processes required to deploy and operate their network. The
+                            specific objectives of this module are to:</p>
+                            
+                            <ol class="normal-text ul-iconos" style='margin-top:0in' start=1 type=1>
+                                <li>Provide an information base and fundamentals to
+                                perform the tasks associated with Logistics &amp; Warehousing.</li>
+                                <li>Guide NaaS Operators in the Logistics &amp;
+                                Warehousing strategy definition based on the Inventory requirements over the
+                                different phases of the project lifecycle.</li>
+                                <li>Guide NaaS Operators to select the most appropriate
+                                Logistics &amp; Warehousing implementation approach according to their own
+                                requirements, capabilities, and business model.</li>
+                                <li>Provide the NaaS operator methodologies to
+                                control and manage the Logistics &amp; Warehousing operations. </li>
+                            </ol>
+                            
+                            <br><h2><a class="titulo-h2 anchor-bum color-luminati" name="item1-2">1.2
+                            Module Framework</a></h2>
+                            
+                            <p class="normal-text">The Module Framework in Figure 1
+                            describes the structure, interactions, and dependencies among different NaaS
+                            operator areas. </p>
+                            
+                            <p class="normal-text"></p>
+                            
+                            <p class="normal-text">The Logistics &amp; Warehousing
+                            module is part of the Supply Chain Management stream. The module interacts with
+                            other modules in the stream, namely RFx Process module and Procurement Process
+                            &amp; Vendor Management. </p>
+                            
+                            <p class="normal-text"></p>
+                            
+                            <p class="normal-text"><img width=684
+                            height=299 id=image1.png
+                            src="images/logistics_warehousing/image001.png"></p>
+                            
+                            <p align=center><i>Figure 1. Supply Chain Management Framework</i></p><br>
+                            
+                            
+                            <p class="normal-text">Figure 2 presents the Logistics
+                            &amp; Warehousing functional view, where the main functional components are
+                            exhibited.</p>
+                            
+                            <p class="normal-text"><img width=698
+                            height=275 id=image2.png
+                            src="images/logistics_warehousing/image002.png"></p>
+                            
+                            <p align=center><i>Figure 2. Module Functional View</i></p><br>
+                            
+                            <p class="normal-text">The rest of the module is divided into four sections. Section 2 is a
+                            high-level view of the Logistics &amp; Warehousing (L&amp;W) environment in the
+                            NaaS operator context. Section 3 presents the methodologies to estimate the
+                            L&amp;W requirements that ultimately drive the strategic decisions. In Section
+                            4, the examination of different alternatives to implement the Logistics &amp;
+                            Warehousing operations is presented. Finally, Section 5 includes the management
+                            considerations that NaaS operators must consider when implementing the
+                            Logistics &amp; Warehousing tasks. </p>
+                            
+                            
+                            <h1><a class="titulo-h1 anchor-bum color-luminati" name="item2">2
+                            Logistics &amp; Warehousing Fundamentals </a></h1>
+                            
+                            <p class="normal-text">This section
+                            aims to introduce the overall process that describes how the different
+                            inventory elements are ordered, stored, and transported to the final
+                            destination.</p>
+                            
+                            <br><h2><a class="titulo-h2 anchor-bum color-luminati" name="item2-1">2.1
+                            Logistics &amp; Warehousing Imperative</a></h2>
+                            
+                            <p class="normal-text">In the context
+                            of NaaS operators, Logistics and Warehousing (L&amp;W) functions are
+                            responsible for the flow of the materials from the suppliers into the NaaS
+                            operator facilities, through operations within the organization and to the
+                            final destinations on network site locations. </p>
+                            
+                            <p class="normal-text">The motivation
+                            to implement efficient and standardized Logistics and Warehousing processes
+                            are: </p>
+                            
+                            <ul class="normal-text ul-iconos" style='margin-top:0in' start=1 type=1>
+                                <li>The Logistics and
+                                Warehousing are expensive, and their costs can potentially comprise a high
+                                proportion of the operators budget. Therefore, a comprehensive strategy must
+                                be defined to reduce the overall operational costs. </li>
+                                <li>L&amp;W operations directly
+                                affect the deployment performance of the NaaS operator. Non-standardized
+                                procedures may potentially cause materials outage or delays in the delivery
+                                dates. </li>
+                            </ul>
+                            
+                            <br><h2><a class="titulo-h2 anchor-bum color-luminati" name="item2-2">2.2
+                            Logistics &amp; Warehousing Process Overview</a></h2>
+                            
+                            <p class="normal-text">Logistics &amp;
+                            Warehousing is responsible for the movement and storage of the network
+                            equipment as they traverse from the vendor channels up to the site location.
+                            Figure 3 displays a high-level process flow of the steps related to the
+                            Logistics &amp; Warehousing operational process.</p>
+                            
+                            <p class="normal-text"><i><img width=676 height=166 id=image11.png
+                            src="images/logistics_warehousing/image003.png"></i></p>
+                            
+                            <p align=center><i>Figure 3. High-level L&amp;W operational
+                            process</i></p>
+                            
+                            <p class="normal-text">The following
+                            subsections describe the activities performed in each of the steps. To obtain
+                            more depth in the specifics of the L&amp;W activities, please see the <a class="a_link" link="primer_logistics">Primer
+                            on Logistics &amp; Warehousing Principles</a>. </p>
+                            
+                            <p class="normal-text"><b><u>Procurement
+                            </u></b></p>
+                            
+                            <p class="normal-text">The first step
+                            is initiated when a purchase order is sent to the vendor/supplier. Personnel
+                            performing this step are responsible for finding suitable suppliers, negotiate
+                            terms and conditions and organizing deliveries to get the materials into the
+                            NaaS operator.</p>
+                            
+                            <p class="normal-text">More details of
+                            the activities performed within this step can be found in the Procurement
+                            Process and Vendor Management Module. </p>
+                            
+                            <p class="normal-text"><b><u>Inbound
+                            Transportation</u></b></p>
+                            
+                            <p class="normal-text">In this step,
+                            the material moves from suppliers to the NaaS operator Warehousing Facility
+                            (See Section 3.2 for the different options to select the Warehousing
+                            Facilities). Most of the time, NaaS operators rely on Transportation services
+                            provided by the vendors as part of the purchasing agreements. In addition, the
+                            NaaS operator must ensure that the deliveries arrive on time. </p>
+                            
+                            <p class="normal-text">Additional
+                            details of the activities performed within this step can be found in Section
+                            5.2.1.</p>
+                            
+                            <p class="normal-text"><b><u>Receiving</u></b></p>
+                            
+                            <p class="normal-text">Once the
+                            materials have arrived into NaaS operator facilities, the personnel must ensure
+                            that the materials delivered correspond to the purchase order and unload the
+                            delivery vehicles. Then, the materials must be inspected and any exceptions
+                            must be noted (e.g. damaged product, incorrect counts, wrong description). </p>
+                            
+                            <p class="normal-text">After all the
+                            inspections are completed and the found inconsistencies noted, the NaaS
+                            Operator personnel acknowledges the material reception. </p>
+                            
+                            <p class="normal-text">If the materials conditions do not comply with the NaaS Operator
+                            parameters (e.g. damaged product, incorrect product), the material reception
+                            can be rejected and must go back to the transportation shipper. The
+                            transportation cost of rejected materials must be covered following the
+                            conditions established in the purchasing agreements. </p>
+                            
+                            <p class="normal-text"><b><u>Storage</u></b></p>
+                            
+                            <p class="normal-text">Before the
+                            materials are stored, an appropriate storage location must be determined. This
+                            step is important because the location of the material determines, to a large
+                            extent, how quickly and at what cost can be retrieved. Specialized tools (i.e.
+                            Stock Locator Systems) are used to track the material location within the
+                            warehouse. </p>
+                            
+                            <p class="normal-text">Warehouse personnel
+                            need to ensure that the materials can be available quickly when needed and that
+                            the materials have the right conditions, treatment and packaging to maintain
+                            them in good condition.</p>
+                            
+                            <p class="normal-text"><b><u>Inventory
+                            Management</u></b></p>
+                            
+                            <p class="normal-text">NaaS operators
+                            must have clear visibility of the materials in stock, as this will determine
+                            the future order sizes and order timing. Maintaining an adequate level of stock
+                            allows to avoid material shortage, which can have a significant impact on the
+                            deployment plan. Moreover, inventory stock allows to compensate for possible
+                            delays in the deliveries. In contrast, maintaining an excessive level of stock
+                            increases the storage costs as well as the risk of damages in the materials.</p>
+                            
+                            <p class="normal-text">For these
+                            reasons, inventory management is important for the NaaS operators of any size.
+                            Further details of the activities performed within this step can be found in
+                            Section 5.1.</p>
+                            
+                            <p class="normal-text"><b><u>Picking
+                            and Prepare orders for Shipment</u></b></p>
+                            
+                            <p class="normal-text">When a site is
+                            planned to be deployed, the Warehouse personnel must collect the material and
+                            prepare them to be shipped. Deployment Schedule Plan determines the details of
+                            the materials to be sent to the sites. In addition, the necessary shipping
+                            documentation is produced, containing the detailed information of the
+                            materials.</p>
+                            
+                            <p class="normal-text">Furthermore, in
+                            this step, a checking process is done to verify the order completeness and
+                            accuracy. Inaccurate orders not only delay the deployment schedule, but they
+                            also generate expensive return costs.</p>
+                            
+                            <p class="normal-text"><b><u>Outbound
+                            Transportation</u></b></p>
+                            
+                            <p class="normal-text">Outbound
+                            transportation moves the material from the NaaS operator Warehouse and delivers
+                            it into the site locations. In order to accomplish this, the NaaS operator must
+                            design the distribution routes to get the materials on time and at a reasonable
+                            cost. </p>
+                            
+                            <p class="normal-text">For more depth
+                            in the activities performed within this step, please refer to Section 5.2.2.</p>
+                    </div>
+               
+                    <div class="right">
+                        <a class='link-next' href="#" onclick="switchContent('#fm')">Next &#8658;</a>
+                    </div>
+                    <br>
+                </div>
+
+                <nav id="navbar-example3" class="navbar navbar-light bg-light position-fixed">
+                    <nav class="nav nav-pills flex-column">
+                    
+                    <a id="link-1" class="nav-link bullet-2-link" onclick="onClickActive(event)" href="#item1"><strong>1. INTRODUCTION</strong></a>
+                    <a id="link-2" class="nav-link bullet-2-link" onclick="onClickActive(event)" href="#item1-1"><em>1.1 Module Objectives</em></a>
+                    <a id="link-3" class="nav-link bullet-2-link" onclick="onClickActive(event)" href="#item1-2"><em>1.2 Module Framework</em></a>
+                    <a id="link-4" class="nav-link bullet-2-link" onclick="onClickActive(event)" href="#item2"><strong>2. LOGISTICS & WAREHOUSING FUNDAMENTALS</strong></a>
+                    <a id="link-6" class="nav-link bullet-2-link" onclick="onClickActive(event)" href="#item2-1"><em>2.1 Logistics & Warehousing Imperative</em></a>
+                    <a id="link-7" class="nav-link bullet-2-link" onclick="onClickActive(event)" href="#item2-2"><em>2.2 Logistics & Warehousing Process Overview</em></a>
+                    </nav>
+                </nav>
+           </section>
+
+           <section id="fm" hidden>
+            <div id="content"> 
+
+                <div data-spy="scroll" data-target="#navbar-example3" data-offset="0">
+                    <h1><a class="titulo-h1 anchor-bum color-luminati-2" name="item3">3
+                        Logistics &amp; Warehousing Strategy </a></h1>
+                        
+                        <p class="normal-text">This section
+                        provides the methodology to establish the high-level Logistics &amp;
+                        Warehousing requirements. Furthermore, guidance is provided to determine
+                        L&amp;W strategic decisions and their impact on the overall NaaS operator
+                        activities. </p>
+                        
+                        <br><h2><a class="titulo-h2 anchor-bum color-luminati-2" name="item3-1">3.1
+                        High-Level L&amp;W Dimensioning</a></h2>
+                        
+                        <p class="normal-text">As stated
+                        previously, NaaS operators must store different network elements (i.e.
+                        Inventory) in a designated place (i.e. Warehouse) during all the stages of the
+                        initiative. The following elements comprise the Inventory that requires to be
+                        stored within a Warehouse:</p>
+                        
+                        <ul class="normal-text ul-iconos" style='margin-top:0in' start=1 type=1>
+                            <li><i>Deployment Materials</i>: Network elements to be deployed on the sites,
+                            including the Radio, Transmission and Power equipment. It also includes the
+                            ancillary parts that are required to install these network elements.</li>
+                            
+                            <li><i>Spare parts: </i>Spare parts are interchangeable parts that are
+                            kept in the inventory to be used for the repair or replacement of failed units.
+                            </li>
+                        </ul>
+                        
+                        <p class="normal-text">Figure 4
+                        displays the typical behavior of the space requirements for the Inventory
+                        elements throughout the different phases of a NaaS operator: </p>
+                        
+                        <p class="normal-text"><img border=0 width=599 height=330 id=image7.png
+                        src="images/logistics_warehousing/image004.png"></p>
+                        
+                        <p align=center><i>Figure 4. Typical Space Requirements for
+                        Inventory Elements. </i></p>
+                        
+                        <p class="normal-text">From Figure 4,
+                        it can be seen that the major requirement for space is during the deployment
+                        phase. After the deployment phase is completed, lower space requirements are
+                        needed to maintain the spare parts. Therefore, an estimation of the space
+                        requirements considering the necessities during the deployment phase can be
+                        performed to define the High-Level L&amp;W Dimensioning. </p>
+                        
+                        <p class="normal-text">The process in
+                        Figure 5 illustrates the High-Level L&amp;W Dimensioning process that is used
+                        to estimate the number of warehouse facilities to store the Inventory during
+                        the deployment phase. In this process, Materials Forecast is performed to
+                        estimate the required material volumes to support the Deployment Plan. Then,
+                        the space to keep the materials stored is calculated, considering the schedule
+                        within the Deployment Plan. The space requirement is calculated based on the
+                        number of sites to be deployed and the equipment dimensions that conform each
+                        Site Bundle (see section 4.1.1.3 for more details). Finally, the number and
+                        type of warehouses is obtained by mapping the space requirements into standard
+                        warehouse classes. </p>
+                        
+                        <p class="normal-text"><img border=0 width=599 height=110 id=image16.png
+                        src="images/logistics_warehousing/image005.png"></p>
+                        
+                        <p align=center><i>Figure 5. High-Level L&amp;W Dimensioning
+                        Process </i></p>
+                        
+                        <p class="normal-text">NaaS operators can use the <a class="a_link" link="HLHW">High-Level
+                        L&amp;W Dimensioning Widget</a> to calculate the Material forecast and the
+                        Space Requirements during the different phases of the initiative based on a
+                        general Deployment Plan. The mapping between the space requirements and the
+                        number and type of warehouse step is performed by the NaaS operator based on
+                        the warehouse offering in their region. More details regarding the design of
+                        the Warehouse (e.g., location and layout) can be found in Section 4.1.1. </p>
+                        
+                        <p class="normal-text"></p>
+                        
+                        <br><h2><a class="titulo-h2 anchor-bum color-luminati" name="item3-2">3.2
+                        Logistics &amp; Warehousing Strategy Definition</a></h2>
+                        
+                        <p class="normal-text">NaaS operators
+                        must define a strategy that guides the decisions related to Logistics &amp;
+                        Warehousing activities. The possible alternatives to implement these services
+                        are described in the following subsections.</p>
+                        
+                        <h3>3.2.1
+                        Self-Managed Services</h3>
+                        
+                        <p class="normal-text">One alternative
+                        to perform the Logistics and Warehousing services is that the NaaS Operator
+                        implements them with their own resources at their own facilities. This option
+                        is only applicable if the NaaS operator already has an existing implementation
+                        of these services or if they possess enough resources to implement them.
+                        Another case that fits this strategy is for small NaaS Operators with no more
+                        than a handful of sites as little space to store equipment is required.</p>
+                        
+                        <p class="normal-text">The
+                        implementation of this option provides greater control over the L&amp;W
+                        operations and allows a better integration with other areas of the NaaS
+                        organization. For instance, the Warehouse can be tailored to the NaaS
+                        operators needs, in the right location, right size and can accommodate
+                        supplementary activities (e.g. Kitting). Moreover, the integration of multiple
+                        systems throughout NaaS operators, facilitates de communication among the
+                        areas. </p>
+                        
+                        <p class="normal-text">However, this
+                        option also presents some drawbacks. Firstly, it requires an additional design
+                        phase if the Logistics &amp; Warehousing services are not already deployed.
+                        Furthermore, it may represent additional costs such as Warehouse Facilities operational
+                        expenses (e.g. electricity to power equipment), specialized Management Systems
+                        and the personnel to run the operations. </p>
+                        
+                        <p class="normal-text">More details on
+                        the processes related to Logistics &amp; Warehousing design and implementation
+                        are included in Section 4.</p>
+                        
+                        <h3>3.2.2
+                        Third-Party Managed Services</h3>
+                        
+                        <p class="normal-text">Another option
+                        for the NaaS operator consists of hiring a Third-party Logistics and
+                        Warehousing Company to manage these services. Typically, the NaaS operator
+                        specifies the standards and Service Level Agreements (SLAs) that the service
+                        provider must meet. In this way, the operations of these services are the
+                        responsibility of the third-party, lightening the operational workload of the
+                        NaaS operator.</p>
+                        
+                        <p class="normal-text">In addition,
+                        this approach is appropriate when the deployment is performed over a wide area
+                        or several regions, allowing multiple service providers to be hired according
+                        to the geographical region. Finally, this approach is adequate to fulfill the
+                        L&amp;W requirements in a very short period of time as services are
+                        ready-to-use and no design phase must be performed. </p>
+                        
+                        <p class="normal-text">The benefits of
+                        this implementation option have to be balanced against the loss of control in
+                        the operations side. Furthermore, the cost of the operational services tend to
+                        be higher than Self-Managed services </p>
+                        
+                        <p class="normal-text">More details on
+                        the processes related to managing 3<sup>rd</sup> party providers for the
+                        Logistics &amp; Warehousing activities are included in Section 5.</p>
+                        
+                        <h3>3.2.3
+                        Hybrid Model </h3>
+                        
+                        <p class="normal-text">An additional
+                        implementation alternative is to combine the previous options for the L&amp;W
+                        activities. NaaS operators can use Self-Managed Services for basic, core needs
+                        and then scale to Third-Party Managed Services as needed, as illustrated in
+                        Figure 6. </p>
+                        
+                        <p class="normal-text"><img border=0 width=457 height=205
+                        id=image8.png
+                        src="images/logistics_warehousing/image006.png"></p>
+                        
+                        <p align=center><i>Figure 6. Hybrid approach for L&amp;W
+                        Activities. </i></p>
+                        
+                        <p class="normal-text">NaaS operators
+                        can apply this hybrid approach during the intensive deployment phase by using
+                        Third-party Managed Services to cover the necessities that Self-Managed
+                        Services cannot satisfy. When the intensive deployment phase is completed, the
+                        burden of these services will decrease so it can be covered by Self-Managed
+                        Services. In this case, the space requirement will be driven by the spare
+                        equipment. </p>
+                        
+                        <h3>3.2.4
+                        Guidance for Selection</h3>
+                        
+                        <p class="normal-text">The selection
+                        between Self-Managed and Third-party Managed Services can be seen as a make or
+                        buy decision, often evaluated through a break-even analysis. On one hand,
+                        Self-Managed Services have higher fixed costs but lower unit operating costs.
+                        In contrast, Third-party Managed Services have low fixed costs but potentially
+                        higher variable costs, as displayed in Figure 7.</p>
+                        
+                        <p class="normal-text"><img
+                        border=0 width=382 height=227 id=image15.png
+                        src="images/logistics_warehousing/image007.png"></p>
+                        
+                        <p align=center><i>Figure 7. Break-even analysis for
+                        Self-Managed and Third-party Managed Services.</i></p>
+                        
+                        <p class="normal-text">Figure 7 shows a
+                        simplified view of the multiple factors involved in the decision-making
+                        process. However, the main issue is to identify if a Third-party Managed
+                        Service can provide the same (or better) service for the same (or lower) cost.</p>
+                        
+                        <p class="normal-text">In addition to
+                        operational costs, there are other factors that NaaS operator must consider to
+                        perform the selection such as the overall organizational strategy and the time
+                        horizon over which the warehousing services will be required.</p>
+                </div>
+
+                <a class='link-next' href="#" onclick="switchContent('#hld')"> &#8656; Previous</a>
+                    <a href="url" align="center"></a>
+                    <div class="right">
+                        <a ></a>
+                        <a class="link-next" href="#" onclick="switchContent('#e2e')">Next &#8658;</a>
+                    </div>
+                    <br>
+                
+
+                <nav id="navbar-example3" class="navbar navbar-light bg-light position-fixed">
+                    <nav class="nav nav-pills flex-column">
+                        <a id="fm_link-1" class="nav-link bullet-2-link" onclick="onClickActive(event)" href="#item3"><strong>3. LOGISTICS & WAREHOUSING STRATEGY</strong></a>
+                        <a id="fm_link-2" class="nav-link bullet-2-link" onclick="onClickActive(event)" href="#item3-1"><em>3.1 High-Level L&W Dimensioning</em></a>
+                        <a id="fm_link-3" class="nav-link bullet-2-link" onclick="onClickActive(event)" href="#item3-2"><em>3.2 Logistics & Warehousing Strategy Definition</em></a>
+                    </nav>
+                </nav>
+           </section>
+
+           <section id="e2e" hidden>
+            <div id="content">
+                
+                <div data-spy="scroll" data-target="#navbar-example3" data-offset="0">
+                    <h1><a class="titulo-h1 anchor-bum color-luminati-3" name="item4">4
+                        Implementation Considerations</a></h1>
+                        
+                        <p class="normal-text">This section
+                        includes the description of the main alternatives to implement the Logistics
+                        &amp; Warehousing operations: Self-Managed Services and 3rd Party Managed
+                        Services. For each alternative, the main characteristics involved in the
+                        implementation processes are examined.</p>
+                        
+                        <br><h2><a class="titulo-h2 anchor-bum color-luminati-3" name="item4-1">4.1
+                        Self-Managed Services</a></h2>
+                        
+                        <p class="normal-text">This section
+                        provides methodologies that aim to support NaaS operators in the definition and
+                        implementation of Logistics &amp; Warehousing processes using internal
+                        resources. </p>
+                        
+                        <h3>4.1.1
+                        Warehouse Planning &amp; Design</h3>
+                        
+                        <p class="normal-text">This section
+                        examines the main components that comprise the Warehouse Planning &amp; Design
+                        (i.e. Warehouse Location and General Layout), providing methodologies for its
+                        execution. In addition, a special analysis is performed regarding the benefits
+                        of implementing Warehouse Kitting. </p>
+                        
+                        <h4>4.1.1.1
+                        Warehouse Location</h4>
+                        
+                        <p class="normal-text">Warehouse
+                        location definition involves a hierarchy of decisions. The first of them is to
+                        define the geographic region to settle the Warehouse location, which is defined
+                        by the regions where RAN sites are deployed. </p>
+                        
+                        <p class="normal-text">After
+                        establishing the geographical region, the aim is to find the best location
+                        based on geographical distances. A simple method to find the best compromise
+                        location is to calculate the Center of Gravity of the RAN sites that will be
+                        deployed. The coordinates of the Center of Gravity can be calculated as
+                        follows: </p>
+
+                        <br>
+                            <i><img width=400 height=75
+                                src="images/logistics_warehousing/image008.png" style="margin-right:15px;"></i>
+                            <p class="normal-text" style="float: right;">(Eq. 1) </p>
+                            <br><br> 
+                        
+                        <p class="normal-text">Where:</p>
+                        
+                        <p class="normal-text">(<i><img width=34 height=19
+                        src="images/logistics_warehousing/image010.png"></i>) are the coordinates in decimal notation of the center of gravity,
+                        which gives the center of the radius search.</p>
+                        
+                        <p class="normal-text">(<i><img width=30 height=19
+                        src="images/logistics_warehousing/image011.png"></i>) are the coordinates in decimal notation of each of the RAN sites
+                        in the analysis. </p>
+                        
+                        <p class="normal-text"><i><img width=17 height=19
+                        src="images/logistics_warehousing/image012.png"></i> is a factor that represents the priority of the nodes. This
+                        priority can be assigned by the NaaS operator based on the number of people
+                        covered by the RAN node. </p>
+                        
+                        <p class="normal-text">After
+                        calculating the Center of Gravity, a search radius must be established to look
+                        for nearby facilities. The size of the search radius will depend on the
+                        geographic conditions of the region and the availability of potential
+                        facilities. Figure 8 displays an example of the calculation of the Center of
+                        Gravity for the RAN sites (<i><img width=12 height=19
+                        src="images/logistics_warehousing/image013.png"></i>) and its associated Search Radius using the equations above.</p>
+                        
+                        <p class="normal-text"><img border=0
+                        width=381 height=257 id=image5.png
+                        src="images/logistics_warehousing/image014.png"></p>
+                        
+                        <p align=center><i>Figure 8. Example of Warehouse Location
+                        Calculation </i></p>
+                        
+                        <p class="normal-text">This approach,
+                        based on the location of the RAN sites, is selected for the following reasons:
+                        Firstly, during the intensive deployment phase, having the Warehouse uniformly
+                        away from all the RAN sites, maintains steady the Outbound Transportation
+                        costs, as in average, all the transportation costs are similar. Furthermore,
+                        after the deployment phase is completed, the spare equipment will be kept
+                        stored in Warehouse facilities. A Warehouse location relatively close to all
+                        the RAN sites reduces the Mean Time To Repair (MTTR) times, improving the
+                        network s overall availability. </p>
+                        
+                        <p class="normal-text">Once multiple
+                        potential facilities have been identified for Warehouse location, a comparison
+                        must be performed considering the following criteria:</p>
+                        
+                        <ul class="normal-text ul-iconos" style='margin-top:0in' start=1 type=1>
+                            <li><i>Rent rate &amp; Taxes</i>  Rent costs are the most impactful criteria
+                            when selecting the right location of a Warehouse. In addition, special
+                            attention must be paid to local governmental regulations, tax structure and tax
+                            incentives. </li>
+                            
+                            <li><i>Workforce Availability,
+                            Labor Skills &amp; Costs</i> 
+                            Workforce availability, skills, and labor costs are directly associated with
+                            local demographics. Not every geographical location offers a workforce with the
+                            right skills at the right price.</li>
+                            
+                            <li><i>Roads, Highways &amp;
+                            Traffic Flow</i> - Accessibility to
+                            roads and highways and local traffic density must also be considered,
+                            especially if trucking is the primary mode of transportation. </li>
+                        </ul>
+                        
+                        <h4>4.1.1.2
+                        General Layout</h4>
+                        
+                        <p class="normal-text">The Warehouse
+                        layout describes the physical arrangement of storage racks, loading and
+                        unloading areas, offices and all other facilities within the Warehouse. The
+                        layout definition is an essential part of planning as it has a significant
+                        effect on the efficiency of Warehouse operations. </p>
+                        
+                        <p class="normal-text">The following
+                        elements are the most important elements to be considered within the Warehouse
+                        layout: </p>
+                        
+                        <ul class="normal-text ul-iconos" style='margin-top:0in' start=1 type=1>
+                            <li>An Arrival Bay, where
+                            materials coming from suppliers are delivered, checked and sorted. </li>
+                        
+                            <li>A Storage area, where the
+                            materials are kept as stock. It comprises the Bulk Store and the Picking Store.</li>
+                        
+                            <li>A Departure Bay, where work
+                            orders are assembled and sent out.</li>
+                        </ul>
+                        
+                        <p class="normal-text">The most common
+                        outline for the Warehouse considers the basic flow of materials. The materials
+                        are delivered in the Arrival Bays and moved to the Bulk Store, which is the
+                        main storage area. The different elements in the Bulk Store pass through the
+                        kitting process and moved to the Picking Store. When an order is received, the
+                        associated elements with the order are picked from the Picking Store and moved
+                        to the Preparation Area before moving to the Departure Bays. </p>
+                        
+                        <p class="normal-text">Figure 9
+                        illustrates the typical Warehouse layout for NaaS operators. </p>
+                        
+                        <p class="normal-text"><img border=0
+                        width=573 height=302 id=image9.png
+                        src="images/logistics_warehousing/image015.png"></p>
+                        
+                        <p align=center><i>Figure 9. </i><i>Typical Warehouse Layout</i></p>
+                        
+                        <p class="normal-text">Additional
+                        elements to consider when planning a Warehousing are: </p>
+                        
+                        <ul class="normal-text ul-iconos" style='margin-top:0in' start=1 type=1>
+                            <li>A material handling system
+                            for moving materials inside the Warehouse (e.g. conveyors, pallet jacks,
+                            industrial trucks). </li>
+                            
+                            <li>Information systems (e.g.
+                            Warehouse Management System, Stock Locator Systems) that keep track of the
+                            materials, deliveries from suppliers, materials shipped to sites and other
+                            relevant information such as inventory location within the Warehouse.</li>
+                        </ul>
+                        
+                        <h4>4.1.1.3
+                        Warehouse Kitting </h4>
+                        
+                        <p class="normal-text">The general
+                        conception of Warehouses is that they are used only to store materials.
+                        However, the overall trend for Warehouse locations is to be used for doing a
+                        range of related jobs. Among other activities, kitting has especially
+                        significance in the NaaS operators context.</p>
+                        
+                        <p class="normal-text">Warehouse
+                        Kitting is the process of taking different yet related SKUs and combining them
+                        together to create a new SKU. Essentially, it involves fulfilling NaaS operator
+                        orders by pre-assembling individual items into kits that are ready to ship out
+                        right away, rather than picking them individually. </p>
+                        
+                        <p class="normal-text">This kind of
+                        consolidation can go further than simply bringing together materials from
+                        different sources and store them as a group. It can also add the final
+                        packaging to present it as a single bundle, or even do a limited amount of
+                        final assembling. </p>
+                        
+                        <p class="normal-text">In the NaaS
+                        operator context, kitting can be applied by collecting the different equipment
+                        from different vendors and technologies and create a consolidated Site Bundle.
+                        The Site Bundle includes the RAN, Transmission and Power equipment, as well as
+                        all ancillary parts required to deploy the site.</p>
+                        
+                        <p class="normal-text">The elements
+                        included within each Site Bundle can be defined based on the Model Site
+                        Catalogue generated in the RAN and Tx LLD Process. These Model Sites include a
+                        list of the elements required to deploy each technology and can be used to
+                        define the different Site Bundles. </p>
+                        
+                        <p class="normal-text">Kitting the Site
+                        Bundles offers a number of benefits for NaaS operator, which include among
+                        others: </p>
+                        
+                        <ul class="normal-text ul-iconos" style='margin-top:0in' start=1 type=1>
+                            <li><i>Organizes the inventory</i>  Warehouse kitting is excellent to maintain
+                            the warehouse organized and streamlined overall. When applied correctly, it can
+                            generate fewer SKUs, making it easier to organize the inventory effectively. </li>
+                            
+                            <li><i>Increases Warehouse
+                            Efficiency</i>  Kitting increases
+                            warehouse efficiency by making it simpler for warehouse personnel to locate all
+                            parts in one place. This is crucial in NaaS operators context as it reduces
+                            the complexity of collecting the equipment to deploy a specific site.</li>
+                        
+                            <li><i>Faster, more reliable
+                            Shipping Process </i><b>- </b>Kitting
+                            can ensure that shipping process is simpler and more efficient, cutting down on
+                            the risk of human error and decreasing fulfillment times.</li>
+                        </ul>
+                        
+                        <h3>4.1.2
+                        Transportation Network Design</h3>
+                        
+                        <p class="normal-text">The
+                        Transportation Network is responsible for the physical movement of the materials
+                        between NaaS operator Warehouse and the final RAN site location. The
+                        Transportation Network Design seeks to optimize objectives (e.g., cost of
+                        transportation and total travel time) through the selection of appropriate
+                        modes of transportation and optimal route planning.</p>
+                        
+                        <h4>4.1.2.1
+                        Mode of Transportation Definition</h4>
+                        
+                        <p class="normal-text">The mode of
+                        transportation describes the type of transport used to move the materials among
+                        facilities. There are different options (e.g., rail, road, water and air), each
+                        with different characteristics. The most common modes of transportation used by
+                        NaaS operators are examined in the following subsections. </p>
+                        
+                        <p class="normal-text"><b><u>Road
+                        Transport</u></b></p>
+                        
+                        <p class="normal-text">In the NaaS
+                        operator context, road is the most widely mode of transportation. Its main
+                        benefit is the flexibility, as it can be used to visit almost any location.
+                        Moreover, the ability to provide an end-to-end service avoids transfer to other
+                        modes reducing the overall travel time. </p>
+                        
+                        <p class="normal-text">Furthermore,
+                        vehicles do not have to keep such rigid timetables (compared with trains or
+                        airplanes), so they can go on journeys at short notice and with little
+                        planning. Nonetheless, travel speed can be an important consideration,
+                        especially as roads are becoming more congested and vehicles are particularly
+                        vulnerable to congestion and traffic delays.</p>
+                        
+                        <p class="normal-text">Finally, it
+                        needs to be considered that in rural environments, most of the roads will not
+                        be paved and special considerations have to be examined for the transport
+                        vehicles. </p>
+                        
+                        <p class="normal-text"><b><u>Multi-mode
+                        Transport</u></b></p>
+                        
+                        <p class="normal-text">Multi-mode
+                        transport involves the combination of two or more different modes of transport.
+                        In this way, the benefits of different modes can be combined, avoiding the
+                        disadvantages of the others. </p>
+                        
+                        <p class="normal-text">Multi-mode
+                        transport is particularly relevant for NaaS operators as in most cases in rural
+                        areas, combining different modes of transport is the only way to transport the
+                        network elements to distant nodes. </p>
+                        
+                        <p class="normal-text">The main issue
+                        is that each transfer between different modes causes delays and increases the
+                        costs of extra handling. Therefore, efficient transfers are vital to implement
+                        multi-mode transport, coordinating transport schedules to avoid additional
+                        delays. </p>
+                        
+                        <h4>4.1.2.2
+                        Route Planning</h4>
+                        
+                        <p class="normal-text">Route Planning
+                        analysis is used to ensure that transport infrastructure is used efficiently,
+                        and all planned deliveries will be covered in time by defining the most
+                        effective routes for transportation. </p>
+                        
+                        <p class="normal-text">The fundamental
+                        routing problem looks to establish the best path for a delivery vehicle that
+                        needs to visit a set of locations in their route. This problem is known as the
+                        Travelling Salesman Problem and is illustrated in Figure 10. </p>
+                        
+                        <p class="normal-text"><img border=0
+                        width=280 height=227 id=image4.png
+                        src="images/logistics_warehousing/image016.png"></p>
+                        
+                        <p align=center><i>Figure 10. Travelling Salesman Problem</i></p>
+                        
+                        <p class="normal-text">The Travelling
+                        Salesman Problem is the basic routing problem, however, NaaS operators face
+                        more complicated scenarios. Typical scenarios contain multiple factors as a
+                        fleet of different types of vehicles, different warehouse facilities and sites
+                        with different priorities and conditions for deliveries.</p>
+                        
+                        <p class="normal-text">As it is
+                        difficult to model a complex scenario as the established before, the following
+                        methods are proposed to perform the route planning:</p>
+                        
+                        <ul class="normal-text ul-iconos" style='margin-top:0in' start=1 type=1>
+                            <li><i>Adjust previous plans</i>  A useful approach is to keep records of
+                            previous planned routes and update them based on current conditions. This
+                            approach has the benefit of being relatively easy to implement and causing
+                            little disruption. However, the routes may take a long time to be designed. </li>
+                            
+                            <li><i>Use of specialized
+                            systems </i> There are specialized
+                            software in the market that can be used to generate the routes. Most of these
+                            tools use proprietary algorithms to generate optimal routes. However, the
+                            licensing cost can be a limitation for low budgets.</li>
+                        </ul>
+                        
+                        <p class="normal-text">Alternatively,
+                        the following algorithm can be applied to generate the Route Planning. The
+                        proposed algorithm to generate the Route Planning is based on the 2-opt
+                        algorithm and is comprised of the following steps: </p>
+                        
+                        <ul class="normal-text ul-iconos" style='margin-top:0in' start=1 type=1>
+                            <li><b>Step 1.</b> Establish a preliminary route that visits all
+                            the destinations starting by the Warehouse facility. For this, look for the
+                            closest destination and add it to the route. Follow the same approach for the
+                            next destination, going only to the closest non-visited destination. Once all
+                            the destinations are visited, return to the Warehouse facility. Calculate the
+                            total distance of the preliminary route. </li>
+                            
+                            <li><b>Step 2.</b> Select randomly two locations in the route,
+                            swap their positions in the route and calculate the total distance of the
+                            route. If the total distance decreases, maintain this route and go to Step 3.
+                            If the distance increases, return to the previous route and go to Step 3.</li>
+                            
+                            <li><b>Step 3. </b>Repeat Step 2 until no significant reduction in
+                            the total distance of the route is achieved. </li>
+                        </ul>
+                        
+                        <p class="normal-text">The main idea
+                        behind the proposed algorithm is to enhance the preliminary route by taking a
+                        route that crosses over itself and reorder it, as displayed in Figure 11.</p>
+                        
+                        <p class="normal-text"><img border=0
+                        width=599 height=196 id=image6.png
+                        src="images/logistics_warehousing/image017.png"></p>
+                        
+                        <p align=center><i>Figure 11. Proposed algorithm for Route Planning</i></p>
+                        
+                        <br><h2><a class="titulo-h2 anchor-bum color-luminati-3" name="item4-2">4.2
+                        Third-Party Managed Services </a></h2>
+                        
+                        <p class="normal-text">This section
+                        describes the procedures to perform the selection of vendor(s) to provide
+                        Third-party Managed Services for Logistics &amp; Warehousing activities. </p>
+                        
+                        <p class="normal-text">The selection of
+                        the appropriate Service Provider for managing the Logistics &amp; Warehousing
+                        activities requires conducting an RFI/RFP (request for information and
+                        proposal) process, which analyzes the providers ability to fulfill the tasks
+                        and also obtains pricing information to fulfill the required services. </p>
+                        
+                        <p class="normal-text">It must be noted
+                        that the L&amp;W Managed Services RFI/RFP process benefits from the framework
+                        setup established in the RFx Process Module. It is recommended to examine the
+                        RFx process module for further details regarding the overall process. The RFx
+                        Process Module provides a general overview of the end-to-end RFx process,
+                        including the description of the activities which take place for RFx
+                        development, as shown in Figure 12. </p>
+                        
+                        <p class="normal-text"><img border=0
+                        width=584 height=176 id=image12.png
+                        src="images/logistics_warehousing/image018.png"></p>
+                        
+                        <p align=center><i>Figure 12. RFx process</i></p>
+                        
+                        <p class="normal-text">RFx are issued
+                        to obtain information, proposals or quotes from different service providers
+                        available in the market. RFx processes play an important role in the NaaS
+                        Operator organization, which as other organizations relies on the procurement
+                        of products and services from external sources. </p>
+                        
+                        <p class="normal-text">The RFx document
+                        must clearly identify the RFx objective (obtain information, proposal and/or
+                        quotes), the scope of the technical project, the instructions to respond and
+                        applicable terms and conditions. A <a class="a_link" link="RFI_RFP_Process">L&amp;W
+                        RFI/RFP document Template</a> is provided as part of the Runbook, including the
+                        sections described above. NaaS operators can modify the baseline format and
+                        tailor it for their specific requirements and conditions.</p>
+                        
+                        <p class="normal-text">Before starting
+                        the RFI/RFP process, it is necessary to select the service providers that will
+                        be receiving the documentation. The following
+                        sections provide instructions to select, invite and prequalify potential
+                        bidders for the process.</p>
+                        
+                        <h3>4.2.1
+                        Logistics &amp; Warehousing: Identifying
+                        Providers</h3>
+                        
+                        <p class="normal-text">The first step
+                        is to identify potential service providers that address the Logistics &amp;
+                        Warehousing RFx scope, with an eventual invitation to bid.</p>
+                        
+                        <p class="normal-text">NaaS operators
+                        should invite service providers with proven experience directly with the
+                        initiative and/or with similar initiatives. In the absence of previous
+                        references, candidates may be included via web research as well as by
+                        requesting a list of Logistics &amp; Warehousing potential partners to local
+                        partners and authorities, local Chambers of Commerce and professional associations.
+                        </p>
+                        
+                        <h3 style='text-align:justify'>4.2.2
+                        Invitation to tender</h3>
+                        
+                        <p class="normal-text">After
+                        identifying the potential respondents, The NaaS Operator shall submit an
+                        invitation to tender to the identified service providers to inform them about:</p>
+                        
+                        <ul class="normal-text ul-iconos" style='margin-top:0in' start=1 type=1>
+                            <li>The Name of the RFx Process</li>
+                            <li>An abstract on the Scope of Work</li>
+                            <li>The RFx process relevant dates</li>
+                            <li>A Pre-qualification form</li>
+                            <li>A request for an
+                            acknowledgment and intention to respond</li>
+                        </ul>
+                        
+                        <p class="normal-text">Along with the
+                        invitation to tender, potential respondents shall receive a pre-qualification
+                        form. This form provides key questions that NaaS Operators will use to
+                        determine the suitability of the potential respondent to address the project
+                        scope. This qualification form will include both technical, commercial and
+                        legal questions with the objective to short-list the proper set of service
+                        providers invited to the RFI/RFP process.</p>
+                        
+                        <h3>4.2.3
+                        Logistics &amp; Warehousing Providers Evaluation</h3>
+                        
+                        <p class="normal-text">NaaS operators
+                        must perform the selection of the L&amp;W Service Provider from multiple vendor
+                        alternatives. The complete process to select the L&amp;W Service Provider is
+                        included within the Procurement Process &amp; Vendor Management Module and the
+                        RFx Process Module. This section focuses on the aspects to be considered for
+                        the evaluation of L&amp;W Service Providers.</p>
+                        
+                        <p class="normal-text">From a technical perspective, Table 1 displays the typical
+                        requirements that the L&amp;W Service Provider must satisfy according to the
+                        type of transportation provided.</p>
+                        
+                        <div align=center>
+                        <table class=a0 border=0 cellspacing=0 cellpadding=0 width=597
+                         style='margin-left:1.25pt;border-collapse:collapse'>
+                         <tr style='height:15.75pt'>
+                          <td width=144 style='width:107.9pt;padding:0cm 3.5pt 0cm 3.5pt;height:15.75pt'>
+                          <p class="normal-text"></p>
+                          </td>
+                          <td width=453 style='width:339.8pt;border:solid black 1.0pt;background:#002060;
+                          padding:0cm 3.5pt 0cm 3.5pt;height:15.75pt'>
+                          <p align=center style="color:#FFF">Evaluated
+                          Requirements</p>
+                          </td>
+                         </tr>
+                         <tr style='height:30.0pt'>
+                          <td width=144 rowspan=4 style='width:107.9pt;border:solid black 1.0pt;
+                          background:#F2F2F2;padding:0cm 3.5pt 0cm 3.5pt;height:30.0pt'>
+                          <p class="normal-text">Transportation Conditions</p>
+                          </td>
+                          <td width=453 style='width:339.8pt;border-top:none;border-left:none;
+                          border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 3.5pt 0cm 3.5pt;
+                          height:30.0pt'>
+                          <p class="normal-text">Ensure
+                          that delivery staff are well-trained in handling and verification of Telecomm
+                          equipment</p>
+                          </td>
+                         </tr>
+                         <tr style='height:15.0pt'>
+                          <td width=453 style='width:339.8pt;border-top:none;border-left:none;
+                          border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 3.5pt 0cm 3.5pt;
+                          height:15.0pt'>
+                          <p class="normal-text">Only
+                          use vehicles that will not expose supplies to excessive heat</p>
+                          </td>
+                         </tr>
+                         <tr style='height:15.0pt'>
+                          <td width=453 style='width:339.8pt;border-top:none;border-left:none;
+                          border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 3.5pt 0cm 3.5pt;
+                          height:15.0pt'>
+                          <p class="normal-text">Ensure
+                          all goods in transit are comprehensively insured </p>
+                          </td>
+                         </tr>
+                         <tr style='height:30.0pt'>
+                          <td width=453 style='width:339.8pt;border-top:none;border-left:none;
+                          border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 3.5pt 0cm 3.5pt;
+                          height:30.0pt'>
+                          <p class="normal-text">Ensure
+                          that all loading and offloading is done only at the assigned drop locations. </p>
+                          </td>
+                         </tr>
+                         <tr style='height:30.0pt'>
+                          <td width=144 rowspan=3 style='width:107.9pt;border:solid black 1.0pt;
+                          border-top:none;background:#F2F2F2;padding:0cm 3.5pt 0cm 3.5pt;height:30.0pt'>
+                          <p class="normal-text">Process
+                          Tracking</p>
+                          </td>
+                          <td width=453 style='width:339.8pt;border-top:none;border-left:none;
+                          border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 3.5pt 0cm 3.5pt;
+                          height:30.0pt'>
+                          <p class="normal-text">Provide
+                          a weekly status report on deliveries in progress and those completed </p>
+                          </td>
+                         </tr>
+                         <tr style='height:30.0pt'>
+                          <td width=453 style='width:339.8pt;border-top:none;border-left:none;
+                          border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 3.5pt 0cm 3.5pt;
+                          height:30.0pt'>
+                          <p class="normal-text">Ensure
+                          deliveries are executed within 5 working days after receipt of consignments </p>
+                          </td>
+                         </tr>
+                         <tr style='height:30.0pt'>
+                          <td width=453 style='width:339.8pt;border-top:none;border-left:none;
+                          border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 3.5pt 0cm 3.5pt;
+                          height:30.0pt'>
+                          <p class="normal-text">Ensure
+                          documentation returned to NaaS Operator by working day 7 after receipt of the
+                          consignments </p>
+                          </td>
+                         </tr>
+                        </table>
+                        </div>
+                        <p align=center><i>Table 1. Typical requirements
+                        to be evaluated in L&amp;W Service Providers</i></p>
+                        
+                        <p class="normal-text">The decision to
+                        select the L&amp;W Service Provider is also affected by the financial
+                        constraints of the project. The final selection of the L&amp;W Service Provider
+                        is performed during the RFx process and in conjunction with the Procurement
+                        Team. <br clear=all style='page-break-before:always'>
+                        </p>
+                        
+                        <h1><a class="titulo-h1 anchor-bum color-luminati-3" name="item5">5
+                        Warehousing &amp; Logistics Operations</a></h1>
+                        
+                        <p class="normal-text">This section
+                        describes general procedures for implementing the management processes related
+                        to the ordering, transportation, storing, packaging, and use of the NaaS
+                        operator inventory. </p>
+                        
+                        <br><h2><a class="titulo-h2 anchor-bum color-luminati-3" name="item5-1">5.1
+                        Inventory Management</a></h2>
+                        
+                        <p class="normal-text">Inventory
+                        Management refers to the process of ordering, storing and using the NaaS
+                        operator Inventory. This section provides methodologies to perform the
+                        management of the Inventory elements in the NaaS operator context. </p>
+                        
+                        <h3>5.1.1
+                        Inventory Management Methods </h3>
+                        
+                        <p class="normal-text">The most common
+                        management methods implemented in the industry are Material Requirements
+                        Planning (MRP) and Just-in-Time (JIT). However, JIT is not entirely suitable to
+                        be implemented by NaaS operators as, among other restrictive requirements, it
+                        demands minimal lead times, which is hard to obtain for telecommunication
+                        equipment, especially in rural environments. Therefore, only MRP is further
+                        examined in this section. </p>
+                        
+                        <h4>5.1.1.1
+                        Material Requirements Planning</h4>
+                        
+                        <p class="normal-text">Material
+                        Requirements Planning (MRP) is a method used to calculate the materials and
+                        components required for the NaaS operator activities. It consists of three
+                        primary steps: taking inventory of the materials and components available,
+                        identifying which additional ones are needed and then scheduling their
+                        procurement process. </p>
+                        
+                        <p class="normal-text">MRP operation
+                        consists of three primary steps summarized as: </p>
+                        
+                        <ul class="normal-text ul-iconos" style='margin-top:0in' start=1 type=1>
+                            <li><i>Step 1</i>. Use the Deployment Plan to find the gross
+                            requirements for materials in a monthly basis. The Deployment Plan number of
+                            RAN sites and the forecasted deployment date. </li>
+                            
+                            <li><i>Step 2</i>. Calculate the materials net requirements by
+                            subtracting any available stock and orders in process, as shown below: </li>
+                        </ul>
+
+                        <br>
+                        <i><img  width=520 height=35
+                            src="images/logistics_warehousing/image019.png" style="margin-right:15px;"></i>
+                        <p class="normal-text" style="float: right;">(Eq. 2) </p>
+                        <br><br> 
+                        
+                        
+                        <ul class="normal-text ul-iconos" style='margin-top:0in' start=1 type=1>
+                            <li><i>Step 3</i>. Schedule the order with appropriate times to
+                            meet the net requirements. </li>
+                                <li><i>Step 4</i>. Complement the Order Schedule Plan, adding any
+                            specific adjustments such as
+                            minimum order sizes, discounts, and the minimum stock levels.</li>
+                        </ul>
+                        
+                        <p class="normal-text">After completing
+                        the steps above, the NaaS operator gets a detailed schedule plan for material
+                        orders. Figure 13 displays a high-level view of the MRP operation. </p>
+                        
+                        <p class="normal-text"><img
+                        border=0 width=648 height=159 id=image10.png
+                        src="images/logistics_warehousing/image020.png"></p>
+                        
+                        <p align=center><i>Figure 13. Material Requirement Planning
+                        operation</i></p>
+                        
+                        <p class="normal-text">As can be
+                        inferred by analyzing the process, MRP avoids the additional costs of keeping a
+                        large inventory by relating the supply of materials directly to the demand.
+                        Furthermore, MRP can also give early warning of potential problems and
+                        shortages. For instance, if the MRP schedule shows that some materials will
+                        arrive too late, the NaaS operator can speed up the deliveries or even change
+                        the deployment plans. </p>
+                        
+                        <p class="normal-text">More details of
+                        the methodology to calculate the exact amount of material to order and the most
+                        appropriate time to do it can be found in the following section. </p>
+                        
+                        <h3>5.1.2
+                        Logistics &amp; Warehousing Metrics Calculation</h3>
+                        
+                        <p class="normal-text">As stated in
+                        previous sections, NaaS operators need to maintain certain Inventory elements
+                        stored in stock as part of their deployment process. In particular, there are
+                        two main questions that NaaS operator faces regarding the Inventory elements: </p>
+                        
+                        <ul class="normal-text ul-iconos" style='margin-top:0in' start=1 type=1>
+                            <li><i>How much should the NaaS
+                            operator order?</i> <br>
+                            Large orders involve high average stock levels,
+                            whereas small orders imply a high cost of placing multiple small orders. The
+                            Economic Order Quantity provides guidance to address this issue. </li>
+                            
+                            <li><i>When should NaaS operators place an order?</i> <br>
+                            The answer to these question depends on multiple
+                            factors, among others, lead time to obtain the materials and supplier
+                            reliability. Defining a Reorder Level helps in answering this question. </li>
+                        </ul>
+                        
+                        <h4>5.1.2.1
+                        Economic Order Quantity (EOQ)</h4>
+                        
+                        <p class="normal-text">The goal of the
+                        economic order quantity (EOQ) is to identify the optimal number of product
+                        units to order that minimizes the total costs related to ordering, receiving,
+                        and holding inventory. EOQ is an excellent approach to face the Inventory order
+                        issues as it is flexible, easy to implement and provides guidelines for a wide
+                        range of circumstances. </p>
+                        
+                        <p class="normal-text">The materials
+                        are delivered in batches from a supplier who delivers after a constant lead
+                        time. Once stored, the materials are dispatched over the different sites and
+                        the stock levels decrease. There is a point where new materials need to be
+                        reordered to increase the stock level. Therefore, the stock levels within a
+                        Warehouse follows a cycle with a saw-tooth pattern, as illustrated in Figure
+                        14. </p>
+                        
+                        <p class="normal-text"><img border=0
+                        width=376 height=214 id=image3.png
+                        src="images/logistics_warehousing/image021.png"></p>
+                        
+                        <p align=center><i>Figure 14. </i><i>Typical pattern of stock
+                        cycles. </i></p>
+                        
+                        <p class="normal-text">Different costs
+                        are involved in the stock cycle, where the most important are the reorder cost
+                        (i.e. the cost of order new materials from suppliers) and holding cost (i.e.
+                        the cost of keeping the materials in stock). The aim is to find the optimal
+                        order quantity (Q) that minimizes the costs and place orders of this size,
+                        which is the economic order quantity (EOQ).</p>
+                        
+                        <p class="normal-text">Assuming that
+                        the material demand (D) remains constant and the reorder cost (R) and holding
+                        cost (H) are all known exactly, a standard analysis shows that the economic
+                        order quantity can be calculated by using the following equation: </p>
+
+                        <br>
+                        <i><img  width=320 height=75
+                            src="images/logistics_warehousing/image022.png" style="margin-right:15px;"></i>
+                        <p class="normal-text" style="float: right;">(Eq. 14) </p>
+                        <br><br> 
+                        
+                        
+                        <p class="normal-text">Where: </p>
+                        
+                        <p class="normal-text"><i>Q</i>= EOQ Units</p>
+                        
+                        <p class="normal-text"><i>D</i> = Demand
+                        per unit of time</p>
+                        
+                        <p class="normal-text"><i>R</i>= Reorder
+                        cost (per purchase order)</p>
+                        
+                        <p class="normal-text"><i>H</i> = Holding
+                        cost (per unit, per unit of time)</p>
+                        
+                        <p class="normal-text"><i>NOTE: The units of time must be
+                        consistent along each of the elements (e.g. on a monthly basis).</i></p>
+                        
+                        <p class="normal-text">In conclusion,
+                        by using the EOQ to estimate the order volumes, NaaS operators can minimize
+                        their costs for buying, delivering, and storing units. NaaS operators can use
+                        the <a class="a_link" link="L&M_metrics_widget">L&amp;W
+                        Metrics Calculation Widget</a> provided as part
+                        of the Methods of Engagement to calculate the Economic Order Quantity. </p>
+                        
+                        <h4>5.1.2.2
+                        Reorder Level</h4>
+                        
+                        <p class="normal-text">Every time the
+                        NaaS operator buys materials from suppliers, there is a lead time between
+                        placing the order and having the materials arrive in stock. This is the time
+                        the supplier takes to assemble the materials and prepare them for shipment, the
+                        shipping time for the materials to arrive to NaaS Warehouse facilities and the
+                        time to check the materials and put them into stock. Depending on different
+                        circumstances, this lead time can vary between a few hours up to several
+                        months. </p>
+                        
+                        <p class="normal-text">Assuming that
+                        the lead time (L) is constant, to ensure that a delivery arrives in time as stock
+                        is running out, a new order must be placed a time L earlier. The most
+                        straightforward method to find this point is to monitor the current stock and
+                        place an order when the stock level just lasts the lead time. This means that
+                        the order must be placed when the stock falls under a certain point called
+                        Reorder Level, as illustrated in Figure 15. </p>
+                        
+                        <p class="normal-text"><img border=0
+                        width=379 height=227 id=image13.png
+                        src="images/logistics_warehousing/image023.png"></p>
+                        
+                        <p align=center><i>Figure 15. Using Reorder Level to trigger
+                        new orders. </i></p>
+                        
+                        <p class="normal-text">The Reorder
+                        Level can be calculated by using the following formula, where the demand is the
+                        same as in Eq 3: </p>
+                        
+                        <p align=center><i>Reorder
+                        level = lead time demand = lead time  demand</i></p>
+                        
+                        <p class="normal-text">Most of the
+                        time, the Inventory control systems keep a continuous record of the available
+                        stock and send an alert when it is time to place an order of certain material.
+                        NaaS operators can use the <a class="a_link" link="L&M_metrics_widget">L&amp;W
+                        Metrics Calculation Widget</a> provided as part
+                        of the Methods of Engagement to calculate the Reorder Levels in case there are
+                        no tools available. </p>
+                        
+                        <h3>5.1.3
+                        Stock Keeping Unit (SKU) strategy</h3>
+                        
+                        <p class="normal-text">A stock keeping
+                        unit (SKU) is a distinct type of inventory item and all attributes (e.g.
+                        vendor, model, size) associated with the item type that distinguishes it. When
+                        the inventory stock is taken, the quantity of each SKU is counted. </p>
+                        
+                        <p class="normal-text">In the overall
+                        context of Telecommunications operators, it is very common to find
+                        organizations that maintain an excessive number of SKUs in their inventory.
+                        This is mainly due to telecommunication materials like cabling, connectors and
+                        ancillaries in general are not completely standardized. The high number of SKUs
+                        adds unnecessary layers of complexity, leading to operational challenges that
+                        directly impact the operators activities. </p>
+                        
+                        <p class="normal-text">By reducing the
+                        number of SKUs in inventory, a number of benefits for the NaaS operators can be
+                        achieved, such as:</p>
+                        
+                        <ul class="normal-text ul-iconos" style='margin-top:0in' start=1 type=1>
+                            <li>With fewer inventory
+                            elements to source, economies of scale can be gained through volume-based
+                            discounts. </li>
+                            
+                            <li>The procurement process
+                            takes less administrative time, enabling greater focus on the quality of the
+                            purchased materials. </li>
+                            
+                            <li>A decrease in the number of
+                            SKUs enables lower inventory, easier inventory management, and improved product
+                            quality.</li>
+                        </ul>
+                        
+                        <p class="normal-text">In addition, the
+                        reduction of SKUs will also reduce the number of suppliers. Sourcing managers
+                        can take advantage of higher buying leverage with the selected suppliers, not
+                        just in terms of the ability to negotiate lower prices, but also in the ability
+                        to shape specifications. </p>
+                        
+                        <p class="normal-text">The following
+                        general recommendation is provided to maintain a lower number of SKUs: </p>
+                        
+                        <ul class="normal-text ul-iconos" style='margin-top:0in' start=1 type=1>
+                            <li><i>Establish a methodology
+                            for SKU standardization: </i> Identify
+                            SKUs with multiple suppliers and similar technical specifications, check for
+                            any differences in their pricing and order quantity, and evaluate the potential
+                            savings after consolidation. The engineering team drives the standardization decisions, while the
+                            Sourcing team facilitates the estimated cost savings under different scenarios.</li>
+                        </ul>
+                        
+                        <br><h2><a class="titulo-h2 anchor-bum color-luminati-3" name="item5-2">5.2
+                        Logistics Management</a></h2>
+                        
+                        <p class="normal-text">Logistics
+                        Management refers to the process of overseeing the movement of materials from
+                        the NaaS Warehouse facilities to their final destination in RAN site locations.
+                        It is an overarching term that includes managing multiple activities and
+                        processes.</p>
+                        
+                        <p class="normal-text">The ultimate
+                        goal of Logistics Management is to maintain consistent, reliable and flexible
+                        transportation services. Therefore, the most important activities to be managed
+                        are the interactions between Logistics and Warehousing. These activities can be
+                        classified as: Inbound Processes and Processes. </p>
+                        
+                        <p class="normal-text">The following
+                        subsections examine the main activities involved in the Inbound/Outbound
+                        Processes. This examination aims to assist NaaS operators in the process
+                        definition by providing general recommendations and templates that follow
+                        standardized methodologies. </p>
+                        
+                        <h3>5.2.1
+                        Inbound Processes </h3>
+                        
+                        <p class="normal-text">Inbound process
+                        refers to the activities that bring the materials into the NaaS operator
+                        Warehouse. Therefore, it includes all the tasks required to transport, store
+                        and deliver materials from the different suppliers. Most of the time, NaaS
+                        operators rely on the equipment vendor services for the Inbound Transportation,
+                        limiting the management scope. However, certain activities need to be managed
+                        in the inbound process.</p>
+                        
+                        <p class="normal-text">Once the
+                        materials arrive into the Warehouse facilities, they need to be checked on
+                        cosmetics and other damages, shortages, surpluses, weights and measurements.
+                        The materials documentation is also inspected, such as the waybill and invoice.
+                        Incompleteness and/or incorrectness must be mentioned on the transportation
+                        document or electronic device. In the case of damaged materials, it is required
+                        to take pictures as evidence.</p>
+                        
+                        <p class="normal-text">All materials
+                        must be inspected at arriving at the Warehouse, however, in case they cannot be
+                        checked immediately, the inspection needs to be performed within 24 hours after
+                        receipt and a notification will be sent to the supplier about the findings.</p>
+                        
+                        <p class="normal-text">Each delivery is
+                        normally pre-notified by email or other means. This is to inform the Warehouse
+                        personnel that the materials are on transit, enabling them to plan resources
+                        and processing instructions.</p>
+                        
+                        <p class="normal-text">NaaS operators
+                        can use the sections of the <a class="a_link" link="general_l_w_template">General
+                        L&amp;W Procedures Template</a> concerning with
+                        Inbound Process as a base to define their own procedures.</p>
+                        
+                        <h3>5.2.2
+                        Outbound Processes </h3>
+                        
+                        <p class="normal-text">Outbound process
+                        refers to the transportation, storage and delivery systems that bring materials
+                        into the final RAN site locations. The outbound process starts when the
+                        Deployment team issues a Work Order (WO), generally via email or directly into
+                        the Warehouse Management System that keeps track of the materials.</p>
+                        
+                        <p class="normal-text">When the work
+                        order arrives at the warehouse, the materials are picked, packed and shipped
+                        based on their priority. The shipment process requires the availability of
+                        basic information such as destination address, delivery schedule, number of
+                        shipping units along with their weight and dimensions and priority type.</p>
+                        
+                        <p class="normal-text">Every shipment
+                        needs to be packed in such a way that it can bear the travel from the warehouse
+                        up to their final destination. The materials need to be properly packed to
+                        absorb drops and falls during transportation. Moreover, each shipping unit
+                        needs to be labeled with a tracking number so it can be scanned through the
+                        transportation network for status updates via the service providers
+                        track-and-trace system.</p>
+                        
+                        <p class="normal-text">The shipping
+                        waybill is a document containing details and instructions relating to the
+                        shipment of materials. This document can be generated by handwritten,
+                        standalone shipping systems or Internet-based tools. Each shipping unit needs
+                        to be accompanied by the appropriate documentation.</p>
+                        
+                        <p class="normal-text">After the materials
+                        have been picked and packed, it is a common practice that a pre-notification is
+                        sent to the transportation service provider to pick up the materials. The
+                        message contains information about the cargo (e.g. shipping units,
+                        destinations, priorities) and a copy of the required documentation. The
+                        pre-notification can be sent by phone, email, or a message in a specialized
+                        system.</p>
+                        
+                        <p class="normal-text">The delivery
+                        vehicles commonly arrive one or half an hour before the departure time to check
+                        and collect the goods. The actual time required to check the physical
+                        conditions of materials and documentation depends mainly on the volume, but it
+                        is also impacted by other elements such as type of materials, number of
+                        destinations and loading process (manual vs automated). Transportation drivers
+                        are expected to supervise warehouse personnel loading the goods and sign for
+                        receipt.</p>
+                        
+                        <p class="normal-text">The delivery
+                        vehicle departure times depend on the service providers transportation network
+                        and transportation modes. It is recommended to contact service providers with a
+                        late order cut-off time to give NaaS operators more time to drop orders for
+                        same-day processing.</p>
+                        
+                        <p class="normal-text">After the
+                        shipment has left the warehouse, it is up to the transportation service
+                        provider to proactively inform the NaaS operator with any status change and/or
+                        delay, including the root cause, remedial action and a new Expected Time of
+                        Arrival when applicable.</p>
+                        
+                        <p class="normal-text">NaaS operators
+                        can use the sections of the <a class="a_link" link="general_l_w_template">General
+                        L&amp;W Procedures Template</a> concerning with
+                        Outbound Process as a base to define their own procedures.</p>
+                </div>
+               
+
+                <a href="#" class="link-next" onclick="switchContent('#fm')"> &#8656; Previous</a>
+                <br>
+                <a href="url" align="center"></a>
+                <div class="right">
+                    <a ></a>
+                    <a href="#">.</a>
+                </div>
+
+            </div>
+              
+            <nav id="navbar-example3" class="navbar navbar-light bg-light position-fixed">
+             <nav class="nav nav-pills flex-column">
+                <a id="e2e_link-1" class="nav-link bullet-2-link" onclick="onClickActive(event)" href="#item4"><strong>4. IMPLEMENTATION CONSIDERATIONS</strong></a>
+                <a id="e2e_link-2" class="nav-link bullet-2-link" onclick="onClickActive(event)" href="#item4-1"><em>4.1 Self-Managed Services</em></a>
+                <a id="e2e_link-3" class="nav-link bullet-2-link" onclick="onClickActive(event)" href="#item4-2"><em>4.2 Third-Party Managed Services</em></a>
+                <a id="e2e_link-1" class="nav-link bullet-2-link" onclick="onClickActive(event)" href="#item5"><strong>5. WAREHOUSING & LOGISTICS OPERATIONS</strong></a>
+                <a id="e2e_link-5" class="nav-link bullet-2-link" onclick="onClickActive(event)" href="#item5-1"><em>5.1 Inventory Management</em></a>
+                <a id="e2e_link-6" class="nav-link bullet-2-link" onclick="onClickActive(event)" href="#item5-2"><em>5.2 Logistics Management</em></a>
+             </nav>
+         </nav>
+        </section>  
+        </div>
+
+        <!-- jQuery CDN border-left: 2px solid gray;-->
+         <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+         <!-- Bootstrap Js CDN -->
+         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+         
+         
+         <script type="text/javascript">
+             
+             let tab;
+             var setPin = true;
+             switchContent('#hld');
+             window.scrollTo(0, 0);
+
+             function switchContent(selector){
+                $("#hld").hide();
+                $("#fm").hide();
+                $("#e2e").hide();
+                $(selector).show();
+                tab = selector;
+            }
+
+            window.addEventListener('scroll', function(e) {
+            //console.log(window.scrollY);
+            let reachActive = false;
+                if(tab=="#hld"){
+                    $('.color-luminati').each(function(index, element) {
+                        const elem = element.getBoundingClientRect();
+                        //console.log('elem.top:',index, elem.top);
+                        //console.log(tab);
+                        if (elem.top < 30) {
+                            $('nav.nav.nav-pills a').removeClass('link-active');
+                            $('nav.nav.nav-pills a:nth-child('+(index+1)+')').addClass('link-active');
+                        }
+                        });
+                }
+                if(tab=="#fm"){
+                    $('.color-luminati-2').each(function(index, element) {
+                        const elem = element.getBoundingClientRect();
+                        //console.log('elem.top:',index, elem.top);
+                        //console.log(tab);
+                        if (elem.top < 30) {
+                            $('nav.nav.nav-pills a').removeClass('link-active');
+                            $('nav.nav.nav-pills a:nth-child('+(index+1)+')').addClass('link-active');
+                        }
+                        });
+                }
+                if(tab=="#e2e"){
+                    $('.color-luminati-3').each(function(index, element) {
+                        const elem = element.getBoundingClientRect();
+                        //console.log('elem.top:',index, elem.top);
+                        //console.log(tab);
+                        if (elem.top < 30) {
+                            $('nav.nav.nav-pills a').removeClass('link-active');
+                            $('nav.nav.nav-pills a:nth-child('+(index+1)+')').addClass('link-active');
+                        }
+                        });
+                }
+            });
+         </script>
+    </body>
+</html>
