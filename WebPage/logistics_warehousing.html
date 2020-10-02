@@ -23,8 +23,8 @@
             <li class="li_superior"><a class="active" href="Home.html">Home</a></li>
             <li class="li_superior"><a href="comming_soon/comming-soon.html">About</a></li>
             
-            <li class="topnav-right"><a href="#" onclick="switchContent('#e2e')">RFx Document</a></li>
-            <li class="topnav-right"><a href="#" onclick="switchContent('#fm')">RFx Execution Phase</a></li>
+            <li class="topnav-right"><a href="#" onclick="switchContent('#e2e')">Implementation</a></li>
+            <li class="topnav-right"><a href="#" onclick="switchContent('#fm')">Strategy</a></li>
             <li class="topnav-right"><a href="#" onclick="switchContent('#hld')">Introduction</a></li>
         </ul>
     </div>
@@ -108,9 +108,13 @@
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#">
-                                        &#187 Field Maintenance
-                                    </a>
+                                    <a href="#maintenance" data-toggle="collapse" aria-expanded="false">
+                                    &#187 Field Maintenance
+                                </a>
+                                <ul class="list-unstyled collapse" id="maintenance">
+                                                                        <li><a href="cell_site_maintenance.html" style="margin-left:2em">&bull; Cell Site Maintenance</a></li>
+                                    
+                                </ul>
                                 </li>
                                 <li>
                                     <a href="#">
@@ -496,7 +500,7 @@
                         
                         <p class="normal-text"></p>
                         
-                        <br><h2><a class="titulo-h2 anchor-bum color-luminati" name="item3-2">3.2
+                        <br><h2><a class="titulo-h2 anchor-bum color-luminati-2" name="item3-2">3.2
                         Logistics &amp; Warehousing Strategy Definition</a></h2>
                         
                         <p class="normal-text">NaaS operators
@@ -1590,66 +1594,66 @@
              </nav>
          </nav>
         </section>  
-        </div>
+    </div>
 
-        <!-- jQuery CDN border-left: 2px solid gray;-->
-         <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
-         <!-- Bootstrap Js CDN -->
-         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-         
-         
-         <script type="text/javascript">
-             
-            let tab;
-            var setPin = true;
-            switchContent('#hld');
-            window.scrollTo(0, 0);
+    <!-- jQuery CDN border-left: 2px solid gray;-->
+     <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+     <!-- Bootstrap Js CDN -->
+     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
-            function switchContent(selector){
-               $("#hld").hide();
-               $("#fm").hide();
-               $("#e2e").hide();
-               $(selector).show();
-               tab = selector;
+     <script type="text/javascript">
+         
+        let tab;
+        var setPin = true;
+        switchContent('#hld');
+        window.scrollTo(0, 0);
+
+        function switchContent(selector){
+           $("#hld").hide();
+           $("#fm").hide();
+           $("#e2e").hide();
+           $(selector).show();
+           tab = selector;
+       }
+
+       window.addEventListener('scroll', function(e) {
+       let reachActive = false;
+           if(tab=="#hld"){
+               $('.color-luminati').each(function(index, element) {
+                   const elem = element.getBoundingClientRect();
+                   if (elem.top < 30) {
+                       $('nav.nav.nav-pills a').removeClass('link-active');
+                       $('nav.nav.nav-pills a:nth-child('+(index+1)+')').addClass('link-active');
+                   }
+                   });
            }
+           if(tab=="#fm"){
+               $('.color-luminati-2').each(function(index, element) {
+                   const elem = element.getBoundingClientRect();
+                   if (elem.top < 30) {
+                       $('nav.nav.nav-pills a').removeClass('link-active');
+                       $('nav.nav.nav-pills a:nth-child('+(index+1)+')').addClass('link-active');
+                   }
+                   });
+           }
+           if(tab=="#e2e"){
+               $('.color-luminati-3').each(function(index, element) {
+                   const elem = element.getBoundingClientRect();
+                   if (elem.top < 30) {
+                       $('nav.nav.nav-pills a').removeClass('link-active');
+                       $('nav.nav.nav-pills a:nth-child('+(index+1)+')').addClass('link-active');
+                   }
+                   });
+           }
+       });
+    </script>
 
-           window.addEventListener('scroll', function(e) {
-           let reachActive = false;
-               if(tab=="#hld"){
-                   $('.color-luminati').each(function(index, element) {
-                       const elem = element.getBoundingClientRect();
-                       if (elem.top < 30) {
-                           $('nav.nav.nav-pills a').removeClass('link-active');
-                           $('nav.nav.nav-pills a:nth-child('+(index+1)+')').addClass('link-active');
-                       }
-                       });
-               }
-               if(tab=="#fm"){
-                   $('.color-luminati-2').each(function(index, element) {
-                       const elem = element.getBoundingClientRect();
-                       if (elem.top < 30) {
-                           $('nav.nav.nav-pills a').removeClass('link-active');
-                           $('nav.nav.nav-pills a:nth-child('+(index+1)+')').addClass('link-active');
-                       }
-                       });
-               }
-               if(tab=="#e2e"){
-                   $('.color-luminati-3').each(function(index, element) {
-                       const elem = element.getBoundingClientRect();
-                       if (elem.top < 30) {
-                           $('nav.nav.nav-pills a').removeClass('link-active');
-                           $('nav.nav.nav-pills a:nth-child('+(index+1)+')').addClass('link-active');
-                       }
-                       });
-               }
-           });
-        </script>
-        <div id="myModal" class="modal">
-            <span class="close">&times;</span>
-            <img class="myImg" class="myImg" class="modal-content" id="img01">
-            <div id="caption"></div>
-        </div>
-        
-        <script src="zoom_script.js"></script>
-    </body>
+<div id="myModal" class="modal">
+    <span class="close">&times;</span>
+    <img class="myImg" class="myImg" class="modal-content" id="img01">
+    <div id="caption"></div>
+</div>
+
+<script src="zoom_script.js"></script>
+</body>
 </html>

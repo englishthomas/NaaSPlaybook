@@ -1,0 +1,2142 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+        <title>PlayBook</title>
+
+         <!-- Bootstrap CSS CDN -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <!-- Our Custom CSS -->
+        <link rel="stylesheet" href="zoom_style.css">
+        <link rel="stylesheet" href="style2.css">
+        
+    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+	</head>
+		
+    <body>
+
+    <div class >
+        <ul class="barra_superior">
+            <li class="li_superior"><a class="active" href="Home.html">Home</a></li>
+            <li class="li_superior"><a href="comming_soon/comming-soon.html">About</a></li>
+            
+            <li class="topnav-right"><a href="#" onclick="switchContent('#e2e')">Maintenance Guidelines</a></li>
+            <li class="topnav-right"><a href="#" onclick="switchContent('#fm')">Maintenance Process</a></li>
+            <li class="topnav-right"><a href="#" onclick="switchContent('#hld')">Introduction</a></li>
+        </ul>
+    </div>
+
+        <div class="wrapper">
+            <!-- Sidebar Holder -->
+            <nav id="sidebar">
+                <div class="sidebar-header">
+                    <h3>NaaS PlayBook</h3>
+                    <!--strong>NaaS</strong-->
+                    
+                </div>
+    
+                <ul class="list-unstyled components">
+                    <li>
+                        <a href="#runbookSubmenu" data-toggle="collapse" aria-expanded="false">
+                            <i class="glyphicon glyphicon-option-horizontal"></i>
+                            PlayBook Modules
+                        </a>
+                        <ul class="list-unstyled" id="runbookSubmenu">
+                                <li  class="active">
+                                    <a href="#stract" data-toggle="collapse" aria-expanded="false">
+                                        &#187 Strategic Plan & Scope
+                                    </a>
+                                    <ul class="list-unstyled collapse" id="stract">
+                                        <li><a href="strategy_scope.html"style="margin-left:2em;">&bull; Strategy & Scope</a></li>
+                                        <li><a href="high_level_proyect_plan.html" style="margin-left:2em">&bull; HL Project Plan</a></li>
+                                    </ul>
+                                </li>
+                                <li  class="active">
+                                    <a href="#HLNA" data-toggle="collapse" aria-expanded="false">
+                                        &#187 High Level Network Architecture
+                                    </a>
+                                    <ul class="list-unstyled collapse" id="HLNA">
+                                        <li><a href="ran_hld_architecture.html"style="margin-left:2em">&bull; RAN Architecture</a></li>
+                                        <li><a href="tx_ip_architecture.html" style="margin-left:2em">&bull; TX & IP Architecture</a></li>
+                                        <li><a href="mobile_core_archi.html" style="margin-left:2em"> &bull; Core Architecture</a></li>
+                                        <li><a href="network_monitoring_architecture.html" style="margin-left:2em"> &bull; Network Monitoring</a></li>
+                                        
+                                    </ul>
+                                </li>
+                                <li class="active">
+                                        <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false">
+                                            &#187 Network Design
+                                        </a>
+                                        <ul class="list-unstyled collapse" id="homeSubmenu">
+                                            <li><a href="#transportMenu" data-toggle="collapse" style="margin-left:2em">&bull; Transport</a></li>
+                                                <ul class="list-unstyled collapse" id="transportMenu">
+                                                    <li><a href="tx_hld_module.html" style="margin-left:4em;">&#9657; Tx Network HLD</a></li>
+                                                    <li><a href="tx_lld_module.html" style="margin-left:4em;">&#9657; Tx Network LLD</a></li>
+                                                </ul>
+                    
+                                            <li><a href="#transportMenu2" data-toggle="collapse" style="margin-left:2em">&bull; RAN</a></li>
+                                                <ul class="list-unstyled collapse" id="transportMenu2">
+                                                    <li><a href="ran_hld_module.html" style="margin-left:4em;">&#9657; RAN Network HLD</a></li>
+                                                    <li><a href="ran_lld_module.html" style="margin-left:4em;">&#9657; RAN Network LLD</a></li>
+                                                </ul>
+                                            <li><a href="#transportMenu3" data-toggle="collapse" style="margin-left:2em">&bull; Core</a></li>
+                                            <ul class="list-unstyled collapse" id="transportMenu3">
+                                                <li><a href="mobile_core_hld.html" style="margin-left:4em;">&#9657; Mobile Core HLD</a></li>
+                                                <li><a href="mobile_core_lld.html" style="margin-left:4em;">&#9657; Mobile Core LLD</a></li>
+                                            </ul>
+                                        </ul>
+                                    </li>
+                                <li>
+                                    <a href="#deployment_m" data-toggle="collapse" aria-expanded="false">
+                                        &#187 Deployment
+                                    </a>
+                                    <ul class="list-unstyled collapse" id="deployment_m">
+                                        <li><a href="deployment_mgmt.html"style="margin-left:2em">&bull; Deployment Mgmt</a></li>
+                                        <li><a href="site_survey.html"style="margin-left:2em">&bull; Site Survey</a></li>
+                                        
+                                        <li><a href="i&c_module.html"style="margin-left:2em">&bull; I & C</a></li>
+                                            <li><a href="fiber_const_mgmt.html"style="margin-left:2em">&bull; Fiber Construction Mgmt</a></li>
+                                            <li><a href="site_construction_mgmt.html"style="margin-left:2em">&bull; Site Construction Mgmt</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        &#187 O & M
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#maintenance" data-toggle="collapse" aria-expanded="false">
+                                    &#187 Field Maintenance
+                                    </a>
+                                    <ul class="list-unstyled " id="maintenance">
+                                        <li><a href="cell_site_maintenance.html" style="margin-left:2em;color: black;"><strong>&bull; Cell Site Maintenance</strong></a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        &#187 Post-Launch Engineering
+                                    </a>
+                                </li>
+        
+                                <li  class="active">
+                                    <a href="#supply" data-toggle="collapse" aria-expanded="false">
+                                        &#187 Supply Chain Management
+                                    </a>
+                                    <ul class="list-unstyled collapse" id="supply">
+                                        <li><a href="rfx_process.html"style="margin-left:2em;">&bull; RFx Process</a></li>
+                                        <li><a href="logistics_warehousing.html" style="margin-left:2em">&bull; Logistics & Warehousing</a></li>
+                                        <li><a href="proc_pro_vendor_mgmt.html" style="margin-left:2em;">&bull; Procurement Proc. & Vendor Mgmt.</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                                <a href="#engagementSubmenu" data-toggle="collapse" aria-expanded="false">
+                                    <i class="glyphicon glyphicon-option-horizontal"></i>
+                                    Methods of Engagement
+                                </a>
+                                <ul class="collapse list-unstyled" id="engagementSubmenu">
+                                    
+                                    <li><a href="MoE_Wizards.html">&#187 Wizards</a></li>
+                                    <li><a href="MoE_Widgets.html">&#187 Widgets</a></li>
+                                    <li><a href="MoE_Primers.html">&#187 Primers</a></li>
+                                    <li><a href="MoE_Templates.html">&#187 Templates</a></li>
+                                    <li><a href="MoE_Tool_Catalogue.html">&#187 Tool Catalogue</a></li>
+                                    
+                                </ul>
+                            </li>
+                        <li>
+                            <a href="comming_soon/comming-soon.html">
+                                <i class="glyphicon glyphicon-paperclip"></i>
+                                FAQ 
+                            </a>
+                        </li>
+                        <li>
+                            <a href="comming_soon/comming-soon.html">
+                                <i class="glyphicon glyphicon-send"></i>
+                                Contact
+                            </a>
+                        </li>
+                </ul>
+            </nav>
+            <!-- Page Content Holder -->
+           <section id="hld" hidden>
+                <div id="content"> 
+
+                    <div data-spy="scroll" data-target="#navbar-example3" data-offset="0">
+                        <h1><a class="titulo-h1 anchor-bum color-luminati" name="item1">1
+                            Introduction</a></h1>
+                            
+                            <p class="normal-text">Cell Site Maintenance refers to
+                            the functional checks, servicing, repairing or replacing the necessary
+                            equipment and building infrastructure at the Cell Sites. Regular equipment
+                            maintenance ensures that each device operates efficiently during its intended
+                            life span. Therefore, maintenance is a time-based or equipment-based function,
+                            which can be categorized in Preventive or Corrective Maintenance. A balance
+                            between preventive and corrective maintenance in cell sites is required to keep
+                            the quality and service continuity of NaaS Operators Radio Access Networks. </p>
+                            
+                            <p class="normal-text">Preventive maintenance refers to
+                            the functional checks and services performed on a time-based schedule. It is
+                            based on the premise that an important number of equipment failures or
+                            malfunctions can be prevented if a comprehensive maintenance schedule is
+                            followed. Preventive Maintenance is performed regularly on the fans, seals,
+                            cables, connections, batteries as well as on the supporting infrastructure of
+                            the cell sites such as towers, shelters, mounting ancillaries and fences. While
+                            preventive actions are performed to maintain the operative status of the
+                            network and maintain the condition of cell site facilities, unexpected events
+                            may occur.</p>
+                            
+                            <p class="normal-text">Corrective maintenance refers to
+                            the actions that are performed to restore a failed piece of equipment to bring
+                            it back to a workable condition. It is typically performed when the equipment
+                            needs to be replaced. Corrective Maintenance is performed as well to repair the
+                            overall damage of the facilities which may happen due to unexpected events such
+                            as natural disasters or robbery. </p>
+                            
+                            <p class="normal-text">This Module provides the NaaS
+                            Operator with recommendations and best practices for preventive and corrective
+                            maintenance at their sites, guiding NaaS Operators to prepare their reports
+                            that will evidence each maintenance intervention ensuring an overall good
+                            condition of their cell sites.</p>
+                            
+                            <p class="normal-text">The main deliverables that the
+                            NaaS Operator will be able to generate through the use of this module are
+                            Preventive Maintenance Checklists and Reporting templates, which are basic
+                            documents that indicate the activities to be performed on the site and define
+                            standards to evidence their maintenance interventions.</p>
+                            
+                            <br><h2><a class="titulo-h2 anchor-bum color-luminati" name="item1-1">1.1
+                            Module Objectives</a></h2>
+                            
+                            <p class="normal-text">This module will introduce to the NaaS Operator the process
+                            and best practices to perform preventive and corrective maintenance of Cell
+                            sites as required by the NOC and/or Field Force Management.</p>
+                            
+                            <p class="normal-text">The specific objectives of this module are to:</p>
+                            
+                            <ol class="normal-text ul-iconos" style='margin-top:0in' start=1 type=1>
+                                <li class="normal-text">Provide the fundamentals of Cell site maintenance,
+                                    including a generic process for any Cell Site intervention.</li>
+                                <li class="normal-text">Enable NaaS Operators to implement preventive and
+                                    corrective Cell Site maintenance tasks, following industry best practices.</li>
+                                <li class="normal-text">Guide NaaS Operators to develop reporting mechanisms for
+                                    cell site maintenance activities in conjunction with other operational
+                                    teams (e.g. NOC).</li>
+                            </ol>
+                            
+                            <br><h2><a class="titulo-h2 anchor-bum color-luminati" name="item1-2">1.2
+                            Module Framework</a></h2>
+                            
+                            <p class="normal-text">NaaS PlayBooks Framework shown in
+                            Figure 1 displays the PlayBook modules and their relationship to the Cell Site
+                            Maintenance Module.</p>
+                            
+                            <p class="normal-text">After the Deployment Stream, the
+                            Operations &amp; Maintenance module provides the necessary guidelines to
+                            establish the operational processes, which in turn, have a direct impact and
+                            influence on many aspects of the Field Maintenance Stream.</p>
+                            
+                            <p class="normal-text">The Cell Site Maintenance Module
+                            is included within the Field Maintenance stream. It takes inputs from the Field
+                            Force Management, and Network Operation Center on the Operation &amp;
+                            Maintenance Stream.</p>
+                            
+                            <p class="normal-text"><img class="myImg"  width=568 height=255
+                            id=image4.png
+                            src="images/cell_site_maintenance/image001.png"></p>
+                            
+                            <p align=center><i>Figure
+                            1. PlayBook Framework.</i></p>
+                            
+                            <p class="normal-text">Figure 2 presents the Cell Site
+                            Maintenance functional view where the main functional content of the module is
+                            exhibited.</p>
+                            
+                            <p class="normal-text"><img class="myImg"  width=590 height=285
+                            id=image1.png
+                            src="images/cell_site_maintenance/image002.png"></p>
+                            
+                            <p align=center><i>Figure 2. Cell Site Maintenance</i></p>
+                            
+                            <p class="normal-text">The rest of the module is divided
+                            into two sections. Section 2 contains a high-level view of the Cell Site
+                            Maintenance Process, its prerequisites, and relations with the Field Force
+                            Management and NOC operations. Section 3 contains a high-level description of
+                            the key tasks to be performed as part of the preventive and corrective
+                            maintenance on the cell site, including the implementation guidelines to
+                            elaborate Maintenance Manuals and Maintenance Reports. </p>
+                    </div>
+               
+                    <div class="right">
+                        <a class='link-next' href="#" onclick="switchContent('#fm')">Next &#8658;</a>
+                    </div>
+                    <br>
+                </div>
+
+                <nav id="navbar-example3" class="navbar navbar-light bg-light position-fixed">
+                    <nav class="nav nav-pills flex-column">
+                    
+                    <a id="link-1" class="nav-link bullet-2-link" onclick="onClickActive(event)" href="#item1"><strong>1. INTRODUCTION</strong></a>
+                    <a id="link-2" class="nav-link bullet-2-link" onclick="onClickActive(event)" href="#item1-1"><em>1.1 Module Objectives</em></a>
+                    <a id="link-3" class="nav-link bullet-2-link" onclick="onClickActive(event)" href="#item1-2"><em>1.2 Module Framework</em></a>
+                    </nav>
+                </nav>
+           </section>
+
+           <section id="fm" hidden>
+            <div id="content"> 
+
+                <div data-spy="scroll" data-target="#navbar-example3" data-offset="0">
+                    <h1><a class="titulo-h1 anchor-bum color-luminati-2" name="item2">2
+                        Cell Site Maintenance Process</a></h1>
+                        
+                        <p class="normal-text">Cell Site Maintenance comprises the set of activities
+                        performed by Field Technicians, coordinated by the Dispatch &amp; Coordination
+                        function, as indicated in the <a class="a_link" href="field_force_mnsg">Field Force Management Module</a>. The
+                        objective is to perform the required tasks to prevent or correct malfunctions
+                        at the Cell Sites. This section contains the procedures and best practices to
+                        be performed during Cell Site Maintenance by Field Technicians.</p>
+                        
+                        <br><h2><a class="titulo-h2 anchor-bum color-luminati-2" name="item2-1">2.1
+                        Cell Site Maintenance Process Overview</a></h2>
+                        
+                        <p class="normal-text">A Maintenance intervention is
+                        triggered by a work order provided by the Dispatch &amp; Coordination Function
+                        within the Field Maintenance team. A work order is a document that provides all
+                        the information about a maintenance task and outlines a process for completing
+                        that task. Work orders can include details on who authorized the job, the
+                        scope, who its assigned to, and what is expected from it. </p>
+                        
+                        <p class="normal-text">Maintenance Interventions can be Preventive or Corrective.
+                        Preventive Maintenance is scheduled by Field Work Management following the
+                        engineering recommendations of the equipment vendor or NaaS Operator strategy
+                        as indicated in the <a class="a_link" href="field_work_msgn">Field Force Management </a>module.</p>
+                        
+                        <p class="normal-text">Corrective Tasks are triggered when the NOC detects a fault
+                        in a Cell site, or during Preventive Maintenance activities. In this latter
+                        case, Field technicians detect that Corrective actions are required, notifying
+                        Dispatcher/Field Management to schedule the required Corrective Intervention.</p>
+                        
+                        <p class="normal-text">In both cases, a Maintenance report must be generated by the
+                        Field Technician after any Cell Site Intervention and must be stored to keep a
+                        Maintenance record. </p>
+                        
+                        <p class="normal-text">This process is illustrated in Figure 3.</p>
+                        
+                        <p class="normal-text"><img class="myImg" 
+                        width=514 height=564 id=image3.png
+                        src="images/cell_site_maintenance/image003.jpg"
+                        alt="A close up of a piece of paper&#10;&#10;Description automatically generated"></p>
+                        
+                        <p align=center><i>Figure 3 Cell
+                        Maintenance Process</i></p>
+                        
+                        <p class="normal-text">In order to guarantee a successful Maintenance Intervention,
+                        Field Technicians must perform a set of tasks before each maintenance
+                        intervention, the following subsections contain the best practices to prepare
+                        the Field Maintenance Interventions.</p>
+                        
+                        <br><h2><a class="titulo-h2 anchor-bum color-luminati-2" name="item2-2">2.2
+                        Preparation for the Field Intervention</a></h2>
+                        
+                        <p class="normal-text">Depending on the complexity of the Work Order, the Field
+                        Manager or dispatcher should evaluate how many Technicians are required to
+                        attend the Work Order and request access to the site for all Field Technicians
+                        that will perform the interventions.</p>
+                        
+                        <p class="normal-text">Once the Work Order is dispatched and access to the cell
+                        site has been approved, Field technicians must request the spare parts,
+                        ancillaries and other miscellaneous materials required for the task. This
+                        request is triggered directly by Field Technicians with support from the
+                        Network Operation Center. The Spare parts must include a list of the
+                        Ancillaries that will be required to replace the equipment (as indicated in
+                        vendor documentation), this will ensure that Field Technicians have everything
+                        to perform their maintenance intervention.</p>
+                        
+                        <p class="normal-text">The Preparation of the maintenance intervention is of
+                        paramount importance since will enable Field technicians to perform the
+                        maintenance interventions at the expected time, avoiding delays during reworks,
+                        below are listed some consideration to prepare the maintenance interventions: </p>
+                        
+                        <ol class="normal-text ul-iconos" style='margin-top:0in' start=1 type=1>
+                            <li class="normal-text"><b>Work Order Reception:</b> The field technicians must understand each aspect of
+                             the work order (Preventive or Corrective).</li>
+                             <ol class="normal-text ul-iconos" style='margin-top:0in;font-size: 16px;' start=1 type='a'>
+                                <li>Site Name and Location</li>
+                                <li>What is the fault and How is it corrected?</li>
+                                <li>Which Spare Parts are required?</li>
+                                <li>Which consumables and ancillaries are
+                            required?</li>
+                            </ol>
+                        </ol>
+                        
+                        
+                        
+                        <ol class="normal-text ul-iconos" style='margin-top:0in' start=2 type=1>
+                            <li class="normal-text"><b>Assured
+                             Access is granted and pick up the keys: </b>The Dispatcher /Field
+                             Management request access for the Field Technicians; however, Field
+                             technicians must be sure that the access has been granted and pick up the
+                             keys/pins/passwords before they go to the site.</li>
+                             <li class="normal-text"><b>Tool
+                             verification: </b>Field Technicians must ensure to gather the right tools
+                             to perform what is required in the work order, a Maintenance Manual
+                             details the required tools to perform any maintenance intervention. The elaboration
+                             of the Maintenance Manual will be deeply described in Section 3.</li>
+                             <li class="normal-text"><b>Spare Part and Ancillaries Verification </b>Field technicians must verify that the provided spare
+                             parts are the same model as the equipment that needs to be replaced in the cell site, additionally must
+                             ensure that all ancillaries and consumables required to perform the
+                             maintenance intervention.</li>
+                        </ol>
+                        
+                        <br><h2><a class="titulo-h2 anchor-bum color-luminati-2" name="item2-3">2.3
+                        Work Order Execution</a></h2>
+                        
+                        <p class="normal-text">Execution of the work order should follow a set of tasks to
+                        diminish the risks involved in performing a Maintenance intervention. A Work
+                        order execution procedure ensures that the maintenance is performed properly,
+                        protecting Field Technician of possible injuries and prevents possible damage
+                        to the equipment. Below are listed the recommended tasks to execute a work
+                        order: </p>
+                        
+                        <ol class="normal-text ul-iconos" style='margin-top:0in' start=1 type=1>
+                            <li class="normal-text"><b>Notice of Arrival: </b>Once
+                             Field Technicians arrive at the site,
+                             they must notify it to the NOC, since they must prepare certain actions
+                             before any maintenance intervention such as getting backup files, check
+                             current alarms and dont trigger security actions when the Sites doors
+                             are opened.</li>
+                             <li class="normal-text"><b>Health and safety measures: </b>Field Technicians must perform the Health and Safety
+                             Measures as previously defined by the NaaS Operators, for more information
+                             please see the <a class="a_link" href="i&c_module.html">Installation &amp; Commissioning</a> Module.</li>
+                            <li class="normal-text"><b>Maintenance procedure</b>: Field Technicians must perform the Preventive or
+                             Corrective maintenance as indicated by the Maintenance Manual. The
+                             elaboration of the Maintenance Manual will be described in Section
+                             3.2.1 Maintenance Manual.</li>
+                             <li class="normal-text"><b>Exit Approval:</b>
+                             Once the Corrective or Preventive Actions has been performed Field Technicians
+                             must call the NOC to check if there are any remaining alarms. Once all
+                             alarms are cleared NOC must approve the end of the maintenance
+                             intervention.</li>
+                             <li class="normal-text"><b>Clean the site: </b>After
+                             every Maintenance intervention, Field technicians must ensure to leave the
+                             site clean.</li>
+                             <li class="normal-text"><b>Spare parts management:</b> In case Spare parts have been used, Field Technicians
+                             must record the serial number of the used Spare Part and add it to the
+                             Maintenance Report. In case the Spare part was not used it must be
+                             returned to the warehouse.</li>
+                             <li class="normal-text"><b>Report:</b> All Maintenance interventions should be properly
+                             documented indicating all relevant data that could help to create a
+                             Maintenance record of each cell site. The elaboration of a Maintenance
+                             Report is detailed in Section
+                             3.2.2 Maintenance Intervention Report.</li>
+                        </ol>
+                        
+                        <p class="normal-text">The following section details the Maintenance Guidelines
+                        which instruct NaaS Operators to implement the Maintenance Process for their
+                        Cell sites.</p>
+                </div>
+
+                <a class='link-next' href="#" onclick="switchContent('#hld')"> &#8656; Previous</a>
+                    <a href="url" align="center"></a>
+                    <div class="right">
+                        <a ></a>
+                        <a class="link-next" href="#" onclick="switchContent('#e2e')">Next &#8658;</a>
+                    </div>
+                    <br>
+                
+
+                <nav id="navbar-example3" class="navbar navbar-light bg-light position-fixed">
+                    <nav class="nav nav-pills flex-column">
+                        <a id="fm_link-1" class="nav-link bullet-2-link" onclick="onClickActive(event)" href="#item2"><strong>2. CELL SITE MAINTENANCE PROCESS</strong></a>
+                        <a id="fm_link-2" class="nav-link bullet-2-link" onclick="onClickActive(event)" href="#item2-1"><em>2.1 Cell Site Maintenance Process Overview</em></a>
+                        <a id="fm_link-3" class="nav-link bullet-2-link" onclick="onClickActive(event)" href="#item2-2"><em>2.2 Preparation for the Field Intervention</em></a>
+                        <a id="fm_link-3" class="nav-link bullet-2-link" onclick="onClickActive(event)" href="#item2-3"><em>2.3 Work Order Execution</em></a>
+                    </nav>
+                </nav>
+           </section>
+
+           <section id="e2e" hidden>
+            <div id="content">
+                
+                <div data-spy="scroll" data-target="#navbar-example3" data-offset="0">
+                                        
+                    <h1><a class="titulo-h1 anchor-bum color-luminati-3" name="item3">3
+                        Maintenance Guidelines</a></h1>
+                        
+                        <p class="normal-text">This section provides a
+                        descriptive overview of the tasks involved in Maintenance Procedures, including
+                        Preventive and Corrective interventions and recommended actions for each case. Additionally,
+                        this section includes implementation guidelines that NaaS Operators may
+                        consider to elaborate their maintenance manuals to standardize their maintenance
+                        interventions.</p>
+                        
+                        <br><h2><a class="titulo-h2 anchor-bum color-luminati-3" name="item3-1">3.1
+                        Maintenance tasks description</a></h2>
+                        
+                        <p class="normal-text">In order to guarantee a successful maintenance operation,
+                        Field Technicians must perform a set of tasks before, during and after each
+                        maintenance intervention. This section describes the required tasks to be
+                        performed during the Preventive and Corrective Interventions.</p>
+                        
+                        <h3>3.1.1 Preventive
+                        Maintenance.</h3>
+                        
+                        <p class="normal-text">Preventive Maintenance consists of inspections and services
+                        that are carried out after a fixed time interval. The time cycle can be derived
+                        from the NaaS operator experience and from the manufacturer recommendation,
+                        which are justified by known aging behavior as well as statistics. For
+                        additional details about the preventive time cycle please see the <a class="a_link" href="field_work_mgnmt">Field Work Management</a> module.</p>
+                        
+                        <p class="normal-text">Preventive Maintenance activities include two subtasks:
+                        Inspection and depending on the situation either service or repair. Inspection
+                        refers to the measures taken to identify and assess the current condition of a
+                        maintenance object using a reference standard that must be met. Service or
+                        repair is defined as a non-invasive action that would not interrupt the network
+                        operation and is required to keep the good condition of the Cell Site. If Field
+                        Technicians note that in order to perform a repair is required to interrupt the
+                        network operation, they must notify the NOC / Field Management to evaluate and
+                        schedule the required corrective actions.</p>
+                        
+                        <p class="normal-text">The following subsections contain a General Description of
+                        the Preventive Maintenance tasks for each element on a Cell site, categorized
+                        in Antenna System, Baseband/Transmission Equipment and Cabinet, Power System
+                        and Facilities &amp; Shelter Environment.</p>
+                                                
+                        <h4>3.1.1.1
+                        Antenna System Preventive Maintenance</h4>
+                        
+                        <p class="normal-text">The Antenna System consists of Radio Units, RF Antennas and,
+                        if the site uses Microwave transmission, it will also include the ODU. Naas
+                        Operators may consider the tasks described in Table 1 to perform the Preventive
+                        Maintenance of an Antenna System. The Service is only executed if the item does
+                        not comply with the reference standard.</p>
+                       
+                        <div align=center>
+                        <table class=a border=1 cellspacing=0 cellpadding=0 width=589 style='border-collapse:
+                        collapse;border:none'>
+                        <tr>
+                        <td width=147 valign=top style='width:110.35pt;border-top:#4F81BD;border-left:
+                        #4F81BD;border-bottom:#95B3D7;border-right:#95B3D7;border-style:solid;
+                        border-width:1.0pt;background:#244061;padding:0in 5.4pt 0in 5.4pt'>
+                        <p align=center style="color:#FFF"><b>Item</b></p>
+                        </td>
+                        <td width=147 valign=top style='width:110.35pt;border-top:solid #4F81BD 1.0pt;
+                        border-left:none;border-bottom:solid #95B3D7 1.0pt;border-right:solid #95B3D7 1.0pt;
+                        background:#244061;padding:0in 5.4pt 0in 5.4pt'>
+                        <p align=center style="color:#FFF"><b>Condition Assessment</b></p>
+                        </td>
+                        <td width=147 valign=top style='width:110.35pt;border-top:solid #4F81BD 1.0pt;
+                        border-left:none;border-bottom:solid #95B3D7 1.0pt;border-right:solid #95B3D7 1.0pt;
+                        background:#244061;padding:0in 5.4pt 0in 5.4pt'>
+                        <p align=center style="color:#FFF"><b>Reference Standard</b></p>
+                        </td>
+                        <td width=147 valign=top style='width:110.35pt;border-top:solid #4F81BD 1.0pt;
+                        border-left:none;border-bottom:solid #95B3D7 1.0pt;border-right:solid #4F81BD 1.0pt;
+                        background:#244061;padding:0in 5.4pt 0in 5.4pt'>
+                        <p align=center style="color:#FFF"><b>Service Required</b></p>
+                        </td>
+                        </tr>
+                        <tr>
+                        <td width=147 valign=top style='width:110.35pt;border-top:none;border-left:
+                        solid #4F81BD 1.0pt;border-bottom:solid #95B3D7 1.0pt;border-right:solid #95B3D7 1.0pt;
+                        padding:0in 5.4pt 0in 5.4pt'>
+                        <p class="normal-text">Radio
+                        Units Isolation Caps</p>
+                        </td>
+                        <td width=147 valign=top style='width:110.35pt;border-top:none;border-left:
+                        none;border-bottom:solid #95B3D7 1.0pt;border-right:solid #95B3D7 1.0pt;
+                        padding:0in 5.4pt 0in 5.4pt'>
+                        <p class="normal-text">Check
+                        whether the seals are damaged or loose </p>
+                        </td>
+                        <td width=147 valign=top style='width:110.35pt;border-top:none;border-left:
+                        none;border-bottom:solid #95B3D7 1.0pt;border-right:solid #95B3D7 1.0pt;
+                        padding:0in 5.4pt 0in 5.4pt'>
+                        <p class="normal-text">The
+                        seals are tight and in good conditions, there is no presence of water within
+                        the seal.</p>
+                        </td>
+                        <td width=147 valign=top style='width:110.35pt;border-top:none;border-left:
+                        none;border-bottom:solid #95B3D7 1.0pt;border-right:solid #4F81BD 1.0pt;
+                        padding:0in 5.4pt 0in 5.4pt'>
+                        <p class="normal-text">Replace
+                        the seals.</p>
+                        </td>
+                        </tr>
+                        <tr>
+                        <td width=147 valign=top style='width:110.35pt;border-top:none;border-left:
+                        solid #4F81BD 1.0pt;border-bottom:solid #95B3D7 1.0pt;border-right:solid #95B3D7 1.0pt;
+                        padding:0in 5.4pt 0in 5.4pt'>
+                        <p class="normal-text">Radio
+                        Unit Ports </p>
+                        </td>
+                        <td width=147 valign=top style='width:110.35pt;border-top:none;border-left:
+                        none;border-bottom:solid #95B3D7 1.0pt;border-right:solid #95B3D7 1.0pt;
+                        padding:0in 5.4pt 0in 5.4pt'>
+                        <p class="normal-text">Check
+                        the insulation tape in the antenna and the radio ports.</p>
+                        <p class="normal-text">Check
+                        the Isolation to the Power Port and Fibers</p>
+                        </td>
+                        <td width=147 valign=top style='width:110.35pt;border-top:none;border-left:
+                        none;border-bottom:solid #95B3D7 1.0pt;border-right:solid #95B3D7 1.0pt;
+                        padding:0in 5.4pt 0in 5.4pt'>
+                        <p class="normal-text">The
+                        insulation is in good condition; there is no presence of water in the seals.</p>
+                        </td>
+                        <td width=147 valign=top style='width:110.35pt;border-top:none;border-left:
+                        none;border-bottom:solid #95B3D7 1.0pt;border-right:solid #4F81BD 1.0pt;
+                        padding:0in 5.4pt 0in 5.4pt'>
+                        <p class="normal-text">Replace
+                        the seals or insulation tape</p>
+                        </td>
+                        </tr>
+                        <tr>
+                        <td width=147 valign=top style='width:110.35pt;border-top:none;border-left:
+                        solid #4F81BD 1.0pt;border-bottom:solid #95B3D7 1.0pt;border-right:solid #95B3D7 1.0pt;
+                        padding:0in 5.4pt 0in 5.4pt'>
+                        <p class="normal-text">Radio
+                        unit and Antenna Mounting</p>
+                        </td>
+                        <td width=147 valign=top style='width:110.35pt;border-top:none;border-left:
+                        none;border-bottom:solid #95B3D7 1.0pt;border-right:solid #95B3D7 1.0pt;
+                        padding:0in 5.4pt 0in 5.4pt'>
+                        <p class="normal-text">Check
+                        whether there are loose screws in the Radio Unit and Antenna Mounting Kit</p>
+                        </td>
+                        <td width=147 valign=top style='width:110.35pt;border-top:none;border-left:
+                        none;border-bottom:solid #95B3D7 1.0pt;border-right:solid #95B3D7 1.0pt;
+                        padding:0in 5.4pt 0in 5.4pt'>
+                        <p class="normal-text">Radio
+                        Units and Antenna are properly fixed with no loose screws or bolts</p>
+                        </td>
+                        <td width=147 valign=top style='width:110.35pt;border-top:none;border-left:
+                        none;border-bottom:solid #95B3D7 1.0pt;border-right:solid #4F81BD 1.0pt;
+                        padding:0in 5.4pt 0in 5.4pt'>
+                        <p class="normal-text">Tight
+                        the screws at the right torque</p>
+                        </td>
+                        </tr>
+                        <tr>
+                        <td width=147 valign=top style='width:110.35pt;border-top:none;border-left:
+                        solid #4F81BD 1.0pt;border-bottom:solid #95B3D7 1.0pt;border-right:solid #95B3D7 1.0pt;
+                        padding:0in 5.4pt 0in 5.4pt'>
+                        <p class="normal-text">Antenna
+                        Mechanical Tilt and Azimuth</p>
+                        </td>
+                        <td width=147 valign=top style='width:110.35pt;border-top:none;border-left:
+                        none;border-bottom:solid #95B3D7 1.0pt;border-right:solid #95B3D7 1.0pt;
+                        padding:0in 5.4pt 0in 5.4pt'>
+                        <p class="normal-text">Check
+                        whether the Antenna Mechanical Tilt and Azimuth match with the corresponding
+                        values in the Site Documentation</p>
+                        </td>
+                        <td width=147 valign=top style='width:110.35pt;border-top:none;border-left:
+                        none;border-bottom:solid #95B3D7 1.0pt;border-right:solid #95B3D7 1.0pt;
+                        padding:0in 5.4pt 0in 5.4pt'>
+                        <p class="normal-text">The
+                        Antenna Mechanical Tilt and Azimuth match with the corresponding values.</p>
+                        </td>
+                        <td width=147 valign=top style='width:110.35pt;border-top:none;border-left:
+                        none;border-bottom:solid #95B3D7 1.0pt;border-right:solid #4F81BD 1.0pt;
+                        padding:0in 5.4pt 0in 5.4pt'>
+                        <p class="normal-text">Adjust
+                        the Mechanical Tilt and Azimuth following the maintenance guidelines of the
+                        Antenna Vendor.</p>
+                        </td>
+                        </tr>
+                        <tr>
+                        <td width=147 valign=top style='width:110.35pt;border-top:none;border-left:
+                        solid #4F81BD 1.0pt;border-bottom:solid #4F81BD 1.0pt;border-right:solid #95B3D7 1.0pt;
+                        padding:0in 5.4pt 0in 5.4pt'>
+                        <p class="normal-text">Microwave
+                        Dish</p>
+                        </td>
+                        <td width=147 valign=top style='width:110.35pt;border-top:none;border-left:
+                        none;border-bottom:solid #4F81BD 1.0pt;border-right:solid #95B3D7 1.0pt;
+                        padding:0in 5.4pt 0in 5.4pt'>
+                        <p class="normal-text">Check
+                        the isolation of Intermediate Frequency cable or Ethernet cable and power
+                        cable as appropriate.</p>
+                        <p class="normal-text">Check
+                        the fixing screws of the mounting kit are tight with the right torque</p>
+                        </td>
+                        <td width=147 valign=top style='width:110.35pt;border-top:none;border-left:
+                        none;border-bottom:solid #4F81BD 1.0pt;border-right:solid #95B3D7 1.0pt;
+                        padding:0in 5.4pt 0in 5.4pt'>
+                        <p class="normal-text">The
+                        connection is isolated with no presence of water and the dish is properly fixed
+                        with no loose screw tightened at the right torque.</p>
+                        </td>
+                        <td width=147 valign=top style='width:110.35pt;border-top:none;border-left:
+                        none;border-bottom:solid #4F81BD 1.0pt;border-right:solid #4F81BD 1.0pt;
+                        padding:0in 5.4pt 0in 5.4pt'>
+                        <p class="normal-text">Tight
+                        the screws at the right torque, Replace the seals or insulation tape.</p>
+                        <p class="normal-text"></p>
+                        </td>
+                        </tr>
+                        </table>
+                        </div>
+                        
+                        <p align=center><i>Table 1 Antenna System Preventive
+                        Maintenance</i></p>
+                        
+                        <h4>3.1.1.2
+                        Baseband/Transmission Equipment and Cabinet Preventive Maintenance </h4>
+                        
+                        <p class="normal-text">The baseband, transmission and cabinets have maintenance
+                        items that should be checked periodically in order to extend their operational
+                        life. Naas Operators may consider the tasks described in Table 2 to perform the
+                        Preventive Maintenance on the Baseband/Transmission and Cabinets of the Cell
+                        Sites.</p>
+                        
+                        <div align=center>
+                        <table class=a0 border=1 cellspacing=0 cellpadding=0 width=589
+                        style='border-collapse:collapse;border:none'>
+                        <tr style='height:12.8pt'>
+                        <td width=147 valign=top style='width:110.35pt;border-top:#4F81BD;border-left:
+                        #4F81BD;border-bottom:#95B3D7;border-right:#95B3D7;border-style:solid;
+                        border-width:1.0pt;background:#244061;padding:0in 5.4pt 0in 5.4pt;height:
+                        12.8pt'>
+                        <p align=center style="color:#FFF"><b>Item</b></p>
+                        </td>
+                        <td width=147 valign=top style='width:110.35pt;border-top:solid #4F81BD 1.0pt;
+                        border-left:none;border-bottom:solid #95B3D7 1.0pt;border-right:solid #95B3D7 1.0pt;
+                        background:#244061;padding:0in 5.4pt 0in 5.4pt;height:12.8pt'>
+                        <p align=center style="color:#FFF"><b>Condition Assessment</b></p>
+                        </td>
+                        <td width=147 valign=top style='width:110.35pt;border-top:solid #4F81BD 1.0pt;
+                        border-left:none;border-bottom:solid #95B3D7 1.0pt;border-right:solid #95B3D7 1.0pt;
+                        background:#244061;padding:0in 5.4pt 0in 5.4pt;height:12.8pt'>
+                        <p align=center style="color:#FFF"><b>Reference Standard</b></p>
+                        </td>
+                        <td width=147 valign=top style='width:110.35pt;border-top:solid #4F81BD 1.0pt;
+                        border-left:none;border-bottom:solid #95B3D7 1.0pt;border-right:solid #4F81BD 1.0pt;
+                        background:#244061;padding:0in 5.4pt 0in 5.4pt;height:12.8pt'>
+                        <p align=center style="color:#FFF"><b>Service Required</b></p>
+                        </td>
+                        </tr>
+                        <tr>
+                        <td width=147 valign=top style='width:110.35pt;border-top:none;border-left:
+                        solid #4F81BD 1.0pt;border-bottom:solid #95B3D7 1.0pt;border-right:solid #95B3D7 1.0pt;
+                        padding:0in 5.4pt 0in 5.4pt'>
+                        <p class="normal-text">Fans
+                        in Baseband, Transmission equipment and/or cabinet</p>
+                        </td>
+                        <td width=147 valign=top style='width:110.35pt;border-top:none;border-left:
+                        none;border-bottom:solid #95B3D7 1.0pt;border-right:solid #95B3D7 1.0pt;
+                        padding:0in 5.4pt 0in 5.4pt'>
+                        <p class="normal-text">Check whether the fans
+                        are operational.</p>
+                        </td>
+                        <td width=147 valign=top style='width:110.35pt;border-top:none;border-left:
+                        none;border-bottom:solid #95B3D7 1.0pt;border-right:solid #95B3D7 1.0pt;
+                        padding:0in 5.4pt 0in 5.4pt'>
+                        <p class="normal-text">The
+                        fans work properly without exceptional sounds generated by friction between
+                        the blades of the fan and the sub-rack.</p>
+                        </td>
+                        <td width=147 valign=top style='width:110.35pt;border-top:none;border-left:
+                        none;border-bottom:solid #95B3D7 1.0pt;border-right:solid #4F81BD 1.0pt;
+                        padding:0in 5.4pt 0in 5.4pt'>
+                        <p class="normal-text">Notify
+                        NOC and/or Field Management about any malfunction, replace FAN if it is
+                        indicated by NOC / Field Management following the vendor documentation.</p>
+                        </td>
+                        </tr>
+                        <tr>
+                        <td width=147 valign=top style='width:110.35pt;border-top:none;border-left:
+                        solid #4F81BD 1.0pt;border-bottom:solid #95B3D7 1.0pt;border-right:solid #95B3D7 1.0pt;
+                        padding:0in 5.4pt 0in 5.4pt'>
+                        <p class="normal-text">Cabinet
+                        air filter</p>
+                        </td>
+                        <td width=147 valign=top style='width:110.35pt;border-top:none;border-left:
+                        none;border-bottom:solid #95B3D7 1.0pt;border-right:solid #95B3D7 1.0pt;
+                        padding:0in 5.4pt 0in 5.4pt'>
+                        <p class="normal-text">Check for excessive
+                        presence of dust on the air filter</p>
+                        </td>
+                        <td width=147 valign=top style='width:110.35pt;border-top:none;border-left:
+                        none;border-bottom:solid #95B3D7 1.0pt;border-right:solid #95B3D7 1.0pt;
+                        padding:0in 5.4pt 0in 5.4pt'>
+                        <p class="normal-text">The air filter is clean</p>
+                        </td>
+                        <td width=147 valign=top style='width:110.35pt;border-top:none;border-left:
+                        none;border-bottom:solid #95B3D7 1.0pt;border-right:solid #4F81BD 1.0pt;
+                        padding:0in 5.4pt 0in 5.4pt'>
+                        <p class="normal-text">Clean the air filter.</p>
+                        </td>
+                        </tr>
+                        <tr>
+                        <td width=147 valign=top style='width:110.35pt;border-top:none;border-left:
+                        solid #4F81BD 1.0pt;border-bottom:solid #95B3D7 1.0pt;border-right:solid #95B3D7 1.0pt;
+                        padding:0in 5.4pt 0in 5.4pt'>
+                        <p class="normal-text">Cabinet
+                        Exterior.</p>
+                        </td>
+                        <td width=147 valign=top style='width:110.35pt;border-top:none;border-left:
+                        none;border-bottom:solid #95B3D7 1.0pt;border-right:solid #95B3D7 1.0pt;
+                        padding:0in 5.4pt 0in 5.4pt'>
+                        <p class="normal-text">Check whether there are
+                        dents, cracks, holes, or corrosion on the surface of the cabinet.</p>
+                        </td>
+                        <td width=147 valign=top style='width:110.35pt;border-top:none;border-left:
+                        none;border-bottom:solid #95B3D7 1.0pt;border-right:solid #95B3D7 1.0pt;
+                        padding:0in 5.4pt 0in 5.4pt'>
+                        <p class="normal-text">The cabinet is in good
+                        condition.</p>
+                        </td>
+                        <td width=147 valign=top style='width:110.35pt;border-top:none;border-left:
+                        none;border-bottom:solid #95B3D7 1.0pt;border-right:solid #4F81BD 1.0pt;
+                        padding:0in 5.4pt 0in 5.4pt'>
+                        <p class="normal-text">Notify
+                        Field Management about any malfunction.</p>
+                        <p class="normal-text">Seal
+                        and paint the cabinet if vendor maintenance documentation allows it.</p>
+                        </td>
+                        </tr>
+                        <tr>
+                        <td width=147 valign=top style='width:110.35pt;border-top:none;border-left:
+                        solid #4F81BD 1.0pt;border-bottom:solid #95B3D7 1.0pt;border-right:solid #95B3D7 1.0pt;
+                        padding:0in 5.4pt 0in 5.4pt'>
+                        <p class="normal-text">Lock
+                        and door of the cabinet.</p>
+                        </td>
+                        <td width=147 valign=top style='width:110.35pt;border-top:none;border-left:
+                        none;border-bottom:solid #95B3D7 1.0pt;border-right:solid #95B3D7 1.0pt;
+                        padding:0in 5.4pt 0in 5.4pt'>
+                        <p class="normal-text">Check whether the lock
+                        is normal.</p>
+                        <p class="normal-text">Look for possible
+                        obstructions, rust or broken hinges, broken seals </p>
+                        </td>
+                        <td width=147 valign=top style='width:110.35pt;border-top:none;border-left:
+                        none;border-bottom:solid #95B3D7 1.0pt;border-right:solid #95B3D7 1.0pt;
+                        padding:0in 5.4pt 0in 5.4pt'>
+                        <p class="normal-text">The door can be opened
+                        and closed easily.</p>
+                        </td>
+                        <td width=147 valign=top style='width:110.35pt;border-top:none;border-left:
+                        none;border-bottom:solid #95B3D7 1.0pt;border-right:solid #4F81BD 1.0pt;
+                        padding:0in 5.4pt 0in 5.4pt'>
+                        <p class="normal-text">Perform
+                        the maintenance as indicated in vendor documentation.</p>
+                        </td>
+                        </tr>
+                        <tr>
+                        <td width=147 valign=top style='width:110.35pt;border-top:none;border-left:
+                        solid #4F81BD 1.0pt;border-bottom:solid #95B3D7 1.0pt;border-right:solid #95B3D7 1.0pt;
+                        padding:0in 5.4pt 0in 5.4pt'>
+                        <p class="normal-text">Cleanness
+                        of the cabinet</p>
+                        </td>
+                        <td width=147 valign=top style='width:110.35pt;border-top:none;border-left:
+                        none;border-bottom:solid #95B3D7 1.0pt;border-right:solid #95B3D7 1.0pt;
+                        padding:0in 5.4pt 0in 5.4pt'>
+                        <p class="normal-text">Check whether the
+                        cabinet is clean.</p>
+                        </td>
+                        <td width=147 valign=top style='width:110.35pt;border-top:none;border-left:
+                        none;border-bottom:solid #95B3D7 1.0pt;border-right:solid #95B3D7 1.0pt;
+                        padding:0in 5.4pt 0in 5.4pt'>
+                        <p class="normal-text">The
+                        cabinet surface is</p>
+                        <p class="normal-text">clean. The sub-racks are
+                        not dusty.</p>
+                        </td>
+                        <td width=147 valign=top style='width:110.35pt;border-top:none;border-left:
+                        none;border-bottom:solid #95B3D7 1.0pt;border-right:solid #4F81BD 1.0pt;
+                        padding:0in 5.4pt 0in 5.4pt'>
+                        <p class="normal-text">Clean
+                        the Cabinet Interior. Look for possible leaks or cracks</p>
+                        </td>
+                        </tr>
+                        <tr>
+                        <td width=147 valign=top style='width:110.35pt;border-top:none;border-left:
+                        solid #4F81BD 1.0pt;border-bottom:solid #95B3D7 1.0pt;border-right:solid #95B3D7 1.0pt;
+                        padding:0in 5.4pt 0in 5.4pt'>
+                        <p class="normal-text">Fan
+                        box</p>
+                        </td>
+                        <td width=147 valign=top style='width:110.35pt;border-top:none;border-left:
+                        none;border-bottom:solid #95B3D7 1.0pt;border-right:solid #95B3D7 1.0pt;
+                        padding:0in 5.4pt 0in 5.4pt'>
+                        <p class="normal-text">Check the surface and
+                        interior of the fan box</p>
+                        </td>
+                        <td width=147 valign=top style='width:110.35pt;border-top:none;border-left:
+                        none;border-bottom:solid #95B3D7 1.0pt;border-right:solid #95B3D7 1.0pt;
+                        padding:0in 5.4pt 0in 5.4pt'>
+                        <p class="normal-text">The fan box is clean</p>
+                        </td>
+                        <td width=147 valign=top style='width:110.35pt;border-top:none;border-left:
+                        none;border-bottom:solid #95B3D7 1.0pt;border-right:solid #4F81BD 1.0pt;
+                        padding:0in 5.4pt 0in 5.4pt'>
+                        <p class="normal-text">Clean the fan box.</p>
+                        </td>
+                        </tr>
+                        <tr>
+                        <td width=147 valign=top style='width:110.35pt;border-top:none;border-left:
+                        solid #4F81BD 1.0pt;border-bottom:solid #4F81BD 1.0pt;border-right:solid #95B3D7 1.0pt;
+                        padding:0in 5.4pt 0in 5.4pt'>
+                        <p class="normal-text">LEDs
+                        on the boards.</p>
+                        </td>
+                        <td width=147 valign=top style='width:110.35pt;border-top:none;border-left:
+                        none;border-bottom:solid #4F81BD 1.0pt;border-right:solid #95B3D7 1.0pt;
+                        padding:0in 5.4pt 0in 5.4pt'>
+                        <p class="normal-text">Check whether the LEDs
+                        on the boards are normal.</p>
+                        </td>
+                        <td width=147 valign=top style='width:110.35pt;border-top:none;border-left:
+                        none;border-bottom:solid #4F81BD 1.0pt;border-right:solid #95B3D7 1.0pt;
+                        padding:0in 5.4pt 0in 5.4pt'>
+                        <p class="normal-text">LEDs dont indicate an
+                        ongoing Alarm</p>
+                        </td>
+                        <td width=147 valign=top style='width:110.35pt;border-top:none;border-left:
+                        none;border-bottom:solid #4F81BD 1.0pt;border-right:solid #4F81BD 1.0pt;
+                        padding:0in 5.4pt 0in 5.4pt'>
+                        <p class="normal-text">Notify to the NOC the
+                        presence of the alarm. Schedule corrective actions as required. </p>
+                        </td>
+                        </tr>
+                        </table>
+                        </div>
+                        
+                        <p align=center><i>Table 2 Baseband, Transmission Equipment
+                        and Cabinet Preventive Maintenance</i></p>
+                        
+                        <h4>3.1.1.3
+                        Power &amp; Grounding System Preventive Maintenance.</h4>
+                        
+                        <p class="normal-text">The Power systems include rectifiers, power distribution
+                        units, cabling, connections, grounding, and batteries. Table 3 provides the
+                        maintenance items, condition assessment, reference standard, and service
+                        required of a power system for a cell site.</p>
+                        
+                        <div align=center>
+                        <table class=a1 border=1 cellspacing=0 cellpadding=0 width=589
+                        style='border-collapse:collapse;border:none'>
+                        <tr>
+                        <td width=147 valign=top style='width:110.35pt;border-top:#4F81BD;border-left:
+                        #4F81BD;border-bottom:#95B3D7;border-right:#95B3D7;border-style:solid;
+                        border-width:1.0pt;background:#244061;padding:0in 5.4pt 0in 5.4pt'>
+                        <p align=center style="color:#FFF"><b>Item</b></p>
+                        </td>
+                        <td width=147 valign=top style='width:110.35pt;border-top:solid #4F81BD 1.0pt;
+                        border-left:none;border-bottom:solid #95B3D7 1.0pt;border-right:solid #95B3D7 1.0pt;
+                        background:#244061;padding:0in 5.4pt 0in 5.4pt'>
+                        <p align=center style="color:#FFF"><b>Condition Assessment</b></p>
+                        </td>
+                        <td width=147 valign=top style='width:110.35pt;border-top:solid #4F81BD 1.0pt;
+                        border-left:none;border-bottom:solid #95B3D7 1.0pt;border-right:solid #95B3D7 1.0pt;
+                        background:#244061;padding:0in 5.4pt 0in 5.4pt'>
+                        <p align=center style="color:#FFF"><b>Reference Standard</b></p>
+                        </td>
+                        <td width=147 valign=top style='width:110.35pt;border-top:solid #4F81BD 1.0pt;
+                        border-left:none;border-bottom:solid #95B3D7 1.0pt;border-right:solid #4F81BD 1.0pt;
+                        background:#244061;padding:0in 5.4pt 0in 5.4pt'>
+                        <p align=center style="color:#FFF"><b>Service Required</b></p>
+                        </td>
+                        </tr>
+                        <tr>
+                        <td width=147 valign=top style='width:110.35pt;border-top:none;border-left:
+                        solid #4F81BD 1.0pt;border-bottom:solid #95B3D7 1.0pt;border-right:solid #95B3D7 1.0pt;
+                        padding:0in 5.4pt 0in 5.4pt'>
+                        <p class="normal-text">Power
+                        cables</p>
+                        </td>
+                        <td width=147 valign=top style='width:110.35pt;border-top:none;border-left:
+                        none;border-bottom:solid #95B3D7 1.0pt;border-right:solid #95B3D7 1.0pt;
+                        padding:0in 5.4pt 0in 5.4pt'>
+                        <p class="normal-text">Check
+                        the connections of power cables carefully.</p>
+                        </td>
+                        <td width=147 valign=top style='width:110.35pt;border-top:none;border-left:
+                        none;border-bottom:solid #95B3D7 1.0pt;border-right:solid #95B3D7 1.0pt;
+                        padding:0in 5.4pt 0in 5.4pt'>
+                        <p class="normal-text">The
+                        power cables are not aging, and there is no corrosion on the connection
+                        points.</p>
+                        </td>
+                        <td width=147 valign=top style='width:110.35pt;border-top:none;border-left:
+                        none;border-bottom:solid #95B3D7 1.0pt;border-right:solid #4F81BD 1.0pt;
+                        padding:0in 5.4pt 0in 5.4pt'>
+                        <p class="normal-text">Notify
+                        to the NOC/Field Management.</p>
+                        <p class="normal-text">Renew
+                        cable connectors if possible</p>
+                        </td>
+                        </tr>
+                        <tr>
+                        <td width=147 valign=top style='width:110.35pt;border-top:none;border-left:
+                        solid #4F81BD 1.0pt;border-bottom:solid #95B3D7 1.0pt;border-right:solid #95B3D7 1.0pt;
+                        padding:0in 5.4pt 0in 5.4pt'>
+                        <p class="normal-text">Voltage
+                        of Power Distribution Units or Power Supply</p>
+                        </td>
+                        <td width=147 valign=top style='width:110.35pt;border-top:none;border-left:
+                        none;border-bottom:solid #95B3D7 1.0pt;border-right:solid #95B3D7 1.0pt;
+                        padding:0in 5.4pt 0in 5.4pt'>
+                        <p class="normal-text">Measure
+                        the voltage delivered by the Power Distribution Units using a multimeter. </p>
+                        </td>
+                        <td width=147 valign=top style='width:110.35pt;border-top:none;border-left:
+                        none;border-bottom:solid #95B3D7 1.0pt;border-right:solid #95B3D7 1.0pt;
+                        padding:0in 5.4pt 0in 5.4pt'>
+                        <p class="normal-text">Voltage
+                        levels are within the operative ranges.</p>
+                        </td>
+                        <td width=147 valign=top style='width:110.35pt;border-top:none;border-left:
+                        none;border-bottom:solid #95B3D7 1.0pt;border-right:solid #4F81BD 1.0pt;
+                        padding:0in 5.4pt 0in 5.4pt'>
+                        <p class="normal-text">Notify
+                        to the NOC/Field Management if Voltage is out of allowed ranges.</p>
+                        </td>
+                        </tr>
+                        <tr>
+                        <td width=147 valign=top style='width:110.35pt;border-top:none;border-left:
+                        solid #4F81BD 1.0pt;border-bottom:solid #95B3D7 1.0pt;border-right:solid #95B3D7 1.0pt;
+                        padding:0in 5.4pt 0in 5.4pt'>
+                        <p class="normal-text">GND
+                        Cables </p>
+                        </td>
+                        <td width=147 valign=top style='width:110.35pt;border-top:none;border-left:
+                        none;border-bottom:solid #95B3D7 1.0pt;border-right:solid #95B3D7 1.0pt;
+                        padding:0in 5.4pt 0in 5.4pt'>
+                        <p class="normal-text">Check
+                        whether the GND cable and grounding bar are connected properly.</p>
+                        </td>
+                        <td width=147 valign=top style='width:110.35pt;border-top:none;border-left:
+                        none;border-bottom:solid #95B3D7 1.0pt;border-right:solid #95B3D7 1.0pt;
+                        padding:0in 5.4pt 0in 5.4pt'>
+                        <p class="normal-text">The
+                        connection points are solid with no corrosion on them</p>
+                        </td>
+                        <td width=147 valign=top style='width:110.35pt;border-top:none;border-left:
+                        none;border-bottom:solid #95B3D7 1.0pt;border-right:solid #4F81BD 1.0pt;
+                        padding:0in 5.4pt 0in 5.4pt'>
+                        <p class="normal-text">Notify
+                        NOC/Field Management.</p>
+                        <p class="normal-text">Renew
+                        cable connectors and/or grounding systems if possible.</p>
+                        </td>
+                        </tr>
+                        <tr>
+                        <td width=147 valign=top style='width:110.35pt;border-top:none;border-left:
+                        solid #4F81BD 1.0pt;border-bottom:solid #95B3D7 1.0pt;border-right:solid #95B3D7 1.0pt;
+                        padding:0in 5.4pt 0in 5.4pt'>
+                        <p class="normal-text">Earth resistance</p>
+                        </td>
+                        <td width=147 valign=top style='width:110.35pt;border-top:none;border-left:
+                        none;border-bottom:solid #95B3D7 1.0pt;border-right:solid #95B3D7 1.0pt;
+                        padding:0in 5.4pt 0in 5.4pt'>
+                        <p class="normal-text">Measure
+                        the earth resistance by using an electric earth resistance tester.</p>
+                        </td>
+                        <td width=147 valign=top style='width:110.35pt;border-top:none;border-left:
+                        none;border-bottom:solid #95B3D7 1.0pt;border-right:solid #95B3D7 1.0pt;
+                        padding:0in 5.4pt 0in 5.4pt'>
+                        <p class="normal-text">The
+                        grounding resistance of the cabinet is less than 5 ohms.</p>
+                        </td>
+                        <td width=147 valign=top style='width:110.35pt;border-top:none;border-left:
+                        none;border-bottom:solid #95B3D7 1.0pt;border-right:solid #4F81BD 1.0pt;
+                        padding:0in 5.4pt 0in 5.4pt'>
+                        <p class="normal-text">Notify
+                        NOC/Field Management .</p>
+                        <p class="normal-text">Renew
+                        cable connectors or cabling if possible</p>
+                        </td>
+                        </tr>
+                        <tr>
+                        <td width=147 valign=top style='width:110.35pt;border-top:none;border-left:
+                        solid #4F81BD 1.0pt;border-bottom:solid #4F81BD 1.0pt;border-right:solid #95B3D7 1.0pt;
+                        padding:0in 5.4pt 0in 5.4pt'>
+                        <p class="normal-text">Batteries</p>
+                        </td>
+                        <td width=147 valign=top style='width:110.35pt;border-top:none;border-left:
+                        none;border-bottom:solid #4F81BD 1.0pt;border-right:solid #95B3D7 1.0pt;
+                        padding:0in 5.4pt 0in 5.4pt'>
+                        <p class="normal-text">Check
+                        the batteries voltage and connections.</p>
+                        </td>
+                        <td width=147 valign=top style='width:110.35pt;border-top:none;border-left:
+                        none;border-bottom:solid #4F81BD 1.0pt;border-right:solid #95B3D7 1.0pt;
+                        padding:0in 5.4pt 0in 5.4pt'>
+                        <p class="normal-text">The
+                        battery capacity is within the normal range and the batteries are correctly
+                        connected without the presence of corrosion or leaks</p>
+                        </td>
+                        <td width=147 valign=top style='width:110.35pt;border-top:none;border-left:
+                        none;border-bottom:solid #4F81BD 1.0pt;border-right:solid #4F81BD 1.0pt;
+                        padding:0in 5.4pt 0in 5.4pt'>
+                        <p class="normal-text">Notify
+                        NOC/Field Management.</p>
+                        <p class="normal-text">Replace
+                        battery/batteries</p>
+                        </td>
+                        </tr>
+                        </table>
+                        </div>
+                        
+                        <p align=center><i>Table 3 Power System Preventive
+                        Maintenance</i></p>
+                        
+                        <h4>3.1.1.4
+                        Facilities and Shelter Environment</h4>
+                        
+                        <p class="normal-text">The facilities environment consists of fences, towers,
+                        ladders and shelter in case there is one in the site. Table 4 provides the
+                        maintenance items, Condition Assessment, Reference Standard, and service
+                        required standards of the facilities and room environment.</p>
+                        
+                        <div align=center>
+                        <table class=a2 border=1 cellspacing=0 cellpadding=0 width=589
+                        style='border-collapse:collapse;border:none'>
+                        <tr>
+                        <td width=147 valign=top style='width:110.35pt;border-top:#4F81BD;border-left:
+                        #4F81BD;border-bottom:#95B3D7;border-right:#95B3D7;border-style:solid;
+                        border-width:1.0pt;background:#244061;padding:0in 5.4pt 0in 5.4pt'>
+                        <p align=center style="color:#FFF"><b>Item</b></p>
+                        </td>
+                        <td width=147 valign=top style='width:110.35pt;border-top:solid #4F81BD 1.0pt;
+                        border-left:none;border-bottom:solid #95B3D7 1.0pt;border-right:solid #95B3D7 1.0pt;
+                        background:#244061;padding:0in 5.4pt 0in 5.4pt'>
+                        <p align=center style="color:#FFF"><b>Condition Assessment</b></p>
+                        </td>
+                        <td width=147 valign=top style='width:110.35pt;border-top:solid #4F81BD 1.0pt;
+                        border-left:none;border-bottom:solid #95B3D7 1.0pt;border-right:solid #95B3D7 1.0pt;
+                        background:#244061;padding:0in 5.4pt 0in 5.4pt'>
+                        <p align=center style="color:#FFF"><b>Reference Standard</b></p>
+                        </td>
+                        <td width=147 valign=top style='width:110.35pt;border-top:solid #4F81BD 1.0pt;
+                        border-left:none;border-bottom:solid #95B3D7 1.0pt;border-right:solid #4F81BD 1.0pt;
+                        background:#244061;padding:0in 5.4pt 0in 5.4pt'>
+                        <p align=center style="color:#FFF"><b>Service Required</b></p>
+                        </td>
+                        </tr>
+                        <tr>
+                        <td width=147 valign=top style='width:110.35pt;border-top:none;border-left:
+                        solid #4F81BD 1.0pt;border-bottom:solid #95B3D7 1.0pt;border-right:solid #95B3D7 1.0pt;
+                        padding:0in 5.4pt 0in 5.4pt'>
+                        <p class="normal-text">Environmental
+                        alarms</p>
+                        </td>
+                        <td width=147 valign=top style='width:110.35pt;border-top:none;border-left:
+                        none;border-bottom:solid #95B3D7 1.0pt;border-right:solid #95B3D7 1.0pt;
+                        padding:0in 5.4pt 0in 5.4pt'>
+                        <p class="normal-text">Check
+                        whether power</p>
+                        <p class="normal-text">supply
+                        alarms, fire alarms, or smoke alarms are reported.</p>
+                        </td>
+                        <td width=147 valign=top style='width:110.35pt;border-top:none;border-left:
+                        none;border-bottom:solid #95B3D7 1.0pt;border-right:solid #95B3D7 1.0pt;
+                        padding:0in 5.4pt 0in 5.4pt'>
+                        <p class="normal-text">No
+                        power supply alarms, fire alarms, or smoke alarms are reported.</p>
+                        </td>
+                        <td width=147 valign=top style='width:110.35pt;border-top:none;border-left:
+                        none;border-bottom:solid #95B3D7 1.0pt;border-right:solid #4F81BD 1.0pt;
+                        padding:0in 5.4pt 0in 5.4pt'>
+                        <p class="normal-text">Notify
+                        Field Management about any malfunction. Perform emergency actions if its
+                        required.</p>
+                        <p class="normal-text">In
+                        the case of sensors reporting false alarms, replace sensors.</p>
+                        </td>
+                        </tr>
+                        <tr>
+                        <td width=147 valign=top style='width:110.35pt;border-top:none;border-left:
+                        solid #4F81BD 1.0pt;border-bottom:solid #95B3D7 1.0pt;border-right:solid #95B3D7 1.0pt;
+                        padding:0in 5.4pt 0in 5.4pt'>
+                        <p class="normal-text">Humidity
+                        in the shelter</p>
+                        </td>
+                        <td width=147 valign=top style='width:110.35pt;border-top:none;border-left:
+                        none;border-bottom:solid #95B3D7 1.0pt;border-right:solid #95B3D7 1.0pt;
+                        padding:0in 5.4pt 0in 5.4pt'>
+                        <p class="normal-text">Record
+                        the humidity read on the hygrometer in the shelter. </p>
+                        </td>
+                        <td width=147 valign=top style='width:110.35pt;border-top:none;border-left:
+                        none;border-bottom:solid #95B3D7 1.0pt;border-right:solid #95B3D7 1.0pt;
+                        padding:0in 5.4pt 0in 5.4pt'>
+                        <p class="normal-text">The
+                        hygrometer indicates the humidity range from 5% to 85% </p>
+                        </td>
+                        <td width=147 valign=top style='width:110.35pt;border-top:none;border-left:
+                        none;border-bottom:solid #95B3D7 1.0pt;border-right:solid #4F81BD 1.0pt;
+                        padding:0in 5.4pt 0in 5.4pt'>
+                        <p class="normal-text">Check
+                        for presence of water within the shelter, look for leaks and notify NOC/Field
+                        Management</p>
+                        </td>
+                        </tr>
+                        <tr>
+                        <td width=147 valign=top style='width:110.35pt;border-top:none;border-left:
+                        solid #4F81BD 1.0pt;border-bottom:solid #95B3D7 1.0pt;border-right:solid #95B3D7 1.0pt;
+                        padding:0in 5.4pt 0in 5.4pt'>
+                        <p class="normal-text">Illumination
+                        in the shelter</p>
+                        </td>
+                        <td width=147 valign=top style='width:110.35pt;border-top:none;border-left:
+                        none;border-bottom:solid #95B3D7 1.0pt;border-right:solid #95B3D7 1.0pt;
+                        padding:0in 5.4pt 0in 5.4pt'>
+                        <p class="normal-text">Check
+                        whether the routine and emergency illumination in the equipment room is
+                        normal.</p>
+                        </td>
+                        <td width=147 valign=top style='width:110.35pt;border-top:none;border-left:
+                        none;border-bottom:solid #95B3D7 1.0pt;border-right:solid #95B3D7 1.0pt;
+                        padding:0in 5.4pt 0in 5.4pt'>
+                        <p class="normal-text">The
+                        illumination works properly</p>
+                        </td>
+                        <td width=147 valign=top style='width:110.35pt;border-top:none;border-left:
+                        none;border-bottom:solid #95B3D7 1.0pt;border-right:solid #4F81BD 1.0pt;
+                        padding:0in 5.4pt 0in 5.4pt'>
+                        <p class="normal-text">Look
+                        if fuse or light breakers are switched on, notify Field Management of any
+                        malfunction. </p>
+                        </td>
+                        </tr>
+                        <tr>
+                        <td width=147 valign=top style='width:110.35pt;border-top:none;border-left:
+                        solid #4F81BD 1.0pt;border-bottom:solid #95B3D7 1.0pt;border-right:solid #95B3D7 1.0pt;
+                        padding:0in 5.4pt 0in 5.4pt'>
+                        <p class="normal-text">Air
+                        conditioner</p>
+                        </td>
+                        <td width=147 valign=top style='width:110.35pt;border-top:none;border-left:
+                        none;border-bottom:solid #95B3D7 1.0pt;border-right:solid #95B3D7 1.0pt;
+                        padding:0in 5.4pt 0in 5.4pt'>
+                        <p class="normal-text">Check
+                        whether the air conditioner is working normally</p>
+                        </td>
+                        <td width=147 valign=top style='width:110.35pt;border-top:none;border-left:
+                        none;border-bottom:solid #95B3D7 1.0pt;border-right:solid #95B3D7 1.0pt;
+                        padding:0in 5.4pt 0in 5.4pt'>
+                        <p class="normal-text">The
+                        thermometer indicates a temperature range of -20C to +50C</p>
+                        </td>
+                        <td width=147 valign=top style='width:110.35pt;border-top:none;border-left:
+                        none;border-bottom:solid #95B3D7 1.0pt;border-right:solid #4F81BD 1.0pt;
+                        padding:0in 5.4pt 0in 5.4pt'>
+                        <p class="normal-text">Perform
+                        Maintenance procedures as are indicated by the Air conditioner vendor such
+                        as:</p>
+                        <p class="normal-text">-Change
+                        or clean the air filters.</p>
+                        <p class="normal-text">-Clean
+                        the air conditioners coils.</p>
+                        <p class="normal-text">-Remove
+                        debris from the unit.</p>
+                        </td>
+                        </tr>
+                        <tr>
+                        <td width=147 valign=top style='width:110.35pt;border-top:none;border-left:
+                        solid #4F81BD 1.0pt;border-bottom:solid #95B3D7 1.0pt;border-right:solid #95B3D7 1.0pt;
+                        padding:0in 5.4pt 0in 5.4pt'>
+                        <p class="normal-text">Protective
+                        devices</p>
+                        </td>
+                        <td width=147 valign=top style='width:110.35pt;border-top:none;border-left:
+                        none;border-bottom:solid #95B3D7 1.0pt;border-right:solid #95B3D7 1.0pt;
+                        padding:0in 5.4pt 0in 5.4pt'>
+                        <p class="normal-text">Check
+                        whether anti-disaster devices, equipment protection devices, and fire
+                        protection devices are in good condition.</p>
+                        </td>
+                        <td width=147 valign=top style='width:110.35pt;border-top:none;border-left:
+                        none;border-bottom:solid #95B3D7 1.0pt;border-right:solid #95B3D7 1.0pt;
+                        padding:0in 5.4pt 0in 5.4pt'>
+                        <p class="normal-text">-The
+                        foam extinguisher or dry powder fire extinguisher is installed in the
+                        equipment room. The pressure and validity period of the extinguisher meets
+                        the requirements</p>
+                        <p class="normal-text">-There
+                        is no danger of damage to the equipment by rats or insects.</p>
+                        </td>
+                        <td width=147 valign=top style='width:110.35pt;border-top:none;border-left:
+                        none;border-bottom:solid #95B3D7 1.0pt;border-right:solid #4F81BD 1.0pt;
+                        padding:0in 5.4pt 0in 5.4pt'>
+                        <p class="normal-text">Replace
+                        or fill the extinguisher </p>
+                        <p class="normal-text"></p>
+                        </td>
+                        </tr>
+                        <tr>
+                        <td width=147 valign=top style='width:110.35pt;border-top:none;border-left:
+                        solid #4F81BD 1.0pt;border-bottom:solid #95B3D7 1.0pt;border-right:solid #95B3D7 1.0pt;
+                        padding:0in 5.4pt 0in 5.4pt'>
+                        <p class="normal-text">Shelter
+                        Cleanliness.</p>
+                        </td>
+                        <td width=147 valign=top style='width:110.35pt;border-top:none;border-left:
+                        none;border-bottom:solid #95B3D7 1.0pt;border-right:solid #95B3D7 1.0pt;
+                        padding:0in 5.4pt 0in 5.4pt'>
+                        <p class="normal-text">Check
+                        whether cabinets, equipment housing, equipment interior, tables, floor,
+                        doors, and windows are clean</p>
+                        </td>
+                        <td width=147 valign=top style='width:110.35pt;border-top:none;border-left:
+                        none;border-bottom:solid #95B3D7 1.0pt;border-right:solid #95B3D7 1.0pt;
+                        padding:0in 5.4pt 0in 5.4pt'>
+                        <p class="normal-text">All
+                        the items to be checked are clean.</p>
+                        </td>
+                        <td width=147 valign=top style='width:110.35pt;border-top:none;border-left:
+                        none;border-bottom:solid #95B3D7 1.0pt;border-right:solid #4F81BD 1.0pt;
+                        padding:0in 5.4pt 0in 5.4pt'>
+                        <p class="normal-text">Clean the Shelters Interior. Look for possible
+                        leaks.</p>
+                        </td>
+                        </tr>
+                        <tr>
+                        <td width=147 valign=top style='width:110.35pt;border-top:none;border-left:
+                        solid #4F81BD 1.0pt;border-bottom:solid #4F81BD 1.0pt;border-right:solid #95B3D7 1.0pt;
+                        padding:0in 5.4pt 0in 5.4pt'>
+                        <p class="normal-text">Tower
+                        Inspection</p>
+                        </td>
+                        <td width=147 valign=top style='width:110.35pt;border-top:none;border-left:
+                        none;border-bottom:solid #4F81BD 1.0pt;border-right:solid #95B3D7 1.0pt;
+                        padding:0in 5.4pt 0in 5.4pt'>
+                        <p class="normal-text">Check
+                        overall condition of Tower</p>
+                        </td>
+                        <td width=147 valign=top style='width:110.35pt;border-top:none;border-left:
+                        none;border-bottom:solid #4F81BD 1.0pt;border-right:solid #95B3D7 1.0pt;
+                        padding:0in 5.4pt 0in 5.4pt'>
+                        <p class="normal-text">-There
+                        is no evidence of damage on the tower body,</p>
+                        <p class="normal-text">-The
+                        foundations and structural supports are solid.</p>
+                        <p class="normal-text">-In
+                        the case of a guyed tower, the cables are well secured</p>
+                        <p class="normal-text">-In
+                        the case of monopoles, the post is not inclined.</p>
+                        <p class="normal-text">-The
+                        ladders are solid and there is no presence of oxidation.</p>
+                        <p class="normal-text">-The
+                        paint is well preserved</p>
+                        </td>
+                        <td width=147 valign=top style='width:110.35pt;border-top:none;border-left:
+                        none;border-bottom:solid #4F81BD 1.0pt;border-right:solid #4F81BD 1.0pt;
+                        padding:0in 5.4pt 0in 5.4pt'>
+                        <p class="normal-text">Notify, Field Management about any degradation
+                        on the tower.</p>
+                        </td>
+                        </tr>
+                        </table>
+                        </div>
+                        
+                        <p align=center><i>Table 4 Maintenance Items of the Shelter
+                        Environment</i></p>
+                        
+                        <p class="normal-text">NaaS Operators may consider to include as part of their
+                        operations procedures a Preventive Maintenance Checklist to help Field
+                        Technicians to perform Preventive Maintenance on their Cell Sites. This Module
+                        provides a <a href="preventice_main_check" class="a_link">Preventive Maintenance Checklist
+                        Template</a> that NaaS Operators may consider as a
+                        reference to elaborate their own checklists reflecting their needs.</p>
+                        
+                        <p class="normal-text"></p>
+                        
+                        <h3>3.1.2 Corrective
+                        Maintenance.</h3>
+                        
+                        <p class="normal-text">Corrective Maintenance can be triggered by the preventive
+                        inspections which detect that corrective actions are required and will require
+                        service interruption such as cabling replacement. However corrective actions
+                        are triggered as well in case of unexpected failures. In this case, the
+                        Dispatcher/ Field Manager releases a work order which Field Technicians must
+                        review and understand before departure to the site. The following subsections
+                        include a high-level overview of the key tasks
+                        that the field maintenance team may perform before, during and after corrective
+                        actions. </p>
+                        
+                        <h4>3.1.2.1
+                        Corrective Maintenance on Antenna Systems</h4>
+                        
+                        <p class="normal-text">Corrective interventions in antenna systems are commonly
+                        triggered when an alarm is detected by the NOC. Field technicians must analyze
+                        the Antenna System elements looking for faulty components. The best practice is
+                        to start looking for faults that require lower impact repairs, considering
+                        hardware replacements as the last option.</p>
+                        
+                        <p class="normal-text">Hardware replacement in the Antenna system requires special
+                        attention since it may require the use of a pulley and winch to replace the
+                        Radio Units, Antennas or Structural supports. Additionally, its recommended
+                        that at least three people work together to perform a radio or antenna
+                        replacement. Field Management must ensure the availability of these resources.</p>
+                        
+                        <p class="normal-text">NaaS Operators may consider the following method to perform
+                        any Corrective Intervention in the Cell Site Antenna System:</p>
+                        
+                        <p class="normal-text"><b>Pre-requisites</b></p>
+                        
+                        <ul class="normal-text ul-iconos" style='margin-top:0in' start=1 type=1>
+                            <li>Field Technicians/Field Management must
+                            ensure that a winch, pulley, rope and the required tools are available to
+                            perform the Antenna Systems Maintenance.</li>
+                            
+                            <li>Field Management must ensure that at
+                            least three qualified technicians able to perform height works are available.</li>
+                            
+                            <li>Field Technicians must prepare their
+                            Personal Protective equipment, including the necessary equipment to work at
+                            heights.</li>
+                            
+                            <li>The model of the faulty Radio Unit, Antenna, Microwave Dish
+                            or Structural Supports are confirmed, and the New Equipment of the same model
+                            is ready.</li>
+                        </ul>
+                        
+                        <p class="normal-text"><b>Procedure</b></p>
+                        
+                        <ol class="normal-text ul-iconos" style='margin-top:0in' start=1 type=1>
+                            <li class="normal-text">Check if the faulty Radio unit breaker is switched on and
+                            has no damage. In case it is switched off, turn on the switch which should
+                            remain on. In the case of automatic switch off, do not turn it on again.</li>
+                            
+                            <li class="normal-text">Check if the Power Cables are properly connected to the
+                            Radio units and Power Distribution Units, and they are not burned. The Power
+                            cable should not have any presence of damage. Replace the connectors or cable
+                            if it is necessary.</li>
+                        
+                            <li class="normal-text">If power cables and breakers are in good condition, measure
+                            the voltage output from the PDU, which should be within the operative voltage,
+                            replace rectifiers in case voltage are not within the operative voltage ranges,
+                            please see section 3.1.2.3 Corrective Maintenance on the Power System.</li>
+                        
+                            <li class="normal-text">Check that the fibers are not damaged and optic connectors
+                            are clean in baseband and radio side. Replace the fiber if it is necessary.</li>
+                        
+                            <li class="normal-text">Check if the RF jumpers are properly tightened at the
+                            torque specified by the Radio Unit vendor if its possible to perform a VSWR
+                            test after RF cable adjustment. The VSWR should be within the limits specified
+                            by vendors. Replace the RF cable if its necessary.</li>
+                            
+                            <li class="normal-text">If it is required to replace the Radio equipment, Antennas and/or Mounting
+                            Structures Field technicians must follow the instructions provided by the
+                            vendors of each equipment.</li>
+                        </ol>
+                        
+                        <p class="normal-text"><b>Closing Tasks</b></p>
+                        
+                        <ul class="normal-text ul-iconos" style='margin-top:0in' start=1 type=1>
+                            <li>After the corrective actions are
+                            performed, Field technicians must contact NOC to verify the Cell site status
+                            and clear remaining alarms.</li>
+                            <li>Once alarms are cleared Field Technicians must prepare the
+                            report detailing the Spare Parts used.</li>
+                        </ul>
+                        
+                        <h4>3.1.2.2
+                        Corrective Maintenance on Baseband and Transmission Equipment.</h4>
+                        
+                        <p class="normal-text">When corrective actions are triggered to maintain the
+                        baseband or transmission equipment most likely the site will be out of service.
+                        Field technicians must perform certain actions before considering hardware
+                        replacement, below there are some considerations for corrective maintenance on
+                        Baseband and Transmission Equipment.</p>
+                        
+                        <p class="normal-text"><b>Pre-requisites</b></p>
+                        
+                        <ul class="normal-text ul-iconos" style='margin-top:0in' start=1 type=1>
+                            <li>Field technicians must ensure that there is a backup
+                            configuration file of the baseband and transmission configuration, this
+                            procedure may be performed by the NOC, storing the configuration file in the
+                            O&amp;M system or locally by the Field technicians. The best practice is to have the backup file in both locations.</li>
+                        
+                            <li>The model of the faulty board or chassis is confirmed, and
+                            the New Equipment of the same model is ready</li>
+                        </ul>
+                        
+                        <p class="normal-text"><b>Procedure</b></p>
+                        
+                        <ol class="normal-text ul-iconos" style='margin-top:0in' start=1 type=1>
+                            <li class="normal-text">Check if Baseband and Transmission breakers are turned on
+                            and have no damage. In case it is switched off, turn on the switch which should
+                            remain on. In the case of automatic switch off, do not turn it on again.</li>
+                            <li class="normal-text">Check cable connection between transmission equipment and
+                            baseband. Replace the cable if necessary.</li>
+                            <li class="normal-text">Check the baseband transmission status from the local
+                            maintenance port this process should be detailed in vendor documentation. In
+                            case transmission is not available Field Technician must notify the NOC. </li>
+                            <li class="normal-text">Check if the Power Cables are properly connected to the
+                            baseband and transmission equipment, and connectors are not burned. The Power
+                            cable should not have any presence of damage. Replace the connectors or cable
+                            if it is necessary.</li>
+                            <li class="normal-text">If power cables and breakers are in good condition, measure
+                            the voltage output from the PDU, which should be within the operative voltage,
+                            replace rectifiers in case voltage are not within the operative voltage ranges
+                            please see section 3.1.2.3 Corrective Maintenance on the Power System.</li>
+                            <li class="normal-text">If PDUs and rectifiers are working properly a board
+                            replacement should be considered.</li>
+                            <li class="normal-text">Ensure that a Backup file is safe, Field
+                            technicians may power-off the base station, disconnect the cables from the
+                            damaged board always having a record of a connection map.</li>
+                            <li class="normal-text">Field technicians must replace the damaged board with the
+                            new one, following the vendor documentation, then reconnect all fibers and
+                            cables in the same way that was before the replacement. NOC personnel must
+                            ensure the configuration is the same after the replacement.</li>
+                        </ol>
+                        
+                        <p class="normal-text"><b>Closing Tasks</b></p>
+                        
+                        <ul class="normal-text ul-iconos" style='margin-top:0in' start=1 type=1>
+                            <li>After the replacement Field technicians must contact the
+                            NOC to verify the Cell site status and clear remaining alarms.</li>
+                        </ul>
+                        
+                        <p class="normal-text">The same process applies for Transmission equipment,
+                        including switches, cell-routers, IDU or VSAT modems.</p>
+                        
+                        <p class="normal-text">In case that it is required to replace fan modules within
+                        the Baseband/transmission equipment or cabinets it is recommendable to turn off
+                        the equipment. However, some vendors detail in their documentation that the
+                        fans can be replaced without interrupting the service if the
+                        baseband/transmission equipment is located in controlled environments that do
+                        not exceed a certain temperature and the replacement procedure dont exceed 20
+                        minutes.</p>
+                        
+                        <h4>3.1.2.3
+                        Corrective Maintenance on the Power System</h4>
+                        
+                        <p class="normal-text">In order to perform any corrective
+                        action within the power system will be required to disconnect the main power
+                        supply to protect the technicians and the cell site equipment, below are some
+                        recommendations that NaaS operators may consider to include them in their
+                        operational procedures:</p>
+                        
+                        <p class="normal-text"><b>Prerequisites</b></p>
+                        
+                        <ul class="normal-text ul-iconos" style='margin-top:0in' start=1 type=1>
+                            <li>The model of the faulty Power Equipment
+                            is confirmed, and the New Equipment of the same model is ready.</li>
+                            
+                            <li>Field technicians must ensure that the
+                            hardware version is consistent with that of the faulty Power Equipment.</li>
+                            
+                            <li>The tools and materials, such as an ESD
+                            wrist strap or a pair of ESD gloves, Phillips screwdriver, ESD box or bag, and
+                            key to the cabinet door are ready.</li>
+                            
+                            <li>Field technicians must ensure that
+                            there is a backup configuration file of the baseband and transmission
+                            configuration, this procedure may be performed by the NOC, storing the
+                            configuration file in the O&amp;M system or locally by the Field technicians. The
+                            best practice is to have the backup file in both
+                            locations.</li>
+                        </ul>
+                        
+                        <p class="normal-text"><b>Procedure</b></p>
+                        
+                        <ol class="normal-text ul-iconos" style='margin-top:0in' start=1 type=1>
+                            <li class="normal-text">Check if
+                            the main input switch is turned on and have no damage. In case it is
+                            switched off, turn on the switch which should remain on. In the case of
+                            automatic switch off, do not turn it on again.</li>
+                            <li class="normal-text">Check
+                            the main switch voltage, notify NOC /Fieldwork
+                            Management if voltage measurement is not within the operative range or
+                            there is no power.</li>
+                            <li class="normal-text">Check
+                            Rectifiers and Power Distribution Units are properly connected to the
+                            Power System.</li>
+                            <li class="normal-text">Disconnect
+                            the cables connected to the equipment maintaining a connection map at
+                            hand.</li>
+                            <li class="normal-text">Replace
+                            the Damaged Equipment by the new one.</li>
+                            <li class="normal-text">Connect all the power
+                            cables ensuring that the connections are the same as it was before the
+                            replacement using the connection map.</li>
+                        </ol>
+                        
+                        <p class="normal-text"><b>Closing Tasks</b></p>
+                        
+                        <ul class="normal-text ul-iconos" style='margin-top:0in' start=1 type=1>
+                            <li>After the replacement Field technicians must contact NOC to
+                            verify the Cell site status and clear all remaining alarms.</li>
+                        </ul>
+                        
+                        <h4>3.1.2.4
+                        Corrective Maintenance on Facilities and Shelter Environment</h4>
+                        
+                        <p class="normal-text">Facilities corrective interventions may be triggered by a
+                        preventive maintenance, or post-checks during other corrective interventions.</p>
+                        
+                        <p class="normal-text">Facilities Maintenance requires a set of tools and materials
+                        that NaaS operators may not have in their warehouse, additionally it is not
+                        expected that field technicians have the required skills to repair fences,
+                        shelters or towers. The recommended strategy for Facilities Maintenance is to
+                        hire maintenance services from the construction companies or Contractors. Field
+                        Management must keep track of the companies that provide these services,
+                        oversee the process, and ensure that the required maintenance is performed.</p>
+                        
+                        <br><h2><a class="titulo-h2 anchor-bum color-luminati-3" name="item3-2">3.2
+                        Maintenance Implementation</a></h2>
+                        
+                        <p class="normal-text">In order to standardize the Maintenance interventions in
+                        their cell sites, NaaS Operators may consider a Maintenance Manual which Field
+                        Technicians and Management must follow. The elaboration of Maintenance Manuals
+                        ensure that a process is followed, guaranteeing a quality intervention,
+                        diminishing risks, and preventing the creation of more issues during an
+                        intervention. Additionally, Maintenance Interventions should be reported to
+                        keep track of maintenance history, which enhances the health visibility of each
+                        piece of equipment. This section provides guidelines to elaborate the
+                        Maintenance Manuals and the Maintenance Reports, to implement maintenance
+                        operations into the NaaS Networks. </p>
+                        
+                        <h3>3.2.1 Field
+                        Maintenance Manual</h3>
+                        
+                        <p class="normal-text">The Field Maintenance Manual is a document that includes the
+                        process that the Field Maintenance team must follow in order to perform any
+                        maintenance intervention.</p>
+                        
+                        <p class="normal-text">The structure of this document must be a step-by-step guide
+                        for preventive and corrective maintenance. NaaS Operators may consider as a
+                        reference, the content of Sections 2,
+                        Sections
+                        3.1.1 and Section 3.1.2 to
+                        elaborate them. Please note that the actual maintenance and replacement
+                        procedures are detailed by the vendor of each equipment as well as the required
+                        tools. </p>
+                        
+                        <p class="normal-text">The Maintenance Manual must contain the following outline:</p>
+                        
+                        <ol class="normal-text ul-iconos" style='margin-top:0in' start=1 type=1>
+                            <li>Process Summary</li>
+                            <li>Maintenance Pre-work</li>
+                            <li>Health &amp; Safety Measures</li>
+                            <li>Preventive Maintenance Instructions</li>
+                            <li>Corrective Maintenance Instructions</li>
+                        </ol>
+                        
+                        <p class="normal-text"></p>
+                        
+                        <p class="normal-text">This module provides a <a href="maintenace_manual_template" class="a_link">Maintenance
+                        Manual template</a> for
+                        Antenna System, Baseband/Transmission Equipment, and Power system in order to
+                        be adapted by NaaS Operators. The following
+                        sections present an analysis of the Maintenance Manual Content with the
+                        structure previously mentioned, including examples for Preventive and
+                        Corrective Maintenance instructions.</p>
+                        
+                        <h4>3.2.1.1
+                        Process Summary</h4>
+                        
+                        <p class="normal-text">The Maintenance Manual must provide a summary of the
+                        Maintenance Process including a process diagram that covers from Work Order
+                        Dispatch and Reception to Reporting. NaaS Operators may take as a reference the
+                        content of Section 2 for their Maintenance Manual.</p>
+                        
+                        <h4>3.2.1.2
+                        Maintenance Pre-work</h4>
+                        
+                        <p class="normal-text">Maintenance Pre-work consists of a set of validations that
+                        Field Technicians must perform before the Maintenance Intervention. NaaS
+                        Operators can consider it as a prerequisite before the hands-on tasks and add
+                        it to the Maintenance Manual. Below is a list of tasks that a NaaS Operator
+                        must consider.</p>
+                        
+                        <p class="normal-text"><b>1. </b><b>Access Request</b><br>The
+                        Maintenance Manual must include a section that indicates step by step the task
+                        that the Field Technician must perform to request access to the site as
+                        indicated in the module <a class="a_link" href="field_force_msgt">Field Force Management.</a> </p>
+                        
+                        <p class="normal-text"><b>2. </b><b>Spare Parts and Ancillaries Request</b><br>The Maintenance Manual
+                        must include the process which Field Technicians must follow to request the
+                        required Spare Parts, Ancillaries and Consumables that will be required for the
+                        intervention. Specifics regarding Spare Parts Management are covered in the Field
+                        Force Management Module.</p>
+                        
+                        <p class="normal-text"><b>3.
+                        </b><b>Tools Pre-check </b><br>Maintenance Manuals may include a list of tools and
+                        testers. This will ensure that installation technicians have all the required
+                        tools before they go to the site. NaaS Operators may find the required tools to
+                        perform the maintenance interventions in the vendor documentation.</p>
+                        
+                        <h4>3.2.1.3
+                        Health &amp; Safety Measures</h4>
+                        
+                        <p class="normal-text">The Maintenance Manual must detail the Health &amp; Safety
+                        Measures including a set of tasks to prevent injuries and detail the Personal
+                        Protective Equipment that field technicians must wear before the Maintenance Intervention.
+                        Field Technicians must consider those tasks a prerequisite for the Preventive
+                        or Corrective actions. Below are listed the minimum Health and safety measures
+                        to consider before any maintenance intervention: </p>
+                        
+                        <ul class="normal-text ul-iconos" style='margin-top:0in' start=1 type=1>
+                            <li><b>Worksite Analysis and Inspection:
+                            </b>Field Technicians must ensure that cell sites
+                            have the proper conditions to avoid work accidents. Best practices
+                            should not allow work in heights with winds velocity beyond 30Km/h, water, snow
+                            or ice accumulated in the tower should be considered a stopper to perform
+                            maintenance interventions at height.</li>
+                            
+                            <li><b>Emergency Response: </b>Field Technicians must know what to do in case of an
+                            Emergency.</li>
+                            
+                            <li>
+                            <b>Personal Protective Equipment:
+                            </b>Field technicians must know how to wear properly their Personal Protective Equipment and wear their
+                            ID Badge.</li>
+                            
+                            <li>
+                            <b>Electrical Safety: </b>Field Technicians must know the risk of working with
+                            electrical equipment.</li>
+                        </ul>
+                        
+                        <p class="normal-text"><b></b></p>
+                        
+                        <h4>3.2.1.4
+                        Preventive Maintenance Instructions</h4>
+                        
+                        <p class="normal-text">The preventive maintenance instructions should be detailed
+                        step-by-step in the Maintenance Manual as clearly as possible. NaaS Operators
+                        may use the content of Section 3.1.1 as
+                        a guide to elaborate the Preventive Maintenance instructions. Below is an
+                        example of the Preventive Maintenance Instructions for Antenna System, Baseband
+                        and transmission Equipment and power equipment.</p>
+                        
+                        <div style='border:solid black 1.0pt;padding:1.0pt 1.0pt 1.0pt 1.0pt;
+                        background:#D9D9D9'>
+                        
+                        <p class="normal-text"><b>Antenna System Preventive
+                        Maintenance Procedure:</b></p>
+                        
+                        <p class="normal-text"><b>1.-</b> Check Radio Units
+                        caps and seals of unused ports, replace the caps and seals if its required.
+                        Figure 4 shows the cap replacement of a Radio Unit:</p>
+                        
+                        <p class="normal-text"><img class="myImg"  border=0 width=352 height=213 id=image9.jpg
+                        src="images/cell_site_maintenance/image004.jpg"></p>
+                        
+                        <p align=center><i>Figure 4 Caps and Seals Replacement in a
+                        Radio Unit</i></p>
+                        
+                        <p class="normal-text"><b>2.-</b> In case RF ports
+                        are isolated by insulation tape, check the overall condition of the isolation
+                        in the antenna and the radio side, and determine if it is required to remove
+                        old rubber and apply new isolation to the ports, perform the same procedure to
+                        the Power port in the Radio Unit. <i>Figure 5</i> shows the RF port isolations
+                        of a 4X4 MIMO configuration.</p>
+                        
+                        <p class="normal-text"><img class="myImg" 
+                        border=0 width=290 height=195 id=image14.png
+                        src="images/cell_site_maintenance/image005.png"></p>
+                        
+                        <p align=center><i>Figure 5 RF Ports seals in
+                        good conditions</i></p>
+                        
+                        <p class="normal-text"><b>3.-</b>Check the Radio
+                        Unit mounting fixing screw tightness. Tight all the loose screws to the torque
+                        value specified in the respective product installation manual and replace any
+                        damaged screw. <i>Figure 6</i> indicates the fixing screws of a radio unit
+                        mounting kit.</p>
+                        
+                        <p class="normal-text"><img class="myImg" 
+                        border=0 width=251 height=310 id=image15.png
+                        src="images/cell_site_maintenance/image006.png"></p>
+                        
+                        <p align=center><i>Figure 6 Radio Unit
+                        Mounting Fixing screws</i></p>
+                        
+                        <p class="normal-text"><b>4.-</b>Check the fixing
+                        screws of the antenna mounting, the mechanical tilt and azimuth must be
+                        verified and compared with the site documentation, in case of mismatch readjust
+                        the Mechanical Tilt and Azimuth as indicated by the antenna installation
+                        procedures. <i>Figure 7</i> shows the elements that should be verified during
+                        the antenna inspection.</p>
+                        
+                        <p class="normal-text"><img class="myImg" 
+                        border=0 width=377 height=190 id=image5.png
+                        src="images/cell_site_maintenance/image007.jpg"></p>
+                        
+                        <p align=center><i>Figure 7 Antenna Mounting
+                        Verification</i></p>
+                        
+                        <p class="normal-text"><b>5.-</b>If Microwave
+                        transmission is used, check the IF cable and/or Power Cable isolation in case
+                        of an All Outdoor Configuration. <i>Figure 8</i> shows the isolation of the IF
+                        cable and the Power Cable.</p>
+                        
+                        <p class="normal-text"><img class="myImg" 
+                        border=0 width=286 height=183 id=image12.jpg
+                        src="images/cell_site_maintenance/image008.jpg"></p>
+                        
+                        <p align=center><i>Figure 8 Seals on a
+                        Microwave connections</i></p>
+                        
+                        <p class="normal-text"><b>Baseband and Transmission
+                        System Preventive Maintenance Procedure:</b></p>
+                        
+                        <p class="normal-text"><b>1.-</b>Ensure the fan
+                        units are clear of objects, in case of the presence of dust in the fan outlets
+                        it must be cleaned. The figure below shows the air outlet of an indoor Baseband
+                        in optimal conditions. <i>Figure 9</i> shows the fan outlets of a radio
+                        baseband.</p>
+                        
+                        <p class="normal-text"><b><img class="myImg" 
+                        border=0 width=293 height=195 id=image22.png
+                        src="images/cell_site_maintenance/image009.png"></b></p>
+                        
+                        <p align=center><i>Figure 9 Baseband's clean fan outlets</i></p>
+                        
+                        <p class="normal-text"><b>2.-</b>Check the Isolation
+                        of the cabinet or shelter, especially in cable entrance, check the isolation of
+                        the cable entrance. There is no presence of water inside the cabinet or
+                        shelter, in case it is detected, proper corrective actions must be performed as
+                        soon as possible. <i>Figure 10</i> shows the cable entrance of a cabinet
+                        properly isolated.</p>
+                        
+                        <p class="normal-text"><b><img class="myImg" 
+                        border=0 width=289 height=193 id=image10.png
+                        src="images/cell_site_maintenance/image010.png"></b></p>
+                        
+                        <p align=center><i>Figure 10 Cable entrance of an IP65 Cabinet</i></p>
+                        
+                        <p class="normal-text"><b>3.-</b>Check<b> </b>the Overall Condition of the cabinet, look for
+                        dents, cracks, holes, or corrosion on the surface of the cabinet and whether
+                        the lock is normal, and the door can be opened and closed easily. <i>Figure 11</i>
+                        shows an IP65 cabinet in good condition. </p>
+                        
+                        <p class="normal-text"><img class="myImg" 
+                        border=0 width=292 height=202 id=image13.png
+                        src="images/cell_site_maintenance/image011.png"></p>
+                        
+                        <p align=center><i>Figure 11 Baseband Cabinet in good conditions</i></p>
+                        
+                        <p class="normal-text"><b>4.-</b> Perform an alarm validation of the site, all baseband and
+                        transmission equipment include LEDs that indicate abnormal status, validate
+                        with NOC and check locally the alarms and clear them if its possible. <i>Figure
+                        12</i> shows the alarm indicators of a baseband board.</p>
+                        
+                        <p class="normal-text"><img class="myImg" 
+                        border=0 width=281 height=182 id=image8.png
+                        src="images/cell_site_maintenance/image012.jpg"></p>
+                        
+                        <p align=center><i>Figure 12 LED indicators of a baseband board</i></p>
+                        
+                        <p class="normal-text"><b>Power System: Electric Installation, Rectifiers and Batteries.</b></p>
+                        
+                        <p class="normal-text"><b>1.- </b>Check<b> </b>the
+                        connections of power cables, the power cables are not aging, and there is no
+                        corrosion on the connection points. <i>Figure 13</i> shows an Outdoor Power
+                        Distribution Unit Connection in good conditions:</p>
+                        
+                        <p class="normal-text"><img class="myImg" 
+                        border=0 width=370 height=96 id=image11.png
+                        src="images/cell_site_maintenance/image013.png"></p>
+                        
+                        <p align=center><i>Figure 13 Power connections properly isolated</i></p>
+                        
+                        <p class="normal-text"><b>2.-</b> The rectifiers
+                        input voltage should not exceed their operative voltage, and their output must
+                        not exceed the operative voltage of the system, in case Field Technicians
+                        detect voltage variations corrective actions must be scheduled with the
+                        Dispatcher/ Field Management. <i>Figure 14</i> shows the input power
+                        measurement using a multimeter. </p>
+                        
+                        <p class="normal-text"><img class="myImg" 
+                        border=0 width=282 height=211 id=image17.png
+                        src="images/cell_site_maintenance/image014.png"></p>
+                        
+                        <p align=center><i>Figure 14 Input power measurement</i></p>
+                        
+                        <p class="normal-text"><b>3.- </b>Check<b> </b>the GND cable and grounding bar. Ensure that
+                        the connections of the GND cables are solid with no corrosion on them. <i>Figure
+                        15</i> shows the grounding connections of a cabinet.</p>
+                        
+                        <p class="normal-text"><img class="myImg" 
+                        border=0 width=306 height=206 id=image6.png
+                        src="images/cell_site_maintenance/image015.png"></p>
+                        
+                        <p align=center><i>Figure 15</i> <i>Grounding Connections in good conditions</i></p>
+                        
+                        <p class="normal-text"><b>4.-</b>The batteries must be verified including the connections
+                        condition and the battery capacity, which measurements must be within the
+                        normal range. <i>Figure 16</i> shows a battery array in good conditions.</p>
+                        
+                        <p class="normal-text"><img class="myImg" 
+                        border=0 width=317 height=238 id=image18.jpg
+                        src="images/cell_site_maintenance/image016.jpg"
+                        alt="Managed Services of CMPak Network | Damcon Engineering Solutions (Pvt) Ltd."></p>
+                        
+                        <p align=center><i>Figure 16 Battery connections in good conditions</i></p>
+                        
+                        <p class="normal-text"><b>5.-</b>The overall condition of the facilities must be inspected
+                        by the Field supervisors ensuring that the fences, tower, ladders, shelters in
+                        case there is one in the site, remain clean without corrosion and is in good
+                        conditions, in case Field technicians note a degradation of the facilities,
+                        they may perform the actions that dont affect the service such as painting or
+                        sealing with non-invasive products like sealant paste. If field technicians
+                        note that it is required any corrective actions beyond what they might perform
+                        then the Dispatcher/ Field Management must be notified.</p>
+                        
+                        </div>
+                        
+                        <h4>3.2.1.5
+                        Corrective Maintenance Instructions</h4>
+                        
+                        <p class="normal-text">Due to the unexpected characteristics of a corrective
+                        intervention, the Corrective Maintenance Instructions must contain guidance to
+                        prevent more problems during any corrective intervention, including replacement
+                        instructions of the hardware elements of the cell sites such as antennas,
+                        radios, transmission equipment, baseband boards, power system and cables. </p>
+                        
+                        <p class="normal-text">NaaS Operators may use the content of <a>$$link$$Section
+                        3.1.2</a> to elaborate their Corrective Maintenance instructions in the
+                        Maintenance Manual in addition to the replacement instructions provided by the
+                        vendors of each site element. Below an example of Corrective Maintenance
+                        Instructions for board replacement is presented.</p>
+                        
+                        <div style='border:solid black 1.0pt;padding:1.0pt 1.0pt 1.0pt 1.0pt;
+                        background:#D9D9D9'>
+                        
+                        <p class="normal-text"><b>Baseband Corrective
+                        Maintenance Instructions:</b></p>
+                        
+                        <p class="normal-text"><b>Pre-requisites</b></p>
+                        
+                        <p class="normal-text">Electrostatic Discharge (ESD) can damage the baseband
+                        boards. Field Technicians must wear an ESD wrist strap or use a corresponding
+                        method when handling the baseband boards.</p>
+                        
+                        <p class="normal-text">Field technicians must ensure that there is a backup
+                        configuration file of the baseband and transmission configuration, they must
+                        call the NOC to ensure such file is available and contain the last backup file.</p>
+                        
+                        <p class="normal-text"><b>Procedure:</b></p>
+                        
+                        <p class="normal-text"><b>1</b> Disconnect the DC
+                        mains power breaker.</p>
+                        
+                        <p class="normal-text"><b>2</b> Disconnect the
+                        cables keeping a connection map that shows the connections.</p>
+                        
+                        <p class="normal-text"><b>3</b> Unscrew the two baseband board screws as is indicated in <i>Figure
+                        17</i>:</p>
+                        
+                        <p class="normal-text"><img class="myImg"  border=0 width=312 height=187 id=image16.png
+                        src="images/cell_site_maintenance/image017.png"></p>
+                        
+                        <p align=center><i>Figure 17</i> <i>Unscrew baseband board</i></p>
+                        
+                        <p class="normal-text"><b>4.-</b>Open the two baseband board extractors as is indicated in<i>
+                        Figure 18</i>.</p>
+                        
+                        <p class="normal-text"><img class="myImg" 
+                        border=0 width=324 height=193 id=image19.png
+                        src="images/cell_site_maintenance/image018.png"></p>
+                        
+                        <p align=center><i>Figure 18 Opening the
+                        board extractors</i></p>
+                        
+                        <p class="normal-text"><b>5.- </b>Pull out the
+                        baseband board from the chassis as is indicated in<i> Figure 19</i>.</p>
+                        
+                        <p class="normal-text"><img class="myImg" 
+                        border=0 width=327 height=195 id=image20.png
+                        src="images/cell_site_maintenance/image019.png"></p>
+                        
+                        <p align=center><i>Figure 19</i> <i>Pulling out a baseband board</i></p>
+                        
+                        <p class="normal-text"><b>6.-</b>Open the extractors
+                        in the new baseband board.</p>
+                        
+                        <p class="normal-text"><b>7 </b>Insert the new
+                        common baseband board carefully into the chassis and close the extractors as is
+                        indicated in<i> Figure 20</i>.</p>
+                        
+                        <p class="normal-text"><img class="myImg" 
+                        border=0 width=334 height=199 id=image21.png
+                        src="images/cell_site_maintenance/image020.png"></p>
+                        
+                        <p align=center><i>Figure 20 Inserting a
+                        baseband board</i></p>
+                        
+                        <p class="normal-text"><b>8.-</b>Tighten the two
+                        screws by hand, and then tighten them to 1 Nm, using a TX10 screwdriver as is
+                        indicated in <i>Figure 21</i>.</p>
+                        
+                        <p class="normal-text"><img
+                        border=0 width=338 height=203 id=image7.png
+                        src="images/cell_site_maintenance/image021.png"></p>
+                        
+                        <p align=center><i>Figure 21 Tighting the
+                        screws of a baseband board</i></p>
+                        
+                        <p class="normal-text"><b>9.-</b>Cable the baseband
+                        board as it was cabled before the replacement. The same cables must be
+                        connected to the same ports. Remember also about clamping the DC cables and the
+                        GND cables.</p>
+                        
+                        <p class="normal-text"><b>10.-</b>Load a backup
+                        commissioning file to the Local Maintenance Console after plugging in the
+                        module.</p>
+                        
+                        <p class="normal-text"><b>Closing Activities</b></p>
+                        
+                        <p class="normal-text">Field Technician must verify with the NOC if there are more
+                        alarms, clear all of them and create a final backup-commissioning file.</p>
+                        
+                        </div>
+                        
+                        <p class="normal-text">Please note that this module provides a <a class="a_link" href="maintenance_manual_template">Maintenance
+                        Manual Template</a> to be adapted by NaaS Operators following the maintenance
+                        procedures required for each equipment that compose their cell sites.</p>
+                        
+                        <h3>3.2.2 Maintenance
+                        Intervention Report</h3>
+                        
+                        <p class="normal-text">A Maintenance Report will help NaaS Operators to create a
+                        Maintenance History which accurately leads to failure prevention and drives
+                        awareness about equipment maintenance.</p>
+                        
+                        <p class="normal-text">The Intervention Report can be done through a Dispatch Tool,
+                        a Service Management Tool, or storing the reports that are generated manually.
+                        The analysis to properly select the Reporting method is deeply analyzed in the
+                        Module <a class="a_link" href="field_force_managment">Field Force Management.</a></p>
+                        
+                        <p class="normal-text">Regardless of the reporting
+                        method, a properly reported intervention should include enough elements that
+                        prove the intervention was performed correctly. Below the minimum requirements
+                        that NaaS operators should consider as part of the Maintenance interventions
+                        reports are listed:</p>
+                        
+                        <ul class="normal-text ul-iconos" style='margin-top:0in' start=1 type=1>
+                            <li> Site data:</li>
+                        
+                            <ul class="normal-text ul-iconos" style='margin-top:0in;font-size: 16px;' start=1 type=1>
+                                <li>Site Name</li>
+                                <li>Site Address</li>
+                                <li> Site Owner</li>
+                            </ul>
+                        
+                            <li>Site access mode: Digi code, key access, etc.</li>
+                            <li>The date of the current intervention and last intervention.</li>
+                            <li>The work order or ticket number.</li>
+                            <li>The name and position who issue and perform the intervention:</li>
+                        
+                        <ul class="normal-text ul-iconos" style='margin-top:0in;font-size: 16px;' start=1 type=1>
+                            <li>Issued by: <i> Dispatcher/Field Management.</i></li>
+                            <li>Verified by<i> Dispatcher/Field Management.</i></li>
+                            <li>Approved by<i> Dispatcher/Field Management.</i></li>
+                            <li>Performed by<i> Field Technician Name and Company.</i></li>
+                            <li>Supported by<i> NOC Operator Name.</i></li>
+                        </ul>
+                        
+                        <li>The description of the intervention: Intervention type
+                        (Corrective or Preventive), specific constraints.</li>
+                        <li>Photographic Evidence of the Overall Cell Site Condition.</li>
+                        <li>The Spare Parts used on-site
+                        and their respective Serial Numbers.</li>
+                        <li>Photographic evidence of the used Spare Parts.</li>
+                        <li>The date of the measurements of the batteries and
+                        expiration date.</li>
+                        <li>Attachments: site map, diagrams.</li>
+                        </ul>
+
+                        <p class="normal-text">This module includes a <a class="a_link" href="mantece_invention_report">Maintenance
+                        Intervention Report Template </a>to be adapted by NaaS Operators in case they
+                        decide to store their Maintenance Reports Manually.</p>
+                </div>
+               
+
+                <a href="#" class="link-next" onclick="switchContent('#fm')"> &#8656; Previous</a>
+                <br>
+                <a href="url" align="center"></a>
+                <div class="right">
+                    <a ></a>
+                    <a href="#">.</a>
+                </div>
+
+            </div>
+              
+            <nav id="navbar-example3" class="navbar navbar-light bg-light position-fixed">
+             <nav class="nav nav-pills flex-column">
+                <a id="e2e_link-1" class="nav-link bullet-2-link" onclick="onClickActive(event)" href="#item3"><strong>3. MAINTENANCE GUIDELINES</strong></a>
+                <a id="e2e_link-2" class="nav-link bullet-2-link" onclick="onClickActive(event)" href="#item3-1"><em>3.1 Maintenance tasks description</em></a>
+                <a id="e2e_link-3" class="nav-link bullet-2-link" onclick="onClickActive(event)" href="#item3-2"><em>3.2 Maintenance Implementation</em></a>
+             </nav>
+         </nav>
+        </section>  
+    </div>
+
+    <!-- jQuery CDN border-left: 2px solid gray;-->
+     <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+     <!-- Bootstrap Js CDN -->
+     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+     <script type="text/javascript">
+         
+        let tab;
+        var setPin = true;
+        switchContent('#hld');
+        window.scrollTo(0, 0);
+
+        function switchContent(selector){
+           $("#hld").hide();
+           $("#fm").hide();
+           $("#e2e").hide();
+           $(selector).show();
+           tab = selector;
+       }
+
+       window.addEventListener('scroll', function(e) {
+       let reachActive = false;
+           if(tab=="#hld"){
+               $('.color-luminati').each(function(index, element) {
+                   const elem = element.getBoundingClientRect();
+                   if (elem.top < 30) {
+                       $('nav.nav.nav-pills a').removeClass('link-active');
+                       $('nav.nav.nav-pills a:nth-child('+(index+1)+')').addClass('link-active');
+                   }
+                   });
+           }
+           if(tab=="#fm"){
+               $('.color-luminati-2').each(function(index, element) {
+                   const elem = element.getBoundingClientRect();
+                   if (elem.top < 30) {
+                       $('nav.nav.nav-pills a').removeClass('link-active');
+                       $('nav.nav.nav-pills a:nth-child('+(index+1)+')').addClass('link-active');
+                   }
+                   });
+           }
+           if(tab=="#e2e"){
+               $('.color-luminati-3').each(function(index, element) {
+                   const elem = element.getBoundingClientRect();
+                   if (elem.top < 30) {
+                       $('nav.nav.nav-pills a').removeClass('link-active');
+                       $('nav.nav.nav-pills a:nth-child('+(index+1)+')').addClass('link-active');
+                   }
+                   });
+           }
+       });
+    </script>
+
+<div id="myModal" class="modal">
+    <span class="close">&times;</span>
+    <img class="myImg" class="myImg" class="modal-content" id="img01">
+    <div id="caption"></div>
+</div>
+
+<script src="zoom_script.js"></script>
+</body>
+</html>
