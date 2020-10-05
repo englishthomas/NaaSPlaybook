@@ -106,6 +106,7 @@
                                 </a>
                                 <ul class="list-unstyled collapse" id="maintenance">
                                                                         <li><a href="cell_site_maintenance.html" style="margin-left:2em">&bull; Cell Site Maintenance</a></li>
+<li><a href="core_site_maintenance.html" style="margin-left:2em">&bull; Core Site Maintenance</a></li>
                                     
                                 </ul>
                                 </li>
@@ -1054,6 +1055,27 @@
                var _2_19_vocab_var = formulario_5._2_19_vocab.value; 
                var _2_20_vocab_var = formulario_5._2_20_vocab.value; 
                var _2_21_vocab_var = formulario_5._2_21_vocab.value; 
+
+               _2_1_vocab_var = (_2_1_vocab_var == 'yes') ? true : false;
+               _2_2_vocab_var = (_2_2_vocab_var == 'yes') ? true : false;
+               _2_3_vocab_var = (_2_3_vocab_var == 'yes') ? true : false;
+               _2_4_vocab_var = (_2_4_vocab_var == 'yes') ? true : false;
+               _2_5_vocab_var = (_2_5_vocab_var == 'yes') ? true : false;
+               _2_6_vocab_var = (_2_6_vocab_var == 'yes') ? true : false;
+               _2_7_vocab_var = (_2_7_vocab_var == 'yes') ? true : false;
+               _2_8_vocab_var = (_2_8_vocab_var == 'yes') ? true : false;
+               _2_9_vocab_var = (_2_9_vocab_var == 'yes') ? true : false;
+               _2_10_vocab_var = (_2_10_vocab_var == 'yes') ? true : false;
+               _2_11_vocab_var = (_2_11_vocab_var == 'yes') ? true : false;
+               _2_12_vocab_var = (_2_12_vocab_var == 'yes') ? true : false;
+               _2_14_vocab_var = (_2_14_vocab_var == 'yes') ? true : false;
+               _2_15_vocab_var = (_2_15_vocab_var == 'yes') ? true : false;
+               _2_16_vocab_var = (_2_16_vocab_var == 'yes') ? true : false;
+               _2_17_vocab_var = (_2_17_vocab_var == 'yes') ? true : false;
+               _2_18_vocab_var = (_2_18_vocab_var == 'yes') ? true : false;
+               _2_19_vocab_var = (_2_19_vocab_var == 'yes') ? true : false;
+               _2_20_vocab_var = (_2_20_vocab_var == 'yes') ? true : false;
+               _2_21_vocab_var = (_2_21_vocab_var == 'yes') ? true : false;
                
                var _2_1_var = document.getElementById("_2_1").checked;
                var _2_1_1_var = document.getElementById("_2_1_1").checked;
@@ -1222,7 +1244,7 @@
                         }
                     }
                 }
-                /*if(_1_1_var == true && ((_2_1_1_var || (_2_1_2_var && _2_1_3_var && _2_1_4_var && _2_1_5_var)) == false) && _3_1_1_var == false){
+                /*if (_1_1_var == true && ((_2_1_1_var || (_2_1_2_var && _2_1_3_var && _2_1_4_var && _2_1_5_var)) == false) && _3_1_1_var == false){
                     tblBody.appendChild(addRow("Strategic Plan & Scope","Strategy & Scope"));
                 } */
 
@@ -1242,7 +1264,7 @@
 
                 if(_1_2_var == true){
                     if((_2_1_6_var || _2_1_vocab_var) == false){
-                        if((_3_1_2_var && (_3_2_1_var || __3_3_1_var) && (_3_2_2_var || _3_3_2_var) ) == false){
+                        if((_3_1_2_var && (_3_2_1_var || _3_3_1_var) && (_3_2_2_var || _3_3_2_var) ) == false){
                             tblBody.appendChild(addRow("High Level Network Architecture","RAN Architecture"));
                         }
                     }
@@ -1250,58 +1272,228 @@
                 /*if(_1_2_var == true && (_2_1_6_var || _2_1_vocab_var == false) && ((_3_1_2_var && (_3_2_1_var || __3_3_1_var) && (_3_2_2_var || _3_3_2_var) ) == false)){
                     tblBody.appendChild(addRow("High Level Network Architecture","RAN Architecture"));
                 }*/
+                if(_1_2_var == true){
+                    if((_2_1_7_var || _2_2_vocab) == false){
+                        if((_3_1_3_var && (_3_2_3_var || _3_3_3_var) && (_3_2_4_var || _3_3_4_var) && (_3_2_5_var || _3_3_5_var) && _3_2_6_var) == false){
+                            tblBody.appendChild(addRow("High Level Network Architecture","TX & IP Architecture"));
+                        }
+                    }
+                }
+                /*if(_1_2_var == true && ((_2_1_7_var || _2_2_vocab) == false) && (_3_1_3_var && (_3_2_3_var || _3_3_3_var) && (_3_2_4_var || _3_3_4_var) && (_3_2_5_var || _3_3_5_var) && _3_2_6_var)){
+                    tblBody.appendChild(addRow("High Level Network Architecture","TX & IP Architecture"));
+                } */
 
                 if(_1_2_var == true){
-                    
+                    if(((_2_3_vocab_var == false) || (_2_1_8_var || _2_4_vocab_var)) == false ){
+                        if((_3_1_4_var && _3_2_7_var && _3_3_6_var) == false){
+                            tblBody.appendChild(addRow("High Level Network Architecture","Mobile Core Architecture"));
+                        }
+                    }
                 }
-                if(_1_2_var == true && ((_2_1_7_var || _2_2_vocab) == false) && (_3_1_3_var && (_3_2_3_var || _3_3_3_var) && (_3_2_4_var || _3_3_4_var) && (_3_2_5_var || _3_3_5_var) && _3_2_6_var)){
-                    tblBody.appendChild(addRow("High Level Network Architecture","TX & IP Architecture"));
-                } 
-                if(_1_2_var == true && _2_3_vocab_var == 'no' && ((_2_1_8_var || _2_4_vocab_var) == false) && ((_3_1_4_var && _3_2_7_var && _3_3_6_var) == false)){
+                /*if(_1_2_var == true && _2_3_vocab_var == 'no' && ((_2_1_8_var || _2_4_vocab_var) == false) && ((_3_1_4_var && _3_2_7_var && _3_3_6_var) == false)){
                     tblBody.appendChild(addRow("High Level Network Architecture","Mobile Core Architecture"));
-                } 
-                if(_1_2_var == true && ((_2_5_vocab_var || _2_1_9_var) == false) && (_3_1_5_var == false)){
+                } */
+
+                if(_1_2_var == true){
+                    if(_2_1_9_var == true){
+                        if(_3_1_5_var == false){
+                            tblBody.appendChild(addRow("**High Level Network Architecture","Network Monitoring Architecture"));
+                        }
+                    }
+                    if(_2_5_vocab_var == false){
+                        if(_3_1_5_var == false){
+                            tblBody.appendChild(addRow("High Level Network Architecture","Network Monitoring Architecture"));
+                        }
+                    }
+                }
+                /*if(_1_2_var == true && ((_2_5_vocab_var || _2_1_9_var) == false) && (_3_1_5_var == false)){
                     tblBody.appendChild(addRow("High Level Network Architecture","Network Monitoring Architecture"));
-                } 
-                if(_1_1_var == true || _1_2_var == true || _1_3_var == true && ( (_2_2_1_var || _2_6_vocab_var) == false) && ((_3_2_1_var && _3_2_2_var) == false)){
+                } */
+
+                if(_1_1_var == true || _1_2_var == true || _1_3_var == true){
+                    if(_2_2_1_var == false){
+                        if((_3_2_1_var && _3_2_2_var) == false){
+                            tblBody.appendChild(addRow("Network Design","RAN HLD"));
+                        }
+                    }
+                    if(_2_6_vocab_var == true){
+                        if((_3_2_1_var && _3_2_2_var) == false){
+                            tblBody.appendChild(addRow("**Network Design","RAN HLD"));
+                        }
+                    }
+                }
+                /*if(_1_1_var == true || _1_2_var == true || _1_3_var == true && ( (_2_2_1_var || _2_6_vocab_var) == false) && ((_3_2_1_var && _3_2_2_var) == false)){
                     tblBody.appendChild(addRow("Network Design","RAN HLD"));
-                } 
-                if(_1_1_var == true || _1_2_var == true || _1_3_var == true && ( (_2_2_2_var || _2_7_vocab_var) == false) && ((_3_2_3_var && _3_2_4_var && _3_2_5_var && _3_2_6_var) == false) ){
+                } */
+
+                if(_1_1_var == true || _1_2_var == true || _1_3_var == true){
+                    if(_2_2_2_var == false){
+                        if((_3_2_3_var && _3_2_4_var && _3_2_5_var && _3_2_6_var) == false){
+                            tblBody.appendChild(addRow("Network Design","Transport HLD"));
+                        }
+                    }
+                    if(_2_7_vocab_var == true){
+                        if((_3_2_3_var && _3_2_4_var && _3_2_5_var && _3_2_6_var) == false){
+                            tblBody.appendChild(addRow("**Network Design","Transport HLD"));
+                        }
+                    }
+                }
+                /*if(_1_1_var == true || _1_2_var == true || _1_3_var == true && ( (_2_2_2_var || _2_7_vocab_var) == false) && ((_3_2_3_var && _3_2_4_var && _3_2_5_var && _3_2_6_var) == false) ){
                     tblBody.appendChild(addRow("Network Design","Transport HLD"));
-                } 
-                if(_1_1_var == true || _1_2_var == true || _1_3_var == true && _2_3_vocab_var == 'no' && ((_2_2_3_var || _2_8_vocab_var) == false) &&((_3_2_7_var && _3_3_6_var)== false)){
+                } */
+
+                if(_1_1_var == true || _1_2_var == true || _1_3_var == true){
+                    if(_2_3_vocab_var == false || _2_2_3_var == false ){
+                        if((_3_2_7_var && _3_3_6_var)== false){
+                            tblBody.appendChild(addRow("Network Design","Mobile Core HLD"));
+                        }
+                    }
+                    if( _2_8_vocab_var == true){
+                        if((_3_2_7_var && _3_3_6_var)== false){
+                            tblBody.appendChild(addRow("**Network Design","Mobile Core HLD"));
+                        }
+                    }
+                }
+                /*if(_1_1_var == true || _1_2_var == true || _1_3_var == true && _2_3_vocab_var == 'no' && ((_2_2_3_var || _2_8_vocab_var) == false) &&((_3_2_7_var && _3_3_6_var)== false)){
                     tblBody.appendChild(addRow("Network Design","Mobile Core HLD"));
-                } 
-                if(_1_1_var == true || _1_3_var == true && ((_2_2_4_var ||_2_9_vocab_var)== false) && ((_3_2_1_var && _3_2_2_var && _3_2_8_var)==false)){
+                } */
+                if(_1_1_var == true || _1_3_var == true){
+                    if((_2_2_4_var ||_2_9_vocab_var) == false){
+                        if((_3_2_1_var && _3_2_2_var && _3_2_8_var) == false){
+                            tblBody.appendChild(addRow("Network Design","RAN LLD"));
+                        }
+                    }
+                }
+                /*if(_1_1_var == true || _1_3_var == true && ((_2_2_4_var ||_2_9_vocab_var)== false) && ((_3_2_1_var && _3_2_2_var && _3_2_8_var)==false)){
                     tblBody.appendChild(addRow("Network Design","RAN LLD"));
-                } 
-                if(_1_1_var == true || _1_3_var == true && ((_2_2_5_var ||_2_9_vocab_var)== false) && ((_3_2_3_var && _3_2_4_var && _3_2_5_var && _3_2_6_var && _3_2_9_var)==false) ){
+                } */
+
+                if(_1_1_var == true || _1_3_var == true){
+                    if((_2_2_5_var ||_2_9_vocab_var) == false){
+                        if((_3_2_3_var && _3_2_4_var && _3_2_5_var && _3_2_6_var && _3_2_9_var) == false){
+                            tblBody.appendChild(addRow("Network Design","Transport LLD"));
+                        }
+                    }
+                }
+                /*if(_1_1_var == true || _1_3_var == true && ((_2_2_5_var ||_2_9_vocab_var)== false) && ((_3_2_3_var && _3_2_4_var && _3_2_5_var && _3_2_6_var && _3_2_9_var)==false) ){
                     tblBody.appendChild(addRow("Network Design","Transport LLD"));
-                } 
-                if(_1_1_var == true || _1_3_var == true && (((_2_3_vocab_var == 'no') || _2_2_3_var || _2_10_vocab_var) == false) && ((_3_2_7_var && _3_3_6_var && _3_3_7_var)== false)){
+                } */
+
+                if(_1_1_var == true || _1_3_var == true){
+                    if( _2_3_vocab_var == false || ((_2_2_3_var || _2_10_vocab_var) == false)){
+                        if( (_3_2_7_var && _3_3_6_var && _3_3_7_var) == false){
+                            tblBody.appendChild(addRow("Network Design","Mobile Core LLD"));
+                        }
+                    }
+                }
+                /*if(_1_1_var == true || _1_3_var == true && (((_2_3_vocab_var == 'no') || _2_2_3_var || _2_10_vocab_var) == false) && ((_3_2_7_var && _3_3_6_var && _3_3_7_var)== false)){
                     tblBody.appendChild(addRow("Network Design","Mobile Core LLD"));
-                } 
-                if(_1_1_var == true || _1_3_var == true && ((_2_2_7_var && _2_2_8_var) == false) && ((_3_2_10_var & _3_2_11_var & _3_2_13_var)==false)){
+                }*/ 
+
+                if(_1_1_var == true || _1_3_var == true){
+                    if((_2_2_7_var && _2_2_8_var) == false){
+                        if((_3_2_10_var & _3_2_11_var & _3_2_13_var) == false){
+                            tblBody.appendChild(addRow("Network Design","Civil & Power Design for RAN Sites"));
+                        }
+                    }
+                }
+                /*if(_1_1_var == true || _1_3_var == true && ((_2_2_7_var && _2_2_8_var) == false) && ((_3_2_10_var & _3_2_11_var & _3_2_13_var)==false)){
                     tblBody.appendChild(addRow("Network Design","Civil & Power Design for RAN Sites"));
-                } 
-                if(_1_1_var == true || _1_3_var == true && (((_2_2_9_var || _2_12_vocab_var) && _2_2_10_var)==false) && ((_3_2_12_var && _3_2_13_var)==false)){
+                } */
+
+                if(_1_1_var == true || _1_3_var == true){
+                    if(((_2_2_9_var || _2_12_vocab_var) && _2_2_10_var) == false){
+                        if((_3_2_12_var && _3_2_13_var) == false){
+                            tblBody.appendChild(addRow("Network Design","Civil & Power Design for Core Sites"));
+                        }
+                    }
+                }
+                /*if(_1_1_var == true || _1_3_var == true && (((_2_2_9_var || _2_12_vocab_var) && _2_2_10_var)==false) && ((_3_2_12_var && _3_2_13_var)==false)){
                     tblBody.appendChild(addRow("Network Design","Civil & Power Design for Core Sites"));
+                }*/
+
+                if(_1_1_var == true || _1_3_var == true){
+                    if((_2_3_1_var || _2_3_2_var || (_2_13_vocab_var < 10)) == false){
+                        if((_3_4_2_var && _3_4_3_var && (_3_4_4_var || _3_4_5_var || _3_4_6_var || _3_4_7_var)) == false){
+                            tblBody.appendChild(addRow("Supply Chain Management","RFx Process"));
+                        }
+                    }
+                    if((_2_13_vocab_var > 10 && _2_13_vocab_var < 25) || _2_3_3_var == true){
+                        if((_3_4_2_var && _3_4_3_var && (_3_4_4_var || _3_4_5_var || _3_4_6_var || _3_4_7_var)) == false){
+                            tblBody.appendChild(addRow("**Supply Chain Management","RFx Process"));
+                        }
+                    }
                 } 
-                if(_1_1_var == true || _1_3_var == true && ((_2_3_1_var || _2_3_2_var || _2_3_3_var || (_2_13_vocab_var < 10))==false) && ((_3_4_2_var && _3_4_3_var && (_3_4_4_var || _3_4_5_var || _3_4_6_var || _3_4_7_var))==false)){
+                /*if(_1_1_var == true || _1_3_var == true && ((_2_3_1_var || _2_3_2_var || _2_3_3_var || (_2_13_vocab_var < 10))==false) && ((_3_4_2_var && _3_4_3_var && (_3_4_4_var || _3_4_5_var || _3_4_6_var || _3_4_7_var))==false)){
                     tblBody.appendChild(addRow("Supply Chain Management","RFx Process"));
-                } 
-                if(_1_1_var == true || _1_3_var == true && (_2_3_4_var == false) && (_3_4_1_var == false)){
+                } */
+
+                if(_1_1_var == true || _1_3_var == true){
+                    if(_2_3_4_var == false){
+                        if(_3_4_1_var == false){
+                            tblBody.appendChild(addRow("Supply Chain Management","Procurement Process & Vendor Mgmt."));
+                        }
+                    }
+                }
+                /*if(_1_1_var == true || _1_3_var == true && (_2_3_4_var == false) && (_3_4_1_var == false)){
                     tblBody.appendChild(addRow("Supply Chain Management","Procurement Process & Vendor Mgmt."));
-                } 
-                if(_1_1_var == true || _1_3_var == true && ((_2_3_5_var || (_2_3_6_var && _2_3_7_var) || (_2_5_vocab_var && _2_14_vocab_var) || (_2_13_vocab_var < _25)) == false) && ((_3_4_8_var || _3_4_9_var) == false)){
+                } */
+                if(_1_1_var == true || _1_3_var == true){
+                    if((_2_3_5_var || (_2_3_6_var && _2_3_7_var) || (_2_5_vocab_var && _2_14_vocab_var)) == false){
+                        if((_3_4_8_var || _3_4_9_var) == false){
+                            tblBody.appendChild(addRow("Supply Chain Management","Logistics & Warehousing"));
+                        }
+                    }
+                    if(_2_13_vocab_var < 25) {
+                        if((_3_4_8_var || _3_4_9_var) == false){
+                            tblBody.appendChild(addRow("**Supply Chain Management","Logistics & Warehousing"));
+                        }
+                    }
+                }
+                /*if(_1_1_var == true || _1_3_var == true && ((_2_3_5_var || (_2_3_6_var && _2_3_7_var) || (_2_5_vocab_var && _2_14_vocab_var) || (_2_13_vocab_var < _25)) == false) && ((_3_4_8_var || _3_4_9_var) == false)){
                     tblBody.appendChild(addRow("Supply Chain Management","Logistics & Warehousing"));
-                } 
-                if(_1_1_var == true || _1_3_var == true && _2_3_var == false && (((_3_1_1_var && _3_3_9_var) || _3_3_10_var)==false)){
+                } */
+
+                if(_1_1_var == true || _1_3_var == true){
+                    if(_2_3_var == false){
+                        if((_3_1_1_var && _3_3_9_var) == false){
+                            tblBody.appendChild(addRow("Deployment","Deployment Management"));
+                        }
+                        if(_3_3_10_var == true){
+                            tblBody.appendChild(addRow("**Deployment","Deployment Management"));
+                        }
+                    }
+                    if(_2_3_8_var == true || _2_3_7_var == true || _2_3_9_var == true || _2_3_10_var == true || _2_3_11_var == true){
+                        if((_3_1_1_var && _3_3_9_var) == false){
+                            tblBody.appendChild(addRow("Deployment","Deployment Management"));
+                        }
+                        if(_3_3_10_var == true){
+                            tblBody.appendChild(addRow("**Deployment","Deployment Management"));
+                        }
+                    }
+                }
+                /**************TBD               if(_1_1_var == true || _1_3_var == true && _2_3_var == false && (((_3_1_1_var && _3_3_9_var) || _3_3_10_var)==false)){
                     tblBody.appendChild(addRow("Deployment","Deployment Management"));
+                }*/
+
+                if(_1_1_var == true || _1_3_var == true){
+                    if((_2_15_vocab_var || _2_3_12_var || _2_3_10_var) == false){
+                        if((_3_3_11_var && _3_3_12_var) == false){
+                            tblBody.appendChild(addRow("Deployment","Site Survey"));
+                        }
+                    }
                 } 
-                if(_1_1_var == true || _1_3_var == true && ((_2_15_vocab_var || _2_3_12_var || _2_3_10_var)== false) && ((_3_3_11_var && _3_3_12_var)==false)){
+                /*if(_1_1_var == true || _1_3_var == true && ((_2_15_vocab_var || _2_3_12_var || _2_3_10_var)== false) && ((_3_3_11_var && _3_3_12_var)==false)){
                     tblBody.appendChild(addRow("Deployment","Site Survey"));
-                } 
+                } */
+
+                if(_1_1_var == true || _1_3_var == true){
+                    if((_2_3_13_var || _2_16_vocab_var) == false){
+                        if((_3_4_5_var || _3_4_6_var) == false){
+                            tblBody.appendChild(addRow("Deployment","Site Construction Management"));
+                        }
+                    }
+                }
                 if(_1_1_var == true || _1_3_var == true && ((_2_3_13_var || _2_16_vocab_var)==false) && ((_3_4_5_var || _3_4_6_var)==false)){
                     tblBody.appendChild(addRow("Deployment","Site Construction Management"));
                 } 
