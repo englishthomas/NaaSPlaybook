@@ -1,0 +1,2883 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+        <title>PlayBook</title>
+
+         <!-- Bootstrap CSS CDN -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <!-- Our Custom CSS -->
+        <link rel="stylesheet" href="zoom_style.css">
+        <link rel="stylesheet" href="style2.css">
+        
+    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+	</head>
+		
+    <body>
+
+    <div class >
+        <ul class="barra_superior">
+            <li class="li_superior"><a class="active" href="Home.html">Home</a></li>
+            <li class="li_superior"><a href="comming_soon/comming-soon.html">About</a></li>
+            
+            <li class="topnav-right"><a href="#" onclick="switchContent('#e2e')">Layout</a></li>
+            <li class="topnav-right"><a href="#" onclick="switchContent('#fm')">System Design</a></li>
+            <li class="topnav-right"><a href="#" onclick="switchContent('#hld')">Introduction</a></li>
+        </ul>
+    </div>
+
+        <div class="wrapper">
+            <!-- Sidebar Holder -->
+            <nav id="sidebar">
+                <div class="sidebar-header">
+                    <h3>NaaS PlayBook</h3>
+                    <!--strong>NaaS</strong-->
+                    
+                </div>
+    
+                <ul class="list-unstyled components">
+                    <li>
+                        <a href="#runbookSubmenu" data-toggle="collapse" aria-expanded="false">
+                            <i class="glyphicon glyphicon-option-horizontal"></i>
+                            PlayBook Modules
+                        </a>
+                        <ul class="list-unstyled" id="runbookSubmenu">
+                                <li  class="active">
+                                    <a href="#stract" data-toggle="collapse" aria-expanded="false">
+                                        &#187 Strategic Plan & Scope
+                                    </a>
+                                    <ul class="list-unstyled collapse" id="stract">
+                                        <li><a href="strategy_scope.html"style="margin-left:2em;">&bull; Strategy & Scope</a></li>
+                                        <li><a href="high_level_proyect_plan.html" style="margin-left:2em">&bull; HL Project Plan</a></li>
+                                    </ul>
+                                </li>
+                                <li  class="active">
+                                    <a href="#HLNA" data-toggle="collapse" aria-expanded="false">
+                                        &#187 High Level Network Architecture
+                                    </a>
+                                    <ul class="list-unstyled collapse" id="HLNA">
+                                        <li><a href="ran_hld_architecture.html"style="margin-left:2em">&bull; RAN Architecture</a></li>
+                                        <li><a href="tx_ip_architecture.html" style="margin-left:2em">&bull; TX & IP Architecture</a></li>
+                                        <li><a href="mobile_core_archi.html" style="margin-left:2em"> &bull; Core Architecture</a></li>
+                                        <li><a href="network_monitoring_architecture.html" style="margin-left:2em"> &bull; Network Monitoring</a></li>
+                                        
+                                    </ul>
+                                </li>
+                                <li class="active">
+                                    <a href="#homeSubmenu"  class="panel-collapse" data-toggle="collapse">
+                                        &#187 Network Design
+                                    </a>
+                                    <ul class="list-unstyled" id="homeSubmenu">
+                                        <li><a href="#transportMenu" data-toggle="collapse" style="margin-left:2em">&bull; Transport</a></li>
+                                            <ul class="list-unstyled collapse" id="transportMenu">
+                                                <li><a href="tx_hld_module.html" style="margin-left:4em;">&#9657; Tx Network HLD</a></li>
+                                                <li><a href="tx_lld_module.html" style="margin-left:4em;">&#9657; Tx Network LLD</a></li>
+                                            </ul>
+                
+                                        <li><a href="#transportMenu2" data-toggle="collapse" style="margin-left:2em">&bull; RAN</a></li>
+                                            <ul class="list-unstyled collapse" id="transportMenu2">
+                                                <li><a href="ran_hld_module.html" style="margin-left:4em">&#9657; RAN Network HLD</a></li>
+                                                <li><a href="ran_lld_module.html" style="margin-left:4em;">&#9657; RAN Network LLD</a></li>
+                                            </ul>
+                                        <li><a href="#transportMenu3" data-toggle="collapse" style="margin-left:2em">&bull; Core</a></li>
+                                            <ul class="list-unstyled" id="transportMenu3">
+                                                <li><a href="mobile_core_hld.html" style="margin-left:4em;">&#9657; Mobile Core HLD</a></li>
+                                                <li><a href="mobile_core_lld.html" style="margin-left:4em;">&#9657; Mobile Core LLD</a></li>
+                                                <li><a href="civil_power_design_core.html" style="margin-left:4em;color: black;"><strong>&#9657; Civil & Power Design</strong></a></li>
+                                            </ul>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#deployment_m" data-toggle="collapse" aria-expanded="false">
+                                        &#187 Deployment
+                                    </a>
+                                    <ul class="list-unstyled collapse" id="deployment_m">
+                                        <li><a href="deployment_mgmt.html"style="margin-left:2em">&bull; Deployment Mgmt</a></li>
+                                        <li><a href="site_survey.html"style="margin-left:2em">&bull; Site Survey</a></li>
+                                        
+                                        <li><a href="i&c_module.html"style="margin-left:2em">&bull; I & C</a></li>
+                                            <li><a href="fiber_const_mgmt.html"style="margin-left:2em">&bull; Fiber Construction Mgmt</a></li>
+                                            <li><a href="site_construction_mgmt.html"style="margin-left:2em">&bull; Site Construction Mgmt</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        &#187 O & M
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#maintenance" data-toggle="collapse" aria-expanded="false">
+                                    &#187 Field Maintenance
+                                </a>
+                                <ul class="list-unstyled collapse" id="maintenance">
+                                    <li><a href="cell_site_maintenance.html" style="margin-left:2em">&bull; Cell Site Maintenance</a></li>
+                                    <li><a href="core_site_maintenance.html" style="margin-left:2em">&bull; Core Site Maintenance</a></li>
+                                </ul>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        &#187 Post-Launch Engineering
+                                    </a>
+                                </li>
+        
+                                <li  class="active">
+                                    <a href="#supply" data-toggle="collapse" aria-expanded="false">
+                                        &#187 Supply Chain Management
+                                    </a>
+                                    <ul class="list-unstyled collapse" id="supply">
+                                        <li><a href="rfx_process.html"style="margin-left:2em;">&bull; RFx Process</a></li>
+                                        <li><a href="logistics_warehousing.html" style="margin-left:2em;">&bull; Logistics & Warehousing</a></li>
+                                        <li><a href="proc_pro_vendor_mgmt.html" style="margin-left:2em;">&bull; Procurement Proc. & Vendor Mgmt.</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                                <a href="#engagementSubmenu" data-toggle="collapse" aria-expanded="false">
+                                    <i class="glyphicon glyphicon-option-horizontal"></i>
+                                    Methods of Engagement
+                                </a>
+                                <ul class="collapse list-unstyled" id="engagementSubmenu">
+                                    
+                                    <li><a href="MoE_Wizards.html">&#187 Wizards</a></li>
+                                    <li><a href="MoE_Widgets.html">&#187 Widgets</a></li>
+                                    <li><a href="MoE_Primers.html">&#187 Primers</a></li>
+                                    <li><a href="MoE_Templates.html">&#187 Templates</a></li>
+                                    <li><a href="MoE_Tool_Catalogue.html">&#187 Tool Catalogue</a></li>
+                                    
+                                </ul>
+                            </li>
+                        <li>
+                            <a href="strategic_use.html">
+                                <i class="glyphicon glyphicon-question-sign"></i>
+                                Using the PlayBook 
+                            </a>
+                        </li>
+                        <li>
+                            <a href="comming_soon/comming-soon.html">
+                                <i class="glyphicon glyphicon-send"></i>
+                                Contact
+                            </a>
+                        </li>
+                </ul>
+            </nav>
+            <!-- Page Content Holder -->
+           <section id="hld" hidden>
+                <div id="content"> 
+
+                    <div data-spy="scroll" data-target="#navbar-example3" data-offset="0">
+                        <h1><a class="titulo-h1 anchor-bum color-luminati" name="item1">1 Introduction</a></h1>
+ 
+                        <p class="normal-text">Power
+                        and Civil Design for RAN Sites refers to the process performed to design a
+                        proper Power Solution and Sites Equipment Layout, considering as inputs the
+                        Site Characteristics, Network Equipment power requirements, RAN and
+                        Transmission LLD. An accurate Power and Civil design will achieve economically
+                        efficient Power Feed Solution and will facilitate forthcoming Installation and
+                        Maintenance Tasks.</p>
+                        
+                        <p class="normal-text">The RAN
+                        Power Design assesses the Power Supply Options that suit the site scenario,
+                        which can be Grid or Solar. When the Power supply option has been established,
+                        the next step is to match the selected network components requirements with
+                        power systems capabilities, optimizing cost and protecting the NaaS Operator Hardware Investment. Once the Power Hardware
+                        is established, a Site Layout must be performed; the site layout indicates
+                        where the hardware must be installed, facilitating the forthcoming
+                        installation, maintenance, and future network upgrades.</p>
+                        
+                        <p class="normal-text">The RAN
+                        Civil and Power Module provides the NaaS Operator
+                        with background information to aid in the selection and design of a customized
+                        Power System for their sites and guides NaaS
+                        Operators to prepare their Site Layouts that will define the position of all
+                        RAN &amp; Power components in blueprints.</p>
+ 
+                        <p class="normal-text">Main
+                        deliverables that the NaaS Operator will be able to
+                        generate through the use of this module are Power Equipment Bill of quantities
+                        and Blueprints for the Site Layout Equipment Component, </p>
+                        
+                        <br><h2><a class="titulo-h2 anchor-bum color-luminati" name="item1-1">1.1
+                        Module Objectives</a></h2>
+ 
+                        <p class="normal-text">This module will guide the NaaS
+                        Operator to accurately assess and dimension the Power Equipment for the RAN
+                        site and develop the Site Layouts that will define the equipment location,
+                        ensuring their right operation, and the installation of the equipment. The
+                        specific objectives of this module are to:</p>
+                        
+                        <ol class="normal-text ul-iconos" style='margin-top:0in' start=1 type=1>
+                            <li class="normal-text">Provide
+                            an information base and fundamentals to perform the tasks associated with
+                            Civil &amp; Power Design.</li>
+                        <li class="normal-text">Guide
+                            NaaS Operators to accurately evaluate and
+                            dimension the power system to be installed at each RAN site, optimizing
+                            the required Hardware for each Scenario.</li>
+                        <li class="normal-text">Provide
+                            guidelines for the NaaS Operator to prepare
+                            their Site Layouts that will define the Equipment Position and
+                            Installation standards.</li>
+                        </ol>
+ 
+                        <br><h2><a class="titulo-h2 anchor-bum color-luminati" name="item1-2">1.2 Module Framework</a></h2>
+                        
+                        <p class="normal-text">NaaS PlayBooks Framework shown in
+                        Figure 1 displays the PlayBook modules and their relationship to the Civil &amp;
+                        Power Design for RAN sites Module.</p>
+                        
+                        <p class="normal-text">The Strategic
+                        Plan &amp; Scope and High-Level Network Architecture streams provide the
+                        business and technical context for the NaaS Operator
+                        and have a direct impact and influence on many aspects of the Deployment
+                        Stream.</p>
+ 
+                        <p class="normal-text">The Civil &amp;
+                        Power Design for RAN sites Module is included within the Network Design Stream.
+                        It takes inputs from the Mobile Core Architecture, the output generated serves
+                        as Guidelines for Core Equipment Installation.</p>
+ 
+                        <img width=590 height=262
+                        src="images/civil_power_ran/image002.png"
+                        v:shapes="Picture_x0020_3">
+                        <p align=center><i>Figure 1. Network Design Framework.</i></p>
+    
+                        <p class="normal-text">Figure 2 presents the Civil &amp; Power Design functional
+                        view where the main functional content of the module is exhibited.</p>
+ 
+                        <img width=590 height=363
+                        src="images/civil_power_ran/image004.png">
+                        
+                        <p align=center><i>Figure 2 Civil &amp; Power Design Functional View.</i></p>
+                        
+                        <p class="normal-text">The rest of the module is divided into three sections.
+                        Section 2 is an introductory section, containing a high-level view of the power
+                        systems used for RAN sites, their main characteristics, and functions. Section
+                        3 contains the key considerations used to design a power solution that properly
+                        fits the requirements for each site. Section 4 provides hands-on guidance for
+                        the Equipment Sites Layouts, including the Antenna System, Rack or Cabinet and
+                        Cabling.</p>
+                        
+                        <h1><a class="titulo-h1 anchor-bum color-luminati" name="item2">2
+                        Civil &amp;
+                        Power Design Fundamentals</a></h1>
+ 
+                        <p class="normal-text">This section presents a description of the Civil &amp; Power
+                        Design process including an analysis of the benefits to perform the Power
+                        System Design and Site Layout, the main tasks and inputs of the process and the
+                        description of the two most common types of power systems in rural deployments:
+                        Solar &amp; Grid.</p>
+                        
+                        <br><h2><a class="titulo-h2 anchor-bum color-luminati" name="item2-1">2.1
+                        Civil &amp;
+                        Power Design Overview</a></h2>
+                        
+                        <p class="normal-text">The purpose of Civil &amp; Power
+                        Design is to select and size the Power System depending on the RAN Site Power
+                        requirements, and to define the position of all the RAN equipment through a
+                        Site Layout. An optimal sizing of the power system and a properly performed
+                        Site Layout will protect the NaaS Operator investment
+                        as follows:</p>
+ 
+                        <ol class="normal-text ul-iconos" style='margin-top:0in' start=1 type='a'>
+                            <li class="normal-text"><b>Minimize Initial Investment:</b> Avoid Over-dimensioning of unnecessary hardware, reducing NaaS Operator expenses.</li>
+                            <li class="normal-text"><b>Maximize Service Continuity:</b> Allows NaaS Operators to deploy
+                            a more reliable network that will ultimately impact their profit.</li>
+                            <li class="normal-text"><b>Enhance
+                            the Electrical Efficiency (Minimum Operating Costs): </b>Selecting equipment, considering their electrical
+                            efficiency will significantly lower the electrical bill from the Power company
+                            thus NaaS Operator OPEX.</li>
+                            <li class="normal-text"><b>Facilitate
+                            Installation and Maintenance process</b>:
+                            properly designed RAN Site Layout will facilitate enormously forthcoming
+                            Installation &amp; Maintenance tasks</li>
+                        </ol>
+ 
+                        <p class="normal-text">Figure 3 depicts the Civil &amp; Power Design Process. The
+                        first step is to calculate the Power Consumption of the RAN site equipment,
+                        considering that each equipment has its own load characteristics. Then various
+                        types of power systems are assessed; for this module Grid and Solar systems are
+                        considered, as these are the most common for NaaS
+                        deployments.</p>
+                        
+                        <p class="normal-text">The first option is to consider Grid power which is the
+                        commercial AC power network. The feasibility of this option will depend on the
+                        general availability and reliability of the Grid service and the compliance
+                        with engineering requirements. In case that the Grid service is not available
+                        or not reliable, Solar Power Systems will be considered, which is sized
+                        according to the power consumption and autonomy requirements. Solar Power System
+                        may result unfeasible under high load conditions; in this case, the RAN/TX
+                        design must be reviewed to reduce the power load of the site.</p>
+                        
+                        <p class="normal-text">The outcome of a properly designed power system is a
+                        reliable and optimized solution that will feed the RAN sites with minimum
+                        service outage.</p>
+ 
+                        <p class="normal-text">Once the power system and the RAN LLD has been established,
+                        the site layout can be defined. It will determine the equipments position at
+                        the site, following the RAN and Transport LLDs as well as engineering
+                        standards.</p><br>
+                        
+                        <p class="normal-text"><img width=482
+                        height=550 id="_x0000_i1082"
+                        src="images/civil_power_ran/image003.jpg"></p>
+ 
+                        <p align=center><i>Figure 3. Civil &amp; Power Process
+                        overview</i></p>
+                        
+                        <br><h2><a class="titulo-h2 anchor-bum color-luminati" name="item2-2">2.2
+                        Civil &amp;
+                        Power Design Inputs Description</a></h2>
+ 
+                        <p class="normal-text">There is a wide variety of options to perform a Civil and
+                        Power Design, so to narrow them, some inputs have to be defined at the
+                        beginning of the design process. Table 1 below list the inputs of Civil &amp;
+                        Power Design, show the impact on the overall process and its possible sources. </p>
+                        
+                        
+                        <div align=center>
+                        <table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0 width=624
+                        style='width:6.5in;margin-left:-.25pt;border-collapse:collapse;mso-yfti-tbllook:
+                        1184;mso-padding-alt:0in 0in 0in 0in'>
+                        <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes'>
+                        <td width=138 valign=top style='width:103.5pt;border:solid black 1.0pt;
+                        background:#244061;padding:0in 5.75pt 0in 5.75pt'>
+                        <p align=center style="color:#FFF"><b>Input Required</b></p>
+                        </td>
+                        <td width=164 valign=top style='width:123.35pt;border:solid black 1.0pt;
+                        border-left:none;background:#244061;padding:0in 5.75pt 0in 5.75pt'>
+                        <p align=center style="color:#FFF"><b>Description</b></p>
+                        </td>
+                        <td width=170 valign=top style='width:127.6pt;border:solid black 1.0pt;
+                        border-left:none;background:#244061;padding:0in 5.75pt 0in 5.75pt'>
+                        <p align=center style="color:#FFF"><b>Impact</b></p>
+                        </td>
+                        <td width=151 valign=top style='width:113.4pt;border:solid black 1.0pt;
+                        border-left:none;background:#244061;padding:0in 5.75pt 0in 5.75pt'>
+                        <p align=center style="color:#FFF"><b>Source</b></p>
+                        </td>
+                        </tr>
+                        <tr style='mso-yfti-irow:1'>
+                        <td width=138 valign=top style='width:103.5pt;border:solid black 1.0pt;
+                        border-top:none;padding:0in 5.75pt 0in 5.75pt'>
+                        <p class="normal-text">Equipment Power consumption (W), Average Load or Maximum
+                        Load</p>
+                        </td>
+                        <td width=164 valign=top style='width:123.35pt;border-top:none;border-left:
+                        none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+                        padding:0in 5.75pt 0in 5.75pt'>
+                        <p class="normal-text">Power Consumption of
+                        RAN Site Equipment including RRU, Baseband, and transport equipment.</p>
+                        </td>
+                        <td width=170 valign=top style='width:127.6pt;border-top:none;border-left:
+                        none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+                        padding:0in 5.75pt 0in 5.75pt'>
+                        <p class="normal-text">Required to determine the total load to be supported by
+                        Power System Elements</p>
+                        </td>
+                        <td width=151 valign=top style='width:113.4pt;border-top:none;border-left:
+                        none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+                        padding:0in 5.75pt 0in 5.75pt'>
+                        <p class="normal-text">Network Equipment Vendor Specifications</p>
+                        </td>
+                        </tr>
+                        <tr style='mso-yfti-irow:2'>
+                        <td width=138 valign=top style='width:103.5pt;border:solid black 1.0pt;
+                        border-top:none;padding:0in 5.75pt 0in 5.75pt'>
+                        <p class="normal-text">Grid Power Equipment
+                        Specifications</p>
+                        </td>
+                        <td width=164 valign=top style='width:123.35pt;border-top:none;border-left:
+                        none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+                        padding:0in 5.75pt 0in 5.75pt'>
+                        <p class="normal-text">Specifications of all Power Equipment: </p>
+                        <p class="normal-text">AC INPUT: </p>
+                        <p class="normal-text">&#9679;
+                        Voltage Range</p>
+                        <p class="normal-text">&#9679;
+                        Frequency</p>
+                        <p class="normal-text">&#9679;
+                        Maximum Current</p>
+                        <p class="normal-text">DC OUTPUT: </p>
+                        <p class="normal-text">&#9679;
+                        Voltage Range</p>
+                        <p class="normal-text">&#9679;
+                        Maximum Power</p>
+                        <p class="normal-text">&#9679;
+                        Maximum Current</p>
+                        <p class="normal-text">&#9679;
+                        Peak Efficiency</p>
+                        </td>
+                        <td width=170 valign=top style='width:127.6pt;border-top:none;border-left:
+                        none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+                        padding:0in 5.75pt 0in 5.75pt'>
+                        <p class="normal-text">Required to properly size and select the Power System
+                        Elements</p>
+                        </td>
+                        <td width=151 valign=top style='width:113.4pt;border-top:none;border-left:
+                        none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+                        padding:0in 5.75pt 0in 5.75pt'>
+                        <p class="normal-text">Vendor Specifications</p>
+                        </td>
+                        </tr>
+                        <tr style='mso-yfti-irow:3'>
+                        <td width=138 valign=top style='width:103.5pt;border:solid black 1.0pt;
+                        border-top:none;padding:0in 5.75pt 0in 5.75pt'>
+                        <p class="normal-text">Battery Specifications</p>
+                        </td>
+                        <td width=164 valign=top style='width:123.35pt;border-top:none;border-left:
+                        none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+                        padding:0in 5.75pt 0in 5.75pt'>
+                        <p class="normal-text">Specifications of the batteries for the Power System: </p>
+                        <p class="normal-text">&#9679;
+                        Capacity (Ah)</p>
+                        <p class="normal-text">&#9679;
+                        Self discharge time in %</p>
+                        <p class="normal-text">&#9679;
+                        Battery Operative Voltage</p>
+                        
+                        </td>
+                        <td width=170 valign=top style='width:127.6pt;border-top:none;border-left:
+                        none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+                        padding:0in 5.75pt 0in 5.75pt'>
+                        <p class="normal-text">Required to properly size and select the batteries in the
+                        Grid or Solar Power System </p>
+                        
+                        </td>
+                        <td width=151 valign=top style='width:113.4pt;border-top:none;border-left:
+                        none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+                        padding:0in 5.75pt 0in 5.75pt'>
+                        <p class="normal-text">Vendor Specifications</p>
+                        </td>
+                        </tr>
+                        <tr style='mso-yfti-irow:4'>
+                        <td width=138 valign=top style='width:103.5pt;border:solid black 1.0pt;
+                        border-top:none;padding:0in 5.75pt 0in 5.75pt'>
+                        <p class="normal-text">Solar Power Equipment
+                        Specifications</p>
+                        </td>
+                        <td width=164 valign=top style='width:123.35pt;border-top:none;border-left:
+                        none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+                        padding:0in 5.75pt 0in 5.75pt'>
+                        <p class="normal-text">&#9679;
+                        Solar Panel Nominal Power</p>
+                        <p class="normal-text">&#9679;
+                        Output Voltage</p>
+                        <p class="normal-text">The Peak Power of a Solar Panel, regardless of the
+                        location</p>
+                        </td>
+                        <td width=170 valign=top style='width:127.6pt;border-top:none;border-left:
+                        none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+                        padding:0in 5.75pt 0in 5.75pt'>
+                        <p class="normal-text">Required to properly size and select the Solar Panels in
+                        the Solar Power System Elements</p>
+                        
+                        </td>
+                        <td width=151 valign=top style='width:113.4pt;border-top:none;border-left:
+                        none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+                        padding:0in 5.75pt 0in 5.75pt'>
+                        <p class="normal-text">Vendor Specifications</p>
+                        </td>
+                        </tr>
+                        <tr style='mso-yfti-irow:5'>
+                        <td width=138 valign=top style='width:103.5pt;border:solid black 1.0pt;
+                        border-top:none;padding:0in 5.75pt 0in 5.75pt'>
+                        <p class="normal-text">Solar Irradiation</p>
+                        </td>
+                        <td width=164 valign=top style='width:123.35pt;border-top:none;border-left:
+                        none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+                        padding:0in 5.75pt 0in 5.75pt'>
+                        <p class="normal-text">Solar Irradiation received in Sites location. </p>
+                        </td>
+                        <td width=170 valign=top style='width:127.6pt;border-top:none;border-left:
+                        none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+                        padding:0in 5.75pt 0in 5.75pt'>
+                        <p class="normal-text">Used to dimension the number of solar panels.</p>
+                        </td>
+                        <td width=151 valign=top style='width:113.4pt;border-top:none;border-left:
+                        none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+                        padding:0in 5.75pt 0in 5.75pt'>
+                        <p class="normal-text">https://globalsolaratlas.info/map</p>
+                        </td>
+                        </tr>
+                        <tr style='mso-yfti-irow:6'>
+                        <td width=138 valign=top style='width:103.5pt;border:solid black 1.0pt;
+                        border-top:none;padding:0in 5.75pt 0in 5.75pt'>
+                        <p class="normal-text">RF Equipment Dimensions
+                        &amp; Weight</p>
+                        </td>
+                        <td width=164 valign=top style='width:123.35pt;border-top:none;border-left:
+                        none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+                        padding:0in 5.75pt 0in 5.75pt'>
+                        <p class="normal-text">Dimensions and weight of the RF equipment:</p>
+                        <p class="normal-text">&#9679;
+                        Base Band</p>
+                        <p class="normal-text">&#9679;
+                        RF Unit </p>
+                        <p class="normal-text">&#9679; Antenna </p>
+                        </td>
+                        <td width=170 valign=top style='width:127.6pt;border-top:none;border-left:
+                        none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+                        padding:0in 5.75pt 0in 5.75pt'>
+                        <p class="normal-text">Required to define the Site Layout</p>
+                        </td>
+                        <td width=151 valign=top style='width:113.4pt;border-top:none;border-left:
+                        none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+                        padding:0in 5.75pt 0in 5.75pt'>
+                        <p class="normal-text">Vendor Specifications</p>
+                        </td>
+                        </tr>
+                        <tr style='mso-yfti-irow:7'>
+                        <td width=138 valign=top style='width:103.5pt;border:solid black 1.0pt;
+                        border-top:none;padding:0in 5.75pt 0in 5.75pt'>
+                        <p class="normal-text">Site Survey Reports</p>
+                        </td>
+                        <td width=164 valign=top style='width:123.35pt;border-top:none;border-left:
+                        none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+                        padding:0in 5.75pt 0in 5.75pt'>
+                        <p class="normal-text">Inspections of physical sites to gather relevant
+                        information (e.g. equipment inventory, photographic documentation).</p>
+                        </td>
+                        <td width=170 valign=top style='width:127.6pt;border-top:none;border-left:
+                        none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+                        padding:0in 5.75pt 0in 5.75pt'>
+                        <p class="normal-text">Required to define the Site Layout for existing sites</p>
+                        </td>
+                        <td width=151 valign=top style='width:113.4pt;border-top:none;border-left:
+                        none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+                        padding:0in 5.75pt 0in 5.75pt'>
+                        <p class="normal-text">Vendor Specifications</p>
+                        </td>
+                        </tr>
+                        <tr style='mso-yfti-irow:8;mso-yfti-lastrow:yes'>
+                        <td width=138 valign=top style='width:103.5pt;border:solid black 1.0pt;
+                        border-top:none;padding:0in 5.75pt 0in 5.75pt'>
+                        <p class="normal-text">Site Engineering</p>
+                        </td>
+                        <td width=164 valign=top style='width:123.35pt;border-top:none;border-left:
+                        none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+                        padding:0in 5.75pt 0in 5.75pt'>
+                        <p class="normal-text">Contains detailed blueprints corresponding to each
+                        specific Site deployment of tower and bird eye view of the site.</p>
+                        </td>
+                        <td width=170 valign=top style='width:127.6pt;border-top:none;border-left:
+                        none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+                        padding:0in 5.75pt 0in 5.75pt'>
+                        <p class="normal-text">Required to define the Site Layout for greenfield sites.</p>
+                        </td>
+                        <td width=151 valign=top style='width:113.4pt;border-top:none;border-left:
+                        none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+                        padding:0in 5.75pt 0in 5.75pt'>
+                        <p class="normal-text">Site Construction Contactor</p>
+                        </td>
+                        </tr>
+                        </table>
+                        </div>
+                        
+                        <p align=center><i>Table 1 Input description of
+                            Civil and Power Design for RAN sites</i></p>
+ 
+                        <br><h2><a class="titulo-h2 anchor-bum color-luminati" name="item2-3">2.3
+                        Grid Power
+                        System Overview</a></h2>
+ 
+                        <p class="normal-text">A Grid power system is the set of equipment that takes electric
+                        energy from the public alternating current (AC) network and transforms it to
+                        direct current (DC) which is required to power the equipment at RAN sites.
+                        Modern grid networks are a reliable source of power, offer less outage duration
+                        and few power quality disturbance therefore when it is
+                        available the grid network is the preferred option to feed a RAN site as it
+                        ensures network service continuity at an acceptable cost.</p>
+                        
+                        <p class="normal-text">A Grid Power System for a RAN site consists of four basic
+                        elements, shown in the schematic of Figure 4:</p>
+ 
+                        <ul class="normal-text ul-iconos" style='margin-top:0in' start=1 type=1>
+                            <li>Rectifier system</li>
+                            <li>Battery system</li>
+                            <li>Power distribution system</li>
+                            <li>Monitoring and control system</li>
+                        </ul>
+
+                        <img width=394 height=269
+                        src="images/civil_power_ran/image011.jpg">
+ 
+                        <p align=center><i>Figure 4 Simplified Schematic of the Grid Power System for RAN
+                        sites</i></p>
+                        
+                        <p class="normal-text">Components in Figure 4 are described in the following
+                        paragraphs while further guidance for the sizing and selection of the various
+                        system components is provided in Section 3.</p>
+ 
+                        <ol class="normal-text ul-iconos" style='margin-top:0in' start=1 type=1>
+                            <li class="normal-text"><b>Rectifiers</b>. Elements in charge of converting the prime power source
+                            AC voltage to direct current (DC). Rectifiers serve three main purposes:</li>
+ 
+                            <ol class="normal-text ul-iconos" style='margin-top:0in;font-size: 16px;' start=1 type='a'>
+                                <li class="normal-text">Power the loads when commercial AC power is available.</li>
+                                <li class="normal-text">Supply float charge to the battery to overcome battery internal losses.</li>
+                                <li class="normal-text">Recharge
+                                the battery after an AC power supply failure and restoration while
+                                simultaneously supplying the normal equipment load.</li>
+                            </ol>
+                                
+                            <li class="normal-text"><b>Batteries.
+                            </b>Energy storage devices that power the
+                            loads during AC power supply outages. Batteries are always connected to a
+                            busbar that connects the batteries from the
+                            load so there is no switchover time or interruption when the primary power
+                            source (and standby source, if equipped) fails or if the rectifier system
+                            fails.</li>
+                            
+                            <li class="normal-text"><b>Power Distribution Units</b>. Elements that provide central locations for feeding loads
+                            and for protecting circuit wiring. The distribution systems also provide a
+                            convenient way to isolate individual loads from each other during fault
+                            conditions. The primary distribution system has the first overcurrent
+                            protective device (either fuse or circuit breaker) between the discharge bus
+                            and the load. There are several solutions that Naas Operators may consider for
+                            their power system, commonly in low power rural scenarios, the PDU is installed
+                            within a Power Cabinet.<br>
+
+                            <p class="normal-text"><img
+                            width=380 height=250 id="_x0000_i1080"
+                            src="images/civil_power_ran/image005.jpg"></p>
+                            
+                            <p align=center><i>Figure 5 Sample of Power Distribution Units from different
+                            vendors</i></p>
+
+                            Although the primary
+                            distribution system can directly feed loads if desired, a secondary
+                            distribution system may be used for larger Scenarios. </li>
+                            
+                            <li class="normal-text">
+                            <b>Monitoring and control system</b>. Component that includes alarm collection, processing and metering. Control systems include rectifier
+                            float/equalize control and timing, parametric recorders, local area network
+                            (LAN), serial port, with modem interfaces. In some solutions it is embedded in
+                            the PDU or rectifiers.</li>
+                        </ol>
+  
+                        <p class="normal-text">In addition to the components
+                        above, NaaS Operators may consider a Standby AC Power
+                        Source that provides standby power through an engine-generator set fueled by
+                        diesel, propane (liquefied petroleum gas, or LPG) or liquefied natural gas.
+                        This architecture is shown in Figure 6.</p>
+ 
+                        <p class="normal-text"><img width=400 height=210 
+                        src="images/civil_power_ran/image006.jpg"></p>
+                        
+                        <p align=center><i>Figure 6 Simplified on-site AC power
+                        distribution system with a standby generator</i><i>.</i></p>
+                        
+                        <p class="normal-text">There are pre assembled Grid Power Systems available for RAN
+                        and Transmission equipment used in Low power consumption scenarios. Some
+                        vendors offer their DC power system for indoor or outdoor locations embedded in
+                        IP65 cabinets including a cooling system. The size of the system is
+                        customizable depending on RAN Equipment Power Consumption and Engineering
+                        requirements. The Figure 7 below shows a Power system commonly used in rural
+                        environments:</p>
+ 
+                        <p class="normal-text"><img width=162 height=207 
+                        src="images/civil_power_ran/image007.jpg"></p>
+                        <p align=center><i>Figure 7 Outdoor DC Power System</i></p>
+ 
+                        <br><h2><a class="titulo-h2 anchor-bum color-luminati" name="item2-4">2.4
+                        Solar System Overview</a></h2>
+                        
+                        <p class="normal-text">Base stations need to provide 24/7 operations. They are not
+                        only installed in urban areas, but also widely distributed in various
+                        environments such as deserts, islands, mountain tops. They are unattended and
+                        have high demands on the reliability and lifespan of power supply.</p>
+                        
+                        <p class="normal-text">Many rural locations do not have a grid line that is readily
+                        available from the RAN site. As an alternative, the recommended choice is the
+                        Solar Power System. Its cheaper than the cost to add
+                        utility poles on the RAN site. </p>
+                        
+                        <p class="normal-text">In the Solar Power Systems, the energy conversion is static
+                        and needs much less maintenance compared to generators relying on physical
+                        movements of mechanical parts. It is most suitable for a remote area power
+                        supply system when the base station site load is less than 2kW. </p>
+                        
+                        <p class="normal-text">However, solar is only produced during the day so energy
+                        storage is required for these systems. Energy storage is what makes a solar
+                        system more expensive than grid power in rural areas. However, a cost-benefit
+                        analysis should be performed by the NaaS Operator to
+                        decide between Grid and Solar when both options are available. Table 2
+                        lists the pros and cons of Solar Power Systems.</p>
+ 
+                        <div align=center>
+                        <table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0 width=589
+                        style='width:441.75pt;border-collapse:collapse;mso-yfti-tbllook:1184;
+                        mso-padding-alt:0in 0in 0in 0in'>
+                        <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes'>
+                        <td width=294 valign=top style='width:220.7pt;border:solid black 1.0pt;
+                        background:#244061;padding:0in 5.4pt 0in 5.4pt'>
+                        <p align=center style="color:#FFF"><b>Pros </b></p>
+                        </td>
+                        <td width=294 valign=top style='width:220.7pt;border:solid black 1.0pt;
+                        border-left:none;background:#244061;padding:0in 5.4pt 0in 5.4pt'>
+                        <p align=center style="color:#FFF"><b>Cons</b></p>
+                        </td>
+                        </tr>
+                        <tr style='mso-yfti-irow:1'>
+                        <td width=294 valign=top style='width:220.7pt;border:solid black 1.0pt;
+                        border-top:none;background:white;padding:0in 5.4pt 0in 5.4pt'>
+                        <p class="normal-text">Renewable
+                        Energy Source </p>
+                        </td>
+                        <td width=294 valign=top style='width:220.7pt;border-top:none;border-left:
+                        none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+                        padding:0in 5.4pt 0in 5.4pt'>
+                        <p class="normal-text">Higher CapEx</p>
+                        </td>
+                        </tr>
+                        <tr style='mso-yfti-irow:2'>
+                        <td width=294 valign=top style='width:220.7pt;border:solid black 1.0pt;
+                        border-top:none;background:white;padding:0in 5.4pt 0in 5.4pt'>
+                        <p class="normal-text">Reduces
+                        Electricity Bills </p>
+                        </td>
+                        <td width=294 valign=top style='width:220.7pt;border-top:none;border-left:
+                        none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+                        padding:0in 5.4pt 0in 5.4pt'>
+                        <p class="normal-text">Weather Dependent</p>
+                        </td>
+                        </tr>
+                        <tr style='mso-yfti-irow:3'>
+                        <td width=294 valign=top style='width:220.7pt;border:solid black 1.0pt;
+                        border-top:none;background:white;padding:0in 5.4pt 0in 5.4pt'>
+                        <p class="normal-text">Low
+                        Maintenance Costs </p>
+                        </td>
+                        <td width=294 valign=top style='width:220.7pt;border-top:none;border-left:
+                        none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+                        padding:0in 5.4pt 0in 5.4pt'>
+                        <p class="normal-text">More Batteries are
+                        required</p>
+                        </td>
+                        </tr>
+                        <tr style='mso-yfti-irow:4;mso-yfti-lastrow:yes'>
+                        <td width=294 valign=top style='width:220.7pt;border:solid black 1.0pt;
+                        border-top:none;background:white;padding:0in 5.4pt 0in 5.4pt'>
+                        <p class="normal-text">Safer than
+                        traditional electric current</p>
+                        </td>
+                        <td width=294 valign=top style='width:220.7pt;border-top:none;border-left:
+                        none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+                        padding:0in 5.4pt 0in 5.4pt'>
+                        <p class="normal-text">Higher Space
+                        Requirements</p>
+                        </td>
+                        </tr>
+                        </table>
+                        </div>
+ 
+                        <p align=center><i>Table 2. Advantage and Disadvantages
+                        of Solar systems</i></p>
+                        
+                        <br><h2><a class="titulo-h2 anchor-bum color-luminati" name="item2-5">2.5
+                        Solar System Description</a></h2>
+ 
+                        <p class="normal-text">The Solar power system consists of electricity generation,
+                        energy storage, energy conversion, and management equipment. Energy generation
+                        equipment includes a photovoltaic array. Storage equipment includes a battery
+                        pack. Energy conversion and management equipment comprises in Charge
+                        controllers with DC converter and in some cases an inverter switch.</p>
+ 
+                        <ol class="normal-text ul-iconos" style='margin-top:0in' start=1 type=1>
+                            <li class="normal-text"><b>Solar
+                            Photo Voltaic Panels:</b> Solar photovoltaic
+                            array converts sunlight directly into electricity; powers base station
+                            equipment with 48V voltage through serial as well as parallel interconnection
+                            of photovoltaic modules.</li>
+ 
+                            <li class="normal-text"><b>Solar
+                            Charge Controller:</b> Key element in the
+                            solar power system that manages and controls the power flow of the different
+                            elements in the solar power system to meet the demands of the RAN site load, in
+                            some systems is part of the Solar regulator.</li>
+                            
+                            <li class="normal-text">
+                            <b>Batteries:</b> Elements that store excess energy from solar panels, to
+                            provide it at night or when the power output of the solar panels is not
+                            sufficient to cover the RAN site load. </li>
+                        </ol>
+ 
+                        <img width=700 height=230
+                        src="images/civil_power_ran/image111.jpg">
+ 
+                        <p align=center><i>Figure 8 Basic Elements of a Solar Power System</i></p>
+                        
+                        <br><h2><a class="titulo-h2 anchor-bum color-luminati" name="item2-6">2.6
+                        Site Layout
+                        Overview</a></h2>
+ 
+                        <p class="normal-text">The Site Layout is an important part of RAN site
+                        engineering. Site Layout refers to the technical drawings that show information
+                        about power and network equipment at RAN sites. </p>
+                        
+                        <p class="normal-text">The Site Layouts are created and used by engineers,
+                        builders, field technicians, etc. for the electrical, and RAN systems of
+                        different buildings, towers, or data centers. They consist of lines, special
+                        symbols, dimensions, and notations used to clearly show the RAN and Transport
+                        equipment location and the scheme of electric wiring within.</p>
+                        
+                        <p class="normal-text">Site Layout will help installation technicians to locate the
+                        equipment within the site facility, including the antennas and RRUs in the
+                        tower, which will help to protect the equipment during the installation
+                        avoiding damage to the equipment due to wrong installation protecting NaaS operators investments. </p>
+                        
+                        <p class="normal-text">This Module suggest the following layouts for the NaaS Operator procedures:</p>
+ 
+                        <ul class="normal-text ul-iconos" style='margin-top:0in' start=1 type=1>
+                            <li><b>Electrical wiring diagrams: </b>Indicates the<b> </b>electrical layout of power cabling,
+                            this is especially useful to protect the equipment during installation
+                            procedures. Figure 9 shows the electrical wiring diagram for a base station
+                            cabinet. Please note that grounding cabling is detailed in the <a href="site_construction_mgmt.html" class="a_link">Site Construction Module</a>.</li>
+                        </ul>
+ 
+                        <p class="normal-text"><img width=280 height=310 
+                        src="images/civil_power_ran/image009.jpg"></p>
+                        <p align=center><i>Figure 9 Sample of electrical wiring
+                        layout in a cabinet</i></p>
+ 
+                        <ul class="normal-text ul-iconos" style='margin-top:0in' start=1 type=1>
+                            <li><b>Antenna System Layout:</b>
+                            Shows the orientation and position of the mounting hardware such as poles,
+                            masts and sectors frames where the Antenna and RRUs will be installed,
+                            Additionally shows the orientation of the antennas in relation with the north
+                            following the RAN LLD Figure 10 shows a sample of an Antenna System Layout</li>
+                        </ul>
+ 
+                        <p class="normal-text"><img width=350
+                        height=350 
+                        src="images/civil_power_ran/image010.png"></p>
+                        <p align=center><i>Figure 10 Sample of Antenna System
+                        Layout</i></p>
+                        
+                        <ul class="normal-text ul-iconos" style='margin-top:0in' start=1 type=1>
+                            <li><b>Base Station Rack/Cabinet Layout:</b> Indicates the position of the RAN and Transmission
+                            equipment in the rack or cabinet. Defining the position of all the equipment
+                            before installation takes place will improve the overall installation quality
+                            and timelines.</li>
+                        </ul>
+                        
+                        <p class="normal-text"><img width=350
+                        height=280 src="images/civil_power_ran/image013.png"></p>
+                        
+                        <p align=center><i>Figure 11 Sample of Cabinet Layout including Power, Transmission
+                        and RAN equipment</i></p>
+ 
+                        <ul class="normal-text ul-iconos" style='margin-top:0in' start=1 type=1>
+                            <li><b>General Site Layout:</b> Indicates the position and distribution of all RAN and
+                            transmission elements within a site, Figure 12 shows a General Site Layout with
+                            two sectors, indicating the height of antennas and radios, the expected DC
+                            cabling route, a general view of the cabling in the antenna system, and the
+                            cabinet position taking the tower as a reference.</li>
+                        </ul>
+                        <img width=476 height=410 
+                        src="images/civil_power_ran/image014.png">
+ 
+                        <p align=center><i>Figure 12. General Site Layout
+                        Sample</i></p>
+                        
+                        <br><h2><a class="titulo-h2 anchor-bum color-luminati" name="item2-7">2.7
+                        Power Connections: Power Over Ethernet</a></h2>
+ 
+                        <p class="normal-text">Power over Ethernet is, generally speaking, a technology
+                        that allows sending power and data over UTP cables used for data transmission,
+                        at a range of up to 100m (333ft). The operating voltage for energy transmission
+                        is always under 60V, power is always under 100W, and the power source is
+                        protected against short circuits. With that, PoE is safe for people and for
+                        equipment. PoEs major advantages over using a local AC power adaptor are:</p>
+ 
+                        <ol class="normal-text ul-iconos" style='margin-top:0in' start=1 type='a'>
+                            <li class="normal-text">The
+                            Powered Device (PD) can be located anywhere in a radius of 100m from the Power
+                            Source Equipment (PSE)</li>
+                            
+                            <li class="normal-text">The PD
+                            can be remotely reset, without the need to access it physically (with a managed
+                            PSE)</li>
+                            
+                            <li class="normal-text">All
+                            the PDs connected to a single PSE can be backed up with a single Uninterrupted
+                            Power Supply (UPS), instead of having a UPS per device</li>
+                            
+                            <li class="normal-text">The RJ45
+                            connector is universal, the same in every country</li>
+                            
+                            <li class="normal-text">PoE PD
+                            devices can be shut down remotely for extended
+                            periods of time (with a managed PSE)</li>
+                        </ol>
+ 
+                        <p class="normal-text">There are
+                        two ways to deploy PoE technology: using a PoE switch, or by installing PoE
+                        injectors in the existing networking infrastructure. PoE-capable switches offer
+                        the advantage of an integrated solution that requires only one cable for the
+                        network connection. PoE injectors are a power source that can be used in
+                        combination with a non-PoE Switch.</p>
+ 
+                        <p class="normal-text"><b>Use
+                        Cases for PoE in Outdoor Small cells</b></p>
+                        
+                        <p class="normal-text">Outdoor
+                        cells are located in places without easy access to electricity and have the
+                        added disadvantage of requiring IP66 or IP67 weather protection, which means
+                        that minimizing the number of input ports is critical. PoE can be used to
+                        deliver power, either:</p>
+ 
+                        <ol class="normal-text ul-iconos" style='margin-top:0in' start=1 type='a'>
+                            <li class="normal-text">Using
+                            an outdoor-rated PoE hub connecting and
+                            powering Small Cell + Backhaul as shown in Figure 13</li>
+                        </ol>
+ 
+                        <p class="normal-text"><img width=220 height=330 
+                        src="images/civil_power_ran/image994.png"></p>
+                        
+                        <p align=center><i>Figure 13 Small Cell + Backhaul
+                        Deployment using a PoE HUB</i></p>
+ 
+                        <ol class="normal-text ul-iconos" style='margin-top:0in' start=2 type='a'>
+                            <li class="normal-text">A
+                        managed PoE switch, which would connect between the multiple outdoor PoE Small
+                        Cells as it shows in Figure 14</li>
+                        </ol>
+ 
+                        <p class="normal-text"><img
+                        width=260 height=280 id="_x0000_i1071"
+                        src="images/civil_power_ran/image014.jpg"></p>
+                        
+                        <p align=center><i>Figure 14 Switch with PoE
+                        capabilities feeding 2 small cells</i></p>
+ 
+                        <br><h2><a class="titulo-h2 anchor-bum color-luminati" name="item2-8">2.8
+                        Electrical
+                        Protection</a></h2>
+                        
+                        <p class="normal-text">Most of the power systems include mechanisms to protect the
+                        power equipment and the connected load of electrical disturbance. The set of
+                        recommended protections are listed below:</p>
+ 
+                        <ul class="normal-text ul-iconos" style='margin-top:0in' start=1 type=1>
+                            <li>Input overvoltage/undervoltage protection</li>
+                            
+                            <li>
+                            Input overcurrent protection</li>
+                            
+                            <li>
+                            Output overvoltage protection</li>
+                            
+                            <li>
+                            Output short-circuit protection</li>
+                            
+                            <li>
+                            Output current-limiting protection</li>
+                            
+                            <li>
+                            Overtemperature protection</li>
+                        </ul>
+ 
+                        <p class="normal-text">However not all power system include
+                        these protections, Naas operators must be aware of which kind of protection
+                        their chosen power system includes, this information can be found in the power
+                        equipment datasheet. If it is detected that any of the recommended protection
+                        is missing, NaaS Operators should add the missing
+                        protection with additional devices as required. Some devices used in RAN sites
+                        are shown in Figure 15, and described below:</p>
+ 
+                        <ol class="normal-text ul-iconos" style='margin-top:0in' start=1 type=1>
+                            <li class="normal-text"><b>AC Surge Protection Device: </b>Installed
+                            near to the main electrical panel to suppress lightning and switching
+                            overvoltage. Is used to protect the Power Equipment.</li>
+                            <li class="normal-text"><b>DC Indoor Arresters:</b> Or Type 1 DC arresters have a low voltage
+                            protection level for RRH/RRUs, are installed in a DC indoor box near the
+                            Power supply unit.</li>
+                            <li class="normal-text"><b>DC Outdoor Box:</b> Are Installed in the mast. The box Includes DC arresters for additional protection in case
+                            nominal load currents up to 2000A.</li>
+                            <li class="normal-text"><b>Surge Arrester for PV Systems: </b>Used in<b> </b>Photovoltaic
+                            (PV) facilities, provides additional protection against lighting in the
+                            solar power system.</li>
+                            <li class="normal-text"><b>Ethernet
+                            Arrester:</b> It's a Surge Arrester for Gigabit POE (Power
+                            over Ethernet) to
+                            protect against overcurrent and over-voltage.</li>
+                        </ol>
+ 
+                        <p class="normal-text"><img width=590 height=517 
+                        src="images/civil_power_ran/image015.jpg"></p>
+                        
+                        <p align=center><i>Figure 15 RAN site electrical
+                        Protection</i></p>
+                    </div>
+               
+                    <div class="right">
+                        <a class='link-next' href="#" onclick="switchContent('#fm')">Next &#8658;</a>
+                    </div>
+                    <br>
+                </div>
+
+                <nav id="navbar-example3" class="navbar navbar-light bg-light position-fixed">
+                    <nav class="nav nav-pills flex-column">
+                    
+                    <a id="link-1" class="nav-link bullet-2-link" onclick="onClickActive(event)" href="#item1"><strong>1. INTRODUCTION</strong></a>
+                    <a id="link-2" class="nav-link bullet-2-link" onclick="onClickActive(event)" href="#item1-1"><em>1.1 Module Objectives</em></a>
+                    <a id="link-3" class="nav-link bullet-2-link" onclick="onClickActive(event)" href="#item1-2"><em>1.2 Module Framework</em></a>
+                    <a id="link-4" class="nav-link bullet-2-link" onclick="onClickActive(event)" href="#item2"><strong>2. CIVIL & POWER DESIGN FUNDAMENTALS</strong></a>
+                    <a id="link-6" class="nav-link bullet-2-link" onclick="onClickActive(event)" href="#item2-1"><em>2.1 Civil & Power Design Overview</em></a>
+                    <a id="link-7" class="nav-link bullet-2-link" onclick="onClickActive(event)" href="#item2-2"><em>2.2 Civil & Power Design Inputs Description</em></a>
+                    <a id="link-7" class="nav-link bullet-2-link" onclick="onClickActive(event)" href="#item2-3"><em>2.3 Grid Power System Overview</em></a>
+                    <a id="link-7" class="nav-link bullet-2-link" onclick="onClickActive(event)" href="#item2-4"><em>2.4 Solar System Overview</em></a>
+                    <a id="link-7" class="nav-link bullet-2-link" onclick="onClickActive(event)" href="#item2-5"><em>2.5 Solar System Description</em></a>
+                    <a id="link-7" class="nav-link bullet-2-link" onclick="onClickActive(event)" href="#item2-6"><em>2.6 Site Layout Overview</em></a>
+                    <a id="link-7" class="nav-link bullet-2-link" onclick="onClickActive(event)" href="#item2-7"><em>2.7 Power Connections: Power Over Ethernet</em></a>
+                    <a id="link-7" class="nav-link bullet-2-link" onclick="onClickActive(event)" href="#item2-8"><em>2.8 Electrical Protection</em></a>
+                    </nav>
+                </nav>
+           </section>
+
+           <section id="fm" hidden>
+            <div id="content"> 
+
+                <div data-spy="scroll" data-target="#navbar-example3" data-offset="0">
+                    <h1><a class="titulo-h1 anchor-bum color-luminati" name="item3">3
+                        Power System
+                        Design</a></h1>
+                        
+                        <p class="normal-text">This section describes guidelines to size and select the basic
+                        components of the DC power system that feeds a RAN site. The Sizing and design
+                        of AC Power solutions used for external HVAC systems (heating, ventilation, and
+                        air conditioning), lights or any other AC equipment at the site is out of the
+                        scope of the PlayBook.</p>
+                        
+                        <br><h2><a class="titulo-h2 anchor-bum color-luminati" name="item3-1">3.1
+                        Power System
+                        Design Process</a></h2>
+                        
+                        <p class="normal-text">A DC power system must provide the specified voltage range
+                        and current to the equipment and batteries when the primary power source is
+                        available. The batteries must provide reserve power for a certain amount of
+                        time giving autonomy from the main source when it fails. The objective of Power
+                        System Design is to ensure the power requirements are met with a proper
+                        autonomy for each site optimizing the system. As depicted in Figure 3
+                        in Section 2.2 the design process includes calculation of the RAN site
+                        power consumption, development of the system requirements and sizing of the
+                        system based on those requirements.</p>
+                        
+                        <p class="normal-text">New systems are the easiest to design because there are no
+                        constraints caused by existing and many times inadequate infrastructure. The
+                        new infrastructure is built to accommodate the new systems and is possible to
+                        use a wide variety of new equipment. Expansion or retrofit of existing systems,
+                        particularly older systems, usually is more difficult because of the physical
+                        and electrical limitations. </p>
+                        
+                        <br><h2><a class="titulo-h2 anchor-bum color-luminati" name="item3-2">3.2
+                        Load Calculation</a></h2>
+                        
+                        <p class="normal-text">The Load calculation of the RAN site is determined by the
+                        power consumption of all the elements of the site, measured in Watts(W),
+                        and it is used to properly size the power equipment. Most of the Equipment to
+                        be powered at RAN sites consists of:</p>
+                        
+                        <ul class="normal-text ul-iconos" style='margin-top:0in' start=1 type=1>
+                            <li class="normal-text">Radio Units</li>
+                            <li class="normal-text">Base Band Unit (for Macro Cells)</li>
+                            <li class="normal-text">Transmission Equipment. This may integrate one
+                        or more of the following</li>
+                            <ul class="normal-text ul-iconos" style='margin-top:0in' start=1 type=1>
+                                <li class="normal-text">Routers &amp; Switches</li>
+                                <li class="normal-text">Microwave Radios</li>
+                                <li class="normal-text">VSAT</li>
+                            </ul>
+                        </ul>
+                        
+                        <p class="normal-text">The DC load caused by transmission equipment such as
+                        switches and routers, for practical calculation can be considered constant
+                        regardless of traffic, In the same way the power consumption of radio Baseband
+                        or Microwave IDU can be considered constant. </p>
+                        
+                        <p class="normal-text">In case for in-built cooling system within power cabinets or
+                        other cabinets, the vendors mention the power consumption at certain
+                        temperature commonly at 25C and is the one used for load calculations.</p>
+                        
+                        <p class="normal-text">The load characteristics of the Radio Unit equipment are
+                        quite different from switching systems. there is a relatively small fixed
+                        (static) load component and a large variable load component. The variable
+                        component depends on traffic (each active channel contributes to the load), and
+                        daily variations are fairly predictablemidmorning, midafternoon, and evening.</p>
+                        
+                        <p class="normal-text">So, the mathematical equation for the power consumption of a
+                        RAN site is:</p>
+
+                        <br>
+                        <i><img width=270 height=22
+                            src="images/civil_power_ran/image0001.png" style="margin-right:15px;"></i>
+                        <p class="normal-text" style="float: right;">(Eq. 1) </p>
+                        <br><br>
+                                                
+                        <p class="normal-text">Where:</p>
+                        
+                        <ul class="normal-text ul-iconos" style='margin-top:0in' start=1 type=1>
+                            <li>RANpwr is the power consumption of the RAN equipment, it may
+                            include Baseband and RRUs/RRH </li>
+                            <li>TXpwr is the power consumption of the transmission equipment
+                            indicated by the vendors</li>
+                            <li>Coolpower is the power consumption of a DC cooling system </li>
+                        </ul>
+                        
+                        <p class="normal-text">The best way to obtain the power consumption of the RAN site
+                        elements is from the vendor documentation. Commonly can be found in the equipment
+                        datasheet or the environmental product declaration. </p>
+                        
+                        <p class="normal-text">Below is an example of a Load Calculation in a Grid AC-DC
+                        Power System :</p>
+                        
+                        <div style='border:solid black 1.0pt;padding:2.0pt 2.0pt 2.0pt 2.0pt;
+                        background:#EFEFEF'>
+                        
+                        <p class="normal-text"><b>Example: </b>Table 3 is an
+                        example of the power consumption in watts of a radio baseband for different
+                        configurations:</p>
+                        
+                        </div><br>
+                        
+                        <div align=center>
+                        <table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0 width=569
+                         style='width:426.75pt;border-collapse:collapse;mso-yfti-tbllook:1184;
+                         mso-padding-alt:0in 0in 0in 0in'>
+                         <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes;height:38.25pt'>
+                          <td width=234 valign=top style='width:175.5pt;border:solid black 1.0pt;
+                          background:#244061;padding:5.0pt 5.0pt 5.0pt 5.0pt;height:38.25pt'>
+                          <p align=center style="color:#FFF"><b>Configuration</b></p>
+                          </td>
+                          <td width=159 valign=top style='width:119.25pt;border:solid black 1.0pt;
+                          border-left:none;background:#244061;padding:5.0pt 5.0pt 5.0pt 5.0pt;
+                          height:38.25pt'>
+                          <p align=center style="color:#FFF"><b>Total Power Consumption (W)</b></p>
+                          </td>
+                          <td width=176 valign=top style='width:132.0pt;border:solid black 1.0pt;
+                          border-left:none;background:#244061;padding:5.0pt 5.0pt 5.0pt 5.0pt;
+                          height:38.25pt'>
+                          <p align=center style="color:#FFF"><b>Total energy consumption (kWh/
+                          year)</b></p>
+                          </td>
+                         </tr>
+                         <tr style='mso-yfti-irow:1;mso-yfti-lastrow:yes;height:37.75pt'>
+                          <td width=234 valign=top style='width:175.5pt;border:solid black 1.0pt;
+                          border-top:none;background:white;padding:5.0pt 5.0pt 5.0pt 5.0pt;height:37.75pt'>
+                          <p class="normal-text">1 transport board + 1 capacity board</p>
+                          </td>
+                          <td width=159 valign=top style='width:119.25pt;border-top:none;border-left:
+                          none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+                          background:white;padding:5.0pt 5.0pt 5.0pt 5.0pt;height:37.75pt'>
+                          <p class="normal-text">160</p>
+                          </td>
+                          <td width=176 valign=top style='width:132.0pt;border-top:none;border-left:
+                          none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+                          background:white;padding:5.0pt 5.0pt 5.0pt 5.0pt;height:37.75pt'>
+                          <p class="normal-text">1402</p>
+                          </td>
+                         </tr>
+                        </table>
+                        </div><br>
+                        
+                        <div style='border:solid black 1.0pt;padding:2.0pt 2.0pt 2.0pt 2.0pt;
+                        background:#EFEFEF'>
+                        
+                        <p class="normal-text"><b>Table 3 Example of a Radio Baseband Power Consumption</b></p>
+                        
+                        <p class="normal-text">An example of Radio Units power consumption
+                        is showed in Table 4 In this sample the vendor indicates the Radio Unit typical
+                        power consumption in Watts for 48VDC input, at 25C, with +/- 10% margin. The
+                        average power consumption detailed in Table 4 considers 6h low hour load, 10h
+                        medium hour load and 8h busy hour load / 24h.</p>
+                        
+                        </div>
+                        <br>
+                        
+                        <div align=center>
+                        <table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0 width=589
+                         style='width:441.75pt;border-collapse:collapse;mso-yfti-tbllook:1184;
+                         mso-padding-alt:0in 0in 0in 0in'>
+                         <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes;height:63.0pt'>
+                          <td width=120 valign=top style='width:89.8pt;border:solid black 1.0pt;
+                          background:#244061;padding:5.0pt 5.0pt 5.0pt 5.0pt;height:63.0pt'>
+                          <p align=center style="color:#FFF"><b>Configuration</b></p>
+                          </td>
+                          <td width=113 valign=top style='width:84.75pt;border:solid black 1.0pt;
+                          border-left:none;background:#244061;padding:5.0pt 5.0pt 5.0pt 5.0pt;
+                          height:63.0pt'>
+                          <p align=center style="color:#FFF"><b>Output Power per carrier (W)</b></p>
+                          </td>
+                          <td width=119 valign=top style='width:89.1pt;border:solid black 1.0pt;
+                          border-left:none;background:#244061;padding:5.0pt 5.0pt 5.0pt 5.0pt;
+                          height:63.0pt'>
+                          <p align=center style="color:#FFF"><b>Power consumption (W), ETSI 202706 average load P</b><b>RRH</b><b>, static</b></p>
+                          </td>
+                          <td width=119 valign=top style='width:89.1pt;border:solid black 1.0pt;
+                          border-left:none;background:#244061;padding:5.0pt 5.0pt 5.0pt 5.0pt;
+                          height:63.0pt'>
+                          <p align=center style="color:#FFF"><b>Power consumption (W), ETSI 202706 busy hour load P</b><b>BH RRH</b><b>, static</b></p>
+                          </td>
+                          <td width=119 valign=top style='width:89.1pt;border:solid black 1.0pt;
+                          border-left:none;background:#244061;padding:5.0pt 5.0pt 5.0pt 5.0pt;
+                          height:63.0pt'>
+                          <p align=center style="color:#FFF"><b>Power consumption (W), 100% RF power load P</b><b>100% RRH</b></p>
+                          </td>
+                         </tr>
+                         <tr style='mso-yfti-irow:1;height:22.0pt'>
+                          <td width=120 valign=top style='width:89.8pt;border:solid black 1.0pt;
+                          border-top:none;background:white;padding:5.0pt 5.0pt 5.0pt 5.0pt;height:22.0pt'>
+                          <p class="normal-text">1/1/1 4Tx</p>
+                          </td>
+                          <td width=113 valign=top style='width:84.75pt;border-top:none;border-left:
+                          none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+                          background:white;padding:5.0pt 5.0pt 5.0pt 5.0pt;height:22.0pt'>
+                          <p class="normal-text">4x40</p>
+                          </td>
+                          <td width=119 valign=top style='width:89.1pt;border-top:none;border-left:
+                          none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+                          background:white;padding:5.0pt 5.0pt 5.0pt 5.0pt;height:22.0pt'>
+                          <p class="normal-text">879</p>
+                          </td>
+                          <td width=119 valign=top style='width:89.1pt;border-top:none;border-left:
+                          none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+                          background:white;padding:5.0pt 5.0pt 5.0pt 5.0pt;height:22.0pt'>
+                          <p class="normal-text">1076</p>
+                          </td>
+                          <td width=119 valign=top style='width:89.1pt;border-top:none;border-left:
+                          none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+                          background:white;padding:5.0pt 5.0pt 5.0pt 5.0pt;height:22.0pt'>
+                          <p class="normal-text">1557</p>
+                          </td>
+                         </tr>
+                         <tr style='mso-yfti-irow:2;height:22.0pt'>
+                          <td width=120 valign=top style='width:89.8pt;border:solid black 1.0pt;
+                          border-top:none;background:white;padding:5.0pt 5.0pt 5.0pt 5.0pt;height:22.0pt'>
+                          <p class="normal-text">1/1/1 4Tx</p>
+                          </td>
+                          <td width=113 valign=top style='width:84.75pt;border-top:none;border-left:
+                          none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+                          background:white;padding:5.0pt 5.0pt 5.0pt 5.0pt;height:22.0pt'>
+                          <p class="normal-text">4x20</p>
+                          </td>
+                          <td width=119 valign=top style='width:89.1pt;border-top:none;border-left:
+                          none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+                          background:white;padding:5.0pt 5.0pt 5.0pt 5.0pt;height:22.0pt'>
+                          <p class="normal-text">657</p>
+                          </td>
+                          <td width=119 valign=top style='width:89.1pt;border-top:none;border-left:
+                          none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+                          background:white;padding:5.0pt 5.0pt 5.0pt 5.0pt;height:22.0pt'>
+                          <p class="normal-text">755</p>
+                          </td>
+                          <td width=119 valign=top style='width:89.1pt;border-top:none;border-left:
+                          none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+                          background:white;padding:5.0pt 5.0pt 5.0pt 5.0pt;height:22.0pt'>
+                          <p class="normal-text">965</p>
+                          </td>
+                         </tr>
+                         <tr style='mso-yfti-irow:3;height:22.0pt'>
+                          <td width=120 valign=top style='width:89.8pt;border:solid black 1.0pt;
+                          border-top:none;background:white;padding:5.0pt 5.0pt 5.0pt 5.0pt;height:22.0pt'>
+                          <p class="normal-text">1/1/1 2Tx</p>
+                          </td>
+                          <td width=113 valign=top style='width:84.75pt;border-top:none;border-left:
+                          none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+                          background:white;padding:5.0pt 5.0pt 5.0pt 5.0pt;height:22.0pt'>
+                          <p class="normal-text">2x40</p>
+                          </td>
+                          <td width=119 valign=top style='width:89.1pt;border-top:none;border-left:
+                          none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+                          background:white;padding:5.0pt 5.0pt 5.0pt 5.0pt;height:22.0pt'>
+                          <p class="normal-text">540</p>
+                          </td>
+                          <td width=119 valign=top style='width:89.1pt;border-top:none;border-left:
+                          none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+                          background:white;padding:5.0pt 5.0pt 5.0pt 5.0pt;height:22.0pt'>
+                          <p class="normal-text">637</p>
+                          </td>
+                          <td width=119 valign=top style='width:89.1pt;border-top:none;border-left:
+                          none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+                          background:white;padding:5.0pt 5.0pt 5.0pt 5.0pt;height:22.0pt'>
+                          <p class="normal-text">874</p>
+                          </td>
+                         </tr>
+                         <tr style='mso-yfti-irow:4;mso-yfti-lastrow:yes;height:22.0pt'>
+                          <td width=120 valign=top style='width:89.8pt;border:solid black 1.0pt;
+                          border-top:none;background:white;padding:5.0pt 5.0pt 5.0pt 5.0pt;height:22.0pt'>
+                          <p class="normal-text">1/1/1 2Tx</p>
+                          </td>
+                          <td width=113 valign=top style='width:84.75pt;border-top:none;border-left:
+                          none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+                          background:white;padding:5.0pt 5.0pt 5.0pt 5.0pt;height:22.0pt'>
+                          <p class="normal-text">2x20</p>
+                          </td>
+                          <td width=119 valign=top style='width:89.1pt;border-top:none;border-left:
+                          none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+                          background:white;padding:5.0pt 5.0pt 5.0pt 5.0pt;height:22.0pt'>
+                          <p class="normal-text">430</p>
+                          </td>
+                          <td width=119 valign=top style='width:89.1pt;border-top:none;border-left:
+                          none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+                          background:white;padding:5.0pt 5.0pt 5.0pt 5.0pt;height:22.0pt'>
+                          <p class="normal-text">479</p>
+                          </td>
+                          <td width=119 valign=top style='width:89.1pt;border-top:none;border-left:
+                          none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+                          background:white;padding:5.0pt 5.0pt 5.0pt 5.0pt;height:22.0pt'>
+                          <p class="normal-text">581</p>
+                          </td>
+                         </tr>
+                        </table>
+                        </div><br>
+                        
+                        <div style='border:solid black 1.0pt;padding:2.0pt 2.0pt 2.0pt 2.0pt;
+                        background:#EFEFEF'>
+                        
+                        <p class="normal-text"><b>Table 4 Power Consumption of a Radio Configuration</b></p>
+                        
+                        <p class="normal-text">An example
+                        of a Microwave in Split-Mount configuration is showed in Table 5.</p>
+                        
+                        </div><br>
+                        
+                        <div align=center>
+                        <table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0 width=589
+                         style='width:441.75pt;border-collapse:collapse;mso-yfti-tbllook:1184;
+                         mso-padding-alt:0in 0in 0in 0in'>
+                         <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes;height:24.25pt'>
+                          <td width=589 colspan=2 valign=top style='width:441.9pt;border:solid black 1.0pt;
+                          background:#244061;padding:5.0pt 5.0pt 5.0pt 5.0pt;height:24.25pt'>
+                          <p align=center style="color:#FFF"><b>Microwave Split-Mount Solution</b></p>
+                          </td>
+                         </tr>
+                         <tr style='mso-yfti-irow:1;mso-yfti-lastrow:yes;height:49.75pt'>
+                          <td width=295 valign=top style='width:220.95pt;border:solid black 1.0pt;
+                          border-top:none;background:white;padding:5.0pt 5.0pt 5.0pt 5.0pt;height:49.75pt'>
+                          <p class="normal-text">Power consumption per carrier</p>
+                          </td>
+                          <td width=295 valign=top style='width:220.95pt;border-top:none;border-left:
+                          none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+                          background:white;padding:5.0pt 5.0pt 5.0pt 5.0pt;height:49.75pt'>
+                          <p class="normal-text">55W  outdoor radio</p>
+                          <p class="normal-text">15W  indoor baseband</p>
+                          </td>
+                         </tr>
+                        </table>
+                        </div><br>
+                        
+                        <div style='border:solid black 1.0pt;padding:2.0pt 2.0pt 2.0pt 2.0pt;
+                        background:#EFEFEF'>
+                        
+                        <p class="normal-text"><b>Table 5 Power Consumption of Microwave transmission
+                        equipment</b></p>
+                        
+                        <p class="normal-text">Table 6 is
+                        an example of a Cooling System power consumption embedded within an Outdoor
+                        Cabinet in these cooling systems the power consumption varies according to the
+                        temperature.</p>
+                        
+                        </div><br>
+                        
+                        <table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0 width=266
+                         style='width:199.5pt;margin-left:131.75pt;border-collapse:collapse;mso-yfti-tbllook:
+                         1184;mso-padding-alt:0in 0in 0in 0in'>
+                         <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes;height:24.25pt'>
+                          <td width=266 valign=top style='width:199.5pt;border:solid black 1.0pt;
+                          background:#244061;padding:5.0pt 5.0pt 5.0pt 5.0pt;height:24.25pt'>
+                          <p align=center style="color:#FFF"><b>Cooling System in Outdoor
+                          Cabinet</b></p>
+                          </td>
+                         </tr>
+                         <tr style='mso-yfti-irow:1;height:24.25pt'>
+                          <td width=266 valign=top style='width:199.5pt;border:solid black 1.0pt;
+                          border-top:none;background:white;padding:5.0pt 5.0pt 5.0pt 5.0pt;height:24.25pt'>
+                          <p class="normal-text">30 W idle +23C (+73.4F)</p>
+                          </td>
+                         </tr>
+                         <tr style='mso-yfti-irow:2;height:24.25pt'>
+                          <td width=266 valign=top style='width:199.5pt;border:solid black 1.0pt;
+                          border-top:none;background:white;padding:5.0pt 5.0pt 5.0pt 5.0pt;height:24.25pt'>
+                          <p class="normal-text">50 W typical +55C (+131F)</p>
+                          </td>
+                         </tr>
+                         <tr style='mso-yfti-irow:3;height:24.25pt'>
+                          <td width=266 valign=top style='width:199.5pt;border:solid black 1.0pt;
+                          border-top:none;background:white;padding:5.0pt 5.0pt 5.0pt 5.0pt;height:24.25pt'>
+                          <p class="normal-text">150 W max. ambient</p>
+                          </td>
+                         </tr>
+                         <tr style='mso-yfti-irow:4;mso-yfti-lastrow:yes;height:24.25pt'>
+                          <td width=266 valign=top style='width:199.5pt;border:solid black 1.0pt;
+                          border-top:none;background:white;padding:5.0pt 5.0pt 5.0pt 5.0pt;height:24.25pt'>
+                          <p class="normal-text">500 W cold start (heater active)</p>
+                          </td>
+                         </tr>
+                        </table><br>
+                        
+                        <div style='border:solid black 1.0pt;padding:2.0pt 2.0pt 2.0pt 2.0pt;
+                        background:#EFEFEF'>
+                        
+                        <p class="normal-text"><b>Table 6 Outdoor Cabinet Cooling System Power Consumption</b></p>
+                        
+                        <p class="normal-text">Calculate the
+                        total power consumption of a RAN site using the power consumption showed in
+                        Table 3, Table 6, Table 4 and Table 5 using the
+                        following assumptions:</p>
+                        
+                        <p class="normal-text">a) A Macro
+                        site with 1 baseband and 3 Radio Units in (1/1/1 2Tx) with 20W RF Output Power
+                        configuration.</p>
+                        
+                        <p class="normal-text">b) Use
+                        Microwave transmission in Split-Mount configuration with a single carrier.</p>
+                        
+                        <p class="normal-text">c) The
+                        deployment location has a max temperature of 25C and a Minimum of 13C
+                        constant during all year<b>.</b></p>
+                        
+                        <p class="normal-text"><b>Solution</b></p>
+                        
+                        <p class="normal-text"><b>1. </b>Baseband Load Consumption</p>
+                        
+                        <p class="normal-text">In this example
+                        it is indicated in Table 3 that the baseband power consumption is 160 W. The
+                        Radio Units use a (1/1/1 2Tx) with 20W RF Output Power configuration the safe
+                        assumption is to take the average power consumptions (6h low hour load, 10h
+                        medium hour load and 8h busy hour load / 24h) adding a 10% margin in this case
+                        the Table 5 indicates 430 W(1.1)=473W. The Macro Base-Station consumes a total
+                        of 160W +473W=633W.</p>
+                        
+                        <p class="normal-text"><b>2. </b>Split-Mount Microwave Transmission Equipment</p>
+                        
+                        <p class="normal-text">The DC
+                        load caused by this type of equipment is constant regardless of traffic. The
+                        sample indicates: 55W for the outdoor radio and 15W for indoor microwave
+                        baseband a total of 70 W</p>
+                        
+                        <p class="normal-text"><b>3.</b> Cooling System Consumption</p>
+                        
+                        <p class="normal-text">In this
+                        example it is indicated that the ambient temperature is a maximum of 25C and a
+                        Minimum of 13C constant during all year. Table 4 indicates 50 W typical +55C
+                        (+131F).</p>
+                        
+                        <p class="normal-text">So, from
+                        Equation 1:</p>
+                        
+                        </div><br>
+
+
+                        <br>
+                        <i><img width=270 height=22
+                            src="images/civil_power_ran/image0001.png" style="margin-right:15px;"></i>
+                        <p class="normal-text" style="float: right;">(Eq. 1) </p>
+                        <br><br>
+
+                        
+                        
+                        <br>
+                        <div style='border:solid black 1.0pt;padding:2.0pt 2.0pt 2.0pt 2.0pt;
+                        background:#EFEFEF'>
+                        
+                        <p class="normal-text"><b>= 633W+70W+50W = <i><u>753W</u></i></b></p>
+                        
+                        </div>
+                        
+                        <br><h2><a class="titulo-h2 anchor-bum color-luminati" name="item3-3">3.3
+                        Grid Power
+                        System Dimensioning</a></h2>
+                        
+                        <p class="normal-text">There are two basic components of the Grid AC-DC Power
+                        System that should be sized to feed the DC load: The rectifiers, which converts
+                        AC current to usable DC current, and the batteries that assume the load when
+                        external power is interrupted. This section includes guidelines to size
+                        Rectifiers and Batteries accurately, based on load calculation and the autonomy
+                        requirements.</p>
+                        
+                        <h3>3.3.1
+                        System Operating
+                        Voltages and Ranges</h3>
+                        
+                        <p class="normal-text">To properly size the batteries is required to obtain the
+                        Operative Voltage of the RAN site. The equipment with the highest minimum
+                        voltage (VME) and lowest maximum voltage (VLM) generally will set the operating
+                        range of the power system in a RAN Site. </p>
+                        
+                        <div style='border:solid black 1.0pt;padding:2.0pt 2.0pt 2.0pt 2.0pt;
+                        background:#EFEFEF'>
+                        
+                        <p class="normal-text"><b>Example</b>. </p>
+                        
+                        <p class="normal-text">All the
+                        equipment used in a RAN site has a nominal power of 48VDC. One equipment has a permitted
+                        operating voltage of 36.0 to 60.0 VDC. Other equipment operative voltage range
+                        of 42 to 56 VDC.</p>
+                        
+                        <p class="normal-text">Therefore,
+                        the high limit for the power system must be set to 56.0 V even when other
+                        equipment in the same site operates satisfactorily at 60VDC. It should be noted
+                        that prolonged operation at higher voltages almost always reduces equipment
+                        reliability even when the equipment is rated for the higher voltage. The
+                        minimum operating voltage is 42V even when there is equipment in the same RAN
+                        site that can operate at 36V. </p>
+                        
+                        </div>
+                        
+                        <h3>3.3.2
+                        Battery System
+                        Design</h3>
+                        
+                        <p class="normal-text">A battery system consists of a set of industrial batteries
+                        with enough power to feed the RAN site, this section will provide guidance to
+                        choose a battery technology that suits NaaS operator
+                        needs and engineering guidelines to properly size the battery bank that fits
+                        the equipment power requirements and provide enough autonomy.</p>
+                        
+                        <p class="normal-text">The results of the battery system design are:</p>
+                        
+                        <ul class="normal-text ul-iconos" style='margin-top:0in' start=1 type=1>
+                            <li><b>Choice of technology</b>, valve-regulated lead-acid
+                            (VRLA) or Lithium Battery (Li-ion) </li>
+                            <li><b>Number of Batteries </b>to power up the required voltage</li>
+                            <li><b>Number of battery strings</b> required to provide the total capacity.</li>
+                        </ul>
+                        
+                        <h4>3.3.2.1
+                        Battery
+                        Technology:</h4>
+                        
+                        <p class="normal-text">There are two battery technologies used in RAN sites: VRLA
+                        and Lithium batteries. A comparison between both is analyzed in Table 7.</p>
+                        
+                        <div align=center>
+                        <table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0 width=589
+                         style='width:441.75pt;border-collapse:collapse;mso-yfti-tbllook:1184;
+                         mso-padding-alt:0in 0in 0in 0in'>
+                         <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes'>
+                          <td width=294 valign=top style='width:220.7pt;border-top:#4F81BD;border-left:
+                          #244061;border-bottom:#95B3D7;border-right:#95B3D7;border-style:solid;
+                          border-width:1.0pt;background:#244061;padding:0in 5.4pt 0in 5.4pt'>
+                          <p align=center style="color:#FFF"><b>VRLA</b></p>
+                          </td>
+                          <td width=294 valign=top style='width:220.7pt;border-top:solid #4F81BD 1.0pt;
+                          border-left:none;border-bottom:solid #95B3D7 1.0pt;border-right:solid #4F81BD 1.0pt;
+                          background:#244061;padding:0in 5.4pt 0in 5.4pt'>
+                          <p align=center style="color:#FFF"><b>Lithium ION</b></p>
+                          </td>
+                         </tr>
+                         <tr style='mso-yfti-irow:1'>
+                          <td width=294 valign=top style='width:220.7pt;border-top:none;border-left:
+                          solid #4F81BD 1.0pt;border-bottom:solid #95B3D7 1.0pt;border-right:solid #95B3D7 1.0pt;
+                          padding:0in 5.4pt 0in 5.4pt'>
+                          <p class="normal-text"><img width=122 height=99 id="_x0000_i1067"
+                          src="images/civil_power_ran/image004.jpg"></p>
+                          </td>
+                          <td width=294 valign=top style='width:220.7pt;border-top:none;border-left:
+                          none;border-bottom:solid #95B3D7 1.0pt;border-right:solid #4F81BD 1.0pt;
+                          padding:0in 5.4pt 0in 5.4pt'>
+                          <p class="normal-text"><img width=132 height=126 id="_x0000_i1066"
+                          src="images/civil_power_ran/image044.jpg"></p>
+                          </td>
+                         </tr>
+                         <tr style='mso-yfti-irow:2'>
+                          <td width=294 valign=top style='width:220.7pt;border-top:none;border-left:
+                          solid #4F81BD 1.0pt;border-bottom:solid #95B3D7 1.0pt;border-right:solid #95B3D7 1.0pt;
+                          padding:0in 5.4pt 0in 5.4pt'>
+                          <p class="normal-text">Requires More Recharging</p>
+                          </td>
+                          <td width=294 valign=top style='width:220.7pt;border-top:none;border-left:
+                          none;border-bottom:solid #95B3D7 1.0pt;border-right:solid #4F81BD 1.0pt;
+                          padding:0in 5.4pt 0in 5.4pt'>
+                          <p class="normal-text">Faster Charging and
+                          Discharging</p>
+                          </td>
+                         </tr>
+                         <tr style='mso-yfti-irow:3'>
+                          <td width=294 valign=top style='width:220.7pt;border-top:none;border-left:
+                          solid #4F81BD 1.0pt;border-bottom:solid #95B3D7 1.0pt;border-right:solid #95B3D7 1.0pt;
+                          padding:0in 5.4pt 0in 5.4pt'>
+                          <p class="normal-text">Maintenance at least
+                          once a year</p>
+                          </td>
+                          <td width=294 valign=top style='width:220.7pt;border-top:none;border-left:
+                          none;border-bottom:solid #95B3D7 1.0pt;border-right:solid #4F81BD 1.0pt;
+                          padding:0in 5.4pt 0in 5.4pt'>
+                          <p class="normal-text">Maintenance at least
+                          once a year</p>
+                          </td>
+                         </tr>
+                         <tr style='mso-yfti-irow:4'>
+                          <td width=294 valign=top style='width:220.7pt;border-top:none;border-left:
+                          solid #4F81BD 1.0pt;border-bottom:solid #95B3D7 1.0pt;border-right:solid #95B3D7 1.0pt;
+                          padding:0in 5.4pt 0in 5.4pt'>
+                          <p class="normal-text">Lifespan of 5-7 years</p>
+                          </td>
+                          <td width=294 valign=top style='width:220.7pt;border-top:none;border-left:
+                          none;border-bottom:solid #95B3D7 1.0pt;border-right:solid #4F81BD 1.0pt;
+                          padding:0in 5.4pt 0in 5.4pt'>
+                          <p class="normal-text">Lifespan of more than 10
+                          years</p>
+                          </td>
+                         </tr>
+                         <tr style='mso-yfti-irow:5;mso-yfti-lastrow:yes'>
+                          <td width=294 valign=top style='width:220.7pt;border-top:none;border-left:
+                          solid #4F81BD 1.0pt;border-bottom:solid #4F81BD 1.0pt;border-right:solid #95B3D7 1.0pt;
+                          padding:0in 5.4pt 0in 5.4pt'>
+                          <p class="normal-text">Least expensive</p>
+                          </td>
+                          <td width=294 valign=top style='width:220.7pt;border-top:none;border-left:
+                          none;border-bottom:solid #4F81BD 1.0pt;border-right:solid #4F81BD 1.0pt;
+                          padding:0in 5.4pt 0in 5.4pt'>
+                          <p class="normal-text">More
+                          expensive</p>
+                          </td>
+                         </tr>
+                        </table>
+                        </div>
+                        
+                        <p align=center><i>Table 7 VRLA vs- LI-ION</i></p>
+                        
+                        <p class="normal-text">Currently, VRLA batteries are predominantly adopted in RAN
+                        sites, however, the use of Li-ion batteries is increasing in commercial
+                        deployments. This module will consider VRLA batteries to calculate the bank
+                        sizing in the Power system.</p>
+                        
+                        <h4>3.3.2.2
+                        Battery Bank
+                        Capacity </h4>
+                        
+                        <p class="normal-text">The Battery Bank consists of two main characteristics: the
+                        number of batteries and strings. Commonly for a 48 V system a string is an
+                        array of 4 x 12V batteries connected in series. Additional arrays increment the
+                        autonomy of the system.</p>
+                        
+                        <p class="normal-text">The factors used to calculate the required battery capacity
+                        in ampere-hours (Ah) consists in the following inputs:</p>
+                        
+                        <p class="normal-text"><b>a)</b><b> Equipment
+                        load current in Amperes (A):</b></p>
+                        
+                        <p class="normal-text">The total
+                        equipment load can be calculated with the power consumption and nominal voltage
+                        of the RAN site:</p>
+                        
+                        <table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0 width=56
+                         style='width:42.0pt;border-collapse:collapse;mso-yfti-tbllook:1184;mso-padding-alt:
+                         0in 0in 0in 0in'>
+                         <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes;mso-yfti-lastrow:yes'>
+                          <td width=56 valign=top style='width:42.35pt;padding:0in 5.4pt 0in 5.4pt'>
+                          <p class="normal-text">(Eq.
+                          2)</p>
+                          </td>
+                         </tr>
+                        </table>
+                        
+                        <p class="normal-text"><img width=84 height=34 id="_x0000_i1065"
+                        src="images/civil_power_ran/image019.png"></p>
+                        
+                        <p class="normal-text"><b>b)</b><b> Autonomy requirements in hours (H):</b> </p>
+                        
+                        <p class="normal-text">Autonomy requirements is the
+                        reserved time that the battery bank will provide energy to the site in case a
+                        power outage from the main power source. The recommended range is between 8 to
+                        12 h reserve time.</p>
+                        
+                        <p class="normal-text"><b>c)</b><b> Battery
+                        required capacity (Ah):</b></p>
+                        
+                        <p class="normal-text">To
+                        determine the required capacity battery firstly is needed to calculate the
+                        battery final voltage (VBF), which is the minimum voltage to which the battery
+                        can discharge and still maintain equipment operation. The battery final voltage
+                        must be greater than the minimum equipment operating voltage (VME) by an amount
+                        equal to the voltage drop from the battery terminals to the equipment terminals
+                        and includes all circuit conductors and connections in between(usually
+                        considered to be 2.0 V for -48V systems). So VBF is defined by the equation
+                        below: </p>
+                        
+                        <table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0 width=56
+                         style='width:42.0pt;border-collapse:collapse;mso-yfti-tbllook:1184;mso-padding-alt:
+                         0in 0in 0in 0in'>
+                         <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes;mso-yfti-lastrow:yes'>
+                          <td width=56 valign=top style='width:42.35pt;padding:0in 5.4pt 0in 5.4pt'>
+                          <p class="normal-text">(Eq.
+                          3)</p>
+                          </td>
+                         </tr>
+                        </table>
+                        
+                        <p class="normal-text"><img width=195 height=18 id="_x0000_i1064"
+                        src="images/civil_power_ran/image020.png"></p>
+                        
+                        <p class="normal-text">To calculate the discharge factor
+                        is required to calculate the required final cell voltage (VCF) of the batteries
+                        defined by :</p>
+                        
+                        <table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0 width=56
+                         style='width:42.0pt;border-collapse:collapse;mso-yfti-tbllook:1184;mso-padding-alt:
+                         0in 0in 0in 0in'>
+                         <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes;mso-yfti-lastrow:yes'>
+                          <td width=56 valign=top style='width:42.35pt;padding:0in 5.4pt 0in 5.4pt'>
+                          <p class="normal-text">(Eq.
+                          4)</p>
+                          </td>
+                         </tr>
+                        </table>
+                        
+                        <p class="normal-text"><img width=86 height=34 id="_x0000_i1063"
+                        src="images/civil_power_ran/image021.png"></p>
+                        
+                        <p class="normal-text">Where:</p>
+                        
+                        <p class="normal-text"><img width=34
+                        height=18 id="_x0000_i1062"
+                        src="images/civil_power_ran/image022.png">= 24cells for 4 (12V)
+                        VRLA batteries in 48V systems</p>
+                        
+                        <div style='border:solid black 1.0pt;padding:1.0pt 4.0pt 1.0pt 4.0pt;
+                        margin-left:.5in'>
+                        
+                        <p class="normal-text"><b>Example</b> If the minimum
+                        operating voltage of a RAN system is 38VDC :</p>
+                        
+                        <p class="normal-text">
+                        </p>
+                        
+                        <p class="normal-text">
+                        <img
+                        width=262 height=18 id="_x0000_i1061"
+                        src="images/civil_power_ran/image023.png"></p>
+                        
+                       
+                        
+                        <p class="normal-text">The final cell voltage (VCF) equals the battery final
+                        voltage (VBF) divided by the number</p>
+                        
+                        <p class="normal-text">of cells (NCell) :</p>
+                        
+                        <p class="normal-text">
+                        <img
+                        width=273 height=26 id="_x0000_i1060"
+                        src="images/civil_power_ran/image024.png"></p>
+                        
+                        </div>
+                        
+                        <p class="normal-text">VRLA
+                        batteries used in the RAN sites provide 12 Volts, so for a 48V system, 4
+                        batteries are required to be connected in series. VRLA batteries are built from
+                        6 electric cells, each cell provides 2 Volt (nominal voltage) to the battery
+                        system. Battery manufacturers provide their discharge characteristics based on
+                        the constant current to the load within a certain period of time until the
+                        battery cells reach a final voltage Figure 16 shows a sample of the discharge
+                        characteristics of a battery with 12V 91Ah (8Hour/25C) up to final discharge
+                        voltage of VCF of 1.75V.</p>
+                        
+                        <p class="normal-text"><img
+                        width=558 height=48 id="_x0000_i1059"
+                        src="images/civil_power_ran/image025.jpg"></p>
+                        
+                        <p align=center><i>Figure 16 Sample of constant current
+                        discharge data units: (Amperes) at 25C</i></p>
+                        
+                        <p class="normal-text">The
+                        required capacity is defined by</p>
+                        
+                        <table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0 width=56
+                         style='width:42.0pt;border-collapse:collapse;mso-yfti-tbllook:1184;mso-padding-alt:
+                         0in 0in 0in 0in'>
+                         <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes;mso-yfti-lastrow:yes'>
+                          <td width=56 valign=top style='width:42.35pt;padding:0in 5.4pt 0in 5.4pt'>
+                          <p class="normal-text">(Eq.
+                          5)</p>
+                          </td>
+                         </tr>
+                        </table>
+                        
+                        <p class="normal-text"><img width=96 height=34 id="_x0000_i1058"
+                        src="images/civil_power_ran/image026.png"></p>
+                        
+                        <p class="normal-text">Where:</p>
+                        
+                        <p class="normal-text">C=
+                        The required Capacity of the Battery Bank in (Ah) </p>
+                        
+                        <p class="normal-text"><img width=32 height=18
+                        id="_x0000_i1057"
+                        src="images/civil_power_ran/image027.png">= Nominal Capacity of the battery as is indicated in the
+                        vendor documentation (Ah). </p>
+                        
+                        <p class="normal-text"><img width=10 height=18
+                        id="_x0000_i1056"
+                        src="images/civil_power_ran/image028.png">= Constant Discharge Current during a certain time up
+                        to reach a specified VCF (A) .</p>
+                        
+                        <p class="normal-text"><i>At</i>= Total Current of the RAN site equipment (A).</p>
+                        
+                       
+                        
+                        <div style='border:solid black 1.0pt;padding:1.0pt 4.0pt 1.0pt 4.0pt'>
+                        
+                        <p class="normal-text"><b><i>Example</i></b><i> </i>A RAN Site with<i> </i>minimum equipment voltage of
+                        38V and a power consumption of 753W, requires 10 hours of autonomy. Determine
+                        the required capacity of the battery bank taking as a reference the sample of
+                        constant current discharge of Figure 16</p>
+                        
+                        <p class="normal-text"><b><i>Solution</i></b>. From previous examples :</p>
+                        
+                        <p class="normal-text">1.-Calculate <b><i>At</i></b><i> </i>From
+                        Eq. 2 :</p>
+                        
+                        </div>
+                        
+                        <p class="normal-text"><img width=210 height=34 id="_x0000_i1055"
+                        src="images/civil_power_ran/image029.png"></p>
+                        
+                        <div style='border:solid black 1.0pt;padding:1.0pt 4.0pt 1.0pt 4.0pt'>
+                        
+                        <p class="normal-text">2.-From
+                        the sample of constant current discharge of Figure 16 the available current for
+                        10 hours is 9.5 A the From Eq. 5 :</p>
+                        
+                        </div>
+                        
+                        <p class="normal-text"><img width=301 height=34 id="_x0000_i1054"
+                        src="images/civil_power_ran/image030.png"></p>
+                        
+                        <div style='border:solid black 1.0pt;padding:1.0pt 4.0pt 1.0pt 4.0pt'>
+                        
+                       
+                        
+                        </div>
+                        
+                        <h4>3.3.2.3
+                        Number of
+                        Batteries and Strings</h4>
+                        
+                        <p class="normal-text">The arrangement of the batteries
+                        in series determines the voltage polarity. Just as the voltage of a battery
+                        system is increased by connecting the batteries in series, the ampere-hours and
+                        kilowatt capacity of the systems can be increased by connecting strings of
+                        series-connected batteries, in parallel.</p>
+                        
+                        <p class="normal-text">If each of the 12 V batteries
+                        shown in Figure 17 is rated for 91 amp-hours, each series string of batteries
+                        could be expected to produce 91 amps of current for one hour. </p>
+                        
+                        <p class="normal-text">Capacity is directly related to
+                        the size of the battery; but, rather than spending more on larger batteries, it
+                        is possible to achieve the same boost to capacity by adding more strings of batteries
+                        to the system in parallel as opposed to adding them in series. </p>
+                        
+                        <p class="normal-text">This option also provides
+                        safeguards against the failure of an individual battery, which would remove its
+                        string from the system altogether. By connecting in parallel, the spare capacity
+                        is already online and ready to maintain the current for its rated length of
+                        time. A diagram of a parallel battery strings rated at 182 amp-hours is showed
+                        in Figure 17. Note that, if a battery failed in any of the two series strings,
+                        the remaining string would continue to supply steady power at 91 amp-hours as
+                        indicated in Figure 17.</p>
+                        
+                        <p class="normal-text"><img width=286 height=147 id="_x0000_i1053"
+                        src="images/civil_power_ran/image031.png"></p>
+                        
+                        <p align=center><i>Figure 17 VRLA multi-string battery
+                        configuration offering additional redundancy</i></p>
+                        
+                        <p class="normal-text">After calculating the total
+                        battery capacity, it is necessary to determine the number of battery strings.
+                        As a general rule, the number of battery strings should be the minimum
+                        necessary.</p>
+                        
+                        <p class="normal-text">If the total required battery
+                        system capacity is to be divided equally across two or more strings, the
+                        required number of strings is determined from:</p>
+                        
+                        <table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0 width=56
+                         style='width:42.0pt;border-collapse:collapse;mso-yfti-tbllook:1184;mso-padding-alt:
+                         0in 0in 0in 0in'>
+                         <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes;mso-yfti-lastrow:yes'>
+                          <td width=56 valign=top style='width:42.35pt;padding:0in 5.4pt 0in 5.4pt'>
+                          <p class="normal-text">(Eq.
+                          6)</p>
+                          </td>
+                         </tr>
+                        </table>
+                        
+                        <p class="normal-text"><img width=145 height=38 id="_x0000_i1052"
+                        src="images/civil_power_ran/image032.png"></p>
+                        
+                        <p class="normal-text">where </p>
+                        
+                        <p class="normal-text"><img width=54 height=18
+                        id="_x0000_i1051"
+                        src="images/civil_power_ran/image033.png">= number of battery strings in parallel</p>
+                        
+                        <p class="normal-text"><img width=62 height=18
+                        id="_x0000_i1050"
+                        src="images/civil_power_ran/image034.png">= individual battery string capacity (AH)</p>
+                        
+                        <p class="normal-text"><img
+                        width=10 height=18 id="_x0000_i1049"
+                        src="images/civil_power_ran/image035.png">= The required Capacity of the Battery Bank in (AH) </p>
+                        
+                        <p class="normal-text">There is no technical limit on the
+                        number of battery strings that may be connected in parallel but there are
+                        practical limits. As a general rule, the battery manufacturer should be
+                        contacted if more than five strings are to be paralleled. Some manufacturers do
+                        not recommend more than four or five parallel strings.</p>
+                        
+                        <p class="normal-text">The widget <u>$$link widget$$power
+                        system sizing</u> contain a tool to size the battery bank for a RAN site will
+                        help NaaS Operators to calculate the required
+                        capacity of the battery bank and a recommended Battery Array.</p>
+                        
+                        <h3>3.3.3
+                        Rectifier System
+                        Design</h3>
+                        
+                        <p class="normal-text">The rectifier system capacity must
+                        be large enough to not only operate the load equipment but simultaneously
+                        recharge the batteries at the desired time. Rectifiers used in
+                        telecommunications applications consist of modular rectifiers commonly equipped
+                        for N + 1 redundancy, operated in parallel, and almost always set up for load
+                        sharing. </p>
+                        
+                        <p class="normal-text">With modular rectifiers, it is
+                        relatively simple to adjust the capacity by unplugging unneeded rectifier
+                        modules or using modern controllers that can be programmed to activate only the
+                        necessary rectifiers. The controllers on some rectifier systems can be set up
+                        to automatically shut down unneeded rectifiers during float operation and to
+                        bring them back online when needed for battery recharge. For RAN site
+                        applications there is several options for rectifiers, commonly are embedded
+                        with the power controller in 1 Rack Unit, Figure 18 shows a rectifier modular
+                        system with 2 rectifiers.</p>
+                        
+                        <p class="normal-text"><img width=430 height=113 id="_x0000_i1048"
+                        src="images/civil_power_ran/image036.jpg"></p>
+                        
+                        <p align=center><i>Figure 18 Common Rectifier Modular
+                        System for RAN sites</i></p>
+                        
+                        <p class="normal-text">There is Two considerations to
+                        decide the rectifiers system:</p>
+                        
+                        <p class="normal-text"><b>1.-Input Power:</b> Switch mode rectifiers are the preferred choice RAN sites
+                        since they can support multiple AC inputs and have a broader operating
+                        rangefrom single-phase to three-phase inputs. This flexibility means fewer
+                        rectifiers are requiredsaving money, space and
+                        maintenance.</p>
+                        
+                        <p class="normal-text"><b>2.-Output Power: </b>The output power of rectifiers for RAN sites are available
+                        in a wide range<b> </b>commonly<b> </b>from<b> </b>110W to 4.4kw. There is no
+                        technical limit to the number of rectifiers, but a simple economic analysis may
+                        reveal that a small number of large rectifiers is cheaper than a large number
+                        of small rectifiers. </p>
+                        
+                        <p class="normal-text">The Rectifier system design
+                        requires the selection of</p>
+                        
+                        <p class="normal-text">&#9679;
+                        Capacity</p>
+                        
+                        <p class="normal-text">&#9679; Quantity</p>
+                        
+                        <h4>3.3.3.1
+                        Capacity and
+                        quantity of rectifiers</h4>
+                        
+                        <p class="normal-text">Even the smallest system will have
+                        at least two rectifiersone to carry the load and recharge the battery and
+                        another configured for hot-standby operation. </p>
+                        
+                        <p class="normal-text">Industry baseline requirements
+                        specify that the rectifier system should be designed to recharge a fully
+                        discharged battery to 95% of its nameplate capacity rating within at least 24 h
+                        while simultaneously operating all load equipment. This requirement should be
+                        met when the equipment is operating at its busy hour load (normal condition).</p>
+                        
+                        <p class="normal-text">The total normal condition load
+                        current is one parameter used to calculate the required rectifier system
+                        capacity. Note that normal condition load current is used here instead of peak.</p>
+                        
+                        <p class="normal-text">The rectifier system capacity is
+                        calculated from:</p>
+                        
+                        <table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0 width=56
+                         style='width:42.0pt;border-collapse:collapse;mso-yfti-tbllook:1184;mso-padding-alt:
+                         0in 0in 0in 0in'>
+                         <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes;mso-yfti-lastrow:yes'>
+                          <td width=56 valign=top style='width:42.35pt;padding:0in 5.4pt 0in 5.4pt'>
+                          <p class="normal-text">(Eq.
+                          8)</p>
+                          </td>
+                         </tr>
+                        </table>
+                        
+                        <p class="normal-text"><img width=221 height=38 id="_x0000_i1047"
+                        src="images/civil_power_ran/image037.png"></p>
+                        
+                        <p class="normal-text">Where</p>
+                        
+                        <p class="normal-text">&#9679;
+                        <i>tRecharge</i> = battery recharge time (h)</p>
+                        
+                        <p class="normal-text">&#9679;
+                        <i>Cnom</i>= battery nameplate capacity at 25C and 8-h rate to 1.75
+                        V/cell (Ah)</p>
+                        
+                        <p class="normal-text">&#9679;
+                        <i>IRS</i> =
+                        rectifier system capacity with N rectifiers (A)</p>
+                        
+                        <p class="normal-text">&#9679;
+                        <i>IEQ</i> =
+                        normal condition equipment load current (A)</p>
+                        
+                        <p class="normal-text">&#9679;
+                        <i>FBatLoss</i> = battery loss factor (typically 1.10 to 1.15 for VRLA
+                        batteries)</p>
+                        
+                        <p class="normal-text">Where modular rectifiers are to be
+                        used, the total number of modular rectifiers (NRM) is determined from the
+                        rectifier module current rating (IRM) from:</p>
+                        
+                        <table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0 width=56
+                         style='width:42.0pt;border-collapse:collapse;mso-yfti-tbllook:1184;mso-padding-alt:
+                         0in 0in 0in 0in'>
+                         <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes;mso-yfti-lastrow:yes'>
+                          <td width=56 valign=top style='width:42.35pt;padding:0in 5.4pt 0in 5.4pt'>
+                          <p class="normal-text">(Eq.
+                          9)</p>
+                          </td>
+                         </tr>
+                        </table>
+                        
+                        <p class="normal-text"><img width=106 height=34 id="_x0000_i1046"
+                        src="images/civil_power_ran/image038.png"></p>
+                        
+                        <p class="normal-text">rounded up to the next higher
+                        integer value. This assumes that all rectifier modules have the same rating,
+                        which would be true in new installations and replacements. Where additional
+                        rectifier capacity is added to an existing installation, the redundant
+                        rectifier (or rectifiers) must be at least as large as the largest rectifier in
+                        the system. For example, if an installation has two 50-A and one 100-A
+                        rectifiers for the load and battery recharge, redundancy would be provided by
+                        adding a second 100-A rectifier or two additional 50-A rectifiers. This
+                        protects the system from the failure of any rectifier in the system</p>
+                        
+                        <div style='border:solid black 1.0pt;padding:1.0pt 4.0pt 1.0pt 4.0pt'>
+                        
+                        <p class="normal-text"><b><i>Example</i>:</b></p>
+                        
+                        <p class="normal-text">A
+                        battery system of 182Ah is used in a system where the equipment load current is
+                        15.68 A. Determine the total rectifier system capacity and number of rectifier
+                        modules if each module is rated 50A.</p>
+                        
+                        <p class="normal-text"><b>Solution</b></p>
+                        
+                        <p class="normal-text">From<b>
+                        </b>(Eq. 8)</p>
+                        
+                        </div>
+                        
+                        <p class="normal-text"><img width=475 height=38 id="_x0000_i1045"
+                        src="images/civil_power_ran/image039.png"></p>
+                        
+                        <div style='border:solid black 1.0pt;padding:1.0pt 4.0pt 1.0pt 4.0pt'>
+                        
+                        <p class="normal-text">From (Eq. 9)</p>
+                        
+                        </div>
+                        
+                        <p class="normal-text"><img width=358 height=34 id="_x0000_i1044"
+                        src="images/civil_power_ran/image040.png"></p>
+                        
+                        <div style='border:solid black 1.0pt;padding:1.0pt 4.0pt 1.0pt 4.0pt'>
+                        
+                        <p class="normal-text">As a result, for this vendor, the required Rectifiers Sum <b>Up
+                        2 Rectifier of 50A with a redundancy configuration (N+1) </b></p>
+                        
+                        </div>
+                        
+                        <p class="normal-text">The widget <u>$$link widget$$power
+                        system sizing</u> contain a tool to size the rectifiers for a RAN site based on
+                        the content on this section </p>
+                        
+                        <br><h2><a class="titulo-h2 anchor-bum color-luminati" name="itemX-X">3.4
+                        Solar Power
+                        System Design</a></h2>
+                        
+                        <p class="normal-text">This section outlines the main
+                        features of a typical remote-area, stand-alone, all-DC Photo Voltaic-powered
+                        system with reference to design features, installation, and sizing.</p>
+                        
+                        <p class="normal-text">Defining the system load is the
+                        first step to Solar Power System Design. Method in Section 3.2 shows the
+                        general methodology to calculate the load of a RAN site suitable for any power
+                        system. </p>
+                        
+                        <p class="normal-text">The total load of the RAN site
+                        along with the average solar irradiation and PV Panels efficiency is used to
+                        size the Photo Voltaic Panels array which must be capable of producing power to
+                        supply the load current for 24 hr/day and to supply
+                        the battery charging current for the daily peak sun hours at the site location.</p>
+                        
+                        <p class="normal-text">The sizing of the battery bank is
+                        different from the Grid power system since the autonomy requirements for a
+                        solar power system are greater and are estimated in days. The size and cost of
+                        a Solar system is proportional to the energy consumed by the load. Reducing the
+                        electrical load by selecting energy-efficient equipment will result in a
+                        corresponding reduction in the system cost.</p>
+                        
+                        <p align=center>Figure 19 shows the design process
+                        for a Solar Power System:</p>
+                        
+                        <p class="normal-text"><img width=450 height=296 id="_x0000_i1043"
+                        src="images/civil_power_ran/image041.png"
+                        alt="A close up of a map&#10;&#10;Description automatically generated"></p>
+                        
+                        <p align=center><i>Figure 19 Solar Power System
+                        Design Process</i></p>
+                        
+                        <h3>3.4.1
+                        Sizing Photo
+                        Voltaic (PV) Panels</h3>
+                        
+                        <p class="normal-text">In order to size the PV panels
+                        required to power a RAN site is required to know the Nominal Power of the PV
+                        Panel. The maximum electric or nominal power of the PV panel can be defined as
+                        its Peak Power (in Watt Peak). The Peak Power of solar panels is registered
+                        under the following Standard Test Conditions: </p>
+                        
+                        <p class="normal-text">&#9679;
+                        a light intensity of 1.000 W/m</p>
+                        
+                        <p class="normal-text">&#9679;
+                        sunlight hitting the positioned solar cells
+                        perpendicularly</p>
+                        
+                        <p class="normal-text">&#9679; a temperature of 25C at the solar cells</p>
+                        
+                        <p class="normal-text">The Nominal Power is a specific
+                        feature of the PV panel, regardless of the location where it is tested. Under
+                        these standard conditions, the nominal power of solar panels can be compared
+                        with each other. A solar panel with a Peak Power of 5 kW in Peru is for example
+                        exactly the same as such a panel in the USA.</p>
+                        
+                        <p class="normal-text">The real electric power of the PV
+                        panels is primarily dependent on the number of hours of sunshine to which they
+                        are exposed. Sun hours vary greatly depending on the site location and local
+                        climate. To determine the average solar Irradiation go to <u>$$link$$<a>https://globalsolaratlas.info/map</a></u>.
+                        Figure 20 shows the global horizontal irradiation pattern</p>
+                        
+                        <p class="normal-text"><img border=0 width=520 height=256
+                        id="_x0000_i1042"
+                        src="images/civil_power_ran/image042.jpg"></p>
+                        
+                        <p align=center><i>Figure 20 Global Horizontal
+                        Irradiation Map</i></p>
+                        
+                        <p class="normal-text">The number of solar panels depends
+                        on the average solar irradiation in the place of interest and nominal power (P<sub>nom</sub>) of the solar cells. The nominal power is
+                        obtained assuming that solar irradiation is 1000 W/m2. Equation 10 shows the
+                        expression to calculate the number of solar panels:</p>
+                        
+                        <table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0 width=65
+                         style='width:48.75pt;border-collapse:collapse;mso-yfti-tbllook:1184;
+                         mso-padding-alt:0in 0in 0in 0in'>
+                         <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes;mso-yfti-lastrow:yes'>
+                          <td width=65 valign=top style='width:48.45pt;padding:0in 5.4pt 0in 5.4pt'>
+                          <p class="normal-text">(Eq.
+                          10)</p>
+                          </td>
+                         </tr>
+                        </table>
+                        
+                        <p class="normal-text"><img border=0 width=172 height=50
+                        id="_x0000_i1041"
+                        src="images/civil_power_ran/image043.png"></p>
+                        
+                        <p class="normal-text">Where</p>
+                        
+                        <p class="normal-text">&#9679;
+                        <i>TDLoad</i><i> </i>is the daily total
+                        energy required by the systems in Wh, </p>
+                        
+                        <p class="normal-text">&#9679;
+                        <i>&#544;g</i>
+                        denotes the losses due to the inefficiency of the solar cells (around 10%) </p>
+                        
+                        <p class="normal-text">&#9679;
+                        Fc is a correction factor (<i>Fc</i>=1.3)
+                        introduced as the solar cells have to generate energy for the system and for
+                        the batteries that are accumulating the energy.</p>
+                        
+                        <p class="normal-text">&#9679; G<sub>dm</sub> is taken as the average daily solar irradiation during the
+                        worst month of the year (for example in the Loreto region in Peru, the solar
+                        radiation is <i>4270 Wh/m<sup>2</sup></i>). </p>
+                        
+                        <div style='border:solid black 1.0pt;padding:1.0pt 1.0pt 1.0pt 0in'>
+                        
+                        <p class="normal-text"><b><i>Example</i></b>: Size the Solar Panels for a solar system if batteries and
+                        panels have the following specifications:</p>
+                        
+                        <p class="normal-text">Solar
+                        cell: Solar World <b>(Pnom = 300 W per panel)</b></p>
+                        
+                        <p class="normal-text">Consider
+                        the same load as the one in the example of section
+                        3.2</p>
+                        
+                        <p class="normal-text"> Consider the solar radiation of the Loreto region in Peru</p>
+                        
+                        <p class="normal-text"><b>Solution:</b></p>
+                        
+                        <p class="normal-text">The number
+                        of solar panels and batteries will be obtained from equations (10) </p>
+                        
+                        <p class="normal-text"><b>Solar
+                        Panel Calculation:</b></p>
+                        
+                        <p class="normal-text">TDLoad of RAN Site
+                        equipment = <b>753Wh X 24h = 18,072Wh</b></p>
+                        
+                        <p class="normal-text">Pnom = <b>300W</b></p>
+                        
+                        <p class="normal-text"><i>Gdm</i><i> = <b>4270
+                        Wh/m<sup>2</sup></b></i></p>
+                        
+                        <p class="normal-text">PV
+                        Solar Cell Inefficiency <b>&#544;g = 10%</b></p>
+                        
+                        <p class="normal-text">Solar Cell
+                        correction factor <b>fc = 1.3</b></p>
+                        
+                        <p class="normal-text"><img border=0 width=136 height=34 id="_x0000_i1040"
+                        src="images/civil_power_ran/image044.png">=
+                        <img
+                        border=0 width=226 height=38 id="_x0000_i1039"
+                        src="images/civil_power_ran/image045.png"><img border=0
+                        width=76 height=18 id="_x0000_i1038"
+                        src="images/civil_power_ran/image046.png"></p>
+                        
+                        </div>
+                        
+                        <p class="normal-text">The widget <u>$$link widget$$power system sizing</u>
+                        contains a tool to size the solar panel for a RAN site based on the content on
+                        this section.</p>
+                        
+                        <h3>3.4.2
+                        Battery Bank
+                        Capacity Estimation</h3>
+                        
+                        <p class="normal-text">The methodology to used in Section
+                        3.3.2 uses the Discharge<i> </i>capability of batteries, vendor
+                        expresses it by the 20-hour rate. The autonomy requirements for a solar power
+                        system are greater and are estimated in days therefore is required another
+                        method. </p>
+                        
+                        <p class="normal-text">The capacity of the batteries (in <i>Wh</i>)
+                        should be enough to provide electrical energy to the system to be up to <img border=0
+                        width=42 height=18 id="_x0000_i1037"
+                        src="images/civil_power_ran/image047.png">without
+                        any charging procedure. For VRLA batteries the capacity must satisfy:</p>
+                        
+                       
+                        
+                        <table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0 width=65
+                         style='width:48.75pt;border-collapse:collapse;mso-yfti-tbllook:1184;
+                         mso-padding-alt:0in 0in 0in 0in'>
+                         <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes;mso-yfti-lastrow:yes'>
+                          <td width=65 valign=top style='width:48.45pt;padding:0in 5.4pt 0in 5.4pt'>
+                          <p class="normal-text">(Eq.
+                          11)</p>
+                          </td>
+                         </tr>
+                        </table>
+                        
+                        <p class="normal-text"><img border=0 width=213 height=38 id="_x0000_i1036"
+                        src="images/civil_power_ran/image048.png"></p>
+                        
+                        <p class="normal-text">where </p>
+                        
+                        <p class="normal-text">&#9679;
+                        <img
+                        border=0 width=16 height=18 id="_x0000_i1035"
+                        src="images/civil_power_ran/image049.png"><b></b>Is the capacity
+                        required of the battery bank (Wh)</p>
+                        
+                        <p class="normal-text">&#9679;
+                        <b><i>TDLoad</i></b><i> </i>is the daily total energy required by the
+                        systems in Wh, </p>
+                        
+                        <p class="normal-text">&#9679;
+                        <b><i>&#544;g</i></b> denotes the losses due to the inefficiency of the solar
+                        cells (around 10%) </p>
+                        
+                        <p class="normal-text">&#9679; <b>P<sub>dmax</sub></b> = A parameter to impose that a battery should have at least
+                        20% of its maximum capacity (P<sub>dmax</sub> =0.8). </p>
+                        
+                        <div style='border:solid black 1.0pt;padding:1.0pt 1.0pt 1.0pt 0in'>
+                        
+                        <p class="normal-text"><b>Batteries
+                        sizing </b>Calculate the required capacity for
+                        a Battery Bank used in a solar system with the following parameters</p>
+                        
+                        <p class="normal-text">
+                        Assume <b>N<sub>days</sub></b><b> = 1</b> days of
+                        autonomy without any battery charging, as the worst case.</p>
+                        
+                        <p class="normal-text">
+                        Consider the same load as the one in the example of section 3.2</p>
+                        
+                        <p class="normal-text"><b>Solution</b></p>
+                        
+                        <p class="normal-text">The required
+                        capacity will be obtained from equation (11).</p>
+                        
+                        <p class="normal-text">From section 3.2 <b>TDLoad</b><b> 753Wh X 24h = 18,072Wh</b></p>
+                        
+                        </div>
+                        
+                        <p class="normal-text"><img border=0 width=464 height=38 id="_x0000_i1034"
+                        src="images/civil_power_ran/image050.png"></p>
+                        
+                        <div style='border:solid black 1.0pt;padding:1.0pt 1.0pt 1.0pt 0in'>
+                        
+                       
+                        
+                        </div>
+                        
+                        <p class="normal-text">The widget <u>$$link widget$$power system sizing</u>
+                        contains a tool to calculate the required capacity for a Solar Power System
+                        Battery Bank, please note that after calculating the required capacity, the
+                        battery bank should be designed accordingly, the Section
+                        3.3.2.3 indicates the required batteries and strings needed.</p>
+                        
+                        <h3>3.4.3
+                        Design
+                        Considerations, Panel Array: Position and Tilt</h3>
+                        
+                        <p class="normal-text">If the RAN site deployment location is in the north of the
+                        equator, the sun leans south as the Earth orbits. Facing the PV array to the
+                        south will capture the most daylight and produce more energy. However, if the
+                        RAN site deployment location its the south of the
+                        equator, it would be more efficient to face the PV array to the North.</p>
+                        
+                        <p class="normal-text"><img border=0 width=334 height=148 id="_x0000_i1033"
+                        src="images/civil_power_ran/image051.jpg"></p>
+                        
+                        <p align=center><i>Figure 21 The relationship
+                        between the sun and earth. The declination angle (&#948;), the latitude (&#981;),
+                        and the solar time angle (t) are also shown on it.</i></p>
+                        
+                        <p class="normal-text">Tilt from horizontal is required to achieve a better angle
+                        at the sun and help keep the solar modules clean by shedding rain or snow. The
+                        optimal tilt angle is the latitude 15. In summer months, the optimal tilt
+                        angle is usually 15 less than the latitude, whilst in winter months; it is 15
+                        more than the latitude. </p>
+                        
+                        <p class="normal-text">Additionally, NaaS Operator may
+                        consider the following guidelines to mount the PV array:</p>
+                        
+                        <p class="normal-text">&#9679;
+                        PV modules are very sensitive to shading; once
+                        a solar cell or a portion of a cell is shaded, it becomes a load and draws
+                        power instead of producing it. Thus, PV modules should never be shaded by
+                        nearby trees or structures. </p>
+                        
+                        <p class="normal-text">&#9679;
+                        Temperature at the back of the modules can
+                        rise to 80C if they are poorly ventilated. Installing the solar array in an area
+                        with natural ventilation will improve system performance and extend its life.</p>
+                        
+                        <p class="normal-text">&#9679; The mounting option must allow for safe maintenance and
+                        possible replacement of individual modules.</p>
+                </div>
+
+                <a class='link-next' href="#" onclick="switchContent('#hld')"> &#8656; Previous</a>
+                    <a href="url" align="center"></a>
+                    <div class="right">
+                        <a ></a>
+                        <a class="link-next" href="#" onclick="switchContent('#e2e')">Next &#8658;</a>
+                    </div>
+                    <br>
+                
+
+                <nav id="navbar-example3" class="navbar navbar-light bg-light position-fixed">
+                    <nav class="nav nav-pills flex-column">
+                        <a id="fm_link-1" class="nav-link bullet-2-link" onclick="onClickActive(event)" href="#item3"><strong>3. POWER SYSTEM DESIGN</strong></a>
+                        <a id="fm_link-2" class="nav-link bullet-2-link" onclick="onClickActive(event)" href="#item3-1"><em>3.1 Power System Design Process</em></a>
+                        <a id="fm_link-3" class="nav-link bullet-2-link" onclick="onClickActive(event)" href="#item3-2"><em>3.2 Critical Load Calculation</em></a>
+                        <a id="fm_link-3" class="nav-link bullet-2-link" onclick="onClickActive(event)" href="#item3-3"><em>3.3 UPS Sizing and selection</em></a>
+                        <a id="fm_link-3" class="nav-link bullet-2-link" onclick="onClickActive(event)" href="#item3-4"><em>3.4 Power Distribution Unit Selection</em></a>
+                        <a id="fm_link-3" class="nav-link bullet-2-link" onclick="onClickActive(event)" href="#item3-5"><em>3.5 Total electrical capacity calculation</em></a>
+                        <a id="fm_link-3" class="nav-link bullet-2-link" onclick="onClickActive(event)" href="#item3-6"><em>3.6 The use of a Generator in IT applications</em></a>
+                    </nav>
+                </nav>
+           </section>
+
+           <section id="e2e" hidden>
+            <div id="content">
+                
+                <div data-spy="scroll" data-target="#navbar-example3" data-offset="0">
+                    <h1><a class="titulo-h1 anchor-bum color-luminati-3" name="item4">4
+                        Core Site Layout</a></h1>
+                        
+                        <p class="normal-text">Core Site Layout consists of the design considerations of
+                        the room and the layout of the Core equipment in the Room and the rack.</p>
+                        
+                        <p class="normal-text">A Core site layout has two components: the structural layout
+                        of the empty room which may be obtained from the site engineering in the form
+                        of blueprints and the equipment layout of what will go in the room. Note that
+                        in the case where NaaS Operators decide to lease a space in a data center, the
+                        room is pre-existing, and the only option is to layout the equipment in their
+                        cabinet. </p>
+                        
+                        <p class="normal-text">The equipment layout shows the footprint of IT equipment and
+                        the footprint of power and cooling equipment. In order to protect the IT
+                        equipment from overheating the layout should consider an airflow path. The
+                        following subsections provide guidelines to layout the rack in a room
+                        considering the airflow of the equipment, the equipment layout within the rack
+                        as well as key considerations for the cabling layout.</p>
+                        
+                        <br><h2><a class="titulo-h2 anchor-bum color-luminati-3" name="item4-1">4.1
+                        Control of airflow using hot-aisle/cold-aisle rack layout</a></h2>
+                        
+                        <p class="normal-text">The use of the hot-aisle/cold-aisle rack layout method is
+                        well known and commonly used in a data room layout. The basic principle is to
+                        maximize the separation between IT equipment exhaust air and intake air by
+                        establishing cold aisles where only equipment intakes are present and
+                        establishing hot aisles where only equipment hot exhaust air is present. The
+                        goal is to reduce the amount of hot exhaust air that is drawn into the
+                        equipment air intakes. The basic hot-aisle/cold-aisle concept is shown in
+                        Figure 17.</p>
+                        
+                        <p class="normal-text"><img class="myImg"
+                        width=353 height=212 id=image19.png
+                        src="images/civil_power_core/image039.jpg"></p>
+                        
+                        <p align=center><i>Figure 17.
+                        Basic hot-aisle/cold-aisle layout plan</i></p>
+                        
+                        <p class="normal-text">In Figure 17, the rows represent the IT equipment enclosures
+                        (racks). The racks are arranged such that the adjacent rows face back to back,
+                        forming the hot aisles. The benefits of the hot-aisle/cold-aisle arrangement
+                        become dramatic as the power density increases. When compared to random
+                        arrangements or arrangements where racks are all lined up in the same
+                        direction, the hot-aisle/cold-aisle approach allows for a power density
+                        increase up to 100% or more, without hot spots, Decreasing greatly the power
+                        consumption of the cooling system. </p>
+                        
+                        <br><h2><a class="titulo-h2 anchor-bum color-luminati-3" name="item4-2">4.2
+                        Server Rack Layout</a></h2>
+                        
+                        <p class="normal-text">In terms of layout, rack density should be considered. The
+                        more free-space within a server rack, the greater the room for airflow.
+                        Vertical space can be left between servers and IT devices to help cooling. Heat
+                        sensitive devices, including UPS batteries, can be placed towards the bottom of
+                        a server rack. Heavier devices are also best placed towards the bottom of a
+                        rack.</p>
+                        
+                        <p class="normal-text">Hardware should ideally be logically grouped for ease of
+                        management and access to sockets, outlets and ports, whether for power or
+                        networking. Ideally within the middle to higher-level area of the rack.</p>
+                        
+                        <p class="normal-text">Some manufacturers have an online free to use tool to
+                        elaborate a rack layout with their products and generic boxes, NaaS operators
+                        may consider this option to organize their rack layouts, additionally, there
+                        are several free web-based tools to elaborate a rack layout some others has to
+                        be purchased but have additional features that consider ventilation and PDUs.</p>
+                        
+                        <p class="normal-text"><img class="myImg"
+                        width=272 height=495 id=image16.png
+                        src="images/civil_power_core/image040.jpg"></p>
+                        
+                        <p align=center><i>Figure 18. Rack Layout</i></p>
+                        
+                        <p class="normal-text">NaaS Operators may use an asset list for each device within
+                        a server rack including each model SKU and serial number. These three pieces of
+                        information along with a description, date of installation and service dates
+                        can be recorded onto a rack management spreadsheet. </p>
+                        
+                        <p class="normal-text">Other additional columns recommended include power draw and
+                        heat dissipation or efficiency, UPS (uninterruptible power supply) and PDU
+                        (power distribution unit) connections. The document is then maintained when
+                        equipment is added or removed and/or maintained. The spreadsheet should cover
+                        the entire server room installation and each rack or cabinet within it.</p>
+                        
+                        <p class="normal-text">NaaS Operators may use the <a class="a_link" href="rack_mgmt_spre">Rack
+                        Management spreadsheet</a> to organize their assets and their port
+                        connections.</p>
+                        
+                        <br><h2><a class="titulo-h2 anchor-bum color-luminati-3" name="item4-3">4.3
+                        Layer 1 and Layer 2 diagram </a></h2>
+                        
+                        <p class="normal-text">The Core layout design considers the High-level &amp;
+                        Low-level design, this subsection considers some of the outcomes of previous
+                        phases to create the physical interconnection </p>
+                        
+                        <p class="normal-text">A Layer 1 diagram shows the physical connections between the
+                        critical pieces of network infrastructure. It includes link speeds and cabling
+                        types. Additionally, show individual port numbers or designations. Some
+                        considerations to elaborate a Layer 1 &amp; Layer 2 diagram are listed below:</p>
+                        
+                        <ul class="normal-text ul-iconos" style='margin-top:0in' start=1 type=1>
+                            <li>The speed of the link is represented by the width of the line.</li>
+                            <li>Different colors represent fiber and copper cables. </li>
+                            <li>Layer 2 features include VLAN numbers, link aggregation, and trunk connections. </li>
+                            <li>Layer 2 diagram includes spanning-tree information
+                            such as the root bridge and any bridge and link priorities that have been changed
+                            from their defaults.</li>
+                        </ul>
+                        
+                        <p class="normal-text">The required VLAN numbers and port connections are indicated
+                        in the Core LLD the purpose of L1 and L2 diagram is to map the physical ports
+                        with the logical design.</p>
+                        
+                        <p class="normal-text">Figure 19 illustrates the L1 &amp; L2 Diagram:</p>
+                        
+                        <p class="normal-text"><img class="myImg" width=589 height=261
+                        id=image23.png
+                        src="images/civil_power_core/image041.jpg"></p>
+                        
+                        <p align=center><i>Figure 19.
+                        Layer 1 &amp; Layer 2 diagram</i></p>
+                        
+                        <p class="normal-text">NaaS Operators may consider the tools depicted in Table 5 to
+                        create an L1&amp; L2 diagram:</p>
+                        
+                        <div align=center>
+                        <table class=ad border=1 cellspacing=0 cellpadding=0 width=594
+                         style='border-collapse:collapse;border:none'>
+                         <tr>
+                          <td width=98 valign=top style='width:73.55pt;border-top:#1F4E79;border-left:
+                          #1F4E79;border-bottom:#95B3D7;border-right:#95B3D7;border-style:solid;
+                          border-width:1.0pt;background:#1F4E79;padding:0in 5.4pt 0in 5.4pt'>
+                          <p align=center style="color:#FFF"><b>Tool</b></p>
+                          </td>
+                          <td width=294 colspan=3 valign=top style='width:220.65pt;border-top:solid #1F4E79 1.0pt;
+                          border-left:none;border-bottom:solid #95B3D7 1.0pt;border-right:solid #95B3D7 1.0pt;
+                          background:#1F4E79;padding:0in 5.4pt 0in 5.4pt'>
+                          <p align=center style="color:#FFF"><b>Top Features</b></p>
+                          </td>
+                          <td width=201 valign=top style='width:151.05pt;border-top:solid #1F4E79 1.0pt;
+                          border-left:none;border-bottom:solid #95B3D7 1.0pt;border-right:solid #1F4E79 1.0pt;
+                          background:#1F4E79;padding:0in 5.4pt 0in 5.4pt'>
+                          <p align=center style="color:#FFF"><b>Description</b></p>
+                          </td>
+                         </tr>
+                         <tr>
+                          <td width=98 valign=top style='width:73.55pt;border-top:none;border-left:
+                          solid #1F4E79 1.0pt;border-bottom:solid #95B3D7 1.0pt;border-right:solid #95B3D7 1.0pt;
+                          padding:0in 5.4pt 0in 5.4pt'>
+                          <p class="normal-text">CADE</p>
+                          </td>
+                          <td width=98 valign=top style='width:73.55pt;border-top:none;border-left:
+                          none;border-bottom:solid #95B3D7 1.0pt;border-right:solid #95B3D7 1.0pt;
+                          padding:0in 5.4pt 0in 5.4pt'>
+                          <p class="normal-text">Free Tool</p>
+                          </td>
+                          <td width=98 valign=top style='width:73.55pt;border-top:none;border-left:
+                          none;border-bottom:solid #95B3D7 1.0pt;border-right:solid #95B3D7 1.0pt;
+                          padding:0in 5.4pt 0in 5.4pt'>
+                          <p class="normal-text">Multiple export formats</p>
+                          </td>
+                          <td width=98 valign=top style='width:73.55pt;border-top:none;border-left:
+                          none;border-bottom:solid #95B3D7 1.0pt;border-right:solid #95B3D7 1.0pt;
+                          padding:0in 5.4pt 0in 5.4pt'>
+                          <p class="normal-text">Support for multiple
+                          diagrams</p>
+                          </td>
+                          <td width=201 valign=top style='width:151.05pt;border-top:none;border-left:
+                          none;border-bottom:solid #95B3D7 1.0pt;border-right:solid #1F4E79 1.0pt;
+                          padding:0in 5.4pt 0in 5.4pt'>
+                          <p class="normal-text">Free network design tool
+                          with predefined blocks and multiple export formats</p>
+                          </td>
+                         </tr>
+                         <tr>
+                          <td width=98 valign=top style='width:73.55pt;border-top:none;border-left:
+                          solid #1F4E79 1.0pt;border-bottom:solid #95B3D7 1.0pt;border-right:solid #95B3D7 1.0pt;
+                          padding:0in 5.4pt 0in 5.4pt'>
+                          <p class="normal-text">DIA</p>
+                          </td>
+                          <td width=98 valign=top style='width:73.55pt;border-top:none;border-left:
+                          none;border-bottom:solid #95B3D7 1.0pt;border-right:solid #95B3D7 1.0pt;
+                          padding:0in 5.4pt 0in 5.4pt'>
+                          <p class="normal-text">Free Tool</p>
+                          </td>
+                          <td width=98 valign=top style='width:73.55pt;border-top:none;border-left:
+                          none;border-bottom:solid #95B3D7 1.0pt;border-right:solid #95B3D7 1.0pt;
+                          padding:0in 5.4pt 0in 5.4pt'>
+                          <p class="normal-text">Large library of objects</p>
+                          </td>
+                          <td width=98 valign=top style='width:73.55pt;border-top:none;border-left:
+                          none;border-bottom:solid #95B3D7 1.0pt;border-right:solid #95B3D7 1.0pt;
+                          padding:0in 5.4pt 0in 5.4pt'>
+                          <p class="normal-text">Open Source</p>
+                          </td>
+                          <td width=201 valign=top style='width:151.05pt;border-top:none;border-left:
+                          none;border-bottom:solid #95B3D7 1.0pt;border-right:solid #1F4E79 1.0pt;
+                          padding:0in 5.4pt 0in 5.4pt'>
+                          <p class="normal-text">Simple open-source
+                          programmed with a large library of objects</p>
+                          </td>
+                         </tr>
+                         <tr>
+                          <td width=98 valign=top style='width:73.55pt;border-top:none;border-left:
+                          solid #1F4E79 1.0pt;border-bottom:solid #95B3D7 1.0pt;border-right:solid #95B3D7 1.0pt;
+                          padding:0in 5.4pt 0in 5.4pt'>
+                          <p class="normal-text">Visio</p>
+                          </td>
+                          <td width=98 valign=top style='width:73.55pt;border-top:none;border-left:
+                          none;border-bottom:solid #95B3D7 1.0pt;border-right:solid #95B3D7 1.0pt;
+                          padding:0in 5.4pt 0in 5.4pt'>
+                          <p class="normal-text">AutoCAD support</p>
+                          </td>
+                          <td width=98 valign=top style='width:73.55pt;border-top:none;border-left:
+                          none;border-bottom:solid #95B3D7 1.0pt;border-right:solid #95B3D7 1.0pt;
+                          padding:0in 5.4pt 0in 5.4pt'>
+                          <p class="normal-text">Automatic chart
+                          generator</p>
+                          </td>
+                          <td width=98 valign=top style='width:73.55pt;border-top:none;border-left:
+                          none;border-bottom:solid #95B3D7 1.0pt;border-right:solid #95B3D7 1.0pt;
+                          padding:0in 5.4pt 0in 5.4pt'>
+                          <p class="normal-text">Support community</p>
+                          </td>
+                          <td width=201 valign=top style='width:151.05pt;border-top:none;border-left:
+                          none;border-bottom:solid #95B3D7 1.0pt;border-right:solid #1F4E79 1.0pt;
+                          padding:0in 5.4pt 0in 5.4pt'>
+                          <p class="normal-text">Highly flexible popular
+                          network design with support from multiple communities and AutoCAD tech
+                          support</p>
+                          </td>
+                         </tr>
+                         <tr>
+                          <td width=98 valign=top style='width:73.55pt;border-top:none;border-left:
+                          solid #1F4E79 1.0pt;border-bottom:solid #1F4E79 1.0pt;border-right:solid #95B3D7 1.0pt;
+                          padding:0in 5.4pt 0in 5.4pt'>
+                          <p class="normal-text">EDraw</p>
+                          </td>
+                          <td width=98 valign=top style='width:73.55pt;border-top:none;border-left:
+                          none;border-bottom:solid #1F4E79 1.0pt;border-right:solid #95B3D7 1.0pt;
+                          padding:0in 5.4pt 0in 5.4pt'>
+                          <p class="normal-text">15-days trial</p>
+                          </td>
+                          <td width=98 valign=top style='width:73.55pt;border-top:none;border-left:
+                          none;border-bottom:solid #1F4E79 1.0pt;border-right:solid #95B3D7 1.0pt;
+                          padding:0in 5.4pt 0in 5.4pt'>
+                          <p class="normal-text">Multiple export formats</p>
+                          </td>
+                          <td width=98 valign=top style='width:73.55pt;border-top:none;border-left:
+                          none;border-bottom:solid #1F4E79 1.0pt;border-right:solid #95B3D7 1.0pt;
+                          padding:0in 5.4pt 0in 5.4pt'>
+                          <p class="normal-text">Web Version</p>
+                          </td>
+                          <td width=201 valign=top style='width:151.05pt;border-top:none;border-left:
+                          none;border-bottom:solid #1F4E79 1.0pt;border-right:solid #1F4E79 1.0pt;
+                          padding:0in 5.4pt 0in 5.4pt'>
+                          <p class="normal-text">All in one
+                          application for rack and floor layout include L1&amp;L2 Diagrams</p>
+                          </td>
+                         </tr>
+                        </table>
+                        </div>
+                        
+                        <p align=center><i>Table 5.
+                        Network Design Tools that include physical connections</i></p>
+                        
+                        <br><h2><a class="titulo-h2 anchor-bum color-luminati-3" name="item4-4">4.4
+                        Cabling Layout</a></h2>
+                        
+                        <p class="normal-text">The lack of organization can lead to accidental disruption
+                        of service. An organized rack decreases human errors, increases efficiency, and
+                        improves equipment protection by increasing effective airflow. By using the
+                        correct cable management accessories to organize, route and remove unnecessary
+                        stress on the cables, data integrity is ensured.</p>
+                        
+                        <p class="normal-text">Racks and enclosures can become disorganized quickly if
+                        cable management does not remain an ongoing priority. The Core site is a
+                        critical point of interconnection, NaaS operators may consider following
+                        recommendations to organize and document their connections to ensure optimal
+                        performance in the critical equipment, as detailed in the subsections below.</p>
+                        
+                        <h3>4.4.1 Using Color to Identify Cables</h3>
+                        
+                        <p class="normal-text">Color provides quick visual identification. Color-coding
+                        simplifies management and can save time when its required to trace cables.
+                        Color coding can be applied to ports on a patch panel. Patch panels come with
+                        different color jacks or have colored inserts surrounding the jack. Cables are
+                        available in many colors (The color palette depends on the cable manufacturer).
+                        Figure 20 shows an initial recommendation of colors to identify the
+                        role/function of a cable type of connection.</p>
+                        
+                        <p class="normal-text"><img class="myImg"
+                        width=518 height=278 id=image22.png
+                        src="images/civil_power_core/image042.jpg"></p>
+                        
+                        <p align=center><i>Figure 20. Color Scheme for patch cables</i></p>
+                        
+                        <p class="normal-text"></p>
+                        
+                        <h3>4.4.2 Horizontal Cable Management </h3>
+                        
+                        <p class="normal-text">Horizontal cable management allows a neat and proper routing
+                        of the patch cables from equipment in racks and protect the cables from damage.
+                        These cable managers take up the space in racks, so a careful balance between
+                        cable manager height and cable density supported is important. 1U and 2U
+                        horizontal cable managers are the most common varieties. The density supported
+                        varies with the depth of the manager. When choosing cable managers, the NaaS
+                        Operator must ensure that the cable bend radius is properly accommodated. </p>
+                        
+                        <p class="normal-text">Please note that proper planning should allow a 30% space in
+                        the cable managers for future growth.</p>
+                        
+                        <p class="normal-text">Figure 21 shows 2 switches using horizontal cable managers.</p>
+                        
+                        <p class="normal-text"><img class="myImg"
+                        width=518 height=191 id=image14.png
+                        src="images/civil_power_core/image043.jpg"></p>
+                        
+                        <p align=center><i>Figure 21. Horizontal Cable Management</i></p>
+                        
+                        <h3>4.4.3 Vertical cable managers</h3>
+                        
+                        <p class="normal-text">For vertical cable managers, there should be additional
+                        space required to manage the slack from patch cords and ensure that they can
+                        easily route the largest cable diameter. The most convenient cable managers
+                        available in the market have hinged doors on both sides of the manager for
+                        pivoting the door from either side and allow a complete removal of the door for
+                        unobstructed access. A best practice is to allow for 50% for the growth of
+                        cables when planning the width. Figure 22 shows three racks using vertical
+                        cable managers</p>
+                        
+                        <p class="normal-text"><img class="myImg"
+                        width=234 height=311 id=image17.png
+                        src="images/civil_power_core/image044.png"></p>
+                        
+                        <p align=center><i>Figure 22. Vertical Cable Management</i></p>
+                        
+                        <h3>4.4.4 Overhead Cable Pathways</h3>
+                        
+                        <p class="normal-text">Overhead cable pathways or trays allow placement of
+                        additional cables for interconnecting devices between racks. In order to select
+                        the Overhead cable pathways, it must be considered the cable bend radius,
+                        weight allowance, aging points for cables and flexibility in installing the
+                        pathways. In addition, ensure that pathways allow cable drop points where
+                        needed. Figure 23 show overhead cable pathways routing different types of
+                        cables.</p>
+                        
+                        <p class="normal-text"><img class="myImg"
+                        width=329 height=246 id=image15.png
+                        src="images/civil_power_core/image045.png"></p>
+                        
+                        <p align=center><i>Figure 23. Overhead Cable Pathways</i></p>
+                        
+                        <h3>4.4.5 Documentation</h3>
+                        
+                        <p class="normal-text">The documentation is perhaps the most
+                        critical task for cable management. A best practice is to keep the information
+                        easily accessible to data center staff on a share drive or internet web
+                        service. Naas Operators must assign updates to one or more staff members and
+                        make sure it is part of their job assignment to keep the documentation up to
+                        date. Furthermore, NaaS Operators may consider creating a training guide, which
+                        documents guidelines for installing new cables, cable management components and
+                        routing cables. A port mapping spreadsheet is useful for keeping track of
+                        used/available ports on the network equipment. It must include the remote
+                        device to which each port is connected. NaaS Operators may consider using the <a href="network_doc_spread" class="a_link">Network documentation spreadsheet</a> to document their
+                        equipment, cable mapping, and IPV4 usage.</p>
+                </div>
+               
+                <br>
+                <a href="#" class="link-next" onclick="switchContent('#fm')"> &#8656; Previous</a>
+                <a href="url" align="center"></a>
+                <div class="right">
+                    <a ></a>
+                    <a href="#">.</a>
+                </div>
+
+            </div>
+              
+            <nav id="navbar-example3" class="navbar navbar-light bg-light position-fixed">
+             <nav class="nav nav-pills flex-column">
+                <a id="e2e_link-1" class="nav-link bullet-2-link" onclick="onClickActive(event)" href="#item4"><strong>4. CORE SITE LAYOUT</strong></a>
+                <a id="e2e_link-2" class="nav-link bullet-2-link" onclick="onClickActive(event)" href="#item4-1"><em>4.1 Control of airflow using hot-aisle/cold-aisle rack layout</em></a>
+                <a id="e2e_link-3" class="nav-link bullet-2-link" onclick="onClickActive(event)" href="#item4-2"><em>4.2 Server Rack Layout</em></a>
+                <a id="e2e_link-5" class="nav-link bullet-2-link" onclick="onClickActive(event)" href="#item4-3"><em>4.3 Layer 1 and Layer 2 diagram</em></a>
+                <a id="e2e_link-6" class="nav-link bullet-2-link" onclick="onClickActive(event)" href="#item4-4"><em>4.4 Cabling Layout</em></a>
+             </nav>
+         </nav>
+        </section>  
+    </div>
+
+    <!-- jQuery CDN border-left: 2px solid gray;-->
+     <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+     <!-- Bootstrap Js CDN -->
+     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+     <script type="text/javascript">
+         
+        let tab;
+        var setPin = true;
+        switchContent('#hld');
+        window.scrollTo(0, 0);
+
+        function switchContent(selector){
+           $("#hld").hide();
+           $("#fm").hide();
+           $("#e2e").hide();
+           $(selector).show();
+           tab = selector;
+       }
+
+       window.addEventListener('scroll', function(e) {
+       let reachActive = false;
+           if(tab=="#hld"){
+               $('.color-luminati').each(function(index, element) {
+                   const elem = element.getBoundingClientRect();
+                   if (elem.top < 30) {
+                       $('nav.nav.nav-pills a').removeClass('link-active');
+                       $('nav.nav.nav-pills a:nth-child('+(index+1)+')').addClass('link-active');
+                   }
+                   });
+           }
+           if(tab=="#fm"){
+               $('.color-luminati-2').each(function(index, element) {
+                   const elem = element.getBoundingClientRect();
+                   if (elem.top < 30) {
+                       $('nav.nav.nav-pills a').removeClass('link-active');
+                       $('nav.nav.nav-pills a:nth-child('+(index+1)+')').addClass('link-active');
+                   }
+                   });
+           }
+           if(tab=="#e2e"){
+               $('.color-luminati-3').each(function(index, element) {
+                   const elem = element.getBoundingClientRect();
+                   if (elem.top < 30) {
+                       $('nav.nav.nav-pills a').removeClass('link-active');
+                       $('nav.nav.nav-pills a:nth-child('+(index+1)+')').addClass('link-active');
+                   }
+                   });
+           }
+       });
+    </script>
+
+<div id="myModal" class="modal">
+    <span class="close">&times;</span>
+    <img class="myImg" class="myImg" class="modal-content" id="img01">
+    <div id="caption"></div>
+</div>
+
+<script src="zoom_script.js"></script>
+</body>
+</html>
