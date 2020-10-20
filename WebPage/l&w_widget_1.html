@@ -15,7 +15,7 @@
     <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
 	</head>
 		
-    <body onscroll="updateSection()">
+    <body>
 
     <div class >
         <ul class="barra_superior">
@@ -184,25 +184,25 @@
                         <br>
                         <div class="row">
                             <label  class="col-sm-5 parag-1">Annual demand (D)</label >
-                            <input id='value1' name="tx_lat" type = "text" class="col-sm-3" readonly>
+                            <input id='form1' name="tx_lat" type = "text" class="col-sm-3 in-box">
                             <label  class="col-sm-1 parag-1"><i>(units)</i></label>
                         </div>
                         <br>
                         <div class="row">
                             <label  class="col-sm-5 parag-1">Reorder cost p/order (R)</label >
-                            <input id='value1' name="tx_lat" type = "text" class="col-sm-3" readonly>
+                            <input id='form2' name="tx_lat" type = "text" class="col-sm-3">
                             <label  class="col-sm-1 parag-1"><i>($)</i></label>
                         </div>
                         <br>
                         <div class="row">
                             <label  class="col-sm-5 parag-1">Holding cost p/unit, p/year (H)</label >
-                            <input id='value1' name="tx_lat" type = "text" class="col-sm-3" readonly>
+                            <input id='form3' name="tx_lat" type = "text" class="col-sm-3">
                             <label  class="col-sm-1 parag-1"><i>($)</i></label>
                         </div>
                         <br>
                         <div class="row">
                             <label  class="col-sm-5 parag-1">Lead time delivery</label >
-                            <input id='value1' name="tx_lat" type = "text" class="col-sm-3" readonly>
+                            <input id='form4' name="tx_lat" type = "text" class="col-sm-3">
                             <label  class="col-sm-1 parag-1"><i>(years)</i></label>
                         </div>
                         <br>
@@ -272,23 +272,20 @@
             formulario2.addEventListener('submit',function(evt){
                 evt.preventDefault();
 
-                var form1_1_var = Number(formulario2.form1_1.value);
-                var form1_2_var = Number(formulario2.form1_2.value);
-                var form1_3_var = Number(formulario2.form1_3.value);
-                var form2_1_var = Number(formulario2.form2_1.value);
-                var form2_2_var = Number(formulario2.form2_2.value);
-                var form2_3_var = Number(formulario2.form2_3.value);
-                var form3_1_var = Number(formulario2.form3_1.value);
+                var form1_var = Number(formulario2.form1.value);
+                var form2_var = Number(formulario2.form2.value);
+                var form3_var = Number(formulario2.form3.value);
+                var form4_var = Number(formulario2.form4.value);
    
-                var value1_int = (1 - Math.pow( 1-(form1_1_var/(form1_1_var+(form1_2_var/8760))) ,form1_3_var)) * 100;
-                var value2_int = (1 - Math.pow( 1-(form2_1_var/(form2_1_var+(form2_2_var/8760))) ,form2_3_var)) * 100;
-                var value3_int = (1 -(1-((8/ Math.ceil(form3_1_var,0))/((8/Math.ceil(form3_1_var,0))+(24/8760))))) * 100;
-                var value4_int = (100 - (100-value1_int) - (100-value3_int) - (100-value2_int));
+                var value1_int = Math.ceil(Math.sqrt((form1_var * form2_var * 2) / form3_var));
+                var value2_int = Math.ceil(form1_var / value1_int);
+                var value3_int = (form3_var * value1_int);
+                var value4_int = (form1_var * form4_var);
 
-                document.getElementById("value1").value = value1_int.toFixed(5);
-                document.getElementById("value2").value = value2_int.toFixed(5);
-                document.getElementById("value3").value = value3_int.toFixed(5);
-                document.getElementById("value4").value = value4_int.toFixed(5);
+                document.getElementById("value1").value = value1_int.toFixed(0);
+                document.getElementById("value2").value = value2_int.toFixed(0);
+                document.getElementById("value3").value = value3_int.toFixed(0);
+                document.getElementById("value4").value = value4_int.toFixed(0);
                 
             });
 
