@@ -776,7 +776,7 @@ Btuton!!!
     letter-spacing: 0.4px;
     overflow: hidden;
     white-space: initial;
-  text-overflow: ellipsis;
+    text-overflow: ellipsis;
   }
   
   .btn:hover {
