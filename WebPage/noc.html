@@ -2516,7 +2516,7 @@
                           <td width=185 nowrap style='width:138.45pt;border-top:none;border-left:none;
                           border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
                           padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-                          <p class="normal-text"></p>
+                          
                           </td>
                          </tr>
                          <tr style='height:15.0pt'>
@@ -2527,7 +2527,7 @@
                           <td width=185 nowrap style='width:138.45pt;border-top:none;border-left:none;
                           border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
                           padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-                          <p class="normal-text"></p>
+                          
                           </td>
                          </tr>
                          <tr style='height:15.0pt'>
@@ -2690,7 +2690,7 @@
                           <td width=274 style='width:205.55pt;border-top:none;border-left:none;
                           border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;
                           height:20.4pt'>
-                          <p class="normal-text"></p>
+                          
                           </td>
                          </tr>
                          <tr style='height:21.4pt'>
@@ -2701,7 +2701,7 @@
                           <td width=274 style='width:205.55pt;border-top:none;border-left:none;
                           border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;
                           height:21.4pt'>
-                          <p class="normal-text"></p>
+                          
                           </td>
                          </tr>
                          <tr style='height:20.3pt'>
@@ -2712,7 +2712,7 @@
                           <td width=274 style='width:205.55pt;border-top:none;border-left:none;
                           border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;
                           height:20.3pt'>
-                          <p class="normal-text"></p>
+                          
                           </td>
                          </tr>
                         </table>
@@ -2722,7 +2722,7 @@
                         <p align=center><i>Table 7 &mdash; Commercial vs
                         Free/Open Source Network Configuration Management Tools</i></p>
                         
-                        <br><h2><a class="titulo-h2 anchor-bum color-luminati" name="itemX-X">5.2
+                        <br><h2><a class="titulo-h2 anchor-bum color-luminati" name="item5-2">5.2
                         Systems Selection</a></h2>
                         
                         <p class="normal-text">In the previous section several
@@ -2742,88 +2742,61 @@
                         recommendations and considerations to be taken into account by the NaaS operators
                         for the selection of these tools are provided:</p>
                         
-                        <p class="normal-text"></p>
                         
-                        <p class="normal-text"><a></a>&#9679;
-                        <b>Network Fault Management Tool</b></p>
                         
-                        <p class="normal-text">An umbrella network fault management tool would be ideal
-                        for any NOC organization, as it would enable the NOC tier 1 team to monitor all
-                        network alarms from one single instance. However, there are two variables that
-                        need to be considered for this type of tool. The first variable is
-                        financial-oriented: budget constraints might prevent the operator from choosing
-                        this alternative as commercial tools are costly not only from an acquisition
-                        perspective but also from a maintenance perspective.</p>
+                        <ul class="normal-text ul-iconos" style='margin-top:0in' start=1 type=1>
+                            <li><b>Network Fault Management Tool</b><br>
+                            An umbrella network fault management tool would be ideal
+                            for any NOC organization, as it would enable the NOC tier 1 team to monitor all
+                            network alarms from one single instance. However, there are two variables that
+                            need to be considered for this type of tool. The first variable is
+                            financial-oriented: budget constraints might prevent the operator from choosing
+                            this alternative as commercial tools are costly not only from an acquisition
+                            perspective but also from a maintenance perspective.
+                            <br>The second variable is process-oriented: full
+                            implementation of this type of tools requires a heavy use of EMS
+                            configurations, and on top of that, the actual tool needs to be configured and
+                            optimized, along with training for its effective use.
+                            <br>A simpler, more cost-effective solution is to have the NOC tier
+                            1 team to monitor alarms directly from each of the EMSes on the network. This
+                            of course translates into a more complex scenario for the NOC engineer as
+                            multiple tools need to be opened at the same time, and multiple windows need to
+                            be monitored simultaneously. This also means that NOC technicians need to be
+                            trained in each tool separately to be familiarized with each tool.</li>
                         
-                        <p class="normal-text"></p>
+                            <li><b>Service Desk Management Tool</b><br>
+                            A full service desk management
+                            tool can be of great aid for the NOC team, as it would benefit from having all
+                            associated tickets in one single tool (incident management, problem management,
+                            change management). This translates into a more agile organization, as all teams
+                            speak the same language and know the same reference.<br>
+                            As mentioned before there are free SDM tools available in
+                            the market, and some of them have open trials that can benefit a starting
+                            organization as the team can get used to the interface and the way of working
+                            before considering some of the commercial offerings surrounding such tools.<br>
+                            One important factor to consider for the SDM tool
+                            incorporation is to review the actual processes that will be run by the NOC.
+                            While the NOC will adhere to some form of event, incident and change management,
+                            there is an area that needs to be reviewed like problem management.<br>
+                            If the organization will not consider having this process
+                            in place, both problem tickets and the need for a knowledge base can be set
+                            aside, lessening the requirement for a full SDM tool. There are some
+                            organizations that use simpler tools like Microsoft Excel for change management
+                            (keeping records and control of all change activities), and incident management
+                            can be realized via a simpler ticketing system.</li>
                         
-                        <p class="normal-text">The second variable is process-oriented: full
-                        implementation of this type of tools requires a heavy use of EMS
-                        configurations, and on top of that, the actual tool needs to be configured and
-                        optimized, along with training for its effective use. </p>
+                            <li>
+                            <b>Network Configuration Management
+                            Tool</b><br>As previously stated, the use of tools for network management
+                            helps the NOC team to monitor the consistency of the configuration of the
+                            network. It delivers to the organization the fastest and smoothest transition
+                            to a full orchestrated network.<br>These tools will enable a NaaS operator to react faster to
+                            changes in their network without impacting the agreed SLAs because it allows
+                            near real-time monitoring of the configuration. It also helps to have better documentation
+                            and organization in terms of change management and backup.</li>
+                        </ul>
                         
-                        <p class="normal-text"></p>
                         
-                        <p class="normal-text">A simpler, more cost-effective solution is to have the NOC tier
-                        1 team to monitor alarms directly from each of the EMSes on the network. This
-                        of course translates into a more complex scenario for the NOC engineer as
-                        multiple tools need to be opened at the same time, and multiple windows need to
-                        be monitored simultaneously. This also means that NOC technicians need to be
-                        trained in each tool separately to be familiarized with each tool.</p>
-                        
-                        <p class="normal-text"></p>
-                        
-                        <p class="normal-text">&#9679;
-                        <b>Service Desk Management Tool</b></p>
-                        
-                        <p class="normal-text">A full service desk management
-                        tool can be of great aid for the NOC team, as it would benefit from having all
-                        associated tickets in one single tool (incident management, problem management,
-                        change management). This translates into a more agile organization, as all teams
-                        speak the same language and know the same reference.</p>
-                        
-                        <p class="normal-text"></p>
-                        
-                        <p class="normal-text">As mentioned before there are free SDM tools available in
-                        the market, and some of them have open trials that can benefit a starting
-                        organization as the team can get used to the interface and the way of working
-                        before considering some of the commercial offerings surrounding such tools.</p>
-                        
-                        <p class="normal-text"></p>
-                        
-                        <p class="normal-text">One important factor to consider for the SDM tool
-                        incorporation is to review the actual processes that will be run by the NOC.
-                        While the NOC will adhere to some form of event, incident and change management,
-                        there is an area that needs to be reviewed like problem management.</p>
-                        
-                        <p class="normal-text"></p>
-                        
-                        <p class="normal-text">If the organization will not consider having this process
-                        in place, both problem tickets and the need for a knowledge base can be set
-                        aside, lessening the requirement for a full SDM tool. There are some
-                        organizations that use simpler tools like Microsoft Excel for change management
-                        (keeping records and control of all change activities), and incident management
-                        can be realized via a simpler ticketing system.</p>
-                        
-                        <p class="normal-text"></p>
-                        
-                        <p class="normal-text">&#9679;
-                        <b>Network Configuration Management
-                        Tool</b></p>
-                        
-                        <p class="normal-text">As previously stated, the use of tools for network management
-                        helps the NOC team to monitor the consistency of the configuration of the
-                        network. It delivers to the organization the fastest and smoothest transition
-                        to a full orchestrated network.</p>
-                        
-                        <p class="normal-text"></p>
-                        
-                        <p class="normal-text">These tools will enable a NaaS operator to react faster to
-                        changes in their network without impacting the agreed SLAs because it allows
-                        near real-time monitoring of the configuration. It also helps to have better documentation
-                        and organization in terms of change management and backup.</p>
-                        
-                        <p class="normal-text"></p>
                         
                         <h3><a></a>5.2.2
                         Support Tools</h3>
@@ -2832,41 +2805,28 @@
                         GIS and the network performance tools will be discussed, which are support
                         tools that are optional depending on the needs of the NaaS operator.</p>
                         
-                        <p class="normal-text"></p>
                         
-                        <p class="normal-text">&#9679;
-                        <b>GIS Tool</b></p>
                         
-                        <p class="normal-text">While a full-fledged GIS tool can bring several
-                        opportunities for an organization  not only from an operational level, but
-                        also for network and capacity planning or deployment  there are other options
-                        available that are less robust or that offer fewer features but still get the
-                        job done from a NOC perspective.</p>
-                        
-                        <p class="normal-text"></p>
-                        
-                        <p class="normal-text">While some of those options have been presented in the previous section, bear in mind a well-crafted
-                        spreadsheet can offer at some extent some of the benefits for a NOC tier 1 team
-                        without the costs associated to a GIS tool purchase and configuration.</p>
-                        
-                        <p class="normal-text"></p>
-                        
-                        <p class="normal-text">&#9679;
-                        <b>Network Performance Management Tool</b></p>
-                        
-                        <p class="normal-text">A network performance management system brings value to an
-                        organization that considers performance management and problem management into
-                        their core functions and processes. </p>
-                        
-                        <p class="normal-text"></p>
-                        
-                        <p class="normal-text">This type of tools can be greatly beneficial for a NOC team
-                        as they enable organizations to be aware of performance degradations as they
-                        occur, and often aid such investigations speeding up resolution times. Still,
-                        if the NaaS operator decides to start operations without such focus on performance
-                        management then the use of this tool becomes obsolete for the NOC.</p>
-                        
-                        <h1><a class="titulo-h1 anchor-bum color-luminati" name="itemX">6
+                        <ul class="normal-text ul-iconos" style='margin-top:0in' start=1 type=1>
+                            <li><b>GIS Tool</b><br>While a full-fledged GIS tool can bring several
+                            opportunities for an organization  not only from an operational level, but
+                            also for network and capacity planning or deployment  there are other options
+                            available that are less robust or that offer fewer features but still get the
+                            job done from a NOC perspective.<br>
+                            While some of those options have been presented in the previous section, bear in mind a well-crafted
+                            spreadsheet can offer at some extent some of the benefits for a NOC tier 1 team
+                            without the costs associated to a GIS tool purchase and configuration.</li>
+                            <li><b>Network Performance Management Tool</b><br>
+                            A network performance management system brings value to an
+                            organization that considers performance management and problem management into
+                            their core functions and processes. <br>This type of tools can be greatly beneficial for a NOC team
+                            as they enable organizations to be aware of performance degradations as they
+                            occur, and often aid such investigations speeding up resolution times. Still,
+                            if the NaaS operator decides to start operations without such focus on performance
+                            management then the use of this tool becomes obsolete for the NOC.</li>
+                        </ul>
+                        <br>
+                        <h1><a class="titulo-h1 anchor-bum color-luminati" name="item6">6
                         NOC Implementation</a></h1>
                         
                         <p class="normal-text">This section presents a
@@ -2874,7 +2834,7 @@
                         NOC implementation including staffing model, service levels, team dimensioning
                         and facility sizing.</p>
                         
-                        <br><h2><a class="titulo-h2 anchor-bum color-luminati" name="itemX-X">6.1
+                        <br><h2><a class="titulo-h2 anchor-bum color-luminati" name="item6-1">6.1
                         Staffing Model Assessment</a></h2>
                         
                         <p class="normal-text">There are two main models
@@ -2893,20 +2853,14 @@
                         chosen, there are several key aspects that the NaaS operator will have to bear
                         in mind for the NOC implementation:</p>
                         
-                        <p class="normal-text">a)
-                        Establishing the organizational structure
-                        </p>
-                        
-                        <p class="normal-text">b)
-                        Defining NOC policies and procedures</p>
-                        
-                        <p class="normal-text">c)
-                        Aligning NOC scope &amp; role to
-                        business and customer expectations</p>
-                        
-                        <p class="normal-text">d)
-                        Selecting the correct system &amp;
-                        tools environment</p>
+                        <ol class="normal-text ul-iconos" style='margin-top:0in' start=1 type='a'>
+                            <li class="normal-text">Establishing the organizational structure</li>
+                            <li class="normal-text">Defining NOC policies and procedures</li>
+                            <li class="normal-text">Aligning NOC scope &amp; role to
+                            business and customer expectations</li>
+                            <li class="normal-text">Selecting the correct system &amp;
+                            tools environment</li>
+                        </ol>
                         
                         <p class="normal-text">All these aspects have been
                         outlined in this document in the previous sections, and the operator will have
@@ -2916,139 +2870,89 @@
                         <p class="normal-text">A closer examination of the implementation
                         alternatives is presented below:</p>
                         
-                        <p class="normal-text">&#9679;
-                        <b>Insourced Model</b></p>
+                        <ul class="normal-text ul-iconos" style='margin-top:0in' start=1 type=1>
+                            <li><b>Insourced Model</b><br>The insourced model consists of the NaaS operator
+                            establishing their own NOC, taking full control of all operation and
+                            maintenance activities and functions for their network. An own consolidated and
+                            centralized hub for network control can transform the NOC into an engine for
+                            revenue growth and an area for competitive differentiation for an operator.<br>
+                            In the insourced model, the NaaS operator sets all the
+                            structure, functions, processes and tools that will be incorporated into their NOC
+                            solution. All documentation, planning and reporting will be tackled by the
+                            organization as well.<br>
+                            Insourcing implies that all NOC staff will be evaluated,
+                            selected, and onboarded by the NaaS operator, starting with the management team
+                            all the way down to the engineers performing each function at the NOC. This
+                            also means that the Naas operator will have to cope and plan for attrition as
+                            well as to plan and schedule for training needs (for network architecture,
+                            network technology and governing processes).</li>
+                            
+                            <li><b>Outsourced Model</b><br>
+                            For the outsourced model, the NaaS operator brings a third
+                            party to perform all associated activities related to the operation &amp;
+                            maintenance of the network. Looking for a NOC service provider means that the
+                            operator will need to find a company that has the capability to monitor their
+                            network environment. All the aspects that were mentioned in the previous section will now fall into the NOC providers
+                            hands.<br>Outsourcing offers relief from the staffing and skills
+                            dilemma, allowing organizations to attain almost instant network expertise for
+                            maximizing network performance.<br>When an operator chooses to outsource their NOC, along the
+                            contracts and agreements made between both companies, the operator can set the
+                            requirements for all aspects of the operation, such as the structure to be
+                            followed, the functions and processes to be put in place and a recommendation
+                            for the tools to be incorporated as part of the providers solution.<br>
+                            Some of the questions that the NaaS Operator should make to
+                            the potential partners are:<br>
                         
-                        <p class="normal-text">The insourced model consists of the NaaS operator
-                        establishing their own NOC, taking full control of all operation and
-                        maintenance activities and functions for their network. An own consolidated and
-                        centralized hub for network control can transform the NOC into an engine for
-                        revenue growth and an area for competitive differentiation for an operator.</p>
+                            <ol class="normal-text ul-iconos" style='margin-top:0in;font-size: 16px;' start=1 type='a'>
+                                <li class="normal-text">What is the location of their NOC?
+                                Potential considerations include communication/language/cultural difficulties,
+                                service lag times, outage response times that accompany hiring off-shore or
+                                near-shore providers.</li>
+
+                                <li class="normal-text">Can they scale to support the NaaS operator
+                                business? Major advantages of outsourcing include flexibility and scalability
+                                and these capabilities should be considered from the start.</li>
                         
-                        <p class="normal-text"></p>
+                                <li class="normal-text">Is their staff on-call or on-site? What
+                                type of coverage solutions do they offer? If the NaaS operator decides to
+                                outsource network monitoring for full 24x7 coverage, they have to realize some
+                                providers support their customers via an on-call rotation, which may not suit
+                                the response times needed.</li>
                         
-                        <p class="normal-text">In the insourced model, the NaaS operator sets all the
-                        structure, functions, processes and tools that will be incorporated into their NOC
-                        solution. All documentation, planning and reporting will be tackled by the
-                        organization as well.</p>
+                                <li class="normal-text">How will their NOC access NaaS operators
+                                network? Seek for high-availability redundancy options as monitoring is crucial
+                                and the NaaS operator cannot afford to have gaps in coverage due to unforeseen
+                                circumstances.</li>
+                                
+                                <li class="normal-text">Is their platform flexible and
+                                customizable, or restricted to out-of-the-box functionality? The systems should
+                                have the advantage of being customizable, satisfying the NaaS operators
+                                specific needs.</li>
+                                
+                                <li class="normal-text">Does the NOC provider outsource any of
+                                the assigned tasks? Some outsourced providers may in turn outsource part of the
+                                tasks they have been contracted for. Subcontractors should follow the same
+                                obligations acquired by the service provider.</li>
+                                <li class="normal-text">How does the NOC alert and handle
+                                outage escalations? Flexibility could involve different modes of outage
+                                notification depending on when the event occurs: an email or SMS on normal
+                                working hours, and an emergency phone call after normal working hours.</li>
+                                <li class="normal-text">How long does it take to implement the
+                                outsourced solution? Once agreements are in place, will the provider need weeks
+                                or months before they can have the NOC up and running?</li>
+                            </ol>
+                            </li>
                         
-                        <p class="normal-text"></p>
+                            <li><b>Mixed Model</b><br>A mixed solution can also be put in place by the NaaS
+                            operator and a third party. In this alternative, the NaaS operator chooses
+                            which tasks will have to be fulfilled by the external provider and which ones
+                            the NaaS operator will assume. This may make sense in an environment in which a
+                            multi-vendor distributed network may present difficulties for the operator to
+                            acquire the experienced personnel needed and chooses to outsource some parts of
+                            the network, therefore.</li>
+                        </ul>
                         
-                        <p class="normal-text">Insourcing implies that all NOC staff will be evaluated,
-                        selected, and onboarded by the NaaS operator, starting with the management team
-                        all the way down to the engineers performing each function at the NOC. This
-                        also means that the Naas operator will have to cope and plan for attrition as
-                        well as to plan and schedule for training needs (for network architecture,
-                        network technology and governing processes).</p>
                         
-                        <p class="normal-text"></p>
-                        
-                        <p class="normal-text">&#9679;
-                        <b>Outsourced Model</b></p>
-                        
-                        <p class="normal-text">For the outsourced model, the NaaS operator brings a third
-                        party to perform all associated activities related to the operation &amp;
-                        maintenance of the network. Looking for a NOC service provider means that the
-                        operator will need to find a company that has the capability to monitor their
-                        network environment. All the aspects that were mentioned in the previous section will now fall into the NOC providers
-                        hands.</p>
-                        
-                        <p class="normal-text"></p>
-                        
-                        <p class="normal-text">Outsourcing offers relief from the staffing and skills
-                        dilemma, allowing organizations to attain almost instant network expertise for
-                        maximizing network performance.</p>
-                        
-                        <p class="normal-text"></p>
-                        
-                        <p class="normal-text">When an operator chooses to outsource their NOC, along the
-                        contracts and agreements made between both companies, the operator can set the
-                        requirements for all aspects of the operation, such as the structure to be
-                        followed, the functions and processes to be put in place and a recommendation
-                        for the tools to be incorporated as part of the providers solution.</p>
-                        
-                        <p class="normal-text"></p>
-                        
-                        <p class="normal-text">Some of the questions that the NaaS Operator should make to
-                        the potential partners are:</p>
-                        
-                        <p class="normal-text"></p>
-                        
-                        <p class="normal-text">a)
-                        What is the location of their NOC?
-                        Potential considerations include communication/language/cultural difficulties,
-                        service lag times, outage response times that accompany hiring off-shore or
-                        near-shore providers.</p>
-                        
-                        <p class="normal-text"></p>
-                        
-                        <p class="normal-text">b)
-                        Can they scale to support the NaaS operator
-                        business? Major advantages of outsourcing include flexibility and scalability
-                        and these capabilities should be considered from the start.</p>
-                        
-                        <p class="normal-text"></p>
-                        
-                        <p class="normal-text">c)
-                        Is their staff on-call or on-site? What
-                        type of coverage solutions do they offer? If the NaaS operator decides to
-                        outsource network monitoring for full 24x7 coverage, they have to realize some
-                        providers support their customers via an on-call rotation, which may not suit
-                        the response times needed.</p>
-                        
-                        <p class="normal-text"></p>
-                        
-                        <p class="normal-text">d)
-                        How will their NOC access NaaS operators
-                        network? Seek for high-availability redundancy options as monitoring is crucial
-                        and the NaaS operator cannot afford to have gaps in coverage due to unforeseen
-                        circumstances.</p>
-                        
-                        <p class="normal-text"></p>
-                        
-                        <p class="normal-text">e)
-                        Is their platform flexible and
-                        customizable, or restricted to out-of-the-box functionality? The systems should
-                        have the advantage of being customizable, satisfying the NaaS operators
-                        specific needs.</p>
-                        
-                        <p class="normal-text"></p>
-                        
-                        <p class="normal-text">f)
-                        Does the NOC provider outsource any of
-                        the assigned tasks? Some outsourced providers may in turn outsource part of the
-                        tasks they have been contracted for. Subcontractors should follow the same
-                        obligations acquired by the service provider.</p>
-                        
-                        <p class="normal-text"></p>
-                        
-                        <p class="normal-text">g)
-                        How does the NOC alert and handle
-                        outage escalations? Flexibility could involve different modes of outage
-                        notification depending on when the event occurs: an email or SMS on normal
-                        working hours, and an emergency phone call after normal working hours.</p>
-                        
-                        <p class="normal-text"></p>
-                        
-                        <p class="normal-text">h)
-                        How long does it take to implement the
-                        outsourced solution? Once agreements are in place, will the provider need weeks
-                        or months before they can have the NOC up and running?</p>
-                        
-                        <p class="normal-text"></p>
-                        
-                        <p class="normal-text">&#9679;
-                        <b>Mixed Model</b></p>
-                        
-                        <p class="normal-text">A mixed solution can also be put in place by the NaaS
-                        operator and a third party. In this alternative, the NaaS operator chooses
-                        which tasks will have to be fulfilled by the external provider and which ones
-                        the NaaS operator will assume. This may make sense in an environment in which a
-                        multi-vendor distributed network may present difficulties for the operator to
-                        acquire the experienced personnel needed and chooses to outsource some parts of
-                        the network, therefore.</p>
-                        
-                        <p class="normal-text"></p>
                         
                         <h3 style='text-align:justify'><a></a>6.1.1
                         Staffing Model Selection Guidelines</h3>
@@ -3087,7 +2991,7 @@
                         knowledge for such challenge, as the third party can assist the operator
                         fulfilling such gaps while the company gains such knowledge and skills.</p>
                         
-                        <br><h2><a class="titulo-h2 anchor-bum color-luminati" name="itemX-X">6.2
+                        <br><h2><a class="titulo-h2 anchor-bum color-luminati" name="item6-2">6.2
                         NaaS-MNO Interconnection &amp; Collaboration Strategy</a></h2>
                         
                         <p class="normal-text">The operational model of the NaaS
@@ -3097,24 +3001,22 @@
                         on which is critical to maintain a level of communication. There are basically
                         four communication areas that need to be addressed by this strategy:</p>
                         
-                        <p class="normal-text">A) Ticketing (See section 5.1.1)</p>
+                        <ol class="normal-text ul-iconos" style='margin-top:0in' start=1 type='A'>
+                            <li class="normal-text">Ticketing (See section 5.1.1)</li>
+                            <li class="normal-text">Fault management (See section 5.1.2)</li>
+                            <li class="normal-text">Billing/revenue reconciliation</li>
+                            <li class="normal-text">Performance monitoring (See section 5.1.4)</li>
+                        </ol>
                         
-                        <p class="normal-text">B) Fault management (See section 5.1.2)</p>
-                        
-                        <p class="normal-text">C) Billing/revenue reconciliation</p>
-                        
-                        <p class="normal-text">D)
-                        Performance monitoring (See section 5.1.4)</p>
-                        
-                        <p align=center>Figure 9 shows the possible NOC
+                        <p class="normal-text">Figure 9 shows the possible NOC
                         interaction areas (A-D, as previously stated) for the collaboration strategy:</p>
                         
                         <p class="normal-text"><img border=0 width=573
                         height=351 id=image11.png
-                        src="Network%20Operation%20Center%20Module_files/image009.png"></p>
+                        src="images/noc/image009.png"></p>
                         
                         <p align=center><i>Figure
-                        9  NaaS-MNO inter-domain collaboration diagram</i></p>
+                        9 &mdash; NaaS-MNO inter-domain collaboration diagram</i></p>
                         
                         <p class="normal-text">The collaborative strategy for
                         the NaaS operator and their customer MNOs begins with the cooperation on the event
@@ -3338,7 +3240,7 @@
                          <tr style='height:23.8pt'>
                           <td width="52%" style='width:52.94%;border:solid black 1.0pt;background:#002060;
                           padding:0cm 5.4pt 0cm 5.4pt;height:23.8pt'>
-                          <p class="normal-text">Level of system integration</p>
+                          <p class="normal-text" style="color:#FFF">Level of system integration</p>
                           </td>
                           <td width="47%" style='width:47.06%;border:solid black 1.0pt;border-left:
                           none;padding:0cm 5.4pt 0cm 5.4pt;height:23.8pt'>
@@ -3348,7 +3250,7 @@
                          <tr style='height:21.3pt'>
                           <td width="52%" style='width:52.94%;border:solid black 1.0pt;border-top:none;
                           background:#002060;padding:0cm 5.4pt 0cm 5.4pt;height:21.3pt'>
-                          <p class="normal-text">Ticketing coordination level</p>
+                          <p class="normal-text" style="color:#FFF">Ticketing coordination level</p>
                           </td>
                           <td width="47%" style='width:47.06%;border-top:none;border-left:none;
                           border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;
@@ -3359,7 +3261,7 @@
                          <tr style='height:20.9pt'>
                           <td width="52%" style='width:52.94%;border:solid black 1.0pt;border-top:none;
                           background:#002060;padding:0cm 5.4pt 0cm 5.4pt;height:20.9pt'>
-                          <p class="normal-text">Fault management coordination level</p>
+                          <p class="normal-text" style="color:#FFF">Fault management coordination level</p>
                           </td>
                           <td width="47%" style='width:47.06%;border-top:none;border-left:none;
                           border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;
@@ -3370,7 +3272,7 @@
                          <tr style='height:19.75pt'>
                           <td width="52%" style='width:52.94%;border:solid black 1.0pt;border-top:none;
                           background:#002060;padding:0cm 5.4pt 0cm 5.4pt;height:19.75pt'>
-                          <p class="normal-text">Performance management coordination level</p>
+                          <p class="normal-text" style="color:#FFF">Performance management coordination level</p>
                           </td>
                           <td width="47%" style='width:47.06%;border-top:none;border-left:none;
                           border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;
@@ -3382,7 +3284,7 @@
                          <tr>
                           <td width="52%" style='width:52.94%;border:solid black 1.0pt;border-top:none;
                           background:#002060;padding:0cm 5.4pt 0cm 5.4pt'>
-                          <p class="normal-text">Billing and revenue reconciliation coordination level</p>
+                          <p class="normal-text" style="color:#FFF">Billing and revenue reconciliation coordination level</p>
                           </td>
                           <td width="47%" style='width:47.06%;border-top:none;border-left:none;
                           border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 5.4pt 0cm 5.4pt'>
@@ -3392,7 +3294,7 @@
                          </tr>
                         </table>
                         
-                        <p align=center><i>Table 8  Collaboration level
+                        <p align=center><i>Table 8 &mdash; Collaboration level
                         for rigid organizational model.</i></p>
                         
                         <p class="normal-text">This model carries the least
@@ -3421,7 +3323,7 @@
                          <tr style='height:23.8pt'>
                           <td width="52%" style='width:52.94%;border:solid black 1.0pt;background:#002060;
                           padding:0cm 5.4pt 0cm 5.4pt;height:23.8pt'>
-                          <p class="normal-text">Level of system integration</p>
+                          <p class="normal-text" style="color:#FFF">Level of system integration</p>
                           </td>
                           <td width="47%" style='width:47.06%;border:solid black 1.0pt;border-left:
                           none;padding:0cm 5.4pt 0cm 5.4pt;height:23.8pt'>
@@ -3433,7 +3335,7 @@
                          <tr style='height:21.3pt'>
                           <td width="52%" style='width:52.94%;border:solid black 1.0pt;border-top:none;
                           background:#002060;padding:0cm 5.4pt 0cm 5.4pt;height:21.3pt'>
-                          <p class="normal-text">Ticketing coordination level</p>
+                          <p class="normal-text" style="color:#FFF">Ticketing coordination level</p>
                           </td>
                           <td width="47%" style='width:47.06%;border-top:none;border-left:none;
                           border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;
@@ -3445,7 +3347,7 @@
                          <tr style='height:20.9pt'>
                           <td width="52%" style='width:52.94%;border:solid black 1.0pt;border-top:none;
                           background:#002060;padding:0cm 5.4pt 0cm 5.4pt;height:20.9pt'>
-                          <p class="normal-text">Fault management coordination level</p>
+                          <p class="normal-text" style="color:#FFF">Fault management coordination level</p>
                           </td>
                           <td width="47%" style='width:47.06%;border-top:none;border-left:none;
                           border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;
@@ -3457,7 +3359,7 @@
                          <tr style='height:25.2pt'>
                           <td width="52%" style='width:52.94%;border:solid black 1.0pt;border-top:none;
                           background:#002060;padding:0cm 5.4pt 0cm 5.4pt;height:25.2pt'>
-                          <p class="normal-text">Performance management coordination level</p>
+                          <p class="normal-text" style="color:#FFF">Performance management coordination level</p>
                           </td>
                           <td width="47%" style='width:47.06%;border-top:none;border-left:none;
                           border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;
@@ -3469,7 +3371,7 @@
                          <tr style='height:26.2pt'>
                           <td width="52%" style='width:52.94%;border:solid black 1.0pt;border-top:none;
                           background:#002060;padding:0cm 5.4pt 0cm 5.4pt;height:26.2pt'>
-                          <p class="normal-text">Billing and revenue reconciliation coordination level</p>
+                          <p class="normal-text" style="color:#FFF">Billing and revenue reconciliation coordination level</p>
                           </td>
                           <td width="47%" style='width:47.06%;border-top:none;border-left:none;
                           border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;
@@ -3480,7 +3382,7 @@
                          </tr>
                         </table>
                         
-                        <p align=center><i>Table 9  Collaboration level
+                        <p align=center><i>Table 9 &mdash; Collaboration level
                         for typical organizational model.</i></p>
                         
                         <p class="normal-text">The web-based ticketing is an
@@ -3492,7 +3394,7 @@
                         decision of billing/revenue reconciliation integration allows the NaaS operator
                         to have a better relationship with their customer MNOs.</p>
                         
-                        <br><h2><a class="titulo-h2 anchor-bum color-luminati" name="itemX-X">6.3
+                        <br><h2><a class="titulo-h2 anchor-bum color-luminati" name="item6-3">6.3
                         Service levels Definition</a></h2>
                         
                         <p class="normal-text"><a></a>Service
@@ -3510,27 +3412,23 @@
                         <p class="normal-text"><a></a>&#9679;
                         <b>CRITICAL</b></p>
                         
-                        <ul style='margin-top:0cm' type=circle>
-                         <li class=MsoNormal style='color:black;margin-bottom:0cm;text-align:justify;
-                             border:none'>Several sites out of service. This can be adjusted to a fixed
+                        <ul class="normal-text ul-iconos" style='margin-top:0in' start=1 type=1>
+                            <li>Several sites out of service. This can be adjusted to a fixed
                              number of sites, the number of end-customers being impacted, or a
                              percentage of the sites in the region/cluster/market.</li>
-                         <li class=MsoNormal style='color:black;margin-bottom:0cm;text-align:justify;
-                             border:none'>Loss of visibility to a network element manager or system.</li>
-                         <li class=MsoNormal style='color:black;margin-bottom:0cm;text-align:justify;
-                             border:none'>Loss of a single equipment (core or aggregation).</li>
-                         <li class=MsoNormal style='color:black;text-align:justify;border:none'>Loss of
+                             <li>Loss of visibility to a network element manager or system.</li>
+                             <li>Loss of a single equipment (core or aggregation).</li>
+                             <li>Loss of
                              a regulatory requirement, such as emergency call handling.</li>
                         </ul>
                         
-                        <p class="normal-text"></p>
+                        
                         
                         <p class="normal-text">&#9679;
                         <b>MAJOR</b></p>
                         
-                        <ul style='margin-top:0cm' type=circle>
-                         <li class=MsoNormal style='color:black;margin-bottom:0cm;text-align:justify;
-                             border:none'>Single site out of service, or below the number of sites
+                        <ul class="normal-text ul-iconos" style='margin-top:0in' start=1 type=1>
+                            <li>Single site out of service, or below the number of sites
                              defined for a critical event.</li>
                          <li class=MsoNormal style='color:black;margin-bottom:0cm;text-align:justify;
                              border:none'>Loss of redundancy (e.g., circuit, equipment)</li>
@@ -3540,7 +3438,7 @@
                              card (core, aggregation).</li>
                         </ul>
                         
-                        <p class="normal-text"></p>
+                        
                         
                         <p class="normal-text">&#9679;
                         <b>MEDIUM</b></p>
@@ -3554,7 +3452,7 @@
                              degradation on several sites.</li>
                         </ul>
                         
-                        <p class="normal-text"></p>
+                        
                         
                         <p class="normal-text">&#9679;
                         <b>MINOR</b></p>
@@ -3814,7 +3712,7 @@
                         for tier 1, one for TX, one for core, both a problem and a change manager, an incident
                         manager per shift and a general NOC manager</p>
                         
-                        <p class="normal-text"></p>
+                        
                         
                         <p class="normal-text">&#9679;
                         <b>CONFIG 2</b></p>
@@ -3832,7 +3730,7 @@
                         <p class="normal-text">&#10004; On the management side, there is one leadership position
                         for tier 1, one for tier 2, an incident manager per shift and a general NOC manager</p>
                         
-                        <p class="normal-text"></p>
+                        
                         
                         <p class="normal-text">&#9679;
                         <b>CONFIG 3</b></p>
@@ -3884,11 +3782,11 @@
                         the <a>$$link_widget$$NOC dimensioning tool</a>
                         displayed in Figure 10 is provided.</p>
                         
-                        <p class="normal-text"></p>
+                        
                         
                         <p class="normal-text"><img border=0
                         width=567 height=211 id=image15.png
-                        src="Network%20Operation%20Center%20Module_files/image010.jpg"></p>
+                        src="images/noc/image010.jpg"></p>
                         
                         <p align=center><i>Figure 10  Playbook NOC dimensioning tool</i></p>
                         
@@ -3898,7 +3796,7 @@
                         
                         <p class="normal-text"><img border=0
                         width=566 height=214 id=image1.png
-                        src="Network%20Operation%20Center%20Module_files/image011.jpg"></p>
+                        src="images/noc/image011.jpg"></p>
                         
                         <p align=center><i>Figure 11  Open fields in the playbook NOC
                         dimensioning tool</i></p>
@@ -3909,7 +3807,7 @@
                         
                         <p class="normal-text"><img border=0 width=567
                         height=222 id=image5.png
-                        src="Network%20Operation%20Center%20Module_files/image012.jpg"></p>
+                        src="images/noc/image012.jpg"></p>
                         
                         <p align=center><i>Figure 12  Combo boxes in the Playbook NOC
                         dimensioning tool.</i></p>
@@ -3920,7 +3818,7 @@
                         
                         <p class="normal-text"><img border=0 width=589
                         height=218 id=image18.png
-                        src="Network%20Operation%20Center%20Module_files/image013.jpg"></p>
+                        src="images/noc/image013.jpg"></p>
                         
                         <p align=center><i>Figure
                         13  Staff summary</i></p>
@@ -3931,7 +3829,7 @@
                         
                         <p class="normal-text"><img border=0 width=589
                         height=266 id=image19.png
-                        src="Network%20Operation%20Center%20Module_files/image014.jpg"></p>
+                        src="images/noc/image014.jpg"></p>
                         
                         <p align=center><i>Figure 14  Tier 1 and tier 2 resources</i></p>
                         
@@ -3940,7 +3838,7 @@
                         
                         <p class="normal-text"><img border=0 width=590
                         height=328 id=image16.png
-                        src="Network%20Operation%20Center%20Module_files/image015.jpg"></p>
+                        src="images/noc/image015.jpg"></p>
                         
                         <p align=center><i>Figure 15  Miscellaneous operators and management
                         team</i></p>
@@ -3978,11 +3876,11 @@
                         be used for facility dimensioning based on the headcount for the NOC team, as
                         shown in Figure 16:</p>
                         
-                        <p class="normal-text"></p>
+                        
                         
                         <p class="normal-text"><img border=0 width=525
                         height=244 id=image22.png
-                        src="Network%20Operation%20Center%20Module_files/image016.jpg"></p>
+                        src="images/noc/image016.jpg"></p>
                         
                         <p align=center><i>Figure 16  Playbook NOC dimensioning: tool
                         facility sizing</i></p>
