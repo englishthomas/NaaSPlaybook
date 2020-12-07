@@ -108,8 +108,8 @@
                                         &#187 O & M
                                     </a>
                                     <ul class="list-unstyled" id="o_m">
-                                        <li><a href="noc.html" style="margin-left:2em;color: black;"><strong>&bull; NOC</strong></a></li>
-                                        <li><a href="c.html" style="margin-left:2em">&bull; SOC</a></li>
+                                        <li><a href="noc.html" style="margin-left:2em">&bull; NOC</a></li>
+                                        <li><a href="soc.html" style="margin-left:2em;color: black;"><strong>&bull; SOC</strong></a></li>
                                     </ul>
                                 </li>
                                 <li>
@@ -1988,12 +1988,13 @@
                         <p class="normal-text">After the criticality matrix is
                         set, the NaaS operator must set two variables for each category:</p>
                         
-                        <li>
-                        <b>Response Time '</b> The time in which the SOC must respond with a TT to any alarm or report occurred</p>
+                        <ul class="normal-text ul-iconos" style='margin-top:0in' start=1 type=1>
+                            <li><b>Response Time &mdash;</b> The time in which the SOC must respond with a TT to any alarm or report occurred</li>
                         
                         <li>
-                        <b>Restoration Time '</b> The time in which all services/faults impacted must be
-                        restored.</p>
+                        <b>Restoration Time &mdash;</b> The time in which all services/faults impacted must be
+                        restored.</li>
+                        </ul>
                         
                         <p class="normal-text">The first variable is strictly
                         SOC dependent and is usually expressed in minutes (e.g., X minutes from service
@@ -2010,27 +2011,27 @@
                          <tr style='height:45.0pt'>
                           <td width="11%" style='width:11.04%;border:solid black 1.0pt;background:#002060;
                           padding:0cm 5.75pt 0cm 5.75pt;height:45.0pt'>
-                          <p class="normal-text">Severity</p>
+                          <p align=center style="color:#FFF">Severity</p>
                           </td>
                           <td width="13%" style='width:13.0%;border:solid black 1.0pt;border-left:none;
                           background:#002060;padding:0cm 5.75pt 0cm 5.75pt;height:45.0pt'>
-                          <p class="normal-text">SLA</p>
+                          <p align=center style="color:#FFF">SLA</p>
                           </td>
                           <td width="14%" style='width:14.44%;border:solid black 1.0pt;border-left:
                           none;background:#002060;padding:0cm 5.75pt 0cm 5.75pt;height:45.0pt'>
-                          <p class="normal-text">Response Time</p>
+                          <p align=center style="color:#FFF">Response Time</p>
                           </td>
                           <td width="14%" style='width:14.46%;border:solid black 1.0pt;border-left:
                           none;background:#002060;padding:0cm 5.75pt 0cm 5.75pt;height:45.0pt'>
-                          <p class="normal-text">SOC Time</p>
+                          <p align=center style="color:#FFF">SOC Time</p>
                           </td>
                           <td width="17%" style='width:17.66%;border:solid black 1.0pt;border-left:
                           none;background:#002060;padding:0cm 5.75pt 0cm 5.75pt;height:45.0pt'>
-                          <p class="normal-text">NaaS Operator Restoration Time</p>
+                          <p align=center style="color:#FFF">NaaS Operator Restoration Time</p>
                           </td>
                           <td width="29%" style='width:29.4%;border:solid black 1.0pt;border-left:none;
                           background:#757171;padding:0cm 5.75pt 0cm 5.75pt;height:45.0pt'>
-                          <p class="normal-text">Driver</p>
+                          <p align=center style="color:#FFF">Driver</p>
                           </td>
                          </tr>
                          <tr style='height:45.0pt'>
@@ -2263,26 +2264,17 @@
                         <p class="normal-text">In order to perform SOC
                         dimensioning, several factors need to be taken into consideration:</p>
                         
-                        <p class="normal-text">a)
-                        Total size of the organization</p>
-                        
-                        <p class="normal-text">b)
-                        Number of RAN sites and core sites</p>
-                        
-                        <p class="normal-text">c)
-                        Number of locations/regions and time
-                        zones served</p>
-                        
-                        <p class="normal-text">d)
-                        Customer expectations and service level
-                        commitments and agreements</p>
-                        
-                        <p class="normal-text">e)
-                        Number of work shifts</p>
-                        
-                        <p class="normal-text">f)
-                        Configuration type (based on the section above or custom configuration)</p>
-                        
+                        <ol class="normal-text ul-iconos" style='margin-top:0in' start=1 type=1>
+                            <li class="normal-text">Total size of the organization</li>
+                            <li class="normal-text"> Number of RAN sites and core sites</li>
+                            <li class="normal-text">Number of locations/regions and time
+                        zones served</li>
+                            <li class="normal-text">Customer expectations and service level
+                            commitments and agreements</li>
+                            <li class="normal-text">Number of work shifts</li>
+                            <li class="normal-text">Configuration type (based on the section above or custom configuration)</li>
+                        </ol>
+
                         <p class="normal-text">This information will aid the
                         operator to estimate the dimensioning of the full team. For this purpose, the <a href="" class="a_link">SOC dimensioning
                         tool</a> displayed in Figure 6 is provided. </p>
