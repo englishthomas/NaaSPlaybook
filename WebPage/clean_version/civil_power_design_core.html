@@ -1,0 +1,1299 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+        <title>PlayBook</title>
+
+         <!-- Bootstrap CSS CDN -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">        <!-- Our Custom CSS -->        <link rel="stylesheet" href="zoom_style.css">        <link rel="stylesheet" href="style2.css">            <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>	</head>		    <body>    <div class >        <ul class="barra_superior">            <li class="li_superior"><a class="active" href="Home.html">Home</a></li>
+            <li class="li_superior"><a href="comming_soon/comming-soon.html">About</a></li>
+            
+            <li class="topnav-right"><a href="#" onclick="switchContent('#e2e')">Layout</a></li>
+            <li class="topnav-right"><a href="#" onclick="switchContent('#fm')">System Design</a></li>
+            <li class="topnav-right"><a href="#" onclick="switchContent('#hld')">Introduction</a></li>
+        </ul>
+    </div>
+
+        <div class="wrapper">
+            <!-- Sidebar Holder -->
+            <nav id="sidebar">
+                <div class="sidebar-header">
+                    <h3>NaaS PlayBook</h3>
+                    <!--strong>NaaS</strong-->
+                    
+                </div>
+    
+                <ul class="list-unstyled components">
+                    <li>                        <a href="#runbookSubmenu" data-toggle="collapse" aria-expanded="false">                            <i class="glyphicon glyphicon-option-horizontal"></i>                            PlayBook Modules                        </a>                        <ul class="list-unstyled" id="runbookSubmenu">                                <li  class="active">                                    <a href="#stract" data-toggle="collapse" aria-expanded="false">                                        &#187 Strategic Plan & Scope                                    </a>                                    <ul class="list-unstyled collapse" id="stract">                                        <li><a href="strategy_scope.html"style="margin-left:2em;">&bull; Strategy & Scope</a></li>
+                                        <li><a href="high_level_proyect_plan.html" style="margin-left:2em">&bull; HL Project Plan</a></li>
+                                    </ul>
+                                </li>
+                                <li  class="active">                                    <a href="#HLNA" data-toggle="collapse" aria-expanded="false">                                        &#187 High Level Network Architecture                                    </a>                                    <ul class="list-unstyled collapse" id="HLNA">                                        <li><a href="ran_hld_architecture.html"style="margin-left:2em">&bull; RAN Architecture</a></li>
+                                        <li><a href="tx_ip_architecture.html" style="margin-left:2em">&bull; TX & IP Architecture</a></li>
+                                        <li><a href="mobile_core_archi.html" style="margin-left:2em"> &bull; Core Architecture</a></li>
+                                        <li><a href="network_monitoring_architecture.html" style="margin-left:2em"> &bull; Network Monitoring</a></li>
+                                        
+                                    </ul>
+                                </li>
+                                <li class="active">                                    <a href="#homeSubmenu"  class="panel-collapse" data-toggle="collapse">                                        &#187 Network Design                                    </a>                                    <ul class="list-unstyled" id="homeSubmenu">                                        <li><a href="#transportMenu" data-toggle="collapse" style="margin-left:2em">&bull; Transport</a></li>
+                                            <ul class="list-unstyled collapse" id="transportMenu">
+                                                <li><a href="tx_hld_module.html" style="margin-left:4em;">&#9657; Tx Network HLD</a></li>
+                                                <li><a href="tx_lld_module.html" style="margin-left:4em;">&#9657; Tx Network LLD</a></li>
+                                            </ul>
+                
+                                        <li><a href="#transportMenu2" data-toggle="collapse" style="margin-left:2em">&bull; RAN</a></li>
+                                            <ul class="list-unstyled collapse" id="transportMenu2">
+                                                <li><a href="ran_hld_module.html" style="margin-left:4em">&#9657; RAN Network HLD</a></li>
+                                                <li><a href="ran_lld_module.html" style="margin-left:4em;">&#9657; RAN Network LLD</a></li>
+                                            </ul>
+                                        <li><a href="#transportMenu3" data-toggle="collapse" style="margin-left:2em">&bull; Core</a></li>
+                                            <ul class="list-unstyled" id="transportMenu3">
+                                                <li><a href="mobile_core_hld.html" style="margin-left:4em;">&#9657; Mobile Core HLD</a></li>
+                                                <li><a href="mobile_core_lld.html" style="margin-left:4em;">&#9657; Mobile Core LLD</a></li>
+                                                <li><a href="civil_power_design_core.html" style="margin-left:4em;color: black;"><strong>&#9657; Civil & Power Design</strong></a></li>
+                                            </ul>
+                                    </ul>
+                                </li>
+                                <li>                                    <a href="#deployment_m" data-toggle="collapse" aria-expanded="false">                                        &#187 Deployment                                    </a>                                    <ul class="list-unstyled collapse" id="deployment_m">                                        <li><a href="deployment_mgmt.html"style="margin-left:2em">&bull; Deployment Mgmt</a></li>
+                                        <li><a href="site_survey.html"style="margin-left:2em">&bull; Site Survey</a></li>
+                                        
+                                        <li><a href="i&c_module.html"style="margin-left:2em">&bull; I & C</a></li>
+                                            <li><a href="fiber_const_mgmt.html"style="margin-left:2em">&bull; Fiber Construction Mgmt</a></li>
+                                            <li><a href="site_construction_mgmt.html"style="margin-left:2em">&bull; Site Construction Mgmt</a></li>
+                                    </ul>
+                                </li>
+                                <li>                                    <a href="#o_m" data-toggle="collapse" aria-expanded="false">                                        &#187 O & M                                    </a>                                    <ul class="list-unstyled collapse" id="o_m">                                        <li><a href="noc.html" style="margin-left:2em;">&bull; NOC</a></li>
+                                        <li><a href="soc.html" style="margin-left:2em">&bull; SOC</a></li>
+                                    </ul>
+                                </li>
+                                <li>                                    <a href="#maintenance" data-toggle="collapse" aria-expanded="false">                                    &#187 Field Maintenance                                </a>                                <ul class="list-unstyled collapse" id="maintenance">                                                                        <li><a href="cell_site_maintenance.html" style="margin-left:2em">&bull; Cell Site Maintenance</a></li>
+<li><a href="core_site_maintenance.html" style="margin-left:2em">&bull; Core Site Maintenance</a></li>
+<li><a href="field_force_management.html" style="margin-left:2em">&bull; Field Force Mgmt</a></li>
+                                    
+                                </ul>
+                                </li>
+                                <li>                                    <a href="#">                                        &#187 Post-Launch Engineering                                    </a>                                </li>
+        
+                                <li  class="active">                                    <a href="#supply" data-toggle="collapse" aria-expanded="false">                                        &#187 Supply Chain Management                                    </a>                                    <ul class="list-unstyled collapse" id="supply">                                        <li><a href="rfx_process.html"style="margin-left:2em;">&bull; RFx Process</a></li>
+                                        <li><a href="logistics_warehousing.html" style="margin-left:2em;">&bull; Logistics & Warehousing</a></li>
+                                        <li><a href="proc_pro_vendor_mgmt.html" style="margin-left:2em;">&bull; Procurement Proc. & Vendor Mgmt.</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>                                <a href="#engagementSubmenu" data-toggle="collapse" aria-expanded="false">                                    <i class="glyphicon glyphicon-option-horizontal"></i>                                    Methods of Engagement                                </a>                                <ul class="collapse list-unstyled" id="engagementSubmenu">                                                                        <li><a href="MoE_Wizards.html">&#187 Wizards</a></li>
+                                    <li><a href="MoE_Widgets.html">&#187 Widgets</a></li>
+                                    <li><a href="MoE_Primers.html">&#187 Primers</a></li>
+                                    <li><a href="MoE_Templates.html">&#187 Templates</a></li>
+                                    <li><a href="MoE_Tool_Catalogue.html">&#187 Tool Catalogue</a></li>
+                                    
+                                </ul>
+                            </li>
+                        <li>                            <a href="strategic_use.html">                                <i class="glyphicon glyphicon-question-sign"></i>                                Using the PlayBook                             </a>                        </li>
+                        <li>                            <a href="comming_soon/comming-soon.html">                                <i class="glyphicon glyphicon-send"></i>                                Contact                            </a>                        </li>
+                </ul>
+            </nav>
+            <!-- Page Content Holder -->
+           <section id="hld" hidden>
+                <div id="content"> 
+
+                    <div data-spy="scroll" data-target="#navbar-example3" data-offset="0">
+                        <h1><a class="titulo-h1 anchor-bum color-luminati" name="item1">1                            Introduction</a></h1>
+                            
+                            <p class="normal-text">Civil and Power Design for Core                            Sites refers to the process performed to assess and dimension the Power                            Equipment to properly energize the equipment at Core Sites and design the                            arrangement of the whole system considering as inputs the assigned space diagrams,                            Core LLD and Core Equipment engineering requirements, to design a proper Power                            Solution and a Core Site Layout. An accurate Power and Civil design will                            achieve economically efficient Power Feed Solution providing more availability                            and reliability.</p>
+                            
+                            <p class="normal-text">In contrast to Civil &amp; Power                            Design for RAN Sites, Core Sites have a much higher energy consumption and                            ideally, their availability should be close to 100% per year. In addition,                            Mobile Core facilities differ in size and type, from NaaS Operator-owned                            facilities, to 3rd party aggregation nodes or data centers.</p>
+                            
+                            <p class="normal-text">The Civil and Power for Core Sites                            Module provides the NaaS Operator with background information to aid in the                            selection and design of a customized Power System for their Mobile Core Equipment                            and guides NaaS Operators to prepare their Core Site Layouts that will define                            the position of all Core &amp; Power components in blueprints.</p>
+                            
+                            <p class="normal-text">The Core Power Design assesses the                            Power Feed Options that suit the Core scenario                            which can be AC or DC. When the Power Feed option has been established, the                            next step is to match the selected Core components requirements and Autonomy                            requirements with power systems capabilities, optimizing cost and protecting                            the NaaS Operator Hardware Investment. Once the Power Hardware is established                            NaaS Operators will be able to generate the Power Equipment Bill of quantities                            for Core Sites and the Core Site Layout must be performed, indicating where the                            hardware must be installed, facilitating the forthcoming Installation &amp;                            Maintenance Task.</p>
+                            
+                            <br><h2><a class="titulo-h2 anchor-bum color-luminati" name="item1-1">1.1                            Module Objectives</a></h2>
+                            
+                            <p class="normal-text">This module will guide NaaS Operators to accurately assess                            and dimension the Power Equipment for the Core Sites and develop the Core Site                            Layouts that will define the equipment location, ensuring their right                            installation and operation. The specific objectives of this module are to:</p>
+                            
+                            <ol class="normal-text ul-iconos" style='margin-top:0in' start=1 type=1>
+                                <li class="normal-text">Provide an                                 information base and fundamentals to perform the tasks associated with                                 Civil &amp; Power Design for Core Sites.</li>
+                                 <li class="normal-text">Guide NaaS                                 Operators to accurately evaluate and dimension the power system that will                                 feed and protect the Equipment at Core Sites, optimizing the required                                 Hardware for each scenario.</li>
+                                 <li class="normal-text">Provide guidelines                                 for the NaaS Operator to prepare their Core Site Layouts that will define                                 the Equipment Position and Installation standards.</li>
+                            </ol>
+                            
+                            <br><h2><a class="titulo-h2 anchor-bum color-luminati" name="item1-2">1.2                            Module Framework</a></h2>
+                            
+                            <p class="normal-text">NaaS                            Runbooks Framework shown in Figure 1 displays the Runbook modules and their                            relationship to the Civil &amp; Power Design for Core Module.</p>
+                            
+                            <p class="normal-text">The                            Civil &amp; Power Design for Core Module is included within the Network Design                            Stream. It takes inputs from the Core LLD Module and the output generated                            serves as guidelines for equipment installation at core sites in the Deployment                            stream.</p>
+                            
+                            <p class="normal-text"><img class="myImg" width=590 height=265 id=image6.png                            src="images/civil_power_core/image001.png"></p>
+                            
+                            <p align=center><i>Figure 1. Runbook Framework.</i></p>
+                            
+                            <p class="normal-text">Figure 2 presents the Civil &amp; Power Design functional view                            where the main functional content of the module is exhibited.</p>
+                            
+                            <p class="normal-text"><img class="myImg" width=595 height=316 id=image9.png                            src="images/civil_power_core/image002.png"></p>
+                            
+                            <p align=center><i>Figure 2.                            Civil &amp; Power Design Functional View.</i></p>
+                            
+                            <p class="normal-text">The rest of                            the module is divided into three sections. Section 2 is an introductory                            section, containing a high-level view of the Civil &amp; Power Design for Core                            Sites, their main characteristics, and functions. Section 3 contains the key                            considerations used to design a power solution that properly fits the                            requirements of the core equipment, Section 4 is a set of guidelines to                            organize and prepare the Core Site layout following NaaS Operators assigned                            space for the Mobile Core Equipment or Data Center physical Characteristics.</p>
+                            
+                            
+                            <h1><a class="titulo-h1 anchor-bum color-luminati" name="item2">2                            Civil &amp; Power Design Fundamentals</a></h1>
+                            
+                            <p class="normal-text">The Core site refers to the facility and physical elements                            that support the mobile Core equipment. The Core site must be designed to meet                            the power and environmental requirements of the Core equipment with the maximum                            availability of noise-free electrical power avoiding single point of failure                            circumstances. This section introduces the basic knowledge before getting into                            the details to perform a Power system Design for NaaS Operator Core sites.</p>
+                            
+                            <br><h2><a class="titulo-h2 anchor-bum color-luminati" name="item2-1">2.1                            Civil &amp; Power Design Overview</a></h2>
+                            
+                            <p class="normal-text">Core site power systems require in-depth evaluation at the                            design stage, in order to balance the need for maximum system availability and                            an economically feasible power solution that suits the chosen equipment at the                            Low-Level Design Stage. As established in the Mobile Core Architecture Module,                            the recommended option for NaaS Operators is to implement the Mobile Core                            through Network Functions Virtualization (NFV), which virtualizes the functions                            of the Evolved Packet Core (EPC) in traditional IT equipment. This makes it                            possible to use traditional power systems used in the IT industry which are                            mainly for alternating current (AC).</p>
+                            
+                            <p class="normal-text">Once the Power and Core equipment has been decided, the                            equipments layout must be defined which can be within the equipment room or                            data center facility.</p>
+                            
+                            <p class="normal-text">The importance of a properly designed power system is                            explained in the following statements:</p>
+                            
+                            <ol class="normal-text ul-iconos" style='margin-top:0in' start=1 type=1>
+                                <li class="normal-text"><b>Servers require more protection even                                against short outages. </b>Losing power for as                                little as a quarter second can trigger events that may keep IT equipment                                unavailable for anywhere from 15 minutes to many hours. </li>
+                            
+                                <li class="normal-text"><b>Utility power varies. </b>Electrical power can vary widely enough to cause                                significant problems for IT equipment. According to current U.S. standards, for                                example, the voltage can legally vary from 5.7% to 8.3% under absolute                                specifications. That means that a nominal 208 VAC, can range from 191 to 220 V.</li>
+                            
+                                <li class="normal-text"><b>Utility power is not 100% reliable. </b>In the U.S., in fact, it is only 99.9 percent reliable,                                which translates into a likely nine hours of utility outages every year.</li>
+                            
+                                <li class="normal-text"><b>Generators and surge suppressors are                                not enough. </b>Generators can keep systems                                operational during a utility outage, but they take time to startup and do not                                provide protection from power spikes and other electrical disturbances. Surge                                suppressors help with power spikes but not with issues like power loss,                                under-voltage, and brownout conditions. </li>
+                                
+                                <li class="normal-text"><b>Core Network requires high                                availability, but power costs must be managed. </b>The cost of power and cooling has spiraled out of control                                in recent years. Thus, the power system for Mobile Core equipment must achieve                                high availability while simultaneously reducing power costs.</li>
+                            </ol>
+                            
+                            <br><h2><a class="titulo-h2 anchor-bum color-luminati" name="item2-2">2.2                            Civil &amp; Power Design Scenarios</a></h2>
+                            
+                            <p class="normal-text">The Core Site Design requirements directly depends on the                            scenario in which the core equipment will be deployed. The scenario is normally                            decided in previous phases according to the NaaS Operator strategy. The variety                            of scenarios can fall into the following categories:</p>
+                            
+                            <ul class="normal-text ul-iconos" style='margin-top:0in' start=1 type=1>
+                                <li class="normal-text"><b>3rd party powered rack:</b>                                In this scenario, the Core equipment is deployed at a facility that is owned                                completely by a 3<sup>rd</sup> party, including racks, cooling and                                Uninterruptible Power Supply (UPS). In this case, the only responsibility of                                the NaaS Operator is to ensure that the power and environmental requirements of                                the Core Equipment are fulfilled by the infrastructure in the 3rd Party                                Facility.</li>
+                            
+                                <li class="normal-text"><b>3<sup>rd</sup> party space and                                cooling:</b> Under this scenario, the NaaS                                Operators gets a designated space within a data center or any other telecom facility                                owned by a 3rd Party. The electric service and cooling system are provided by                                the owner of the facility. NaaS Operators must size and purchase their racks                                and power supply for their core equipment.</li>
+                            
+                                <li class="normal-text"><b>Owned Facility:</b> NaaS                                Operators may consider this scenario if they own the facility and the core                                equipment. In this case, all electric loads within the facility must be                                considered to:</li>
+                            
+                                <ol class="normal-text ul-iconos" style='margin-top:0in;font-size: 16px;' start=1 type='a'>
+                                    <li class="normal-text">Size the power system for the core equipment.</li>
+                                    <li class="normal-text">Size the electric service that will provide power to all                                    the facilities, including additional loads                                    such as cooling systems, lights, and emergency systems.</li>
+                                </ol>
+                            </ul>
+                            
+                            <p class="normal-text">The required tasks for each scenario are shown in Figure 3                            and described below:</p>
+                            
+                            <p class="normal-text"><img class="myImg" width=610 height=162 id=image1.png                            src="images/civil_power_core/image003.png"></p>
+                            
+                            <p align=center><i>Figure 3                            Mobile Core Deployment Scenarios and related Power Design tasks.</i></p>
+                            
+                            <ol class="normal-text ul-iconos" style='margin-top:0in' start=1 type=1>
+                                <li class="normal-text"><b>Critical                                 load calculation</b> refers to the sum of the power consumption of all the                                 hardware components that make up the NaaS Operators Core site: servers,                                 routers, storage devices, and telecommunications equipment.</li>
+                                 <li class="normal-text"><b>Additional                                 loads calculation</b> refers to the sum of the power consumption of                                 cooling systems, lights, and losses of the power system.</li>
+                                 <li class="normal-text"><b>The                                 Electrical Utility Dimensioning</b> is the calculation of the required                                 energy for all the loads of the facility including critical and additional                                 loads. </li>
+                                 <li class="normal-text"><b>UPS                                 selection</b> refers to the process to size and select the uninterruptible                                 power supply (UPS) for the critical loads. </li>
+                                 <li class="normal-text"><b>PDU Selection</b>                                 refers to the process of size and                                 select the power distribution unit to be installed at the equipment rack.</li>
+                            </ol>
+                            
+                            <p class="normal-text">Each of these tasks is described with a deep detail in Section 3.</p>
+                            
+                            <br><h2><a class="titulo-h2 anchor-bum color-luminati" name="item2-3">2.3                            Civil &amp; Power Design Inputs Description</a></h2>
+                            
+                            <p class="normal-text">To perform an optimized design, a set of inputs from various                            sources is required. This section identifies the most important inputs and how                            these inputs impact the Civil and Power Design for Core Sites.</p>
+                            
+                            <p class="normal-text">Table 1 lists the inputs for Civil &amp; Power Design,                            showing the impact on the overall process and potential sources. </p>
+                            
+                            <div align=center>
+                            <table class=a border=1 cellspacing=0 cellpadding=0 width=624 style='margin-left:
+                             -.25pt;border-collapse:collapse;border:none'>
+                             <tr>
+                              <td width=138 valign=top style='width:103.5pt;border:solid black 1.0pt;
+                              background:#1F4E79;padding:0in 5.4pt 0in 5.4pt'>
+                              <p align=center style="color:#FFF"><b>Input Required</b></p>
+                              </td>
+                              <td width=164 valign=top style='width:123.35pt;border:solid black 1.0pt;
+                              border-left:none;background:#1F4E79;padding:0in 5.4pt 0in 5.4pt'>
+                              <p align=center style="color:#FFF"><b>Description</b></p>
+                              </td>
+                              <td width=170 valign=top style='width:127.6pt;border:solid black 1.0pt;
+                              border-left:none;background:#1F4E79;padding:0in 5.4pt 0in 5.4pt'>
+                              <p align=center style="color:#FFF"><b>Impact</b></p>
+                              </td>
+                              <td width=151 valign=top style='width:113.4pt;border:solid black 1.0pt;
+                              border-left:none;background:#1F4E79;padding:0in 5.4pt 0in 5.4pt'>
+                              <p align=center style="color:#FFF"><b>Source</b></p>
+                              </td>
+                             </tr>
+                             <tr>
+                              <td width=138 valign=top style='width:103.5pt;border:solid black 1.0pt;
+                              border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+                              <p class="normal-text">Equipment Power                              consumption (W), Average Load</p>
+                              </td>
+                              <td width=164 valign=top style='width:123.35pt;border-top:none;border-left:
+                              none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+                              padding:0in 5.4pt 0in 5.4pt'>
+                              <p class="normal-text">Power Consumption of the                              Core system.</p>
+                              </td>
+                              <td width=170 valign=top style='width:127.6pt;border-top:none;border-left:
+                              none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+                              padding:0in 5.4pt 0in 5.4pt'>
+                              <p class="normal-text">Required to properly                              Size the Power and Electric System Elements</p>
+                              </td>
+                              <td width=151 valign=top style='width:113.4pt;border-top:none;border-left:
+                              none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+                              padding:0in 5.4pt 0in 5.4pt'>
+                              <p class="normal-text">Mobile Core LLD</p>
+                              <p class="normal-text">Vendor Specifications,                              Vendor sizing tools</p>
+                              </td>
+                             </tr>
+                             <tr>
+                              <td width=138 valign=top style='width:103.5pt;border:solid black 1.0pt;
+                              border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+                              <p class="normal-text">Power                              Equipment Specifications</p>
+                              </td>
+                              <td width=164 valign=top style='width:123.35pt;border-top:none;border-left:
+                              none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+                              padding:0in 5.4pt 0in 5.4pt'>
+                              <p class="normal-text">Specifications of all                              Power Equipment: </p>
+                              <p class="normal-text">Power INPUT: </p>
+                              <p class="normal-text">&#9679; Voltage Range</p>
+                              <p class="normal-text">&#9679; Frequency</p>
+                              <p class="normal-text">&#9679; Maximum                              Current</p>
+                              <p class="normal-text">Power OUTPUT: </p>
+                              <p class="normal-text">&#9679; Voltage                              Range</p>
+                              <p class="normal-text">&#9679; Maximum                              Power</p>
+                              <p class="normal-text">&#9679; Maximum                              Current</p>
+                              <p class="normal-text">&#9679; Peak                              Efficiency</p>
+                              </td>
+                              <td width=170 valign=top style='width:127.6pt;border-top:none;border-left:
+                              none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+                              padding:0in 5.4pt 0in 5.4pt'>
+                              <p class="normal-text">Required to properly                              size and select the Power System Elements</p>
+                              </td>
+                              <td width=151 valign=top style='width:113.4pt;border-top:none;border-left:
+                              none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+                              padding:0in 5.4pt 0in 5.4pt'>
+                              <p class="normal-text">Vendor Specifications</p>
+                              </td>
+                             </tr>
+                             <tr>
+                              <td width=138 valign=top style='width:103.5pt;border:solid black 1.0pt;
+                              border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+                              <p class="normal-text">Site Engineering</p>
+                              </td>
+                              <td width=164 valign=top style='width:123.35pt;border-top:none;border-left:
+                              none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+                              padding:0in 5.4pt 0in 5.4pt'>
+                              <p class="normal-text">Contains detailed                              blueprints corresponding to each site.</p>
+                              </td>
+                              <td width=170 valign=top style='width:127.6pt;border-top:none;border-left:
+                              none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+                              padding:0in 5.4pt 0in 5.4pt'>
+                              <p class="normal-text">Required to define the                              Site Layout</p>
+                              </td>
+                              <td width=151 valign=top style='width:113.4pt;border-top:none;border-left:
+                              none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+                              padding:0in 5.4pt 0in 5.4pt'>
+                              <p class="normal-text">Site                              Construction Module / Contractors</p>
+                              </td>
+                             </tr>
+                            </table>
+                            </div>
+                            <p align=center><i>Table 1 Civil                            &amp; Power Design Inputs</i></p>
+                            
+                            <br><h2><a class="titulo-h2 anchor-bum color-luminati" name="item2-4">2.4                            Power System Overview</a></h2>
+                            
+                            <p class="normal-text">A core power system is the electric network within the core                            site which consists of distribution and transformation of the electricity from                            the public electric network or so-called Grid. The electricity from the Grid                            must be reduced to lower voltage levels using a transformer and then is                            distributed before it can be delivered to the Core equipment. </p>
+                            
+                            <p class="normal-text">In North America, parts of Central and South America, Japan,                            and Saudi Arabia, the electricity is distributed using transformer-based Power                            Distribution Units (PDUs) which are typically 480 VAC. The transformer steps                            down the voltage, and power is delivered to the equipment at 208/120 VAC. For                            the rest of the world, the power distribution uses 400/230 VAC or 415/240 VAC.</p>
+                            
+                            <p class="normal-text">A power supply unit (PSU) embedded in the equipment, step                            down the voltage to 12VDC and lower DC voltages for internal uses. </p>
+                            
+                            <p class="normal-text">DC power in data centers is being used as an alternative to                            AC. In this model, AC power is delivered to the rack and is converted to DC                            prior to the distribution of power within the rack. However, this approach                            places some undesirable constraints on the deployment options when compared                            with traditional AC power distribution, which has prevented its wider adoption.                            Due to this constrains this module will be based on the most common                            distribution which is the AC Power.</p>
+                            
+                            <p class="normal-text">The Power Design complexity depends on the size of the power                            load demanded by the IT equipment. <br>                            When NaaS Operators just need to feed a few servers, storage, and IT equipment                            pre-assembled power systems are the most adequate option.</p>
+                            
+                            <p class="normal-text">Figure 4 shows a Power System to power up a small                            virtualized EPC, including the basic elements of the Power System: Power                            distribution system, Cooling system, Uninterruptible Power Supply (UPS),                            battery pack, and IT equipment space integrated into a standard 42U rack.</p>
+                            
+                            <p class="normal-text"></p>
+                            
+                            <p class="normal-text"><img class="myImg"                            width=342 height=262 id=image2.png                            src="images/civil_power_core/image004.jpg"></p>
+                            
+                            <p align=center><i>Figure 4.                            Rack for 30U backed by a single UPS</i></p>
+                            
+                            <p class="normal-text">In cases where the vEPC requires a higher power demand or                            several racks, NaaS Operators may consider to assemble their power distribution                            system to feed their equipment. There are multiple Power system solutions                            available that NaaS Operators may consider, the criteria for choosing a solution                            will depend on several factors that will be deeply evaluated in Section 3.</p>
+                            
+                            <p class="normal-text">Typically, the amount of electrical load and required                            availability its the key factor to consider in a power distribution system.                            There are many different loads in the Core Site, such as IT equipment, air                            conditioners, fans, lights, etc. The flow and transformation of energy from the                            utility/generator to the load is enabled by various types of equipment:</p>
+                            
+                            <ol class="normal-text ul-iconos" style='margin-top:0in' start=1 type='a'>
+                                <li>Low-voltage (LV) switchgear/switchboard / automatic transfer switch (ATS)</li>
+                                <li>Panelboards</li>
+                                <li>UPS system</li>
+                                <li>Power Distribution Units (PDUs) </li>
+                                <li>Rack PDUs (rPDUs) / outlet strips</li>
+                                <li>Diesel Generators</li>
+                            </ol>
+                            
+                            <p class="normal-text">As described in Section 2.2 depending                            on the scenario, not all the electric and power equipment is the responsibility                            of the NaaS Operator: depending on their scenario NaaS Operators may just                            require to ensure that their core equipment is properly fed in a 3<sup>rd</sup>                            party facility or they may have to design the power system for the whole                            facility including the power distribution system. This is illustrated in Figure                            5, which shows all the elements of a basic Power System.</p>
+                            
+                            <p class="normal-text"><img class="myImg" width=576                            height=306 id=image3.png                            src="images/civil_power_core/image005.png"></p>
+                            
+                            <p align=center><i>Figure 5 Full                            Sized Power System for a Core Site.</i></p>
+                            
+                            <p class="normal-text">The following subsections introduce each type of equipment. </p>
+                            
+                            <ol class="normal-text ul-iconos" style='margin-top:0in' start=1 type='A'>
+                                <li class="normal-text"><b>Low-voltage                                 switchgear/switchboard / automatic transfer switch (ATS)</b></li>
+                            </ol>
+                            
+                            <p class="normal-text">Typically, LV                            switchgear/switchboard is located in the electrical room and marks the utility                            service entrance for facilities with a power load of less than 1 MW.</p>
+                            
+                            <p class="normal-text">If a Diesel generator is used, the                            generator would feed the LV switchgear. Apart from distributing power, the LV                            switchgear is responsible for disconnecting faults and controlling the LV power                            distribution system. A device known as an automatic transfer switch (ATS) has                            traditionally been used to switch between utility and generator. However, the                            current trend is to have LV breakers perform this function in lieu of the ATS                            device. If the NaaS Operator considers purchasing a Low Voltage Switchgear and                            a Diesel Generator, it is recommended to look for electrical consultants                            services to size and select the Switchgear.</p>
+                            
+                            <ol class="normal-text ul-iconos" style='margin-top:0in' start=2 type='A'>
+                                <li class="normal-text"><b>Panelboards</b></li>
+                            </ol>
+                            
+                            <p class="normal-text">Panelboards (typically rated from                            1.5kVA to 75kVA) are basically a metal cabinet that houses the main electrical                            bussing and the terminals upon which circuit breakers, neutral wires, and                            ground wires are installed. Panelboards are common in the mechanical space,                            electrical space, and IT space to distribute the power to cooling equipment                            (i.e. chillers, pumps, fans, etc.), lighting, and security devices.</p>
+                            
+                            <p class="normal-text"></p>
+                            
+                            <ol class="normal-text ul-iconos" style='margin-top:0in' start=3 type='A'>
+                                <li class="normal-text"><b>Uninterruptible Power                                 Supply systems (UPS)</b></li>
+                            </ol>
+                            
+                            <p class="normal-text">UPSs are typically installed to provide                            uninterrupted power to the critical equipment. This piece of equipment is in                            charge of distributing quality electricity by conditioning the AC power to                            ensure that electrical issues like power surges do not impact the equipment.</p>
+                            
+                            <p class="normal-text">In addition to power conditioning,                            UPS systems are used to store electricity in batteries. UPS provides backup                            power when utility power fails, either long enough for critical equipment to                            shut down gracefully so that no data is lost, or long enough to keep required                            loads operational until a generator comes online, which is commonly 10 or 20                            minutes. If a Generator is not included in the system design NaaS Operators may                            consider extending the emergency power supply of the UPS with additional batteries;                            however, not all UPS support a battery extension.</p>
+                            
+                            <p class="normal-text">The chosen UPS directly impacts                            the availability of critical Core equipment. The Methods to properly select the                            UPS are addressed in Section 3.3.</p>
+                            
+                            <ol class="normal-text ul-iconos" style='margin-top:0in' start=4 type='A'>
+                                <li class="normal-text"><b>Power Delivery Units                                 (PDU) </b></li>
+                            </ol>
+                            
+                            <p class="normal-text">PDUs are used to distribute,                            control, and monitor the critical power from the UPS system to equipment racks.                            PDUs usually contain a main input circuit breaker, branch circuit                            panelboard(s), a power transformer, output power cables, surge arrestor, and                            the monitoring and communication modules.</p>
+                            
+                            <p class="normal-text">Sometimes PDUs with power                            transformers are used to decrease voltage levels; for example, in North                            American data centers, PDUs with power transformers are mainly used to step                            down 480 Vac to 120/208 Vac8; while in Japan, PDUs with power transformers step                            down 200Vac to 100Vac single-phase for the downstream IT loads. A PDU is                            typically rated from 50kW to 500kW.</p>
+                            
+                            <p class="normal-text">For low power critical loads rack                            PDUs are used instead of Factory-configured PDU distribution systems within                            dedicated enclosures or cabinets. Rack PDUs (i.e. power strips) are installed                            on the equipments rack and are powered from the UPS connector. Rack PDUs                            distribute power directly to equipment in the rack. PDUs are selected based on                            the expected rack power density and or system configuration. The method to                            properly select a PDU is addressed in Section 3.4.</p>
+                            
+                            <ol class="normal-text ul-iconos" style='margin-top:0in' start=5 type='A'>
+                                <li class="normal-text"><b>Diesel Generators</b></li>
+                            </ol>
+                            
+                            <p class="normal-text">It is a common practice to use                            diesel generators to supply power to the data center or core facility in case                            of an outage from the main grid power source, delivering energy as alternating                            current (AC). Backup diesel generators serve to keep the facility operational                            for a longer period of time. The length of time is dependent on the amount of                            onsite diesel fuel storage and the delivery of fuel which is referred to as                            fuel contracts. This can be hours, days, or weeks. The method to calculate the                            required capacity of a diesel generator is detailed in Section                            3.6.</p>
+                            
+                            <br><h2><a class="titulo-h2 anchor-bum color-luminati" name="item2-5">2.5                            Core Site Layout Overview</a></h2>
+                            
+                            <p class="normal-text">The Site Layout for Core Sites refers to the technical                            drawings that show information about power and core site equipment. The Site                            Layouts are created and used by engineers, builders and field technicians; they                            consist of lines, special symbols, dimensions, and notations. The Site Layout                            shows the scheme of electric wiring and position of power and IT equipment in                            buildings, or data centers. </p>
+                            
+                            <p class="normal-text">As explained before, two types of locations for Core Sites                            are commonly used by NaaS Operators:</p>
+                            
+                            <ul class="normal-text ul-iconos" style='margin-top:0in' start=1 type=1>
+                                <li><b>NaaS Operator facilities: </b>This scenario is where the Building and equipment are owned by the NaaS Operator. In this case, the Core Site                            Layout is required to decide the best position of the Core and Power equipment                            in the room and the rack where the equipment will be mounted. The Core site                            layout is designed to protect the equipment, facilitate maintenance tasks and                            installation. Figure 6 shows an example of a Core site layout. Section 4 provides                            considerations to perform the site layout, rack layout and cabling layout for                            Core sites.</li>
+                            </ul>
+                            
+                            <p class="normal-text"><img class="myImg" width=367                            height=305 id=image13.png                            src="images/civil_power_core/image006.jpg"></p>
+                            
+                            <p align=center><i>Figure 6.                            NaaS Operator Core site layout</i></p>
+                            
+                            <ul class="normal-text ul-iconos" style='margin-top:0in' start=1 type=1>
+                                <li><b>Facility sharing</b>: This                            scenario is where NaaS Operators deploy their Core equipment in a 3<sup>rd</sup>                            party facility. In this case, performing a Core Layout and documenting it in blueprints plays a paramount role since may be used in the                            infrastructure sharing agreement. It should clearly detail which equipment and                            cabling belong to the site owner and which is owned by the NaaS Operator.                            Figure 7 shows a birds eye view of a data center layout. The red square                            represents the assigned racks for the core equipment in a leased space within A                            3<sup>rd</sup> party data center, including a detail of the rack space.</li>
+                            </ul>
+                            
+                            <p class="normal-text"><img class="myImg"                            width=388 height=226 id=image7.png                            src="images/civil_power_core/image007.jpg"></p>
+                            
+                            <p align=center><i>Figure 7                            Shared Data Center Layout for NaaS operators Core equipment</i></p>
+                    </div>
+               
+                    <div class="right">
+                        <a class='link-next' href="#" onclick="switchContent('#fm')">Next &#8658;</a>
+                    </div>
+                    <br>
+                </div>
+
+                <nav id="navbar-example3" class="navbar navbar-light bg-light position-fixed">
+                    <nav class="nav nav-pills flex-column">
+                    
+                    <a id="link-1" class="nav-link bullet-2-link" onclick="onClickActive(event)" href="#item1"><strong>1. INTRODUCTION</strong></a>
+                    <a id="link-2" class="nav-link bullet-2-link" onclick="onClickActive(event)" href="#item1-1"><em>1.1 Module Objectives</em></a>
+                    <a id="link-3" class="nav-link bullet-2-link" onclick="onClickActive(event)" href="#item1-2"><em>1.2 Module Framework</em></a>
+                    <a id="link-4" class="nav-link bullet-2-link" onclick="onClickActive(event)" href="#item2"><strong>2. CIVIL & POWER DESIGN FUNDAMENTALS</strong></a>
+                    <a id="link-6" class="nav-link bullet-2-link" onclick="onClickActive(event)" href="#item2-1"><em>2.1 Civil & Power Design Overview</em></a>
+                    <a id="link-7" class="nav-link bullet-2-link" onclick="onClickActive(event)" href="#item2-2"><em>2.2 Civil & Power Design Scenarios</em></a>
+                    <a id="link-7" class="nav-link bullet-2-link" onclick="onClickActive(event)" href="#item2-3"><em>2.3 Civil & Power Design Inputs Description</em></a>
+                    <a id="link-7" class="nav-link bullet-2-link" onclick="onClickActive(event)" href="#item2-4"><em>2.4 Power System Overview</em></a>
+                    <a id="link-7" class="nav-link bullet-2-link" onclick="onClickActive(event)" href="#item2-5"><em>2.5 Core Site Layout Overview</em></a>
+                    </nav>
+                </nav>
+           </section>
+
+           <section id="fm" hidden>
+            <div id="content"> 
+
+                <div data-spy="scroll" data-target="#navbar-example3" data-offset="0">
+                    <h1><a class="titulo-h1 anchor-bum color-luminati-2" name="item3">3                        Power System Design</a></h1>
+                        
+                        <p class="normal-text">This section provides guidelines for collecting and                        preparing the necessary information and the procedures to dimension and select                        the basic components of the power distribution system that feeds a Core site.</p>
+                        
+                        <br><h2><a class="titulo-h2 anchor-bum color-luminati-2" name="item3-1">3.1                        Power System Design Process</a></h2>
+                        
+                        <p class="normal-text">To ensure the Core Site always ends up with the right power                        system, NaaS Operators may consider the following process:</p>
+                        
+                        <p class="normal-text">Firstly, NaaS operators should identify their scenario as                        was described in Section 2, then the load calculation of the equipment is                        performed in order to properly size and select the UPS system and PDU. If NaaS                        operators decide to build their own facility the electrical distribution design                        must be performed, and the additional loads such as cooling and lights must be                        calculated in order to calculate the overall capacity of their facility and                        optionally size a diesel generator and switchgear. This process is represented                        in the diagram of Figure 8.</p>
+                        
+                        <p class="normal-text">                        <img class="myImg" class="myImg" width=470 height=511 id=image24.png                        src="images/civil_power_core/image008.jpg"></p>
+                        
+                        <p align=center><i>Figure 8                        Civil and Power Design for Core Sites Process Diagram</i></p>
+                        
+                        <p class="normal-text">The following sections will provide methodologies to assist                        NaaS Operators in each step of the Power System Design.</p>
+                        
+                        <br><h2><a class="titulo-h2 anchor-bum color-luminati-2" name="item3-2">3.2                        Critical Load Calculation</a></h2>
+                        
+                        <p class="normal-text">The critical load is all of the hardware components that                        make up the NaaS Operators Core site: servers, routers, storage devices,                        telecommunications equipment, etc. The Critical Load Calculation is used to                        choose the right UPS that will protect the equipment and guarantee a certain                        level of availability. If the Design will be performed at the facility level                        the critical loads include security systems, fire and monitoring systems that                        protect the equipment. The following steps will assist in estimating the                        capacity required for the critical load:</p>
+                        
+                        <ol class="normal-text ul-iconos" style='margin-top:0in' start=1 type=1>
+	                        <li class="normal-text"><b>List all                             the equipment that will be connected to the UPS</b><br>A proper planning                            exercise in developing a power system begins identifying the equipment that is                            the critical load that will be served and protected. The Core LLD has among its                            outputs a Bill of Materials which includes the equipment that hosts the Core functions. This equipment should be considered as                            the critical load.</li>
+                        </ol>
+                        
+                        <ol class="normal-text ul-iconos" style='margin-top:0in' start=2 type=1>
+	                        <li class="normal-text"><b>Determine                             how many volts and amperes every device on the list draws.</b><br>After obtaining a list                            of the critical loads, with their nameplate power rating, it is possible to                            obtain their voltage and current requirements. Nameplate power requirements are                            the worst-case power consumption numbers. Please note that relying solely on                            nameplate ratings may lead to oversize the UPS system, most major manufacturers                            have Web-based or downloadable sizing tools that can closely calculate the                            equipments power draw based on the configuration that will be installed.</li>
+                        </ol>
+                                                
+                        <ol class="normal-text ul-iconos" style='margin-top:0in' start=3 type=1>
+	                        <li class="normal-text"><b>For                             each device, multiply volts by amps to calculate the power in Watts.</b><br>If the wattage is not                            listed on the device, it can be determined by multiplying the current (amperes)                            by the voltage of the device to get the watts.</li>
+                        
+                            <li class="normal-text"><b>Add                             all the Watts of each device.</b><br>The total load is the Sum of all the power consumption of the devices                            listed as a critical load.</li>
+
+                            <li class="normal-text"><b>Multiply                             that sum by 1.2, to build in room for growth. </b><br>                             The nameplate information must then be adjusted to reflect the true                            anticipated load. If the NaaS Operator anticipates rapid near- or medium-term                            growth, they should use a multiple higher than 1.2 when building in room for                            growth in the procedure above. </li>
+                        </ol>
+                        
+                        <br><h2><a class="titulo-h2 anchor-bum color-luminati-2" name="item3-3">3.3                        UPS Sizing and selection</a></h2>
+                        
+                        <p class="normal-text">In order to size and select a UPS that protects the Critical                        Loads in an efficient way, this section provides guidelines to properly choose                        a UPS based on the UPS design options, the required capacity or <i>rate</i>                        that the UPS must provide and UPS form factor options. </p>
+                        
+                        <h3 style='margin-left:.5in;text-indent:-.5in'>3.3.1 UPS                        Design Options</h3>
+                        
+                        <p class="normal-text">A variety of design approaches are used to implement UPS                        systems, each with distinct performance characteristics. The most common                        designs used in core facilities and data centers are:</p>
+                        
+                        <ul class="normal-text ul-iconos" style='margin-top:0in' start=1 type=1>
+                            <li>Line-interactive</li>
+                            <li>Double conversion on-line</li>
+                            <li>Delta conversion on-line UPS</li>
+                        </ul>
+                        
+                        <p class="normal-text">The following subsections provide a short description and                        recommendations to choose between these different designs.</p>
+                        
+                        <h4 style='margin-left:.6in;text-indent:-.6in'>3.3.1.1 The                        line-interactive UPS</h4>
+                        
+                        <p class="normal-text">The line-interactive UPS, illustrated in Figure 9, is the                        most common design used for small data centers. In this design, the                        battery-to-AC power converter (inverter) is always connected to the output of                        the UPS. In this way, the inverter operates in reverse mode when the input AC                        power is normal providing battery charging.</p>
+                        
+                        <p class="normal-text"><img class="myImg" width=524                        height=208 id=image11.png                        src="images/civil_power_core/image009.jpg"></p>
+                        
+                        <p align=center><i>Figure 9.                        Line-interactive UPS</i></p>
+                        
+                        <p class="normal-text">When the input power fails, the transfer switch opens and                        the power flows from the battery to the UPS output. With the inverter always on                        and connected to the output, this design provides additional filtering and                        yields reduced switching transients when compared with the standby UPS                        topology.</p>
+                        
+                        <p class="normal-text">In addition, the line-interactive design usually                        incorporates a tap-changing transformer. This adds voltage regulation by                        adjusting transformer taps as the input voltage varies. Voltage regulation is                        an important feature when low voltage conditions exist, otherwise, the UPS                        would transfer to the battery and then eventually down the load. </p>
+                        
+                        <p class="normal-text">For NaaS Operators whose critical load is in the 0.5 to 5                        kVA power range, the recommended option is the line interactive design due to                        the High efficiency, small size, low cost and high reliability coupled with the                        ability to correct low or high line voltage.</p>
+                        
+                        <h4 style='margin-left:.6in;text-indent:-.6in'>3.3.1.2 The                        double-conversion online UPS</h4>
+                        
+                        <p class="normal-text">In the double conversion on-line design, failure of the                        input AC does not cause activation of the transfer switch, because the input AC                        is charging the backup battery source which provides power to the output                        inverter. Therefore, during an input AC power failure, on-line operation                        results in no transfer time. Both the battery charger and the inverter convert                        the entire load power flow in this design.</p>
+                        
+                        <p class="normal-text">This UPS provides nearly ideal electrical output                        performance. But the constant wear on the power components reduces reliability                        over other designs. Also, the input power drawn by the large battery charger                        may be non-linear which can interfere with building power wiring or cause                        problems with standby generators. The block diagram of the double-conversion on-line                        UPS is illustrated in Figure 10.</p>
+                        
+                        <p class="normal-text"></p>
+                        
+                        <p class="normal-text"><img class="myImg" width=447                        height=257 id=image4.png                        src="images/civil_power_core/image010.jpg"></p>
+                        
+                        <p align=center><i>Figure 10.                        Double conversion online UPS</i></p>
+                        
+                        <p class="normal-text">Generally, double-conversion online UPS provides higher                        availability. Using the static bypass switch allows maintenance of the system                        without interrupting the power supply. Additionally, this provides the highest                        levels of protection, completely isolating the critical load from the utility                        during normal operations.</p>
+                        
+                        <p class="normal-text">Double conversion online UPS is highly recommended for                        critical loads that demand more than 5KVA.</p>
+                        
+                        <h4 style='margin-left:.6in;text-indent:-.6in'>3.3.1.3 The                        delta conversion on-line UPS</h4>
+                        
+                        <p class="normal-text">This UPS design, illustrated in Figure 11, eliminates the                        drawbacks of the double conversion on-line design and is available in sizes                        ranging from 5 kVA to 1.6 MW. Similar to the double conversion on-line design,                        the delta conversion on-line UPS always has the inverter supplying the load                        voltage. Under conditions of AC failure or disturbances, this design exhibits                        behavior identical to the double conversion on-line. However, the additional                        delta converter also contributes power to the inverter output which the most                        important benefit is a significant reduction in energy losses.</p>
+                        
+                        <p class="normal-text"><img class="myImg" width=478 height=286 id=image10.png                        src="images/civil_power_core/image011.jpg"></p>
+                        
+                        <p align=center><i>Figure 11                        Delta conversion online UPS</i></p>
+                        
+                        <p class="normal-text">However, Delta conversions online UPS have a higher cost per                        VA compared with other designs. Which made a Delta conversion online UPS a good                        option for critical loads that demands more than 10 kVA. </p>
+                        
+                        <p class="normal-text">Table 2 shows some of the characteristics of the various UPS                        types. Some attributes of a UPS, like efficiency, are dictated by the choice of                        UPS type:</p>
+                        
+                        <div align=center>
+                        <table class=a1 border=1 cellspacing=0 cellpadding=0 width=589
+                         style='border-collapse:collapse;border:none'>
+                         <tr>
+                          <td width=98 valign=top style='width:73.55pt;border-top:#1F4E79;border-left:
+                          #1F4E79;border-bottom:#95B3D7;border-right:#95B3D7;border-style:solid;
+                          border-width:1.0pt;background:#1F4E79;padding:0in 5.4pt 0in 5.4pt'>
+                          <align=center style="color:#FFF"><b>UPS Design</b></p>                          </td>                          <td width=98 valign=top style='width:73.55pt;border-top:solid #1F4E79 1.0pt;                          border-left:none;border-bottom:solid #95B3D7 1.0pt;border-right:solid #95B3D7 1.0pt;                          background:#1F4E79;padding:0in 5.4pt 0in 5.4pt'>                          <p align=center style="color:#FFF"><b>Practical power range (kVA)</b></p>                          </td>                          <td width=98 valign=top style='width:73.55pt;border-top:solid #1F4E79 1.0pt;                          border-left:none;border-bottom:solid #95B3D7 1.0pt;border-right:solid #95B3D7 1.0pt;                          background:#1F4E79;padding:0in 5.4pt 0in 5.4pt'>                          <p align=center style="color:#FFF"><b>Voltage Conditioning</b></p>                          </td>                          <td width=98 valign=top style='width:73.55pt;border-top:solid #1F4E79 1.0pt;                          border-left:none;border-bottom:solid #95B3D7 1.0pt;border-right:solid #95B3D7 1.0pt;                          background:#1F4E79;padding:0in 5.4pt 0in 5.4pt'>                          <p align=center style="color:#FFF"><b>Cost per VA</b></p>                          </td>                          <td width=98 valign=top style='width:73.6pt;border-top:solid #1F4E79 1.0pt;                          border-left:none;border-bottom:solid #95B3D7 1.0pt;border-right:solid #95B3D7 1.0pt;                          background:#1F4E79;padding:0in 5.4pt 0in 5.4pt'>                          <p align=center style="color:#FFF"><b>Efficiency</b></p>                          </td>                          <td width=98 valign=top style='width:73.6pt;border-top:solid #1F4E79 1.0pt;                          border-left:none;border-bottom:solid #95B3D7 1.0pt;border-right:solid #1F4E79 1.0pt;                          background:#1F4E79;padding:0in 5.4pt 0in 5.4pt'>                          <p align=center style="color:#FFF"><b>Inverter always operating</b></p>                          </td>                         </tr>                         <tr>                          <td width=98 valign=top style='width:73.55pt;border-top:none;border-left:                          solid #1F4E79 1.0pt;border-bottom:solid #95B3D7 1.0pt;border-right:solid #95B3D7 1.0pt;                          padding:0in 5.4pt 0in 5.4pt'>                          <p class="normal-text">Line interactive</p>                          </td>                          <td width=98 valign=top style='width:73.55pt;border-top:none;border-left:                          none;border-bottom:solid #95B3D7 1.0pt;border-right:solid #95B3D7 1.0pt;                          padding:0in 5.4pt 0in 5.4pt'>                          <p class="normal-text">0.5-5</p>                          </td>                          <td width=98 valign=top style='width:73.55pt;border-top:none;border-left:                          none;border-bottom:solid #95B3D7 1.0pt;border-right:solid #95B3D7 1.0pt;                          padding:0in 5.4pt 0in 5.4pt'>                          <p class="normal-text">Design Dependent</p>                          </td>                          <td width=98 valign=top style='width:73.55pt;border-top:none;border-left:                          none;border-bottom:solid #95B3D7 1.0pt;border-right:solid #95B3D7 1.0pt;                          padding:0in 5.4pt 0in 5.4pt'>                          <p class="normal-text">Medium</p>                          </td>                          <td width=98 valign=top style='width:73.6pt;border-top:none;border-left:none;                          border-bottom:solid #95B3D7 1.0pt;border-right:solid #95B3D7 1.0pt;                          padding:0in 5.4pt 0in 5.4pt'>                          <p class="normal-text">Very High</p>                          </td>                          <td width=98 valign=top style='width:73.6pt;border-top:none;border-left:none;                          border-bottom:solid #95B3D7 1.0pt;border-right:solid #1F4E79 1.0pt;                          padding:0in 5.4pt 0in 5.4pt'>                          <p class="normal-text">Design Dependent</p>                          </td>                         </tr>                         <tr>                          <td width=98 valign=top style='width:73.55pt;border-top:none;border-left:                          solid #1F4E79 1.0pt;border-bottom:solid #95B3D7 1.0pt;border-right:solid #95B3D7 1.0pt;                          padding:0in 5.4pt 0in 5.4pt'>                          <p class="normal-text">Double conversion                          on-line</p>                          </td>                          <td width=98 valign=top style='width:73.55pt;border-top:none;border-left:                          none;border-bottom:solid #95B3D7 1.0pt;border-right:solid #95B3D7 1.0pt;                          padding:0in 5.4pt 0in 5.4pt'>                          <p class="normal-text">5-5000</p>                          </td>                          <td width=98 valign=top style='width:73.55pt;border-top:none;border-left:                          none;border-bottom:solid #95B3D7 1.0pt;border-right:solid #95B3D7 1.0pt;                          padding:0in 5.4pt 0in 5.4pt'>                          <p class="normal-text">High</p>                          </td>                          <td width=98 valign=top style='width:73.55pt;border-top:none;border-left:                          none;border-bottom:solid #95B3D7 1.0pt;border-right:solid #95B3D7 1.0pt;                          padding:0in 5.4pt 0in 5.4pt'>                          <p class="normal-text">Medium</p>                          </td>                          <td width=98 valign=top style='width:73.6pt;border-top:none;border-left:none;                          border-bottom:solid #95B3D7 1.0pt;border-right:solid #95B3D7 1.0pt;                          padding:0in 5.4pt 0in 5.4pt'>                          <p class="normal-text">Low-Medium</p>                          </td>                          <td width=98 valign=top style='width:73.6pt;border-top:none;border-left:none;                          border-bottom:solid #95B3D7 1.0pt;border-right:solid #1F4E79 1.0pt;                          padding:0in 5.4pt 0in 5.4pt'>                          <p class="normal-text">Yes</p>                          </td>                         </tr>                         <tr>                          <td width=98 valign=top style='width:73.55pt;border-top:none;border-left:                          solid #1F4E79 1.0pt;border-bottom:solid #1F4E79 1.0pt;border-right:solid #95B3D7 1.0pt;                          padding:0in 5.4pt 0in 5.4pt'>                          <p class="normal-text">Delta Conversion on-line</p>                          </td>                          <td width=98 valign=top style='width:73.55pt;border-top:none;border-left:                          none;border-bottom:solid #1F4E79 1.0pt;border-right:solid #95B3D7 1.0pt;                          padding:0in 5.4pt 0in 5.4pt'>                          <p class="normal-text">5-5000</p>                          </td>                          <td width=98 valign=top style='width:73.55pt;border-top:none;border-left:                          none;border-bottom:solid #1F4E79 1.0pt;border-right:solid #95B3D7 1.0pt;                          padding:0in 5.4pt 0in 5.4pt'>                          <p class="normal-text">High</p>                          </td>                          <td width=98 valign=top style='width:73.55pt;border-top:none;border-left:                          none;border-bottom:solid #1F4E79 1.0pt;border-right:solid #95B3D7 1.0pt;                          padding:0in 5.4pt 0in 5.4pt'>                          <p class="normal-text">Medium-High</p>                          </td>                          <td width=98 valign=top style='width:73.6pt;border-top:none;border-left:none;                          border-bottom:solid #1F4E79 1.0pt;border-right:solid #95B3D7 1.0pt;                          padding:0in 5.4pt 0in 5.4pt'>                          <p class="normal-text">Medium</p>                          </td>                          <td width=98 valign=top style='width:73.6pt;border-top:none;border-left:none;                          border-bottom:solid #1F4E79 1.0pt;border-right:solid #1F4E79 1.0pt;                          padding:0in 5.4pt 0in 5.4pt'>                          <p class="normal-text">Yes</p>                          </td>                         </tr>                        </table>                        </div>                                                <p align=center><i>Table 2. UPS                        characteristics</i></p>                                                <h3 style='margin-left:.5in;text-indent:-.5in'>3.3.2 UPS                        Capacity Ratings</h3>                                                <p class="normal-text">The watt rating of the UPS relates to the amount of power it                        can deliver, and the VA rating of the UPS relates to the amount of current it                        can deliver. Neither the Watt nor the VA rating of the UPS can be exceeded.</p>                                                <p class="normal-text">In practice, the best approach to size a UPS is to use the                        Watt rating of the load. If there is confusion regarding power ratings, and it                        is desirable to ensure the load can be powered by the UPS, then choosing a UPS                        with a Watt rating greater than or equal to the VA rating of the load will                        always ensure a safety margin. Additionally, the UPS efficiency should be                        considered.</p>                                                <p class="normal-text">UPS efficiency is based on how much of the original incoming                        power is needed to operate the UPS. For example, an uninterruptible power                        supply with a 95% efficiency rating will have 95% of the original input                        powering the load and connected systems, with the remaining 5% energy wasted                        running the UPS. </p>                                                <p class="normal-text">For a UPS, higher efficiency equates to lower losses of electrical                        energy in terms of heat output  low-efficiency UPS often require more air                        conditioning to help keep ambient temperatures safe. </p>                                                <p class="normal-text">Even a 1% or 2% improvement in operating efficiency can add                        to up substantial energy costs over the full-service life of a UPS (i.e.                        approximately 10 years), particularly for larger systems with higher power                        ratings. However, in any discussion about UPS efficiency, its worth keeping                        two things in mind: </p>                                                <ul class="normal-text ul-iconos" style='margin-top:0in' start=1 type=1>                            <li>Different UPS systems have different                            efficiencies </li>                            <li>The same UPS has different efficiency depending on the load                            level. </li>                        </ul>                                                <p class="normal-text">The efficiency ratings that UPS manufacturers publish are                        based on running in online operating mode with a 100% fully rated load. But as                        the load reduces, so does UPS efficiency. As an example, a UPS running at                        20-25% load may only be capable of 85% efficiency. In practical terms, a                        realistic and sufficiently accurate value for UPS efficiency for a typical                        installation is 88%. This approach is summarized in Equation 1:</p>                        <br>                        <i><img width=237 height=18                            src="images/civil_power_core/image012.png" style="margin-right:15px;"></i>                        <p class="normal-text" style="float: right;">(Eq. 1) </p>                        <br><br>                                                                         <p class="normal-text">This method is illustrated in the following example:</p>                                                <div style='border:solid black 1.0pt;padding:1.0pt 4.0pt 1.0pt 4.0pt;                        background:#F2F2F2'>                                                <p class="normal-text"><b>Example:</b></p>                                                <p class="normal-text"><b>Estimate the UPS rate if the critical load connected to the                        UPS consume 1200W.</b></p>                                                <p class="normal-text"><b>Solution:</b></p>                                                <p class="normal-text"><b>Using Eq1:</b></p>                                                </div>                                                <p class="normal-text"><img                        width=446 height=18                        src="images/civil_power_core/image013.png"></p>                                                <div style='border:solid black 1.0pt;padding:1.0pt 4.0pt 1.0pt 4.0pt;                        background:#F2F2F2'>                                                <p class="normal-text"><i>Therefore, the required UPS must be capable to provide at least                        1365W</i></p>                                                </div>                                                <h3 style='margin-left:.5in;text-indent:-.5in'>3.3.3 UPS                        Form Factor</h3>                                                <p class="normal-text">UPSs come in a range of form factors that fit into two                        master categories: rack-mounted and freestanding. High rated UPSs are not                        available in rack-mounted form factors, so companies with substantial power                        requirements almost always use freestanding devices. </p>                                                <p class="normal-text">For NaaS operators with more modest needs, deciding between                        rack-mounted and freestanding UPSs is largely a matter of design preference.                        Some organizations use rack-mounted UPSs in an effort to consolidate as much                        hardware as possible in their enclosures. Others prefer to maximize the amount                        of rack space available for servers by using freestanding UPSs. </p>                                                <p class="normal-text">From a technical and financial standpoint, neither approach                        is inherently superior to the other. Figure 12 shows different form factors for                        UPS ranges from 700 VA to 1100 kVA.</p>                                                <p class="normal-text">A use case example of the Rack Mount is in the scenario                        where NaaS Operators lease a space within a data center. In this case, the available                        space becomes a priority to consider.</p>                                                <p class="normal-text">Commonly, Rack Mount UPSs are used for low power consumption                        configurations of less than 20kVA and are installed close to the critical                        loads. The high rated UPS of more than 20kVA is used in Centralized configurations.                        The high rated UPS is designed to be a central backup for multiple loads.</p>                                                <p class="normal-text"></p>                                                <p class="normal-text"><img class="myImg"                        width=496 height=347 id=image8.png                        src="images/civil_power_core/image014.jpg"></p>                                                <p align=center><i>Figure 12. UPS                        Form Factors</i></p>                                                <p class="normal-text">NaaS Operator may consider rack mount UPS if is not planed a                        growth of the required IT equipment within the rack. However, if it is planned                        to add more equipment, NaaS Operators may consider Scalable Modular UPS to                        allow more space within the rack and add more power capacity if it is required.                        </p>                                                <p class="normal-text">In cases where the Critical load exceeds 20kW NaaS Operators                        should consider a Large Tower UPS as a centralized unit. In this case is                        suggested that NaaS Operators look for electrical consultant services to                        properly design the architecture and select the right equipment for their core                        site.</p>                                                <h3 style='margin-left:.5in;text-indent:-.5in'>3.3.4 UPS                        Evaluation Matrix</h3>                                                <p class="normal-text">After selecting the UPS type, capacity and form factor,                        there are additional considerations to select a UPS. A best practice is to                        narrow down to a few different UPS models, NaaS Operators may use Table 3 as a                        checklist to evaluate competing vendors.</p>                        <div align=center>                        <table class=a3 border=1 cellspacing=0 cellpadding=0 width=589                         style='border-collapse:collapse;border:none'>                         <tr>                          <td width=450 valign=top style='width:337.25pt;border-top:#1F4E79;border-left:                          #1F4E79;border-bottom:#95B3D7;border-right:#95B3D7;border-style:solid;                          border-width:1.0pt;background:#1F4E79;padding:0in 5.4pt 0in 5.4pt'>                          <p align=center style='color:#fff;'><b>Factor</b></p>                          </td>                          <td width=66 valign=top style='width:49.5pt;border-top:solid #1F4E79 1.0pt;                          border-left:none;border-bottom:solid #95B3D7 1.0pt;border-right:solid #95B3D7 1.0pt;                          background:#1F4E79;padding:0in 5.4pt 0in 5.4pt'>                          <p align=center style='color:#fff;'><b>UPS 1</b></p>                          </td>                          <td width=73 valign=top style='width:54.65pt;border-top:solid #1F4E79 1.0pt;                          border-left:none;border-bottom:solid #95B3D7 1.0pt;border-right:solid #1F4E79 1.0pt;                          background:#1F4E79;padding:0in 5.4pt 0in 5.4pt'>                          <p align=center style='color:#fff;'><b>UPS 2</b></p>                          </td>                         </tr>                         <tr>                          <td width=450 valign=top style='width:337.25pt;border-top:none;border-left:                          solid #1F4E79 1.0pt;border-bottom:solid #95B3D7 1.0pt;border-right:solid #95B3D7 1.0pt;                          padding:0in 5.4pt 0in 5.4pt'>                          <p class="normal-text"><b>Voltage</b></p>                          <p class="normal-text">Be sure the input and output                          voltages are the same. </p>                          </td>                          <td width=66 valign=top style='width:49.5pt;border-top:none;border-left:none;                          border-bottom:solid #95B3D7 1.0pt;border-right:solid #95B3D7 1.0pt;                          padding:0in 5.4pt 0in 5.4pt'>                          <p class="normal-text"></p>                          </td>                          <td width=73 valign=top style='width:54.65pt;border-top:none;border-left:                          none;border-bottom:solid #95B3D7 1.0pt;border-right:solid #1F4E79 1.0pt;                          padding:0in 5.4pt 0in 5.4pt'>                          <p class="normal-text"></p>                          </td>                         </tr>                         <tr>                          <td width=450 valign=top style='width:337.25pt;border-top:none;border-left:                          solid #1F4E79 1.0pt;border-bottom:solid #95B3D7 1.0pt;border-right:solid #95B3D7 1.0pt;                          padding:0in 5.4pt 0in 5.4pt'>                          <p class="normal-text"><b>Input plug</b></p>                          <p class="normal-text">Do both UPSs have the                          same input plug? Does it match the wall socket? UPSs 1500 VA and below can be                          plugged right into a standard wall socket. Larger models may require an                          electrician to install a new wall socket.</p>                          </td>                          <td width=66 valign=top style='width:49.5pt;border-top:none;border-left:none;                          border-bottom:solid #95B3D7 1.0pt;border-right:solid #95B3D7 1.0pt;                          padding:0in 5.4pt 0in 5.4pt'>                          <p class="normal-text"></p>                          </td>                          <td width=73 valign=top style='width:54.65pt;border-top:none;border-left:                          none;border-bottom:solid #95B3D7 1.0pt;border-right:solid #1F4E79 1.0pt;                          padding:0in 5.4pt 0in 5.4pt'>                          <p class="normal-text"></p>                          </td>                         </tr>                         <tr>                          <td width=450 valign=top style='width:337.25pt;border-top:none;border-left:                          solid #1F4E79 1.0pt;border-bottom:solid #95B3D7 1.0pt;border-right:solid #95B3D7 1.0pt;                          padding:0in 5.4pt 0in 5.4pt'>                          <p class="normal-text"><b>Output receptacles</b></p>                          <p class="normal-text">Does each UPS have the                          same quantity of output receptacles? The same type? Be sure the UPS has                          enough output receptacles and that theyll accommodate the power cords of the                          servers, etc.</p>                          </td>                          <td width=66 valign=top style='width:49.5pt;border-top:none;border-left:none;                          border-bottom:solid #95B3D7 1.0pt;border-right:solid #95B3D7 1.0pt;                          padding:0in 5.4pt 0in 5.4pt'>                          <p class="normal-text"></p>                          </td>                          <td width=73 valign=top style='width:54.65pt;border-top:none;border-left:                          none;border-bottom:solid #95B3D7 1.0pt;border-right:solid #1F4E79 1.0pt;                          padding:0in 5.4pt 0in 5.4pt'>                          <p class="normal-text"></p>                          </td>                         </tr>                         <tr>                          <td width=450 valign=top style='width:337.25pt;border-top:none;border-left:                          solid #1F4E79 1.0pt;border-bottom:solid #95B3D7 1.0pt;border-right:solid #95B3D7 1.0pt;                          padding:0in 5.4pt 0in 5.4pt'>                          <p class="normal-text"><b>Warranty</b></p>                          <p class="normal-text">Are the warranties the                          same duration? How long does the warranty cover the batteries?</p>                          </td>                          <td width=66 valign=top style='width:49.5pt;border-top:none;border-left:none;                          border-bottom:solid #95B3D7 1.0pt;border-right:solid #95B3D7 1.0pt;                          padding:0in 5.4pt 0in 5.4pt'>                          <p class="normal-text"></p>                          </td>                          <td width=73 valign=top style='width:54.65pt;border-top:none;border-left:                          none;border-bottom:solid #95B3D7 1.0pt;border-right:solid #1F4E79 1.0pt;                          padding:0in 5.4pt 0in 5.4pt'>                          <p class="normal-text"></p>                          </td>                         </tr>                         <tr>                          <td width=450 valign=top style='width:337.25pt;border-top:none;border-left:                          solid #1F4E79 1.0pt;border-bottom:solid #95B3D7 1.0pt;border-right:solid #95B3D7 1.0pt;                          padding:0in 5.4pt 0in 5.4pt'>                          <p class="normal-text"><b>User interface</b></p>                          <p class="normal-text">Do both UPSs utilize the                          same interface? Do both have an intuitive LCD or basic LEDs?</p>                          </td>                          <td width=66 valign=top style='width:49.5pt;border-top:none;border-left:none;                          border-bottom:solid #95B3D7 1.0pt;border-right:solid #95B3D7 1.0pt;                          padding:0in 5.4pt 0in 5.4pt'>                          <p class="normal-text"></p>                          </td>                          <td width=73 valign=top style='width:54.65pt;border-top:none;border-left:                          none;border-bottom:solid #95B3D7 1.0pt;border-right:solid #1F4E79 1.0pt;                          padding:0in 5.4pt 0in 5.4pt'>                          <p class="normal-text"></p>                          </td>                         </tr>                         <tr>                          <td width=450 valign=top style='width:337.25pt;border-top:none;border-left:                          solid #1F4E79 1.0pt;border-bottom:solid #95B3D7 1.0pt;border-right:solid #95B3D7 1.0pt;                          padding:0in 5.4pt 0in 5.4pt'>                          <p class="normal-text"><b>Network card</b></p>                          <p class="normal-text">Is remote monitoring                          required? Does the UPS include Network card? Some UPSs include a card while                          others dont, and this can impact the price. In cases where the Core site                          accessibility is not granted is a good option to consider a UPS with a                          Network card. </p>                          </td>                          <td width=66 valign=top style='width:49.5pt;border-top:none;border-left:none;                          border-bottom:solid #95B3D7 1.0pt;border-right:solid #95B3D7 1.0pt;                          padding:0in 5.4pt 0in 5.4pt'>                          <p class="normal-text"></p>                          </td>                          <td width=73 valign=top style='width:54.65pt;border-top:none;border-left:                          none;border-bottom:solid #95B3D7 1.0pt;border-right:solid #1F4E79 1.0pt;                          padding:0in 5.4pt 0in 5.4pt'>                          <p class="normal-text"></p>                          </td>                         </tr>                         <tr>                          <td width=450 valign=top style='width:337.25pt;border-top:none;border-left:                          solid #1F4E79 1.0pt;border-bottom:solid #95B3D7 1.0pt;border-right:solid #95B3D7 1.0pt;                          padding:0in 5.4pt 0in 5.4pt'>                          <p class="normal-text"><b>Software</b></p>                          <p class="normal-text">Do both UPSs have                          equivalent software capabilities? For example, if integration into VMware                          vCenter is a priority, be sure the UPS software can do it.</p>                          </td>                          <td width=66 valign=top style='width:49.5pt;border-top:none;border-left:none;                          border-bottom:solid #95B3D7 1.0pt;border-right:solid #95B3D7 1.0pt;                          padding:0in 5.4pt 0in 5.4pt'>                          <p class="normal-text"></p>                          </td>                          <td width=73 valign=top style='width:54.65pt;border-top:none;border-left:                          none;border-bottom:solid #95B3D7 1.0pt;border-right:solid #1F4E79 1.0pt;                          padding:0in 5.4pt 0in 5.4pt'>                          <p class="normal-text"></p>                          </td>                         </tr>                         <tr>                          <td width=450 valign=top style='width:337.25pt;border-top:none;border-left:                          solid #1F4E79 1.0pt;border-bottom:solid #95B3D7 1.0pt;border-right:solid #95B3D7 1.0pt;                          padding:0in 5.4pt 0in 5.4pt'>                          <p class="normal-text"><b>Mounting hardware</b></p>                          <p class="normal-text">The UPS will be mounted                          in a rack enclosure or 2-post rack? If the mounting is not included with the                          UPS, will be required to purchase the hardware separately.</p>                          </td>                          <td width=66 valign=top style='width:49.5pt;border-top:none;border-left:none;                          border-bottom:solid #95B3D7 1.0pt;border-right:solid #95B3D7 1.0pt;                          padding:0in 5.4pt 0in 5.4pt'>                          <p class="normal-text"></p>                          </td>                          <td width=73 valign=top style='width:54.65pt;border-top:none;border-left:                          none;border-bottom:solid #95B3D7 1.0pt;border-right:solid #1F4E79 1.0pt;                          padding:0in 5.4pt 0in 5.4pt'>                          <p class="normal-text"></p>                          </td>                         </tr>                         <tr>                          <td width=450 valign=top style='width:337.25pt;border-top:none;border-left:                          solid #1F4E79 1.0pt;border-bottom:solid #95B3D7 1.0pt;border-right:solid #95B3D7 1.0pt;                          padding:0in 5.4pt 0in 5.4pt'>                          <p class="normal-text"><b>Rack height</b></p>                          <p class="normal-text">If a rack mount UPS is                          selected, are they of the same rack height (U)? For example, going with a 1U                          UPS over a 2U model may allow to fit another server in the rack.</p>                          </td>                          <td width=66 valign=top style='width:49.5pt;border-top:none;border-left:none;                          border-bottom:solid #95B3D7 1.0pt;border-right:solid #95B3D7 1.0pt;                          padding:0in 5.4pt 0in 5.4pt'>                          <p class="normal-text"></p>                          </td>                          <td width=73 valign=top style='width:54.65pt;border-top:none;border-left:                          none;border-bottom:solid #95B3D7 1.0pt;border-right:solid #1F4E79 1.0pt;                          padding:0in 5.4pt 0in 5.4pt'>                          <p class="normal-text"></p>                          </td>                         </tr>                         <tr>                          <td width=450 valign=top style='width:337.25pt;border-top:none;border-left:                          solid #1F4E79 1.0pt;border-bottom:solid #95B3D7 1.0pt;border-right:solid #95B3D7 1.0pt;                          padding:0in 5.4pt 0in 5.4pt'>                          <p class="normal-text"><b>Maintenance bypass</b></p>                          <p class="normal-text">It has been considered                          the price of a maintenance bypass module that will allow to keep the IT                          equipment up and running if it is needed to replace the UPS or if the UPS                          fails?</p>                          </td>                          <td width=66 valign=top style='width:49.5pt;border-top:none;border-left:none;                          border-bottom:solid #95B3D7 1.0pt;border-right:solid #95B3D7 1.0pt;                          padding:0in 5.4pt 0in 5.4pt'>                          <p class="normal-text"></p>                          </td>                          <td width=73 valign=top style='width:54.65pt;border-top:none;border-left:                          none;border-bottom:solid #95B3D7 1.0pt;border-right:solid #1F4E79 1.0pt;                          padding:0in 5.4pt 0in 5.4pt'>                          <p class="normal-text"></p>                          </td>                         </tr>                         <tr>                          <td width=450 valign=top style='width:337.25pt;border-top:none;border-left:                          solid #1F4E79 1.0pt;border-bottom:solid #1F4E79 1.0pt;border-right:solid #95B3D7 1.0pt;                          padding:0in 5.4pt 0in 5.4pt'>                          <p class="normal-text"><b>Batteries</b></p>                          <p class="normal-text">It has been considered                          the cost of additional battery packs? The cost of replacing the batteries in                          the UPS?</p>                          </td>                          <td width=66 valign=top style='width:49.5pt;border-top:none;border-left:none;                          border-bottom:solid #1F4E79 1.0pt;border-right:solid #95B3D7 1.0pt;                          padding:0in 5.4pt 0in 5.4pt'>                          <p class="normal-text"></p>                          </td>                          <td width=73 valign=top style='width:54.65pt;border-top:none;border-left:                          none;border-bottom:solid #1F4E79 1.0pt;border-right:solid #1F4E79 1.0pt;                          padding:0in 5.4pt 0in 5.4pt'>                          <p class="normal-text"></p>                          </td>                         </tr>                        </table>                        </div>                                                <p align=center><i>Table 3. UPS                        Evaluation Matrix</i></p>                                                <br><h2><a class="titulo-h2 anchor-bum color-luminati-2" name="item3-4">3.4                        Power Distribution Unit Selection</a></h2>
+                        
+                        <p class="normal-text">Power distribution units (PDU) are available with a variety                        of different features, power ratings, and input and output cord combinations.                        Depending on the architecture, PDUs may act as a centralized unit to distribute                        the power to a row of racks or distribute the power directly to the IT                        equipment mounted inside the rack.</p>
+                        
+                        <p class="normal-text">Centralized PDU may have several regulated outputs for                        multiple loads, typically this type of PDUs are rated from 50kVA to 500kVA. In                        this case, NaaS Operators may look for assistance with PDUs vendors, to select                        the PDU suited for large, centralized architectures. </p>
+                        
+                        <p class="normal-text">This section provides guidance to select the rack PDU suited                        for small deployments for less than 50KVA.</p>
+                        
+                        <ol class="normal-text ul-iconos" style='margin-top:0in' start=1 type=1>
+                            <li class="normal-text"><b>Determine                             output plug type and quantity</b><br>The first decisions are                            made based on the application inside the rack. IT equipment in racks can have                            several different plug types. The most common plug types in data centers are                            C-13 and C-19 connectors (see Figure 13). C-13 connectors are usually found on                            servers and small switches, while blades and larger networking equipment use                            the C-19 plug because of its higher current carrying capacity.<br>                                                                        <p class="normal-text"><img class="myImg" width=278                        height=95 id=image5.png                        src="images/civil_power_core/image015.jpg"></p>                                                <p align=center><i>Figure 13                        Output Plug Types</i></p>                                                    NaaS Operators must verify the plug                            type that each IT equipment requires and ensure that the PDU has enough output                            plugs for each type.</li>
+                        </ol>
+                        
+                        <ol class="normal-text ul-iconos" style='margin-top:0in' start=2 type=1>
+                            <li class="normal-text"><b>Estimate                             power capacity</b><br>                            To mitigate the risk of                            overloads that might impact uptime, a common practice is to limit each PDUs to                            &#8804;40A for single-phase or &#8804;32A for                            3-phase applications. Rack PDUs larger than this are seen to expose too much                            equipment at risk of a single circuit breaker overload. If more power is needed                            within a single rack, NaaS Operators must evaluate an additional set of PDUs on                            separate circuits should be installed.</li>
+                        </ol>
+                        
+                        <ol class="normal-text ul-iconos" style='margin-top:0in' start=3 type=1>
+                            <li class="normal-text"><b>Select                             form factor and mounting</b><br>                            Commonly, each piece of                            hardware has redundant power supplies intended to provide power in case the                            other fails. For data center applications, these power supplies are generally                            connected to separate redundant rack PDUs which are, in turn, fed from separate                            sources or circuits. This prevents the entire load from dropping in the event                            of a fault along one power path.<br>                            Rack PDUs install into                            the back of a server cabinet and provide convenient outlets accessible to both                            IT equipment and users that must configure the equipment. Two primary mounting                            orientations, illustrated in Figure 14, are:<br>                                                    <ol class="normal-text ul-iconos" style='margin-top:0in;font-size: 16px;' start=1 type='a'>                                <li class="normal-text">Horizontal 482.6mm (19in) rack-mountable PDUs (a) mainly used with open frame racks and with                                audio/video equipment.</li>
+                                <li class="normal-text">Vertical 0-U PDUs that distribute                                outlets closer to the equipment they power. This style is the preferred                                orientation because they consume no rack U space and allow shorter power cords                                and require less cable management. This orientation provides a clearer and more                                visible power path for every cord. Vertical 0-U PDUs is the recommended form                                factor for datacenter applications.</li>
+                            </ol>
+                        
+                        <p class="normal-text"><img class="myImg"                        width=424 height=212 id=image21.png                        src="images/civil_power_core/image016.jpg"></p>
+                        
+                        <p align=center><i>Figure 14 PDU                        Form factor</i></p>
+                        </li>
+                        </ol>
+                        
+                        <br><h2><a class="titulo-h2 anchor-bum color-luminati-2" name="item3-5">3.5                        Total electrical capacity calculation</a></h2>
+                        
+                        <p class="normal-text">In case that NaaS operators decide to design their own power                        distribution system for their facility, the total electrical capacity should be                        calculated in order to size the electrical service form the Grid and optionally                        size a diesel generator.</p>
+                        
+                        <p class="normal-text">Different power loads have been determined to estimate the                        size of the electrical system that will power the core facility or data center:                        </p>
+                        
+                        <ul class="normal-text ul-iconos" style='margin-top:0in' start=1 type=1>
+                            <li class="normal-text">The total critical load.</li>
+                            <li class="normal-text">Total cooling load. </li>
+                            <li class="normal-text">Lighting loads.</li>
+                            <li class="normal-text">UPS inefficiency loss.</li>
+                        </ul>
+                        
+                        <p class="normal-text">In general, the electrical supply must be large enough to                        support the sum of these loads. Underestimating the required capacity may                        result in future power disruptions, and overestimating leads to excessive                        initial installation costs and higher ongoing maintenance expenses.</p>
+                        
+                        <h3 style='margin-left:.5in;text-indent:-.5in'>3.5.1 UPS                        Loss Calculation</h3>
+                        
+                        <p class="normal-text">The total electrical capacity must include a factor for the                        inefficiency of the UPS system as well as the additional power required for                        battery charging. Following the practical approach described in Section 3.3.2 it is possible to assume the UPS                        efficiency at 88%. Please note that with high consumption applications the best                        approach is to contact UPS manufacturer to obtain the real efficiency of the                        UPS according to the connected load. </p>
+                        
+                        <p class="normal-text">Battery charging is a significant but intermittent power                        consumer. Under normal operation with a charged battery, the charging load is                        negligible. However, when the battery load has been partially or completely                        discharged, the battery charging power can be on the order of 20% of the rated                        UPS load. Although this load is not likely to occur, the generator and service                        entrance must be sized considering this load.</p>
+                        
+                        <p class="normal-text">This can be summarized in the following equation: </p>
+
+                        <br>
+                        <i><img  width=358 height=19 src="images/civil_power_core/image017.png" style="margin-right:15px;"></i>
+                        <p class="normal-text" style="float: right;">(Eq. 2) </p>
+                        <br><br>
+                        
+                        <p class="normal-text">Equation 1 is illustrated with the following example:</p>
+                        
+                        <div style='border:solid black 1.0pt;padding:1.0pt 4.0pt 1.0pt 4.0pt;
+                        background:#F2F2F2'>
+                        
+                        <p class="normal-text"><b>Example:</b></p>
+                        
+                        <p class="normal-text"><b>Calculate the UPS loss if the critical load connected to                        the UPS consume 1200W and the selected UPS have a rate of 2000W</b></p>
+                        
+                        <p class="normal-text"><b>Solution:</b></p>
+                        
+                        <p class="normal-text"><b>Using Eq1:</b></p>
+                        
+                        </div>
+                        <br>
+                        <p class="normal-text"><img                        width=589 height=37                        src="images/civil_power_core/image018.png"></p>
+                        
+                        <h3>3.5.2 Cooling                        loads </h3>
+                        
+                        <p class="normal-text">Servers and related equipment generate a considerable amount                        of heat in a relatively small area, this is known as the heat output. The total                        heat output of a system is the sum of the heat outputs of the components. The                        complete system includes the Core equipment hardware, plus other items such as                        UPS, Power Distribution, Air Conditioning Units, Lighting, and People.                        Fortunately, the heat output rates of these items can be easily determined via                        simple and standardized rules:</p>
+                        
+                        <ol class="normal-text ul-iconos" style='margin-top:0in' start=1 type='a'>
+                            <li class="normal-text">The power transmitted by core equipment through the data                            lines is negligible. Therefore, the power consumed from the AC power mains is                            essentially all converted to heat. This fact allows the use of the equipment                            power consumption in watts as the heat output.</li>
+                        
+                            <li class="normal-text">The heat output of UPS and Power Distribution systems                            consists of a fixed loss and a loss proportional to operating power, PDUs heat                            loss behave in a similar way. These losses are sufficiently consistent across                            equipment brands and models, so they can be approximated without significant                            error. The heat output of the UPS system is calculated using Equation 3 and the                            heat loss of a PDU using Equation 4</li>
+
+                            <br>
+                            <i><img  width=342 height=19 src="images/civil_power_core/image019.png" style="margin-right:15px;"></i>
+                            <p class="normal-text" style="float: right;">(Eq. 3) </p>
+                            <br><br>
+
+                            <br>
+                            <i><img  width=342 height=19 src="images/civil_power_core/image020.png" style="margin-right:15px;"></i>
+                            <p class="normal-text" style="float: right;">(Eq. 4) </p>
+                            <br><br>
+                        
+                        
+                            <li class="normal-text">Lighting and people can also be estimated using standard                            values. The only information needed to determine the heat output is the floor                            area in square meters, and the maximum number of people.</li>
+                        
+                            <br>
+                            <i><img  width=322 height=19 src="images/civil_power_core/image021.png" style="margin-right:15px;"></i>
+                            <p class="normal-text" style="float: right;">(Eq. 5) </p>
+                            <br><br>
+
+                            <br>
+                            <i><img  width=270 height=19 src="images/civil_power_core/image022.png" style="margin-right:15px;"></i>
+                            <p class="normal-text" style="float: right;">(Eq. 6) </p>
+                            <br><br>
+                        </ol>
+                        
+                        <p class="normal-text">The total cooling loads is the sum of each heat load. NaaS                        Operators may use the <a class="a_link" href="c&p_core_widget_1.html">Heat load calculator</a> to determine                        the total heat output of a data center quickly and reliably.</p>
+                        
+                        <p class="normal-text">The calculation of the heat load is illustrated in the following                        example:</p>
+                        
+                        <div style='border:solid black 1.0pt;padding:1.0pt 4.0pt 1.0pt 4.0pt;
+                        background:#F2F2F2'>
+                        
+                        <p class="normal-text"><b>Example: </b></p>
+                        
+                        <p class="normal-text">Calculate the power load consumed by a cooling system in a                        room of 10 m<sup>2</sup> that allows a max of 3 people. The Critical Load Power                        consumption is 1500W. </p>
+                        
+                        <p class="normal-text">The Selected UPS have the following characteristics: 120V,                        2kW, and includes a PDU. </p>
+                        
+                        <p class="normal-text"><b>Solution: From Equation 2, Equation 3,Equation 4, Equation                        5 </b></p>
+                        
+                        </div>
+                        
+                        <p class="normal-text"><img                        width=589 height=37                        src="images/civil_power_core/image023.png"></p>
+                        
+                        <div style='border:solid black 1.0pt;padding:1.0pt 4.0pt 1.0pt 4.0pt;
+                        background:#F2F2F2'>
+                        
+                        <p class="normal-text"><img                        width=589 height=37                        src="images/civil_power_core/image024.png"></p>
+                        
+                        </div><br>
+                        
+                        <div style='border:solid black 1.0pt;padding:1.0pt 4.0pt 1.0pt 4.0pt;
+                        background:#F2F2F2'>
+                        
+                        <p class="normal-text"><img class="myImg" width=306 height=18                        src="images/civil_power_core/image025.png">= <b>215.3W</b></p>
+                        
+                        </div>
+                        
+                        <p class="normal-text"><img                        width=427 height=18                        src="images/civil_power_core/image026.png"></p>
+                        
+                        <div style='border:solid black 1.0pt;padding:1.0pt 4.0pt 1.0pt 4.0pt;
+                        background:#F2F2F2'>
+                        
+                        <p class="normal-text"><b>Total:155W+50W+215.3W+300W=720.3W</b></p>
+                        
+                        </div>
+                        
+                        <h3 style='margin-left:.5in;text-indent:-.5in'>3.5.3 Light                        Power Consumption</h3>
+                        
+                        <p class="normal-text">The lights power consumption follows the same approach as                        their heat load and is possible to use the same expression for their power                        calculation. As is indicated in Eq. 5.</p>
+                        
+                        <h3 style='margin-left:.5in;text-indent:-.5in'>3.5.4 Final                        electrical calculation</h3>
+                        
+                        <p class="normal-text">The steady-state power consumption of the loads within a                        data center establishes the power consumption for purposes of determining electrical                        costs. However, the electrical service and the generator power sources that                        provide power to the facility cannot be sized based on the steady-state values,                        but using the peak power consumption of the loads, plus any derating or                        oversizing margins required by code or standard engineering practice. The Total                        electrical capacity can be calculated using equation </p>
+                        
+                        <br>
+                        <i><img  width=522 height=19 src="images/civil_power_core/image027.png" style="margin-right:15px;"></i>
+                        <p class="normal-text" style="float: right;">(Eq. 7) </p>
+                        <br><br>
+                        
+                        
+                        <p class="normal-text">Figure 15 shows the Load distribution in a typical data                        center, considering the cooling system, lighting, UPS inefficiency and Critical                        Loads.</p>
+                        
+                        <p class="normal-text"><img class="myImg"                        width=352 height=210 id=image20.png                        src="images/civil_power_core/image028.jpg"></p>
+                        
+                        <p align=center><i>Figure 15.                        Load estimation for a data room used for Core equipment</i></p>
+                        
+                        <p class="normal-text"></p>
+                        
+                        <p class="normal-text">Once the total electrical capacity is estimated in kW from                        Equation 6 two critical determinations are made: an estimate of the electrical                        service needed to supply the data room, and the size of any standby power                        generator capacity, if required. </p>
+                        
+                        <p class="normal-text">The electrical service can be calculated as follows:</p>
+                        
+                        <ol class="normal-text ul-iconos" style='margin-top:0in' start=1 type=1>
+                            <li class="normal-text">The                             total electrical capacity required in watts is multiplied by 125% to meet                             the requirements of regulatory bodies.</li>
+                             <li class="normal-text">Determine                             the three-phase AC voltage of the service entrance to be supplied by the                             utility company. Typically, this is 480 Volts AC in the United States and                             230 Volts AC in most other parts of the world.</li>
+                             <li class="normal-text">Finally, determine the                             required current capacity of the electrical service in Amperes:</li>
+                        </ol>
+
+                        <br>
+                        <i><img  width=501 height=34 src="images/civil_power_core/image029.png" style="margin-right:15px;"></i>
+                        <p class="normal-text" style="float: right;">(Eq. 8) </p>
+                        <br><br>
+                        
+                        <p class="normal-text">Where :</p>
+                        
+                        <p class="normal-text"><i><img width=78 height=18                        src="images/civil_power_core/image030.png"></i>=                        Three-phased Utility Voltagep>                                                <p class="normal-text"><i><img width=118 height=20                        src="images/civil_power_core/image031.png"></i>=                        Formula Used for Three-phase utility</p>
+                        
+                        <p class="normal-text"><i><img width=122 height=20                        src="images/civil_power_core/image032.png"></i>=                        Formula Used for Single-Phase utility</p>
+                        
+                        <p class="normal-text">The utility volts are multiplied by 1.73 due to the phase                        relationship, neither voltage nor current flow applied to an IT load ever drops                        to zero. This means three-phase power at a given voltage can deliver more                        power. In fact, about 1.73 times the power of a single-phase supply.</p>
+                        
+                        <p class="normal-text">This provides an estimate of the current capacity required                        to support the critical load, cooling, and building functions for a core                        facility. The following example illustrates the calculation of the required                        capacity.</p>
+                        
+                        <div style='border:solid black 1.0pt;padding:1.0pt 4.0pt 1.0pt 4.0pt;
+                        background:#F2F2F2'>
+                        
+                        <p class="normal-text"><b>Example: </b>Calculate the                        electrical capacity of a core facility (data room) with the following load                        consumptions:</p>
+                        
+                        <p class="normal-text"><b>1.-Critical Load: 1200W</b></p>
+                        
+                        <p class="normal-text"><b>2.-UPS loss: 564W</b></p>
+                        
+                        <p class="normal-text"><b>3.-Lights: 216W</b></p>
+                        
+                        <p class="normal-text"><b>4.-Cooling System:720W</b></p>
+                        
+                        <p class="normal-text"><b>5.-Thre-phase voltage: 230V</b></p>
+                        
+                        <p class="normal-text"><b>Solution:</b></p>
+                        
+                        <p class="normal-text"><b>From Eq.7 :</b></p>
+                        
+                        </div>
+                        
+                        <p class="normal-text"><img                        width=474 height=18                        src="images/civil_power_core/image033.png"></p>
+                        
+                        <div style='border:solid black 1.0pt;padding:1.0pt 4.0pt 1.0pt 4.0pt;
+                        background:#F2F2F2'>
+                        
+                        <p class="normal-text"><b></b><img width=52 height=18                        src="images/civil_power_core/image034.png"><b>= 1500W + 564W + 216W + 720W = 3000W</b></p>
+                        
+                        <p class="normal-text"><b>From Eq.8: </b></p>
+                        
+                        </div>
+                        <br>
+                        <p class="normal-text"><img                        width=298 height=38                        src="images/civil_power_core/image035.png"></p>
+                        
+                        <br><h2><a class="titulo-h2 anchor-bum color-luminati-2" name="item3-6">3.6                        The use of a Generator in IT applications</a></h2>
+                        
+                        <p class="normal-text">While UPS systems today provide excellent protection from                        utility mains transients and short-term blackouts, they are not a complete                        solution for applications that must remain online 24/7, without interruption. A                        power outage that exceeds the UPS battery autonomy is always possible, yet a                        system shutdown, even if managed gracefully, is not acceptable. Running the                        application from additional UPS batteries is pointless if there is no power for                        the air conditioning system that cools the IT equipment and the batteries.</p>
+                        
+                        <p class="normal-text">A standardized solution is to complement the UPS system with                        a backup generator that starts up if the battery autonomy is threatened, then                        runs indefinitely if necessary. The UPS bridges the power gap between the mains                        failing, and the standby generator starting up and reaching synchronization. It                        also cleans all power, whether from the mains or the generator.</p>
+                        
+                        <p class="normal-text">The generator in a data center is used to reach the                        availability requirements. The availability of the data center refers to                        meeting the uptime expectations of the users. The Uptime Institute suggests a                        four-tier system, where each level describes the required availability. The                        higher the tier, the greater the availability.</p>
+                        
+                        <p class="normal-text">The lowest cost and the lowest performance data center, Tier                        I, has a target availability of 99.671 percent, which translates to 28.8 hours                        of annual IT downtime. The highest-level data center design, Tier IV, has a                        target of 99.995 percent availability, or 24 minutes of annual IT downtime. In                        rural deployments, core sites are located in Tier I or Tier II. Table 4 shows                        an analysis of the Tier classification:</p>
+                        
+                        <div align=center>
+                        
+                        <table class=ab border=1 cellspacing=0 cellpadding=0 width=510
+                         style='border-collapse:collapse;border:none'>
+                         <tr>
+                          <td width=178 valign=top style='width:133.5pt;border-top:#1F4E79;border-left:
+                          #1F4E79;border-bottom:#95B3D7;border-right:#95B3D7;border-style:solid;
+                          border-width:1.0pt;background:#1F4E79;padding:0in 5.4pt 0in 5.4pt'>
+                          <p class="normal-text"><b></b></p>
+                          </td>
+                          <td width=170 valign=top style='width:127.25pt;border-top:solid #1F4E79 1.0pt;
+                          border-left:none;border-bottom:solid #95B3D7 1.0pt;border-right:solid #95B3D7 1.0pt;
+                          background:#1F4E79;padding:0in 5.4pt 0in 5.4pt'>
+                          <p align=center style="color:#FFF"><b>Tier I</b></p>
+                          </td>
+                          <td width=162 valign=top style='width:121.5pt;border-top:solid #1F4E79 1.0pt;
+                          border-left:none;border-bottom:solid #95B3D7 1.0pt;border-right:solid #1F4E79 1.0pt;
+                          background:#1F4E79;padding:0in 5.4pt 0in 5.4pt'>
+                          <p align=center style="color:#FFF"><b>Tier II</b></p>
+                          </td>
+                         </tr>
+                         <tr>
+                          <td width=178 valign=top style='width:133.5pt;border-top:none;border-left:
+                          solid #1F4E79 1.0pt;border-bottom:solid #95B3D7 1.0pt;border-right:solid #95B3D7 1.0pt;
+                          padding:0in 5.4pt 0in 5.4pt'>
+                          <p class="normal-text">Utility                          Voltage</p>
+                          </td>
+                          <td width=170 valign=top style='width:127.25pt;border-top:none;border-left:
+                          none;border-bottom:solid #95B3D7 1.0pt;border-right:solid #95B3D7 1.0pt;
+                          padding:0in 5.4pt 0in 5.4pt'>
+                          <p class="normal-text">230V,                          480V</p>
+                          </td>
+                          <td width=162 valign=top style='width:121.5pt;border-top:none;border-left:
+                          none;border-bottom:solid #95B3D7 1.0pt;border-right:solid #1F4E79 1.0pt;
+                          padding:0in 5.4pt 0in 5.4pt'>
+                          <p class="normal-text">230V,                          480V</p>
+                          </td>
+                         </tr>
+                         <tr>
+                          <td width=178 valign=top style='width:133.5pt;border-top:none;border-left:
+                          solid #1F4E79 1.0pt;border-bottom:solid #95B3D7 1.0pt;border-right:solid #95B3D7 1.0pt;
+                          padding:0in 5.4pt 0in 5.4pt'>
+                          <p class="normal-text">Yearly                          IT downtime</p>
+                          </td>
+                          <td width=170 valign=top style='width:127.25pt;border-top:none;border-left:
+                          none;border-bottom:solid #95B3D7 1.0pt;border-right:solid #95B3D7 1.0pt;
+                          padding:0in 5.4pt 0in 5.4pt'>
+                          <p class="normal-text">28.8                          Hours</p>
+                          </td>
+                          <td width=162 valign=top style='width:121.5pt;border-top:none;border-left:
+                          none;border-bottom:solid #95B3D7 1.0pt;border-right:solid #1F4E79 1.0pt;
+                          padding:0in 5.4pt 0in 5.4pt'>
+                          <p class="normal-text">22                          Hours</p>
+                          </td>
+                         </tr>
+                         <tr>
+                          <td width=178 valign=top style='width:133.5pt;border-top:none;border-left:
+                          solid #1F4E79 1.0pt;border-bottom:solid #95B3D7 1.0pt;border-right:solid #95B3D7 1.0pt;
+                          padding:0in 5.4pt 0in 5.4pt'>
+                          <p class="normal-text">Site                          Availability</p>
+                          </td>
+                          <td width=170 valign=top style='width:127.25pt;border-top:none;border-left:
+                          none;border-bottom:solid #95B3D7 1.0pt;border-right:solid #95B3D7 1.0pt;
+                          padding:0in 5.4pt 0in 5.4pt'>
+                          <p class="normal-text">99.671%</p>
+                          </td>
+                          <td width=162 valign=top style='width:121.5pt;border-top:none;border-left:
+                          none;border-bottom:solid #95B3D7 1.0pt;border-right:solid #1F4E79 1.0pt;
+                          padding:0in 5.4pt 0in 5.4pt'>
+                          <p class="normal-text">99.749%</p>
+                          </td>
+                         </tr>
+                         <tr>
+                          <td width=178 valign=top style='width:133.5pt;border-top:none;border-left:
+                          solid #1F4E79 1.0pt;border-bottom:solid #95B3D7 1.0pt;border-right:solid #95B3D7 1.0pt;
+                          padding:0in 5.4pt 0in 5.4pt'>
+                          <p class="normal-text">Recommended                          for</p>
+                          </td>
+                          <td width=170 valign=top style='width:127.25pt;border-top:none;border-left:
+                          none;border-bottom:solid #95B3D7 1.0pt;border-right:solid #95B3D7 1.0pt;
+                          padding:0in 5.4pt 0in 5.4pt'>
+                          <p class="normal-text">$13,500                          - $18,000 / rack</p>
+                          </td>
+                          <td width=162 valign=top style='width:121.5pt;border-top:none;border-left:
+                          none;border-bottom:solid #95B3D7 1.0pt;border-right:solid #1F4E79 1.0pt;
+                          padding:0in 5.4pt 0in 5.4pt'>
+                          <p class="normal-text">$18,000 - $24,000 / rack</p>
+                          </td>
+                         </tr>
+                         <tr>
+                          <td width=178 valign=top style='width:133.5pt;border-top:none;border-left:
+                          solid #1F4E79 1.0pt;border-bottom:solid #95B3D7 1.0pt;border-right:solid #95B3D7 1.0pt;
+                          padding:0in 5.4pt 0in 5.4pt'>
+                          <p class="normal-text">Historical                          Uses</p>
+                          </td>
+                          <td width=170 valign=top style='width:127.25pt;border-top:none;border-left:
+                          none;border-bottom:solid #95B3D7 1.0pt;border-right:solid #95B3D7 1.0pt;
+                          padding:0in 5.4pt 0in 5.4pt'>
+                          <p class="normal-text">&#9679;                          Small businesses</p>
+                          <p class="normal-text">&#9679;                          Data centers typically below 100 kW                          of IT capacity</p>
+                          </td>
+                          <td width=162 valign=top style='width:121.5pt;border-top:none;border-left:
+                          none;border-bottom:solid #95B3D7 1.0pt;border-right:solid #1F4E79 1.0pt;
+                          padding:0in 5.4pt 0in 5.4pt'>
+                          <p class="normal-text">&#9679; Small to medium businesses</p>
+                          <p class="normal-text">&#9679; Data centers typically below 500 kW of IT capacity</p>
+                          </td>
+                         </tr>
+                         <tr>
+                          <td width=178 valign=top style='width:133.5pt;border-top:none;border-left:
+                          solid #1F4E79 1.0pt;border-bottom:solid #1F4E79 1.0pt;border-right:solid #95B3D7 1.0pt;
+                          padding:0in 5.4pt 0in 5.4pt'>
+                          <p class="normal-text">Reasons                          for use</p>
+                          </td>
+                          <td width=170 valign=top style='width:127.25pt;border-top:none;border-left:
+                          none;border-bottom:solid #1F4E79 1.0pt;border-right:solid #95B3D7 1.0pt;
+                          padding:0in 5.4pt 0in 5.4pt'>
+                          <p class="normal-text">&#9679;                          Reduce capital cost and energy cost</p>
+                          <p class="normal-text">&#9679;                          Support for lower criticality                          applications</p>
+                          <p class="normal-text">&#9679;                          Simple configuration and installation</p>
+                          <p class="normal-text">&#9679;                          Ability to bring down load for                          maintenance</p>
+                          </td>
+                          <td width=162 valign=top style='width:121.5pt;border-top:none;border-left:
+                          none;border-bottom:solid #1F4E79 1.0pt;border-right:solid #1F4E79 1.0pt;
+                          padding:0in 5.4pt 0in 5.4pt'>
+                          <p class="normal-text">&#9679;                          Improved fault tolerance</p>
+                          <p class="normal-text">&#9679;                          Ability to use different UPS models</p>
+                          <p class="normal-text">&#9679; Ability to increase future capacity</p>
+                          </td>
+                         </tr>
+                        </table>
+                        
+                        </div>
+                        
+                        <p align=center><i>Table 4                        Datacenter availability classification</i></p>
+                        
+                        <p class="normal-text">If NaaS Operators considers that Tier I exceed their                        characteristics, then the evaluation to purchase a generator can be made as                        follows: </p>
+                        
+                        <ul class="normal-text ul-iconos" style='margin-top:0in' start=1 type=1>
+                            <li>NaaS Operator must ask for the yearly                            downtime from the grid, electric companies should provide it and must be public                            in most of the World regions. </li>
+                            
+                            <li>If NaaS Operators have the visibility of their yearly                            estimated revenue, then can predict the cost of an outage during an hour of                            their whole network. </li>
+                        </ul>
+                        
+                        <p class="normal-text">If the Yearly Downtime from the grid will produce greater                        loss than the cost of a generator in a year, NaaS Operators may consider to                        purchase a generator. This is illustrated with the following formula:</p>
+                        
+                        <br>
+                        <i><img  width=538 height=20 src="images/civil_power_core/image036.png" style="margin-right:15px;"></i>
+                        <p class="normal-text" style="float: right;">(Eq. 9) </p>
+                        <br><br>
+                        
+                        <p class="normal-text">If the criteria established in equation 9 result false NaaS                        Operators may consider to purchase additional batteries for the UPS (if                        supported). Most of the UPS vendors offer to size the batteries for their UPS                        as part of their service.</p>
+                        
+                        <p class="normal-text">The Tier I architecture is shown in Figure 16, please note                        that the availability indicated in Table 4 is achieved with the use of a Generator                        and a UPS together.</p>
+                        
+                        <p class="normal-text"><img class="myImg"                        width=326 height=360 id=image18.png                        src="images/civil_power_core/image037.jpg"></p>
+                        
+                        <p align=center><i>Figure 16                        Tier I architecture </i></p>
+                        
+                        <p class="normal-text">The following subsection contains guidelines to size a                        generator based on the loads of the Core site.</p>
+                        
+                        <h3>3.6.1 Sizing                        a Standby Power Generator</h3>
+                        
+                        <p class="normal-text">Once the size of the electrical service has been determined,                        consideration can be given to dimension a standby power generator, which will                        provide power in the event of a utility failure effectively improving the                        availability of the data center. </p>
+                        
+                        <p class="normal-text">To estimate the size of the generator required for the total                        loads, use Equation 10, which considers the electrical characteristics of the                        loads to be attached to the generator through the transfer switch. Mechanical                        loads, like cooling loads, require high starting currents which are reflected                        by multiplying by 1.5 the cooling loads:</p>
+                        
+                        <br>
+                        <i><img  width=497 height=18 src="images/civil_power_core/image038.png" style="margin-right:15px;"></i>
+                        <p class="normal-text" style="float: right;">(Eq. 10) </p>
+                        <br><br>
+                        
+                        <p class="normal-text">The type of UPS will                        impact UPS-generator compatibility and configuration, as not all can compensate                        for frequency variations without relying on the battery. To ensure that optimal                        UPS vs generator sizing is achieved, it is recommended to consult with both the                        UPS and the generator manufacturer prior to finalizing a purchase.                         </p>
+                </div>
+
+                <a class='link-next' href="#" onclick="switchContent('#hld')"> &#8656; Previous</a>
+                    <a href="url" align="center"></a>
+                    <div class="right">
+                        <a ></a>
+                        <a class="link-next" href="#" onclick="switchContent('#e2e')">Next &#8658;</a>
+                    </div>
+                    <br>
+                
+
+                <nav id="navbar-example3" class="navbar navbar-light bg-light position-fixed">
+                    <nav class="nav nav-pills flex-column">
+                        <a id="fm_link-1" class="nav-link bullet-2-link" onclick="onClickActive(event)" href="#item3"><strong>3. POWER SYSTEM DESIGN</strong></a>
+                        <a id="fm_link-2" class="nav-link bullet-2-link" onclick="onClickActive(event)" href="#item3-1"><em>3.1 Power System Design Process</em></a>
+                        <a id="fm_link-3" class="nav-link bullet-2-link" onclick="onClickActive(event)" href="#item3-2"><em>3.2 Critical Load Calculation</em></a>
+                        <a id="fm_link-3" class="nav-link bullet-2-link" onclick="onClickActive(event)" href="#item3-3"><em>3.3 UPS Sizing and selection</em></a>
+                        <a id="fm_link-3" class="nav-link bullet-2-link" onclick="onClickActive(event)" href="#item3-4"><em>3.4 Power Distribution Unit Selection</em></a>
+                        <a id="fm_link-3" class="nav-link bullet-2-link" onclick="onClickActive(event)" href="#item3-5"><em>3.5 Total electrical capacity calculation</em></a>
+                        <a id="fm_link-3" class="nav-link bullet-2-link" onclick="onClickActive(event)" href="#item3-6"><em>3.6 The use of a Generator in IT applications</em></a>
+                    </nav>
+                </nav>
+           </section>
+
+           <section id="e2e" hidden>
+            <div id="content">
+                
+                <div data-spy="scroll" data-target="#navbar-example3" data-offset="0">
+                    <h1><a class="titulo-h1 anchor-bum color-luminati-3" name="item4">4                        Core Site Layout</a></h1>
+                        
+                        <p class="normal-text">Core Site Layout consists of the design considerations of                        the room and the layout of the Core equipment in the Room and the rack.</p>
+                        
+                        <p class="normal-text">A Core site layout has two components: the structural layout                        of the empty room which may be obtained from the site engineering in the form                        of blueprints and the equipment layout of what will go in the room. Note that                        in the case where NaaS Operators decide to lease a space in a data center, the                        room is pre-existing, and the only option is to layout the equipment in their                        cabinet. </p>
+                        
+                        <p class="normal-text">The equipment layout shows the footprint of IT equipment and                        the footprint of power and cooling equipment. In order to protect the IT                        equipment from overheating the layout should consider an airflow path. The                        following subsections provide guidelines to layout the rack in a room                        considering the airflow of the equipment, the equipment layout within the rack                        as well as key considerations for the cabling layout.</p>
+                        
+                        <br><h2><a class="titulo-h2 anchor-bum color-luminati-3" name="item4-1">4.1                        Control of airflow using hot-aisle/cold-aisle rack layout</a></h2>
+                        
+                        <p class="normal-text">The use of the hot-aisle/cold-aisle rack layout method is                        well known and commonly used in a data room layout. The basic principle is to                        maximize the separation between IT equipment exhaust air and intake air by                        establishing cold aisles where only equipment intakes are present and                        establishing hot aisles where only equipment hot exhaust air is present. The                        goal is to reduce the amount of hot exhaust air that is drawn into the                        equipment air intakes. The basic hot-aisle/cold-aisle concept is shown in                        Figure 17.</p>
+                        
+                        <p class="normal-text"><img class="myImg"                        width=353 height=212 id=image19.png                        src="images/civil_power_core/image039.jpg"></p>
+                        
+                        <p align=center><i>Figure 17.                        Basic hot-aisle/cold-aisle layout plan</i></p>
+                        
+                        <p class="normal-text">In Figure 17, the rows represent the IT equipment enclosures                        (racks). The racks are arranged such that the adjacent rows face back to back,                        forming the hot aisles. The benefits of the hot-aisle/cold-aisle arrangement                        become dramatic as the power density increases. When compared to random                        arrangements or arrangements where racks are all lined up in the same                        direction, the hot-aisle/cold-aisle approach allows for a power density                        increase up to 100% or more, without hot spots, Decreasing greatly the power                        consumption of the cooling system. </p>
+                        
+                        <br><h2><a class="titulo-h2 anchor-bum color-luminati-3" name="item4-2">4.2                        Server Rack Layout</a></h2>
+                        
+                        <p class="normal-text">In terms of layout, rack density should be considered. The                        more free-space within a server rack, the greater the room for airflow.                        Vertical space can be left between servers and IT devices to help cooling. Heat                        sensitive devices, including UPS batteries, can be placed towards the bottom of                        a server rack. Heavier devices are also best placed towards the bottom of a                        rack.</p>
+                        
+                        <p class="normal-text">Hardware should ideally be logically grouped for ease of                        management and access to sockets, outlets and ports, whether for power or                        networking. Ideally within the middle to higher-level area of the rack.</p>
+                        
+                        <p class="normal-text">Some manufacturers have an online free to use tool to                        elaborate a rack layout with their products and generic boxes, NaaS operators                        may consider this option to organize their rack layouts, additionally, there                        are several free web-based tools to elaborate a rack layout some others has to                        be purchased but have additional features that consider ventilation and PDUs.</p>
+                        
+                        <p class="normal-text"><img class="myImg"                        width=272 height=495 id=image16.png                        src="images/civil_power_core/image040.jpg"></p>
+                        
+                        <p align=center><i>Figure 18. Rack Layout</i></p>
+                        
+                        <p class="normal-text">NaaS Operators may use an asset list for each device within                        a server rack including each model SKU and serial number. These three pieces of                        information along with a description, date of installation and service dates                        can be recorded onto a rack management spreadsheet. </p>
+                        
+                        <p class="normal-text">Other additional columns recommended include power draw and                        heat dissipation or efficiency, UPS (uninterruptible power supply) and PDU                        (power distribution unit) connections. The document is then maintained when                        equipment is added or removed and/or maintained. The spreadsheet should cover                        the entire server room installation and each rack or cabinet within it.</p>
+                        
+                        <p class="normal-text">NaaS Operators may use the <a class="a_link" href="https://github.com/teleworxllc/NaaSRunBook/tree/gh-pages/Network%20Design/Templates/Rack_Management_spreadsheet.xlsx">Rack                        Management spreadsheet</a> to organize their assets and their port                        connections.</p><br>
+                        
+                        <br><h2><a class="titulo-h2 anchor-bum color-luminati-3" name="item4-3">4.3                        Layer 1 and Layer 2 diagram </a></h2>
+                        
+                        <p class="normal-text">The Core layout design considers the High-level &amp;                        Low-level design, this subsection considers some of the outcomes of previous                        phases to create the physical interconnection </p>
+                        
+                        <p class="normal-text">A Layer 1 diagram shows the physical connections between the                        critical pieces of network infrastructure. It includes link speeds and cabling                        types. Additionally, show individual port numbers or designations. Some                        considerations to elaborate a Layer 1 &amp; Layer 2 diagram are listed below:</p>
+                        
+                        <ul class="normal-text ul-iconos" style='margin-top:0in' start=1 type=1>
+                            <li>The speed of the link is represented by the width of the line.</li>
+                            <li>Different colors represent fiber and copper cables. </li>
+                            <li>Layer 2 features include VLAN numbers, link aggregation, and trunk connections. </li>
+                            <li>Layer 2 diagram includes spanning-tree information                            such as the root bridge and any bridge and link priorities that have been changed                            from their defaults.</li>
+                        </ul>
+                        
+                        <p class="normal-text">The required VLAN numbers and port connections are indicated                        in the Core LLD the purpose of L1 and L2 diagram is to map the physical ports                        with the logical design.</p>
+                        
+                        <p class="normal-text">Figure 19 illustrates the L1 &amp; L2 Diagram:</p>
+                        
+                        <p class="normal-text"><img class="myImg" width=589 height=261                        id=image23.png                        src="images/civil_power_core/image041.jpg"></p>
+                        
+                        <p align=center><i>Figure 19.                        Layer 1 &amp; Layer 2 diagram</i></p>
+                        
+                        <p class="normal-text">NaaS Operators may consider the tools depicted in Table 5 to                        create an L1&amp; L2 diagram:</p>
+                        
+                        <div align=center>
+                        <table class=ad border=1 cellspacing=0 cellpadding=0 width=594
+                         style='border-collapse:collapse;border:none'>
+                         <tr>
+                          <td width=98 valign=top style='width:73.55pt;border-top:#1F4E79;border-left:
+                          #1F4E79;border-bottom:#95B3D7;border-right:#95B3D7;border-style:solid;
+                          border-width:1.0pt;background:#1F4E79;padding:0in 5.4pt 0in 5.4pt'>
+                          <p align=center style="color:#FFF"><b>Tool</b></p>
+                          </td>
+                          <td width=294 colspan=3 valign=top style='width:220.65pt;border-top:solid #1F4E79 1.0pt;
+                          border-left:none;border-bottom:solid #95B3D7 1.0pt;border-right:solid #95B3D7 1.0pt;
+                          background:#1F4E79;padding:0in 5.4pt 0in 5.4pt'>
+                          <p align=center style="color:#FFF"><b>Top Features</b></p>
+                          </td>
+                          <td width=201 valign=top style='width:151.05pt;border-top:solid #1F4E79 1.0pt;
+                          border-left:none;border-bottom:solid #95B3D7 1.0pt;border-right:solid #1F4E79 1.0pt;
+                          background:#1F4E79;padding:0in 5.4pt 0in 5.4pt'>
+                          <p align=center style="color:#FFF"><b>Description</b></p>
+                          </td>
+                         </tr>
+                         <tr>
+                          <td width=98 valign=top style='width:73.55pt;border-top:none;border-left:
+                          solid #1F4E79 1.0pt;border-bottom:solid #95B3D7 1.0pt;border-right:solid #95B3D7 1.0pt;
+                          padding:0in 5.4pt 0in 5.4pt'>
+                          <p class="normal-text">CADE</p>
+                          </td>
+                          <td width=98 valign=top style='width:73.55pt;border-top:none;border-left:
+                          none;border-bottom:solid #95B3D7 1.0pt;border-right:solid #95B3D7 1.0pt;
+                          padding:0in 5.4pt 0in 5.4pt'>
+                          <p class="normal-text">Free Tool</p>
+                          </td>
+                          <td width=98 valign=top style='width:73.55pt;border-top:none;border-left:
+                          none;border-bottom:solid #95B3D7 1.0pt;border-right:solid #95B3D7 1.0pt;
+                          padding:0in 5.4pt 0in 5.4pt'>
+                          <p class="normal-text">Multiple export formats</p>
+                          </td>
+                          <td width=98 valign=top style='width:73.55pt;border-top:none;border-left:
+                          none;border-bottom:solid #95B3D7 1.0pt;border-right:solid #95B3D7 1.0pt;
+                          padding:0in 5.4pt 0in 5.4pt'>
+                          <p class="normal-text">Support for multiple                          diagrams</p>
+                          </td>
+                          <td width=201 valign=top style='width:151.05pt;border-top:none;border-left:
+                          none;border-bottom:solid #95B3D7 1.0pt;border-right:solid #1F4E79 1.0pt;
+                          padding:0in 5.4pt 0in 5.4pt'>
+                          <p class="normal-text">Free network design tool                          with predefined blocks and multiple export formats</p>
+                          </td>
+                         </tr>
+                         <tr>
+                          <td width=98 valign=top style='width:73.55pt;border-top:none;border-left:
+                          solid #1F4E79 1.0pt;border-bottom:solid #95B3D7 1.0pt;border-right:solid #95B3D7 1.0pt;
+                          padding:0in 5.4pt 0in 5.4pt'>
+                          <p class="normal-text">DIA</p>
+                          </td>
+                          <td width=98 valign=top style='width:73.55pt;border-top:none;border-left:
+                          none;border-bottom:solid #95B3D7 1.0pt;border-right:solid #95B3D7 1.0pt;
+                          padding:0in 5.4pt 0in 5.4pt'>
+                          <p class="normal-text">Free Tool</p>
+                          </td>
+                          <td width=98 valign=top style='width:73.55pt;border-top:none;border-left:
+                          none;border-bottom:solid #95B3D7 1.0pt;border-right:solid #95B3D7 1.0pt;
+                          padding:0in 5.4pt 0in 5.4pt'>
+                          <p class="normal-text">Large library of objects</p>
+                          </td>
+                          <td width=98 valign=top style='width:73.55pt;border-top:none;border-left:
+                          none;border-bottom:solid #95B3D7 1.0pt;border-right:solid #95B3D7 1.0pt;
+                          padding:0in 5.4pt 0in 5.4pt'>
+                          <p class="normal-text">Open Source</p>
+                          </td>
+                          <td width=201 valign=top style='width:151.05pt;border-top:none;border-left:
+                          none;border-bottom:solid #95B3D7 1.0pt;border-right:solid #1F4E79 1.0pt;
+                          padding:0in 5.4pt 0in 5.4pt'>
+                          <p class="normal-text">Simple open-source                          programmed with a large library of objects</p>
+                          </td>
+                         </tr>
+                         <tr>
+                          <td width=98 valign=top style='width:73.55pt;border-top:none;border-left:
+                          solid #1F4E79 1.0pt;border-bottom:solid #95B3D7 1.0pt;border-right:solid #95B3D7 1.0pt;
+                          padding:0in 5.4pt 0in 5.4pt'>
+                          <p class="normal-text">Visio</p>
+                          </td>
+                          <td width=98 valign=top style='width:73.55pt;border-top:none;border-left:
+                          none;border-bottom:solid #95B3D7 1.0pt;border-right:solid #95B3D7 1.0pt;
+                          padding:0in 5.4pt 0in 5.4pt'>
+                          <p class="normal-text">AutoCAD support</p>
+                          </td>
+                          <td width=98 valign=top style='width:73.55pt;border-top:none;border-left:
+                          none;border-bottom:solid #95B3D7 1.0pt;border-right:solid #95B3D7 1.0pt;
+                          padding:0in 5.4pt 0in 5.4pt'>
+                          <p class="normal-text">Automatic chart                          generator</p>
+                          </td>
+                          <td width=98 valign=top style='width:73.55pt;border-top:none;border-left:
+                          none;border-bottom:solid #95B3D7 1.0pt;border-right:solid #95B3D7 1.0pt;
+                          padding:0in 5.4pt 0in 5.4pt'>
+                          <p class="normal-text">Support community</p>
+                          </td>
+                          <td width=201 valign=top style='width:151.05pt;border-top:none;border-left:
+                          none;border-bottom:solid #95B3D7 1.0pt;border-right:solid #1F4E79 1.0pt;
+                          padding:0in 5.4pt 0in 5.4pt'>
+                          <p class="normal-text">Highly flexible popular                          network design with support from multiple communities and AutoCAD tech                          support</p>
+                          </td>
+                         </tr>
+                         <tr>
+                          <td width=98 valign=top style='width:73.55pt;border-top:none;border-left:
+                          solid #1F4E79 1.0pt;border-bottom:solid #1F4E79 1.0pt;border-right:solid #95B3D7 1.0pt;
+                          padding:0in 5.4pt 0in 5.4pt'>
+                          <p class="normal-text">EDraw</p>
+                          </td>
+                          <td width=98 valign=top style='width:73.55pt;border-top:none;border-left:
+                          none;border-bottom:solid #1F4E79 1.0pt;border-right:solid #95B3D7 1.0pt;
+                          padding:0in 5.4pt 0in 5.4pt'>
+                          <p class="normal-text">15-days trial</p>
+                          </td>
+                          <td width=98 valign=top style='width:73.55pt;border-top:none;border-left:
+                          none;border-bottom:solid #1F4E79 1.0pt;border-right:solid #95B3D7 1.0pt;
+                          padding:0in 5.4pt 0in 5.4pt'>
+                          <p class="normal-text">Multiple export formats</p>
+                          </td>
+                          <td width=98 valign=top style='width:73.55pt;border-top:none;border-left:
+                          none;border-bottom:solid #1F4E79 1.0pt;border-right:solid #95B3D7 1.0pt;
+                          padding:0in 5.4pt 0in 5.4pt'>
+                          <p class="normal-text">Web Version</p>
+                          </td>
+                          <td width=201 valign=top style='width:151.05pt;border-top:none;border-left:
+                          none;border-bottom:solid #1F4E79 1.0pt;border-right:solid #1F4E79 1.0pt;
+                          padding:0in 5.4pt 0in 5.4pt'>
+                          <p class="normal-text">All in one                          application for rack and floor layout include L1&amp;L2 Diagrams</p>
+                          </td>
+                         </tr>
+                        </table>
+                        </div>
+                        
+                        <p align=center><i>Table 5.                        Network Design Tools that include physical connections</i></p>
+                        
+                        <br><h2><a class="titulo-h2 anchor-bum color-luminati-3" name="item4-4">4.4                        Cabling Layout</a></h2>
+                        
+                        <p class="normal-text">The lack of organization can lead to accidental disruption                        of service. An organized rack decreases human errors, increases efficiency, and                        improves equipment protection by increasing effective airflow. By using the                        correct cable management accessories to organize, route and remove unnecessary                        stress on the cables, data integrity is ensured.</p>
+                        
+                        <p class="normal-text">Racks and enclosures can become disorganized quickly if                        cable management does not remain an ongoing priority. The Core site is a                        critical point of interconnection, NaaS operators may consider following                        recommendations to organize and document their connections to ensure optimal                        performance in the critical equipment, as detailed in the subsections below.</p>
+                        
+                        <h3>4.4.1 Using Color to Identify Cables</h3>
+                        
+                        <p class="normal-text">Color provides quick visual identification. Color-coding                        simplifies management and can save time when its required to trace cables.                        Color coding can be applied to ports on a patch panel. Patch panels come with                        different color jacks or have colored inserts surrounding the jack. Cables are                        available in many colors (The color palette depends on the cable manufacturer).                        Figure 20 shows an initial recommendation of colors to identify the                        role/function of a cable type of connection.</p>
+                        
+                        <p class="normal-text"><img class="myImg"                        width=518 height=278 id=image22.png                        src="images/civil_power_core/image042.jpg"></p>
+                        
+                        <p align=center><i>Figure 20. Color Scheme for patch cables</i></p>
+                        
+                        <p class="normal-text"></p>
+                        
+                        <h3>4.4.2 Horizontal Cable Management </h3>
+                        
+                        <p class="normal-text">Horizontal cable management allows a neat and proper routing                        of the patch cables from equipment in racks and protect the cables from damage.                        These cable managers take up the space in racks, so a careful balance between                        cable manager height and cable density supported is important. 1U and 2U                        horizontal cable managers are the most common varieties. The density supported                        varies with the depth of the manager. When choosing cable managers, the NaaS                        Operator must ensure that the cable bend radius is properly accommodated. </p>
+                        
+                        <p class="normal-text">Please note that proper planning should allow a 30% space in                        the cable managers for future growth.</p>
+                        
+                        <p class="normal-text">Figure 21 shows 2 switches using horizontal cable managers.</p>
+                        
+                        <p class="normal-text"><img class="myImg"                        width=518 height=191 id=image14.png                        src="images/civil_power_core/image043.jpg"></p>
+                        
+                        <p align=center><i>Figure 21. Horizontal Cable Management</i></p>
+                        
+                        <h3>4.4.3 Vertical cable managers</h3>
+                        
+                        <p class="normal-text">For vertical cable managers, there should be additional                        space required to manage the slack from patch cords and ensure that they can                        easily route the largest cable diameter. The most convenient cable managers                        available in the market have hinged doors on both sides of the manager for                        pivoting the door from either side and allow a complete removal of the door for                        unobstructed access. A best practice is to allow for 50% for the growth of                        cables when planning the width. Figure 22 shows three racks using vertical                        cable managers</p>
+                        
+                        <p class="normal-text"><img class="myImg"                        width=234 height=311 id=image17.png                        src="images/civil_power_core/image044.png"></p>
+                        
+                        <p align=center><i>Figure 22. Vertical Cable Management</i></p>
+                        
+                        <h3>4.4.4 Overhead Cable Pathways</h3>
+                        
+                        <p class="normal-text">Overhead cable pathways or trays allow placement of                        additional cables for interconnecting devices between racks. In order to select                        the Overhead cable pathways, it must be considered the cable bend radius,                        weight allowance, aging points for cables and flexibility in installing the                        pathways. In addition, ensure that pathways allow cable drop points where                        needed. Figure 23 show overhead cable pathways routing different types of                        cables.</p>
+                        
+                        <p class="normal-text"><img class="myImg"                        width=329 height=246 id=image15.png                        src="images/civil_power_core/image045.png"></p>
+                        
+                        <p align=center><i>Figure 23. Overhead Cable Pathways</i></p>
+                        
+                        <h3>4.4.5 Documentation</h3>
+                        
+                        <p class="normal-text">The documentation is perhaps the most                        critical task for cable management. A best practice is to keep the information                        easily accessible to data center staff on a share drive or internet web                        service. Naas Operators must assign updates to one or more staff members and                        make sure it is part of their job assignment to keep the documentation up to                        date. Furthermore, NaaS Operators may consider creating a training guide, which                        documents guidelines for installing new cables, cable management components and                        routing cables. A port mapping spreadsheet is useful for keeping track of                        used/available ports on the network equipment. It must include the remote                        device to which each port is connected. NaaS Operators may consider using the <a href="https://github.com/teleworxllc/NaaSRunBook/tree/gh-pages/Network%20Design/Templates/Network-Documentation-Template.xlsx" class="a_link">Network documentation spreadsheet</a> to document their                        equipment, cable mapping, and IPV4 usage.</p>
+                </div>
+               
+                <br>
+                <a href="#" class="link-next" onclick="switchContent('#fm')"> &#8656; Previous</a>
+                <a href="url" align="center"></a>
+                <div class="right">
+                    <a ></a>
+                    <a href="#">.</a>
+                </div>
+
+            </div>
+              
+            <nav id="navbar-example3" class="navbar navbar-light bg-light position-fixed">
+             <nav class="nav nav-pills flex-column">
+                <a id="e2e_link-1" class="nav-link bullet-2-link" onclick="onClickActive(event)" href="#item4"><strong>4. CORE SITE LAYOUT</strong></a>
+                <a id="e2e_link-2" class="nav-link bullet-2-link" onclick="onClickActive(event)" href="#item4-1"><em>4.1 Control of airflow using hot-aisle/cold-aisle rack layout</em></a>
+                <a id="e2e_link-3" class="nav-link bullet-2-link" onclick="onClickActive(event)" href="#item4-2"><em>4.2 Server Rack Layout</em></a>
+                <a id="e2e_link-5" class="nav-link bullet-2-link" onclick="onClickActive(event)" href="#item4-3"><em>4.3 Layer 1 and Layer 2 diagram</em></a>
+                <a id="e2e_link-6" class="nav-link bullet-2-link" onclick="onClickActive(event)" href="#item4-4"><em>4.4 Cabling Layout</em></a>
+             </nav>
+         </nav>
+        </section>  
+    </div>
+
+    <!-- jQuery CDN border-left: 2px solid gray;-->
+     <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+     <!-- Bootstrap Js CDN -->
+     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+     <script type="text/javascript">
+         
+        let tab;
+        var setPin = true;
+        switchContent('#hld');
+        window.scrollTo(0, 0);
+
+        function switchContent(selector){
+           $("#hld").hide();
+           $("#fm").hide();
+           $("#e2e").hide();
+           $(selector).show();
+           tab = selector;
+       }
+
+       window.addEventListener('scroll', function(e) {
+       let reachActive = false;
+           if(tab=="#hld"){
+               $('.color-luminati').each(function(index, element) {
+                   const elem = element.getBoundingClientRect();
+                   if (elem.top < 30) {
+                       $('nav.nav.nav-pills a').removeClass('link-active');
+                       $('nav.nav.nav-pills a:nth-child('+(index+1)+')').addClass('link-active');
+                   }
+                   });
+           }
+           if(tab=="#fm"){
+               $('.color-luminati-2').each(function(index, element) {
+                   const elem = element.getBoundingClientRect();
+                   if (elem.top < 30) {
+                       $('nav.nav.nav-pills a').removeClass('link-active');
+                       $('nav.nav.nav-pills a:nth-child('+(index+1)+')').addClass('link-active');
+                   }
+                   });
+           }
+           if(tab=="#e2e"){
+               $('.color-luminati-3').each(function(index, element) {
+                   const elem = element.getBoundingClientRect();
+                   if (elem.top < 30) {
+                       $('nav.nav.nav-pills a').removeClass('link-active');
+                       $('nav.nav.nav-pills a:nth-child('+(index+1)+')').addClass('link-active');
+                   }
+                   });
+           }
+       });
+    </script>
+
+<div id="myModal" class="modal">
+    <span class="close">&times;</span>
+    <img class="myImg" class="myImg" class="modal-content" id="img01">
+    <div id="caption"></div>
+</div>
+
+<script src="zoom_script.js"></script>
+</body>
+</html>
