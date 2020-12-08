@@ -222,8 +222,8 @@
                             <label  class="col-sm-2"></label >
                             <label  class="col-sm-6 parag-1">2.3. Is the NaaS Operator deploying a Mobile Core?</label >
                             <select id="_2_3_vocab" name="tx_lon" class="col-sm-2 text-box"> 
-                                <option value="yes">Yes</option>
                                 <option value="no">No</option>
+                                <option value="yes">Yes</option>
                                 <option value="unknown">Unknown</option>
                             </select>
                         </div>
@@ -232,8 +232,8 @@
                             <label  class="col-sm-2"></label >
                             <label  class="col-sm-6 parag-1">2.4. Has the Mobile Core Architecture been pre-defined based on commercial agreements and/or partner requirements?</label >
                             <select id="_2_4_vocab" name="tx_lon" class="col-sm-2 text-box"> 
-                                <option value="no">No</option>
                                 <option value="yes">Yes</option>
+                                <option value="no">No</option>
                             </select>
                         </div>
                         <br>
@@ -347,8 +347,8 @@
                             <label  class="col-sm-2"></label >
                             <label  class="col-sm-6 parag-1">2.16. Is the NaaS Operator deploying any new sites?</label >
                             <select id="_2_16_vocab" name="tx_lon" class="col-sm-2 text-box"> 
-                                <option value="no">No</option>
                                 <option value="yes">Yes</option>
+                                <option value="no">No</option>
                                 <option value="unknown">Unknown</option>
                             </select>
                         </div>
@@ -357,8 +357,8 @@
                             <label  class="col-sm-2"></label >
                             <label  class="col-sm-6 parag-1">2.17. Is the NaaS Operator willing to deploy fiber for backhaul?</label >
                             <select id="_2_17_vocab" name="tx_lon" class="col-sm-2 text-box"> 
-                                <option value="yes">Yes</option>
                                 <option value="no">No</option>
+                                <option value="yes">Yes</option>
                                 <option value="unknown">Unknown</option>
                             </select>
                         </div>
@@ -958,7 +958,7 @@
                     </div>
                     <br>
                     <label  class="col-sm-7"></label >
-                    <label  class="col-sm-3 parag-1"><i>** Indicates that the module is optional</i></label >
+                    <label  class="col-sm-3 parag-1"><i>** Module might be optional</i></label >
                   
                     
                 </div>
@@ -1109,7 +1109,7 @@
                     _2_1_8_var = true;
                     _2_1_9_var = true;
                }
-               if(_2_1_var == false){
+               /*if(_2_1_var == false){
                     _2_1_1_var = false;
                     _2_1_1_var = false;
                     _2_1_2_var = false;
@@ -1120,7 +1120,7 @@
                     _2_1_7_var = false;
                     _2_1_8_var = false;
                     _2_1_9_var = false;
-               }
+               }*/
 
                var _2_2_var = document.getElementById("_2_2").checked;
                var _2_2_1_var = document.getElementById("_2_2_1").checked;
@@ -1147,7 +1147,7 @@
                     _2_2_9_var = true;
                     _2_2_10_var = true;
                }
-               if(_2_2_var == false){
+               /*if(_2_2_var == false){
                     _2_2_1_var = false;
                     _2_2_1_var = false;
                     _2_2_2_var = false;
@@ -1159,7 +1159,7 @@
                     _2_2_8_var = false;
                     _2_2_9_var = false;
                     _2_2_10_var = false;
-               }
+               }*/
 
                var _2_3_var = document.getElementById("_2_3").checked;
                var _2_3_1_var = document.getElementById("_2_3_1").checked;
@@ -1194,7 +1194,7 @@
                     _2_3_13_var = true;
                     _2_3_14_var = true;
                }
-               if(_2_3_var == false){
+               /*if(_2_3_var == false){
                     _2_3_1_var = false;
                     _2_3_1_var = false;
                     _2_3_2_var = false;
@@ -1210,7 +1210,7 @@
                     _2_3_12_var = false;
                     _2_3_13_var = false;
                     _2_3_14_var = false;
-               }
+               }*/
 
                var _2_4_var = document.getElementById("_2_4").checked;
                var _2_5_var = document.getElementById("_2_5").checked;
@@ -1349,20 +1349,24 @@
                 } */
 
                 if(_1_2_var == true){
-                    if((_2_1_6_var || _2_1_vocab_var) == false){
-                        if((_3_1_2_var && (_3_2_1_var || _3_3_1_var) && (_3_2_2_var || _3_3_2_var) ) == false){
+                    if((_2_1_6_var || _2_1_vocab_var) == true){
+                        if((_3_1_2_var && (_3_2_1_var || _3_3_1_var) && (_3_2_2_var || _3_3_2_var) ) == true){
                             tblBody.appendChild(addRow("High Level Network Architecture","RAN Architecture"));
                         }
+                    } else{
+                        tblBody.appendChild(addRow("High Level Network Architecture","RAN Architecture"));
                     }
                 }
                 /*if(_1_2_var == true && (_2_1_6_var || _2_1_vocab_var == false) && ((_3_1_2_var && (_3_2_1_var || __3_3_1_var) && (_3_2_2_var || _3_3_2_var) ) == false)){
                     tblBody.appendChild(addRow("High Level Network Architecture","RAN Architecture"));
                 }*/
                 if(_1_2_var == true){
-                    if((_2_1_7_var || _2_2_vocab) == false){
-                        if((_3_1_3_var && (_3_2_3_var || _3_3_3_var) && (_3_2_4_var || _3_3_4_var) && (_3_2_5_var || _3_3_5_var) && _3_2_6_var) == false){
+                    if((_2_1_7_var || _2_2_vocab) == true){
+                        if((_3_1_3_var && (_3_2_3_var || _3_3_3_var) && (_3_2_4_var || _3_3_4_var) && (_3_2_5_var || _3_3_5_var) && _3_2_6_var) == true){
                             tblBody.appendChild(addRow("High Level Network Architecture","TX & IP Architecture"));
                         }
+                    } else{
+                        tblBody.appendChild(addRow("High Level Network Architecture","TX & IP Architecture"));
                     }
                 }
                 /*if(_1_2_var == true && ((_2_1_7_var || _2_2_vocab) == false) && (_3_1_3_var && (_3_2_3_var || _3_3_3_var) && (_3_2_4_var || _3_3_4_var) && (_3_2_5_var || _3_3_5_var) && _3_2_6_var)){
@@ -1712,7 +1716,6 @@
             });
 
             function addRow(row_4,row_5){
-                console.log("ENTRO");
 
                 var row = document.createElement("tr");
 
