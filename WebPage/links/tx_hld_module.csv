@@ -1,0 +1,94 @@
+SECTION,LINK
+"<a>2.3.1
+                            Fiber Optic Technology</a>",https://github.com/teleworxllc/NaaSRunBook/tree/gh-pages/Network%20Design/Primers/Fiber_Optic_Technologies_Principles.pdf
+"<a>2.3.2
+                            Microwave Technology</a>",https://github.com/teleworxllc/NaaSRunBook/tree/gh-pages/Network%20Design/Primers/Microwave_Technologies_Principles.pdf
+"<a>2.3.3
+                            Satellite Technology</a>",https://github.com/teleworxllc/NaaSRunBook/tree/gh-pages/Network%20Design/Primers/Satellite_Technologies_Principles.pdf
+"<a>3.3.1
+                            Satellite Coverage
+                            Verification</a>",https://www.satbeams.com/footprints
+"style='margin-bottom:6.0pt'><a>3.4.4
+                            Aggregation Link
+                            Capacity</a>",tx_hld_widget_1.html
+"<a>3.5.2
+                            Availability
+                            Calculation Example</a>","tx_hld_widget_3.html"" >Tx
+                            Network Availability Calculation Widget</a>.</p>
+                    </div>
+    
+                    <a class='link-next' href=""#"" onclick=""switchContent('#hld')"
+"<a class=""titulo-h2 anchor-bum color-luminati-3"" name=""item4-1"">4.1
+                            End-to-End Process
+                            Overview</a>",https://drive.google.com/file/d/1Vo8t-bHVr4WgKyHQQ-uWkhFuIZuiuc7y/view?usp=sharing
+"<a>4.2.4.1
+                            Fiber Optic (FO) Technology Evaluation</a>","https://github.com/teleworxllc/NaaSRunBook/blob/gh-pages/Network%20Design/Templates/Tx%20HLD%20Template.xlsx"" >TX HLD Report Template</a>.</p>
+                            
+                            </div>
+                            
+                            <h4><a>4.2.4.2
+                            MW Technology Evaluation</a></h4>
+
+                            <ol style='margin-top:0in' start=1 type=1>
+                                <li class=""normal-text"
+"<a>4.2.4.1
+                            Fiber Optic (FO) Technology Evaluation</a>","https://github.com/teleworxllc/NaaSRunBook/blob/gh-pages/Network%20Design/Templates/Tx%20HLD%20Template.xlsx"" >TX HLD Report Template</a>.</p>
+                            
+                            </div>
+                            
+                            <h4><a>4.2.4.3
+                            Satellite Technology Evaluation</a></h4>
+
+                            <ol style='margin-top:0in' start=1 type=1>
+                                <li class=""normal-text"
+"<a>4.2.4.1
+                            Fiber Optic (FO) Technology Evaluation</a>","https://github.com/teleworxllc/NaaSRunBook/blob/gh-pages/Network%20Design/Templates/Tx%20HLD%20Template.xlsx"" >TX HLD Report Template</a>.</p>
+                            
+                            
+                            </div>
+                            
+                            <h3><a>4.2.5
+                            Physical Topology
+                            Design</a></h3>
+                            
+                            <p class=""normal-text"
+"<a>4.2.4.1
+                            Fiber Optic (FO) Technology Evaluation</a>","tx_hld_widget_3.html"" >Tx
+                            Network Availability Calculation Widget</a>.</p>
+                            
+                            </div>
+                            
+                            <p class=""normal-text"
+"<a>4.2.6
+                            Capacity Planning</a>","tx_hld_widget_1.html"" >Tx
+                            Network Capacity Forecast Widget</a>.</p>
+                            
+                            </div>
+                            
+                            <p class=""normal-text"
+"<a>4.2.7
+                            Transport Solution
+                            Definition</a>","https://github.com/teleworxllc/NaaSRunBook/blob/gh-pages/Network%20Design/Templates/Tx%20HLD%20Template.xlsx"" >Tx
+                            HLD Report Template</a>.</p>
+                            
+                            </div>
+                            
+                            <p class=""normal-text"
+"<a>4.2.8.1
+                            BOQ Best Practices</a>","https://github.com/teleworxllc/NaaSRunBook/blob/gh-pages/Network%20Design/Templates/Tx%20HLD%20Template.xlsx"" >Tx
+                                HLD Report Template</a>,
+                            which includes a section for the BOQ, as a base in creating their own version.</p>
+                            
+                            <div style='border:solid black 1.0pt;padding:2.0pt 2.0pt 2.0pt 2.0pt;
+                            background:#EFEFEF'>
+                            
+                            <p class=""normal-text"
+"<a>5.1.2
+                            HLD Recommendation
+                            Generation</a>","                       href=""https://github.com/teleworxllc/NaaSRunBook/blob/gh-pages/Network%20Design/Templates/Tx%20HLD%20Template.xlsx"" >TX HLD Report Template</a> as
+                            a reference to create its own version.</p>
+                    </div>
+
+               </div>
+               
+               <a href=""#"" class=""link-next"" onclick=""switchContent('#fm')"
