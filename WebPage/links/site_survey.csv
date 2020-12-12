@@ -1,13 +1,7 @@
 SECTION,LINK
-"<a class=""titulo-h2 anchor-bum"" name=""item1-2"">1.2
-                        Module Framework</a>",https://github.com/teleworxllc/NaaSRunBook/blob/gh-pages/Deployment/Templates/Site%20Survey%20Report%20Template.xlsx
-"<a></a>4.1.2
-                    Data Collection",https://github.com/teleworxllc/NaaSRunBook/blob/gh-pages/Deployment/Templates/Site%20Consolidated%20Information%20Template.xlsx
-"<a></a>4.1.3
-                    Resource Preparation",https://github.com/teleworxllc/NaaSRunBook/blob/gh-pages/Deployment/Templates/Site%20Survey%20Resources%20Checklist%20Template.xlsx
-"<a class=""titulo-h2 anchor-bum"" name=""item4-2"">4.2
-                    Site Survey Activities</a>",https://github.com/teleworxllc/NaaSRunBook/blob/gh-pages/Deployment/Templates/Site%20Survey%20Report%20Template.xlsx
-"<a></a>4.3.1
-                    Site Survey Template Customization",https://github.com/teleworxllc/NaaSRunBook/blob/gh-pages/Deployment/Templates/Site%20Survey%20Report%20Template.xlsx
-"<a></a>4.3.2
-                    Site Survey Report Customization Generation",https://github.com/teleworxllc/NaaSRunBook/blob/gh-pages/Deployment/Templates/Site%20Survey%20Report%20Template.xlsx
+1.2 Module Framework,https://github.com/teleworxllc/NaaSRunBook/blob/gh-pages/Deployment/Templates/Site%20Survey%20Report%20Template.xlsx
+4.1.2  Data Collection,https://github.com/teleworxllc/NaaSRunBook/blob/gh-pages/Deployment/Templates/Site%20Consolidated%20Information%20Template.xlsx
+4.1.3 Resource Preparation,https://github.com/teleworxllc/NaaSRunBook/blob/gh-pages/Deployment/Templates/Site%20Survey%20Resources%20Checklist%20Template.xlsx
+4.2 Site Survey Activities,https://github.com/teleworxllc/NaaSRunBook/blob/gh-pages/Deployment/Templates/Site%20Survey%20Report%20Template.xlsx
+4.3.1 Site Survey Template Customization,https://github.com/teleworxllc/NaaSRunBook/blob/gh-pages/Deployment/Templates/Site%20Survey%20Report%20Template.xlsx
+4.3.2 Site Survey Report Customization Generation,https://github.com/teleworxllc/NaaSRunBook/blob/gh-pages/Deployment/Templates/Site%20Survey%20Report%20Template.xlsx

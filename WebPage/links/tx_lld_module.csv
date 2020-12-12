@@ -1,21 +1,11 @@
 SECTION,LINK
-"<a class=""titulo-h2 anchor-bum"" name=""item2-5"">2.5
-                        IP Planning</a>",https://github.com/teleworxllc/NaaSRunBook/blob/gh-pages/Network%20Design/Primers/Primer%20on%20IP%20Planning%20Principles.pdf
-"<a>3.2.1
-                    MW Link Design Process</a>",http://www.pathloss.com/
-"<a class=""titulo-h2 anchor-bum"" name=""item3-3"">3.3
-                    IP Address Subnetting Process</a>",tx_ip_arch_widget_1.html
-"<a class=""titulo-h2 anchor-bum"" name=""item3-4"">3.4
-                    IP Address Allocation</a>",https://phpipam.net/
-"<a class=""titulo-h2 anchor-bum"" name=""item4-1"">4.1
-                    End-to-end Process Overview</a>",https://drive.google.com/file/d/113-PkcFVqzsateXX6usr0ugbISDcn7SI/view?usp=sharing
-"<a>4.2.2.2
-                    Model Site Catalogue Generation</a>",https://github.com/teleworxllc/NaaSRunBook/blob/gh-pages/Network%20Design/Templates/Model%20Site%20Catalogue%20Template.pptx
-"<a>4.2.8.2
-                    Microwave Link Design Guidelines</a>",https://github.com/teleworxllc/NaaSRunBook/blob/gh-pages/Network%20Design/Templates/Tx%20LLD%20Template.xlsx
-"<a>4.2.9
-                    DF Generation</a>",https://github.com/teleworxllc/NaaSRunBook/blob/gh-pages/Network%20Design/Templates/Tx%20LLD%20Template.xlsx
-"4.2.10
-                    <a>BoM Generation</a>",https://github.com/teleworxllc/NaaSRunBook/blob/gh-pages/Network%20Design/Templates/Tx%20LLD%20Template.xlsx
-"<a class=""titulo-h2 anchor-bum"" name=""item5-2"">5.2
-                    LLD Recommendation Generation</a>",https://github.com/teleworxllc/NaaSRunBook/blob/gh-pages/Network%20Design/Templates/Tx%20LLD%20Template.xlsx
+2.5 IP Planning,https://github.com/teleworxllc/NaaSRunBook/blob/gh-pages/Network%20Design/Primers/Primer%20on%20IP%20Planning%20Principles.pdf
+3.2.1 MW Link Design Process,http://www.pathloss.com/
+3.3 IP Address Subnetting Process,tx_ip_arch_widget_1.html
+3.4 IP Address Allocation,https://phpipam.net/
+4.1 End-to-end Process Overview,https://drive.google.com/file/d/113-PkcFVqzsateXX6usr0ugbISDcn7SI/view?usp=sharing
+4.2.2.2 Model Site Catalogue Generation,https://github.com/teleworxllc/NaaSRunBook/blob/gh-pages/Network%20Design/Templates/Model%20Site%20Catalogue%20Template.pptx
+4.2.8.2 Microwave Link Design Guidelines,https://github.com/teleworxllc/NaaSRunBook/blob/gh-pages/Network%20Design/Templates/Tx%20LLD%20Template.xlsx
+4.2.9 DF Generation,https://github.com/teleworxllc/NaaSRunBook/blob/gh-pages/Network%20Design/Templates/Tx%20LLD%20Template.xlsx
+4.2.10 BoM Generation,https://github.com/teleworxllc/NaaSRunBook/blob/gh-pages/Network%20Design/Templates/Tx%20LLD%20Template.xlsx
+5.2 LLD Recommendation Generation,https://github.com/teleworxllc/NaaSRunBook/blob/gh-pages/Network%20Design/Templates/Tx%20LLD%20Template.xlsx

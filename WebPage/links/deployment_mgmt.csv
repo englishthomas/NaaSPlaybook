@@ -1,57 +1,29 @@
 SECTION,LINK
-"<a></a>3.1.1
-                        Deployment Milestones",https://github.com/teleworxllc/NaaSRunBook/tree/gh-pages/Deployment/Templates/Deployment_Tracking_KPIs.xlsx
-"<a></a>3.1.2
-                        Planning &amp; Prework stage",https://github.com/teleworxllc/NaaSRunBook/tree/gh-pages/Deployment/Templates/Planning_Gantt_Charts.mpp
-"<a></a>3.1.2
-                        Planning &amp; Prework stage",https://github.com/teleworxllc/NaaSRunBook/tree/gh-pages/Deployment/Templates/Planning_Gantt_Charts.mpp
-"<a></a>3.1.3
-                        Deployment execution stage",https://github.com/teleworxllc/NaaSRunBook/tree/gh-pages/Deployment/Templates/Planning_Gantt_Charts.mpp
-"<a></a>3.1.4
-                        Deployment Closure and Transfer to Operations",https://github.com/teleworxllc/NaaSRunBook/tree/gh-pages/Deployment/Templates/Planning_Gantt_Charts.mpp
-"<a></a>3.1.4
-                        Deployment Closure and Transfer to Operations",https://github.com/teleworxllc/NaaSRunBook/tree/gh-pages/Deployment/Primers/Path_Methods_Guidelines.docx
-"<a class=""titulo-h2 anchor-bum"" name=""item3-2"">3.2 Resource
-                        Planning</a>",https://github.com/teleworxllc/NaaSRunBook/tree/gh-pages/Deployment/Templates/Deployment_Templates.xlsx
-"<a class=""titulo-h2 anchor-bum"" name=""item3-3"">3.3 Cost
-                        Planning</a>",https://github.com/teleworxllc/NaaSRunBook/tree/gh-pages/Deployment/Primers/Cost_Break_Structure.docx
-"<a class=""titulo-h2 anchor-bum"" name=""item3-3"">3.3 Cost
-                        Planning</a>",https://github.com/teleworxllc/NaaSRunBook/tree/gh-pages/Deployment/Primers/Cost_Break_Structure.docx
-"<a class=""titulo-h2 anchor-bum"" name=""item3-4"">3.4 Communications
-                        &amp; Stakeholder Management</a>",https://github.com/teleworxllc/NaaSRunBook/tree/gh-pages/Deployment/Templates/Deployment_Templates.xlsx
-"<a class=""titulo-h2 anchor-bum"" name=""item3-4"">3.4 Communications
-                        &amp; Stakeholder Management</a>",https://github.com/teleworxllc/NaaSRunBook/tree/gh-pages/Deployment/Templates/Deployment_Templates.xlsx
-"<a class=""titulo-h2 anchor-bum"" name=""item3-5"">3.5 Risk
-                        Planning</a>",https://github.com/teleworxllc/NaaSRunBook/tree/gh-pages/Deployment/Templates/Deployment_Templates.xlsx
-"<a></a>3.5.1
-                        Identify Risks",primer_risk_analisis
-"<a></a>3.5.2
-                        Plan Risk Responses",https://github.com/teleworxllc/NaaSRunBook/tree/gh-pages/Deployment/Templates/Deployment_Templates.xlsx
-"<a></a>3.5.2
-                        Plan Risk Responses",https://github.com/teleworxllc/NaaSRunBook/tree/gh-pages/Deployment/Templates/Deployment_Templates.xlsx
-"<a class=""titulo-h2 anchor-bum"" name=""item4-1"">4.1 Control
-                        &amp; Monitoring Guidelines</a>",https://github.com/teleworxllc/NaaSRunBook/tree/gh-pages/Deployment/Templates/Deployment_Tracking_KPIs.xlsx
-"<a class=""titulo-h2 anchor-bum"" name=""item4-1"">4.1 Control
-                        &amp; Monitoring Guidelines</a>",https://github.com/teleworxllc/NaaSRunBook/tree/gh-pages/Deployment/Primers/Measure_Deployment_Performance.docx
-"<a></a>4.1.1
-                        Tracking Design Tasks",https://github.com/teleworxllc/NaaSRunBook/tree/gh-pages/Deployment/Templates/Deployment_Tracking_KPIs.xlsx
-"<a></a>4.1.2
-                        Tracking Deployment Execution Tasks",https://github.com/teleworxllc/NaaSRunBook/tree/gh-pages/Deployment/Templates/Deployment_Tracking_KPIs.xlsx
-"<a></a>4.1.2
-                        Tracking Deployment Execution Tasks",https://github.com/teleworxllc/NaaSRunBook/tree/gh-pages/Deployment/Templates/Deployment_Tracking_KPIs.xlsx
-"<a></a>4.1.2
-                        Tracking Deployment Execution Tasks",https://github.com/teleworxllc/NaaSRunBook/tree/gh-pages/Deployment/Templates/Deployment_Tracking_KPIs.xlsx
-"<a></a>4.1.2
-                        Tracking Deployment Execution Tasks",https://github.com/teleworxllc/NaaSRunBook/tree/gh-pages/Deployment/Templates/Deployment_Tracking_KPIs.xlsx
-"<a></a>4.1.3
-                        Tracking Transfer to Operations Tasks",https://github.com/teleworxllc/NaaSRunBook/tree/gh-pages/Deployment/Templates/Deployment_Tracking_KPIs.xlsx
-"<a></a>4.1.3
-                        Tracking Transfer to Operations Tasks",https://github.com/teleworxllc/NaaSRunBook/tree/gh-pages/Deployment/Templates/Deployment_Tracking_KPIs.xlsx
-"<a class=""titulo-h2 anchor-bum"" name=""item4-2"">4.2 Risk
-                        Management</a>",https://github.com/teleworxllc/NaaSRunBook/tree/gh-pages/Deployment/Templates/Deployment_Templates.xlsx
-"<a></a>4.2.1
-                        Track Identified Risks",https://github.com/teleworxllc/NaaSRunBook/tree/gh-pages/Deployment/Templates/Deployment_Templates.xlsx
-"<a></a>4.2.1
-                        Track Identified Risks",https://github.com/teleworxllc/NaaSRunBook/tree/gh-pages/Deployment/Templates/Deployment_Templates.xlsx
-"<a></a>4.2.3
-                        Manage Risk Response Plans",https://github.com/teleworxllc/NaaSRunBook/tree/gh-pages/Deployment/Templates/Deployment_Templates.xlsx
+3.1.1 Deployment Milestones,https://github.com/teleworxllc/NaaSRunBook/tree/gh-pages/Deployment/Templates/Deployment_Tracking_KPIs.xlsx
+3.1.2 Planning &amp; Prework stage,https://github.com/teleworxllc/NaaSRunBook/tree/gh-pages/Deployment/Templates/Planning_Gantt_Charts.mpp
+3.1.2 Planning &amp; Prework stage,https://github.com/teleworxllc/NaaSRunBook/tree/gh-pages/Deployment/Templates/Planning_Gantt_Charts.mpp
+3.1.3 Deployment execution stage,https://github.com/teleworxllc/NaaSRunBook/tree/gh-pages/Deployment/Templates/Planning_Gantt_Charts.mpp
+3.1.4 Deployment Closure and Transfer to Operations,https://github.com/teleworxllc/NaaSRunBook/tree/gh-pages/Deployment/Templates/Planning_Gantt_Charts.mpp
+3.1.4 Deployment Closure and Transfer to Operations,https://github.com/teleworxllc/NaaSRunBook/tree/gh-pages/Deployment/Primers/Path_Methods_Guidelines.docx
+3.2 Resource Planning,https://github.com/teleworxllc/NaaSRunBook/tree/gh-pages/Deployment/Templates/Deployment_Templates.xlsx
+3.3 Cost Planning,https://github.com/teleworxllc/NaaSRunBook/tree/gh-pages/Deployment/Primers/Cost_Break_Structure.docx
+3.3 Cost Planning,https://github.com/teleworxllc/NaaSRunBook/tree/gh-pages/Deployment/Primers/Cost_Break_Structure.docx
+3.4 Communications &amp; Stakeholder Management,https://github.com/teleworxllc/NaaSRunBook/tree/gh-pages/Deployment/Templates/Deployment_Templates.xlsx
+3.4 Communications &amp; Stakeholder Management,https://github.com/teleworxllc/NaaSRunBook/tree/gh-pages/Deployment/Templates/Deployment_Templates.xlsx
+3.5 Risk Planning,https://github.com/teleworxllc/NaaSRunBook/tree/gh-pages/Deployment/Templates/Deployment_Templates.xlsx
+3.5.1 Identify Risks,primer_risk_analisis
+3.5.2 Plan Risk Responses,https://github.com/teleworxllc/NaaSRunBook/tree/gh-pages/Deployment/Templates/Deployment_Templates.xlsx
+3.5.2 Plan Risk Responses,https://github.com/teleworxllc/NaaSRunBook/tree/gh-pages/Deployment/Templates/Deployment_Templates.xlsx
+4.1 Control &amp; Monitoring Guidelines,https://github.com/teleworxllc/NaaSRunBook/tree/gh-pages/Deployment/Templates/Deployment_Tracking_KPIs.xlsx
+4.1 Control &amp; Monitoring Guidelines,https://github.com/teleworxllc/NaaSRunBook/tree/gh-pages/Deployment/Primers/Measure_Deployment_Performance.docx
+4.1.1 Tracking Design Tasks,https://github.com/teleworxllc/NaaSRunBook/tree/gh-pages/Deployment/Templates/Deployment_Tracking_KPIs.xlsx
+4.1.2 Tracking Deployment Execution Tasks,https://github.com/teleworxllc/NaaSRunBook/tree/gh-pages/Deployment/Templates/Deployment_Tracking_KPIs.xlsx
+4.1.2 Tracking Deployment Execution Tasks,https://github.com/teleworxllc/NaaSRunBook/tree/gh-pages/Deployment/Templates/Deployment_Tracking_KPIs.xlsx
+4.1.2 Tracking Deployment Execution Tasks,https://github.com/teleworxllc/NaaSRunBook/tree/gh-pages/Deployment/Templates/Deployment_Tracking_KPIs.xlsx
+4.1.2 Tracking Deployment Execution Tasks,https://github.com/teleworxllc/NaaSRunBook/tree/gh-pages/Deployment/Templates/Deployment_Tracking_KPIs.xlsx
+4.1.3 Tracking Transfer to Operations Tasks,https://github.com/teleworxllc/NaaSRunBook/tree/gh-pages/Deployment/Templates/Deployment_Tracking_KPIs.xlsx
+4.1.3 Tracking Transfer to Operations Tasks,https://github.com/teleworxllc/NaaSRunBook/tree/gh-pages/Deployment/Templates/Deployment_Tracking_KPIs.xlsx
+4.2 Risk Management,https://github.com/teleworxllc/NaaSRunBook/tree/gh-pages/Deployment/Templates/Deployment_Templates.xlsx
+4.2.1 Track Identified Risks,https://github.com/teleworxllc/NaaSRunBook/tree/gh-pages/Deployment/Templates/Deployment_Templates.xlsx
+4.2.1 Track Identified Risks,https://github.com/teleworxllc/NaaSRunBook/tree/gh-pages/Deployment/Templates/Deployment_Templates.xlsx
+4.2.3 Manage Risk Response Plans,https://github.com/teleworxllc/NaaSRunBook/tree/gh-pages/Deployment/Templates/Deployment_Templates.xlsx
