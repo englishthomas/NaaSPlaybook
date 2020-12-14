@@ -5,11 +5,8 @@ SECTION,LINK
                     
                     <br><h2><a class=""titulo-h2 anchor-bum"" name=""item3-2"
 "<a></a>3.3.1
-                    GTP-based Interfaces",
+                    GTP-based Interfaces",tx_ip_arch_widget_1.html
 "<a></a>4.2.2
                     Naming Convention Definition",mobile_core_lld_widget_1.html
-"<a></a>4.2.10
-                    Bill of Materials Generation",
-"<a class=""titulo-h2 anchor-bum"" name=""item5-2"">5.2
-                    LLD &amp; BoM
-                    Recommendation Generation</a>",
+4.2.10  Bill of Materials Generation,github.com/teleworxllc/NaaSRunBook/blob/gh-pages/Network%20Design/Templates/9_Bill%20of%20Materials%20Template.xlsx
+5.2 LLD & BoM Recommendation Generation,github.com/teleworxllc/NaaSRunBook/blob/gh-pages/Network%20Design/Templates/9_Bill%20of%20Materials%20Template.xlsx

@@ -119,10 +119,13 @@
                                     
                                 </ul>
                                 </li>
-                                <li>
-                                    <a href="#">
+                                <li class="active">
+                                    <a href="#post_lauch" data-toggle="collapse" aria-expanded="false">
                                         &#187 Post-Launch Engineering
                                     </a>
+                                    <ul class="list-unstyled collapse" id="post_lauch">
+                                        <li><a href="ran_optimization.html" style="margin-left:2em">&bull; RF Optimization</a></li>                                        
+                                    </ul>
                                 </li>
                                 <li  class="active">
                                 <a href="#supply" data-toggle="collapse" aria-expanded="false">
@@ -194,37 +197,51 @@
                     <div class="row">
                         <label  class="col-sm-3 parag-1"></label>
                         <label  class="col-sm-3 parag-1">Frequency (MHz)</label >
-                        <input id='form2' name="tx_lat" type = "text" class="col-sm-2" >
+                        <select id="form2" name="tx_lon" class="col-sm-2 text-box"> 
+                            <option value="2500">2500</option>
+                            <option value="3600">3650</option>
+                            <option value="5800">5800</option>
+                        </select>
                     </div>
                     <br>
                     <div class="row">
                         <label  class="col-sm-3 parag-1"></label>
                         <label  class="col-sm-3 parag-1">Access Technology</label >
-                        <input id='form2' name="tx_lat" type = "text" class="col-sm-2" >
+                            <select id="form3" name="tx_lon" class="col-sm-2 text-box"> 
+                                <option value="LTE">LTE</option>
+                                <option value="TDMA">TDMA</option>
+                            </select>
                     </div>
                     <br>
                     <div class="row">
                         <label  class="col-sm-3 parag-1"></label>
                         <label  class="col-sm-3 parag-1">Number of sectors per site</label >
-                        <input id='form2' name="tx_lat" type = "text" class="col-sm-2" >
+                            <select id="form4" name="tx_lon" class="col-sm-2 text-box"> 
+                                <option value="LTE_1">LTE 1 sector</option>
+                                <option value="LTE_2">LTE 3 sector</option>
+                                <option value="TDMA">TDMA 4 sectors</option>
+                            </select>
                     </div>
                     <br>
                     <div class="row">
                         <label  class="col-sm-3 parag-1"></label>
                         <label  class="col-sm-3 parag-1">CPE Type</label >
-                        <input id='form2' name="tx_lat" type = "text" class="col-sm-2" >
+                            <select id="form5" name="tx_lon" class="col-sm-2 text-box"> 
+                                <option value="indoor">Indoor</option>
+                                <option value="outdoor">Outdoor</option>
+                            </select>
                     </div>
                     <br>
                     <div class="row">
                         <label  class="col-sm-3 parag-1"></label>
                         <label  class="col-sm-3 parag-1">Downlink Rate (Mbps)</label >
-                        <input id='form2' name="tx_lat" type = "text" class="col-sm-2" >
+                        <input id='form6' name="tx_lat" type = "text" class="col-sm-2" >
                     </div>
                     <br>
                     <div class="row">
                         <label  class="col-sm-3 parag-1"></label>
                         <label  class="col-sm-3 parag-1">Uplink Rate (Mbps)</label >
-                        <input id='form2' name="tx_lat" type = "text" class="col-sm-2" >
+                        <input id='form7' name="tx_lat" type = "text" class="col-sm-2" >
                     </div>
                     <br>
                     <br>
@@ -232,118 +249,204 @@
                         <label  class="col-sm-3 parag-1"></label>
                         <label  class="col-sm-3 parag-1"><b><u>Polygon Input</u></b></label >
                     </div>
+            
                     <br>
                     <div class="row">
                         <label  class="col-sm-3 parag-1"></label>
                         <label  class="col-sm-3 parag-1">Number of Polygons (Max. 15)</label >
+                        <input id='member' name="tx_lat" type = "text" class="col-sm-2" name="member" >
+                        <label  class="col-sm-1 parag-1"></label>
+                        <button type="submit" class="btn btn-default"><a href="#" id="filldetails" onclick="addFields()">Insert</a></button>
+                    </div>
+                    <!--div class="row">
+                        <label  class="col-sm-1 parag-1"></label>
+                        <label  class="col-sm-2 parag-1">Polygon 1</label >
                         <input id='form2' name="tx_lat" type = "text" class="col-sm-2" >
-                        <button type="submit" class="btn btn-default" >Insert</button>
-                    </div>
-                    <div class="row">
-                        <label  class="col-sm-7 parag-1"></label>
-                        <button type="submit" class="btn btn-default" >Insert</button>
-                    </div>
-
-                    <input type="text" id="member" name="member" value="">Number of members: (max. 10)<br />
-                    <a href="#" id="filldetails" onclick="addFields()">Fill Details</a>
+                        <label  class="col-sm-1 parag-1"></label>
+                        <input id='form2' name="tx_lat" type = "text" class="col-sm-2" >
+                        <label  class="col-sm-1 parag-1"></label>
+                        <input id='form2' name="tx_lat" type = "text" class="col-sm-2" >
+                    </div-->
+                    <br>
                     <div id="container"></div>
 
+
                     <br>
                     <div class="row">
-                        <label  class="col-sm-1 parag-1"></label>
-                        <label  class="col-sm-2 parag-1">SmallCell Percentage</label >
-                        <input id='form3_1' name="tx_lat" type = "text" class="col-sm-2" >
-                        <label  class="col-sm-1 parag-1"><i>(%)</i></label>
-                        <label  class="col-sm-2 parag-1">SmallCell Eq. Size</label >
-                        <input id='form3_2' name="tx_lat" type = "text" class="col-sm-2" >
-                        <label  class="col-sm-1 parag-1"><i>(m^3)</i></label>
+                        <label  class="col-sm-3 parag-1"></label>
+                        <label><b><u><a class="a_link" onclick='myFunction_1()'><strong><i>&#x2b; Advance Capacity Inputs</i></strong></a></u></b></label >
                     </div>
+                    <div id="myDIV_1">
+                        <div class="row">
+                            <label  class="col-sm-3 parag-1"></label>
+                            <label  class="col-sm-3 parag-1">Overbooking Factor</label >
+                            <input id='form8' name="tx_lat" type = "text" class="col-sm-2" >
+                        </div>
+                        <br>
+                        <div class="row">
+                            <label  class="col-sm-3 parag-1"></label>
+                            <label  class="col-sm-3 parag-1">Overprovisioning Factor</label >
+                            <input id='form9' name="tx_lat" type = "text" class="col-sm-2" >
+                        </div>
+                        <br>
+                        <div class="row">
+                            <label  class="col-sm-3 parag-1"></label>
+                            <label  class="col-sm-3 parag-1">Number of RRUs per site </label >
+                            <input id='value1' name="tx_lat" type = "text" class="col-sm-2 result-cell" readonly>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <label  class="col-sm-3 parag-1"></label>
+                            <label  class="col-sm-3 parag-1">Radio Downlink Capacity (eNBmax_DL_rate) [Mbit/s]</label >
+                            <input id='value2' name="tx_lat" type = "text" class="col-sm-2 result-cell" readonly>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <label  class="col-sm-3 parag-1"></label>
+                            <label  class="col-sm-3 parag-1">Radio Uplink Capacity(eNBmax_UL_rate) [Mbit/s]</label >
+                            <input id='value3' name="tx_lat" type = "text" class="col-sm-2 result-cell" readonly>
+                        </div>
+                    </div>
+
                     <br>
                     <div class="row">
-                        <label  class="col-sm-1 parag-1"></label>
-                        <label  class="col-sm-2 parag-1">MacroCell Percentage</label >
-                        <input id='form4_1' name="tx_lat" type = "text" class="col-sm-2" >
-                        <label  class="col-sm-1 parag-1"><i>(%)</i></label>
-                        <label  class="col-sm-2 parag-1">MacroCell Eq. Size</label >
-                        <input id='form4_2' name="tx_lat" type = "text" class="col-sm-2" >
-                        <label  class="col-sm-1 parag-1"><i>(m^3)</i></label>
+                        <label  class="col-sm-3 parag-1"></label>
+                        <label><b><u><a class="a_link" onclick='myFunction_2()'><strong><i>&#x2b; Advance Coverage Inputs</i></strong></a></u></b></label >
                     </div>
-                    <br>
-                    <div class="row">
-                        <label  class="col-sm-1 parag-1"></label>
-                        <label  class="col-sm-2 parag-1"><b><u>Transport Solution</u></b></label >
+                    <div id="myDIV_2">
+                        <div class="row">
+                            <label  class="col-sm-3 parag-1"></label>
+                            <label  class="col-sm-3 parag-1">Antenna Height [m]</label >
+                            <input id='form10' name="tx_lat" type = "text" class="col-sm-2" >
+                        </div>
+                        <br>
+                        <div class="row">
+                            <label  class="col-sm-3 parag-1"></label>
+                            <label  class="col-sm-3 parag-1">Base Station Tx Power [dBm]</label >
+                            <input id='value4' name="tx_lat" type = "text" class="col-sm-2 result-cell" readonly>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <label  class="col-sm-3 parag-1"></label>
+                            <label  class="col-sm-3 parag-1">Gain of the Base Station Antenna [dBi]</label >
+                            <input id='value5' name="tx_lat" type = "text" class="col-sm-2 result-cell" readonly>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <label  class="col-sm-3 parag-1"></label>
+                            <label  class="col-sm-3 parag-1">Base Station Sensitivity [dBm]</label >
+                            <input id='value6' name="tx_lat" type = "text" class="col-sm-2 result-cell" readonly>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <label  class="col-sm-3 parag-1"></label>
+                            <label  class="col-sm-3 parag-1">Feeder Loss [dB]</label >
+                            <input id='form11' name="tx_lat" type = "text" class="col-sm-2" >
+                        </div>
+                        <br>
+                        <div class="row">
+                            <label  class="col-sm-3 parag-1"></label>
+                            <label  class="col-sm-3 parag-1">Interference Margin [dB]</label >
+                            <input id='form12' name="tx_lat" type = "text" class="col-sm-2" >
+                        </div>
+                        <br>
+                        <div class="row">
+                            <label  class="col-sm-3 parag-1"></label>
+                            <label  class="col-sm-3 parag-1">Shadow Fading Std. Dev. [dB]</label >
+                            <input id='form13' name="tx_lat" type = "text" class="col-sm-2" >
+                        </div>
+                        <br>
+                        <div class="row">
+                            <label  class="col-sm-3 parag-1"></label>
+                            <label  class="col-sm-3 parag-1">Shadow Fading Margin [dB]</label >
+                            <input id='value7' name="tx_lat" type = "text" class="col-sm-2 result-cell" readonly>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <label  class="col-sm-3 parag-1"></label>
+                            <label  class="col-sm-3 parag-1">SINR Offset [dB]</label >
+                            <input id='value8' name="tx_lat" type = "text" class="col-sm-2 result-cell" readonly>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <label  class="col-sm-3 parag-1"></label>
+                            <label  class="col-sm-3 parag-1">Indoor Penetration Margin (dB)</label >
+                            <input id='value9' name="tx_lat" type = "text" class="col-sm-2 result-cell" readonly>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <label  class="col-sm-3 parag-1"></label>
+                            <label  class="col-sm-3 parag-1">CPE Losses (dB)</label >
+                            <input id='value10' name="tx_lat" type = "text" class="col-sm-2 result-cell" readonly>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <label  class="col-sm-3 parag-1"></label>
+                            <label  class="col-sm-3 parag-1">CPE Equipment Height [m]</label >
+                            <input id='value2' name="tx_lat" type = "text" class="col-sm-2 result-cell" readonly>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <label  class="col-sm-3 parag-1"></label>
+                            <label  class="col-sm-3 parag-1">CPE Tx Power [dBm]</label >
+                            <input id='value11' name="tx_lat" type = "text" class="col-sm-2 result-cell" readonly>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <label  class="col-sm-3 parag-1"></label>
+                            <label  class="col-sm-3 parag-1">Gain of the CPE Equipment Antenna [dBi]</label >
+                            <input id='value12' name="tx_lat" type = "text" class="col-sm-2 result-cell" readonly>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <label  class="col-sm-3 parag-1"></label>
+                            <label  class="col-sm-3 parag-1">Sensitivity of the CPE Equipment [dBm]</label >
+                            <input id='value13' name="tx_lat" type = "text" class="col-sm-2 result-cell" readonly>
+                        </div>
                     </div>
-                    <br>
-                    <div class="row">
-                        <label  class="col-sm-1 parag-1"></label>
-                        <label  class="col-sm-2 parag-1">Fiber Optic  Percentage</label >
-                        <input id='form5_1' name="tx_lat" type = "text" class="col-sm-2">
-                        <label  class="col-sm-1 parag-1"><i>(%)</i></label>
-                        <label  class="col-sm-2 parag-1">FO Eq. Size</label >
-                        <input id='form5_2' name="tx_lat" type = "text" class="col-sm-2">
-                        <label  class="col-sm-1 parag-1"><i>(m^3)</i></label>
-                    </div>
-                    <br>
-                    <div class="row">
-                        <label  class="col-sm-1 parag-1"></label>
-                        <label  class="col-sm-2 parag-1">Microwave Percentage</label >
-                        <input id='form6_1' name="tx_lat" type = "text" class="col-sm-2" >
-                        <label  class="col-sm-1 parag-1"><i>(%)</i></label>
-                        <label  class="col-sm-2 parag-1">MW Eq. Size</label >
-                        <input id='form6_2' name="tx_lat" type = "text" class="col-sm-2" >
-                        <label  class="col-sm-1 parag-1"><i>(m^3)</i></label>
-                    </div>
-                    <br>
-                    <div class="row">
-                        <label  class="col-sm-1 parag-1"></label>
-                        <label  class="col-sm-2 parag-1">Satellite Percentage</label >
-                        <input id='form7_1' name="tx_lat" type = "text" class="col-sm-2" >
-                        <label  class="col-sm-1 parag-1"><i>(%)</i></label>
-                        <label  class="col-sm-2 parag-1">Satellite Eq. Size</label >
-                        <input id='form7_2' name="tx_lat" type = "text" class="col-sm-2" >
-                        <label  class="col-sm-1 parag-1"><i>(m^3)</i></label>
-                    </div>
-                    <br>
+                    
+                    <br><br>
+
                     <div class="row">
                         <center><button type="submit" class="btn btn-default" >Calculate</button></center>
                     </div><br>
 
-                    <h4 class="title-results" style="border-style: solid;background-color:#005777;color:#fff"><center>Calculation</center></h4>               
+                    <h4 class="title-results" style="border-style: solid;background-color:#005777;color:#fff"><center>Results</center></h4>               
                 <br>
                 <div class="row">
-                    <label  class="col-sm-1 parag-1"></label>
-                    <label  class="col-sm-2 parag-1">Site Eq. To Store</label >
-                    <input id='value1' name="tx_lat" type = "text" class="col-sm-2 result-cell" readonly>
-                    <label  class="col-sm-1 parag-1"><i>(#)</i></label>
+                    <label  class="col-sm-3 parag-1"></label>
+                    <label  class="col-sm-3 parag-1"><b><u>Coverage Analysis (Link Budget)</u></b></label >
+                </div>
+                <div class="row">
+                    <label  class="col-sm-3 parag-1"></label>
+                    <label  class="col-sm-3 parag-1">Average Cell Radius [Km]</label >
+                    <input id='value14' name="tx_lat" type = "text" class="col-sm-2 result-cell" readonly>
                 </div>
                 <br>
                 <div class="row">
-                    <label  class="col-sm-1 parag-1"></label>
-                    <label  class="col-sm-2 parag-1"><b><u>Equipment Volume</u></b></label >
+                    <label  class="col-sm-3 parag-1"></label>
+                    <label  class="col-sm-3 parag-1">Cell Coverage Area [Km2]</label >
+                    <input id='value15' name="tx_lat" type = "text" class="col-sm-2 result-cell" readonly>
                 </div>
+
                 <br>
                 <div class="row">
-                    <label  class="col-sm-1 parag-1"></label>
-                    <label  class="col-sm-2 parag-1">RAN Equipment</label >
-                    <input id='value2' name="tx_lat" type = "text" class="col-sm-2 result-cell" readonly>
-                    <label  class="col-sm-1 parag-1"><i>(m3)</i></label>
-                    <label  class="col-sm-2 parag-1">Tx Equipment</label >
-                    <input id='value4' name="tx_lat" type = "text" class="col-sm-2 result-cell" readonly>
-                    <label  class="col-sm-1 parag-1"><i>(m3)</i></label>
+                    <label  class="col-sm-3 parag-1"></label>
+                    <label  class="col-sm-3 parag-1"><b><u>Capacity Analysis</u></b></label >
                 </div>
-                <br>
                 <div class="row">
-                    <label  class="col-sm-1 parag-1"></label>
-                    <label  class="col-sm-2 parag-1"><b><u>Warehouse Storage</u></b></label >
+                    <label  class="col-sm-3 parag-1"></label>
+                    <label  class="col-sm-3 parag-1">Number of subscribers per site</label >
+                    <input id='value16' name="tx_lat" type = "text" class="col-sm-2 result-cell" readonly>
                 </div>
-                <br>
+                <br><br>
                 <div class="row">
-                    <label  class="col-sm-1 parag-1"></label>
-                    <label  class="col-sm-2 parag-1">Space Requirement</label >
-                    <input id='value3' name="tx_lat" type = "text" class="col-sm-2 result-cell" readonly>
-                    <label  class="col-sm-1 parag-1"><i>(m2)</i></label>
+                    <label  class="col-sm-3 parag-1"></label>
+                    <label  class="col-sm-3 parag-1"><b><u>Number of Sites</u></b></label >
                 </div>
                 <br>
+                <div id="sites_results"></div>
+
                 </form>
 
             </div>
@@ -370,62 +473,241 @@
 
                 var form1_var = Number(formulario2.form1.value);
                 var form2_var = Number(formulario2.form2.value);
-                var form3_1_var = Number(formulario2.form3_1.value);
-                var form3_2_var = Number(formulario2.form3_2.value);
-                var form4_1_var = Number(formulario2.form4_1.value);
-                var form4_2_var = Number(formulario2.form4_2.value);
-                var form5_1_var = Number(formulario2.form5_1.value);
-                var form5_2_var = Number(formulario2.form5_2.value);
-                var form6_1_var = Number(formulario2.form6_1.value);
-                var form6_2_var = Number(formulario2.form6_2.value);
-                var form7_1_var = Number(formulario2.form7_1.value);
-                var form7_2_var = Number(formulario2.form7_2.value);
+                var form3_var = Number(formulario2.form3.value);
+                var form4_var = formulario2.form4.value;
+                var form5_var = Number(formulario2.form5.value);
+                var form6_var = Number(formulario2.form6.value);
+                var form7_var = Number(formulario2.form7.value);
+                var form8_var = Number(formulario2.form8.value);
+                var form9_var = Number(formulario2.form9.value);
+                var form10_var = Number(formulario2.form10.value);
+                var form11_var = Number(formulario2.form11.value);
+                var form12_var = Number(formulario2.form12.value);
+                var form13_var = Number(formulario2.form13.value);
 
-                if(((form3_1_var + form4_1_var) == 100) && ((form5_1_var+form6_1_var+form7_1_var) == 100)){
+                var ran_techs = ['2500 LTE Outdoor', '2500 LTE Indoor',	'3650 LTE Outdoor',	'3650 LTE Indoor',	'2500 TDMA Outdoor', '3650 TDMA Outdoor', '5800 TDMA Outdoor'];
+                var dl_max_th = [140,140,160,160,115,130,155];
+]
 
-                form3_1_var = form3_1_var / 100;
-                form4_1_var = form4_1_var / 100;
-                form5_1_var = form5_1_var / 100;
-                form6_1_var = form6_1_var / 100;
-                form7_1_var = form7_1_var / 100;
-   
-                var value1_int = (Math.ceil(form1_var/form2_var))/2;
-               // var value2_int = (((Math.ceil(value1_int*form3_1_var))*form3_2_var) + ((Math.ceil(value1_int*form4_1_var))*form4_2_var) )* 1.1;
-                var value2_int = (Math.ceil(value1_int*form3_1_var,0)*form3_2_var + Math.ceil(value1_int*form4_1_var,0)*form4_2_var)*1.1
-                //var value4_int = 272; //(100 - (100-value1_int) - (100-value3_int) - (100-value2_int));
-                var value4_int = ((Math.ceil(value1_int*form5_1_var)*form5_2_var+Math.ceil(value1_int*form6_1_var)*form6_2_var+Math.ceil(value1_int*form7_1_var)*form7_2_var)*1.1);
-                var value3_int = ((value2_int+value4_int)/2)*1.35;
+                var value1_int;
+                (form4_var=='LTE_1') ? value1_int=1 : null ;
+                (form4_var=='LTE_2') ? value1_int=3 : null ;
+                (form4_var=='TDMA')  ? value1_int=4 : null ; 
 
-                document.getElementById("value1").value = value1_int.toFixed(0);
-                document.getElementById("value2").value = value2_int.toFixed(0);
-                document.getElementById("value3").value = value3_int.toFixed(0);
-                document.getElementById("value4").value = value4_int.toFixed(0);
-                } else{
-                    alert("Verify that the percentages meet the 100%");
-                }
+
+                document.getElementById("value1").value = value1_int;               
                 
             });
+
+            var x = document.getElementById("myDIV_1");            
+            x.style.display = "none";
+            var x = document.getElementById("myDIV_2");            
+            x.style.display = "none";
+
+            function myFunction_1() {
+                var x = document.getElementById("myDIV_1");
+                if (x.style.display === "none") {
+                    x.style.display = "block";
+                } else {
+                    x.style.display = "none";
+                }
+            }
+
+            function myFunction_2() {
+                var x = document.getElementById("myDIV_2");
+                if (x.style.display === "none") {
+                    x.style.display = "block";
+                } else {
+                    x.style.display = "none";
+                }
+            }
 
             function addFields(){
                 // Number of inputs to create
                 var number = document.getElementById("member").value;
-                // Container <div> where dynamic content will be placed
                 var container = document.getElementById("container");
                 // Clear previous contents of the container
                 while (container.hasChildNodes()) {
                     container.removeChild(container.lastChild);
                 }
+                var label_t1 = document.createElement("label"); 
+                label_t1.className = "col-sm-3 parag-1";
+
+                var title_1 = document.createElement("label"); 
+                title_1.innerHTML = ("Name");
+                title_1.className = "col-sm-1";
+
+                var label_t2 = document.createElement("label"); 
+                label_t2.className = "col-sm-1 parag-1";
+
+                var title_2 = document.createElement("label"); 
+                title_2.innerHTML = ("Area (km^2)");
+                title_2.className = "col-sm-2";
+
+                var label_t3 = document.createElement("label"); 
+                label_t3.className = "col-sm-1 parag-1";
+
+                var title_3 = document.createElement("label"); 
+                title_3.innerHTML = ("Housing Units (#)");
+                title_3.className = "col-sm-2";
+
+                container.appendChild(label_t1);
+                container.appendChild(title_1);
+                container.appendChild(label_t2);
+                container.appendChild(title_2);
+                //container.appendChild(label_t3);
+                container.appendChild(title_3);
+
                 for (i=0;i<number;i++){
-                    // Append a node with a random text
-                    container.appendChild(document.createTextNode("Member " + (i+1)));
-                    // Create an <input> element, set its type and name attributes
-                    var input = document.createElement("input");
-                    input.type = "text";
-                    input.name = "member" + i;
-                    container.appendChild(input);
-                    // Append a line break 
+                    var newDiv = document.createElement("div");
+                    newDiv.className = "row";
+                    container.appendChild(newDiv);
+
+                    var label_1 = document.createElement("label"); 
+                    label_1.className = "col-sm-2 parag-1";
+
+                    var newlabel = document.createElement("label"); 
+                    newlabel.innerHTML = ("Polygon " + (i+1));
+                    newlabel.className = "col-sm-2";
+                    ///newlabel.setAttribute('class','col-sm-5');
+
+                    var input_1 = document.createElement("input"); 
+                    input_1.setAttribute('id','X');
+                    input_1.setAttribute('type','text');
+                    input_1.setAttribute('class','col-sm-2');
+
+                    var label_2 = document.createElement("label"); 
+                    label_2.className = "col-sm-1 parag-1";
+
+                    var label_3 = document.createElement("label"); 
+                    label_3.className = "col-sm-1 parag-1";
+
+                    var input_2 = document.createElement("input"); 
+                    input_2.setAttribute('id','X');
+                    input_2.setAttribute('type','text');
+                    input_2.setAttribute('class','col-sm-2');
+
+                    var input_3 = document.createElement("input"); 
+                    input_3.setAttribute('id','X');
+                    input_3.setAttribute('type','text');
+                    input_3.setAttribute('class','col-sm-2');
+
+                    newDiv.appendChild(label_1);
+                    newDiv.appendChild(newlabel);
+                    newDiv.appendChild(input_1);
+                    newDiv.appendChild(label_2);
+                    newDiv.appendChild(input_2);
+                    newDiv.appendChild(label_3);
+                    newDiv.appendChild(input_3);
+
+                    container.appendChild(document.createElement("br"));
                     container.appendChild(document.createElement("br"));
                 }
+                sitesResults();                
+            }
+
+            function sitesResults(){
+                // Number of inputs to create
+                var container = document.getElementById("sites_results");
+                var number = document.getElementById("member").value;
+                while (container.hasChildNodes()) {
+                    container.removeChild(container.lastChild);
+                }
+
+                var label_t1 = document.createElement("label"); 
+                label_t1.className = "col-sm-2 parag-1";
+
+                var title_1 = document.createElement("label"); 
+                title_1.innerHTML = ("Name");
+                title_1.className = "col-sm-1";
+
+                var label_t2 = document.createElement("label"); 
+                label_t2.className = "col-sm-1 parag-1";
+
+                var title_2 = document.createElement("label"); 
+                title_2.innerHTML = ("N_sites_Coverage");
+                title_2.className = "col-sm-2";
+
+                var label_t3 = document.createElement("label"); 
+                label_t3.className = "col-sm-1 parag-1";
+
+                var title_3 = document.createElement("label"); 
+                title_3.innerHTML = ("N_sites_Capacity");
+                title_3.className = "col-sm-2";
+
+                var label_t4 = document.createElement("label"); 
+                label_t4.className = "col-sm-1 parag-1";
+
+                var title_4 = document.createElement("label"); 
+                title_4.innerHTML = ("N_sites");
+                title_4.className = "col-sm-2";
+
+                container.appendChild(label_t1);
+                container.appendChild(title_1);
+                container.appendChild(label_t2);
+                container.appendChild(title_2);
+                //container.appendChild(label_t3);
+                container.appendChild(title_3);
+                //container.appendChild(label_t4);
+                container.appendChild(title_4);
+                container.appendChild(document.createElement("br"));
+                container.appendChild(document.createElement("br"));
+
+                for (i=0;i<number;i++){
+                    var newDiv = document.createElement("div");
+                    newDiv.className = "row";
+                    container.appendChild(newDiv);
+
+                    var label_1 = document.createElement("label"); 
+                    label_1.className = "col-sm-2 parag-1";
+
+                    var newlabel = document.createElement("label"); 
+                    newlabel.innerHTML = ("Polygon " + (i+1));
+                    newlabel.className = "col-sm-2";
+                    ///newlabel.setAttribute('class','col-sm-5');
+
+                    var input_1 = document.createElement("input"); 
+                    input_1.setAttribute('id','X');
+                    input_1.setAttribute('type','text');
+                    input_1.setAttribute('class','col-sm-1');
+                    input_1.setAttribute('class','result-cell');
+                    input_1.setAttribute('readonly','');
+
+                    var label_2 = document.createElement("label"); 
+                    label_2.className = "col-sm-1 parag-1";
+
+                    var label_3 = document.createElement("label"); 
+                    label_3.className = "col-sm-1 parag-1";
+
+                    var input_2 = document.createElement("input"); 
+                    input_2.setAttribute('id','X');
+                    input_2.setAttribute('type','text');
+                    input_2.setAttribute('class','col-sm-1');
+                    input_2.setAttribute('class','result-cell');
+                    input_2.setAttribute('readonly','');
+
+                    var input_3 = document.createElement("input"); 
+                    input_3.setAttribute('id','X');
+                    input_3.setAttribute('type','text');
+                    input_3.setAttribute('class','col-sm-1');
+                    input_3.setAttribute('class','result-cell');
+                    input_3.setAttribute('readonly','');
+
+                    newDiv.appendChild(label_1);
+                    newDiv.appendChild(newlabel);
+                    newDiv.appendChild(input_1);
+                    //newDiv.appendChild(label_2);
+                    newDiv.appendChild(input_2);
+                    //newDiv.appendChild(label_3);
+                    newDiv.appendChild(input_3);
+
+                    container.appendChild(document.createElement("br"));
+                    container.appendChild(document.createElement("br"));
+                }
+                
+
+
+               
             }
          </script>
     </body>

@@ -1,6 +1,6 @@
 import pandas as pd
 
-html= open('proc_pro_vendor_mgmt.html', 'r').read()
+html= open('ran_lld_module.html', 'r').read()
 
 html2 = html
 df_links = pd.DataFrame({'SECTION':[],'LINK':[]})
@@ -20,4 +20,4 @@ while html2.find("class=\"a_link\"") > -1:
     df_links = df_links.append({'SECTION': section,'LINK': link2}, ignore_index=True)
     html2 = html2[heading_st_in:link_st_in] + html2[link_ed_in:]
 print(df_links)
-df_links.to_csv(r'proc_pro_vendor_mgmt.csv', index = False)
+df_links.to_csv(r'ran_lld_module.csv', index = False)
