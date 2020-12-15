@@ -956,7 +956,7 @@
 			
 			<p class="normal-text">The previous factors (with the exception of <b>Dependencies</b>)
 			can be weighted through a ratio of importance (a, b &amp; c), which can vary
-			under certain circumstances. Eq.' 2 to Eq.' 5 illustrate how a specific
+			under certain circumstances. Eq. 2 to Eq. 5 illustrate how a specific
 			capacity augment can be scored according to the parameters presented above. </p>
 			
 			<table class=a1 border=1 cellspacing=0 cellpadding=0 width=595
@@ -970,7 +970,7 @@
 			  </td>
 			  <td width=76 valign=top style='width:2.0cm;border:none;padding:0cm 5.75pt 0cm 5.75pt;
 			  height:39.05pt'>
-			  <p class="normal-text"><i>Eq.' 2</i></p>
+			  <p class="normal-text"><i>Eq. 2</i></p>
 			  </td>
 			 </tr>
 			 <tr style='height:41.65pt'>
@@ -982,7 +982,7 @@
 			  </td>
 			  <td width=76 valign=top style='width:2.0cm;border:none;padding:0cm 5.75pt 0cm 5.75pt;
 			  height:41.65pt'>
-			  <p class="normal-text"><i>Eq.' 3</i></p>
+			  <p class="normal-text"><i>Eq. 3</i></p>
 			  </td>
 			 </tr>
 			 <tr style='height:35.85pt'>
@@ -994,7 +994,7 @@
 			  </td>
 			  <td width=76 valign=top style='width:2.0cm;border:none;padding:0cm 5.75pt 0cm 5.75pt;
 			  height:35.85pt'>
-			  <p class="normal-text"><i>Eq.' 4</i></p>
+			  <p class="normal-text"><i>Eq. 4</i></p>
 			  </td>
 			 </tr>
 			 <tr style='height:35.7pt'>
@@ -1006,7 +1006,7 @@
 			  </td>
 			  <td width=76 valign=top style='width:2.0cm;border:none;padding:0cm 5.75pt 0cm 5.75pt;
 			  height:35.7pt'>
-			  <p class="normal-text"><i>Eq.' 5</i></p>
+			  <p class="normal-text"><i>Eq. 5</i></p>
 			  </td>
 			 </tr>
 			</table>
@@ -1279,20 +1279,20 @@
  <div id="content"> 
 
 	<div data-spy="scroll" data-target="#navbar-example3" data-offset="0">
-		<h1 class="titulo-h1">3
+		<h1><a class="titulo-h1 anchor-bum color-luminat-2" name="item3">3
 			CP in RAN</a></h1>
 			
 			<p class="normal-text">This section captures the specifics of the CP process
 			applied to the RAN, including implications and dependencies for each step.</p>
 			
-			<br><h2 class="titulo-h2">3.1
+			<h2><a class="titulo-h2 anchor-bum color-luminati-2" name="item3-1">3.1
 			Capacity Framework Setup</a></h2>
 			
 			<p class="normal-text">In this section, the elements that comprise the Capacity
 			Framework Setup for the RAN are defined following the procedures presented in
 			Section 2.3.1.</p>
 			
-			<h3 style='margin-left:40.5pt'>3.1.1
+			<h3 >3.1.1
 			CMOs</h3>
 			
 			<p class="normal-text">RAN resources can be divided into two layers: Carrier and
@@ -1327,7 +1327,7 @@
 			admitted to the site, which means that the site cannot provide new services to
 			new users.</p>
 			
-			<p class="normal-text"></p>
+			
 			
 			<p class="normal-text">&#9679;
 			<b>Downlink (DL) / Uplink (UL)
@@ -1342,10 +1342,10 @@
 			instructs cell site router to reduce the packet sending rate), affecting user
 			experience in terms of data rate and service availability.</p>
 			
-			<p class="normal-text"></p>
+			
 			
 			<p class="normal-text">&#9679;
-			<b>BBU�s processing boards capacity: </b>Each BBU is composed of a capacity processing board and a
+			<b>BBU's processing boards capacity: </b>Each BBU is composed of a capacity processing board and a
 			main processing board responsible for processing all data coming from the
 			connected users. Capacity board processes user plane data while the main board
 			processes control plane data.</p>
@@ -1356,7 +1356,7 @@
 			All-in-One (AiO) scenario, a BBU integrates both the capacity board and the
 			main board into a single element, as described later in this section.</p>
 			
-			<p class="normal-text"></p>
+			
 			
 			<p class="normal-text">&#9679;
 			<b>Uplink port capacity load: </b>The BBU has a limited number of Ethernet interfaces that
@@ -1368,13 +1368,12 @@
 			<p class="normal-text">Furthermore, two scenarios can be defined for the RAN
 			network equipment:</p>
 			
-			<p class="normal-text">&#9679;
-			Distributed Scenario: Where the radio unit (RU) is
-			physically separated from the BBU.</p>
-			
-			<p class="normal-text">&#9679;
-			AiO Scenario:
-			Where RU and BBU are integrated into the same box.</p>
+			<ul class="normal-text ul-iconos" style='margin-top:0in' start=1 type=1>
+				<li>Distributed Scenario: Where the radio unit (RU) is
+			physically separated from the BBU.</li>
+			<li>AiO Scenario:
+			Where RU and BBU are integrated into the same box.</li>
+			</ul>
 			
 			<p class="normal-text">Even though both scenarios share the same CMOs, scenario
 			separation impacts the capacity augments applicable to each one (as addressed
@@ -1385,14 +1384,14 @@
 			distributed site. However, for the AiO scenario CMOs are all considered at the
 			site level since radio and baseband resources are shared.</p>
 			
-			<p class="normal-text"></p>
 			
-			<h3 style='margin-left:40.5pt'>3.1.2
+			
+			<h3 >3.1.2
 			Network Metrics</h3>
 			
 			<p class="normal-text">To perform the forecast analysis for CP, each CMO needs to
 			be associated with a network metric. Thanks to this association, CP for each
-			CMOs is addressed by forecasting its corresponding network metric. CMO�s
+			CMOs is addressed by forecasting its corresponding network metric. CMO's
 			network metrics are obtained from the NMS. RAN CMOs and their corresponding
 			network metrics are shown in Table 3</p>
 			
@@ -1403,11 +1402,11 @@
 			 <tr style='height:8.55pt'>
 			  <td width="46%" style='width:46.86%;border:solid black 1.0pt;background:#1F4E79;
 			  padding:0cm 5.75pt 0cm 5.75pt;height:8.55pt'>
-			  <p class="normal-text">CMO</p>
+			  <p align=center style="color:#FFF">CMO</p>
 			  </td>
 			  <td width="53%" style='width:53.14%;border:solid black 1.0pt;border-left:
 			  none;background:#1F4E79;padding:0cm 5.75pt 0cm 5.75pt;height:8.55pt'>
-			  <p class="normal-text">Network Metrics</p>
+			  <p align=center style="color:#FFF">Network Metrics</p>
 			  </td>
 			 </tr>
 			 <tr style='height:3.9pt'>
@@ -1461,7 +1460,7 @@
 			 <tr style='height:3.9pt'>
 			  <td width="46%" style='width:46.86%;border:solid black 1.0pt;border-top:none;
 			  padding:0cm 5.75pt 0cm 5.75pt;height:3.9pt'>
-			  <p class="normal-text">BBU�s processing boards capacity</p>
+			  <p class="normal-text">BBU's processing boards capacity</p>
 			  </td>
 			  <td width="53%" style='width:53.14%;border-top:none;border-left:none;
 			  border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 5.75pt 0cm 5.75pt;
@@ -1492,19 +1491,19 @@
 			<p class="normal-text">In addition to CMO related metrics, two additional metrics
 			must be considered to impact the forecasting process:</p>
 			
-			<p class="normal-text"><b>Number of Subscribers (</b><img width=34 height=19
-			src="20201116%20Module%20Content_Capacity%20Planning_v3_files/image037.png"><b>):</b>
+			<p class="normal-text"><b>Number of Subscribers (</b><i><img width=34 height=19
+			src="images/capacity_planning/image037.png"></i><b>):</b>
 			This element is driven by the total number of users present on the NaaS
-			Operator�s Network. <img width=34 height=19
-			src="20201116%20Module%20Content_Capacity%20Planning_v3_files/image037.png"><b>�</b>can
+			Operator's Network. <i><img width=34 height=19
+			src="images/capacity_planning/image037.png"></i><b>'</b>can
 			be obtained as an input from the commercial team or can be directly measured
 			from the current users in the live network.</p>
 			
-			<p class="normal-text"><b>Simultaneous Attached Users (</b><img width=31 height=19
-			src="20201116%20Module%20Content_Capacity%20Planning_v3_files/image038.png"><b>):</b>
+			<p class="normal-text"><b>Simultaneous Attached Users (</b><i><img width=31 height=19
+			src="images/capacity_planning/image038.png"></i><b>):</b>
 			When a subscriber attempts and succeeds to connect to the Mobile Network, it's
 			then considered to be attached and ready to use network resources and establish
-			communication. It�s important to note that the total number of attached users
+			communication. It's important to note that the total number of attached users
 			can be directly measured by network monitoring at different levels: at carrier
 			level, at site level or at network level. </p>
 			
@@ -1523,11 +1522,11 @@
 			Sector Carrier Resource Blocks</h4>
 			
 			<p class="normal-text">PRB utilization must be measured for every carrier in the
-			network. PRB utilization is given by the ratio between the PRBs in use (<img width=32 height=19
-			src="20201116%20Module%20Content_Capacity%20Planning_v3_files/image039.png">)
-			and the total amount of PRBs in the sector (<img width=50 height=19
-			src="20201116%20Module%20Content_Capacity%20Planning_v3_files/image040.png">).
-			Eq.� 6 displays this ratio.</p>
+			network. PRB utilization is given by the ratio between the PRBs in use (<i><img width=32 height=19
+			src="images/capacity_planning/image039.png"></i>)
+			and the total amount of PRBs in the sector (<i><img width=50 height=19
+			src="images/capacity_planning/image040.png"></i>).
+			Eq. 6 displays this ratio.</p>
 			
 			<table class=a4 border=1 cellspacing=0 cellpadding=0 width=598
 			 style='border-collapse:collapse;border:none'>
@@ -1535,45 +1534,45 @@
 			  <td width=548 style='width:410.85pt;border:none;padding:0cm 5.75pt 0cm 5.75pt'>
 			  <p class="normal-text"><img
 			  width=238 height=37
-			  src="20201116%20Module%20Content_Capacity%20Planning_v3_files/image041.png"></p>
+			  src="images/capacity_planning/image041.png"></p>
 			  </td>
 			  <td width=50 style='width:37.6pt;border:none;padding:0cm 5.75pt 0cm 5.75pt'>
-			  <p class="normal-text"><i>Eq.� 6</i></p>
+			  <p class="normal-text"><i>Eq. 6</i></p>
 			  </td>
 			 </tr>
 			</table>
 			
-			<p class="normal-text"><a></a>Both the <img width=32 height=19
-			src="20201116%20Module%20Content_Capacity%20Planning_v3_files/image039.png">�used
-			and <img width=50 height=19
-			src="20201116%20Module%20Content_Capacity%20Planning_v3_files/image040.png">�are
-			quantities that can be obtained directly from network monitoring. Moreover,� <img width=50 height=19
-			src="20201116%20Module%20Content_Capacity%20Planning_v3_files/image040.png">�is
+			<p class="normal-text"><a></a>Both the <i><img width=32 height=19
+			src="images/capacity_planning/image039.png"></i>used
+			and <i><img width=50 height=19
+			src="images/capacity_planning/image040.png"></i> are
+			quantities that can be obtained directly from network monitoring. Moreover, <i><img width=50 height=19
+			src="images/capacity_planning/image040.png"></i> is
 			a constant value that only varies based on the carrier bandwidth.</p>
 			
 			<h4>3.1.2.2
 			Connected Users (per carrier &amp; per site)</h4>
 			
-			<p class="normal-text">Connected Users CMOs are related to the <img width=31 height=19
-			src="20201116%20Module%20Content_Capacity%20Planning_v3_files/image038.png">.
-			As mentioned before, <img width=31 height=19
-			src="20201116%20Module%20Content_Capacity%20Planning_v3_files/image038.png">�can
+			<p class="normal-text">Connected Users CMOs are related to the <i><img width=31 height=19
+			src="images/capacity_planning/image038.png"></i>.
+			As mentioned before, <i><img width=31 height=19
+			src="images/capacity_planning/image038.png"></i>can
 			be considered at different levels depending on the metric to be analyzed. In
-			this case, <img width=31 height=19
-			src="20201116%20Module%20Content_Capacity%20Planning_v3_files/image038.png">�is
+			this case, <i><img width=31 height=19
+			src="images/capacity_planning/image038.png"></i> is
 			considered at carrier level and at site level. Interactions between radio
-			resource control (RRC) Connected User metrics and <img width=31 height=19
-			src="20201116%20Module%20Content_Capacity%20Planning_v3_files/image038.png">�are
+			resource control (RRC) Connected User metrics and <i><img width=31 height=19
+			src="images/capacity_planning/image038.png"></i> are
 			as follows:</p>
 			
 			<p class="normal-text">&#9679;
 			User Utilization is the ratio between
-			the <img width=31 height=19
-			src="20201116%20Module%20Content_Capacity%20Planning_v3_files/image038.png">�at BH and the maximum number of supported users per
-			carrier (<img width=101 height=20
-			src="20201116%20Module%20Content_Capacity%20Planning_v3_files/image042.png">). Eq.� 7 displays this relation:</p>
+			the <i><img width=31 height=19
+			src="images/capacity_planning/image038.png"></i> at BH and the maximum number of supported users per
+			carrier (<i><img width=101 height=20
+			src="images/capacity_planning/image042.png"></i>). Eq. 7 displays this relation:</p>
 			
-			<p class="normal-text"></p>
+			
 			
 			<table class=a5 border=1 cellspacing=0 cellpadding=0 width=598
 			 style='border-collapse:collapse;border:none'>
@@ -1581,24 +1580,24 @@
 			  <td width=548 style='width:410.85pt;border:none;padding:0cm 5.75pt 0cm 5.75pt'>
 			  <p class="normal-text"><img
 			  width=311 height=40
-			  src="20201116%20Module%20Content_Capacity%20Planning_v3_files/image043.png"></p>
+			  src="images/capacity_planning/image043.png"></p>
 			  </td>
 			  <td width=50 style='width:37.6pt;border:none;padding:0cm 5.75pt 0cm 5.75pt'>
-			  <p class="normal-text"><i>Eq.� 7</i></p>
+			  <p class="normal-text"><i>Eq. 7</i></p>
 			  </td>
 			 </tr>
 			</table>
 			
-			<p class="normal-text"><a></a></p>
+			
 			
 			<p class="normal-text">&#9679;
 			User License Utilization is the ratio
-			between the <img width=31 height=19
-			src="20201116%20Module%20Content_Capacity%20Planning_v3_files/image038.png">�at BH and the total number of user licenses configured at
-			the BBU (<img width=120 height=19
-			src="20201116%20Module%20Content_Capacity%20Planning_v3_files/image044.png">). Eq.� 8 displays this relation:</p>
+			between the <i><img width=31 height=19
+			src="images/capacity_planning/image038.png"></i> at BH and the total number of user licenses configured at
+			the BBU (<i><img width=120 height=19
+			src="images/capacity_planning/image044.png"></i>). Eq. 8 displays this relation:</p>
 			
-			<p class="normal-text"></p>
+			
 			
 			<table class=a6 border=1 cellspacing=0 cellpadding=0 width=598
 			 style='border-collapse:collapse;border:none'>
@@ -1606,10 +1605,10 @@
 			  <td width=548 style='width:410.85pt;border:none;padding:0cm 5.75pt 0cm 5.75pt'>
 			  <p class="normal-text"><img
 			  width=363 height=38
-			  src="20201116%20Module%20Content_Capacity%20Planning_v3_files/image045.png"></p>
+			  src="images/capacity_planning/image045.png"></p>
 			  </td>
 			  <td width=50 style='width:37.6pt;border:none;padding:0cm 5.75pt 0cm 5.75pt'>
-			  <p class="normal-text"><i>Eq.� 8</i></p>
+			  <p class="normal-text"><i>Eq. 8</i></p>
 			  </td>
 			 </tr>
 			</table>
@@ -1618,12 +1617,12 @@
 			BH Average User UL/DL Throughput</h4>
 			
 			<p class="normal-text">RAN monitoring systems allow to collect the total amount of
-			DL and UL throughput carried by the eNodeB during the BH (<img width=52 height=19
-			src="20201116%20Module%20Content_Capacity%20Planning_v3_files/image046.png">).
-			To obtain the throughput per user at the BH, <img width=52 height=19
-			src="20201116%20Module%20Content_Capacity%20Planning_v3_files/image046.png">�must
-			be divided by <img width=98 height=20
-			src="20201116%20Module%20Content_Capacity%20Planning_v3_files/image047.png">�as
+			DL and UL throughput carried by the eNodeB during the BH (<i><img width=52 height=19
+			src="images/capacity_planning/image046.png"></i>).
+			To obtain the throughput per user at the BH, <i><img width=52 height=19
+			src="images/capacity_planning/image046.png"></i> must
+			be divided by <i><img width=98 height=20
+			src="images/capacity_planning/image047.png"></i> as
 			follows: </p>
 			
 			<table class=a7 border=1 cellspacing=0 cellpadding=0 width=598
@@ -1632,15 +1631,15 @@
 			  <td width=548 style='width:410.85pt;border:none;padding:0cm 5.75pt 0cm 5.75pt'>
 			  <p class="normal-text"><img
 			  width=199 height=36
-			  src="20201116%20Module%20Content_Capacity%20Planning_v3_files/image048.png"></p>
+			  src="images/capacity_planning/image048.png"></p>
 			  </td>
 			  <td width=50 style='width:37.6pt;border:none;padding:0cm 5.75pt 0cm 5.75pt'>
-			  <p class="normal-text"><i>Eq.� 9</i></p>
+			  <p class="normal-text"><i>Eq. 9</i></p>
 			  </td>
 			 </tr>
 			</table>
 			
-			<p class="normal-text"><a></a></p>
+			
 			
 			<table class=a8 border=1 cellspacing=0 cellpadding=0 width=598
 			 style='border-collapse:collapse;border:none'>
@@ -1648,10 +1647,10 @@
 			  <td width=548 style='width:410.85pt;border:none;padding:0cm 5.75pt 0cm 5.75pt'>
 			  <p class="normal-text"><img
 			  width=199 height=36
-			  src="20201116%20Module%20Content_Capacity%20Planning_v3_files/image049.png"></p>
+			  src="images/capacity_planning/image049.png"></p>
 			  </td>
 			  <td width=50 style='width:37.6pt;border:none;padding:0cm 5.75pt 0cm 5.75pt'>
-			  <p class="normal-text"><i>Eq.� 10</i></p>
+			  <p class="normal-text"><i>Eq. 10</i></p>
 			  </td>
 			 </tr>
 			</table>
@@ -1659,23 +1658,23 @@
 			<p class="normal-text"><a></a>Where:</p>
 			
 			<p class="normal-text">&#9679;
-			<img width=78 height=19
-			src="20201116%20Module%20Content_Capacity%20Planning_v3_files/image050.png">�is the BH average user DL
+			<i><img width=78 height=19
+			src="images/capacity_planning/image050.png"></i> is the BH average user DL
 			throughput.</p>
 			
 			<p class="normal-text">&#9679;
-			<img width=52 height=19
-			src="20201116%20Module%20Content_Capacity%20Planning_v3_files/image046.png">�is the DL throughput carried by the eNodeB at the
+			<i><img width=52 height=19
+			src="images/capacity_planning/image046.png"></i> is the DL throughput carried by the eNodeB at the
 			BH.</p>
 			
 			<p class="normal-text">&#9679;
-			<img width=78 height=19
-			src="20201116%20Module%20Content_Capacity%20Planning_v3_files/image051.png">�is the BH average user UL
+			<i><img width=78 height=19
+			src="images/capacity_planning/image051.png"></i> is the BH average user UL
 			throughput.</p>
 			
 			<p class="normal-text">&#9679;
-			<img width=52 height=19
-			src="20201116%20Module%20Content_Capacity%20Planning_v3_files/image052.png">�is the UL throughput carried by the eNodeB at the
+			<i><img width=52 height=19
+			src="images/capacity_planning/image052.png"></i> is the UL throughput carried by the eNodeB at the
 			BH.</p>
 			
 			<p class="normal-text"><b><u>Throughput Metric Considerations</u></b></p>
@@ -1686,43 +1685,43 @@
 			must be performed to derive the throughput metrics in this case.</p>
 			
 			<p class="normal-text">Considering
-			that there can be multiple BHs during a day (typically <img width=26 height=19
-			src="20201116%20Module%20Content_Capacity%20Planning_v3_files/image053.png">=6 to 8), the formula to calculate the downlink
-			throughput (<img width=78 height=19
-			src="20201116%20Module%20Content_Capacity%20Planning_v3_files/image054.png">) from the monthly data received per subscriber (<img width=145 height=20
-			src="20201116%20Module%20Content_Capacity%20Planning_v3_files/image055.png">) is in Eq.� 11:</p>
+			that there can be multiple BHs during a day (typically <i><img width=26 height=19
+			src="images/capacity_planning/image053.png"></i> =6 to 8), the formula to calculate the downlink
+			throughput (<i><img width=78 height=19
+			src="images/capacity_planning/image054.png"></i>) from the monthly data received per subscriber (<i><img width=145 height=20
+			src="images/capacity_planning/image055.png"></i>) is in Eq. 11:</p>
 			
 			<table class=a9 border=1 cellspacing=0 cellpadding=0 width=598
 			 style='border-collapse:collapse;border:none'>
 			 <tr>
 			  <td width=548 style='width:410.85pt;border:none;padding:0cm 5.75pt 0cm 5.75pt'>
 			  <p class="normal-text"><img width=371 height=37
-			  src="20201116%20Module%20Content_Capacity%20Planning_v3_files/image056.png"></p>
+			  src="images/capacity_planning/image056.png"></p>
 			  </td>
 			  <td width=50 style='width:37.6pt;border:none;padding:0cm 5.75pt 0cm 5.75pt'>
-			  <p class="normal-text"><i>Eq.�
+			  <p class="normal-text"><i>Eq.
 			  11</i></p>
 			  </td>
 			 </tr>
 			</table>
 			
-			<p class="normal-text"></p>
+			
 			
 			<p class="normal-text">Similarly,
-			the UL throughput (<img width=78 height=19
-			src="20201116%20Module%20Content_Capacity%20Planning_v3_files/image057.png">) can
-			be calculated from the monthly data sent per subscriber ( <img width=145 height=20
-			src="20201116%20Module%20Content_Capacity%20Planning_v3_files/image058.png">) as in Eq.� 12:</p>
+			the UL throughput (<i><img width=78 height=19
+			src="images/capacity_planning/image057.png"></i>) can
+			be calculated from the monthly data sent per subscriber ( <i><img width=145 height=20
+			src="images/capacity_planning/image058.png"></i>) as in Eq. 12:</p>
 			
 			<table class=aa border=1 cellspacing=0 cellpadding=0 width=598
 			 style='border-collapse:collapse;border:none'>
 			 <tr>
 			  <td width=548 style='width:410.85pt;border:none;padding:0cm 5.75pt 0cm 5.75pt'>
 			  <p class="normal-text"><img width=371 height=37
-			  src="20201116%20Module%20Content_Capacity%20Planning_v3_files/image059.png"></p>
+			  src="images/capacity_planning/image059.png"></p>
 			  </td>
 			  <td width=50 style='width:37.6pt;border:none;padding:0cm 5.75pt 0cm 5.75pt'>
-			  <p class="normal-text"><i>Eq.�
+			  <p class="normal-text"><i>Eq.
 			  12</i></p>
 			  </td>
 			 </tr>
@@ -1730,13 +1729,13 @@
 			
 			<p class="normal-text">As an example, the
 			throughput can be estimated for a subscriber with a monthly data usage of 1000
-			MB by considering 6 BHs in a day and using Eq.� 11: �</p>
+			MB by considering 6 BHs in a day and using Eq. 11: </p>
 			
 			<p class="normal-text"><img width=474 height=34
-			src="20201116%20Module%20Content_Capacity%20Planning_v3_files/image060.png"></p>
+			src="images/capacity_planning/image060.png"></p>
 			
 			<h4>3.1.2.4
-			BBU�s processing boards capacity</h4>
+			BBU's processing boards capacity</h4>
 			
 			<p class="normal-text">Processing board utilization is a percentage that can be
 			directly pulled out from the NMS via the corresponding network counter for both
@@ -1746,11 +1745,11 @@
 			Ethernet port capacity load</h4>
 			
 			<p class="normal-text">Ethernet transmission port utilization is a ration between
-			the average Ethernet port rate (<img width=45 height=19
-			src="20201116%20Module%20Content_Capacity%20Planning_v3_files/image061.png">)
-			and the maximum rate supported by the port (<img width=55 height=19
-			src="20201116%20Module%20Content_Capacity%20Planning_v3_files/image062.png">).
-			This relation is shown in Eq.� 13:</p>
+			the average Ethernet port rate (<i><img width=45 height=19
+			src="images/capacity_planning/image061.png"></i>)
+			and the maximum rate supported by the port (<i><img width=55 height=19
+			src="images/capacity_planning/image062.png"></i>).
+			This relation is shown in Eq. 13:</p>
 			
 			<table class=ab border=1 cellspacing=0 cellpadding=0 width=598
 			 style='border-collapse:collapse;border:none'>
@@ -1758,27 +1757,27 @@
 			  <td width=519 style='width:389.6pt;border:none;padding:0cm 5.75pt 0cm 5.75pt'>
 			  <p class="normal-text"><img
 			  width=337 height=38
-			  src="20201116%20Module%20Content_Capacity%20Planning_v3_files/image063.png"></p>
+			  src="images/capacity_planning/image063.png"></p>
 			  </td>
 			  <td width=78 style='width:58.85pt;border:none;padding:0cm 5.75pt 0cm 5.75pt'>
-			  <p class="normal-text"><i>Eq.� 13</i></p>
+			  <p class="normal-text"><i>Eq. 13</i></p>
 			  </td>
 			 </tr>
 			</table>
 			
-			<p class="normal-text"><a></a>Where <img width=58 height=19
-			src="20201116%20Module%20Content_Capacity%20Planning_v3_files/image064.png">�can
-			be obtained during network monitoring and <img width=65 height=19
-			src="20201116%20Module%20Content_Capacity%20Planning_v3_files/image065.png">�is
+			<p class="normal-text"><a></a>Where <i><img width=58 height=19
+			src="images/capacity_planning/image064.png"></i> can
+			be obtained during network monitoring and <i><img width=65 height=19
+			src="images/capacity_planning/image065.png"></i> is
 			a constant value for each BBU model.</p>
 			
-			<h3 style='margin-left:40.5pt'>3.1.3
+			<h3 >3.1.3
 			Safety Margins</h3>
 			
-			<p class="normal-text">It�s worth mentioning that each equipment vendor can define
+			<p class="normal-text">It's worth mentioning that each equipment vendor can define
 			its own safety margins to guarantee and optimal performance for its equipment.
-			NaaS operators must look into the vendor�s documentation to ensure the vendor
-			hasn�t already considered any different safety margins.</p>
+			NaaS operators must look into the vendor's documentation to ensure the vendor
+			hasn't already considered any different safety margins.</p>
 			
 			<p class="normal-text">Table 4 displays the recommended safety margins (thresholds)
 			for each utilization metric corresponding to each CMO. Threshold values for
@@ -1792,17 +1791,17 @@
 			 <tr style='height:9.1pt'>
 			  <td width="37%" valign=top style='width:37.88%;border:solid black 1.0pt;
 			  background:#1F4E79;padding:0cm 5.75pt 0cm 5.75pt;height:9.1pt'>
-			  <p class="normal-text">Utilization Metric</p>
+			  <p align=center style="color:#FFF">Utilization Metric</p>
 			  </td>
 			  <td width="28%" valign=top style='width:28.46%;border:solid black 1.0pt;
 			  border-left:none;background:#1F4E79;padding:0cm 5.75pt 0cm 5.75pt;height:
 			  9.1pt'>
-			  <p class="normal-text">Safety Margin</p>
+			  <p align=center style="color:#FFF">Safety Margin</p>
 			  </td>
 			  <td width="33%" valign=top style='width:33.68%;border:solid black 1.0pt;
 			  border-left:none;background:#1F4E79;padding:0cm 5.75pt 0cm 5.75pt;height:
 			  9.1pt'>
-			  <p class="normal-text">Time Period</p>
+			  <p align=center style="color:#FFF">Time Period</p>
 			  </td>
 			 </tr>
 			 <tr style='height:4.15pt'>
@@ -1914,7 +1913,7 @@
 			<p align=center><i>Table 4 - RAN network metrics safety
 			margins.</i></p>
 			
-			<h3 style='margin-left:40.5pt'>3.1.4
+			<h3 >3.1.4
 			Capacity Augments &amp; Cycle Times</h3>
 			
 			<p class="normal-text">This section discusses available capacity augments for RAN
@@ -1937,34 +1936,34 @@
 			 <tr style='height:8.35pt'>
 			  <td width="15%" rowspan=2 style='width:15.16%;border:solid black 1.0pt;
 			  background:#1F4E79;padding:0cm 5.75pt 0cm 5.75pt;height:8.35pt'>
-			  <p class="normal-text">CMO</p>
+			  <p align=center style="color:#FFF">CMO</p>
 			  </td>
 			  <td width="17%" rowspan=2 style='width:17.74%;border:solid black 1.0pt;
 			  border-left:none;background:#1F4E79;padding:0cm 5.75pt 0cm 5.75pt;height:
 			  8.35pt'>
-			  <p class="normal-text">Primary Capacity Augment</p>
+			  <p align=center style="color:#FFF">Primary Capacity Augment</p>
 			  </td>
 			  <td width="21%" rowspan=2 style='width:21.52%;border:solid black 1.0pt;
 			  border-left:none;background:#1F4E79;padding:0cm 5.75pt 0cm 5.75pt;height:
 			  8.35pt'>
-			  <p class="normal-text">Secondary Capacity Augment</p>
+			  <p align=center style="color:#FFF">Secondary Capacity Augment</p>
 			  </td>
 			  <td width="45%" colspan=2 style='width:45.58%;border:solid black 1.0pt;
 			  border-left:none;background:#1F4E79;padding:0cm 5.75pt 0cm 5.75pt;height:
 			  8.35pt'>
-			  <p class="normal-text">Comments</p>
+			  <p align=center style="color:#FFF">Comments</p>
 			  </td>
 			 </tr>
 			 <tr style='height:8.35pt'>
 			  <td width="16%" style='width:16.46%;border-top:none;border-left:none;
 			  border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;background:
 			  #1F4E79;padding:0cm 5.75pt 0cm 5.75pt;height:8.35pt'>
-			  <p class="normal-text">AiO Scenario</p>
+			  <p align=center style="color:#FFF">AiO Scenario</p>
 			  </td>
 			  <td width="29%" style='width:29.14%;border-top:none;border-left:none;
 			  border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;background:
 			  #1F4E79;padding:0cm 5.75pt 0cm 5.75pt;height:8.35pt'>
-			  <p class="normal-text">Distributed Scenario</p>
+			  <p align=center style="color:#FFF">Distributed Scenario</p>
 			  </td>
 			 </tr>
 			 <tr style='height:3.75pt'>
@@ -2057,14 +2056,14 @@
 			  padding:0cm 5.75pt 0cm 5.75pt;height:3.75pt'>
 			  <p class="normal-text">Additional throughput can be configured to the BBU by expanding its
 			  throughput licenses until the maximum BBU capacity is reached. </p>
-			  <p class="normal-text">If BBU can�t support additional throughput capacity, New Site option
+			  <p class="normal-text">If BBU can't support additional throughput capacity, New Site option
 			  must be considered.</p>
 			  </td>
 			 </tr>
 			 <tr style='height:3.75pt'>
 			  <td width="15%" style='width:15.16%;border:solid black 1.0pt;border-top:none;
 			  padding:0cm 5.75pt 0cm 5.75pt;height:3.75pt'>
-			  <p class="normal-text">BBU�s processing boards capacity</p>
+			  <p class="normal-text">BBU's processing boards capacity</p>
 			  </td>
 			  <td width="17%" style='width:17.74%;border-top:none;border-left:none;
 			  border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 5.75pt 0cm 5.75pt;
@@ -2139,15 +2138,15 @@
 			 <tr style='height:46.3pt'>
 			  <td width="28%" style='width:28.88%;border:solid black 1.0pt;background:#1F4E79;
 			  padding:0cm 5.75pt 0cm 5.75pt;height:46.3pt'>
-			  <p class="normal-text">Capacity Augment</p>
+			  <p align=center style="color:#FFF">Capacity Augment</p>
 			  </td>
 			  <td width="41%" style='width:41.46%;border:solid black 1.0pt;border-left:
 			  none;background:#1F4E79;padding:0cm 5.75pt 0cm 5.75pt;height:46.3pt'>
-			  <p class="normal-text">Involved Activities</p>
+			  <p align=center style="color:#FFF">Involved Activities</p>
 			  </td>
 			  <td width="29%" style='width:29.66%;border:solid black 1.0pt;border-left:
 			  none;background:#1F4E79;padding:0cm 5.75pt 0cm 5.75pt;height:46.3pt'>
-			  <p class="normal-text">Cycle Time Impact</p>
+			  <p align=center style="color:#FFF">Cycle Time Impact</p>
 			  </td>
 			 </tr>
 			 <tr style='height:6.3pt'>
@@ -2280,7 +2279,7 @@
 			<p align=center><i>Table 6 - RAN capacity
 			augments activities.</i></p>
 			
-			<br><h2 class="titulo-h2">3.2
+			<br><h2><a class="titulo-h2 anchor-bum color-luminati-2" name="item3-2">3.2
 			Forecasting Analysis and Event Monitoring</a></h2>
 			
 			<p class="normal-text">As discussed in section 2.3.2, the forecasting process plays
@@ -2296,25 +2295,23 @@
 			<p class="normal-text">Obtaining the final capacity values is a process that
 			involves, in general terms, the following augments:</p>
 			
-			<p class="normal-text">&#9679;
-			Information on the current state
-			(value) of the network metrics that impact each network metric.</p>
+			<ul class="normal-text ul-iconos" style='margin-top:0in' start=1 type=1>
+				<li>Information on the current state
+			(value) of the network metrics that impact each network metric.</li>
 			
-			<p class="normal-text">&#9679;
-			Historical network data of the
-			forecasting quantities collected over a certain period: months, weeks, days.
-			</p>
+			<li>Historical network data of the
+			forecasting quantities collected over a certain period: months, weeks, days.</li>
 			
-			<p class="normal-text">&#9679;
-			Commercial Inputs from strategy and
-			commercial teams, which are composed of the expected number of new users.</p>
+			<li>Commercial Inputs from strategy and
+			commercial teams, which are composed of the expected number of new users.</li>
+			</ul>
 			
-			<p align=center>Figure 13 summarizes the forecasting process that can be
+			<p class="normal-text">Figure 13 summarizes the forecasting process that can be
 			applied to RAN, transport and core networks.</p>
 			
 			<p class="normal-text"><img
 			border=0 width=440 height=237 id=image4.png
-			src="20201116%20Module%20Content_Capacity%20Planning_v3_files/image066.png"></p>
+			src="images/capacity_planning/image066.png"></p>
 			
 			<p align=center><i>Figure 13 - Forecasting Process.</i></p>
 			
@@ -2328,11 +2325,11 @@
 			 <tr style='height:13.25pt'>
 			  <td width="49%" style='width:49.42%;border:solid black 1.0pt;background:#1F4E79;
 			  padding:0cm 5.75pt 0cm 5.75pt;height:13.25pt'>
-			  <p class="normal-text">Network Metric</p>
+			  <p align=center style="color:#FFF">Network Metric</p>
 			  </td>
 			  <td width="50%" style='width:50.58%;border:solid black 1.0pt;border-left:
 			  none;background:#1F4E79;padding:0cm 5.75pt 0cm 5.75pt;height:13.25pt'>
-			  <p class="normal-text">Forecasting Quantities</p>
+			  <p align=center style="color:#FFF">Forecasting Quantities</p>
 			  </td>
 			 </tr>
 			 <tr style='height:12.45pt'>
@@ -2345,7 +2342,7 @@
 			  height:12.45pt'>
 			  <p class="normal-text"><img
 			  width=117 height=20
-			  src="20201116%20Module%20Content_Capacity%20Planning_v3_files/image067.png"></p>
+			  src="images/capacity_planning/image067.png"></p>
 			  </td>
 			 </tr>
 			 <tr style='height:12.45pt'>
@@ -2358,7 +2355,7 @@
 			  height:12.45pt'>
 			  <p class="normal-text"><img
 			  width=98 height=20
-			  src="20201116%20Module%20Content_Capacity%20Planning_v3_files/image047.png"></p>
+			  src="images/capacity_planning/image047.png"></p>
 			  </td>
 			 </tr>
 			 <tr style='height:12.45pt'>
@@ -2370,9 +2367,9 @@
 			  border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 5.75pt 0cm 5.75pt;
 			  height:12.45pt'>
 			  <p class="normal-text"><img width=104 height=21
-			  src="20201116%20Module%20Content_Capacity%20Planning_v3_files/image068.png">�,
+			  src="images/capacity_planning/image068.png">',
 			  <img width=98 height=20
-			  src="20201116%20Module%20Content_Capacity%20Planning_v3_files/image047.png"></p>
+			  src="images/capacity_planning/image047.png"></p>
 			  </td>
 			 </tr>
 			</table>
@@ -2382,26 +2379,26 @@
 			<p align=center><i>Table 7 - RAN network metrics forecasting
 			summary.</i></p>
 			
-			<p class="normal-text">It�s
+			<p class="normal-text">It's
 			important to mention that all the forecast methods applied to the metrics in
 			subsequent sections are based on the ones contained in section 2.3.2.</p>
 			
-			<h3 style='margin-left:40.5pt'>3.2.1
-			<img width=59 height=23
-			src="20201116%20Module%20Content_Capacity%20Planning_v3_files/image069.png">�Forecasting
+			<h3 >3.2.1
+			<i><img width=59 height=23
+			src="images/capacity_planning/image069.png"></i>Forecasting
 			</h3>
 			
-			<p class="normal-text"><img width=31 height=19
-			src="20201116%20Module%20Content_Capacity%20Planning_v3_files/image038.png">�is
-			a quantity whose forecast impacts several metrics, as seen in section 3.1.2. <img width=55 height=19
-			src="20201116%20Module%20Content_Capacity%20Planning_v3_files/image070.png">�is
-			a quantity that can be obtained from network monitoring, while <img width=34 height=19
-			src="20201116%20Module%20Content_Capacity%20Planning_v3_files/image037.png">�is
-			an input provided by the commercial team. The percentage of <img width=55 height=19
-			src="20201116%20Module%20Content_Capacity%20Planning_v3_files/image070.png">�with
-			respect to the <img width=34 height=19
-			src="20201116%20Module%20Content_Capacity%20Planning_v3_files/image037.png">�is
-			given by Eq.� 14.</p>
+			<p class="normal-text"><i><img width=31 height=19
+			src="images/capacity_planning/image038.png"></i> is
+			a quantity whose forecast impacts several metrics, as seen in section 3.1.2. <i><img width=55 height=19
+			src="images/capacity_planning/image070.png"></i> is
+			a quantity that can be obtained from network monitoring, while <i><img width=34 height=19
+			src="images/capacity_planning/image037.png"></i> is
+			an input provided by the commercial team. The percentage of <i><img width=55 height=19
+			src="images/capacity_planning/image070.png"></i> with
+			respect to the <i><img width=34 height=19
+			src="images/capacity_planning/image037.png"></i> is
+			given by Eq. 14.</p>
 			
 			<table class=af0 border=1 cellspacing=0 cellpadding=0 width=598
 			 style='border-collapse:collapse;border:none'>
@@ -2409,48 +2406,48 @@
 			  <td width=548 style='width:410.85pt;border:none;padding:0cm 5.75pt 0cm 5.75pt'>
 			  <p class="normal-text"><img
 			  width=166 height=37
-			  src="20201116%20Module%20Content_Capacity%20Planning_v3_files/image071.png"></p>
+			  src="images/capacity_planning/image071.png"></p>
 			  </td>
 			  <td width=50 style='width:37.6pt;border:none;padding:0cm 5.75pt 0cm 5.75pt'>
-			  <p class="normal-text"><i>Eq.� 14</i></p>
+			  <p class="normal-text"><i>Eq. 14</i></p>
 			  </td>
 			 </tr>
 			</table>
 			
 			<p class="normal-text"><a></a>Where:</p>
 			
-			<p class="normal-text">- <img width=53 height=19
-			src="20201116%20Module%20Content_Capacity%20Planning_v3_files/image072.png">�is
+			<p class="normal-text"><i><img width=53 height=19
+			src="images/capacity_planning/image072.png"></i> is
 			the percentage of SAU in the BH with respect to the total amount of subscribers
-			in the region <img width=34 height=19
-			src="20201116%20Module%20Content_Capacity%20Planning_v3_files/image037.png">.</p>
+			in the region <i><img width=34 height=19
+			src="images/capacity_planning/image037.png"></i></p>
 			
-			<p class="normal-text">To obtain the forecasted value of the <img width=55 height=19
-			src="20201116%20Module%20Content_Capacity%20Planning_v3_files/image070.png">,
-			forecast analysis must be obtained for both the number of subscribers (<img width=34 height=19
-			src="20201116%20Module%20Content_Capacity%20Planning_v3_files/image037.png">)
-			and <img width=53 height=19
-			src="20201116%20Module%20Content_Capacity%20Planning_v3_files/image072.png">.
-			This analysis should be performed with methods from section 2.3.2. Forecasted <img width=34 height=19
-			src="20201116%20Module%20Content_Capacity%20Planning_v3_files/image037.png">�is
+			<p class="normal-text">To obtain the forecasted value of the <i><img width=55 height=19
+			src="images/capacity_planning/image070.png"></i>,
+			forecast analysis must be obtained for both the number of subscribers (<i><img width=34 height=19
+			src="images/capacity_planning/image037.png"></i>)
+			and <i><img width=53 height=19
+			src="images/capacity_planning/image072.png"></i>.
+			This analysis should be performed with methods from section 2.3.2. Forecasted <i><img width=34 height=19
+			src="images/capacity_planning/image037.png"></i> is
 			obtained by adding the number of additional subscribers due to marketing plans
-			with subscriber trends. On the other hand, <img width=53 height=19
-			src="20201116%20Module%20Content_Capacity%20Planning_v3_files/image072.png">�is
+			with subscriber trends. On the other hand, <i><img width=53 height=19
+			src="images/capacity_planning/image072.png"></i> is
 			forecasted to obtain its forecasted value.</p>
 			
-			<p class="normal-text">The forecasting process for <img width=55 height=19
-			src="20201116%20Module%20Content_Capacity%20Planning_v3_files/image070.png">�is
+			<p class="normal-text">The forecasting process for <i><img width=55 height=19
+			src="images/capacity_planning/image070.png"></i> is
 			displayed in Figure 14.</p>
 			
 			<p class="normal-text"><img
 			border=0 width=290 height=282 id=image1.png
-			src="20201116%20Module%20Content_Capacity%20Planning_v3_files/image073.png"></p>
+			src="images/capacity_planning/image073.png"></p>
 			
-			<p align=center><i>Figure 14 - Forecasting process for </i><img width=45 height=16
-			src="20201116%20Module%20Content_Capacity%20Planning_v3_files/image074.png"><i>.</i></p>
+			<p align=center><i>Figure 14 - Forecasting process for </i><i><img width=45 height=16
+			src="images/capacity_planning/image074.png"></i><i>.</i></p>
 			
-			<p class="normal-text">Eq.� 15 summarizes the calculation of <img width=127 height=20
-			src="20201116%20Module%20Content_Capacity%20Planning_v3_files/image075.png"></p>
+			<p class="normal-text">Eq. 15 summarizes the calculation of <i><img width=127 height=20
+			src="images/capacity_planning/image075.png"></i></p>
 			
 			<table class=af1 border=1 cellspacing=0 cellpadding=0 width=598
 			 style='border-collapse:collapse;border:none'>
@@ -2458,40 +2455,40 @@
 			  <td width=548 style='width:410.85pt;border:none;padding:0cm 5.75pt 0cm 5.75pt'>
 			  <p class="normal-text"><img
 			  width=391 height=20
-			  src="20201116%20Module%20Content_Capacity%20Planning_v3_files/image076.png"></p>
+			  src="images/capacity_planning/image076.png"></p>
 			  </td>
 			  <td width=50 style='width:37.6pt;border:none;padding:0cm 5.75pt 0cm 5.75pt'>
-			  <p class="normal-text"><i>Eq.� 15</i></p>
+			  <p class="normal-text"><i>Eq. 15</i></p>
 			  </td>
 			 </tr>
 			</table>
 			
 			<p class="normal-text"><a></a>Where:</p>
 			
-			<p class="normal-text">- <img width=106 height=20
-			src="20201116%20Module%20Content_Capacity%20Planning_v3_files/image077.png">�is
+			<p class="normal-text">- <i><img width=106 height=20
+			src="images/capacity_planning/image077.png"></i> is
 			the forecasted number of subscribers in the region based on natural growth plus
 			the additional ones added by commercial inputs. This commercial input must
 			include the total number of subscribers considering all the MNOs utilizing the
 			NaaS network. </p>
 			
-			<p class="normal-text">Once <img width=127 height=20
-			src="20201116%20Module%20Content_Capacity%20Planning_v3_files/image075.png">�has
+			<p class="normal-text">Once <i><img width=127 height=20
+			src="images/capacity_planning/image075.png"></i> has
 			been computed, forecasting of the following network metrics can be directly
 			obtained. </p>
 			
-			<h3 style='margin-left:40.5pt'>3.2.2
+			<h3 >3.2.2
 			User Utilization and User License Utilization</h3>
 			
-			<p class="normal-text"><img width=101 height=20
-			src="20201116%20Module%20Content_Capacity%20Planning_v3_files/image042.png">�and
-			<img width=120 height=19
-			src="20201116%20Module%20Content_Capacity%20Planning_v3_files/image044.png">�(Eq.�
-			7 and Eq.� 8, respectively) are constant quantities. Thus, forecasted User and
-			User License utilization metrics can be obtained by forecasting the <img width=31 height=19
-			src="20201116%20Module%20Content_Capacity%20Planning_v3_files/image038.png">�with
+			<p class="normal-text"><i><img width=101 height=20
+			src="images/capacity_planning/image042.png"></i> and
+			<i><img width=120 height=19
+			src="images/capacity_planning/image044.png"></i>(Eq.
+			7 and Eq. 8, respectively) are constant quantities. Thus, forecasted User and
+			User License utilization metrics can be obtained by forecasting the <i><img width=31 height=19
+			src="images/capacity_planning/image038.png"></i> with
 			the methods of section 2.3.2.1, at the corresponding level (carrier or site
-			level) as shown in equations Eq.� 16 and Eq.� 17.</p>
+			level) as shown in equations Eq. 16 and Eq. 17.</p>
 			
 			<table class=af2 border=1 cellspacing=0 cellpadding=0 width=598
 			 style='border-collapse:collapse;border:none'>
@@ -2499,15 +2496,15 @@
 			  <td width=548 style='width:410.85pt;border:none;padding:0cm 5.75pt 0cm 5.75pt'>
 			  <p class="normal-text"><img
 			  width=458 height=47
-			  src="20201116%20Module%20Content_Capacity%20Planning_v3_files/image078.png"></p>
+			  src="images/capacity_planning/image078.png"></p>
 			  </td>
 			  <td width=50 style='width:37.6pt;border:none;padding:0cm 5.75pt 0cm 5.75pt'>
-			  <p class="normal-text"><i>Eq.� 16</i></p>
+			  <p class="normal-text"><i>Eq. 16</i></p>
 			  </td>
 			 </tr>
 			</table>
 			
-			<p class="normal-text"><a></a></p>
+			
 			
 			<table class=af3 border=1 cellspacing=0 cellpadding=0 width=598
 			 style='border-collapse:collapse;border:none'>
@@ -2515,10 +2512,10 @@
 			  <td width=548 style='width:410.85pt;border:none;padding:0cm 5.75pt 0cm 5.75pt'>
 			  <p class="normal-text"><img
 			  width=486 height=39
-			  src="20201116%20Module%20Content_Capacity%20Planning_v3_files/image079.png"></p>
+			  src="images/capacity_planning/image079.png"></p>
 			  </td>
 			  <td width=50 style='width:37.6pt;border:none;padding:0cm 5.75pt 0cm 5.75pt'>
-			  <p class="normal-text"><i>Eq.� 17</i></p>
+			  <p class="normal-text"><i>Eq. 17</i></p>
 			  </td>
 			 </tr>
 			</table>
@@ -2527,41 +2524,41 @@
 			For User Utilization:</p>
 			
 			<p class="normal-text">o
-			<img width=55 height=19
-			src="20201116%20Module%20Content_Capacity%20Planning_v3_files/image070.png">�must be forecasted at the
-			carrier level to obtain <img width=190 height=26
-			src="20201116%20Module%20Content_Capacity%20Planning_v3_files/image080.png">.</p>
+			<i><img width=55 height=19
+			src="images/capacity_planning/image070.png"></i> must be forecasted at the
+			carrier level to obtain <i><img width=190 height=26
+			src="images/capacity_planning/image080.png"></i>.</p>
 			
 			<p class="normal-text">o
 			The maximum number of supported users
-			per carrier (<img width=101 height=20
-			src="20201116%20Module%20Content_Capacity%20Planning_v3_files/image042.png">) is a constant value for each sector carrier.</p>
+			per carrier (<i><img width=101 height=20
+			src="images/capacity_planning/image042.png"></i>) is a constant value for each sector carrier.</p>
 			
-			<p class="normal-text"></p>
+			
 			
 			<p class="normal-text">&#9679;
 			For User License Utilization:</p>
 			
 			<p class="normal-text">o
-			<img width=55 height=19
-			src="20201116%20Module%20Content_Capacity%20Planning_v3_files/image070.png">�must be forecasted at site level to obtain <img width=171 height=26
-			src="20201116%20Module%20Content_Capacity%20Planning_v3_files/image081.png">.</p>
+			<i><img width=55 height=19
+			src="images/capacity_planning/image070.png"></i> must be forecasted at site level to obtain <i><img width=171 height=26
+			src="images/capacity_planning/image081.png"></i>.</p>
 			
 			<p class="normal-text">o
 			The total number of user licenses
-			configured at BBU (<img width=108 height=19
-			src="20201116%20Module%20Content_Capacity%20Planning_v3_files/image082.png">) is a constant value for each site.</p>
+			configured at BBU (<i><img width=108 height=19
+			src="images/capacity_planning/image082.png"></i>) is a constant value for each site.</p>
 			
-			<p class="normal-text"></p>
 			
-			<h3 style='margin-left:40.5pt;border:none'>3.2.3
+			
+			<h3>3.2.3
 			DL / UL Throughput License Utilization </h3>
 			
 			<p class="normal-text">Resultant BH average user DL and UL throughputs (obtained
-			from Eq.� 9 and Eq.� 10) must be forecasted and multiplied by the forecasted <img width=101 height=20
-			src="20201116%20Module%20Content_Capacity%20Planning_v3_files/image083.png">to
-			obtain the forecast of the throughput per site as shown in equations Eq.� 18
-			and Eq.� 19:</p>
+			from Eq. 9 and Eq. 10) must be forecasted and multiplied by the forecasted <i><img width=101 height=20
+			src="images/capacity_planning/image083.png"></i>to
+			obtain the forecast of the throughput per site as shown in equations Eq. 18
+			and Eq. 19:</p>
 			
 			<table class=af4 border=1 cellspacing=0 cellpadding=0 width=598
 			 style='border-collapse:collapse;border:none'>
@@ -2569,15 +2566,15 @@
 			  <td width=548 style='width:410.85pt;border:none;padding:0cm 5.75pt 0cm 5.75pt'>
 			  <p class="normal-text"><img
 			  width=480 height=26
-			  src="20201116%20Module%20Content_Capacity%20Planning_v3_files/image084.png"></p>
+			  src="images/capacity_planning/image084.png"></p>
 			  </td>
 			  <td width=50 style='width:37.6pt;border:none;padding:0cm 5.75pt 0cm 5.75pt'>
-			  <p class="normal-text"><i>Eq.� 18</i></p>
+			  <p class="normal-text"><i>Eq. 18</i></p>
 			  </td>
 			 </tr>
 			</table>
 			
-			<p class="normal-text"><a></a></p>
+			
 			
 			<table class=af5 border=1 cellspacing=0 cellpadding=0 width=598
 			 style='border-collapse:collapse;border:none'>
@@ -2585,66 +2582,61 @@
 			  <td width=548 style='width:410.85pt;border:none;padding:0cm 5.75pt 0cm 5.75pt'>
 			  <p class="normal-text"><img
 			  width=481 height=26
-			  src="20201116%20Module%20Content_Capacity%20Planning_v3_files/image085.png"></p>
+			  src="images/capacity_planning/image085.png"></p>
 			  </td>
 			  <td width=50 style='width:37.6pt;border:none;padding:0cm 5.75pt 0cm 5.75pt'>
-			  <p class="normal-text"><i>Eq.� 19</i></p>
+			  <p class="normal-text"><i>Eq. 19</i></p>
 			  </td>
 			 </tr>
 			</table>
 			
-			<p class="normal-text"><a></a></p>
+			
 			
 			<p class="normal-text">&#9679;
 			DL / UL Throughput License Utilization:
 			</p>
 			
 			<p class="normal-text">o
-			<img width=55 height=19
-			src="20201116%20Module%20Content_Capacity%20Planning_v3_files/image070.png">�must be measured and forecasted at the site level to
-			obtain <img width=171 height=26
-			src="20201116%20Module%20Content_Capacity%20Planning_v3_files/image081.png">.</p>
+			<i><img width=55 height=19
+			src="images/capacity_planning/image070.png"></i> must be measured and forecasted at the site level to
+			obtain <i><img width=171 height=26
+			src="images/capacity_planning/image081.png"></i>.</p>
 			
 			<p class="normal-text">o
-			<img width=78 height=19
-			src="20201116%20Module%20Content_Capacity%20Planning_v3_files/image050.png">�and <img width=78 height=19
-			src="20201116%20Module%20Content_Capacity%20Planning_v3_files/image051.png">�must be obtained as in Eq.� 9 and Eq.� 10 respectively
+			<i><img width=78 height=19
+			src="images/capacity_planning/image050.png"></i> and <i><img width=78 height=19
+			src="images/capacity_planning/image051.png"></i> must be obtained as in Eq. 9 and Eq. 10 respectively
 			using current network measurement values. Both quantities must then be
 			forecasted using methods shown in section 2.3.2.1</p>
 			
 			<p class="normal-text">o
 			Figure 15 displays a graphical
-			representation for obtaining the <img width=124 height=20
-			src="20201116%20Module%20Content_Capacity%20Planning_v3_files/image086.png">�metric. The same applies to the UL throughput metric.</p>
+			representation for obtaining the <i><img width=124 height=20
+			src="images/capacity_planning/image086.png"></i> metric. The same applies to the UL throughput metric.</p>
 			
-			<p class="normal-text"></p>
+			
 			
 			<p class="normal-text"><img border=0 width=377 height=351
 			id=image9.png
-			src="20201116%20Module%20Content_Capacity%20Planning_v3_files/image087.png"></p>
+			src="images/capacity_planning/image087.png"></p>
 			
 			<p align=center><i>Figure 15 - DL
 			Throughput License Utilization forecasting process.</i></p>
 			
-			<h3 style='margin-left:40.5pt'>3.2.4
+			<h3 >3.2.4
 			Event-monitored Metrics</h3>
 			
 			<p class="normal-text">The following metrics can be directly obtained from
 			monitoring systems and must be used to trigger the capacity augmentation based
 			on utilization monitoring and event-based methods.</p>
 			
-			<p class="normal-text">&#9679;
-			PRB Utilization [%]</p>
-			
-			<p class="normal-text">&#9679;
-			Processing boards utilization [%]</p>
-			
-			<p class="normal-text">&#9679;
-			Transmission port utilization [%]</p>
-			
-			<p class="normal-text"></p>
-			
-			<br><h2 class="titulo-h2">3.3
+			<ul class="normal-text ul-iconos" style='margin-top:0in' start=1 type=1>
+				<li>PRB Utilization [%]</li>
+				<li>Processing boards utilization [%]</li>
+				<li>Transmission port utilization [%]</li>
+			</ul>
+						
+			<br><h2><a class="titulo-h2 anchor-bum color-luminati-2" name="item3-3">3.3
 			Capacity Augments Planning</a></h2>
 			
 			<p class="normal-text">As mentioned in section 2.3.3, since the implementation of
@@ -2661,31 +2653,31 @@
 			in section 2.3.3.1, Table 8 shows the required inputs to calculate the scoring
 			values for each RAN capacity augment.</p>
 			
-			<p class="normal-text"></p>
 			
-			<p class="normal-text"></p>
+			
+			
 			
 			<table class=af6 border=1 cellspacing=0 cellpadding=0 width="100%"
 			 style='width:100.0%;border-collapse:collapse;border:none'>
 			 <tr style='height:46.3pt'>
 			  <td width="24%" style='width:24.6%;border:solid black 1.0pt;background:#1F4E79;
 			  padding:0cm 5.75pt 0cm 5.75pt;height:46.3pt'>
-			  <p class="normal-text">Capacity Augment</p>
+			  <p align=center style="color:#FFF">Capacity Augment</p>
 			  </td>
 			  <td width="32%" style='width:32.44%;border:solid black 1.0pt;border-left:
 			  none;background:#1F4E79;padding:0cm 5.75pt 0cm 5.75pt;height:46.3pt'>
-			  <p class="normal-text">Cycle Time (<img width=20 height=19
-			  src="20201116%20Module%20Content_Capacity%20Planning_v3_files/image088.png">)</p>
+			  <p align=center style="color:#FFF">Cycle Time (<img width=20 height=19
+			  src="images/capacity_planning/image088.png">)</p>
 			  </td>
 			  <td width="20%" style='width:20.26%;border:solid black 1.0pt;border-left:
 			  none;background:#1F4E79;padding:0cm 5.75pt 0cm 5.75pt;height:46.3pt'>
-			  <p class="normal-text">Capacity after the augment (<img width=21 height=19
-			  src="20201116%20Module%20Content_Capacity%20Planning_v3_files/image089.png">)</p>
+			  <p align=center style="color:#FFF">Capacity after the augment (<img width=21 height=19
+			  src="images/capacity_planning/image089.png">)</p>
 			  </td>
 			  <td width="22%" style='width:22.7%;border:solid black 1.0pt;border-left:none;
 			  background:#1F4E79;padding:0cm 5.75pt 0cm 5.75pt;height:46.3pt'>
-			  <p class="normal-text">Cost (<img width=22 height=19
-			  src="20201116%20Module%20Content_Capacity%20Planning_v3_files/image090.png">) (for illustration Purpose only)</p>
+			  <p align=center style="color:#FFF">Cost (<img width=22 height=19
+			  src="images/capacity_planning/image090.png">) (for illustration Purpose only)</p>
 			  </td>
 			 </tr>
 			 <tr style='height:6.3pt'>
@@ -2825,7 +2817,7 @@
 			 <tr style='height:6.3pt'>
 			  <td width="100%" colspan=4 style='width:100.0%;border:solid black 1.0pt;
 			  border-top:none;padding:0cm 5.75pt 0cm 5.75pt;height:6.3pt'>
-			  <p class="normal-text">1 � Will depend
+			  <p class="normal-text">1 ' Will depend
 			  on the number of added licenses compared to the number of existing ones.</p>
 			  <p class="normal-text">Values in this
 			  table are assumptions and must be verified by the deployment team and vendor.</p>
@@ -2839,67 +2831,67 @@
 			<p class="normal-text">For example, considering a situation in which RRC Connected
 			Users per carrier CMO is forecasted to be congested soon for a macro scenario.
 			NaaS operators may choose between configuring a new carrier or deploying a new
-			sector. The original capacity for RRC Connected Users is 1k users (<img width=52 height=20
-			src="20201116%20Module%20Content_Capacity%20Planning_v3_files/image091.png">).</p>
+			sector. The original capacity for RRC Connected Users is 1k users (<i><img width=52 height=20
+			src="images/capacity_planning/image091.png"></i>).</p>
 			
 			<p class="normal-text">From section 2.3.3.1, the score formula for capacity
 			augments is equation 2:</p>
 			
 			<p class="normal-text"><img
 			width=193 height=38
-			src="20201116%20Module%20Content_Capacity%20Planning_v3_files/image017.png"></p>
+			src="images/capacity_planning/image017.png"></p>
 			
 			<p class="normal-text">For configuring a new carrier, score values will be as
 			follows. For cycle time:</p>
 			
 			<p class="normal-text"><img
 			width=87 height=34
-			src="20201116%20Module%20Content_Capacity%20Planning_v3_files/image092.png"></p>
+			src="images/capacity_planning/image092.png"></p>
 			
 			<p class="normal-text">The Effectiveness is given by:</p>
 			
 			<p class="normal-text"><img
 			width=78 height=35
-			src="20201116%20Module%20Content_Capacity%20Planning_v3_files/image093.png"></p>
+			src="images/capacity_planning/image093.png"></p>
 			
 			<p class="normal-text">And finally, for cost:</p>
 			
 			<p class="normal-text"><img
 			width=105 height=35
-			src="20201116%20Module%20Content_Capacity%20Planning_v3_files/image094.png"></p>
+			src="images/capacity_planning/image094.png"></p>
 			
 			<p class="normal-text">Assuming the insertion of a new service scenario, the score
 			of the capacity augment can be calculated as follows:</p>
 			
 			<p class="normal-text"><img
 			width=293 height=35
-			src="20201116%20Module%20Content_Capacity%20Planning_v3_files/image095.png"></p>
+			src="images/capacity_planning/image095.png"></p>
 			
 			<p class="normal-text">For deploying a new sector, the score is as follows:</p>
 			
 			<p class="normal-text"><img
 			width=68 height=34
-			src="20201116%20Module%20Content_Capacity%20Planning_v3_files/image096.png"></p>
+			src="images/capacity_planning/image096.png"></p>
 			
 			<p class="normal-text"><img
 			width=78 height=35
-			src="20201116%20Module%20Content_Capacity%20Planning_v3_files/image097.png"></p>
+			src="images/capacity_planning/image097.png"></p>
 			
 			<p class="normal-text"><img
 			width=86 height=35
-			src="20201116%20Module%20Content_Capacity%20Planning_v3_files/image098.png"></p>
+			src="images/capacity_planning/image098.png"></p>
 			
 			<p class="normal-text"><img
 			width=250 height=19
-			src="20201116%20Module%20Content_Capacity%20Planning_v3_files/image099.png"></p>
+			src="images/capacity_planning/image099.png"></p>
 			
-			<p class="normal-text">It�s easy to see that configuring a new carrier is, by far,
+			<p class="normal-text">It's easy to see that configuring a new carrier is, by far,
 			the best option in this situation. However, it has a dependency on ensuring
 			that the installed equipment supports its addition. Moreover, the NaaS operator
 			must review the impact in terms of coverage and network planning that this
 			augment must make to the network. </p>
 			
-			<br><h2 class="titulo-h2">3.4
+			<br><h2><a class="titulo-h2 anchor-bum color-luminati-2" name="item3-4">3.4
 			CP Process Considerations</a></h2>
 			
 			<p class="normal-text">To know how often NaaS operators must carry out CMOs
@@ -2913,13 +2905,13 @@
 			<p class="normal-text">For instance, the worst-case can be the New Site deployment
 			augment. It can be assumed that this augment is triggered by the necessity of
 			adding an additional BBU processing board. Thus, considering concepts
-			introduced in section 2.3.3, one single augment horizon (<img width=18 height=19
-			src="20201116%20Module%20Content_Capacity%20Planning_v3_files/image100.png">)
+			introduced in section 2.3.3, one single augment horizon (<i><img width=18 height=19
+			src="images/capacity_planning/image100.png"></i>)
 			can be obtained for RAN.</p>
 			
 			<p class="normal-text">Table 9 shows a relationship between RAN CMOs and proposed
-			values for <img width=17 height=19
-			src="20201116%20Module%20Content_Capacity%20Planning_v3_files/image011.png">.</p>
+			values for <i><img width=17 height=19
+			src="images/capacity_planning/image011.png"></i>.</p>
 			
 			<div align=center>
 			
@@ -2928,14 +2920,14 @@
 			 <tr style='height:13.45pt'>
 			  <td width="55%" rowspan=2 style='width:55.02%;border:solid black 1.0pt;
 			  background:#1F4E79;padding:0cm 5.75pt 0cm 5.75pt;height:13.45pt'>
-			  <p class="normal-text">CMO</p>
+			  <p align=center style="color:#FFF">CMO</p>
 			  </td>
 			  <td width="44%" rowspan=2 style='width:44.98%;border:solid black 1.0pt;
 			  border-left:none;background:#1F4E79;padding:0cm 5.75pt 0cm 5.75pt;height:
 			  13.45pt'>
 			  <p class="normal-text"><img
 			  width=19 height=20
-			  src="20201116%20Module%20Content_Capacity%20Planning_v3_files/image101.png"></p>
+			  src="images/capacity_planning/image101.png"></p>
 			  </td>
 			  <td style='height:13.45pt;border:none' width=0 height=18></td>
 			 </tr>
@@ -2993,7 +2985,7 @@
 			 <tr style='height:3.7pt'>
 			  <td width="55%" style='width:55.02%;border:solid black 1.0pt;border-top:none;
 			  padding:0cm 5.75pt 0cm 5.75pt;height:3.7pt'>
-			  <p class="normal-text">BBU�s processing boards capacity</p>
+			  <p class="normal-text">BBU's processing boards capacity</p>
 			  </td>
 			  <td width="44%" style='width:44.98%;border-top:none;border-left:none;
 			  border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 5.75pt 0cm 5.75pt;
@@ -3017,8 +3009,8 @@
 			 <tr style='height:10.55pt'>
 			  <td width="100%" colspan=2 style='width:100.0%;border:solid black 1.0pt;
 			  border-top:none;padding:0cm 5.75pt 0cm 5.75pt;height:10.55pt'>
-			  <p class="normal-text">1�Low = 1 month (4 weeks)</p>
-			  <p class="normal-text">2�Medium = 3 months (12 weeks)</p>
+			  <p class="normal-text">1'Low = 1 month (4 weeks)</p>
+			  <p class="normal-text">2'Medium = 3 months (12 weeks)</p>
 			  </td>
 			  <td style='height:10.55pt;border:none' width=0 height=14></td>
 			 </tr>
@@ -3026,54 +3018,52 @@
 			
 			</div>
 			
-			<p align=center><i>Table 9 - </i><img width=14 height=15
-			src="20201116%20Module%20Content_Capacity%20Planning_v3_files/image102.png"><i>�values for every RAN
+			<p align=center><i>Table 9 - </i><i><img width=14 height=15
+			src="images/capacity_planning/image102.png"></i><i> values for every RAN
 			CMO.</i></p>
 			
-			<p class="normal-text">Based on these assumptions, computation of a single <img width=18 height=19
-			src="20201116%20Module%20Content_Capacity%20Planning_v3_files/image100.png">�for
+			<p class="normal-text">Based on these assumptions, computation of a single <i><img width=18 height=19
+			src="images/capacity_planning/image100.png"></i> for
 			the RAN based on the deployment of a new site can be done considering the
 			following values:</p>
 			
-			<p class="normal-text">&#9679; <img width=17 height=19
-			src="20201116%20Module%20Content_Capacity%20Planning_v3_files/image011.png">�12 weeks (corresponding to the BBU�s processing boards
+			<p class="normal-text">&#9679; <i><img width=17 height=19
+			src="images/capacity_planning/image011.png"></i> 12 weeks (corresponding to the BBU's processing boards
 			capacity CMO).</p>
 			
-			<p class="normal-text">&#9679; <img width=16 height=19
-			src="20201116%20Module%20Content_Capacity%20Planning_v3_files/image012.png">�6 weeks (corresponding to the New Site cycle time).</p>
+			<p class="normal-text">&#9679; <i><img width=16 height=19
+			src="images/capacity_planning/image012.png"></i> 6 weeks (corresponding to the New Site cycle time).</p>
 			
 			<p class="normal-text">Considering the methodology presented in Section 2.3.3, the
 			augment horizon is computed as follows:</p>
 			
 			<p class="normal-text"><img
 			width=457 height=19
-			src="20201116%20Module%20Content_Capacity%20Planning_v3_files/image103.png"></p>
+			src="images/capacity_planning/image103.png"></p>
 			
 			<p class="normal-text">Thus, the forecasting process should at least cover the
 			expected behavior of this CMO for at least 17 weeks. Finally, it must be
 			considered that each capacity augment cycle time depends on how NaaS operator
 			policies for the implementation of each capacity augment.</p>
 			
-			<br
-			clear=all style='page-break-before:always'>
+
+
+
 			
-			
-			<p class="normal-text"></p>
-			
-			<h1 class="titulo-h1">4
+			<h1><a class="titulo-h1 anchor-bum color-luminati-2" name="item4">4
 			CP in Transport Network</a></h1>
 			
 			<p class="normal-text">The aim of this section is to examine the CP process applied
 			to the Transport Network, its implications and dependencies for each step.</p>
 			
-			<br><h2 class="titulo-h2">4.1
+			<br><h2><a class="titulo-h2 anchor-bum color-luminati-2" name="item4-1">4.1
 			Capacity Framework Setup</a></h2>
 			
 			<p class="normal-text">In this section, the elements that comprise the Capacity
 			Framework Setup for the Transport Network are defined following the procedures
 			presented in Section 2.3.1.</p>
 			
-			<h3 style='margin-left:40.5pt'>4.1.1
+			<h3 >4.1.1
 			CMOs</h3>
 			
 			<p class="normal-text">In the Transport Network, the CMOs can be divided into two
@@ -3083,48 +3073,39 @@
 			Link, responsible for transporting all the aggregated traffic among the base
 			stations and the mobile core. The Tx CMOs on this category are as follows:</p>
 			
-			<p class="normal-text">�
-			<b>Tx Link Utilization</b>: The utilization over a specific Tx link is defined as the
-			amount of traffic traversing it over a specific period of time. The Tx link can
-			be implemented using different technologies (e.g., Fiber optic (FO), Microwave (MW), Satellite (SAT)). The Tx
-			link utilization depends on the number of subscribers and the traffic generated
-			by them.</p>
-			
-			<p class="normal-text"></p>
-			
-			<p class="normal-text">�
-			<b>FO Utilization</b>: Although the capacity over a FO is theoretically boundless (i.e., more than 30Tbps), the utilization of a FO link in NaaS
-			operators is practically limited by the interfaces implemented on each side.
-			However, an additional FO link can be implemented using an alternative FO
-			strand over the same FO laying. </p>
+			<ul class="normal-text ul-iconos" style='margin-top:0in' start=1 type=1>
+				<li><b>Tx Link Utilization</b>: The utilization over a specific Tx link is defined as the
+				amount of traffic traversing it over a specific period of time. The Tx link can
+				be implemented using different technologies (e.g., Fiber optic (FO), Microwave (MW), Satellite (SAT)). The Tx
+				link utilization depends on the number of subscribers and the traffic generated
+				by them.</li>
+				
+				<li><b>FO Utilization</b>: Although the capacity over a FO is theoretically boundless (i.e., more than 30Tbps), the utilization of a FO link in NaaS
+				operators is practically limited by the interfaces implemented on each side.
+				However, an additional FO link can be implemented using an alternative FO
+				strand over the same FO laying. </li>
+			</ul>
 			
 			<p class="normal-text">On the other hand, the other CMO category is related to the
 			Tx Equipment, which are the devices that processes and forwards all the user
 			and control traffic. The Tx CMOs on this category are as follows: </p>
 			
-			<p class="normal-text">�
-			<b>Tx Interface Utilization</b>: The main purpose of a Tx Interface is to enable
-			communication among the devices in the transport network. However, when an
-			interface reaches its maximum capacity, a degradation in its capabilities to
-			transmit or receive data is presented, which is reflected in constant packet
-			loss.</p>
+			<ul class="normal-text ul-iconos" style='margin-top:0in' start=1 type=1>
+				<li><b>Tx Interface Utilization</b>: The main purpose of a Tx Interface is to enable
+				communication among the devices in the transport network. However, when an
+				interface reaches its maximum capacity, a degradation in its capabilities to
+				transmit or receive data is presented, which is reflected in constant packet
+				loss.</li>
+				<li><b>Tx Interface Number</b>: Each device in the transport network has a limited number of Tx interfaces. In some specific
+				elements (e.g., router, switches), the number
+				of interfaces can be augmented by installing an additional networking card.</li>
+				<li><b>Tx Equipment Utilization</b>: Each Tx equipment has a
+				maximum processing capability to forward the traffic in the network. In this
+				case, the Tx equipment utilization is directly related to the amount of traffic
+				that needs to be processed.</li>
+			</ul>
 			
-			<p class="normal-text"></p>
 			
-			<p class="normal-text">�
-			<b>Tx Interface Number</b>: Each device in the transport network has a limited number of Tx interfaces. In some specific
-			elements (e.g., router, switches), the number
-			of interfaces can be augmented by installing an additional networking card.</p>
-			
-			<p class="normal-text"></p>
-			
-			<p class="normal-text">�
-			<b>Tx Equipment Utilization</b>: Each Tx equipment has a
-			maximum processing capability to forward the traffic in the network. In this
-			case, the Tx equipment utilization is directly related to the amount of traffic
-			that needs to be processed.</p>
-			
-			<p class="normal-text"></p>
 			
 			<p class="normal-text">The main purpose of a Tx Interface is to enable
 			communication among the devices in the transport network. However, when an
@@ -3132,7 +3113,7 @@
 			transmit or receive data is presented, which is reflected in constant packet
 			loss.</p>
 			
-			<h3 style='margin-left:40.5pt'>4.1.2
+			<h3 >4.1.2
 			Network Metrics</h3>
 			
 			<p class="normal-text"><a></a>To monitor the actual status of each
@@ -3145,15 +3126,15 @@
 			 <tr style='height:24.0pt'>
 			  <td width="26%" style='width:26.82%;border:solid black 1.0pt;background:#1F4E79;
 			  padding:0cm 5.75pt 0cm 5.75pt;height:24.0pt'>
-			  <p class="normal-text">CMO<a></a></p>
+			  <p align=center style="color:#FFF">CMO<a></a></p>
 			  </td>
 			  <td width="45%" style='width:45.84%;border:solid black 1.0pt;border-left:
 			  none;background:#1F4E79;padding:0cm 5.75pt 0cm 5.75pt;height:24.0pt'>
-			  <p class="normal-text">Network Metric [Units]</p>
+			  <p align=center style="color:#FFF">Network Metric [Units]</p>
 			  </td>
 			  <td width="27%" style='width:27.34%;border:solid black 1.0pt;border-left:
 			  none;background:#1F4E79;padding:0cm 5.75pt 0cm 5.75pt;height:24.0pt'>
-			  <p class="normal-text">Periodicity</p>
+			  <p align=center style="color:#FFF">Periodicity</p>
 			  </td>
 			 </tr>
 			 <tr style='height:24.0pt'>
@@ -3251,10 +3232,10 @@
 			Tx Link Utilization</h4>
 			
 			<p class="normal-text">The Tx Link Utilization can be estimated by collecting the
-			average throughput on the Tx link during the BH (<img width=24 height=19
-			src="20201116%20Module%20Content_Capacity%20Planning_v3_files/image104.png">).
+			average throughput on the Tx link during the BH (<i><img width=24 height=19
+			src="images/capacity_planning/image104.png"></i>).
 			Then, the ratio between the average throughput on the Tx link and the total
-			supported by the link can be calculated. This relation is shown in Eq.� 20. </p>
+			supported by the link can be calculated. This relation is shown in Eq. 20. </p>
 			
 			<table class=af9 border=1 cellspacing=0 cellpadding=0 width=598
 			 style='border-collapse:collapse;border:none'>
@@ -3262,18 +3243,18 @@
 			  <td width=548 style='width:410.85pt;border:none;padding:0cm 5.75pt 0cm 5.75pt'>
 			  <p class="normal-text"><img
 			  width=238 height=34
-			  src="20201116%20Module%20Content_Capacity%20Planning_v3_files/image105.png"></p>
+			  src="images/capacity_planning/image105.png"></p>
 			  </td>
 			  <td width=50 style='width:37.6pt;border:none;padding:0cm 5.75pt 0cm 5.75pt'>
-			  <p class="normal-text"><i>Eq.� 20</i></p>
+			  <p class="normal-text"><i>Eq. 20</i></p>
 			  </td>
 			 </tr>
 			</table>
 			
 			<p class="normal-text"><a></a>Where:</p>
 			
-			<p class="normal-text"><img width=30 height=19
-			src="20201116%20Module%20Content_Capacity%20Planning_v3_files/image106.png">�is
+			<p class="normal-text"><i><img width=30 height=19
+			src="images/capacity_planning/image106.png"></i> is
 			the total capacity of the link. </p>
 			
 			<p class="normal-text">The link throughput can be calculated for UL and DL through
@@ -3285,22 +3266,22 @@
 			  <td width=519 valign=top style='width:389.6pt;border:none;padding:0cm 5.75pt 0cm 5.75pt'>
 			  <p class="normal-text"><img
 			  width=266 height=20
-			  src="20201116%20Module%20Content_Capacity%20Planning_v3_files/image107.png"></p>
+			  src="images/capacity_planning/image107.png"></p>
 			  </td>
 			  <td width=78 valign=top style='width:58.85pt;border:none;padding:0cm 5.75pt 0cm 5.75pt'>
-			  <p class="normal-text"><i>Eq.� 21</i></p>
+			  <p class="normal-text"><i>Eq. 21</i></p>
 			  </td>
 			 </tr>
 			</table>
 			
 			<p class="normal-text"><a></a>Where:</p>
 			
-			<p class="normal-text"><img width=57 height=19
-			src="20201116%20Module%20Content_Capacity%20Planning_v3_files/image108.png">�is
+			<p class="normal-text"><i><img width=57 height=19
+			src="images/capacity_planning/image108.png"></i> is
 			the average throughput per user at the BH.</p>
 			
-			<p class="normal-text"><img width=35 height=19
-			src="20201116%20Module%20Content_Capacity%20Planning_v3_files/image109.png">�is
+			<p class="normal-text"><i><img width=35 height=19
+			src="images/capacity_planning/image109.png"></i> is
 			the total number of sites that are aggregated in the Tx link. This number can
 			be estimated by analyzing the network topology. </p>
 			
@@ -3317,10 +3298,10 @@
 			Tx Interface Utilization</h4>
 			
 			<p class="normal-text">At the interface level, the utilization can be estimated by
-			collecting the average throughput on the Tx interface during the BH (<img width=48 height=19
-			src="20201116%20Module%20Content_Capacity%20Planning_v3_files/image110.png">).
+			collecting the average throughput on the Tx interface during the BH (<i><img width=48 height=19
+			src="images/capacity_planning/image110.png"></i>).
 			Then, the ratio between the average throughput and the total capacity supported
-			by the interface can be calculated. This relation is shown in Eq.� 22. </p>
+			by the interface can be calculated. This relation is shown in Eq. 22. </p>
 			
 			<table class=afb border=1 cellspacing=0 cellpadding=0 width=598
 			 style='border-collapse:collapse;border:none'>
@@ -3328,22 +3309,22 @@
 			  <td width=548 style='width:410.85pt;border:none;padding:0cm 5.75pt 0cm 5.75pt'>
 			  <p class="normal-text"><img
 			  width=295 height=34
-			  src="20201116%20Module%20Content_Capacity%20Planning_v3_files/image111.png"></p>
+			  src="images/capacity_planning/image111.png"></p>
 			  </td>
 			  <td width=50 style='width:37.6pt;border:none;padding:0cm 5.75pt 0cm 5.75pt'>
-			  <p class="normal-text"><i>Eq.� 22</i></p>
+			  <p class="normal-text"><i>Eq. 22</i></p>
 			  </td>
 			 </tr>
 			</table>
 			
 			<p class="normal-text"><a></a>Where:</p>
 			
-			<p class="normal-text"><img width=48 height=19
-			src="20201116%20Module%20Content_Capacity%20Planning_v3_files/image110.png">�is
+			<p class="normal-text"><i><img width=48 height=19
+			src="images/capacity_planning/image110.png"></i> is
 			the average throughput in the Tx interface at the BH. </p>
 			
-			<p class="normal-text"><img width=25 height=19
-			src="20201116%20Module%20Content_Capacity%20Planning_v3_files/image112.png">�is
+			<p class="normal-text"></i><img width=25 height=19
+			src="images/capacity_planning/image112.png"></i> is
 			the total capacity of the interface. </p>
 			
 			<h4>4.1.2.4
@@ -3363,13 +3344,13 @@
 			Indicator (KPI) that is commonly provided by the Network Performance System in
 			percentage form. </p>
 			
-			<h3 style='margin-left:40.5pt'>4.1.3
+			<h3 >4.1.3
 			Safety Margins</h3>
 			
 			<p class="normal-text">The compendium of safety margins for each of the Tx network
 			metrics is represented in Table 11. Safety margins for the network metric have
 			been selected based on industry and rural networks standards. However, it must
-			be considered to consult the vendor�s own Safety Margins recommendations to
+			be considered to consult the vendor's own Safety Margins recommendations to
 			guarantee and optimal performance for its equipment.</p>
 			
 			<table class=afc border=0 cellspacing=0 cellpadding=0 width="100%"
@@ -3377,15 +3358,15 @@
 			 <tr style='height:24.0pt'>
 			  <td width="28%" style='width:28.94%;border:solid black 1.0pt;background:#1F4E79;
 			  padding:0cm 5.75pt 0cm 5.75pt;height:24.0pt'>
-			  <p class="normal-text">Network Metric<a></a></p>
+			  <p align=center style="color:#FFF">Network Metric<a></a></p>
 			  </td>
 			  <td width="26%" style='width:26.34%;border:solid black 1.0pt;border-left:
 			  none;background:#1F4E79;padding:0cm 5.75pt 0cm 5.75pt;height:24.0pt'>
-			  <p class="normal-text">Safety Margin</p>
+			  <p align=center style="color:#FFF">Safety Margin</p>
 			  </td>
 			  <td width="44%" style='width:44.74%;border:solid black 1.0pt;border-left:
 			  none;background:#1F4E79;padding:0cm 5.75pt 0cm 5.75pt;height:24.0pt'>
-			  <p class="normal-text">Time Period</p>
+			  <p align=center style="color:#FFF">Time Period</p>
 			  </td>
 			 </tr>
 			 <tr style='height:24.0pt'>
@@ -3476,7 +3457,7 @@
 			
 			<p align=center><i>Table 11 - Tx </i>network metrics Safety Margins</p>
 			
-			<h3 style='margin-left:40.5pt'>4.1.4
+			<h3 >4.1.4
 			Capacity Augments &amp; Cycle Times</h3>
 			
 			<p class="normal-text">Table 12 displays the recommended capacity augments to be
@@ -3489,19 +3470,19 @@
 			 <tr style='height:39.0pt'>
 			  <td width="25%" style='width:25.66%;border:solid black 1.0pt;background:#1F4E79;
 			  padding:0cm 5.75pt 0cm 5.75pt;height:39.0pt'>
-			  <p class="normal-text">CMO<a></a></p>
+			  <p align=center style="color:#FFF">CMO<a></a></p>
 			  </td>
 			  <td width="24%" style='width:24.3%;border:solid black 1.0pt;border-left:none;
 			  background:#1F4E79;padding:0cm 5.75pt 0cm 5.75pt;height:39.0pt'>
-			  <p class="normal-text">Primary Capacity Augment</p>
+			  <p align=center style="color:#FFF">Primary Capacity Augment</p>
 			  </td>
 			  <td width="25%" style='width:25.16%;border:solid black 1.0pt;border-left:
 			  none;background:#1F4E79;padding:0cm 5.75pt 0cm 5.75pt;height:39.0pt'>
-			  <p class="normal-text">Secondary Capacity Augments</p>
+			  <p align=center style="color:#FFF">Secondary Capacity Augments</p>
 			  </td>
 			  <td width="24%" style='width:24.86%;border:solid black 1.0pt;border-left:
 			  none;background:#1F4E79;padding:0cm 5.75pt 0cm 5.75pt;height:39.0pt'>
-			  <p class="normal-text">Comments</p>
+			  <p align=center style="color:#FFF">Comments</p>
 			  </td>
 			 </tr>
 			 <tr style='height:44.25pt'>
@@ -3621,7 +3602,7 @@
 			  border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 5.75pt 0cm 5.75pt;
 			  height:44.25pt'>
 			  <p class="normal-text">- Upgrade Tx Equipment<br>
-			  �-Add new Tx Equipment</p>
+			  '-Add new Tx Equipment</p>
 			  </td>
 			  <td width="24%" style='width:24.86%;border-top:none;border-left:none;
 			  border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 5.75pt 0cm 5.75pt;
@@ -3642,7 +3623,7 @@
 			  <td width="25%" style='width:25.16%;border-top:none;border-left:none;
 			  border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 5.75pt 0cm 5.75pt;
 			  height:44.25pt'>
-			  <p class="normal-text">�-Add new Tx Equipment</p>
+			  <p class="normal-text">'-Add new Tx Equipment</p>
 			  </td>
 			  <td width="24%" style='width:24.86%;border-top:none;border-left:none;
 			  border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 5.75pt 0cm 5.75pt;
@@ -3670,15 +3651,15 @@
 			 <tr style='height:15.0pt'>
 			  <td width="26%" style='width:26.82%;border:solid black 1.0pt;background:#1F4E79;
 			  padding:0cm 5.75pt 0cm 5.75pt;height:15.0pt'>
-			  <p class="normal-text">Capacity Augment<a></a></p>
+			  <p align=center style="color:#FFF">Capacity Augment<a></a></p>
 			  </td>
 			  <td width="58%" style='width:58.52%;border:solid black 1.0pt;border-left:
 			  none;background:#1F4E79;padding:0cm 5.75pt 0cm 5.75pt;height:15.0pt'>
-			  <p class="normal-text">Cycle Time Components</p>
+			  <p align=center style="color:#FFF">Cycle Time Components</p>
 			  </td>
 			  <td width="14%" style='width:14.66%;border:solid black 1.0pt;border-left:
 			  none;background:#1F4E79;padding:0cm 5.75pt 0cm 5.75pt;height:15.0pt'>
-			  <p class="normal-text">Average Time Required</p>
+			  <p align=center style="color:#FFF">Average Time Required</p>
 			  </td>
 			 </tr>
 			 <tr style='height:60.0pt'>
@@ -3877,26 +3858,26 @@
 			<p align=center><i>Table 13 - Cycle Time for Tx capacity
 			augment.</i></p>
 			
-			<p class="normal-text">It�s important to note that the NaaS operator should be able
+			<p class="normal-text">It's important to note that the NaaS operator should be able
 			to correctly define the cycle times for every component. A complete survey with
 			all the involved vendors and system integrators working with the NaaS operator
 			can be helpful in gathering these times resulting in more accurate CP.</p>
 			
-			<br><h2 class="titulo-h2">4.2
+			<br><h2><a class="titulo-h2 anchor-bum color-luminati-2" name="itemX-X">4.2
 			Forecasting Analysis and Event Monitoring</a></h2>
 			
 			<p class="normal-text">This section presents procedures to generate the Transport
 			Network Capacity Forecast based on the identified network metrics and the
 			inputs from the commercial area. </p>
 			
-			<h3 style='margin-left:40.5pt'>4.2.1
+			<h3 >4.2.1
 			Tx Link Utilization</h3>
 			
 			<p class="normal-text">To forecast the Tx Link Utilization, the throughput per user
 			can be forecasted using the methodology presented in Section 2.3.2. </p>
 			
 			<p class="normal-text">Then, the total throughput in the Tx link for UL or DL can
-			be forecasted through Eq.� 23, by aggregating the traffic of all the sites
+			be forecasted through Eq. 23, by aggregating the traffic of all the sites
 			aggregated over the Tx link.</p>
 			
 			<div align=center>
@@ -3907,15 +3888,15 @@
 			  <td width=519 valign=top style='width:389.6pt;border:none;padding:0cm 5.75pt 0cm 5.75pt'>
 			  <p class="normal-text"><img
 			  width=480 height=26
-			  src="20201116%20Module%20Content_Capacity%20Planning_v3_files/image113.png"></p>
+			  src="images/capacity_planning/image113.png"></p>
 			  </td>
 			  <td width=78 valign=top style='width:58.85pt;border:none;padding:0cm 5.75pt 0cm 5.75pt'>
-			  <p class="normal-text"><i>Eq.� 23</i></p>
+			  <p class="normal-text"><i>Eq. 23</i></p>
 			  </td>
 			 </tr>
 			 <tr>
 			  <td width=519 valign=top style='width:389.6pt;border:none;padding:0cm 5.75pt 0cm 5.75pt'><a></a>
-			  <p class="normal-text"></p>
+			  
 			  </td>
 			  <td width=78 valign=top style='width:58.85pt;border:none;padding:0cm 5.75pt 0cm 5.75pt'>
 			  <p class="normal-text"><i></i></p>
@@ -3925,12 +3906,12 @@
 			
 			</div>
 			
-			<h3 style='margin-left:40.5pt'>4.2.2
+			<h3 >4.2.2
 			Tx Interface Utilization</h3>
 			
 			<p class="normal-text">The Tx Interface Utilization can be forecasted by using the
 			throughput per-interface since the interface capacity can be considered
-			constant during the evaluation period. Eq.� 24 displays the calculation to
+			constant during the evaluation period. Eq. 24 displays the calculation to
 			forecast the Tx Interface Utilization. </p>
 			
 			<div align=center>
@@ -3941,19 +3922,19 @@
 			  <td width=519 valign=top style='width:389.6pt;border:none;padding:0cm 5.75pt 0cm 5.75pt'>
 			  <p class="normal-text"><img
 			  width=423 height=41
-			  src="20201116%20Module%20Content_Capacity%20Planning_v3_files/image114.png"></p>
+			  src="images/capacity_planning/image114.png"></p>
 			  </td>
 			  <td width=78 valign=top style='width:58.85pt;border:none;padding:0cm 5.75pt 0cm 5.75pt'>
-			  <p class="normal-text"><i>Eq.� 24</i></p>
+			  <p class="normal-text"><i>Eq. 24</i></p>
 			  </td>
 			 </tr>
 			</table>
 			
 			</div>
 			
-			<p class="normal-text"><a></a></p>
 			
-			<h3 style='margin-left:40.5pt'>4.2.3
+			
+			<h3 >4.2.3
 			Available Tx Interfaces</h3>
 			
 			<p class="normal-text">Analogous to the available FO strands, the forecasting
@@ -3962,22 +3943,21 @@
 			historical data from the NMS and applying the methodology presented in section
 			2.3.2.</p>
 			
-			<h3 style='margin-left:40.5pt'>4.2.4
+			<h3 >4.2.4
 			Event-monitored Metrics</h3>
 			
 			<p class="normal-text">The following metric can be directly obtained from
 			monitoring systems and must be used to trigger the capacity augmentation based
 			on utilization monitoring and event-based methods.</p>
 			
-			<p class="normal-text">&#9679;
-			Tx Equipment CPU Utilization [%]</p>
+			<ul class="normal-text ul-iconos" style='margin-top:0in' start=1 type=1>
+				<li>Tx Equipment CPU Utilization [%]</li>
+				<li>Available FO Strands</li>
+			</ul>
 			
-			<p class="normal-text">&#9679;
-			Available FO Strands</p>
 			
-			<p class="normal-text"></p>
 			
-			<br><h2 class="titulo-h2">4.3
+			<br><h2><a class="titulo-h2 anchor-bum color-luminati-2" name="item4-3">4.3
 			Capacity Augments Planning</a></h2>
 			
 			<p class="normal-text">As discussed in previous sections, when there exist multiple
@@ -3985,8 +3965,8 @@
 			through a scoring process applying the methodology presented in Section 2.3.3. </p>
 			
 			<p class="normal-text">An augment in the capacity of a FO link whose original
-			capacity is 1 Gbps (<img width=52 height=20
-			src="20201116%20Module%20Content_Capacity%20Planning_v3_files/image091.png">)
+			capacity is 1 Gbps (<i><img width=52 height=20
+			src="images/capacity_planning/image091.png"></i>)
 			is taken as an example in the Tx Network. Table 14 displays three possible
 			capacity augments that can be implemented. In this example, the capacity
 			analysis is performed under normal circumstances. </p>
@@ -3998,22 +3978,22 @@
 			 <tr style='height:18.0pt'>
 			  <td width="45%" style='width:45.82%;border:solid black 1.0pt;background:#1F4E79;
 			  padding:0cm 5.75pt 0cm 5.75pt;height:18.0pt'>
-			  <p class="normal-text">�Capacity Augment</p>
+			  <p align=center style="color:#FFF">'Capacity Augment</p>
 			  </td>
 			  <td width="18%" style='width:18.96%;border:solid black 1.0pt;border-left:
 			  none;background:#1F4E79;padding:0cm 5.75pt 0cm 5.75pt;height:18.0pt'>
-			  <p class="normal-text">Cycle Time (<img width=20 height=19
-			  src="20201116%20Module%20Content_Capacity%20Planning_v3_files/image088.png">)</p>
+			  <p align=center style="color:#FFF">Cycle Time (<img width=20 height=19
+			  src="images/capacity_planning/image088.png">)</p>
 			  </td>
 			  <td width="17%" style='width:17.38%;border:solid black 1.0pt;border-left:
 			  none;background:#1F4E79;padding:0cm 5.75pt 0cm 5.75pt;height:18.0pt'>
-			  <p class="normal-text">Capacity after the augment� (<img width=21 height=19
-			  src="20201116%20Module%20Content_Capacity%20Planning_v3_files/image089.png">)</p>
+			  <p align=center style="color:#FFF">Capacity after the augment' (<img width=21 height=19
+			  src="images/capacity_planning/image089.png">)</p>
 			  </td>
 			  <td width="17%" style='width:17.86%;border:solid black 1.0pt;border-left:
 			  none;background:#1F4E79;padding:0cm 5.75pt 0cm 5.75pt;height:18.0pt'>
-			  <p class="normal-text">Cost (<img width=21 height=19
-			  src="20201116%20Module%20Content_Capacity%20Planning_v3_files/image089.png">) (For illustration Purpose only)</p>
+			  <p align=center style="color:#FFF">Cost (<img width=21 height=19
+			  src="images/capacity_planning/image089.png">) (For illustration Purpose only)</p>
 			  </td>
 			 </tr>
 			 <tr style='height:18.0pt'>
@@ -4088,80 +4068,80 @@
 			<p align=center><i>Table 14 - Characteristics of capacity
 			augments for fiber optic link.</i></p>
 			
-			<p class="normal-text">It�s clear that <img width=78 height=19
-			src="20201116%20Module%20Content_Capacity%20Planning_v3_files/image115.png">�are
+			<p class="normal-text">It's clear that <i><img width=78 height=19
+			src="images/capacity_planning/image115.png"></i>are
 			8 weeks and 7.5k USD respectively. Since it's a normal scenario, it's advisable
-			to select <img width=46 height=19
-			src="20201116%20Module%20Content_Capacity%20Planning_v3_files/image022.png">�as
+			to select <i><img width=46 height=19
+			src="images/capacity_planning/image022.png"></i>as
 			1, 1 &amp; 1 respectively.</p>
 			
 			<p class="normal-text">For option one, upgrade the interface capacity:</p>
 			
 			<p class="normal-text"><img
 			width=87 height=34
-			src="20201116%20Module%20Content_Capacity%20Planning_v3_files/image116.png"></p>
+			src="images/capacity_planning/image116.png"></p>
 			
 			<p class="normal-text"><img
 			width=77 height=34
-			src="20201116%20Module%20Content_Capacity%20Planning_v3_files/image117.png"></p>
+			src="images/capacity_planning/image117.png"></p>
 			
 			<p class="normal-text"><img
 			width=108 height=35
-			src="20201116%20Module%20Content_Capacity%20Planning_v3_files/image118.png"></p>
+			src="images/capacity_planning/image118.png"></p>
 			
 			<p class="normal-text"><img
 			width=320 height=35
-			src="20201116%20Module%20Content_Capacity%20Planning_v3_files/image119.png"></p>
+			src="images/capacity_planning/image119.png"></p>
 			
 			<p class="normal-text">For option two, implement an additional link in alternative
 			FO strand:</p>
 			
 			<p class="normal-text"><img
 			width=96 height=34
-			src="20201116%20Module%20Content_Capacity%20Planning_v3_files/image120.png"></p>
+			src="images/capacity_planning/image120.png"></p>
 			
 			<p class="normal-text"><img
 			width=70 height=34
-			src="20201116%20Module%20Content_Capacity%20Planning_v3_files/image121.png"></p>
+			src="images/capacity_planning/image121.png"></p>
 			
 			<p class="normal-text"><img
 			width=100 height=35
-			src="20201116%20Module%20Content_Capacity%20Planning_v3_files/image122.png"></p>
+			src="images/capacity_planning/image122.png"></p>
 			
 			<p class="normal-text"><img
 			width=313 height=35
-			src="20201116%20Module%20Content_Capacity%20Planning_v3_files/image123.png"></p>
+			src="images/capacity_planning/image123.png"></p>
 			
 			<p class="normal-text">For option three, implement
 			Additional Link in alternative FO path:</p>
 			
 			<p class="normal-text"><img
 			width=68 height=34
-			src="20201116%20Module%20Content_Capacity%20Planning_v3_files/image124.png"></p>
+			src="images/capacity_planning/image124.png"></p>
 			
 			<p class="normal-text"><img
 			width=70 height=34
-			src="20201116%20Module%20Content_Capacity%20Planning_v3_files/image125.png"></p>
+			src="images/capacity_planning/image125.png"></p>
 			
 			<p class="normal-text"><img
 			width=89 height=35
-			src="20201116%20Module%20Content_Capacity%20Planning_v3_files/image126.png"></p>
+			src="images/capacity_planning/image126.png"></p>
 			
 			<p class="normal-text"><img
 			width=250 height=19
-			src="20201116%20Module%20Content_Capacity%20Planning_v3_files/image127.png"></p>
+			src="images/capacity_planning/image127.png"></p>
 			
 			<p class="normal-text">Therefore, the most appropriate augment in this specific
 			case is to augment the interface capacity, which is the best scored
 			alternative. The next augment according to their scores is to implement an
 			additional link by using an additional fiber optic strand.</p>
 			
-			<br><h2 class="titulo-h2">4.4
+			<br><h2><a class="titulo-h2 anchor-bum color-luminati-2" name="item4-4">4.4
 			CP Process Considerations</a></h2>
 			
 			<p class="normal-text"><a></a>Table 15 displays a summary of the
-			CMOs and the recommended periodic times (<img width=17 height=19
-			src="20201116%20Module%20Content_Capacity%20Planning_v3_files/image011.png">)
+			CMOs and the recommended periodic times (<i><img width=17 height=19
+			src="images/capacity_planning/image011.png"></i>)
 			for applying forecasting analysis and CP.</p>
 			
 			<table class=aff2 border=0 cellspacing=0 cellpadding=0 width="100%"
@@ -4169,11 +4149,11 @@
 			 <tr style='height:15.0pt'>
 			  <td width="50%" style='width:50.0%;border:solid black 1.0pt;background:#1F4E79;
 			  padding:0cm 5.75pt 0cm 5.75pt;height:15.0pt'>
-			  <p class="normal-text">CMO</p>
+			  <p align=center style="color:#FFF">CMO</p>
 			  </td>
 			  <td width="50%" style='width:50.0%;border:solid black 1.0pt;border-left:none;
 			  background:#1F4E79;padding:0cm 5.75pt 0cm 5.75pt;height:15.0pt'>
-			  <p class="normal-text">Recommended </p>
+			  <p align=center style="color:#FFF">Recommended </p>
 			  </td>
 			 </tr>
 			 <tr style='height:15.75pt'>
@@ -4234,9 +4214,9 @@
 			 <tr style='height:28.5pt'>
 			  <td width="100%" colspan=2 style='width:100.0%;border:solid black 1.0pt;
 			  border-top:none;padding:0cm 5.75pt 0cm 5.75pt;height:28.5pt'>
-			  <p class="normal-text"><i>Low: 1�3
+			  <p class="normal-text"><i>Low: 1'3
 			  [week]<br>
-			  Medium: 4�8 [week]</i></p>
+			  Medium: 4'8 [week]</i></p>
 			  </td>
 			 </tr>
 			</table>
@@ -4245,19 +4225,19 @@
 			analysis for each CMO.</i></p>
 			
 			<p class="normal-text">The calculation of the augment horizon for the Transport
-			Network (<img width=31 height=19
-			src="20201116%20Module%20Content_Capacity%20Planning_v3_files/image128.png">)
-			should cover all the possible scenarios. Network the greatest summed value of <img width=66 height=19
-			src="20201116%20Module%20Content_Capacity%20Planning_v3_files/image129.png">�should
+			Network (<i><img width=31 height=19
+			src="images/capacity_planning/image128.png"></i>)
+			should cover all the possible scenarios. Network the greatest summed value of <i><img width=66 height=19
+			src="images/capacity_planning/image129.png"></i>should
 			be the one that drives all the other analysis.</p>
 			
 			<p class="normal-text">As an example, the following table expresses the CMOs, their
-			corresponding analysis periodic times (<img width=17 height=19
-			src="20201116%20Module%20Content_Capacity%20Planning_v3_files/image130.png">)
-			and their respective longest cycle times (<img width=39 height=19
-			src="20201116%20Module%20Content_Capacity%20Planning_v3_files/image131.png">).</p>
+			corresponding analysis periodic times (<i><img width=17 height=19
+			src="images/capacity_planning/image130.png"></i>)
+			and their respective longest cycle times (<i><img width=39 height=19
+			src="images/capacity_planning/image131.png"></i>).</p>
 			
-			<p class="normal-text"></p>
+			
 			
 			<div align=center>
 			
@@ -4266,28 +4246,28 @@
 			 <tr style='height:20.25pt'>
 			  <td width="45%" style='width:45.52%;border:solid black 1.0pt;background:#1F4E79;
 			  padding:0cm 5.75pt 0cm 5.75pt;height:20.25pt'>
-			  <p class="normal-text">CMO</p>
+			  <p align=center style="color:#FFF">CMO</p>
 			  </td>
 			  <td width="17%" style='width:17.52%;border:solid black 1.0pt;border-left:
 			  none;background:#1F4E79;padding:0cm 5.75pt 0cm 5.75pt;height:20.25pt'>
-			  <p class="normal-text"><img
+			  <p align=center style="color:#FFF"><img
 			  width=17 height=19
-			  src="20201116%20Module%20Content_Capacity%20Planning_v3_files/image132.png"></p>
-			  <p class="normal-text">[weeks]</p>
+			  src="images/capacity_planning/image132.png"></p>
+			  <p align=center style="color:#FFF">[weeks]</p>
 			  </td>
 			  <td width="17%" style='width:17.52%;border:solid black 1.0pt;border-left:
 			  none;background:#1F4E79;padding:0cm 5.75pt 0cm 5.75pt;height:20.25pt'>
 			  <p class="normal-text"><img
 			  width=40 height=19
-			  src="20201116%20Module%20Content_Capacity%20Planning_v3_files/image133.png"></p>
-			  <p class="normal-text">[weeks]</p>
+			  src="images/capacity_planning/image133.png"></p>
+			  <p align=center style="color:#FFF">[weeks]</p>
 			  </td>
 			  <td width="19%" style='width:19.44%;border:solid black 1.0pt;border-left:
 			  none;background:#1F4E79;padding:0cm 5.75pt 0cm 5.75pt;height:20.25pt'>
 			  <p class="normal-text"><img
 			  width=75 height=19
-			  src="20201116%20Module%20Content_Capacity%20Planning_v3_files/image134.png"></p>
-			  <p class="normal-text">[weeks]</p>
+			  src="images/capacity_planning/image134.png"></p>
+			  <p align=center style="color:#FFF">[weeks]</p>
 			  </td>
 			 </tr>
 			 <tr style='height:20.25pt'>
@@ -4400,20 +4380,20 @@
 			</div>
 			
 			<p align=center><i>Table
-			16 - Transport CMOs, </i><img width=14 height=15
-			src="20201116%20Module%20Content_Capacity%20Planning_v3_files/image135.png"><i>�and </i><img width=32 height=19
-			src="20201116%20Module%20Content_Capacity%20Planning_v3_files/image136.png"><i>�Examples.</i></p>
+			16 - Transport CMOs,  </i><i><img width=14 height=15
+			src="images/capacity_planning/image135.png"></i><i>  and  </i><i><img width=32 height=19
+			src="images/capacity_planning/image136.png"></i><i>  Examples.</i></p>
 			
 			<p class="normal-text">Taking the methodology presented in Section 2.3.3, the
 			result should be:</p>
 			
 			<p class="normal-text"><img
 			width=453 height=19
-			src="20201116%20Module%20Content_Capacity%20Planning_v3_files/image137.png"></p>
+			src="images/capacity_planning/image137.png"></p>
 			
 			<p class="normal-text">Therefore, the Augment horizon for the Transport Network
-			during the CP process must consider at least the forecasting for 12 weeks (<img width=61 height=19
-			src="20201116%20Module%20Content_Capacity%20Planning_v3_files/image138.png">).</p>
+			during the CP process must consider at least the forecasting for 12 weeks (<i><img width=61 height=19
+			src="images/capacity_planning/image138.png"></i>).</p>
 	</div>
 
  <a class='link-next' href="#" onclick="switchContent('#hld')"> &#8656; Previous</a>
@@ -4445,13 +4425,13 @@
  <div id="content">
  
 <div div data-spy="scroll" data-target="#navbar-example3" data-offset="0">
-	<h1 class="titulo-h1">5
+	<h1><a class="titulo-h1 anchor-bum color-luminati" name="item1">5
 		CP in Mobile Core</a></h1>
 		
 		<p class="normal-text">The aim of this section is to examine the CP process applied
 		to the mobile core, its implications and dependencies for each step.</p>
 		
-		<br><h2 class="titulo-h2">5.1
+		<br><h2><a class="titulo-h2 anchor-bum color-luminati-2" name="itemX-X">5.1
 		Capacity Framework Setup </a></h2>
 		
 		<p class="normal-text">As seen in previous sections, the identification of CMOs,
@@ -4461,7 +4441,7 @@
 		<p class="normal-text">The following subsections will introduce and identify each
 		of the components that will be used in the forecasting process.</p>
 		
-		<h3 style='margin-left:40.5pt'>5.1.1
+		<h3 >5.1.1
 		CMOs</h3>
 		
 		<p class="normal-text">At the mobile core side, the CMOs slightly differ from the
@@ -4482,17 +4462,17 @@
 		in charge of handling large amounts of
 		signaling procedures from Simultaneous Attached Users.</p>
 		
-		<p class="normal-text"></p>
+		
 		
 		<p class="normal-text">&#9679;
 		<b>User Plane (UP) VNFs (e.g., serving
 		gateway (SGW), packet data network gateway
 		(PGW))</b>: Elements whose main operation is
-		to carry and process user data transmission. It�s
+		to carry and process user data transmission. It's
 		driven by Simultaneous Attached Users &amp; Traffic Profiles of each service
 		present on the network.</p>
 		
-		<p class="normal-text"></p>
+		
 		
 		<p class="normal-text">&#9679;
 		<b>Database (DB) VNFs (e.g., home
@@ -4509,14 +4489,14 @@
 		and process the routing and switching information, and to forward all the
 		user-generated data toward its destination.</p>
 		
-		<p class="normal-text"></p>
+		
 		
 		<p class="normal-text">&#9679;
 		<b>NFV Infrastructure</b>: Hardware responsible for hosting all the VNFs, the
 		virtualization layer &amp; the VNF manager. It
 		can be composed of one or several physical servers working together.</p>
 		
-		<h3 style='margin-left:40.5pt'>5.1.2
+		<h3 >5.1.2
 		Network Metrics</h3>
 		
 		<p class="normal-text"><a></a>Different metrics are to be monitored
@@ -4567,7 +4547,7 @@
 		  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
 		  padding:0cm 5.75pt 0cm 5.75pt'>
 		  <p class="normal-text">Based on Type of CP Transaction (<img width=34 height=20
-		  src="20201116%20Module%20Content_Capacity%20Planning_v3_files/image139.png">)
+		  src="images/capacity_planning/image139.png">)
 		  according to Table 18.</p>
 		  </td>
 		 </tr>
@@ -4597,7 +4577,7 @@
 		  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
 		  padding:0cm 5.75pt 0cm 5.75pt'>
 		  <p class="normal-text">Based on Type of CP Transaction (<img width=34 height=20
-		  src="20201116%20Module%20Content_Capacity%20Planning_v3_files/image139.png">)
+		  src="images/capacity_planning/image139.png">)
 		  according to Table 18.</p>
 		  </td>
 		 </tr>
@@ -4640,7 +4620,7 @@
 		  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
 		  padding:0cm 5.75pt 0cm 5.75pt'>
 		  <p class="normal-text">Based on Type of CP Transaction (<img width=34 height=20
-		  src="20201116%20Module%20Content_Capacity%20Planning_v3_files/image139.png">)
+		  src="images/capacity_planning/image139.png">)
 		  according to Table 18.</p>
 		  </td>
 		 </tr>
@@ -4816,11 +4796,11 @@
 		representing, it will be the combination of signaling procedures. The following
 		table summarizes the EPC elements on the control plane.</p>
 		
-		<p class="normal-text"></p>
 		
-		<p class="normal-text"></p>
 		
-		<p class="normal-text"></p>
+		
+		
+		
 		
 		<div align=center>
 		
@@ -4834,7 +4814,7 @@
 		  <td width=265 valign=top style='width:7.0cm;border:solid black 1.0pt;
 		  border-left:none;background:#1F4E79;padding:0cm 5.75pt 0cm 5.75pt'>
 		  <p class="normal-text">Type of CP Transaction (<img width=34 height=20
-		  src="20201116%20Module%20Content_Capacity%20Planning_v3_files/image140.png">)</p>
+		  src="images/capacity_planning/image140.png">)</p>
 		  </td>
 		 </tr>
 		 <tr>
@@ -4913,7 +4893,7 @@
 		
 		<p class="normal-text">Subsequently, the formula for calculating the Total Number
 		of transactions per VNF at BH (<img width=42 height=19
-		src="20201116%20Module%20Content_Capacity%20Planning_v3_files/image141.png">)
+		src="images/capacity_planning/image141.png">)
 		will be:</p>
 		
 		<table class=aff6 border=1 cellspacing=0 cellpadding=0 width=598
@@ -4922,10 +4902,10 @@
 		  <td width=519 valign=top style='width:389.6pt;border:none;padding:0cm 5.75pt 0cm 5.75pt'>
 		  <p class="normal-text"><img
 		  width=181 height=52
-		  src="20201116%20Module%20Content_Capacity%20Planning_v3_files/image142.png"></p>
+		  src="images/capacity_planning/image142.png"></p>
 		  </td>
 		  <td width=78 valign=top style='width:58.85pt;border:none;padding:0cm 5.75pt 0cm 5.75pt'>
-		  <p class="normal-text"><i>Eq.� 25</i></p>
+		  <p class="normal-text"><i>Eq. 25</i></p>
 		  </td>
 		 </tr>
 		</table>
@@ -4933,23 +4913,23 @@
 		<p class="normal-text">Where:</p>
 		
 		<p class="normal-text"><img width=42 height=19
-		src="20201116%20Module%20Content_Capacity%20Planning_v3_files/image141.png">�is
+		src="images/capacity_planning/image141.png">'is
 		the total number of Transactions at the BH.</p>
 		
 		<p class="normal-text"><img width=78 height=24
-		src="20201116%20Module%20Content_Capacity%20Planning_v3_files/image143.png">�corresponds
+		src="images/capacity_planning/image143.png">'corresponds
 		to each of the types of Transactions that the VNF handles.</p>
 		
 		<p class="normal-text">The signaling procedures are generated by the average
 		Simultaneously Attached Users on the network at BH (<img width=55 height=19
-		src="20201116%20Module%20Content_Capacity%20Planning_v3_files/image070.png">).
+		src="images/capacity_planning/image070.png">).
 		The quantity will vary according to their habits of mobility, session and usage
 		of services. To calculate the transactions per second per user during the BH (<img width=113 height=20
-		src="20201116%20Module%20Content_Capacity%20Planning_v3_files/image144.png">)
+		src="images/capacity_planning/image144.png">)
 		corresponding to a CP VNF is by the relation of the total number of
 		transactions that handles in the BH divided by the average number of users that
 		are generating this signaling traffic (<img width=55 height=19
-		src="20201116%20Module%20Content_Capacity%20Planning_v3_files/image070.png">).
+		src="images/capacity_planning/image070.png">).
 		The result must be converted to seconds (1 hour/3600 seconds).</p>
 		
 		<table class=aff7 border=1 cellspacing=0 cellpadding=0 width=598
@@ -4958,15 +4938,15 @@
 		  <td width=519 valign=top style='width:389.6pt;border:none;padding:0cm 5.75pt 0cm 5.75pt'>
 		  <p class="normal-text"><img
 		  width=207 height=38
-		  src="20201116%20Module%20Content_Capacity%20Planning_v3_files/image145.png"></p>
+		  src="images/capacity_planning/image145.png"></p>
 		  </td>
 		  <td width=78 valign=top style='width:58.85pt;border:none;padding:0cm 5.75pt 0cm 5.75pt'>
-		  <p class="normal-text"><i>Eq.� 26</i></p>
+		  <p class="normal-text"><i>Eq. 26</i></p>
 		  </td>
 		 </tr>
 		</table>
 		
-		<p class="normal-text"><a></a></p>
+		
 		
 		<p class="normal-text">The metric of transactions per second per user must be
 		calculated for different checkpoints along the network history as an input for
@@ -4978,7 +4958,7 @@
 		and multiplying for a factor of one hundred. The following equation expresses
 		the relation:</p>
 		
-		<p class="normal-text"></p>
+		
 		
 		<table class=aff8 border=1 cellspacing=0 cellpadding=0 width=598
 		 style='border-collapse:collapse;border:none'>
@@ -4986,10 +4966,10 @@
 		  <td width=519 valign=top style='width:389.6pt;border:none;padding:0cm 5.75pt 0cm 5.75pt'>
 		  <p class="normal-text"><img
 		  width=300 height=40
-		  src="20201116%20Module%20Content_Capacity%20Planning_v3_files/image146.png"></p>
+		  src="images/capacity_planning/image146.png"></p>
 		  </td>
 		  <td width=78 valign=top style='width:58.85pt;border:none;padding:0cm 5.75pt 0cm 5.75pt'>
-		  <p class="normal-text"><i>Eq.� 27</i></p>
+		  <p class="normal-text"><i>Eq. 27</i></p>
 		  </td>
 		 </tr>
 		</table>
@@ -4997,20 +4977,20 @@
 		<p class="normal-text"><a></a>Where:</p>
 		
 		<p class="normal-text"><img width=87 height=19
-		src="20201116%20Module%20Content_Capacity%20Planning_v3_files/image147.png">�is
+		src="images/capacity_planning/image147.png">'is
 		the TpS expressed in a percentage fashion.</p>
 		
 		<p class="normal-text"><img width=78 height=20
-		src="20201116%20Module%20Content_Capacity%20Planning_v3_files/image148.png">�is
+		src="images/capacity_planning/image148.png">'is
 		the capacity of TpS for a specific VNF.</p>
 		
-		<p class="normal-text">It�s clear that since the <img width=55 height=19
-		src="20201116%20Module%20Content_Capacity%20Planning_v3_files/image070.png">�is
-		present in equations Eq.� 26 and Eq.� 27, as the SAU increases over time by
+		<p class="normal-text">It's clear that since the <img width=55 height=19
+		src="images/capacity_planning/image070.png">'is
+		present in equations Eq. 26 and Eq. 27, as the SAU increases over time by
 		different causes, the TpS Load will increase accordingly.</p>
 		
 		<p class="normal-text">Finally, the CPU Load (<img width=91 height=19
-		src="20201116%20Module%20Content_Capacity%20Planning_v3_files/image149.png">)
+		src="images/capacity_planning/image149.png">)
 		is a metric that moves according to the average number of transactions per
 		second. A ratio that relates both and can be considered as a constant is
 		expressed as follows:</p>
@@ -5021,10 +5001,10 @@
 		  <td width=519 valign=top style='width:389.6pt;border:none;padding:0cm 5.75pt 0cm 5.75pt'>
 		  <p class="normal-text"><img
 		  width=213 height=40
-		  src="20201116%20Module%20Content_Capacity%20Planning_v3_files/image150.png"></p>
+		  src="images/capacity_planning/image150.png"></p>
 		  </td>
 		  <td width=78 valign=top style='width:58.85pt;border:none;padding:0cm 5.75pt 0cm 5.75pt'>
-		  <p class="normal-text"><i>Eq.� 28</i></p>
+		  <p class="normal-text"><i>Eq. 28</i></p>
 		  </td>
 		 </tr>
 		</table>
@@ -5032,11 +5012,11 @@
 		<p class="normal-text">Where:</p>
 		
 		<p class="normal-text"><img width=39 height=19
-		src="20201116%20Module%20Content_Capacity%20Planning_v3_files/image151.png">�is
+		src="images/capacity_planning/image151.png">'is
 		the ratio of processing load per transaction.</p>
 		
 		<p class="normal-text">The <img width=39 height=19
-		src="20201116%20Module%20Content_Capacity%20Planning_v3_files/image151.png">�is
+		src="images/capacity_planning/image151.png">'is
 		constant since the amount of processing resources per transaction does not
 		change as the number of transactions or users increase. This relationship will
 		later be used to estimate the amount of CPU Load for the forecasted users and
@@ -5051,9 +5031,9 @@
 		
 		<p class="normal-text">For the throughput, it's required to gather the KPI related
 		to the total throughput (UL and DL) of the mobile network (<img width=24 height=19
-		src="20201116%20Module%20Content_Capacity%20Planning_v3_files/image104.png">)
+		src="images/capacity_planning/image104.png">)
 		and divided by the average number of users at the BH (<img width=55 height=19
-		src="20201116%20Module%20Content_Capacity%20Planning_v3_files/image070.png">).
+		src="images/capacity_planning/image070.png">).
 		This throughput per user is expressed through Eq. 29.</p>
 		
 		<table class=affa border=1 cellspacing=0 cellpadding=0 width=598
@@ -5062,10 +5042,10 @@
 		  <td width=519 valign=top style='width:389.6pt;border:none;padding:0cm 5.75pt 0cm 5.75pt'>
 		  <p class="normal-text"><img
 		  width=131 height=35
-		  src="20201116%20Module%20Content_Capacity%20Planning_v3_files/image152.png"></p>
+		  src="images/capacity_planning/image152.png"></p>
 		  </td>
 		  <td width=78 valign=top style='width:58.85pt;border:none;padding:0cm 5.75pt 0cm 5.75pt'>
-		  <p class="normal-text"><i>Eq.� 29</i></p>
+		  <p class="normal-text"><i>Eq. 29</i></p>
 		  </td>
 		 </tr>
 		</table>
@@ -5073,7 +5053,7 @@
 		<p class="normal-text"><a></a>Where:</p>
 		
 		<p class="normal-text"><img width=57 height=19
-		src="20201116%20Module%20Content_Capacity%20Planning_v3_files/image108.png">�is
+		src="images/capacity_planning/image108.png">'is
 		the BH average user throughput.</p>
 		
 		<p class="normal-text">A similar method should be applied to the active sessions.
@@ -5088,10 +5068,10 @@
 		  <td width=519 valign=top style='width:389.6pt;border:none;padding:0cm 5.75pt 0cm 5.75pt'>
 		  <p class="normal-text"><img
 		  width=199 height=38
-		  src="20201116%20Module%20Content_Capacity%20Planning_v3_files/image153.png"></p>
+		  src="images/capacity_planning/image153.png"></p>
 		  </td>
 		  <td width=78 valign=top style='width:58.85pt;border:none;padding:0cm 5.75pt 0cm 5.75pt'>
-		  <p class="normal-text"><i>Eq.� 30</i></p>
+		  <p class="normal-text"><i>Eq. 30</i></p>
 		  </td>
 		 </tr>
 		</table>
@@ -5099,15 +5079,15 @@
 		<p class="normal-text">Where:</p>
 		
 		<p class="normal-text"><img width=106 height=19
-		src="20201116%20Module%20Content_Capacity%20Planning_v3_files/image154.png">�is
+		src="images/capacity_planning/image154.png">'is
 		the average number of active sessions per user at the BH.</p>
 		
 		<p class="normal-text"><img width=74 height=19
-		src="20201116%20Module%20Content_Capacity%20Planning_v3_files/image155.png">�is
+		src="images/capacity_planning/image155.png">'is
 		the average number of active sessions during the BH.</p>
 		
 		<p class="normal-text"><img width=31 height=19
-		src="20201116%20Module%20Content_Capacity%20Planning_v3_files/image038.png">�is
+		src="images/capacity_planning/image038.png">'is
 		the average number of SAU at a given time during the BH.</p>
 		
 		<p class="normal-text">Later, the relationship of the average number of active
@@ -5132,10 +5112,10 @@
 		  <td width=519 valign=top style='width:389.6pt;border:none;padding:0cm 5.75pt 0cm 5.75pt'>
 		  <p class="normal-text"><img
 		  width=118 height=37
-		  src="20201116%20Module%20Content_Capacity%20Planning_v3_files/image156.png"></p>
+		  src="images/capacity_planning/image156.png"></p>
 		  </td>
 		  <td width=78 valign=top style='width:58.85pt;border:none;padding:0cm 5.75pt 0cm 5.75pt'>
-		  <p class="normal-text"><i>Eq.� 31</i></p>
+		  <p class="normal-text"><i>Eq. 31</i></p>
 		  </td>
 		 </tr>
 		</table>
@@ -5143,15 +5123,15 @@
 		<p class="normal-text">Where:</p>
 		
 		<p class="normal-text"><img width=64 height=19
-		src="20201116%20Module%20Content_Capacity%20Planning_v3_files/image157.png">�is
+		src="images/capacity_planning/image157.png">'is
 		the storage needed per subscriber.</p>
 		
 		<p class="normal-text"><img width=34 height=19
-		src="20201116%20Module%20Content_Capacity%20Planning_v3_files/image158.png">�is
+		src="images/capacity_planning/image158.png">'is
 		the total storage used to save subscriber information.</p>
 		
 		<p class="normal-text">The final relation would be the Subscriber Capacity Usage
-		that will result in Eq.� 32:</p>
+		that will result in Eq. 32:</p>
 		
 		<table class=affd border=1 cellspacing=0 cellpadding=0 width=598
 		 style='border-collapse:collapse;border:none'>
@@ -5159,20 +5139,20 @@
 		  <td width=519 valign=top style='width:389.6pt;border:none;padding:0cm 5.75pt 0cm 5.75pt'>
 		  <p class="normal-text"><img
 		  width=429 height=37
-		  src="20201116%20Module%20Content_Capacity%20Planning_v3_files/image159.png"></p>
+		  src="images/capacity_planning/image159.png"></p>
 		  </td>
 		  <td width=78 valign=top style='width:58.85pt;border:none;padding:0cm 5.75pt 0cm 5.75pt'>
-		  <p class="normal-text"><i>Eq.� 32</i></p>
+		  <p class="normal-text"><i>Eq. 32</i></p>
 		  </td>
 		 </tr>
 		</table>
 		
-		<p class="normal-text"><a></a></p>
+		
 		
 		<p class="normal-text">Where:</p>
 		
 		<p class="normal-text"><img width=167 height=19
-		src="20201116%20Module%20Content_Capacity%20Planning_v3_files/image160.png">�is
+		src="images/capacity_planning/image160.png">'is
 		the max number of stored subscribers supported by a DB VNF.</p>
 		
 		<p class="normal-text">And the Used Storage metric will look much alike the
@@ -5184,25 +5164,25 @@
 		  <td width=519 valign=top style='width:389.6pt;border:none;padding:0cm 5.75pt 0cm 5.75pt'>
 		  <p class="normal-text"><img
 		  width=321 height=38
-		  src="20201116%20Module%20Content_Capacity%20Planning_v3_files/image161.png"></p>
+		  src="images/capacity_planning/image161.png"></p>
 		  </td>
 		  <td width=78 valign=top style='width:58.85pt;border:none;padding:0cm 5.75pt 0cm 5.75pt'>
-		  <p class="normal-text"><i>Eq.� 33</i></p>
+		  <p class="normal-text"><i>Eq. 33</i></p>
 		  </td>
 		 </tr>
 		</table>
 		
-		<p class="normal-text"></p>
+		
 		
 		<p class="normal-text">Where:</p>
 		
 		<p class="normal-text"><img width=148 height=19
-		src="20201116%20Module%20Content_Capacity%20Planning_v3_files/image162.png">�is
+		src="images/capacity_planning/image162.png">'is
 		the storage capacity of the VNF.</p>
 		
 		<p class="normal-text">In the end, the relation of needed storage space for each
 		user (<img width=85 height=20
-		src="20201116%20Module%20Content_Capacity%20Planning_v3_files/image163.png">)
+		src="images/capacity_planning/image163.png">)
 		will be used in combination with the forecasted subscribers to estimate the
 		storage needed for the database VNFs.</p>
 		
@@ -5221,24 +5201,24 @@
 		  <td width=519 valign=top style='width:389.6pt;border:none;padding:0cm 5.75pt 0cm 5.75pt'>
 		  <p class="normal-text"><img
 		  width=289 height=37
-		  src="20201116%20Module%20Content_Capacity%20Planning_v3_files/image164.png"></p>
+		  src="images/capacity_planning/image164.png"></p>
 		  </td>
 		  <td width=78 valign=top style='width:58.85pt;border:none;padding:0cm 5.75pt 0cm 5.75pt'>
-		  <p class="normal-text"><i>Eq.� 34</i></p>
+		  <p class="normal-text"><i>Eq. 34</i></p>
 		  </td>
 		 </tr>
 		</table>
 		
-		<p class="normal-text"></p>
+		
 		
 		<p class="normal-text">Where:</p>
 		
 		<p class="normal-text"><img width=55 height=20
-		src="20201116%20Module%20Content_Capacity%20Planning_v3_files/image165.png">�is
+		src="images/capacity_planning/image165.png">'is
 		the average throughput of a specific port at BH.</p>
 		
 		<p class="normal-text"><img width=32 height=20
-		src="20201116%20Module%20Content_Capacity%20Planning_v3_files/image166.png">�is
+		src="images/capacity_planning/image166.png">'is
 		the port capacity.</p>
 		
 		<p class="normal-text">The second metric is the available ports that can be
@@ -5270,15 +5250,15 @@
 		  <td width=519 valign=top style='width:389.6pt;border:none;padding:0cm 5.75pt 0cm 5.75pt'>
 		  <p class="normal-text"><img
 		  width=300 height=19
-		  src="20201116%20Module%20Content_Capacity%20Planning_v3_files/image167.png"></p>
+		  src="images/capacity_planning/image167.png"></p>
 		  </td>
 		  <td width=78 valign=top style='width:58.85pt;border:none;padding:0cm 5.75pt 0cm 5.75pt'>
-		  <p class="normal-text"><i>Eq.� 35</i></p>
+		  <p class="normal-text"><i>Eq. 35</i></p>
 		  </td>
 		 </tr>
 		</table>
 		
-		<p class="normal-text"></p>
+		
 		
 		<p class="normal-text">This metric should not be directly forecasted since the used
 		vCPUs are the result of the VNF demands to the NFV Infrastructure. This demand
@@ -5296,15 +5276,15 @@
 		  <td width=519 valign=top style='width:389.6pt;border:none;padding:0cm 5.75pt 0cm 5.75pt'>
 		  <p class="normal-text"><img
 		  width=337 height=19
-		  src="20201116%20Module%20Content_Capacity%20Planning_v3_files/image168.png"></p>
+		  src="images/capacity_planning/image168.png"></p>
 		  </td>
 		  <td width=78 valign=top style='width:58.85pt;border:none;padding:0cm 5.75pt 0cm 5.75pt'>
-		  <p class="normal-text"><i>Eq.� 36</i></p>
+		  <p class="normal-text"><i>Eq. 36</i></p>
 		  </td>
 		 </tr>
 		</table>
 		
-		<p class="normal-text"></p>
+		
 		
 		<p class="normal-text">For RAM:</p>
 		
@@ -5314,15 +5294,15 @@
 		  <td width=519 valign=top style='width:389.6pt;border:none;padding:0cm 5.75pt 0cm 5.75pt'>
 		  <p class="normal-text"><img
 		  width=272 height=19
-		  src="20201116%20Module%20Content_Capacity%20Planning_v3_files/image169.png"></p>
+		  src="images/capacity_planning/image169.png"></p>
 		  </td>
 		  <td width=78 valign=top style='width:58.85pt;border:none;padding:0cm 5.75pt 0cm 5.75pt'>
-		  <p class="normal-text"><i>Eq.� 37</i></p>
+		  <p class="normal-text"><i>Eq. 37</i></p>
 		  </td>
 		 </tr>
 		</table>
 		
-		<p class="normal-text"></p>
+		
 		
 		<p class="normal-text">For Forwarding Capacity:</p>
 		
@@ -5332,21 +5312,21 @@
 		  <td width=519 valign=top style='width:389.6pt;border:none;padding:0cm 5.75pt 0cm 5.75pt'>
 		  <p class="normal-text"><img
 		  width=233 height=19
-		  src="20201116%20Module%20Content_Capacity%20Planning_v3_files/image170.png"></p>
+		  src="images/capacity_planning/image170.png"></p>
 		  </td>
 		  <td width=78 valign=top style='width:58.85pt;border:none;padding:0cm 5.75pt 0cm 5.75pt'>
-		  <p class="normal-text"><i>Eq.� 38</i></p>
+		  <p class="normal-text"><i>Eq. 38</i></p>
 		  </td>
 		 </tr>
 		</table>
 		
-		<p class="normal-text"></p>
 		
-		<h3 style='margin-left:40.5pt'>5.1.3
+		
+		<h3 >5.1.3
 		Safety Margins</h3>
 		
 		<p class="normal-text">The compendium of metrics and the CMOs are represented in
-		Table 19. It must be considered to consult the vendor�s own recommendations of
+		Table 19. It must be considered to consult the vendor's own recommendations of
 		Safety Margins before using the ones in the table. These recommendations are
 		purely based on the premises that:</p>
 		
@@ -5660,7 +5640,7 @@
 		it's strongly recommended that an augment takes place according to the
 		available options and the cycle times of the next subsection.</p>
 		
-		<h3 style='margin-left:40.5pt'>5.1.4
+		<h3 >5.1.4
 		Capacity Augments &amp; Cycle Times</h3>
 		
 		<p class="normal-text">The augments according to the metrics of each CMO are
@@ -6232,12 +6212,12 @@
 		  <p class="normal-text">Notes:</p>
 		  <p class="normal-text">The average time required per each capacity augment is categorized
 		  under the following considerations:</p>
-		  <p class="normal-text">Low: 1�4 [weeks]</p>
-		  <p class="normal-text">Medium: 4�8 [weeks]</p>
+		  <p class="normal-text">Low: 1'4 [weeks]</p>
+		  <p class="normal-text">Medium: 4'8 [weeks]</p>
 		  <p class="normal-text">High: &gt; 8 [weeks]</p>
 		  <p class="normal-text"><sup>1</sup> Please refer to the Civil infrastructure Module for more
 		  information.</p>
-		  <p class="normal-text">��������������� Tasks within parenthesis are optional.</p>
+		  <p class="normal-text">''''''''''''''' Tasks within parenthesis are optional.</p>
 		  </td>
 		 </tr>
 		</table>
@@ -6250,22 +6230,22 @@
 		<p class="normal-text">The cycle times components shown in Table 21 must be summed
 		up to obtain a total time for which the augment will take effect. This cycle
 		times are also known as <img width=17 height=19
-		src="20201116%20Module%20Content_Capacity%20Planning_v3_files/image171.png">,
+		src="images/capacity_planning/image171.png">,
 		as previously explained in section 2.3.3.</p>
 		
-		<p class="normal-text">It�s important to note that the NaaS operator should be able
+		<p class="normal-text">It's important to note that the NaaS operator should be able
 		to correctly define the times for every component. A complete survey with all
 		the involved vendors and system integrators working with the NaaS operator can
 		be helpful gathering these times resulting in more accurate CP.</p>
 		
-		<br><h2 class="titulo-h2">5.2
+		<br><h2><a class="titulo-h2 anchor-bum color-luminati-2" name="itemX-X">5.2
 		Forecasting Analysis and Event Monitoring</a></h2>
 		
 		<p class="normal-text">The following subsections discuss the inputs and
 		considerations related to the forecasting process regarding the metrics of
 		section 5.1.2.</p>
 		
-		<h3 style='margin-left:40.5pt'>5.2.1
+		<h3 >5.2.1
 		CP VNFs</h3>
 		
 		<p class="normal-text">From section 5.1.2.1, when the number of TpS per user at the
@@ -6278,18 +6258,18 @@
 		  <td width=519 valign=top style='width:389.6pt;border:none;padding:0cm 5.75pt 0cm 5.75pt'>
 		  <p class="normal-text"><img
 		  width=523 height=24
-		  src="20201116%20Module%20Content_Capacity%20Planning_v3_files/image172.png"></p>
+		  src="images/capacity_planning/image172.png"></p>
 		  </td>
 		  <td width=78 valign=top style='width:58.85pt;border:none;padding:0cm 5.75pt 0cm 5.75pt'>
-		  <p class="normal-text"><i>Eq.� 39</i></p>
+		  <p class="normal-text"><i>Eq. 39</i></p>
 		  </td>
 		 </tr>
 		</table>
 		
-		<p class="normal-text"></p>
+		
 		
 		<p class="normal-text">The TpS Load would also increase accordingly to the total
-		number of transactions per second in the network. The equation Eq.� 40
+		number of transactions per second in the network. The equation Eq. 40
 		represents this relation:</p>
 		
 		<table class=afff8 border=1 cellspacing=0 cellpadding=0 width=598
@@ -6298,24 +6278,24 @@
 		  <td width=519 valign=top style='width:389.6pt;border:none;padding:0cm 5.75pt 0cm 5.75pt'>
 		  <p class="normal-text"><img
 		  width=445 height=45
-		  src="20201116%20Module%20Content_Capacity%20Planning_v3_files/image173.png"></p>
+		  src="images/capacity_planning/image173.png"></p>
 		  </td>
 		  <td width=78 valign=top style='width:58.85pt;border:none;padding:0cm 5.75pt 0cm 5.75pt'>
-		  <p class="normal-text"><i>Eq.� 40</i></p>
+		  <p class="normal-text"><i>Eq. 40</i></p>
 		  </td>
 		 </tr>
 		</table>
 		
-		<p class="normal-text"><a></a></p>
+		
 		
 		<p class="normal-text">In summary, the ratio and the metric that need to be
 		forecasted are <img width=113 height=20
-		src="20201116%20Module%20Content_Capacity%20Planning_v3_files/image144.png">�and
+		src="images/capacity_planning/image144.png">'and
 		<img width=55 height=19
-		src="20201116%20Module%20Content_Capacity%20Planning_v3_files/image070.png">.
+		src="images/capacity_planning/image070.png">.
 		</p>
 		
-		<h3 style='margin-left:40.5pt'>5.2.2
+		<h3 >5.2.2
 		UP VNFs</h3>
 		
 		<p class="normal-text">On the other hand, the BH average user throughput can be
@@ -6332,15 +6312,15 @@
 		  <td width=519 valign=top style='width:389.6pt;border:none;padding:0cm 5.75pt 0cm 5.75pt'>
 		  <p class="normal-text"><img
 		  width=379 height=20
-		  src="20201116%20Module%20Content_Capacity%20Planning_v3_files/image174.png"></p>
+		  src="images/capacity_planning/image174.png"></p>
 		  </td>
 		  <td width=78 valign=top style='width:58.85pt;border:none;padding:0cm 5.75pt 0cm 5.75pt'>
-		  <p class="normal-text"><i>Eq.� 41</i></p>
+		  <p class="normal-text"><i>Eq. 41</i></p>
 		  </td>
 		 </tr>
 		</table>
 		
-		<p class="normal-text"></p>
+		
 		
 		<p class="normal-text">The same method should be applied to the active sessions
 		since it has a tight relationship with the SAU. The previous analysis would
@@ -6352,10 +6332,10 @@
 		  <td width=519 valign=top style='width:389.6pt;border:none;padding:0cm 5.75pt 0cm 5.75pt'>
 		  <p class="normal-text"><img
 		  width=478 height=20
-		  src="20201116%20Module%20Content_Capacity%20Planning_v3_files/image175.png"></p>
+		  src="images/capacity_planning/image175.png"></p>
 		  </td>
 		  <td width=78 valign=top style='width:58.85pt;border:none;padding:0cm 5.75pt 0cm 5.75pt'>
-		  <p class="normal-text"><i>Eq.� 42</i></p>
+		  <p class="normal-text"><i>Eq. 42</i></p>
 		  </td>
 		 </tr>
 		</table>
@@ -6363,23 +6343,23 @@
 		<p class="normal-text">Where:</p>
 		
 		<p class="normal-text"><img width=178 height=20
-		src="20201116%20Module%20Content_Capacity%20Planning_v3_files/image176.png">�is
+		src="images/capacity_planning/image176.png">'is
 		the forecasted average number of sessions per attached user at the BH.</p>
 		
 		<p class="normal-text">In summary, for the UP VNFs, the ratios and the metrics that
 		must be forecasted are <img width=58 height=19
-		src="20201116%20Module%20Content_Capacity%20Planning_v3_files/image177.png">,
+		src="images/capacity_planning/image177.png">,
 		<img width=106 height=19
-		src="20201116%20Module%20Content_Capacity%20Planning_v3_files/image154.png">�and
+		src="images/capacity_planning/image154.png">'and
 		<img width=55 height=19
-		src="20201116%20Module%20Content_Capacity%20Planning_v3_files/image070.png">.</p>
+		src="images/capacity_planning/image070.png">.</p>
 		
-		<h3 style='margin-left:40.5pt'>5.2.3
+		<h3 >5.2.3
 		DB VNFs</h3>
 		
 		<p class="normal-text">From section 5.1.2.3, since the needed memory per subscriber
-		won�t vary in time and can be considered a constant, so when the subscriber
-		number augments, the required storage will do as well. The equation Eq.� 43
+		won't vary in time and can be considered a constant, so when the subscriber
+		number augments, the required storage will do as well. The equation Eq. 43
 		shows the resulting calculation for the needed space.</p>
 		
 		<table class=afffb border=1 cellspacing=0 cellpadding=0 width=598
@@ -6388,18 +6368,18 @@
 		  <td width=519 valign=top style='width:389.6pt;border:none;padding:0cm 5.75pt 0cm 5.75pt'>
 		  <p class="normal-text"><img
 		  width=329 height=20
-		  src="20201116%20Module%20Content_Capacity%20Planning_v3_files/image178.png"></p>
+		  src="images/capacity_planning/image178.png"></p>
 		  </td>
 		  <td width=78 valign=top style='width:58.85pt;border:none;padding:0cm 5.75pt 0cm 5.75pt'>
-		  <p class="normal-text"><i>Eq.� 43</i></p>
+		  <p class="normal-text"><i>Eq. 43</i></p>
 		  </td>
 		 </tr>
 		</table>
 		
-		<p class="normal-text"><a></a></p>
+		
 		
 		<p class="normal-text">The final relation would be the Subscriber Capacity Usage
-		that will result in the equation Eq.� 44:</p>
+		that will result in the equation Eq. 44:</p>
 		
 		<table class=afffc border=1 cellspacing=0 cellpadding=0 width=598
 		 style='border-collapse:collapse;border:none'>
@@ -6407,15 +6387,15 @@
 		  <td width=519 valign=top style='width:389.6pt;border:none;padding:0cm 5.75pt 0cm 5.75pt'>
 		  <p class="normal-text"><img
 		  width=488 height=39
-		  src="20201116%20Module%20Content_Capacity%20Planning_v3_files/image179.png"></p>
+		  src="images/capacity_planning/image179.png"></p>
 		  </td>
 		  <td width=78 valign=top style='width:58.85pt;border:none;padding:0cm 5.75pt 0cm 5.75pt'>
-		  <p class="normal-text"><i>Eq.� 44</i></p>
+		  <p class="normal-text"><i>Eq. 44</i></p>
 		  </td>
 		 </tr>
 		</table>
 		
-		<p class="normal-text"><a></a></p>
+		
 		
 		<p class="normal-text">And the Used Storage metric will look much alike the
 		Subscriber Capacity Usage. The following equation describes it:</p>
@@ -6426,21 +6406,21 @@
 		  <td width=519 valign=top style='width:389.6pt;border:none;padding:0cm 5.75pt 0cm 5.75pt'>
 		  <p class="normal-text"><img
 		  width=381 height=39
-		  src="20201116%20Module%20Content_Capacity%20Planning_v3_files/image180.png"></p>
+		  src="images/capacity_planning/image180.png"></p>
 		  </td>
 		  <td width=78 valign=top style='width:58.85pt;border:none;padding:0cm 5.75pt 0cm 5.75pt'>
-		  <p class="normal-text"><i>Eq.� 45</i></p>
+		  <p class="normal-text"><i>Eq. 45</i></p>
 		  </td>
 		 </tr>
 		</table>
 		
-		<p class="normal-text"></p>
+		
 		
 		<p class="normal-text">In summary, for the DB VNFs, the only metric that need to be
 		forecasted is <img width=34 height=19
-		src="20201116%20Module%20Content_Capacity%20Planning_v3_files/image037.png">.</p>
+		src="images/capacity_planning/image037.png">.</p>
 		
-		<h3 style='margin-left:40.5pt'>5.2.4
+		<h3 >5.2.4
 		R&amp;S Equipment</h3>
 		
 		<p class="normal-text">The forecasting of the R&amp;S equipment must be done
@@ -6458,22 +6438,22 @@
 		  <td width=519 valign=top style='width:389.6pt;border:none;padding:0cm 5.75pt 0cm 5.75pt'>
 		  <p class="normal-text"><img
 		  width=421 height=47
-		  src="20201116%20Module%20Content_Capacity%20Planning_v3_files/image181.png"></p>
+		  src="images/capacity_planning/image181.png"></p>
 		  </td>
 		  <td width=78 valign=top style='width:58.85pt;border:none;padding:0cm 5.75pt 0cm 5.75pt'>
-		  <p class="normal-text"><i>Eq.� 46</i></p>
+		  <p class="normal-text"><i>Eq. 46</i></p>
 		  </td>
 		 </tr>
 		</table>
 		
 		<p class="normal-text">In summary, for the R&amp;S Equipment, the metrics that need
 		to be forecasted is <img width=55 height=20
-		src="20201116%20Module%20Content_Capacity%20Planning_v3_files/image165.png">�,which
+		src="images/capacity_planning/image165.png">',which
 		is purely a forecasting from the historical data and expected throughput from
 		new sites or new services. is <img width=34 height=19
-		src="20201116%20Module%20Content_Capacity%20Planning_v3_files/image037.png">.</p>
+		src="images/capacity_planning/image037.png">.</p>
 		
-		<h3 style='margin-left:40.5pt'>5.2.5
+		<h3 >5.2.5
 		Event-monitored Metrics</h3>
 		
 		<p class="normal-text">The following metrics can be directly obtained from
@@ -6498,9 +6478,9 @@
 		<p class="normal-text">&#9679;
 		Total throughput load [%]</p>
 		
-		<p class="normal-text"></p>
 		
-		<h3 style='margin-left:40.5pt'>5.2.6
+		
+		<h3 >5.2.6
 		Summary</h3>
 		
 		<p class="normal-text">From the previous section, the variables that are subject to
@@ -6525,7 +6505,7 @@
 		  padding:0cm 5.75pt 0cm 5.75pt'>
 		  <p class="normal-text"><img
 		  width=34 height=19
-		  src="20201116%20Module%20Content_Capacity%20Planning_v3_files/image037.png"></p>
+		  src="images/capacity_planning/image037.png"></p>
 		  </td>
 		  <td width="65%" valign=top style='width:65.42%;border-top:none;border-left:
 		  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
@@ -6538,7 +6518,7 @@
 		  padding:0cm 5.75pt 0cm 5.75pt'>
 		  <p class="normal-text"><img
 		  width=55 height=19
-		  src="20201116%20Module%20Content_Capacity%20Planning_v3_files/image070.png"></p>
+		  src="images/capacity_planning/image070.png"></p>
 		  </td>
 		  <td width="65%" valign=top style='width:65.42%;border-top:none;border-left:
 		  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
@@ -6551,7 +6531,7 @@
 		  padding:0cm 5.75pt 0cm 5.75pt'>
 		  <p class="normal-text"><img
 		  width=57 height=19
-		  src="20201116%20Module%20Content_Capacity%20Planning_v3_files/image108.png"></p>
+		  src="images/capacity_planning/image108.png"></p>
 		  </td>
 		  <td width="65%" valign=top style='width:65.42%;border-top:none;border-left:
 		  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
@@ -6564,7 +6544,7 @@
 		  padding:0cm 5.75pt 0cm 5.75pt'>
 		  <p class="normal-text"><img
 		  width=126 height=20
-		  src="20201116%20Module%20Content_Capacity%20Planning_v3_files/image182.png"></p>
+		  src="images/capacity_planning/image182.png"></p>
 		  </td>
 		  <td width="65%" valign=top style='width:65.42%;border-top:none;border-left:
 		  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
@@ -6577,7 +6557,7 @@
 		  padding:0cm 5.75pt 0cm 5.75pt'>
 		  <p class="normal-text"><img
 		  width=113 height=20
-		  src="20201116%20Module%20Content_Capacity%20Planning_v3_files/image144.png"></p>
+		  src="images/capacity_planning/image144.png"></p>
 		  </td>
 		  <td width="65%" valign=top style='width:65.42%;border-top:none;border-left:
 		  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
@@ -6590,7 +6570,7 @@
 		  padding:0cm 5.75pt 0cm 5.75pt'>
 		  <p class="normal-text"><img
 		  width=55 height=20
-		  src="20201116%20Module%20Content_Capacity%20Planning_v3_files/image165.png"></p>
+		  src="images/capacity_planning/image165.png"></p>
 		  </td>
 		  <td width="65%" valign=top style='width:65.42%;border-top:none;border-left:
 		  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
@@ -6605,22 +6585,22 @@
 		<p align=center><i>Table 22 - Compilation of forecasted
 		variables for Mobile Core.</i></p>
 		
-		<p class="normal-text"></p>
 		
-		<br><h2 class="titulo-h2">5.3
+		
+		<br><h2><a class="titulo-h2 anchor-bum color-luminati-2" name="itemX-X">5.3
 		Capacity Augment Planning</a></h2>
 		
 		<p class="normal-text">As discussed in section 2.3.2, when there is more than one
 		possible augment to the capacity of the network, the decision should be taken
 		according to the current situation of the NaaS operator. The methodology to
 		perform the scoring and selection of the most appropriate capacity augment is
-		presented in section 2.3.3. It�s remarkable that all the augments in the Mobile
+		presented in section 2.3.3. It's remarkable that all the augments in the Mobile
 		Core network should follow the previous formula.</p>
 		
 		<p class="normal-text">For example, three augments which are described in Table 23
 		can be applied for increasing the number transactions per second in the
 		network. The current capacity of the system (<img width=52 height=20
-		src="20201116%20Module%20Content_Capacity%20Planning_v3_files/image091.png">)
+		src="images/capacity_planning/image091.png">)
 		is 100 [TpS]. The actual situation indicates that the NaaS operator is under
 		normal circumstances:</p>
 		
@@ -6636,17 +6616,17 @@
 		  <td width="18%" valign=top style='width:18.34%;border:solid black 1.0pt;
 		  border-left:none;background:#1F4E79;padding:0cm 5.75pt 0cm 5.75pt'>
 		  <p class="normal-text">Cycle Time (<img width=20 height=19
-		  src="20201116%20Module%20Content_Capacity%20Planning_v3_files/image088.png">(</p>
+		  src="images/capacity_planning/image088.png">(</p>
 		  </td>
 		  <td width="18%" valign=top style='width:18.34%;border:solid black 1.0pt;
 		  border-left:none;background:#1F4E79;padding:0cm 5.75pt 0cm 5.75pt'>
 		  <p class="normal-text">Capacity after the augment (<img width=21 height=19
-		  src="20201116%20Module%20Content_Capacity%20Planning_v3_files/image089.png">)</p>
+		  src="images/capacity_planning/image089.png">)</p>
 		  </td>
 		  <td width="18%" valign=top style='width:18.34%;border:solid black 1.0pt;
 		  border-left:none;background:#1F4E79;padding:0cm 5.75pt 0cm 5.75pt'>
 		  <p class="normal-text">Cost (<img width=22 height=19
-		  src="20201116%20Module%20Content_Capacity%20Planning_v3_files/image090.png">) (For illustration purpose only)</p>
+		  src="images/capacity_planning/image090.png">) (For illustration purpose only)</p>
 		  </td>
 		 </tr>
 		 <tr>
@@ -6708,75 +6688,75 @@
 		</div>
 		
 		<p align=center><i>Table 23 - Characteristics of capacity
-		augments for number of active users� metric.</i></p>
+		augments for number of active users' metric.</i></p>
 		
-		<p class="normal-text">It�s clear that <img width=78 height=19
-		src="20201116%20Module%20Content_Capacity%20Planning_v3_files/image115.png">�are
+		<p class="normal-text">It's clear that <img width=78 height=19
+		src="images/capacity_planning/image115.png">'are
 		3 weeks and 10k USD respectively. Since it's a normal scenario, it's advisable
 		to select <img width=46 height=19
-		src="20201116%20Module%20Content_Capacity%20Planning_v3_files/image022.png">�as
+		src="images/capacity_planning/image022.png">'as
 		1, 1 &amp; 1 respectively.</p>
 		
 		<p class="normal-text">For assigning more vCPU to the CP VNF:</p>
 		
 		<p class="normal-text"><img
 		width=87 height=34
-		src="20201116%20Module%20Content_Capacity%20Planning_v3_files/image092.png"></p>
+		src="images/capacity_planning/image092.png"></p>
 		
 		<p class="normal-text"><img
 		width=105 height=34
-		src="20201116%20Module%20Content_Capacity%20Planning_v3_files/image183.png"></p>
+		src="images/capacity_planning/image183.png"></p>
 		
 		<p class="normal-text"><img
 		width=97 height=35
-		src="20201116%20Module%20Content_Capacity%20Planning_v3_files/image184.png"></p>
+		src="images/capacity_planning/image184.png"></p>
 		
 		<p class="normal-text"><img
 		width=323 height=35
-		src="20201116%20Module%20Content_Capacity%20Planning_v3_files/image185.png"></p>
+		src="images/capacity_planning/image185.png"></p>
 		
 		<p class="normal-text">For adding more VNFs for the control plane:</p>
 		
 		<p class="normal-text"><img
 		width=68 height=34
-		src="20201116%20Module%20Content_Capacity%20Planning_v3_files/image096.png"></p>
+		src="images/capacity_planning/image096.png"></p>
 		
 		<p class="normal-text"><img
 		width=105 height=35
-		src="20201116%20Module%20Content_Capacity%20Planning_v3_files/image186.png"></p>
+		src="images/capacity_planning/image186.png"></p>
 		
 		<p class="normal-text"><img
 		width=86 height=35
-		src="20201116%20Module%20Content_Capacity%20Planning_v3_files/image187.png"></p>
+		src="images/capacity_planning/image187.png"></p>
 		
 		<p class="normal-text"><img
 		width=289 height=19
-		src="20201116%20Module%20Content_Capacity%20Planning_v3_files/image188.png"></p>
+		src="images/capacity_planning/image188.png"></p>
 		
 		<p class="normal-text">For adding a new license:</p>
 		
 		<p class="normal-text"><img
 		width=88 height=34
-		src="20201116%20Module%20Content_Capacity%20Planning_v3_files/image189.png"></p>
+		src="images/capacity_planning/image189.png"></p>
 		
 		<p class="normal-text"><img
 		width=86 height=34
-		src="20201116%20Module%20Content_Capacity%20Planning_v3_files/image190.png"></p>
+		src="images/capacity_planning/image190.png"></p>
 		
 		<p class="normal-text"><img
 		width=97 height=35
-		src="20201116%20Module%20Content_Capacity%20Planning_v3_files/image191.png"></p>
+		src="images/capacity_planning/image191.png"></p>
 		
 		<p class="normal-text"><img
 		width=292 height=35
-		src="20201116%20Module%20Content_Capacity%20Planning_v3_files/image192.png"></p>
+		src="images/capacity_planning/image192.png"></p>
 		
 		<p class="normal-text">Although for assigning more vCPU to the CP VNF has the
 		dependency of checking if the hardware capacity allows it, this is the best
 		option since it has the highest score. The next augment in order is adding a
 		new license that has the same dependency as the first to the hardware.</p>
 		
-		<br><h2 class="titulo-h2">5.4
+		<br><h2><a class="titulo-h2 anchor-bum color-luminati-2" name="itemX-X">5.4
 		CP Process Considerations</a></h2>
 		
 		<p class="normal-text">Table 24 displays a summary of the CMOs and the recommended
@@ -6794,7 +6774,7 @@
 		  <td width="48%" valign=top style='width:48.62%;border:solid black 1.0pt;
 		  border-left:none;background:#1F4E79;padding:0cm 5.75pt 0cm 5.75pt'>
 		  <p class="normal-text">Recommended <img width=17 height=19
-		  src="20201116%20Module%20Content_Capacity%20Planning_v3_files/image132.png"></p>
+		  src="images/capacity_planning/image132.png"></p>
 		  </td>
 		 </tr>
 		 <tr>
@@ -6854,7 +6834,7 @@
 		 <tr>
 		  <td width="100%" colspan=2 style='width:100.0%;border:solid black 1.0pt;
 		  border-top:none;padding:0cm 5.75pt 0cm 5.75pt'>
-		  <p class="normal-text">Medium: 4�8 [week]</p>
+		  <p class="normal-text">Medium: 4'8 [week]</p>
 		  <p class="normal-text">High: &gt;8 [week]</p>
 		  </td>
 		 </tr>
@@ -6866,16 +6846,16 @@
 		analysis for each CMO.</i></p>
 		
 		<p class="normal-text">When calculating an augment horizon (<img width=45 height=19
-		src="20201116%20Module%20Content_Capacity%20Planning_v3_files/image193.png">)
+		src="images/capacity_planning/image193.png">)
 		for the entire Mobile Core Network the greatest summed value of <img width=66 height=19
-		src="20201116%20Module%20Content_Capacity%20Planning_v3_files/image129.png">�should
+		src="images/capacity_planning/image129.png">'should
 		be the one that drives all the other analysis.</p>
 		
 		<p class="normal-text">As an example, the following table expresses the CMOs, their
 		corresponding analysis periodic times (<img width=17 height=19
-		src="20201116%20Module%20Content_Capacity%20Planning_v3_files/image130.png">)
+		src="images/capacity_planning/image130.png">)
 		and their respective longest cycle times (<img width=39 height=19
-		src="20201116%20Module%20Content_Capacity%20Planning_v3_files/image131.png">).</p>
+		src="images/capacity_planning/image131.png">).</p>
 		
 		<div align=center>
 		
@@ -6890,21 +6870,21 @@
 		  border-left:none;background:#1F4E79;padding:0cm 5.75pt 0cm 5.75pt'>
 		  <p class="normal-text"><img
 		  width=17 height=19
-		  src="20201116%20Module%20Content_Capacity%20Planning_v3_files/image132.png"></p>
+		  src="images/capacity_planning/image132.png"></p>
 		  <p class="normal-text">[weeks]</p>
 		  </td>
 		  <td width="21%" valign=top style='width:21.68%;border:solid black 1.0pt;
 		  border-left:none;background:#1F4E79;padding:0cm 5.75pt 0cm 5.75pt'>
 		  <p class="normal-text"><img
 		  width=40 height=19
-		  src="20201116%20Module%20Content_Capacity%20Planning_v3_files/image133.png"></p>
+		  src="images/capacity_planning/image133.png"></p>
 		  <p class="normal-text">[weeks]</p>
 		  </td>
 		  <td width="26%" valign=top style='width:26.68%;border:solid black 1.0pt;
 		  border-left:none;background:#1F4E79;padding:0cm 5.75pt 0cm 5.75pt'>
 		  <p class="normal-text"><img
 		  width=75 height=19
-		  src="20201116%20Module%20Content_Capacity%20Planning_v3_files/image134.png"></p>
+		  src="images/capacity_planning/image134.png"></p>
 		  <p class="normal-text">[weeks]</p>
 		  </td>
 		 </tr>
@@ -7018,54 +6998,54 @@
 		
 		<p align=center><i>Table
 		25 - Mobile Core CMOs, </i><img width=14 height=15
-		src="20201116%20Module%20Content_Capacity%20Planning_v3_files/image135.png"><i>�and </i><img width=32 height=19
-		src="20201116%20Module%20Content_Capacity%20Planning_v3_files/image136.png"><i>.Examples</i></p>
+		src="images/capacity_planning/image135.png"><i>'and </i><img width=32 height=19
+		src="images/capacity_planning/image136.png"><i>.Examples</i></p>
 		
 		<p class="normal-text">Taking the methodology presented in Section 2.3.3, the
 		result should be:</p>
 		
 		<p class="normal-text"><img
 		width=474 height=19
-		src="20201116%20Module%20Content_Capacity%20Planning_v3_files/image194.png"></p>
+		src="images/capacity_planning/image194.png"></p>
 		
 		<p class="normal-text">The forecasting method should at least cover the expected
 		behavior of all CMOs for 13 weeks (<img width=76 height=19
-		src="20201116%20Module%20Content_Capacity%20Planning_v3_files/image195.png">).</p>
+		src="images/capacity_planning/image195.png">).</p>
 		
-		<h1 class="titulo-h1">6
+		<h1><a class="titulo-h1 anchor-bum color-luminati" name="item1">6
 		Capacity Management Plan</a></h1>
 		
 		<p class="normal-text">This section provides the
 		methodology to consolidate and generate a final Capacity Management
 		Plan, which is the main deliverable of the CP process. </p>
 		
-		<br><h2 class="titulo-h2">6.1
+		<br><h2><a class="titulo-h2 anchor-bum color-luminati-2" name="itemX-X">6.1
 		Capacity Management Plan Format &amp; Structure</a></h2>
 		
 		<p class="normal-text">The Capacity Management Plan contains the following aspects:
 		</p>
 		
-		<p class="normal-text">�
+		<p class="normal-text">'
 		<b>Overview and Scope:</b> High-level description of the scope of the capacity plan,
 		including the network segments in examination, the involved stakeholders, </p>
 		
 		<p class="normal-text">Furthermore, for each of the network segments (i.e., RAN, Tx
 		and core), the following sections must be included: </p>
 		
-		<p class="normal-text">�
+		<p class="normal-text">'
 		<b>Network Metrics Performance Report: </b>Historical report of the network metrics that monitored the
 		behavior of the CMOs. </p>
 		
-		<p class="normal-text">�
+		<p class="normal-text">'
 		<b>Forecasting Analysis: </b>Estimation of the network behavior according to the
 		established time horizons for each of the network metrics and their associated
 		CMOs.<b> </b>This section must highlight the possible capacity outages in each
 		network segment that may occur if capacity augments are not applied.<b> </b></p>
 		
-		<p class="normal-text">�
+		<p class="normal-text">'
 		<b>Capacity Augments Selection and
 		Scheduling: </b>Description of the plans for
-		the capacity augments to be implemented and how they�ll be addressed and managed.</p>
+		the capacity augments to be implemented and how they'll be addressed and managed.</p>
 		
 		<p class="normal-text">Finally, NaaS operators can use the <a>$$link_widget$$Capacity
 		Management Plan Template</a> as a reference document to create their own
