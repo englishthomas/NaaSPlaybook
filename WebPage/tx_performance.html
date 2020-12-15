@@ -1,0 +1,2180 @@
+<!DOCTYPE html>
+<html>
+ <head>
+ <meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+ <title>PlayBook</title>
+
+ <!-- Bootstrap CSS CDN -->
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> <!-- Our Custom CSS --> <link rel="stylesheet" href="zoom_style.css"> <link rel="stylesheet" href="style2.css"> <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>	</head>		 <body> <div class > <ul class="barra_superior"> <li class="li_superior"><a class="active" href="Home.html">Home</a></li>
+ <li class="li_superior"><a href="comming_soon/comming-soon.html">About</a></li>
+ 
+ <li class="topnav-right"><a href="#" onclick="switchContent('#e2e')">Mgmt Process</a></li>
+ <li class="topnav-right"><a href="#" onclick="switchContent('#fm')">Mgmt Inputs</a></li>
+ <li class="topnav-right"><a href="#" onclick="switchContent('#hld')">Introduction</a></li>
+ </ul>
+ </div>
+
+ <div class="wrapper">
+ <!-- Sidebar Holder -->
+ <nav id="sidebar">
+ <div class="sidebar-header">
+ <h3>NaaS PlayBook</h3>
+ <!--strong>NaaS</strong-->
+ 
+ </div>
+ 
+ <ul class="list-unstyled components">
+ <li> <a href="#runbookSubmenu" data-toggle="collapse" aria-expanded="false"> <i class="glyphicon glyphicon-option-horizontal"></i> PlayBook Modules </a> <ul class="list-unstyled" id="runbookSubmenu"> <li class="active"> <a href="#stract" data-toggle="collapse" aria-expanded="false"> &#187 Strategic Plan & Scope </a> <ul class="list-unstyled collapse" id="stract"> <li><a href="strategy_scope.html"style="margin-left:2em;">&bull; Strategy & Scope</a></li>
+ <li><a href="high_level_proyect_plan.html" style="margin-left:2em">&bull; HL Project Plan</a></li>
+ </ul>
+ </li>
+ <li class="active"> <a href="#HLNA" data-toggle="collapse" aria-expanded="false"> &#187 High Level Network Architecture </a> <ul class="list-unstyled collapse" id="HLNA"> <li><a href="ran_hld_architecture.html"style="margin-left:2em">&bull; RAN Architecture</a></li>
+ <li><a href="tx_ip_architecture.html" style="margin-left:2em">&bull; TX & IP Architecture</a></li>
+ <li><a href="mobile_core_archi.html" style="margin-left:2em"> &bull; Core Architecture</a></li>
+ <li><a href="network_monitoring_architecture.html" style="margin-left:2em"> &bull; Network Monitoring</a></li>
+ 
+ </ul>
+ </li>
+ <li class="active"> <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false"> &#187 Network Design </a> <ul class="list-unstyled collapse" id="homeSubmenu"> <li><a href="#transportMenu" data-toggle="collapse" style="margin-left:2em">&bull; Transport</a></li>
+ <ul class="list-unstyled collapse" id="transportMenu">
+ <li><a href="tx_hld_module.html" style="margin-left:4em;">&#9657; Tx Network HLD</a></li>
+ <li><a href="tx_lld_module.html" style="margin-left:4em;">&#9657; Tx Network LLD</a></li>
+ </ul>
+ 
+ <li><a href="#transportMenu2" data-toggle="collapse" style="margin-left:2em">&bull; RAN</a></li>
+ <ul class="list-unstyled collapse" id="transportMenu2">
+ <li><a href="ran_hld_module.html" style="margin-left:4em;">&#9657; RAN Network HLD</a></li>
+ <li><a href="ran_lld_module.html" style="margin-left:4em;">&#9657; RAN Network LLD</a></li>
+ <li><a href="civil_power_design_ran.html" style="margin-left:4em;">&#9657; Civil & Power Design</a></li>
+ </ul>
+ <li><a href="#transportMenu3" data-toggle="collapse" style="margin-left:2em">&bull; Core</a></li>
+ <ul class="list-unstyled collapse" id="transportMenu3">
+ <li><a href="mobile_core_hld.html" style="margin-left:4em;">&#9657; Mobile Core HLD</a></li>
+ <li><a href="mobile_core_lld.html" style="margin-left:4em;">&#9657; Mobile Core LLD</a></li>
+ <li><a href="civil_power_design_core.html" style="margin-left:4em;">&#9657; Civil & Power Design</a></li>
+ </ul>
+ </ul>
+ </li>
+ <li> <a href="#deployment_m" data-toggle="collapse" aria-expanded="false"> &#187 Deployment </a> <ul class="list-unstyled collapse" id="deployment_m"> <li><a href="deployment_mgmt.html"style="margin-left:2em">&bull; Deployment Mgmt</a></li>
+ <li><a href="site_survey.html"style="margin-left:2em">&bull; Site Survey</a></li>
+ 
+ <li><a href="i&c_module.html"style="margin-left:2em">&bull; I & C</a></li>
+ <li><a href="fiber_const_mgmt.html"style="margin-left:2em">&bull; Fiber Construction Mgmt</a></li>
+ <li><a href="site_construction_mgmt.html"style="margin-left:2em">&bull; Site Construction Mgmt</a></li>
+ </ul>
+ </li>
+ <li> <a href="#o_m" data-toggle="collapse" aria-expanded="false"> &#187 O & M </a> <ul class="list-unstyled collapse" id="o_m"> <li><a href="noc.html" style="margin-left:2em;">&bull; NOC</a></li>
+ <li><a href="soc.html" style="margin-left:2em">&bull; SOC</a></li>
+ </ul>
+ </li>
+ <li> <a href="#maintenance" data-toggle="collapse" aria-expanded="false"> &#187 Field Maintenance </a> <ul class="list-unstyled collapse" id="maintenance"> <li><a href="cell_site_maintenance.html" style="margin-left:2em;">&bull; Cell Site Maintenance</a></li>
+ <li><a href="core_site_maintenance.html" style="margin-left:2em">&bull; Core Site Maintenance</a></li>
+<li><a href="field_force_management.html" style="margin-left:2em">&bull; Field Force Mgmt</a></li>
+ </ul>
+ </li>
+<li class="active">
+                                    <a href="#post_lauch" data-toggle="collapse" aria-expanded="false">
+                                        &#187 Post-Launch Engineering
+                                    </a>
+                                    <ul class="list-unstyled" id="post_lauch">
+										<li><a href="ran_optimization.html" style="margin-left:2em">&bull; RF Optimization</a></li>
+										<li><a href="tx_performance.html" style="margin-left:2em;color:black;"><strong>&bull; Tx Performance</strong></a></li>                                         
+                                    </ul>
+                                </li>
+ 
+ 
+ <li class="active"> <a href="#supply" data-toggle="collapse" aria-expanded="false"> &#187 Supply Chain Management </a> <ul class="list-unstyled collapse" id="supply"> <li><a href="rfx_process.html"style="margin-left:2em;">&bull; RFx Process</a></li>
+ <li><a href="logistics_warehousing.html" style="margin-left:2em">&bull; Logistics & Warehousing</a></li>
+ <li><a href="proc_pro_vendor_mgmt.html" style="margin-left:2em;">&bull; Procurement Proc. & Vendor Mgmt.</a></li>
+ </ul>
+ </li>
+ </ul>
+ </li>
+ <li> <a href="#engagementSubmenu" data-toggle="collapse" aria-expanded="false"> <i class="glyphicon glyphicon-option-horizontal"></i> Methods of Engagement </a> <ul class="collapse list-unstyled" id="engagementSubmenu"> <li><a href="MoE_Wizards.html">&#187 Wizards</a></li>
+ <li><a href="MoE_Widgets.html">&#187 Widgets</a></li>
+ <li><a href="MoE_Primers.html">&#187 Primers</a></li>
+ <li><a href="MoE_Templates.html">&#187 Templates</a></li>
+ <li><a href="MoE_Tool_Catalogue.html">&#187 Tool Catalogue</a></li>
+ 
+ </ul>
+ </li>
+ <li> <a href="strategic_use.html"> <i class="glyphicon glyphicon-question-sign"></i> Using the PlayBook </a> </li>
+ <li> <a href="comming_soon/comming-soon.html"> <i class="glyphicon glyphicon-send"></i> Contact </a> </li>
+ </ul>
+ </nav>
+ <!-- Page Content Holder -->
+ <section id="hld" hidden>
+ <div id="content"> 
+
+	<div data-spy="scroll" data-target="#navbar-example3" data-offset="0">
+		<h1><a class="titulo-h1 anchor-bum color-luminati" name="item1">1 Introduction</a></h1>
+     
+     <p class="normal-text">The Tx performance management (mgmt) module
+     provides NaaS operators with background information and methodologies to review
+     and improve the performance across the transport network. It provides
+     guidelines to identify and mitigate performance issues to maintain the required
+     performance level.</p>
+     
+     <p class="normal-text">Tx performance mgmt is essential to ensure
+     the performance and availability of the services on the transport network. Any
+     disruption on the network can negatively impact customer satisfaction and,
+     ultimately, NaaS operator's revenue. Therefore, standardized performance mgmt processes
+     are imperative to efficiently identify degradations in the network performance.</p>
+     
+     <p class="normal-text">Through the use of this module, NaaS
+     operators will understand the Tx performance mgmt tasks to monitor, detect and
+     prevent unwanted performance situations. Furthermore, methodologies to analyze
+     and diagnose these situations are provided to identify network configurations
+     that help in their mitigation.</p>
+     
+     <br><h2><a class="titulo-h2 anchor-bum color-luminati" name="item1-1">1.1
+     Module Objectives</a></h2>
+     
+     <p class="normal-text">This module will enable a NaaS operator to
+     identify and mitigate performance degradations on the transport network. The
+     specific objectives of this module are to:</p>
+     
+     <ul class="normal-text ul-iconos" style='margin-top:0in' start=1 type=1>
+		<li>Provide an information base, fundamentals and
+		definition of the Tx performance mgmt Process, considering its relation to
+		other processes.</li>
+		
+		<li>Present an overview of the most common data
+		sources used for Tx performance mgmt and provide guidance for the selection of
+		basic and additional/optional data sources.</li>
+		
+		<li>Provide an overview of the End-to-End (E2E) Tx
+		performance mgmt process with instructions for tailoring to specific NaaS
+		environments.</li>
+	</ul>
+     
+     <br><h2><a class="titulo-h2 anchor-bum color-luminati" name="item1-2">1.2
+     Module Framework</a></h2>
+     
+     <p class="normal-text">The module framework in Figure 1 describes the
+     structure, interactions and dependencies among different NaaS operator areas.</p>
+     
+     <p class="normal-text">Strategic plan &amp; scope and high-level network
+     architecture drive the strategic decisions to forthcoming phases. Once the network
+     is in operations, field maintenance and post-launch engineering activities are
+     required to ensure the proper functioning of the network.</p>
+     
+     <p class="normal-text">The Tx performance mgmt module is included within the
+     post-launch engineering stream and has a direct relation with the field
+     maintenance and the operations &amp; maintenance streams, as can be seen in
+     Figure 1.</p>
+     
+     <p class="normal-text"><img width=629 height=269 id=image11.png
+     src="images/tx_performance/image001.png"></p>
+     
+     <p align=center><i>Figure 1 &mdash; Post-Launch Engineering
+     Framework</i></p>
+     
+     <p class="normal-text">Figure 2 presents the Tx performance mgmt process,
+     where the main components are exhibited.</p>
+     
+     
+     
+     <p class="normal-text"><img width=718 height=204 id=image2.png
+     src="images/tx_performance/image002.png"></p>
+     
+     <p align=center><i>Figure 2 &mdash; Tx Performance mgmt Process</i></p>
+     
+     <p class="normal-text">The rest of this module is divided into
+     three sections. Section 2 is a bird's-eye view of the Tx performance mgmt
+     fundamentals. Once fundamental knowledge is acquired, an examination of the
+     required process inputs is provided in Section 3. Finally, Section 4 describes
+     an E2E process flow that can be used <i>as-is</i> or be adapted by NaaS
+     operators to match their particular conditions.</p><br>
+     
+	 
+	 
+     <h1><a class="titulo-h1 anchor-bum color-luminati" name="item2">2
+     Tx Performance Management Fundamentals</a></h1>
+     
+     <p class="normal-text">This section provides a general overview of
+     the baseline concepts of the Tx performance mgmt process and its relevance for
+     NaaS operators.</p>
+     
+     <br><h2><a class="titulo-h2 anchor-bum color-luminati" name="item2-1">2.1
+     Tx Performance Management Imperative</a></h2>
+     
+     <p class="normal-text">Tx performance mgmt is the set of
+     activities (i.e., data collection, detection, analysis and diagnostic,
+     implementation) to ensure a consistent and predictable level of service in the
+     transport network. Tx performance mgmt process helps monitor and identify
+     performance degradations in the transport network, ensuring that the issues are
+     mitigated, and the network is restored to the required performance level.</p>
+     
+     <p class="normal-text">In a mobile environment, the transport network interconnects
+     disparate networks, including the radio access network (RAN), data centers, and
+     external networks. Figure 3 displays the architecture of a typical transport
+     network.</p>
+     
+     <p class="normal-text"><i><img width=598 height=217 id=image5.png
+     src="images/tx_performance/image003.png"></i></p>
+     
+     <p align=center><i>Figure 3 &mdash; Typical mobile network
+     architecture</i></p>
+     
+     <p class="normal-text">Different segments exist on the transport network that, for most of
+     NaaS operators can be classified as: last-mile and aggregation level. Thus, the
+     overall Tx network performance is determined by the performance of the network
+     elements one by one, each network segment, and ultimately, the performance of
+     the network as a whole (i.e., the combination of the performance of all network
+     elements), as displayed in Figure 4.</p>
+     
+     <p class="normal-text"><img width=559
+     height=216 id=image12.png
+     src="images/tx_performance/image004.png"></p>
+     
+     <p align=center><i>Figure 4 &mdash; Typical mobile network architecture</i></p>
+     
+     <p class="normal-text">Tx performance mgmt is essential to ensure
+     the performance and availability of the services on the different segments of
+     the transport network. Any disruption on the network can negatively impact
+     customer satisfaction and, ultimately, NaaS operator's revenue.</p>
+     
+     <p class="normal-text">The relationship between capacity planning
+     and performance mgmt relies on their specific scope. Performance mgmt focuses
+     on optimizing the <i>existing</i> network elements to improve the performance.
+     In contrast, capacity planning determines the <i>future</i> network
+     requirements using the current performance as a baseline.</p>
+     
+     <br><h2><a class="titulo-h2 anchor-bum color-luminati" name="item2-2">2.2
+     Tx Performance management Use Cases</a></h2>
+     
+     <p class="normal-text">In this section, a review of the main Tx
+     performance mgmt use cases is presented, highlighting the relevance and
+     applicability to the NaaS operator.</p>
+     
+     <p class="normal-text">A deeper view of the use cases for Tx
+     performance mgmt and their associated activities can be found on the <a class="a_link" href="">Primer on
+     Network Performance</a>.</p>
+     
+     <h3>2.2.1
+     Service Level Agreement Management</h3>
+     
+     <p class="normal-text">This use case is a continuous task to
+     ensure that the performance network complies with the offered service levels. A
+     service level agreement (SLA) is a formal agreement between two or more
+     entities that is reached after a negotiating activity, with the scope of
+     assessing service characteristics, responsibilities and priorities of each
+     part. An SLA may include statements about performance, tariffing and billing,
+     service delivery and compensations.</p>
+     
+     <p class="normal-text">To ensure SLA compliance, NaaS operators
+     must perform the following activities:</p>
+     
+     <ul class="normal-text ul-iconos" style='margin-top:0in' start=1 type=1>
+		<li>Define service parameters</li>
+		<li>Set performance targets</li>
+		<li>Perform measurements</li>
+		<li>Audit measurements</li>
+		<li>Ensure compliance</li>
+	</ul>
+     
+     <p class="normal-text">The areas where Tx key performance
+     indicators (KPI) should be constantly monitored as part of the SLAs include the
+     following:</p>
+     
+     <ul class="normal-text ul-iconos" style='margin-top:0in' start=1 type=1>
+		<li><b>Availability:</b> Check that network elements and their resources
+		are available, as well as the resources for the backhaul connectivity of the
+		nodes.</li>
+		
+		<li><b>Delay:</b> Check that the different delay components
+		values (i.e., round-trip time (RTT), jitter) are within the service levels.</li>
+		
+		<li><b>Packet Loss:</b> Check that the packet loss and error in the
+		network match the service levels.</li>
+	 </ul>
+     
+     <p class="normal-text">For more information about Tx KPIs that are
+     required to be monitored along with their typical values for NaaS operators,
+     please refer to Section 4.2.</p>
+     
+     <h3>2.2.2
+     Service Degradation</h3>
+     
+     <p class="normal-text">This use case focuses on the inspection of
+     any degradation in the performance KPIs that could lead to future service
+     outages. To this end, the Tx network performance indicators are constantly
+     monitored to early detect performance degradation and quickly apply corrective
+     actions to get back to target KPI values.</p>
+     
+     <p class="normal-text">The areas where Tx performance indicators
+     should be constantly monitored include the network delay, availability and
+     packet loss. However, other areas like resiliency and quality of service must
+     be continuously monitored to ensure their proper behavior.</p>
+     
+     <p class="normal-text">The approach for this use case is usually
+     still reactive. In many operators, performance mgmt groups are organized in
+     different tiers (tier-1 being able to perform basic checks in the network
+     elements to tier-2/tier-3 providing more specialized professional services to
+     understand and apply fixes to complex network issues) are focusing their
+     activities in generating a diagnose (i.e., finding the root cause analysis) of
+     the degradation and then prescribing and executing a solution to fix it.</p>
+     
+     <p class="normal-text">Customer issues or complaints are a trigger
+     to launch the performance mgmt activities. Sometimes these issues get hidden in
+     overall network performance statistics and cannot be detected via network
+     performance indicators monitoring. An in-depth view of the monitoring
+     activities can be found in the <a class="a_link" href="">Network
+     Operation Center (NOC) Module</a>. </p>
+     
+     <h3>2.2.3
+     Transport Network Optimization</h3>
+     
+     <p class="normal-text">This use case aims to improve the network
+     performance continuously. The primary purpose is to identify potential actions
+     to improve the overall performance of the transport network. The most common
+     optimization activities focus on the improvement of specific performance
+     indicators, such as those related to: </p>
+     
+     <ul class="normal-text ul-iconos" style='margin-top:0in' start=1 type=1>
+		<li><b>Network delay</b>: The actions that can be implemented to reduce
+		the network delay are routing protocols metric adjustments and traffic
+		prioritization actions. More details on the degradation causes and typical
+		values for network delay metrics can be found in Section 4.2.1.</li>
+		
+		<li><b>Availability</b>: The most common practice to increase the
+		transport network's overall availability is to implement redundancy methods
+		(physical and logical). More details on the degradation causes and typical
+		values for network availability can be found in Section 4.2.2.</li>
+		
+		<li><b>Packet loss:</b> The actions that can be implemented to improve
+		the transport network's total availability are appropriate link capacity
+		planning and protection switching methods. More details on the degradation
+		causes and typical values for packet loss metrics can be found in Section
+		4.2.3.</li>
+	 </ul>
+     
+     <p class="normal-text">As mentioned before, the Tx performance
+     mgmt activities associated with Network Optimization are executed continuously.
+     The approach can be both reactive (i.e., NaaS operator responding to a 'known'
+     problem) or proactive (i.e., NaaS operator is exploring ways to improve results
+     in specific KPIs). These activities prevent the customer churn due to service
+     degradation and ensure the network performance when additional customers are
+     included in the network.</p>
+     
+     <h3>2.2.4
+     Transport Network Troubleshooting</h3>
+     
+     <p class="normal-text">The aim of this use case is to investigate,
+     diagnose and resolve service degradations and/or faults in the transport
+     network elements. The main purpose is to filter and solve performance-related
+     issues within the timeframe specified by service levels.</p>
+     
+     <p class="normal-text">The typical troubleshooting process flow
+     for the transport network can be described in the following steps: </p>
+     
+     <ul class="normal-text ul-iconos" style='margin-top:0in' start=1 type=1>
+		<li><b>Step 1 &mdash; Define the
+		issue: </b>The issue must be
+		clearly identified to analyze potential causes and diagnose the solution.
+		Possible causes may include misconfigured services, faulty network equipment or
+		missing configuration commands. </li>
+     
+		<li><b>Step 2 &mdash; Data collection:
+		</b>To properly isolate
+		possible causes, network information must be collected from different sources
+		(e.g., network mgmt systems, protocol traffic
+		traces, diagnostic equipment commands)</li>
+     
+		<li><b>Step 3 &mdash; Identify
+		possible solutions: </b>Narrow the
+		number of potential problems using the collected information. For instance, if
+		a hardware problem can be discarded, software problems may become the attention
+		focus. </li>
+     
+		<li><b>Step 4 &mdash; Create an action
+		plan: </b>An action plan can be
+		developed based on the remaining potential problems, focusing on the most
+		likely issue. It's important
+		to change only one variable at a time to properly identify the specific change
+		that eliminates the issue. </li>
+     
+		<li><b>Step 5 &mdash; Implement the
+		action plan: </b>Each step during
+		the action plan implementation must be carefully tested to clearly examine the
+		effect of the applied change. Generally, the same collection method of Step 2
+		is used. </li>
+     
+		<li><b>Step 6 &mdash; Analyze the
+		action plan results:</b> Examine
+		the results to determine whether the problem has been resolved. If this is the
+		case, the process is complete.<b> </b></li>
+     
+		<li><b>Step 7 &mdash; Focus on the
+		next problem: </b>If the issue has
+		not been resolved, an action plan must be created based on the next most likely
+		problem. Return to Step 4 and repeat the process until the problem is solved. </li>
+	</ul>
+     
+     <p class="normal-text">Table 1 displays the typical issues in
+     transport networks along with their most common problems and their potential
+     solutions. </p>
+     
+     <table class=a border=0 cellspacing=0 cellpadding=0 width="100%"
+      style='width:100.0%;border-collapse:collapse'>
+      <tr style='height:15.0pt'>
+       <td width="20%" style='width:20.14%;border:solid black 1.0pt;background:#002060;
+       padding:0cm 3.5pt 0cm 3.5pt;height:15.0pt'>
+       <p align=center style='color:#fff;'>Issue</p>
+       </td>
+       <td width="25%" style='width:25.66%;border:solid black 1.0pt;border-left:
+       none;background:#002060;padding:0cm 3.5pt 0cm 3.5pt;height:15.0pt'>
+       <p align=center style='color:#fff;'>Most
+       Common Problems</p>
+       </td>
+       <td width="54%" style='width:54.18%;border:solid black 1.0pt;border-left:
+       none;background:#002060;padding:0cm 3.5pt 0cm 3.5pt;height:15.0pt'>
+       <p align=center style='color:#fff;'>Solution</p>
+       </td>
+      </tr>
+      <tr style='height:28.5pt'>
+       <td width="20%" rowspan=3 style='width:20.14%;border:solid black 1.0pt;
+       border-top:none;padding:0cm 3.5pt 0cm 3.5pt;height:28.5pt'>
+       <p class="normal-text">Increase
+       in packet loss rate</p>
+       </td>
+       <td width="25%" style='width:25.66%;border-top:none;border-left:none;
+       border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 3.5pt 0cm 3.5pt;
+       height:28.5pt'>
+       <p class="normal-text">Maximum transmission
+       unit (MTU) Size Mismatching</p>
+       </td>
+       <td width="54%" style='width:54.18%;border-top:none;border-left:none;
+       border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 3.5pt 0cm 3.5pt;
+       height:28.5pt'>
+       <p class="normal-text">- Homologate MTU size across all
+       the elements in the Tx network. </p>
+       </td>
+      </tr>
+      <tr style='height:28.5pt'>
+       <td width="25%" style='width:25.66%;border-top:none;border-left:none;
+       border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 3.5pt 0cm 3.5pt;
+       height:28.5pt'>
+       <p class="normal-text">Interface
+       Speed Mismatching</p>
+       </td>
+       <td width="54%" style='width:54.18%;border-top:none;border-left:none;
+       border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 3.5pt 0cm 3.5pt;
+       height:28.5pt'>
+       <p class="normal-text">- Ensure proper interface speed
+       configuration on both sides of the transport link.</p>
+       </td>
+      </tr>
+      <tr style='height:28.5pt'>
+       <td width="25%" style='width:25.66%;border-top:none;border-left:none;
+       border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 3.5pt 0cm 3.5pt;
+       height:28.5pt'>
+       <p class="normal-text">Network
+       Congestion</p>
+       </td>
+       <td width="54%" style='width:54.18%;border-top:none;border-left:none;
+       border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 3.5pt 0cm 3.5pt;
+       height:28.5pt'>
+       <p class="normal-text">- Increase the capacity of the
+       transport link.<br>
+       - Alternatively, prioritize critical traffic to avoid service degradation. </p>
+       </td>
+      </tr>
+      <tr style='height:28.5pt'>
+       <td width="20%" rowspan=2 style='width:20.14%;border:solid black 1.0pt;
+       border-top:none;padding:0cm 3.5pt 0cm 3.5pt;height:28.5pt'>
+       <p class="normal-text">Connectivity
+       Issues</p>
+       </td>
+       <td width="25%" style='width:25.66%;border-top:none;border-left:none;
+       border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 3.5pt 0cm 3.5pt;
+       height:28.5pt'>
+       <p class="normal-text">Firewall
+       Blocking Problem</p>
+       </td>
+       <td width="54%" style='width:54.18%;border-top:none;border-left:none;
+       border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 3.5pt 0cm 3.5pt;
+       height:28.5pt'>
+       <p class="normal-text">- Ensure the proper firewall
+       configuration to allow NaaS operator traffic.</p>
+       </td>
+      </tr>
+      <tr style='height:28.5pt'>
+       <td width="25%" style='width:25.66%;border-top:none;border-left:none;
+       border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 3.5pt 0cm 3.5pt;
+       height:28.5pt'>
+       <p class="normal-text">Route
+       Flapping Issue</p>
+       </td>
+       <td width="54%" style='width:54.18%;border-top:none;border-left:none;
+       border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 3.5pt 0cm 3.5pt;
+       height:28.5pt'>
+       <p class="normal-text">- Increase the routing protocol timers
+       to calculate new routes.</p>
+       <p class="normal-text">- Alternatively, create static
+       routes for specific services. </p>
+       </td>
+      </tr>
+      <tr style='height:28.5pt'>
+       <td width="20%" rowspan=2 style='width:20.14%;border:solid black 1.0pt;
+       border-top:none;padding:0cm 3.5pt 0cm 3.5pt;height:28.5pt'>
+       <p class="normal-text">Increase
+       in network delay</p>
+       </td>
+       <td width="25%" style='width:25.66%;border-top:none;border-left:none;
+       border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 3.5pt 0cm 3.5pt;
+       height:28.5pt'>
+       <p class="normal-text">Routing
+       Protocols Metrics </p>
+       </td>
+       <td width="54%" style='width:54.18%;border-top:none;border-left:none;
+       border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 3.5pt 0cm 3.5pt;
+       height:28.5pt'>
+       <p class="normal-text">- Adjust and homologate routing
+       protocol metrics across all network elements to consider network delay. </p>
+       </td>
+      </tr>
+      <tr style='height:28.5pt'>
+       <td width="25%" style='width:25.66%;border-top:none;border-left:none;
+       border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 3.5pt 0cm 3.5pt;
+       height:28.5pt'>
+       <p class="normal-text">Network
+       Congestion</p>
+       </td>
+       <td width="54%" style='width:54.18%;border-top:none;border-left:none;
+       border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 3.5pt 0cm 3.5pt;
+       height:28.5pt'>
+       <p class="normal-text">- Increase the capacity of the
+       transport link.<br>
+       - Alternatively, prioritize critical traffic to avoid service degradation. </p>
+       </td>
+      </tr>
+     </table>
+     
+     <p align=center><i>Table 1 &mdash; Tx Network typical issues and potential problems and
+     solutions</i></p>
+
+	</div>
+
+ <div class="right">
+ <a class='link-next' href="#" onclick="switchContent('#fm')">Next &#8658;</a>
+ </div>
+ <br>
+ </div>
+
+ <nav id="navbar-example3" class="navbar navbar-light bg-light position-fixed">
+ <nav class="nav nav-pills flex-column">
+ 
+ <a id="link-1" class="nav-link bullet-2-link" onclick="onClickActive(event)" href="#item1"><strong>1. INTRODUCTION</strong></a>
+ <a id="link-2" class="nav-link bullet-2-link" onclick="onClickActive(event)" href="#item1-1"><em>1.1 Module Objectives</em></a>
+ <a id="link-3" class="nav-link bullet-2-link" onclick="onClickActive(event)" href="#item1-2"><em>1.2 Module Framework</em></a>
+ <a id="link-4" class="nav-link bullet-2-link" onclick="onClickActive(event)" href="#item2"><strong>2. TX PERFORMANCE MANAGEMENT FUNDAMENTALS</strong></a>
+ <a id="link-2" class="nav-link bullet-2-link" onclick="onClickActive(event)" href="#item2-1"><em>2.1 Tx Performance Management Imperative</em></a>
+ <a id="link-3" class="nav-link bullet-2-link" onclick="onClickActive(event)" href="#item2-2"><em>2.2 Tx Performance management Use Cases</em></a>
+ </nav>
+ </nav>
+ </section>
+
+ <section id="fm" hidden>
+ <div id="content"> 
+
+	<div data-spy="scroll" data-target="#navbar-example3" data-offset="0">
+		<h1><a class="titulo-h1 anchor-bum color-luminati-2" name="item3">3
+			Performance Management Inputs</a></h1>
+			
+			<p class="normal-text">This section includes a description of the
+			primary data sources used to execute Tx performance mgmt activities.</p>
+			
+			<br><h2><a class="titulo-h2 anchor-bum color-luminati-2" name="item3-1">3.1
+			Tx Performance Counters and Measurements</a></h2>
+			
+			<p class="normal-text">Tx performance counters and measurements
+			are collected from transport network elements (e.g., routers, microwave radios,
+			switches) and/or network monitoring systems. Tx performance measurements are
+			the primary input for the mgmt process.</p>
+			
+			<p class="normal-text">It is recommended to the NaaS operator to
+			use tools to automate the activities of collection and processing of the performance
+			files, and when possible, automate also the real-time detection of Tx
+			performance degradations (i.e., deviations from established thresholds).</p>
+			
+			<p class="normal-text">Tx performance measurements can be built
+			into the network monitoring systems (NMS) and be automatic. For a more detailed
+			view of the NMS characteristics, please refer to the <a class="a_link" href="network_monitoring_architecture.html">Network
+			Monitoring Architecture Module</a>. Regarding measurements, there are two
+			methodologies for measuring Tx performance:</p>
+			
+			<ul class="normal-text ul-iconos" style='margin-top:0in' start=1 type=1>
+				<li><b><u>Passive measurement:</u></b> Performance metrics such as delay, jitter, and
+				packet loss are obtained/calculated from existing packets in the network (e.g.,
+				internet control message protocol (ICMP) packets). The information required to derive
+				the network metrics is obtained from the packet timestamps. </li>
+				
+				<li><b><u>Active measurement: </u></b>Probes in the form of software agents or network
+				appliances are deployed on network elements and user devices (for the software
+				agent case). Measurements based on these probes provide a very accurate status
+				of the devices at any time. The main drawback of this measurement is that it
+				doesn't scale for large networks.</li>
+			</ul>
+			
+			<p class="normal-text">Performance measurement values are stored
+			every reporting output period (ROP) with a typical granularity of 15 min.
+			Performance measurements are then aggregated by performance reporting tools to
+			generate aggregated information with different time scopes (daily, monthly,
+			weekly) and different geographical scope (by city, province, region or
+			network).</p>
+			
+			<p class="normal-text">More detailed regarding the actual
+			measurement methods for each of the areas of interest are presented in Section
+			4.2.</p>
+			
+			<br><h2><a class="titulo-h2 anchor-bum color-luminati-2" name="item3-2">3.2
+			Network Inventory / Topology</a></h2>
+			
+			<p class="normal-text">Network inventory is the record of
+			information regarding all elements in the network. It comprises sets of data
+			that are not usually stored in the network element mgmt systems.</p>
+			
+			<p class="normal-text">When performing performance mgmt activities
+			in the transport network, it's important to have accessibility to databases
+			that contain the data from devices in the network presented in Table 2.</p>
+			
+			<table class=a0 border=0 cellspacing=0 cellpadding=0 width="100%"
+			 style='width:100.0%;border-collapse:collapse'>
+			 <tr style='height:15.75pt'>
+			  <td width="25%" style='width:25.86%;padding:0cm 3.5pt 0cm 3.5pt;height:15.75pt'>
+			  
+			  </td>
+			  <td width="74%" style='width:74.14%;border:solid black 1.0pt;background:#002060;
+			  padding:0cm 3.5pt 0cm 3.5pt;height:15.75pt'>
+			  <p align=center style='color:#fff;'>Inventory
+			  Data</p>
+			  </td>
+			 </tr>
+			 <tr style='height:15.0pt'>
+			  <td width="25%" rowspan=3 style='width:25.86%;border:solid black 1.0pt;
+			  border-bottom:none;background:#F2F2F2;padding:0cm 3.5pt 0cm 3.5pt;height:
+			  15.0pt'>
+			  <p class="normal-text">General
+			  Data</p>
+			  </td>
+			  <td width="74%" style='width:74.14%;border-top:none;border-left:none;
+			  border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 3.5pt 0cm 3.5pt;
+			  height:15.0pt'>
+			  <p class="normal-text">Device name</p>
+			  </td>
+			 </tr>
+			 <tr style='height:15.0pt'>
+			  <td width="74%" style='width:74.14%;border-top:none;border-left:none;
+			  border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 3.5pt 0cm 3.5pt;
+			  height:15.0pt'>
+			  <p class="normal-text">Device IP address(es)</p>
+			  </td>
+			 </tr>
+			 <tr style='height:15.0pt'>
+			  <td width="74%" style='width:74.14%;border-top:none;border-left:none;
+			  border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 3.5pt 0cm 3.5pt;
+			  height:15.0pt'>
+			  <p class="normal-text">Device location</p>
+			  </td>
+			 </tr>
+			 <tr style='height:15.0pt'>
+			  <td width="25%" rowspan=4 style='width:25.86%;border:solid black 1.0pt;
+			  background:#F2F2F2;padding:0cm 3.5pt 0cm 3.5pt;height:15.0pt'>
+			  <p class="normal-text">Layer
+			  2 Data</p>
+			  </td>
+			  <td width="74%" style='width:74.14%;border-top:none;border-left:none;
+			  border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 3.5pt 0cm 3.5pt;
+			  height:15.0pt'>
+			  <p class="normal-text">Device's MAC address(es)</p>
+			  </td>
+			 </tr>
+			 <tr style='height:30.0pt'>
+			  <td width="74%" style='width:74.14%;border-top:none;border-left:none;
+			  border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 3.5pt 0cm 3.5pt;
+			  height:30.0pt'>
+			  <p class="normal-text">Connection Information (e.g.,
+			  switch 1 port 2/1 connects to switch 2 port 1/1)</p>
+			  </td>
+			 </tr>
+			 <tr style='height:15.0pt'>
+			  <td width="74%" style='width:74.14%;border-top:none;border-left:none;
+			  border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 3.5pt 0cm 3.5pt;
+			  height:15.0pt'>
+			  <p class="normal-text">VLAN information</p>
+			  </td>
+			 </tr>
+			 <tr style='height:30.0pt'>
+			  <td width="74%" style='width:74.14%;border-top:none;border-left:none;
+			  border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 3.5pt 0cm 3.5pt;
+			  height:30.0pt'>
+			  <p class="normal-text">Information on layer 2 redundant
+			  paths (e.g., redundant bridged paths, port channels)</p>
+			  </td>
+			 </tr>
+			 <tr style='height:30.0pt'>
+			  <td width="25%" rowspan=2 style='width:25.86%;border:solid black 1.0pt;
+			  border-top:none;background:#F2F2F2;padding:0cm 3.5pt 0cm 3.5pt;height:30.0pt'>
+			  <p class="normal-text">Layer
+			  3 Data</p>
+			  </td>
+			  <td width="74%" style='width:74.14%;border-top:none;border-left:none;
+			  border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 3.5pt 0cm 3.5pt;
+			  height:30.0pt'>
+			  <p class="normal-text">Layer 3 connectivity information
+			  (e.g., default routes,
+			  routing tables)</p>
+			  </td>
+			 </tr>
+			 <tr style='height:30.0pt'>
+			  <td width="74%" style='width:74.14%;border-top:none;border-left:none;
+			  border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 3.5pt 0cm 3.5pt;
+			  height:30.0pt'>
+			  <p class="normal-text">Information on layer 3 redundant
+			  paths (e.g., HSRP, VRRP
+			  router peers)</p>
+			  </td>
+			 </tr>
+			 <tr style='height:15.0pt'>
+			  <td width="25%" rowspan=3 style='width:25.86%;border:solid black 1.0pt;
+			  border-top:none;background:#F2F2F2;padding:0cm 3.5pt 0cm 3.5pt;height:15.0pt'>
+			  <p class="normal-text">Additional
+			  Data</p>
+			  </td>
+			  <td width="74%" style='width:74.14%;border-top:none;border-left:none;
+			  border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 3.5pt 0cm 3.5pt;
+			  height:15.0pt'>
+			  <p class="normal-text">Device function</p>
+			  </td>
+			 </tr>
+			 <tr style='height:15.0pt'>
+			  <td width="74%" style='width:74.14%;border-top:none;border-left:none;
+			  border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 3.5pt 0cm 3.5pt;
+			  height:15.0pt'>
+			  <p class="normal-text">Logical access methods (e.g.,
+			  passwords, community strings)</p>
+			  </td>
+			 </tr>
+			 <tr style='height:15.0pt'>
+			  <td width="74%" style='width:74.14%;border-top:none;border-left:none;
+			  border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 3.5pt 0cm 3.5pt;
+			  height:15.0pt'>
+			  <p class="normal-text">Physical access methods (e.g.,
+			  keys, badges)</p>
+			  </td>
+			 </tr>
+			</table>
+			
+			<p align=center><i>Table 2 &mdash; Network Inventory data for Tx
+			devices</i></p>
+			
+			<p class="normal-text">Furthermore, the data regarding the Tx
+			links presented in Table 3 is also required.</p>
+			
+			<table class=a1 border=0 cellspacing=0 cellpadding=0 width="100%"
+			 style='width:100.0%;border-collapse:collapse'>
+			 <tr style='height:15.75pt'>
+			  <td width="25%" style='width:25.86%;padding:0cm 3.5pt 0cm 3.5pt;height:15.75pt'>
+			  
+			  </td>
+			  <td width="74%" style='width:74.14%;border:solid black 1.0pt;background:#002060;
+			  padding:0cm 3.5pt 0cm 3.5pt;height:15.75pt'>
+			  <p align=center style='color:#fff;'>Inventory
+			  Data</p>
+			  </td>
+			 </tr>
+			 <tr style='height:15.0pt'>
+			  <td width="25%" rowspan=4 style='width:25.86%;border:solid black 1.0pt;
+			  border-bottom:none;background:#F2F2F2;padding:0cm 3.5pt 0cm 3.5pt;height:
+			  15.0pt'>
+			  <p class="normal-text">General
+			  Data</p>
+			  </td>
+			  <td width="74%" style='width:74.14%;border-top:none;border-left:none;
+			  border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 3.5pt 0cm 3.5pt;
+			  height:15.0pt'>
+			  <p class="normal-text">Link name / code</p>
+			  </td>
+			 </tr>
+			 <tr style='height:15.0pt'>
+			  <td width="74%" style='width:74.14%;border-top:none;border-left:none;
+			  border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 3.5pt 0cm 3.5pt;
+			  height:15.0pt'>
+			  <p class="normal-text">Link technology (e.g., FO, MW,
+			  Satellite)</p>
+			  </td>
+			 </tr>
+			 <tr style='height:15.0pt'>
+			  <td width="74%" style='width:74.14%;border-top:none;border-left:none;
+			  border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 3.5pt 0cm 3.5pt;
+			  height:15.0pt'>
+			  <p class="normal-text">Link capacity</p>
+			  </td>
+			 </tr>
+			 <tr style='height:30.0pt'>
+			  <td width="74%" style='width:74.14%;border-top:none;border-left:none;
+			  border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 3.5pt 0cm 3.5pt;
+			  height:30.0pt'>
+			  <p class="normal-text">Connection Information (e.g.,
+			  switch 1 port 2/1 connects to switch 2 port 1/1)</p>
+			  </td>
+			 </tr>
+			 <tr style='height:15.0pt'>
+			  <td width="25%" style='width:25.86%;border:solid black 1.0pt;border-bottom:
+			  none;background:#F2F2F2;padding:0cm 3.5pt 0cm 3.5pt;height:15.0pt'>
+			  <p class="normal-text">FO
+			  Link</p>
+			  </td>
+			  <td width="74%" style='width:74.14%;border-top:none;border-left:none;
+			  border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 3.5pt 0cm 3.5pt;
+			  height:15.0pt'>
+			  <p class="normal-text">Number of FO strands (total and
+			  in-use)</p>
+			  </td>
+			 </tr>
+			 <tr style='height:15.0pt'>
+			  <td width="25%" rowspan=2 style='width:25.86%;border:solid black 1.0pt;
+			  background:#F2F2F2;padding:0cm 3.5pt 0cm 3.5pt;height:15.0pt'>
+			  <p class="normal-text">MW
+			  Link</p>
+			  </td>
+			  <td width="74%" style='width:74.14%;border-top:none;border-left:none;
+			  border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 3.5pt 0cm 3.5pt;
+			  height:15.0pt'>
+			  <p class="normal-text">Link Frequency</p>
+			  </td>
+			 </tr>
+			 <tr style='height:15.0pt'>
+			  <td width="74%" style='width:74.14%;border-top:none;border-left:none;
+			  border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 3.5pt 0cm 3.5pt;
+			  height:15.0pt'>
+			  <p class="normal-text">Link Modulation</p>
+			  </td>
+			 </tr>
+			 <tr style='height:15.0pt'>
+			  <td width="25%" rowspan=3 style='width:25.86%;border:solid black 1.0pt;
+			  border-top:none;background:#F2F2F2;padding:0cm 3.5pt 0cm 3.5pt;height:15.0pt'>
+			  <p class="normal-text">SAT
+			  Link Data</p>
+			  </td>
+			  <td width="74%" style='width:74.14%;border-top:none;border-left:none;
+			  border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 3.5pt 0cm 3.5pt;
+			  height:15.0pt'>
+			  <p class="normal-text">Pointed Satellite</p>
+			  </td>
+			 </tr>
+			 <tr style='height:15.0pt'>
+			  <td width="74%" style='width:74.14%;border-top:none;border-left:none;
+			  border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 3.5pt 0cm 3.5pt;
+			  height:15.0pt'>
+			  <p class="normal-text">Satellite Band (e.g., Ka, Ku)</p>
+			  </td>
+			 </tr>
+			 <tr style='height:15.0pt'>
+			  <td width="74%" style='width:74.14%;border-top:none;border-left:none;
+			  border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 3.5pt 0cm 3.5pt;
+			  height:15.0pt'>
+			  <p class="normal-text">Satellite Beam</p>
+			  </td>
+			 </tr>
+			</table>
+			
+			<p align=center><i>Table 3 &mdash; Network Inventory data for Tx
+			links</i></p>
+			
+			<p class="normal-text">The following snapshot displays an example
+			of an inventory tool that collects information about network inventory of the
+			transport network. Please, see the <a class="a_link" href="noc.html">Network
+			Operation Center (NOC) Module</a> for more details on the required activities
+			to manage the network.</p>
+			
+			<p class="normal-text"><img
+			border=0 width=615 height=281 id=image4.png
+			src="images/tx_performance/image005.png"></p>
+			
+			<p align=center><i>Figure 5 &mdash; Transport network Inventory data and tool UI</i></p>
+			
+			<p class="normal-text">It is highly recommended to perform
+			periodic network audits to obtain the required information to maintain an
+			accurate and updated inventory of the transport network.</p>
+			
+			<br><h2><a class="titulo-h2 anchor-bum color-luminati-2" name="item3-3">3.3
+			Network Alarms / Faults</a></h2>
+			
+			<p class="normal-text">Analysis of the health status of any
+			particular network element requires the detection of the faults/alarms and the
+			notification to the operations systems (equipment mgmt system and/or NMS).
+			Therefore, lists of active alarms in the network as well as alarm historical
+			data are relevant for troubleshooting activities.</p>
+			
+			<p class="normal-text">Faults are usually grouped into the
+			following categories:</p>
+			
+			<ul class="normal-text ul-iconos" style='margin-top:0in' start=1 type=1>
+				<li>Hardware failures</li>
+			
+				<li>
+				Software problems</li>
+				
+				<li>
+				Functional faults</li>
+				
+				<li>
+				Communication failures
+				between two network elements or between network elements and the operations
+				support systems (OSS).</li>
+			</ul>
+			
+			<p class="normal-text">Additionally, a priority must be defined for each fault according to
+			the impact on the network performance. Following, some aspects that can be used
+			to define the fault priority:</p>
+			
+			<ul class="normal-text ul-iconos" style='margin-top:0in' start=1 type=1>
+				<li>SLAs and associated policies</li>
+			
+				<li> Users impacted by the outage (e.g., number of
+				users affected)</li>
+				
+				<li> Time of day the outage occurs</li>
+				
+				<li> The type of traffic flow</li>
+				
+				<li> The criticality of the segment(s) involved
+				(e.g., aggregation segment)</li>
+			</ul>
+			
+			<p class="normal-text">NMSes provide interfaces and reporting
+			capabilities to retrieve fault mgmt (i.e., alarms) information from network
+			elements and exporting functionalities if processing outside of the NMS was
+			required. Protocols used in this interface to provide fault mgmt information
+			include:</p>
+			
+			<ul class="normal-text ul-iconos" style='margin-top:0in' start=1 type=1>
+				<li>Common object request broker architecture
+				(CORBA)</li>
+				
+				<li> Simple network management protocol (SNMP)</li>
+				
+				<li> Common management information protocol (CMIP)</li>
+				
+				<li> Extensible markup language (XML)</li>
+			</ul>
+			
+			<br><h2><a class="titulo-h2 anchor-bum color-luminati-2" name="item3-4">3.4
+			Tx Configuration</a></h2>
+			
+			<p class="normal-text">Transport network elements are configured
+			via parameters that determine their interactions within the network. These
+			parameters control relevant features spanning from the routing protocols,
+			redundancy and protection methods, and many others.</p>
+			
+			<p class="normal-text">It's critical for performance mgmt
+			activities to maintain databases updated with configuration data so that the
+			performance mgmt process can rely on proper settings of the analyzed network
+			elements. When performing Tx performance management, it's important to be able
+			to quickly correlate issues with possible configuration modifications or
+			inconsistencies in the affected network elements.</p>
+			
+			<p class="normal-text">Update periodicity of configuration
+			management (CM) databases can be scheduled by the NaaS operator depending on
+			known variability (how often is the network configuration being modified). As
+			an example, it could be possible for an operator that last-mile elements
+			configuration is stable enough to use monthly updates, whereas the refresh of
+			the aggregation elements could need to be performed weekly. For a more in-depth
+			examination of the CM activities, please see the <a class="a_link" href="noc.html">Network
+			Operation Center (NOC) Module</a>. </p>
+			
+			<p class="normal-text">The collection and processing of
+			configuration data should be completely automated, as well as the detection of
+			configuration inconsistencies.</p>
+			
+			<p class="normal-text">Configuration information from network
+			elements is typically accessible via text files (typically in xml formats).
+			These files contain the settings of the parameters/attributes organized by
+			logical objects (managed objects) that follow a hierarchical or functional
+			structure.</p>
+	</div>
+
+ <a class='link-next' href="#" onclick="switchContent('#hld')"> &#8656; Previous</a>
+ <a href="url" align="center"></a>
+ <div class="right">
+ <a ></a>
+ <a class="link-next" href="#" onclick="switchContent('#e2e')">Next &#8658;</a>
+ </div>
+ <br>
+ 
+
+ <nav id="navbar-example3" class="navbar navbar-light bg-light position-fixed">
+ <nav class="nav nav-pills flex-column">
+ <a id="fm_link-1" class="nav-link bullet-2-link" onclick="onClickActive(event)" href="#item3"><strong>3. PERFORMANCE MANAGEMENT INPUTS</strong></a>
+ <a id="fm_link-2" class="nav-link bullet-2-link" onclick="onClickActive(event)" href="#item3-1"><em>3.1 Tx Performance Counters and Measurements</em></a>
+ <a id="fm_link-3" class="nav-link bullet-2-link" onclick="onClickActive(event)" href="#item3-2"><em>3.2 Network Inventory / Topology</em></a>
+ <a id="fm_link-5" class="nav-link bullet-2-link" onclick="onClickActive(event)" href="#item3-3"><em>3.3 Network Alarms / Faults</em></a>
+ <a id="fm_link-6" class="nav-link bullet-2-link" onclick="onClickActive(event)" href="#item3-4"><em>3.4 Tx Configuration</em></a>
+
+ </nav>
+ </nav>
+ </section>
+
+ <section id="e2e" hidden>
+ <div id="content">
+ 
+<div div data-spy="scroll" data-target="#navbar-example3" data-offset="0">
+	<h1><a class="titulo-h1 anchor-bum color-luminati-3" name="item4">4
+		Tx Performance Management Process</a></h1>
+		
+		<p class="normal-text">This section presents a generic yet
+		customizable E2E process flow to perform the Tx performance mgmt in NaaS
+		operator's network. An examination of each of the Tx performance mgmt process'
+		steps are' provided to instruct NaaS operators on their implementation.
+		Furthermore, this section describes the most relevant network areas that NaaS
+		operators should consider as part of the Tx performance mgmt process.</p>
+		
+		<br><h2><a class="titulo-h2 anchor-bum color-luminati-3" name="item4-1">4.1
+		Process Overview</a></h2>
+		
+		<p class="normal-text">This section chapter aims to provide NaaS
+		operators with a description of the tasks included in the Tx performance mgmt
+		process, which is represented in Figure 6.</p>
+		
+		<p class="normal-text"><img
+		border=0 width=598 height=151 id=image6.png
+		src="images/tx_performance/image006.png"></p>
+		
+		<p align=center><i>Figure 6 &mdash; Tx Performance mgmt Process
+		tasks</i></p>
+		
+		<p class="normal-text"><b><u>Data Collection</u></b></p>
+		
+		<p class="normal-text">Tx performance data collection is the
+		process of collecting performance-related mgmt data from network devices and
+		storing them in a database or data file. The Tx performance mgmt team of the
+		NaaS operator will be responsible for monitoring the network performance and
+		the quality perceived by the customers. This will be achieved by monitoring and
+		analyzing the Tx performance KPIs, allowing the detection of the network
+		elements that negatively impact on the network performance and in the customer
+		perception.</p>
+		
+		<p class="normal-text">This process is an on-going activity
+		composed of an 'offline' and an 'online' component. In the 'offline'
+		monitoring, Tx engineers will usually review and troubleshoot the Tx KPIs from
+		the previous day(s). These 'offline' activities will be complemented by an
+		'online' monitoring, where the NOC of the NaaS operator will continuously monitor
+		the status of the nodes (i.e., absence of alarms affecting the provided
+		service). The NOC monitoring should work on a 24x7 approach (please refer to <a class="a_link" href="noc.html">Network
+		Operation Center (NOC) Module</a> for additional
+		information on NOC activities).</p>
+		
+		<p class="normal-text"><b><u>Detection</u></b></p>
+		
+		<p class="normal-text">Tx performance mgmt team will be
+		responsible for detecting the network performance degradations that impact the
+		quality of services perceived by the customers or the system performance. The
+		activity will consist of searching for poor performing network elements
+		revealed by the inspection of the different metrics available.</p>
+		
+		<p class="normal-text">To implement the detection task, the NaaS
+		operator will establish decision rules applied to the monitoring results for
+		triggering any performance degradation affecting the quality. Degradations with
+		respect to baseline performance will include among others: decrease in the
+		availability, Increment in the network delay and packet loss.</p>
+		
+		<p class="normal-text">When required, it will be necessary to
+		activate and manage the needed operational and / or maintenance network
+		processes to solve the fault or degradation (open tickets to NOC with specified
+		format and diagnosis done, with and specified SLA to solve in case of service
+		affecting incidents) (please refer to <a class="a_link" href="noc.html">Network
+		Operation Center (NOC) Module</a> for additional
+		information on NOC activities).</p>
+		
+		<p class="normal-text"><b><u>Analysis and Diagnostic</u></b></p>
+		
+		<p class="normal-text">This activity includes the problem
+		definition and the impact assessment (when / where / how much) as well as the
+		root cause Identification and its nature (network congestion; network faults;
+		capacity-related events; ')</p>
+		
+		<p class="normal-text">The analysis and diagnosis of detected Tx
+		performance issues will consider use of the different data sources, as
+		described in section 3.</p>
+		
+		<p class="normal-text">The following data
+		inputs will be the main ones to be used to troubleshoot detected issues:</p>
+		
+		<ul class="normal-text ul-iconos" style='margin-top:0in' start=1 type=1>
+			<li>Correlations of alarms: check the recent history of alarms of the
+			degraded equipment to determine if the performance degradation could affect
+			existing/past equipment alarms.</li>
+			
+			<li>
+			To perform the diagnostic activities, the Tx
+			performance team will use the physical inventory that provides information
+			about network topology characteristics.</li>
+		</ul>
+		
+		<p class="normal-text"><b><u>Solution Implementation</u></b></p>
+		
+		<p class="normal-text">Definition of the solution plan and
+		implementation mgmt by using the appropriate procedures available, depending on
+		the nature of the action.</p>
+		
+		<p class="normal-text">It's possible that the action plan needs to
+		be executed by other teams using the inputs generated: maintenance issues,
+		malfunctioning hardware / software to be fixed / replaced, recommendations to
+		deploy additional capacity.</p>
+		
+		<br><h2><a class="titulo-h2 anchor-bum color-luminati-3" name="item4-2">4.2
+		Areas of Interest</a></h2>
+		
+		<p class="normal-text">This section aims to examine the most
+		relevant network areas that NaaS operators should consider as part of the Tx
+		performance mgmt process, along with the most frequent events that impact the
+		transport network performance and the typical measurement methods. Finally,
+		standard methods are presented to be implemented in NaaS operator's transport
+		network to mitigate performance issues.</p>
+		
+		<h3>4.2.1
+		Network Delay</h3>
+		
+		<p class="normal-text">Network delay is a performance
+		characteristic that comprises the different aspects involved in the traffic
+		path across the transport network (e.g., transmission delay, propagation delay,
+		processing delay, queuing delay).</p>
+		
+		<p class="normal-text">In the transport network, many factors
+		directly affect the transport network delay characteristics. Some examples
+		include the following:</p>
+		
+		<ul class="normal-text ul-iconos" style='margin-top:0in' start=1 type=1>
+			<li>Network congestion</li>
+			<li>Less than desirable route or
+			lack of route to destination</li>
+			<li>Network faults</li>
+		</ul>
+		
+		<p class="normal-text">The following subsections examine different
+		characteristics of the network delay.</p>
+		
+		<h4>4.2.1.1
+		Round-trip time (RTT)</h4>
+		
+		<p class="normal-text">RTT is used to measure the expected time
+		for network interaction between two hosts on a network. RTT is defined as the
+		time it takes a packet to reach its destination and a response to return to the
+		source.</p>
+		
+		<p class="normal-text">RTT is an important metric to determine the
+		health of the transport network, as an increment in its value can indicate
+		network congestion or a network fault.</p>
+		
+		<p class="normal-text">Table 4 displays typical target values for
+		the RTT across the transport network segments.</p>
+		
+		<div align=center>
+		
+		<table class=a2 border=0 cellspacing=0 cellpadding=0 width="100%"
+		 style='width:100.0%;border-collapse:collapse'>
+		 <tr style='height:15.75pt'>
+		  <td width="36%" style='width:36.56%;padding:0cm 3.5pt 0cm 3.5pt;height:15.75pt'>
+		  
+		  </td>
+		  <td width="63%" style='width:63.44%;border:solid black 1.0pt;background:#002060;
+		  padding:0cm 3.5pt 0cm 3.5pt;height:15.75pt'>
+		  <p align=center style='color:#fff;'>Round-trip
+		  time Target Values</p>
+		  </td>
+		 </tr>
+		 <tr style='height:15.0pt'>
+		  <td width="36%" style='width:36.56%;border:solid black 1.0pt;background:#F2F2F2;
+		  padding:0cm 3.5pt 0cm 3.5pt;height:15.0pt'>
+		  <p class="normal-text">Last-mile</p>
+		  </td>
+		  <td width="63%" style='width:63.44%;border-top:none;border-left:none;
+		  border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 3.5pt 0cm 3.5pt;
+		  height:15.0pt'>
+		  <p class="normal-text">&lt;
+		  40 ms</p>
+		  </td>
+		 </tr>
+		 <tr style='height:15.0pt'>
+		  <td width="36%" style='width:36.56%;border:solid black 1.0pt;border-top:none;
+		  background:#F2F2F2;padding:0cm 3.5pt 0cm 3.5pt;height:15.0pt'>
+		  <p class="normal-text">Aggregation</p>
+		  </td>
+		  <td width="63%" style='width:63.44%;border-top:none;border-left:none;
+		  border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 3.5pt 0cm 3.5pt;
+		  height:15.0pt'>
+		  <p class="normal-text">&lt;
+		  10 ms</p>
+		  </td>
+		 </tr>
+		 <tr style='height:15.0pt'>
+		  <td width="36%" style='width:36.56%;border:solid black 1.0pt;border-top:none;
+		  background:#F2F2F2;padding:0cm 3.5pt 0cm 3.5pt;height:15.0pt'>
+		  <p class="normal-text">Satellite
+		  Link</p>
+		  </td>
+		  <td width="63%" style='width:63.44%;border-top:none;border-left:none;
+		  border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 3.5pt 0cm 3.5pt;
+		  height:15.0pt'>
+		  <p class="normal-text">&lt;
+		  750 ms</p>
+		  </td>
+		 </tr>
+		</table>
+		
+		</div>
+		
+		<p align=center><i>Table 4 &mdash; Typical target values for RTT
+		in the transport network</i></p>
+		
+		<p class="normal-text"><b><u>Measurement Procedures</u></b></p>
+		
+		<p class="normal-text">Typically, RTT is measured using active
+		methods, which require the observations of test packets transmitted in both
+		directions between two endpoints across a network.</p>
+		
+		<p class="normal-text">One endpoint acts as the &quot;source&quot;
+		host, which sends the first packet, and a &quot;destination&quot; host, which
+		receives the first test packet and sends a test packet back to the source in
+		reply. The round-trip delay is then calculated as the difference between the
+		time at which the reply is received at the source and the time at which the
+		original test packet was sent.</p>
+		
+		<p class="normal-text">The Internet
+		Engineering Task Force (IETF) has defined the two-way active measurement
+		protocol (TWAMP) for RTT measurement. Modern transport equipment usually
+		supports these types of measurements across multivendor equipment. </p>
+		
+		<p class="normal-text">Alternatively, ICMP packets can be used to
+		perform these measurements. These measurements can be performed using passive
+		(e.g., by examining existing ICMP packets in the network) and active methods
+		(e.g., configuring periodic packets generated by network equipment). This method's
+		limitations are that the calculated measurements do not accurately reflect the
+		network behavior for a specific traffic type. Therefore, it should only be used
+		when TWAMP measurements are not feasible to implement. </p>
+		
+		<p class="normal-text"><b><u>Improvement Actions</u></b></p>
+		
+		<p class="normal-text">The following actions can be implemented to
+		reduce the RTT in the transport network:</p>
+		
+		<ul class="normal-text ul-iconos" style='margin-top:0in' start=1 type=1>
+			<li><b>Link Capacity Planning: </b>The RTT can be minimized by providing sufficient
+			link capacity to keep queue occupation low.</li>
+			
+			<li> <b>Routing Protocols Metric Adjustments: </b>The routing protocols metrics can be adjusted to
+			ensure that traffic follows the optimal path through the network.</li>
+		</ul>
+		
+		<h4>4.2.1.2
+		Jitter (Delay variation)</h4>
+		
+		<p class="normal-text">Jitter is used to measure the variation in
+		a sequence of RTT values over time and describes the disruption in the normal
+		sequence of sending data packets. This is particularly relevant to traffic that
+		requires relatively constant delay (e.g., voice over IP (VoIP) traffic).</p>
+		
+		<p class="normal-text">Table 5 displays typical target values for
+		the jitter across the transport network segments.</p>
+		
+		<div align=center>
+		
+		<table class=a3 border=0 cellspacing=0 cellpadding=0 width="100%"
+		 style='width:100.0%;border-collapse:collapse'>
+		 <tr style='height:15.75pt'>
+		  <td width="36%" style='width:36.56%;padding:0cm 3.5pt 0cm 3.5pt;height:15.75pt'>
+		  
+		  </td>
+		  <td width="63%" style='width:63.44%;border:solid black 1.0pt;background:#002060;
+		  padding:0cm 3.5pt 0cm 3.5pt;height:15.75pt'>
+		  <p align=center style='color:#fff;'>Jitter
+		  Target Values </p>
+		  </td>
+		 </tr>
+		 <tr style='height:15.0pt'>
+		  <td width="36%" style='width:36.56%;border:solid black 1.0pt;background:#F2F2F2;
+		  padding:0cm 3.5pt 0cm 3.5pt;height:15.0pt'>
+		  <p class="normal-text">Last-mile</p>
+		  </td>
+		  <td width="63%" style='width:63.44%;border-top:none;border-left:none;
+		  border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;background:
+		  white;padding:0cm 3.5pt 0cm 3.5pt;height:15.0pt'>
+		  <p class="normal-text">&lt;
+		  10 ms</p>
+		  </td>
+		 </tr>
+		 <tr style='height:15.0pt'>
+		  <td width="36%" style='width:36.56%;border:solid black 1.0pt;border-top:none;
+		  background:#F2F2F2;padding:0cm 3.5pt 0cm 3.5pt;height:15.0pt'>
+		  <p class="normal-text">Aggregation</p>
+		  </td>
+		  <td width="63%" style='width:63.44%;border-top:none;border-left:none;
+		  border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;background:
+		  white;padding:0cm 3.5pt 0cm 3.5pt;height:15.0pt'>
+		  <p class="normal-text">&lt;
+		  5 ms</p>
+		  </td>
+		 </tr>
+		 <tr style='height:15.0pt'>
+		  <td width="36%" style='width:36.56%;border:solid black 1.0pt;border-top:none;
+		  background:#F2F2F2;padding:0cm 3.5pt 0cm 3.5pt;height:15.0pt'>
+		  <p class="normal-text">Satellite
+		  Link</p>
+		  </td>
+		  <td width="63%" style='width:63.44%;border-top:none;border-left:none;
+		  border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;background:
+		  white;padding:0cm 3.5pt 0cm 3.5pt;height:15.0pt'>
+		  <p class="normal-text">&lt;
+		  20 ms</p>
+		  </td>
+		 </tr>
+		</table>
+		
+		</div>
+		
+		<p align=center><i>Table 5 &mdash; Typical target values for
+		jitter in the transport network</i></p>
+		
+		<p class="normal-text"><b><u>Measurement Procedures</u></b></p>
+		
+		<p class="normal-text">Jitter is typically measured using active
+		methods. Similarly to RTT, TWAMP can be used to measure jitter in the transport
+		network by sending test packets and monitoring their experience in the network.</p>
+		
+		<p class="normal-text"><b><u>Improvement Actions</u></b></p>
+		
+		<p class="normal-text">The following actions can be implemented to
+		reduce the jitter in the transport network:</p>
+		
+		<ul class="normal-text ul-iconos" style='margin-top:0in' start=1 type=1>
+			<li><b>Traffic prioritization: </b>The jitter can be minimized by giving queue
+		scheduler priority to traffic that is sensitive to variation, or by grooming or
+		shaping such traffic.</li>
+		</ul>
+		
+		<h3>4.2.2
+		Availability</h3>
+		
+		<p class="normal-text">The availability of the transport network
+		refers to the proportion of time the network is in a functional condition,
+		which is vital to maintain a good network performance. Furthermore, it
+		represents the reliability of the individual components in a network.</p>
+		
+		<p class="normal-text">Different events can diminish the total
+		availability of the transport network elements, such as:</p>
+		
+		<ul class="normal-text ul-iconos" style='margin-top:0in' start=1 type=1>
+			<li>Faulty hardware or components</li>
+			<li>Fiber cuts </li>
+			<li>Channel interference</li>
+		</ul>
+		
+		<p class="normal-text">Table 6 displays typical target values for
+		the availability across the transport network segments.</p>
+		
+		<div align=center>
+		
+		<table class=a4 border=0 cellspacing=0 cellpadding=0 width="100%"
+		 style='width:100.0%;border-collapse:collapse'>
+		 <tr style='height:15.75pt'>
+		  <td width="36%" style='width:36.56%;padding:0cm 3.5pt 0cm 3.5pt;height:15.75pt'>
+		  
+		  </td>
+		  <td width="63%" style='width:63.44%;border:solid black 1.0pt;background:#002060;
+		  padding:0cm 3.5pt 0cm 3.5pt;height:15.75pt'>
+		  <p align=center style='color:#fff;'>Availability
+		  Target Values</p>
+		  </td>
+		 </tr>
+		 <tr style='height:15.0pt'>
+		  <td width="36%" style='width:36.56%;border:solid black 1.0pt;background:#F2F2F2;
+		  padding:0cm 3.5pt 0cm 3.5pt;height:15.0pt'>
+		  <p class="normal-text">Last-mile</p>
+		  </td>
+		  <td width="63%" style='width:63.44%;border-top:none;border-left:none;
+		  border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;background:
+		  white;padding:0cm 3.5pt 0cm 3.5pt;height:15.0pt'>
+		  <p class="normal-text">&gt;
+		  99.9%</p>
+		  </td>
+		 </tr>
+		 <tr style='height:15.0pt'>
+		  <td width="36%" style='width:36.56%;border:solid black 1.0pt;border-top:none;
+		  background:#F2F2F2;padding:0cm 3.5pt 0cm 3.5pt;height:15.0pt'>
+		  <p class="normal-text">Aggregation</p>
+		  </td>
+		  <td width="63%" style='width:63.44%;border-top:none;border-left:none;
+		  border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;background:
+		  white;padding:0cm 3.5pt 0cm 3.5pt;height:15.0pt'>
+		  <p class="normal-text">&gt;
+		  99.99%</p>
+		  </td>
+		 </tr>
+		 <tr style='height:15.0pt'>
+		  <td width="36%" style='width:36.56%;border:solid black 1.0pt;border-top:none;
+		  background:#F2F2F2;padding:0cm 3.5pt 0cm 3.5pt;height:15.0pt'>
+		  <p class="normal-text">Satellite
+		  Link</p>
+		  </td>
+		  <td width="63%" style='width:63.44%;border-top:none;border-left:none;
+		  border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;background:
+		  white;padding:0cm 3.5pt 0cm 3.5pt;height:15.0pt'>
+		  <p class="normal-text">&gt;
+		  99.5%</p>
+		  </td>
+		 </tr>
+		</table>
+		
+		</div>
+		
+		<p align=center><i>Table 6 &mdash; Typical target values for
+		availability in the transport network</i></p>
+		
+		<p class="normal-text"><b><u>Measurement Procedures</u></b></p>
+		
+		<p class="normal-text">The availability measurements typically use
+		a combination of active and passive methods based on the statistics collected
+		from the managed devices. In this way, the total availability of a certain
+		network topology can be estimated by measuring the individual components of it
+		(i.e., link availability, device availability).</p>
+		
+		<p class="normal-text">The methodology to calculate the
+		theoretical availability of a transport network topology is provided in the <a class="a_link" href="tx_ip_architecture.html">Tx
+		&amp; IP Architecture Module</a>.</p>
+		
+		<p class="normal-text"><b><u>Improvement Actions</u></b></p>
+		
+		<p class="normal-text">The most common practice to increase the
+		overall availability of the transport network is to implement redundancy
+		methods. In this way, there is still a redundant element to handle the traffic
+		in case of failure of a particular element. The following schemes can be
+		implemented to improve the total availability of the transport network:</p>
+		
+		<ul class="normal-text ul-iconos" style='margin-top:0in' start=1 type=1>
+			<li><b>Physical Redundancy: I</b>n this scheme, a redundant element is deployed
+		in the network in a way that, in the event of a failure, the redundant element
+		maintains the service. The main drawback of this scheme is that additional
+		network elements must be deployed for each; this elevates the total CAPEX of
+		the deployment.</li>
+		
+		<li>
+		<b>Logical Redundancy: </b>Logical redundancy methods use configurations
+		that enable traffic to be rerouted to redundant elements (e.g., link
+		aggregation, router redundancy protocols). In this way, a certain element in
+		the network acts as the
+		backup for other elements, avoiding the deployment of additional elements.</li>
+		</ul>
+		
+		<h3>4.2.3
+		Packet Loss</h3>
+		
+		<p class="normal-text">Packet loss denotes the expected
+		probability that a transmitted packet will reach its destination, and is
+		usually expressed as a percentage. It can be used to estimate the network's
+		delivery reliability.</p>
+		
+		<p class="normal-text">The most common causes of packet loss
+		includes the following events:</p>
+		
+		<ul class="normal-text ul-iconos" style='margin-top:0in' start=1 type=1>
+			<li>Network congestion that causes packet dropping
+		in the network devices.</li>
+		
+		<li> Channel interference</li>
+		</ul>
+		
+		<p class="normal-text">Table 7 displays typical target values for
+		the packet loss requirements across the transport network segments.</p>
+		
+		<div align=center>
+		
+		<table class=a5 border=0 cellspacing=0 cellpadding=0 width="100%"
+		 style='width:100.0%;border-collapse:collapse'>
+		 <tr style='height:15.75pt'>
+		  <td width="36%" style='width:36.56%;padding:0cm 3.5pt 0cm 3.5pt;height:15.75pt'>
+		  
+		  </td>
+		  <td width="63%" style='width:63.44%;border:solid black 1.0pt;background:#002060;
+		  padding:0cm 3.5pt 0cm 3.5pt;height:15.75pt'>
+		  <p class="normal-text">Packet
+		  loss Target Values</p>
+		  </td>
+		 </tr>
+		 <tr style='height:15.0pt'>
+		  <td width="36%" style='width:36.56%;border:solid black 1.0pt;background:#F2F2F2;
+		  padding:0cm 3.5pt 0cm 3.5pt;height:15.0pt'>
+		  <p class="normal-text">Last-mile</p>
+		  </td>
+		  <td width="63%" style='width:63.44%;border-top:none;border-left:none;
+		  border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;background:
+		  white;padding:0cm 3.5pt 0cm 3.5pt;height:15.0pt'>
+		  <p class="normal-text">&lt;
+		  0.1%</p>
+		  </td>
+		 </tr>
+		 <tr style='height:15.0pt'>
+		  <td width="36%" style='width:36.56%;border:solid black 1.0pt;border-top:none;
+		  background:#F2F2F2;padding:0cm 3.5pt 0cm 3.5pt;height:15.0pt'>
+		  <p class="normal-text">Aggregation</p>
+		  </td>
+		  <td width="63%" style='width:63.44%;border-top:none;border-left:none;
+		  border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;background:
+		  white;padding:0cm 3.5pt 0cm 3.5pt;height:15.0pt'>
+		  <p class="normal-text">&lt;
+		  0.1%</p>
+		  </td>
+		 </tr>
+		 <tr style='height:15.0pt'>
+		  <td width="36%" style='width:36.56%;border:solid black 1.0pt;border-top:none;
+		  background:#F2F2F2;padding:0cm 3.5pt 0cm 3.5pt;height:15.0pt'>
+		  <p class="normal-text">Satellite
+		  Link</p>
+		  </td>
+		  <td width="63%" style='width:63.44%;border-top:none;border-left:none;
+		  border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;background:
+		  white;padding:0cm 3.5pt 0cm 3.5pt;height:15.0pt'>
+		  <p class="normal-text">&lt;
+		  0.5%</p>
+		  </td>
+		 </tr>
+		</table>
+		
+		</div>
+		
+		<p align=center><i>Table 7 &mdash; Typical target values for packet
+		loss in the transport network</i></p>
+		
+		<p class="normal-text"><b><u>Measurement Procedures</u></b></p>
+		
+		<p class="normal-text">Packet loss measurements always include the
+		sending of test packets from a sender to a packet receiver in a predefined
+		sending schedule and/or pattern; the receiver will then count these packets.
+		It's highly recommended that test packets part of packet loss measurements are
+		treated like the background traffic of interest.</p>
+		
+		<p class="normal-text">TWAMP can be used to measure packet loss in
+		the transport network by sending test packets and monitoring their experience
+		in the network.</p>
+		
+		<p class="normal-text">Alternatively, a passive method can be
+		used. In this way, the packet loss is measured through the packet
+		error/discarded counters in the network elements. This method's limitation is
+		that the calculated measurements may not consider the packet loss in
+		non-monitored elements (e.g., third-party network elements). Therefore, it
+		should only be used when active methods are not feasible to implement.</p>
+		
+		<p class="normal-text"><b><u>Improvement Actions</u></b></p>
+		
+		<p class="normal-text">The following actions can be implemented to
+		improve the total availability of the transport network:</p>
+		
+		<ul class="normal-text ul-iconos" style='margin-top:0in' start=1 type=1>
+			<li><b>Link Capacity Planning: </b>The packet loss can be minimized by planning
+		sufficient link capacity to avoid queue tail-drops.</li>
+		
+		<li>
+		<b>Protection Switching
+		Methods:</b> The
+		implementation of protection switching methods decreases the traffic
+		interruption in case of failures.</li>
+		</ul>
+		
+		<h3>4.2.4
+		Resiliency</h3>
+		
+		<p class="normal-text">Transport networks, especially in rural
+		environments, are prone to failures that can occur in their nodes or the links.
+		In the event of a failure, it's essential that the network recovers as quickly
+		as possible, which is known as network resiliency.</p>
+		
+		<p class="normal-text">The continuity of the services in 4G
+		networks is a critical requirement because the applications that are supported
+		on these networks have increasingly strict limits in terms of recovery time in
+		the event of a failure.</p>
+		
+		<p class="normal-text">Table 8 displays the typical target
+		recovery time for different services:</p>
+		
+		<div align=center>
+		
+		<table class=a6 border=0 cellspacing=0 cellpadding=0 width="100%"
+		 style='width:100.0%;border-collapse:collapse'>
+		 <tr style='height:15.75pt'>
+		  <td width="35%" style='width:35.22%;border:solid black 1.0pt;background:#002060;
+		  padding:0cm 3.5pt 0cm 3.5pt;height:15.75pt'>
+		  <p class="normal-text">Service</p>
+		  </td>
+		  <td width="64%" style='width:64.78%;border:solid black 1.0pt;border-left:
+		  none;background:#002060;padding:0cm 3.5pt 0cm 3.5pt;height:15.75pt'>
+		  <p class="normal-text">Recovery
+		  Time Target Values</p>
+		  </td>
+		 </tr>
+		 <tr style='height:15.0pt'>
+		  <td width="35%" style='width:35.22%;border:solid black 1.0pt;border-top:none;
+		  background:#F2F2F2;padding:0cm 3.5pt 0cm 3.5pt;height:15.0pt'>
+		  <p class="normal-text">Web
+		  Browsing</p>
+		  </td>
+		  <td width="64%" style='width:64.78%;border-top:none;border-left:none;
+		  border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;background:
+		  white;padding:0cm 3.5pt 0cm 3.5pt;height:15.0pt'>
+		  <p class="normal-text">&lt;
+		  1 s</p>
+		  </td>
+		 </tr>
+		 <tr style='height:15.0pt'>
+		  <td width="35%" style='width:35.22%;border:solid black 1.0pt;border-top:none;
+		  background:#F2F2F2;padding:0cm 3.5pt 0cm 3.5pt;height:15.0pt'>
+		  <p class="normal-text">Streaming</p>
+		  </td>
+		  <td width="64%" style='width:64.78%;border-top:none;border-left:none;
+		  border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;background:
+		  white;padding:0cm 3.5pt 0cm 3.5pt;height:15.0pt'>
+		  <p class="normal-text">&lt;
+		  1 s</p>
+		  </td>
+		 </tr>
+		 <tr style='height:15.0pt'>
+		  <td width="35%" style='width:35.22%;border:solid black 1.0pt;border-top:none;
+		  background:#F2F2F2;padding:0cm 3.5pt 0cm 3.5pt;height:15.0pt'>
+		  <p class="normal-text">Voice</p>
+		  </td>
+		  <td width="64%" style='width:64.78%;border-top:none;border-left:none;
+		  border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;background:
+		  white;padding:0cm 3.5pt 0cm 3.5pt;height:15.0pt'>
+		  <p class="normal-text">&lt;
+		  200 ms</p>
+		  </td>
+		 </tr>
+		</table>
+		
+		</div>
+		
+		<p align=center><i>Table 8 &mdash; Typical target values for Packet
+		Loss in transport network</i></p>
+		
+		<p class="normal-text">To avoid an impact on the service, it's
+		necessary that the network completes the 'convergence' process in less time
+		than the recovery time for each service in the event of a failure. Network
+		convergence is defined as the process of synchronizing the forwarding and
+		routing tables in the different network elements after a change in the
+		topology.</p>
+		
+		<p class="normal-text">It's highly recommended to include methods
+		to ensure the fast convergence of the network; these methods are: fast
+		convergence methods and protection switching methods. The following subsections
+		examine the most common methods to be implemented in the transport network.</p>
+		
+		<h4>4.2.4.1
+		Fast Convergence Methods</h4>
+		
+		<p class="normal-text">Different fast convergence methods can be
+		implemented in transport networks, allowing the network to stabilize and return
+		to a fully operational state in less than 1 second. The most common fast
+		convergence methods are described on the following page:</p>
+		
+		<p class="normal-text"><b><u>Bidirectional Forwarding Detection
+		(BFD)</u></b></p>
+		
+		<p class="normal-text">Bidirectional forwarding detection (BFD) is
+		a fault detection protocol that provides a low-overhead, short-duration method
+		to determine a communication failure between devices and notify upper-layer
+		applications (also called clients). BFD is a detection protocol that can be
+		enabled at the interface and routing protocol levels.</p>
+		
+		<p class="normal-text">For instance, a network running the open
+		shortest path first (OSPF) as a routing protocol, takes several tens of seconds
+		to recover from a failure, using the default parameter settings. The main
+		component of this delay is the time required to detect a failure using the
+		timeout-based detection method. In contrast, BFD can be configured to detect
+		link failures in up to 50 ms, which leads to a significant decrease in network
+		recovery time.</p>
+		
+		<p class="normal-text">It's recommended to enable BFD in
+		interfaces and routing protocol levels only on the elements located in the
+		aggregation segment.</p>
+		
+		<p class="normal-text"><b><u>BGP Fast Convergence (FC)</u></b></p>
+		
+		<p class="normal-text">It's a set of features in border gateway
+		protocol (BGP) such as multipath activation, prefix prioritization and event
+		delay (dampening) to avoid recalculating routes in cases where IGP convergence
+		is sufficient to keep the service and routes intact.</p>
+		
+		<p class="normal-text">It's recommended to enable BGP Fast
+		Convergence only in the routing equipment that supports BGP protocol located in
+		the aggregation segment.</p>
+		
+		<p class="normal-text"><b><u>Graceful Restart</u></b></p>
+		
+		<p class="normal-text">After a failure in a node with redundancy
+		in control cards or after a reboot, it maintains the forwarding and routing
+		tables, allowing the restoration of services more quickly without having to
+		exchange link-state protocol data units (LSPs) or recalculate
+		shortest-path-first (SPFs).</p>
+		
+		<p class="normal-text">It's recommended to enable the graceful
+		restart functionality only in the routing equipment that supports OSPF and BGP
+		protocols to avoid the delay caused by the initialization process of these
+		protocols after recovering from a failure where there were no changes in the
+		topology.</p>
+		
+		<h4>4.2.4.2
+		Protection Switching Methods</h4>
+		
+		<p class="normal-text">Protection switching methods reestablish
+		connectivity through precalculated redundant links or paths, and they can do
+		this reset within a few milliseconds after detecting the failure. The most
+		common available methods are illustrated on the following page:</p>
+		
+		<p class="normal-text"><b><u>Link Aggregation</u></b></p>
+		
+		<p class="normal-text">Link aggregation supports combining
+		multiple Ethernet links into a group, which is seen as a single link. The
+		benefits are an increment in capacity as well as resiliency, as failure of a
+		single link is tolerated. Furthermore, link aggregation also allows load
+		sharing, which is otherwise not supported by Ethernet.</p>
+		
+		<p class="normal-text">Link aggregation group (LAG) can be
+		implemented in aggregation segments as a redundancy method to reach the target
+		availability.</p>
+		
+		<p class="normal-text"><b><u>Router Redundancy Protocols</u></b></p>
+		
+		<p class="normal-text">Router redundancy protocols (e.g., virtual
+		router redundancy protocol (VRRP), hot standby router protocol (HSRP)) can be
+		considered a form of L3 redundancy. The operational principle is to allow
+		multiple routers to share a virtual IP and MAC address. There is one router
+		elected as the master that assumes the role of forwarding the packets sent to
+		the virtual IP address while the rest of the routers act as backup. In case the
+		master fails, one of the backups becomes the master router.</p>
+		
+		<p class="normal-text">Router redundancy protocols can be
+		implemented in aggregation segments as a redundancy method to reach the target
+		availability. The specific selection of the protocol varies according to the
+		selected Tx equipment.</p>
+		
+		<p class="normal-text"><b><u>IP Fast Reroute</u></b></p>
+		
+		<p class="normal-text">In these methods, there is at least one
+		backup route that is installed in the forwarding tables; in such a way that
+		when the failure is detected, the backup path is activated, allowing a service
+		restoration in a few milliseconds after detection.</p>
+		
+		<p class="normal-text">It's recommended to enable IP fast reroute
+		functionality only on the elements located in the aggregation segment.</p>
+		
+		<h3>4.2.5
+		Quality of Service</h3>
+		
+		<p class="normal-text">The mgmt of the quality of service (QoS) is
+		a crucial element in the Tx performance mgmt that indicates how to handle
+		traffic within a network. The fundamental objective of managing the quality of
+		service is to manage the dispute for network resources and maximize the
+		experience of the end user of a session.</p>
+		
+		<p class="normal-text">The concept of QoS used in transport
+		networks is done through the use of differentiated services (DiffServ) classes.
+		The main idea is to mark the priority traffic so that it isn't affected by
+		possible congestion due to the fluctuation of link use level. The definition of
+		these elements is examined broader in the <a class="a_link" href="">Tx
+		&amp; IP Architecture Module</a>.</p>
+		
+		<p class="normal-text">To prevent network congestion, it's highly
+		recommended to include methods to ensure the prioritization of certain traffic
+		types in the network, these methods are known as congestion mgmt methods. The
+		following subsections examine the most common methods to be implemented in the
+		transport network.</p>
+		
+		<h4>4.2.5.1
+		Congestion Management Methods</h4>
+		
+		<p class="normal-text">Every time packets enter into devices
+		faster than they can exit, there is a possibility of congestion. Network congestion
+		may impact Tx performance KPIs and ultimately degrade the transport network
+		services. To avoid and mitigate the occurrence of network congestion, different
+		congestion mgmt methods can be implemented. Below the most common methods that
+		can be implemented in the transport network.</p>
+		
+		<p class="normal-text"><b><u>Packet Scheduling Methods</u></b></p>
+		
+		<p class="normal-text">Packet scheduling handles congestion mgmt
+		within the transport network and must be implemented in any interface that can
+		experience congestion. When congestion occurs, packets should be temporarily stored
+		or queued in temporary storage for subsequent scheduling.</p>
+		
+		<p class="normal-text">Commonly used queue types in the transport
+		network are:</p>
+		
+		<ul class="normal-text ul-iconos" style='margin-top:0in' start=1 type=1>
+			<li><b>Priority queuing (PQ):</b> It serves packets in strict priority order.</li>
+		
+		<li>
+		<b>Weighted fair queuing
+		(WFQ):</b> It divides the interface
+		bandwidth among the disparate flows according to their priority, ensuring a
+		fair bandwidth distribution for all applications. This method provides better
+		service for high-priority real-time streams, but lacks guaranteed bandwidth for
+		any particular stream.</li>
+		</ul>
+		
+		<p class="normal-text">The typical configuration for the packet
+		scheduling methods in the transport network is displayed in Table 9. </p>
+		
+		<p class="normal-text"><b><u>Packet Dropping Methods</u></b></p>
+		
+		<p class="normal-text">Buffering memory is a limited resource on
+		any interface. By queuing, buffers fill up and packets can be discarded. The
+		most common discard methods to be implemented in transport networks are:</p>
+		
+		<ul class="normal-text ul-iconos" style='margin-top:0in' start=1 type=1>
+			<li><b>Tail Drop: </b>In this method, packets are discarded as they arrive. This
+		method does not differentiate
+		among different traffic types.</li>
+		
+		<li> <b>Weighted random early detection (WRED): </b>This method aims to maintain<b> </b>the queue
+		length at a level between the minimum and maximum thresholds and to implement
+		different drop policies for different classes of traffic. WRED can selectively
+		drop lower priority traffic when the interface becomes congested, and it can
+		provide differentiated performance characteristics for different classes of
+		service.</li>
+		</ul>
+		
+		<p class="normal-text">The typical configuration for the packet
+		dropping methods in the transport network is displayed in Table 9.</p>
+		
+		<div align=center>
+		
+		<table class=a7 border=0 cellspacing=0 cellpadding=0 width="100%"
+		 style='width:100.0%;border-collapse:collapse'>
+		 <tr style='height:15.0pt'>
+		  <td width="33%" style='width:33.02%;border:solid black 1.0pt;background:#002060;
+		  padding:0cm 3.5pt 0cm 3.5pt;height:15.0pt'>
+		  <p class="normal-text">Traffic
+		  type</p>
+		  </td>
+		  <td width="33%" style='width:33.5%;border:solid black 1.0pt;border-left:none;
+		  background:#002060;padding:0cm 3.5pt 0cm 3.5pt;height:15.0pt'>
+		  <p class="normal-text">Assign
+		  Queue</p>
+		  </td>
+		  <td width="33%" style='width:33.5%;border:solid black 1.0pt;border-left:none;
+		  background:#002060;padding:0cm 3.5pt 0cm 3.5pt;height:15.0pt'>
+		  <p class="normal-text">Packet
+		  drop method</p>
+		  </td>
+		 </tr>
+		 <tr style='height:15.0pt'>
+		  <td width="33%" style='width:33.02%;border:solid black 1.0pt;border-top:none;
+		  padding:0cm 3.5pt 0cm 3.5pt;height:15.0pt'>
+		  <p class="normal-text">Voice
+		  Traffic </p>
+		  </td>
+		  <td width="33%" style='width:33.5%;border-top:none;border-left:none;
+		  border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 3.5pt 0cm 3.5pt;
+		  height:15.0pt'>
+		  <p class="normal-text">Priority
+		  queuing' (PQ)</p>
+		  </td>
+		  <td width="33%" style='width:33.5%;border-top:none;border-left:none;
+		  border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 3.5pt 0cm 3.5pt;
+		  height:15.0pt'>
+		  <p class="normal-text">Tail
+		  drop</p>
+		  </td>
+		 </tr>
+		 <tr style='height:15.0pt'>
+		  <td width="33%" style='width:33.02%;border:solid black 1.0pt;border-top:none;
+		  padding:0cm 3.5pt 0cm 3.5pt;height:15.0pt'>
+		  <p class="normal-text">Signaling
+		  Traffic</p>
+		  </td>
+		  <td width="33%" style='width:33.5%;border-top:none;border-left:none;
+		  border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 3.5pt 0cm 3.5pt;
+		  height:15.0pt'>
+		  <p class="normal-text">WFQ</p>
+		  </td>
+		  <td width="33%" style='width:33.5%;border-top:none;border-left:none;
+		  border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 3.5pt 0cm 3.5pt;
+		  height:15.0pt'>
+		  <p class="normal-text">WRED</p>
+		  </td>
+		 </tr>
+		 <tr style='height:15.0pt'>
+		  <td width="33%" style='width:33.02%;border:solid black 1.0pt;border-top:none;
+		  padding:0cm 3.5pt 0cm 3.5pt;height:15.0pt'>
+		  <p class="normal-text">High-priority
+		  Data Traffic</p>
+		  </td>
+		  <td width="33%" style='width:33.5%;border-top:none;border-left:none;
+		  border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 3.5pt 0cm 3.5pt;
+		  height:15.0pt'>
+		  <p class="normal-text">WFQ</p>
+		  </td>
+		  <td width="33%" style='width:33.5%;border-top:none;border-left:none;
+		  border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 3.5pt 0cm 3.5pt;
+		  height:15.0pt'>
+		  <p class="normal-text">WRED</p>
+		  </td>
+		 </tr>
+		 <tr style='height:15.0pt'>
+		  <td width="33%" style='width:33.02%;border:solid black 1.0pt;border-top:none;
+		  padding:0cm 3.5pt 0cm 3.5pt;height:15.0pt'>
+		  <p class="normal-text">Low-priority
+		  Data Traffic</p>
+		  </td>
+		  <td width="33%" style='width:33.5%;border-top:none;border-left:none;
+		  border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 3.5pt 0cm 3.5pt;
+		  height:15.0pt'>
+		  <p class="normal-text">Default
+		  Queue</p>
+		  </td>
+		  <td width="33%" style='width:33.5%;border-top:none;border-left:none;
+		  border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 3.5pt 0cm 3.5pt;
+		  height:15.0pt'>
+		  <p class="normal-text">WRED</p>
+		  </td>
+		 </tr>
+		</table>
+		
+		</div>
+		
+		<p align=center><i>Table 9 &mdash; Typical QoS methods in the
+		transport network</i></p>
+		
+		<br><h2><a class="titulo-h2 anchor-bum color-luminati-3" name="item4-3">4.3
+		Tx Performance Management Tools</a></h2>
+		
+		<p class="normal-text">This section examines the most common
+		commercial tools that are specialized in the performance analysis of transport
+		network data from specific data sources. More tools on each category can be
+		found in the <a class="a_link" href="">Tx
+		performance mgmt tool list</a>.</p>
+		
+		<h3>4.3.1
+		Network Performance Monitoring System</h3>
+		
+		<p class="normal-text">A network performance monitoring system
+		monitors the network for performance and performs additional activities such as
+		network traffic bottlenecks identification. More details regarding the
+		selection of these tools can be found in the <a class="a_link" href="network_monitoring_architecture.html">Network
+		Monitoring Architecture Module</a>. </p>
+		
+		<p class="normal-text"><b>Tool:</b> Atrinet NetACE</p>
+		
+		<p class="normal-text"><b>Link: </b>https://www.atrinet.com/netace/#</p>
+		
+		<p class="normal-text">NetACE is a vendor-agnostic solution that
+		allows unified monitoring and control over a multivendor network in a global
+		multi-site topology. A high-level overview of the entire network allows NetACE
+		to define alternative routes in case of fault, to quickly and without errors
+		rollout a new service across the network, and to immediately replace settings
+		for a faulty component.</p>
+		
+		<p class="normal-text">Main features include:</p>
+		
+		<ul class="normal-text ul-iconos" style='margin-top:0in' start=1 type=1>
+			<li>Inventory capabilities enriched with an
+		automated system that discovers all network elements and the topology that
+		connects them.</li>
+		
+		<li> Once the system topology is discovered, the
+		system allows the operation or upper layer mgmt systems to monitor and control any element in the system
+		regardless of equipment vendor.</li>
+		
+		<li> The communication uses standard mgmt protocols adapted to the protocol
+		that the specific equipment supports.</li>
+		</ul>
+		
+		<h3>4.3.2
+		Interfaces Probes Data Analysis</h3>
+		
+		<p class="normal-text">These tools
+		implement and manage a set of probes along the network to monitor the
+		performance<b>. </b>More details regarding the
+		selection of these tools can be found in the <a class="a_link" href="">Network
+		Monitoring Architecture Module</a>.</p>
+		
+		<p class="normal-text"><b>Tool:</b> Empirix Diagnostix and Holistix Applications</p>
+		
+		<p class="normal-text"><b>Link:</b> <a>https://www.empirix.com/products/diagnostix/</a></p>
+		
+		<p class="normal-text">Diagnostix is a set of applications that help
+		operations teams quickly identify service-impacting issues and their true root
+		cause across networks, services, devices, and applications. It provides
+		granular insight into call and data sessions to provide an accurate view of
+		network performance and customer experience.</p>
+		
+		
+		
+		<p class="normal-text">Main features include:</p>
+		
+		<ul class="normal-text ul-iconos" style='margin-top:0in' start=1 type=1>
+			<li>Perform E2E subscriber, protocol, network, and call search</li>
+		
+		<li> Get near real-time insights into the most
+		critical network and infrastructure failures</li>
+		
+		<li> Fully navigate network and infrastructure
+		traffic data from various perspectives with preconfigured analytics packages</li>
+		
+		<li> Fully navigate network and infrastructure
+		traffic data from various perspectives with preconfigured analytics packages</li>
+		
+		<li> Investigate issues up to the single data record
+		(xDR), including protocol analysis</li>
+		
+		<li>
+		Diagnose issues for a single
+		subscriber or a group of subscribers and score the services they receive with
+		KPIs/ KQIs</li>
+		</ul>
+		
+		<p class="normal-text"><img border=0 width=640
+		height=233 id=image3.png
+		src="images/tx_performance/image007.png"></p>
+		
+		<p align=center><i>Figure 7 &mdash; Empirix Probes Data analysis</i></p>
+		
+		<h3>4.3.3
+		Network Inventory Management</h3>
+		
+		<p class="normal-text">Network
+		Inventory tools maintain a record of information regarding all elements in the
+		network. More details regarding the selection of these tools can be found in
+		the <a class="a_link" href="">Network
+		Operation Center (NOC) Module</a>.</p>
+		
+		<p class="normal-text"><b>Tool:</b> TeleworX mapvista</p>
+		
+		<p class="normal-text"><b>Link:</b> <a>https://www.teleworx.com/products.html#features11-24</a></p>
+		
+		<p class="normal-text">MapVista
+		integrates a versatile network model inventory with the power of geographic
+		analysis to provide a truly integrated E2E network planning capability. It integrates workflow and
+		document mgmt modules to facilitate
+		integration with existing corporate systems.</p>
+		
+		<p class="normal-text">MapVista main functionalities include:</p>
+		
+		<ul class="normal-text ul-iconos" style='margin-top:0in' start=1 type=1>
+			<li>Physical Inventory from
+			multivendor network elements across all network sections. Physical entities are
+			modeled down to the port level, including BOM (Bill of Materials) information.</li>
+			
+			<li>Provides E2E logical relations to enable network
+			topology tracking. Logical inventory includes E2E connectivity routes for mobile and fixed networks.</li>
+			
+			<li>mapVista establishes network
+			dependencies to facilitate network troubleshooting and detect design issues.
+			Mapping dependencies permits identifying SRLG (Shared Risk Link Groups)
+			connections, potential bottlenecks and allows proper dimensioning of
+			concentration points, hotels, and hubs.</li>
+			
+			<li>mapVista includes functions
+			to check and reconcile
+			entities between OSS and Inventory.</li>
+			
+			<li>Geographically coded or
+			scale free diagrams are at reach to facilitate understanding of the network
+			topologies.</li>
+		</ul>
+		
+		<p class="normal-text"><img border=0 width=579
+		height=228 id=image7.png
+		src="images/tx_performance/image008.png"></p>
+		
+		<p align=center><i>Figure 8 &mdash; TeleworX mapVista NW Inventory</i></p>
+
+</div>
+ 
+
+ <a href="#" class="link-next" onclick="switchContent('#fm')"> &#8656; Previous</a>
+ <br>
+ <a href="url" align="center"></a>
+ <div class="right">
+ <a ></a>
+ <a href="#">.</a>
+ </div>
+
+ </div>
+ 
+ <nav id="navbar-example3" class="navbar navbar-light bg-light position-fixed">
+ <nav class="nav nav-pills flex-column">
+ <a id="e2e_link-1" class="nav-link bullet-2-link" onclick="onClickActive(event)" href="#item4"><strong>4. TX PERFORMANCE MANAGEMENT PROCESS</strong></a>
+ <a id="e2e_link-2" class="nav-link bullet-2-link" onclick="onClickActive(event)" href="#item4-1"><em>4.1 Process Overview</em></a>
+ <a id="e2e_link-3" class="nav-link bullet-2-link" onclick="onClickActive(event)" href="#item4-2"><em>4.2 Areas of Interest</em></a>
+ <a id="e2e_link-3" class="nav-link bullet-2-link" onclick="onClickActive(event)" href="#item4-3"><em>4.3 Tx Performance Management Tools</em></a>
+ </nav>
+ </nav>
+ </section> 
+ </div>
+
+ <!-- jQuery CDN border-left: 2px solid gray;-->
+ <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+ <!-- Bootstrap Js CDN -->
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+ <script type="text/javascript">
+ 
+ let tab;
+ var setPin = true;
+ switchContent('#hld');
+ window.scrollTo(0, 0);
+
+ function switchContent(selector){
+ $("#hld").hide();
+ $("#fm").hide();
+ $("#e2e").hide();
+ $(selector).show();
+ tab = selector;
+ }
+
+ window.addEventListener('scroll', function(e) {
+ let reachActive = false;
+ if(tab=="#hld"){
+ $('.color-luminati').each(function(index, element) {
+ const elem = element.getBoundingClientRect();
+ if (elem.top < 30) {
+ $('nav.nav.nav-pills a').removeClass('link-active');
+ $('nav.nav.nav-pills a:nth-child('+(index+1)+')').addClass('link-active');
+ }
+ });
+ }
+ if(tab=="#fm"){
+ $('.color-luminati-2').each(function(index, element) {
+ const elem = element.getBoundingClientRect();
+ if (elem.top < 30) {
+ $('nav.nav.nav-pills a').removeClass('link-active');
+ $('nav.nav.nav-pills a:nth-child('+(index+1)+')').addClass('link-active');
+ }
+ });
+ }
+ if(tab=="#e2e"){
+ $('.color-luminati-3').each(function(index, element) {
+ const elem = element.getBoundingClientRect();
+ if (elem.top < 30) {
+ $('nav.nav.nav-pills a').removeClass('link-active');
+ $('nav.nav.nav-pills a:nth-child('+(index+1)+')').addClass('link-active');
+ }
+ });
+ }
+ });
+ </script>
+
+<div id="myModal" class="modal">
+ <span class="close">&times;</span>
+ <img class="myImg" class="myImg" class="modal-content" id="img01">
+ <div id="caption"></div>
+</div>
+
+<script src="zoom_script.js"></script>
+</body>
+</html>
